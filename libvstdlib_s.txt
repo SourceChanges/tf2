@@ -1,0 +1,444 @@
+         U abort@@GLIBC_2.0
+         U access@@GLIBC_2.0
+         U alphasort64@@GLIBC_2.2
+         U AssertMsgImplementation
+0001c26d T BHanIdeograph
+000350f0 A __bss_start
+0001c2e0 T CanBeginLine
+0001c335 T CanBreakBetween
+0001c31b T CanBreakRepeated
+0001c2a0 T CanEndLine
+         U chdir@@GLIBC_2.0
+         U chmod@@GLIBC_2.0
+         U chown@@GLIBC_2.1
+         U clock_gettime@@GLIBC_2.2
+         U closedir@@GLIBC_2.0
+         U close@@GLIBC_2.0
+0000ecba T Coroutine_Cancel
+0000e794 T Coroutine_Continue
+0000d532 T Coroutine_Create
+0000e765 T Coroutine_DebugBreak
+0000d4d6 T Coroutine_GetCurrentlyActive
+0000d434 T Coroutine_GetStackDepth
+0000d4c3 T Coroutine_IsActive
+0000d397 T Coroutine_IsAddressInOurStack
+0000c5f9 T Coroutine_ReleaseThreadMemory
+0000e7c0 T Coroutine_Test
+0000c915 T Coroutine_ValidateGlobals
+0000dc00 T Coroutine_YieldToMain
+00007696 T CreateInterface
+         U CreateVProfile
+         U __cxa_atexit@@GLIBC_2.1.3
+         w __cxa_finalize@@GLIBC_2.1.3
+         U __cxa_guard_abort@@CXXABI_1.3
+         U __cxa_guard_acquire@@CXXABI_1.3
+         U __cxa_guard_release@@CXXABI_1.3
+         U __cxa_pure_virtual@@CXXABI_1.3
+0000f39d T DebugStatsSystem
+         U dlclose@@GLIBC_2.0
+         U dlerror@@GLIBC_2.0
+         U dl_iterate_phdr@@GLIBC_2.2.4
+         U dlmopen@@GLIBC_2.3.4
+         U dlopen@@GLIBC_2.1
+         U dlsym@@GLIBC_2.0
+         U _DMsg
+000350f0 A _edata
+00043800 A _end
+         U __errno_location@@GLIBC_2.0
+         U Error
+         U fclose@@GLIBC_2.1
+         U fdatasync@@GLIBC_2.0
+         U fflush@@GLIBC_2.0
+         U fgetc@@GLIBC_2.0
+         U fgets@@GLIBC_2.0
+00024f2c T _fini
+         U fopen64@@GLIBC_2.1
+         U fopen@@GLIBC_2.1
+         U fprintf@@GLIBC_2.0
+         U fread@@GLIBC_2.0
+         U free@@GLIBC_2.0
+         U freopen@@GLIBC_2.0
+         U fseek@@GLIBC_2.0
+         U fseeko64@@GLIBC_2.1
+         U ftell@@GLIBC_2.0
+         U ftruncate64@@GLIBC_2.1
+         U futimes@@GLIBC_2.3
+         U fwrite@@GLIBC_2.0
+         U __fxstat64@@GLIBC_2.2
+         U g_ClockSpeed
+         U g_CpuTimeUnreliable
+         U getcwd@@GLIBC_2.0
+         U getenv@@GLIBC_2.0
+         U gethostbyname@@GLIBC_2.0
+00012e55 T GetNameFromOSType
+00012c00 T GetOSDetailString
+00012a14 T GetOSType
+0001309d T GetPlatformFromOS
+00012fc9 T GetPlatformName
+0001305b T GetPlatformNameFromEPlatformType
+0001313d T GetPortableOsVersionInformation
+         U getsockname@@GLIBC_2.0
+         U GetSpewOutputFunc
+         w __gmon_start__
+         U g_pMemAllocSteam
+         U g_VProfile
+         U g_VProfManager
+         U g_VProfProfilesRunningCount
+         U __gxx_personality_v0@@CXXABI_1.3
+000063f8 T _init
+00013a4d T InstallUniformRandomStream
+         U Is64BitOS
+         U isalnum@@GLIBC_2.0
+0001c3c5 T isbreakablewspace
+         U isspace@@GLIBC_2.0
+         U iswspace@@GLIBC_2.0
+         w _Jv_RegisterClasses
+00010063 T KeyValuesSystemSteam
+         U lchown@@GLIBC_2.0
+         U link@@GLIBC_2.0
+         U localeconv@@GLIBC_2.2
+         U log@@GLIBC_2.0
+         U longjmp@@GLIBC_2.0
+         U lseek64@@GLIBC_2.2
+         U __lxstat64@@GLIBC_2.2
+         U __lxstat@@GLIBC_2.0
+         U malloc@@GLIBC_2.0
+         U memcpy@@GLIBC_2.0
+         U memmove@@GLIBC_2.0
+         U memset@@GLIBC_2.0
+         U mkdir@@GLIBC_2.0
+         U mkfifo@@GLIBC_2.0
+         U mktemp@@GLIBC_2.0
+         U mmap64@@GLIBC_2.1
+         U mount@@GLIBC_2.0
+         U Msg
+         U munmap@@GLIBC_2.0
+         U open64@@GLIBC_2.2
+         U opendir@@GLIBC_2.0
+         U open@@GLIBC_2.0
+00012f69 T OSTypesAreCompatible
+         U Plat_GetCommandLine
+         U Plat_GetExecutablePath
+         U Plat_localtime
+         U Plat_OutputDebugString
+         U Plat_OutputDebugStringRaw
+         U Plat_VirtualAccessFlags
+         U pread64@@GLIBC_2.2
+         U printf@@GLIBC_2.0
+         w pthread_cancel@@GLIBC_2.0
+         U pthread_mutex_lock@@GLIBC_2.0
+         U pthread_mutex_unlock@@GLIBC_2.0
+         w pthread_once@@GLIBC_2.0
+         U pwrite64@@GLIBC_2.2
+00017987 T Q_AggressiveStripPrecedingAndTrailingWhitespace
+00017819 T Q_AggressiveStripPrecedingAndTrailingWhitespaceW
+0001affa T Q_AppendParamToURL
+00018dc6 T Q_AppendSlash
+00015a2e T Q_atof
+0001583e T Q_atoi
+00019f1d T Q_BasicHtmlEntityEncode
+00017ee3 T Q_binarytohex
+00019080 T Q_CbMakeAbsolutePath
+00018e29 T Q_ComposeFileName
+000184b2 T Q_CopyAndFixSlashes
+000173e2 T Q_CP437CharsToUTF8
+00018296 T Q_DefaultExtension
+0001b270 T Q_ExtractDomainFromURL
+00018812 T Q_ExtractFileExtension
+0001870a T Q_ExtractFilePath
+00017fe0 T Q_FileBase
+00018480 T Q_FixSlashes
+00019e2a T Q_FormatAndAppend
+00019e62 T Q_FormatAndAppendTail
+00019d29 T Q_FormatAndAppendV
+000187b4 T Q_GetFileExtension
+00017c37 T Q_hextobinary
+0001a180 T Q_HtmlEntityDecodeToUTF8
+00019037 T Q_IsAbsolutePath
+00017748 T Q_IsDeprecatedW
+000175c0 T Q_IsMeanSpaceW
+00015d90 T Q_isnumeric
+0001c6d9 T Q_isstrlower
+00017d5d T Q_isvalidhex
+0001e79a T Q_IsValidUChar32
+0001d0c5 T Q_JoinNumbers
+0001d7f5 T Q_JoinNumbersUint
+000192f0 T Q_MakeAbsolutePath
+0001c080 T Q_MatchWildcardDNSName
+0001c140 T Q_MatchWildcardString
+00015030 T Q_NormalizeUTF8
+00017520 T Q_NormalizeUTF8Old
+00016e0e T Q_pretifymem
+000170ac T Q_pretifynum
+0001b22f T Q_qsort_s
+00018860 T Q_RemoveDotSlashes
+00018ba0 T Q_ReplaceBadFilenameCharacters
+00018a30 T Q_ReplaceBadFilenameCharactersInPlace
+000183f5 T Q_SetExtension
+0001b416 T Q_SetURLParam
+0001664a T Q_snprintf
+         U qsort@@GLIBC_2.0
+0001e041 T Q_SplitNumbers
+0001df08 T Q_SplitNumbersUint
+0001c96f T Q_SplitString
+0001c7dc T Q_SplitString2
+000162ce T Q_strcat
+00019aa9 T Q_strcmp_prefix
+00019b80 T Q_stricmp_prefix
+0001a600 T Q_StripAndPreserveHTML
+0001a49d T Q_StripBBCode
+000181e0 T Q_StripExtension
+00018440 T Q_StripFilename
+00018530 T Q_StripLastDir
+000178c2 T Q_StripPrecedingAndTrailingWhitespace
+00017770 T Q_StripPrecedingAndTrailingWhitespaceW
+0001816c T Q_StripTrailingSlash
+00017a4c T Q_StripUnprintable
+00017b52 T Q_StripUnprintableW
+00019928 T Q_StrLeft
+00016b10 T Q_strnappend
+00016c80 T Q_strnappend_strlen
+0001699a T Q_strncat
+00016155 T Q_strnchr
+0001533f T Q_strncmp
+000161f4 T Q_strncpy
+00015475 T Q_strnicmp
+00015f79 T Q_strnistr
+000161b0 T Q_strnlen
+0001954e T Q_StrReplaceChar
+00019978 T Q_StrRight
+00019c60 T Q_strristr
+0001983e T Q_StrSlice
+00019590 T Q_StrSubst
+00019751 T Q_StrSubstInPlace
+00015cc9 T Q_strtoi64
+00015cf9 T Q_strtoui64
+000199ec T Q_StrTrim
+0001c06b T Q_tolower
+0001c25c T Q_toupper
+0001e896 T Q_UChar32ToUTF16
+0001e7f4 T Q_UChar32ToUTF16Len
+0001e805 T Q_UChar32ToUTF8
+0001e7cc T Q_UChar32ToUTF8Len
+000186e0 T Q_UnqualifiedFileName
+0001b343 T Q_URLContainsDomain
+0001e5a0 T Q_URLCracker
+0001b8b0 T Q_URLDecode
+0001b916 T Q_URLDecodeRaw
+0001b87d T Q_URLEncode
+0001b8e3 T Q_URLEncodeRaw
+0002097d T Q_UTF16CharsToUTF32
+00020620 T Q_UTF16CharsToUTF8
+0001ea61 T Q_UTF16ToUChar32
+0001f6db T Q_UTF16ToUTF32
+0001f390 T Q_UTF16ToUTF8
+00020fe0 T Q_UTF32CharsToUTF16
+00020cb0 T Q_UTF32CharsToUTF8
+0001fca0 T Q_UTF32ToUTF16
+0001f9a0 T Q_UTF32ToUTF8
+0001ffb0 T Q_UTF8CharsToUTF16
+0002030e T Q_UTF8CharsToUTF32
+0001e8d2 T Q_UTF8ToUChar32
+0001eda0 T Q_UTF8ToUTF16
+0001f0e0 T Q_UTF8ToUTF32
+00016752 T Q_vsnprintf
+0001685a T Q_vsnprintfRet
+000165bc T Q_vsnwprintf
+00016482 T Q_wcscat
+00016572 T Q_wcslower
+00016a95 T Q_wcsncat
+00016387 T Q_wcsncpy
+00015d29 T Q_wcstoi64
+00015d59 T Q_wcstoui64
+00016535 T Q_wcsupr
+00017da8 T Q_whextobinary
+000172bf T Q_Windows1252CharsToUTF8
+         U readdir64@@GLIBC_2.2
+         U read@@GLIBC_2.0
+         U readlink@@GLIBC_2.0
+         U realpath@@GLIBC_2.3
+         U rename@@GLIBC_2.0
+         U rmdir@@GLIBC_2.0
+         U scandir64@@GLIBC_2.2
+         U scandir@@GLIBC_2.0
+         U sched_yield@@GLIBC_2.0
+         U sendfile64@@GLIBC_2.3
+         U _setjmp@@GLIBC_2.0
+         U snprintf@@GLIBC_2.0
+         U _SpewMessageType
+         U sprintf@@GLIBC_2.0
+         U sqrtf@@GLIBC_2.0
+         U sscanf@@GLIBC_2.0
+         U __stack_chk_fail@@GLIBC_2.4
+         U statvfs64@@GLIBC_2.1
+         U statvfs@@GLIBC_2.1
+         U stderr@@GLIBC_2.0
+000083b0 T SteamRealPath
+         U strcasecmp@@GLIBC_2.0
+         U strcasestr@@GLIBC_2.1
+         U strcat@@GLIBC_2.0
+         U strchr@@GLIBC_2.0
+         U strcmp@@GLIBC_2.0
+         U strcpy@@GLIBC_2.0
+         U strdup@@GLIBC_2.0
+         U strerror@@GLIBC_2.0
+         U strftime@@GLIBC_2.0
+0001c3e5 T StringAfterPrefix
+0001c4ac T StringAfterPrefixCaseSensitive
+0001c55f T StringHasSuffix
+0001c644 T _strlwr
+         U strncasecmp@@GLIBC_2.0
+         U strncat@@GLIBC_2.0
+         U strncmp@@GLIBC_2.0
+         U strncpy@@GLIBC_2.0
+         U strpbrk@@GLIBC_2.0
+         U strrchr@@GLIBC_2.0
+         U strstr@@GLIBC_2.0
+         U strtod@@GLIBC_2.0
+         U strtol@@GLIBC_2.0
+         U strtoll@@GLIBC_2.0
+         U strtoul@@GLIBC_2.0
+         U strtoull@@GLIBC_2.0
+0001c604 T _strupr
+         U swprintf@@GLIBC_2.2
+         U swscanf@@GLIBC_2.2
+         U symlink@@GLIBC_2.0
+         U system@@GLIBC_2.0
+         U ThreadGetCurrentId
+         U ThreadGetCurrentProcessId
+         U ThreadGetCurrentRunningRef
+         U ThreadInMainThread
+         U ThreadInterlockedAssignIf
+         U ThreadInterlockedAssignIf64
+         U ThreadInterlockedDecrement
+         U ThreadInterlockedExchange
+         U ThreadInterlockedExchangeAdd
+         U ThreadInterlockedIncrement
+         U ThreadIsThreadRunning
+         U ThreadSleep
+         U time@@GLIBC_2.0
+         U tolower@@GLIBC_2.0
+         U toupper@@GLIBC_2.0
+         U towlower@@GLIBC_2.0
+         U towupper@@GLIBC_2.0
+         U uname@@GLIBC_2.0
+         U unlink@@GLIBC_2.0
+         U usleep@@GLIBC_2.0
+         U utime@@GLIBC_2.0
+         U utimes@@GLIBC_2.0
+         U vasprintf@@GLIBC_2.0
+00018657 T V_FixDoubleSlashes
+0001c684 T V_FixupPathName
+000197ea T V_GetCurrentDirectory
+00018ea0 T V_MakeRelativePath
+00019819 T V_SetCurrentDirectory
+         U vsnprintf@@GLIBC_2.0
+0000f0df T VStdLib_GetICVarFactory
+000155c0 T vstdlib_wcsicmp
+000156d2 T vstdlib_wcsnicmp
+         U vswprintf@@GLIBC_2.2
+000194f5 T V_TruncateAbsolutePathToDiskIdentity
+         U Warning
+         U wcscasecmp@@GLIBC_2.1
+         U wcscmp@@GLIBC_2.0
+         U wcslen@@GLIBC_2.0
+         U wcsncat@@GLIBC_2.0
+         U wcsncpy@@GLIBC_2.0
+         U wcstol@@GLIBC_2.0
+         U wcstoll@@GLIBC_2.1
+         U wcstoull@@GLIBC_2.1
+00013b31 T WeakRandomChar
+00013b53 T WeakRandomFillMemory
+00013a97 T WeakRandomFloat
+00013f98 T WeakRandomGaussianFloat
+00013ac9 T WeakRandomInt
+00013a6e T WeakRandomSeed
+00013afb T WeakRandomUint32
+         U write@@GLIBC_2.0
+         U __xmknod@@GLIBC_2.0
+         U __xstat64@@GLIBC_2.2
+         U __xstat@@GLIBC_2.0
+0001dcd8 T Q_SplitString(char const*, char const*, CUtlVector<CUtlString, CUtlMemory<CUtlString> >&, bool)
+0001da03 T Q_SplitString2(char const*, char const* const*, int, CUtlVector<CUtlString, CUtlMemory<CUtlString> >&, bool)
+0001ec1a T Q_UnicodeLength(char const*)
+0001ec63 T Q_UnicodeLength(unsigned short const*)
+0001ecb0 T Q_UnicodeLength(wchar_t const*)
+00021320 T Q_UnicodeRepair(char*, EStringConvertErrorPolicy)
+00021640 T Q_UnicodeRepair(unsigned short*, EStringConvertErrorPolicy)
+00021987 T Q_UnicodeRepair(wchar_t*, EStringConvertErrorPolicy)
+0001ecc7 T Q_UnicodeAdvance(char*, int)
+0001ed18 T Q_UnicodeAdvance(unsigned short*, int)
+0001ed70 T Q_UnicodeAdvance(wchar_t*, int)
+0001eb0e T Q_UnicodeValidate(char const*)
+0001eb77 T Q_UnicodeValidate(unsigned short const*)
+0001ebd1 T Q_UnicodeValidate(wchar_t const*)
+0001b949 T V_ConvertStringToUUID(char const*, EUUIDStringFlags, V_UUID*)
+0001bb47 T V_ConvertStringToUUID(wchar_t const*, EUUIDStringFlags, V_UUID*)
+0001bd45 T V_ConvertUUIDToString(V_UUID const*, EUUIDStringFlags, char*, int)
+0001bec8 T V_ConvertUUIDToString(V_UUID const*, EUUIDStringFlags, wchar_t*, int)
+00015de9 T Q_stristr(char const*, char const*)
+         U operator delete[](void*)@@GLIBCXX_3.4
+         U operator delete(void*)@@GLIBCXX_3.4
+         U CValidator::ClaimMemory(void*)
+         U CValidator::ClaimArrayMemory(void*)
+         U CValidator::ClaimMemory_Aligned(void*)
+         U CValidator::Pop()
+         U CValidator::Push(char const*, void*, char const*)
+         U CValidator::IsClaimed(void*)
+         U SteamVProf::CVProfNode::EnterScope(void*)
+         U SteamVProf::CVProfNode::GetSubNode(char const*, int, char const*, int)
+         U SteamVProf::CVProfNode::ExitScope()
+         U SteamVProf::CVProfile::~CVProfile()
+0000b2d0 T SteamStdLib::CommandLine()
+0000b422 T SteamStdLib::CCommandLineParam::CCommandLineParam(char const*, char const*)
+0000b422 T SteamStdLib::CCommandLineParam::CCommandLineParam(char const*, char const*)
+0000bcd6 T SteamStdLib::CCommandLineParam::~CCommandLineParam()
+0000bcd6 T SteamStdLib::CCommandLineParam::~CCommandLineParam()
+         U SteamThreadTools::CThreadMutex::CThreadMutex()
+         U SteamThreadTools::CThreadMutex::~CThreadMutex()
+         U SteamThreadTools::CThreadLocalBase::Set(void*)
+         U SteamThreadTools::CThreadLocalBase::CThreadLocalBase()
+         U SteamThreadTools::CThreadLocalBase::~CThreadLocalBase()
+         U SteamThreadTools::CThreadSpinRWLock::UnlockRead()
+         U SteamThreadTools::CThreadSpinRWLock::LockForRead()
+         U SteamThreadTools::CThreadSpinRWLock::UnlockWrite()
+         U SteamThreadTools::CThreadSpinRWLock::SpinLockForWrite(unsigned int)
+         U SteamThreadTools::CThread::GetThreadProc()
+         U SteamThreadTools::CThread::IsThreadRunning()
+         U SteamThreadTools::CThread::Init()
+         U SteamThreadTools::CThread::Join(unsigned int)
+         U SteamThreadTools::CThread::Start(unsigned int)
+         U SteamThreadTools::CThread::OnExit()
+         U SteamThreadTools::CThread::SetName(char const*)
+         U SteamThreadTools::CThread::CThread()
+         U SteamThreadTools::CThread::~CThread()
+000146aa T CStringNormalization::Initialize()
+00043418 B CStringNormalization::m_bInitialized
+00014d2a T CStringNormalization::ValidateStatics(CValidator&, char const*)
+00014de0 T CStringNormalization::Test_BValidateStructures()
+00014836 T CStringNormalization::Fold(wchar_t const*, wchar_t*, int)
+00014be0 T CStringNormalization::Normalize(bool, char const*, char*, int)
+00014878 T CStringNormalization::Normalize(bool, wchar_t const*, wchar_t*, int)
+00013a2a T CUniformRandomStream::RandomChar()
+00013de8 T CUniformRandomStream::RandomFloat(float, float)
+00013d4c T CUniformRandomStream::RandomFillMemory(void*, unsigned int)
+00013c86 T CUniformRandomStream::GenerateRandomNumber()
+00013a0e T CUniformRandomStream::SetSeed(int)
+00013d88 T CUniformRandomStream::RandomInt(int, int)
+00013b86 T CUniformRandomStream::CUniformRandomStream()
+00013b86 T CUniformRandomStream::CUniformRandomStream()
+00013e66 T CGaussianRandomStream::RandomFloat(float, float)
+00013e2e T CGaussianRandomStream::AttachToStream(IUniformRandomStream*)
+00013e3e T CGaussianRandomStream::CGaussianRandomStream(IUniformRandomStream*)
+00013e3e T CGaussianRandomStream::CGaussianRandomStream(IUniformRandomStream*)
+         U operator new[](unsigned int)@@GLIBCXX_3.4
+         U SteamThreadTools::CThreadLocalBase::Get() const
+         U SteamThreadTools::CThreadSpinLock::Lock(unsigned int) volatile
+         U operator new(unsigned int)@@GLIBCXX_3.4
+         U std::terminate()@@GLIBCXX_3.4
+00034b60 V typeinfo for CUniformRandomStream
+         U typeinfo for SteamThreadTools::CThread
+00027268 V typeinfo name for CUniformRandomStream
+00034b70 V vtable for CUniformRandomStream
+         U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+         U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3

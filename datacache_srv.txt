@@ -1,0 +1,2139 @@
+         U abort@@GLIBC_2.0
+0005d327 t add_fdes
+0007cf70 d adds.7496
+0005d602 t base_from_cb_data
+0005d05a t base_from_object
+0007cf78 A __bss_start
+         U chdir@@GLIBC_2.0
+0005d209 t classify_object_over_fdes
+00080200 b colorcorrection
+         U CommandLine_Tier0
+0007cf80 b completed.5793
+0004a430 T CreateInterface
+0007404c d __CTOR_END__
+00074000 d __CTOR_LIST__
+0007edd0 B cvar
+         U __cxa_atexit@@GLIBC_2.1.3
+         w __cxa_finalize@@GLIBC_2.1.3
+         U __cxa_guard_abort@@CXXABI_1.3
+         U __cxa_guard_acquire@@CXXABI_1.3
+         U __cxa_guard_release@@CXXABI_1.3
+         U __cxa_pure_virtual@@CXXABI_1.3
+0007e040 b datacachesize
+0005e265 t __deregister_frame
+0005e25c t __deregister_frame_info
+0005e186 t __deregister_frame_info_bases
+0007e0e0 b developer
+         U DevMsg
+         U dlclose@@GLIBC_2.0
+         U dlerror@@GLIBC_2.0
+         U dl_iterate_phdr@@GLIBC_2.2.4
+         U dlopen@@GLIBC_2.1
+         U dlsym@@GLIBC_2.0
+0005e410 t __do_global_ctors_aux
+00016290 t __do_global_dtors_aux
+000741a0 d __dso_handle
+00074054 d __DTOR_END__
+0007cf84 b dtor_idx.5795
+00074050 d __DTOR_LIST__
+00080430 b dwarf_reg_size_table
+0007405c a _DYNAMIC
+         U __dynamic_cast@@CXXABI_1.3
+0007cf78 A _edata
+00080540 A _end
+         U Error
+0005b49e t execute_cfa_program
+0005be01 t execute_stack_op
+0005d486 t fde_mixed_encoding_compare
+0005d409 t fde_single_encoding_compare
+0005cee6 t fde_unencoded_compare
+0005e438 T _fini
+0005cf0b t frame_downheap
+000162ff t frame_dummy
+00073384 r __FRAME_END__
+00080474 b frame_hdr_cache
+00080470 b frame_hdr_cache_head
+0005cf96 t frame_heapsort
+0005c9bd t __frame_state_for
+         U free@@GLIBC_2.0
+0007de00 b g_ActivityModifiersTable
+0007e350 b g_AsyncInfoMap
+0007e340 b g_AsyncInfoMapMutex
+0007e140 b g_DataCache
+0005d14b t get_cie_encoding
+         U getcwd@@GLIBC_2.0
+0005d1f8 t get_fde_encoding
+0007416c a _GLOBAL_OFFSET_TABLE_
+00016030 t _GLOBAL__sub_I_cvar
+000158e0 t _GLOBAL__sub_I_g_DataCache
+00016160 t _GLOBAL__sub_I_g_pFullFileSystem
+000161a0 t _GLOBAL__sub_I_g_pStudioRender
+00016050 t _GLOBAL__sub_I_s_StringCharConversion
+00016140 t _GLOBAL__sub_I__Z18GetModSubdirectoryPKcPci
+00016010 t _GLOBAL__sub_I__Z9_V_memsetPKciPvii
+000160e0 t _GLOBAL__sub_I__ZN10CUtlString11AllocMemoryEj
+00016100 t _GLOBAL__sub_I__ZN10CUtlSymbol14s_pSymbolTableE
+00015ab0 t _GLOBAL__sub_I__ZN12studiodata_t11s_AllocatorE
+00015f50 t _GLOBAL__sub_I__ZN14ConCommandBase18s_pConCommandBasesE
+00015ff0 t _GLOBAL__sub_I__ZN14CUtlMemoryPool12g_ReportFuncE
+00015270 t _GLOBAL__sub_I__ZN14StudioByteSwap20ActivateByteSwappingEb
+00015fd0 t _GLOBAL__sub_I__ZN16CDataManagerBaseC2Ej
+00015840 t _GLOBAL__sub_I__ZN19CModelLookupContextC2EiPK11studiohdr_t
+00015f30 t _GLOBAL__sub_I__ZN9CByteswap23SwapFieldToTargetEndianEPvS0_P17typedescription_t
+00015760 t _GLOBAL__sub_I__ZNK11studiohdr_t9pAnimdescEi
+         w __gmon_start__
+0007edc0 b g_pCVar
+00080340 b g_pDataCache
+00080300 b g_pDmeMakefileUtils
+00080280 b g_pFullFileSystem
+00080250 b g_pInputSystem
+00080260 b g_pMaterialSystem
+00080220 b g_pMaterialSystemDebugTextureInfo
+00080230 b g_pMaterialSystemHardwareConfig
+000803c0 b g_pMatSystemSurface
+00080330 b g_pMDLCache
+00080240 b g_pNetworkSystem
+000802f0 b g_pPhysicsCollision
+0007edb0 b g_pProcessUtils
+000801d0 b g_pQueuedLoader
+000802e0 b g_pSoundEmitterSystem
+000803e0 b g_pStudioRender
+0007eda0 b g_pUtlSortVectorQSortContext
+00080380 b g_pVGui
+000803b0 b g_pVGuiInput
+00080370 b g_pVGuiLocalize
+00080390 b g_pVGuiPanel
+00080360 b g_pVGuiSchemeManager
+000803a0 b g_pVGuiSurface
+00080350 b g_pVGuiSystem
+00080310 b g_pVideo
+000802d0 b g_pVTex
+         U g_Telemetry
+00080210 b g_VBAllocTracker
+         U g_VProfCurrentProfile
+         U __gxx_personality_v0@@CXXABI_1.3
+         U HushAsserts
+00016336 t __i686.get_pc_thunk.bx
+0005ce67 t __i686.get_pc_thunk.cx
+         U iconv_close@@GLIBC_2.1
+         U iconv@@GLIBC_2.1
+         U iconv_open@@GLIBC_2.1
+000151a0 T _init
+0005b41e t init_dwarf_reg_size_table
+         U isspace@@GLIBC_2.0
+         U isupper@@GLIBC_2.0
+         U iswspace@@GLIBC_2.0
+00074058 d __JCR_END__
+00074058 d __JCR_LIST__
+         w _Jv_RegisterClasses
+0005b3bc t .L17
+0005b386 t .L19
+0005b3a1 t .L20
+0005c2f9 t .L214
+0005c2fd t .L215
+0005c302 t .L216
+0005c306 t .L217
+0005c312 t .L218
+0005c317 t .L219
+0005c321 t .L220
+0005c325 t .L221
+0005c32b t .L222
+0005c331 t .L223
+0005c337 t .L224
+0005c349 t .L225
+0005c342 t .L226
+0005c357 t .L227
+0005c33b t .L228
+0005c350 t .L229
+0005b392 t .L23
+0005c35e t .L230
+0005b3a6 t .L24
+0005c3c4 t .L244
+0005b3ae t .L25
+0005b3b5 t .L26
+0005c513 t .L271
+0005c51d t .L272
+0005c549 t .L273
+0005c594 t .L274
+0005c5ad t .L275
+0005b8f0 t .L43
+0005d11f t .L45
+0005b8eb t .L46
+0005b554 t .L47
+0005d0e9 t .L47
+0005b581 t .L48
+0005d104 t .L48
+0005b59f t .L49
+0005b5bd t .L50
+0005b5da t .L51
+0005d0f5 t .L51
+0005b602 t .L52
+0005d109 t .L52
+0005b638 t .L53
+0005d111 t .L53
+0005b61d t .L54
+0005d118 t .L54
+0005b653 t .L55
+0005b67c t .L56
+0005b6b7 t .L57
+0005b6dd t .L58
+0005b714 t .L59
+0005b737 t .L60
+0005b74a t .L61
+0005b762 t .L62
+0005b77d t .L63
+0005b7aa t .L64
+0005b7e8 t .L65
+0005b808 t .L66
+0005b82a t .L67
+0005b85d t .L68
+0005b883 t .L69
+0005b8a6 t .L70
+0005b8b9 t .L71
+0005d503 t linear_search_fdes
+         U malloc@@GLIBC_2.0
+0008053c b marker.7234
+00080270 b materials
+         U mbstowcs@@GLIBC_2.0
+00080320 b mdlcache
+000801e0 b mdllib
+         U memalign@@GLIBC_2.0
+         U MemAllocOOMError
+         U memcpy@@GLIBC_2.0
+         U memmove@@GLIBC_2.0
+         U memset@@GLIBC_2.0
+         U Msg
+00080448 b object_mutex
+00080444 b once_regsizes.7669
+000801f0 b p4
+         U Plat_FloatTime
+         U Plat_IsInDebugSession
+         U Plat_localtime
+         U Plat_MSTime
+         U pow@@GLIBC_2.0
+         U printf@@GLIBC_2.0
+         w pthread_cancel@@GLIBC_2.0
+         U pthread_mutexattr_init@@GLIBC_2.0
+         U pthread_mutexattr_settype@@GLIBC_2.1
+         U pthread_mutex_destroy@@GLIBC_2.0
+         U pthread_mutex_init@@GLIBC_2.0
+         U pthread_mutex_lock@@GLIBC_2.0
+         U pthread_mutex_unlock@@GLIBC_2.0
+         w pthread_once@@GLIBC_2.0
+00059640 t qsort_s
+         U raise@@GLIBC_2.0
+0005b2fa t read_encoded_value
+0005d0a2 t read_encoded_value_with_base
+0005b2b0 t read_sleb128
+0005ce9c t read_sleb128
+0005b280 t read_uleb128
+0005ce6c t read_uleb128
+         U realloc@@GLIBC_2.0
+0005e082 t __register_frame
+0005e068 t __register_frame_info
+0005dfda t __register_frame_info_bases
+0005e140 t __register_frame_info_table
+0005e0b7 t __register_frame_info_table_bases
+0005e15a t __register_frame_table
+0005dadc t search_object
+00080464 b seen_objects
+000161d8 t set_fast_math
+0005d00a t size_of_encoded_value
+0007ee00 b s_NoEscConversion
+0007f720 b s_StringCharConversion
+         U strcasecmp@@GLIBC_2.0
+         U strchr@@GLIBC_2.0
+         U strcmp@@GLIBC_2.0
+         U strcpy@@GLIBC_2.0
+         U strdup@@GLIBC_2.0
+         U strftime@@GLIBC_2.0
+         U strlen@@GLIBC_2.0
+         U strncasecmp@@GLIBC_2.0
+         U strncat@@GLIBC_2.0
+         U strncpy@@GLIBC_2.0
+         U strstr@@GLIBC_2.0
+         U strtod@@GLIBC_2.0
+         U strtol@@GLIBC_2.0
+         U strtoul@@GLIBC_2.0
+000803d0 b studiorender
+00080468 b subs.7497
+00080534 b terminator.7340
+         U ThreadGetCurrentId
+         U ThreadInMainThread
+         U ThreadInterlockedAssignIf
+         U ThreadInterlockedAssignIf64
+         U ThreadInterlockedDecrement
+         U ThreadInterlockedExchange
+         U ThreadInterlockedExchangeAdd
+         U ThreadInterlockedIncrement
+         U ThreadSleep
+         U time@@GLIBC_2.0
+         U tolower@@GLIBC_2.0
+         U toupper@@GLIBC_2.0
+         U towlower@@GLIBC_2.0
+         U towupper@@GLIBC_2.0
+0005b17c t __udivdi3
+00080460 b unseen_objects
+0005cde7 t _Unwind_Backtrace
+0005ca7e t _Unwind_DebugHook
+0005cdcb t _Unwind_DeleteException
+0005c975 t _Unwind_FindEnclosingFunction
+0005e296 t _Unwind_Find_FDE
+0005cbb8 t _Unwind_ForcedUnwind
+0005c777 t _Unwind_ForcedUnwind_Phase2
+0005c8cf t _Unwind_GetCFA
+0005c9a7 t _Unwind_GetDataRelBase
+0005bcc8 t _Unwind_GetGR
+0005c930 t _Unwind_GetIP
+0005c93b t _Unwind_GetIPInfo
+0005c95f t _Unwind_GetLanguageSpecificData
+0005c96a t _Unwind_GetRegionStart
+0005c9b2 t _Unwind_GetTextRelBase
+0005d64a t _Unwind_IteratePhdrCallback
+0005ca83 t _Unwind_RaiseException
+0005c834 t _Unwind_RaiseException_Phase2
+0005cc63 t _Unwind_Resume
+0005cd0a t _Unwind_Resume_or_Rethrow
+0005c8da t _Unwind_SetGR
+0005c951 t _Unwind_SetIP
+0005b3e8 t _Unwind_SetSpColumn
+0005b91c t uw_frame_state_for
+0005c676 t uw_init_context_1
+0005bd14 t uw_install_context_1
+0005c73d t uw_update_context
+0005c3d8 t uw_update_context_1
+         U vsnprintf@@GLIBC_2.0
+         U vswprintf@@GLIBC_2.2
+         U Warning
+         U wcslen@@GLIBC_2.0
+         U wcsncat@@GLIBC_2.0
+         U wcsncpy@@GLIBC_2.0
+         U wcstombs@@GLIBC_2.0
+         U DevWarning(char const*, ...)
+00049ce0 t HashString(char const*)
+0004cdb0 t V_FileBase(char const*, char*, int)
+0004adc0 t _V_memmove(char const*, int, void*, void const*, int)
+0004be30 t V_snprintf(char*, int, char const*, ...)
+0004b020 t V_strlower(char*)
+0004b1c0 t V_strnicmp(char const*, char const*, int)
+0004bb60 t V_strnistr(char const*, char const*, int)
+0004ae50 t _V_strrchr(char const*, int, char const*, char)
+0004de80 t V_StrRight(char const*, int, char*, int)
+0004dd10 t V_StrSlice(char const*, int, int, char*, int)
+0004daa0 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+0004df00 t V_strtowcs(char const*, int, wchar_t*, int)
+0004df40 t V_wcstostr(wchar_t const*, int, char*, int)
+0004dc50 t AllocString(char const*, int)
+         U ConColorMsg(Color const&, char const*, ...)
+0001a290 t datamap_t* DataMapInit<phyheader_s>(phyheader_s*)
+00016dc0 t datamap_t* DataMapInit<studiohdr_t>(studiohdr_t*)
+00016e90 t datamap_t* DataMapInit<studiohdr2_t>(studiohdr2_t*)
+00017e00 t datamap_t* DataMapInit<mstudioanim_t>(mstudioanim_t*)
+000179f0 t datamap_t* DataMapInit<mstudiobbox_t>(mstudiobbox_t*)
+00016f60 t datamap_t* DataMapInit<mstudiobone_t>(mstudiobone_t*)
+00019250 t datamap_t* DataMapInit<mstudioflex_t>(mstudioflex_t*)
+00018fe0 t datamap_t* DataMapInit<mstudiomesh_t>(mstudiomesh_t*)
+000183b0 t datamap_t* DataMapInit<mstudioevent_t>(mstudioevent_t*)
+000186f0 t datamap_t* DataMapInit<mstudiomodel_t>(mstudiomodel_t*)
+00018e40 t datamap_t* DataMapInit<mstudiomouth_t>(mstudiomouth_t*)
+00018bd0 t datamap_t* DataMapInit<mstudioflexop_t>(mstudioflexop_t*)
+00018d70 t datamap_t* DataMapInit<mstudioiklink_t>(mstudioiklink_t*)
+00018550 t datamap_t* DataMapInit<mstudioiklock_t>(mstudioiklock_t*)
+00018070 t datamap_t* DataMapInit<mstudioikrule_t>(mstudioikrule_t*)
+000198d0 t datamap_t* DataMapInit<mstudiovertex_t>(mstudiovertex_t*)
+00019180 t datamap_t* DataMapInit<mstudioeyeball_t>(mstudioeyeball_t*)
+00018ca0 t datamap_t* DataMapInit<mstudioikchain_t>(mstudioikchain_t*)
+00017ed0 t datamap_t* DataMapInit<mstudioikerror_t>(mstudioikerror_t*)
+000182e0 t datamap_t* DataMapInit<mstudioseqdesc_t>(mstudioseqdesc_t*)
+00019590 t datamap_t* DataMapInit<mstudiotexture_t>(mstudiotexture_t*)
+00017d30 t datamap_t* DataMapInit<mstudioanimdesc_t>(mstudioanimdesc_t*)
+00018890 t datamap_t* DataMapInit<mstudioflexdesc_t>(mstudioflexdesc_t*)
+00018b00 t datamap_t* DataMapInit<mstudioflexrule_t>(mstudioflexrule_t*)
+00018140 t datamap_t* DataMapInit<mstudiomovement_t>(mstudiomovement_t*)
+00019320 t datamap_t* DataMapInit<mstudiovertanim_t>(mstudiovertanim_t*)
+00019730 t datamap_t* DataMapInit<vertexFileFixup_t>(vertexFileFixup_t*)
+00017510 t datamap_t* DataMapInit<mstudioaimatbone_t>(mstudioaimatbone_t*)
+000194c0 t datamap_t* DataMapInit<mstudioanimblock_t>(mstudioanimblock_t*)
+00018480 t datamap_t* DataMapInit<mstudioautolayer_t>(mstudioautolayer_t*)
+00018620 t datamap_t* DataMapInit<mstudiobodyparts_t>(mstudiobodyparts_t*)
+00017850 t datamap_t* DataMapInit<mstudiohitboxset_t>(mstudiohitboxset_t*)
+00019660 t datamap_t* DataMapInit<vertexFileHeader_t>(vertexFileHeader_t*)
+00017780 t datamap_t* DataMapInit<mstudioattachment_t>(mstudioattachment_t*)
+00019800 t datamap_t* DataMapInit<mstudioboneweight_t>(mstudioboneweight_t*)
+00017440 t datamap_t* DataMapInit<mstudiojigglebone_t>(mstudiojigglebone_t*)
+00017030 t datamap_t* DataMapInit<mstudiolinearbone_t>(mstudiolinearbone_t*)
+000193f0 t datamap_t* DataMapInit<mstudiomodelgroup_t>(mstudiomodelgroup_t*)
+00017c60 t datamap_t* DataMapInit<mstudioanimsections_t>(mstudioanimsections_t*)
+00017ac0 t datamap_t* DataMapInit<mstudioanim_valueptr_t>(mstudioanim_valueptr_t*)
+00018f10 t datamap_t* DataMapInit<mstudioposeparamdesc_t>(mstudioposeparamdesc_t*)
+000172a0 t datamap_t* DataMapInit<mstudioaxisinterpbone_t>(mstudioaxisinterpbone_t*)
+000176b0 t datamap_t* DataMapInit<mstudiobonecontroller_t>(mstudiobonecontroller_t*)
+000171d0 t datamap_t* DataMapInit<mstudioboneflexdriver_t>(mstudioboneflexdriver_t*)
+00018960 t datamap_t* DataMapInit<mstudioflexcontroller_t>(mstudioflexcontroller_t*)
+00017b90 t datamap_t* DataMapInit<mstudiolocalhierarchy_t>(mstudiolocalhierarchy_t*)
+00017370 t datamap_t* DataMapInit<mstudioquatinterpbone_t>(mstudioquatinterpbone_t*)
+000175e0 t datamap_t* DataMapInit<mstudioquatinterpinfo_t>(mstudioquatinterpinfo_t*)
+000190b0 t datamap_t* DataMapInit<mstudio_meshvertexdata_t>(mstudio_meshvertexdata_t*)
+00018210 t datamap_t* DataMapInit<mstudioactivitymodifier_t>(mstudioactivitymodifier_t*)
+00018a30 t datamap_t* DataMapInit<mstudioflexcontrollerui_t>(mstudioflexcontrollerui_t*)
+000187c0 t datamap_t* DataMapInit<mstudio_modelvertexdata_t>(mstudio_modelvertexdata_t*)
+00017920 t datamap_t* DataMapInit<mstudiosrcbonetransform_t>(mstudiosrcbonetransform_t*)
+00017fa0 t datamap_t* DataMapInit<mstudiocompressedikerror_t>(mstudiocompressedikerror_t*)
+00017100 t datamap_t* DataMapInit<mstudioboneflexdrivercontrol_t>(mstudioboneflexdrivercontrol_t*)
+0004a140 t MurmurHash2(void const*, int, unsigned int)
+0004e320 t Q_URLDecode(char*, int, char const*, int)
+0004e2f0 t Q_URLEncode(char*, int, char const*, int)
+0004bd70 t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
+0004be90 t V_vsnprintf(char*, int, char const*, char*)
+0004af70 t _V_wcslower(char const*, int, wchar_t*)
+0004a270 t MurmurHash64(void const*, int, unsigned int)
+0004d130 t V_FixSlashes(char*, char)
+0004c060 t V_pretifymem(float, int, bool)
+0004c270 t V_pretifynum(long long)
+0004bdd0 t V_vsnwprintf(wchar_t*, int, wchar_t const*, char*)
+0005a600 t GetSearchPath(CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&, char const*)
+0004e070 t iHexCharToInt(char)
+0004cd90 t PATHSEPARATOR(char)
+000572b0 t Q_UTF16ToUTF8(unsigned short const*, char*, int, EStringConvertErrorPolicy)
+00057890 t Q_UTF32ToUTF8(wchar_t const*, char*, int, EStringConvertErrorPolicy)
+00056c90 t Q_UTF8ToUTF16(char const*, unsigned short*, int, EStringConvertErrorPolicy)
+00056ff0 t Q_UTF8ToUTF32(char const*, wchar_t*, int, EStringConvertErrorPolicy)
+0004d610 t V_AppendSlash(char*, int)
+0004cd10 t V_binarytohex(unsigned char const*, int, char*, int)
+0004d480 t V_GetFileName(char const*)
+0004cc60 t V_hextobinary(char const*, int, unsigned char*, int)
+0004e6c0 t V_SplitString(char const*, char const*, CUtlVector<char*, CUtlMemory<char*, int> >&)
+0004cac0 t _V_UCS2ToUTF8(unsigned short const*, char*, int)
+0004cb80 t _V_UTF8ToUCS2(char const*, int, unsigned short*, int)
+0005a730 t AddFilesToList(CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&, char const*, char const*, char const*)
+0004e050 t cIntToHexDigit(int)
+0004c470 t Q_IsMeanSpaceW(wchar_t)
+0004e380 t Q_URLDecodeRaw(char*, int, char const*, int)
+0004e350 t Q_URLEncodeRaw(char*, int, char const*, int)
+000575d0 t Q_UTF16ToUTF32(unsigned short const*, wchar_t*, int, EStringConvertErrorPolicy)
+00057b70 t Q_UTF32ToUTF16(wchar_t const*, unsigned short*, int, EStringConvertErrorPolicy)
+00057e90 t Q_UTF32ToUTF32(wchar_t const*, wchar_t*, int, EStringConvertErrorPolicy)
+0002a0d0 t StringLessThan(char const* const&, char const* const&)
+0004a7a0 t Sys_GetFactory(CSysModule*)
+0004a7e0 t Sys_GetFactory(char const*)
+0004a5b0 t Sys_LoadModule(char const*, Sys_Flags)
+0005a310 t UpdateOrCreate(char const*, char*, int, char const*, bool (*)(char const*, char const*, char const*, void*), bool, void*)
+0004d070 t V_SetExtension(char*, char const*, int)
+0004e590 t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
+0004d1f0 t V_StripLastDir(char*, int)
+0004bef0 t V_vsnprintfRet(char*, int, char const*, char*, bool*)
+00046910 t ConVar_Register(int, IConCommandBaseAccessor*)
+0002ced0 t DataCacheSize_f(IConVar*, char const*, float)
+0004a440 t GetModuleHandle(char const*)
+00056600 t Q_UChar32ToUTF8(wchar_t, char*)
+00056b10 t Q_UnicodeLength(char const*)
+00056b60 t Q_UnicodeLength(unsigned short const*)
+00056bb0 t Q_UnicodeLength(wchar_t const*)
+00059180 t Q_UnicodeRepair(char*, EStringConvertErrorPolicy)
+00059360 t Q_UnicodeRepair(unsigned short*, EStringConvertErrorPolicy)
+00059560 t Q_UnicodeRepair(wchar_t*, EStringConvertErrorPolicy)
+00056700 t Q_UTF8ToUChar32(char const*, wchar_t&, bool&)
+0005a250 t RestoreFilename(char const*, char*, int)
+0004a4b0 t Sys_LoadLibrary(char const*, Sys_Flags)
+0004da60 t V_FixupPathName(char*, unsigned int, char const*)
+0004d0e0 t V_StripFilename(char*)
+0005a360 t GenerateFullPath(char const*, char const*, char*, int)
+00056570 t Q_IsValidUChar32(wchar_t)
+000566b0 t Q_UChar32ToUTF16(wchar_t, unsigned short*)
+00056bd0 t Q_UnicodeAdvance(char*, int)
+00056c20 t Q_UnicodeAdvance(unsigned short*, int)
+00056c70 t Q_UnicodeAdvance(wchar_t*, int)
+000568c0 t Q_UTF16ToUChar32(unsigned short const*, wchar_t&, bool&)
+0004a780 t Sys_UnloadModule(CSysModule*)
+0004da30 t V_IsAbsolutePath(char const*)
+0004cf40 t V_StripExtension(char const*, char*, int)
+0004c980 t _V_UCS2ToUnicode(unsigned short const*, wchar_t*, int)
+0004ca30 t _V_UnicodeToUCS2(wchar_t const*, int, char*, int)
+00059580 t CharacterSetBuild(characterset_t*, char const*)
+000476a0 t ConVar_PrintFlags(ConCommandBase const*)
+000469c0 t ConVar_Unregister()
+0003ec40 t GetAsyncInfoIndex(unsigned short, MDLCacheDataType_t, int)
+000569b0 t Q_UnicodeValidate(char const*)
+00056a20 t Q_UnicodeValidate(unsigned short const*)
+00056a80 t Q_UnicodeValidate(wchar_t const*)
+00043330 t SetAsyncInfoIndex(unsigned short, MDLCacheDataType_t, int, int)
+0004b310 t StringAfterPrefix(char const*, char const*)
+0004a810 t Sys_LoadInterface(char const*, char const*, CSysModule**, void**)
+0004d670 t V_ComposeFileName(char const*, char const*, char*, int)
+0004d340 t V_ExtractFilePath(char const*, char*, int)
+00059fe0 t ComputeModFilename(char const*, char*, unsigned int)
+0005a1f0 t CreateX360Filename(char const*, char*, int)
+00059ef0 t GetModSubdirectory(char const*, char*, int)
+00049d40 t HashStringCaseless(char const*)
+000565b0 t Q_UChar32ToUTF8Len(wchar_t)
+00058520 t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
+00058b80 t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
+00057eb0 t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
+00058210 t Q_UTF8CharsToUTF32(char const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+0004a7d0 t Sys_GetFactoryThis()
+0004cff0 t V_DefaultExtension(char*, char const*, int)
+0004d170 t V_FixDoubleSlashes(char*)
+0004d3e0 t V_GetFileExtension(char const*)
+0004d710 t V_MakeAbsolutePath(char*, int, char const*, char const*)
+0004d880 t V_MakeRelativePath(char const*, char const*, char*, int)
+0004d490 t V_RemoveDotSlashes(char*, char, bool)
+000565e0 t Q_UChar32ToUTF16Len(wchar_t)
+0004e1a0 t Q_URLDecodeInternal(char*, int, char const*, int, bool)
+0004e0a0 t Q_URLEncodeInternal(char*, int, char const*, int, bool)
+00058860 t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+00058e70 t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
+0004a1f0 t MurmurHash2LowerCase(char const*, unsigned int)
+0004cf00 t V_StripTrailingSlash(char*)
+0004e830 t ConnectTier1Libraries(void* (**)(char const*, int*), int)
+0005ab20 t ConnectTier2Libraries(void* (**)(char const*, int*), int)
+0005adc0 t ConnectTier3Libraries(void* (**)(char const*, int*), int)
+00046150 t DefaultCompletionFunc(char const*, char (*) [64])
+0004a4a0 t Sys_IsDebuggerPresent()
+0004dcc0 t V_GetCurrentDirectory(char*, int)
+0004dcf0 t V_SetCurrentDirectory(char const*)
+0004d2e0 t V_UnqualifiedFileName(char const*)
+0004e510 t BGetLocalFormattedDate(long, char*, int)
+0004e550 t BGetLocalFormattedTime(long, char*, int)
+0002a100 t CaselessStringLessThan(char const* const&, char const* const&)
+0004e9e0 t GetNoEscCharConversion()
+0004d430 t V_ExtractFileExtension(char const*, char*, int)
+0004b9c0 t V_normalizeFloatString(char*)
+000478d0 t ConVar_PrintDescription(ConCommandBase const*)
+0004a390 t CreateInterfaceInternal(char const*, int*)
+0004e8d0 t DisconnectTier1Libraries()
+0005ad40 t DisconnectTier2Libraries()
+0005b0c0 t DisconnectTier3Libraries()
+0004e9d0 t GetCStringCharConversion()
+0005a0c0 t ComputeModContentFilename(char const*, char*, unsigned int)
+0005a1a0 t GetModContentSubdirectory(char const*, char*, int)
+0004c5c0 t Q_RemoveAllEvilCharacters(char*)
+0004a770 t Sys_RunningWithDebugModules()
+00037730 t ComputeMaxRealBoneInfluences(vertexFileHeader_t*, int)
+0004e3c0 t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
+00049da0 t HashStringCaselessConventional(char const*)
+0004b360 t StringAfterPrefixCaseSensitive(char const*, char const*)
+0004df70 t V_AddBackSlashesToSpecialChars(char const*)
+00029ff0 t CaselessStringLessThanIgnoreSlashes(char const* const&, char const* const&)
+0003e7b0 t Studio_ConvertStudioHdrToNewVersion(studiohdr_t*)
+0004c800 t Q_StripPrecedingAndTrailingWhitespace(char*)
+0004c6b0 t Q_StripPrecedingAndTrailingWhitespaceW(wchar_t*)
+0004c8e0 t Q_AggressiveStripPrecedingAndTrailingWhitespace(char*)
+0004c770 t Q_AggressiveStripPrecedingAndTrailingWhitespaceW(wchar_t*)
+00049e40 t Hash4(void const*)
+00049e90 t Hash8(void const*)
+         U ConMsg(char const*, ...)
+         U DevMsg(char const*, ...)
+00049f20 t Hash12(void const*)
+00049fe0 t Hash16(void const*)
+0004b770 t V_atof(char const*)
+0004b750 t V_atoi(char const*)
+00049df0 t HashInt(int)
+0004b390 t V_atoi64(char const*)
+00023cd0 t V_memcpy(void*, void const*, int)
+0004cc20 t V_nibble(char)
+0004afb0 t V_strupr(char*)
+0004a0d0 t HashBlock(void const*, unsigned int)
+0004b590 t V_atoui64(char const*)
+0004ade0 t _V_memcmp(char const*, int, void const*, void const*, int)
+0004ada0 t _V_memcpy(char const*, int, void*, void const*, int)
+00023ce0 t V_memmove(void*, void const*, int)
+0004ad80 t _V_memset(char const*, int, void*, int, int)
+0004e3b0 t V_qsort_s(void*, unsigned int, unsigned int, int (*)(void*, void const*, void const*), void*)
+0004aea0 t _V_strcmp(char const*, int, char const*, char const*)
+0004ae20 t _V_strcpy(char const*, int, char*, char const*)
+0004b0f0 t V_stricmp(char const*, char const*)
+0004bb50 t V_stristr(char*, char const*)
+0004ba50 t V_stristr(char const*, char const*)
+0004de30 t V_StrLeft(char const*, int, char*, int)
+0004ae10 t _V_strlen(char const*, int, char const*)
+0004bf60 t V_strncat(char*, char const*, unsigned int, int)
+0004bca0 t V_strnchr(char const*, char, int)
+0004b2b0 t V_strncmp(char const*, char const*, int)
+0004bcf0 t V_strncpy(char*, char const*, int)
+0004b090 t V_strnlwr(char*, unsigned int)
+0004af10 t _V_strstr(char const*, int, char const*, char const*)
+0004aec0 t _V_wcscmp(char const*, int, wchar_t const*, wchar_t const*)
+0004ae40 t _V_wcslen(char const*, int, wchar_t const*)
+0004bfe0 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
+0004bd30 t V_wcsncpy(wchar_t*, wchar_t const*, int)
+0004af30 t _V_wcsupr(char const*, int, wchar_t*)
+         U operator delete[](void*)@@GLIBCXX_3.4
+         U operator delete(void*)@@GLIBCXX_3.4
+0007dda0 b guard variable for datamap_t* DataMapInit<phyheader_s>(phyheader_s*)::nameHolder
+0007d170 b guard variable for datamap_t* DataMapInit<studiohdr_t>(studiohdr_t*)::nameHolder
+0007d1a0 b guard variable for datamap_t* DataMapInit<studiohdr2_t>(studiohdr2_t*)::nameHolder
+0007d530 b guard variable for datamap_t* DataMapInit<mstudioanim_t>(mstudioanim_t*)::nameHolder
+0007d440 b guard variable for datamap_t* DataMapInit<mstudiobbox_t>(mstudiobbox_t*)::nameHolder
+0007d1d0 b guard variable for datamap_t* DataMapInit<mstudiobone_t>(mstudiobone_t*)::nameHolder
+0007d9e0 b guard variable for datamap_t* DataMapInit<mstudioflex_t>(mstudioflex_t*)::nameHolder
+0007d950 b guard variable for datamap_t* DataMapInit<mstudiomesh_t>(mstudiomesh_t*)::nameHolder
+0007d680 b guard variable for datamap_t* DataMapInit<mstudioevent_t>(mstudioevent_t*)::nameHolder
+0007d740 b guard variable for datamap_t* DataMapInit<mstudiomodel_t>(mstudiomodel_t*)::nameHolder
+0007d8f0 b guard variable for datamap_t* DataMapInit<mstudiomouth_t>(mstudiomouth_t*)::nameHolder
+0007d860 b guard variable for datamap_t* DataMapInit<mstudioflexop_t>(mstudioflexop_t*)::nameHolder
+0007d8c0 b guard variable for datamap_t* DataMapInit<mstudioiklink_t>(mstudioiklink_t*)::nameHolder
+0007d6e0 b guard variable for datamap_t* DataMapInit<mstudioiklock_t>(mstudioiklock_t*)::nameHolder
+0007d5c0 b guard variable for datamap_t* DataMapInit<mstudioikrule_t>(mstudioikrule_t*)::nameHolder
+0007db60 b guard variable for datamap_t* DataMapInit<mstudiovertex_t>(mstudiovertex_t*)::nameHolder
+0007d9b0 b guard variable for datamap_t* DataMapInit<mstudioeyeball_t>(mstudioeyeball_t*)::nameHolder
+0007d890 b guard variable for datamap_t* DataMapInit<mstudioikchain_t>(mstudioikchain_t*)::nameHolder
+0007d560 b guard variable for datamap_t* DataMapInit<mstudioikerror_t>(mstudioikerror_t*)::nameHolder
+0007d650 b guard variable for datamap_t* DataMapInit<mstudioseqdesc_t>(mstudioseqdesc_t*)::nameHolder
+0007daa0 b guard variable for datamap_t* DataMapInit<mstudiotexture_t>(mstudiotexture_t*)::nameHolder
+0007d500 b guard variable for datamap_t* DataMapInit<mstudioanimdesc_t>(mstudioanimdesc_t*)::nameHolder
+0007d7a0 b guard variable for datamap_t* DataMapInit<mstudioflexdesc_t>(mstudioflexdesc_t*)::nameHolder
+0007d830 b guard variable for datamap_t* DataMapInit<mstudioflexrule_t>(mstudioflexrule_t*)::nameHolder
+0007d5f0 b guard variable for datamap_t* DataMapInit<mstudiomovement_t>(mstudiomovement_t*)::nameHolder
+0007da10 b guard variable for datamap_t* DataMapInit<mstudiovertanim_t>(mstudiovertanim_t*)::nameHolder
+0007db00 b guard variable for datamap_t* DataMapInit<vertexFileFixup_t>(vertexFileFixup_t*)::nameHolder
+0007d320 b guard variable for datamap_t* DataMapInit<mstudioaimatbone_t>(mstudioaimatbone_t*)::nameHolder
+0007da70 b guard variable for datamap_t* DataMapInit<mstudioanimblock_t>(mstudioanimblock_t*)::nameHolder
+0007d6b0 b guard variable for datamap_t* DataMapInit<mstudioautolayer_t>(mstudioautolayer_t*)::nameHolder
+0007d710 b guard variable for datamap_t* DataMapInit<mstudiobodyparts_t>(mstudiobodyparts_t*)::nameHolder
+0007d3e0 b guard variable for datamap_t* DataMapInit<mstudiohitboxset_t>(mstudiohitboxset_t*)::nameHolder
+0007dad0 b guard variable for datamap_t* DataMapInit<vertexFileHeader_t>(vertexFileHeader_t*)::nameHolder
+0007d3b0 b guard variable for datamap_t* DataMapInit<mstudioattachment_t>(mstudioattachment_t*)::nameHolder
+0007db30 b guard variable for datamap_t* DataMapInit<mstudioboneweight_t>(mstudioboneweight_t*)::nameHolder
+0007d2f0 b guard variable for datamap_t* DataMapInit<mstudiojigglebone_t>(mstudiojigglebone_t*)::nameHolder
+0007d200 b guard variable for datamap_t* DataMapInit<mstudiolinearbone_t>(mstudiolinearbone_t*)::nameHolder
+0007da40 b guard variable for datamap_t* DataMapInit<mstudiomodelgroup_t>(mstudiomodelgroup_t*)::nameHolder
+0007d4d0 b guard variable for datamap_t* DataMapInit<mstudioanimsections_t>(mstudioanimsections_t*)::nameHolder
+0007d470 b guard variable for datamap_t* DataMapInit<mstudioanim_valueptr_t>(mstudioanim_valueptr_t*)::nameHolder
+0007d920 b guard variable for datamap_t* DataMapInit<mstudioposeparamdesc_t>(mstudioposeparamdesc_t*)::nameHolder
+0007d290 b guard variable for datamap_t* DataMapInit<mstudioaxisinterpbone_t>(mstudioaxisinterpbone_t*)::nameHolder
+0007d380 b guard variable for datamap_t* DataMapInit<mstudiobonecontroller_t>(mstudiobonecontroller_t*)::nameHolder
+0007d260 b guard variable for datamap_t* DataMapInit<mstudioboneflexdriver_t>(mstudioboneflexdriver_t*)::nameHolder
+0007d7d0 b guard variable for datamap_t* DataMapInit<mstudioflexcontroller_t>(mstudioflexcontroller_t*)::nameHolder
+0007d4a0 b guard variable for datamap_t* DataMapInit<mstudiolocalhierarchy_t>(mstudiolocalhierarchy_t*)::nameHolder
+0007d2c0 b guard variable for datamap_t* DataMapInit<mstudioquatinterpbone_t>(mstudioquatinterpbone_t*)::nameHolder
+0007d350 b guard variable for datamap_t* DataMapInit<mstudioquatinterpinfo_t>(mstudioquatinterpinfo_t*)::nameHolder
+0007d980 b guard variable for datamap_t* DataMapInit<mstudio_meshvertexdata_t>(mstudio_meshvertexdata_t*)::nameHolder
+0007d620 b guard variable for datamap_t* DataMapInit<mstudioactivitymodifier_t>(mstudioactivitymodifier_t*)::nameHolder
+0007d800 b guard variable for datamap_t* DataMapInit<mstudioflexcontrollerui_t>(mstudioflexcontrollerui_t*)::nameHolder
+0007d770 b guard variable for datamap_t* DataMapInit<mstudio_modelvertexdata_t>(mstudio_modelvertexdata_t*)::nameHolder
+0007d410 b guard variable for datamap_t* DataMapInit<mstudiosrcbonetransform_t>(mstudiosrcbonetransform_t*)::nameHolder
+0007d590 b guard variable for datamap_t* DataMapInit<mstudiocompressedikerror_t>(mstudiocompressedikerror_t*)::nameHolder
+0007d230 b guard variable for datamap_t* DataMapInit<mstudioboneflexdrivercontrol_t>(mstudioboneflexdrivercontrol_t*)::nameHolder
+0007deb0 b guard variable for CStudioHdr::pSeqdesc(int)::s_nil_seq
+00080150 b guard variable for CUtlString::GetEmptyString()::s_emptyString
+0007dd70 b guard variable for datamap_t* OptimizedModel::DataMapInit<OptimizedModel::FileHeader_t>(OptimizedModel::FileHeader_t*)::nameHolder
+0007dc50 b guard variable for datamap_t* OptimizedModel::DataMapInit<OptimizedModel::MeshHeader_t>(OptimizedModel::MeshHeader_t*)::nameHolder
+0007dcb0 b guard variable for datamap_t* OptimizedModel::DataMapInit<OptimizedModel::ModelHeader_t>(OptimizedModel::ModelHeader_t*)::nameHolder
+0007dbf0 b guard variable for datamap_t* OptimizedModel::DataMapInit<OptimizedModel::StripHeader_t>(OptimizedModel::StripHeader_t*)::nameHolder
+0007dce0 b guard variable for datamap_t* OptimizedModel::DataMapInit<OptimizedModel::BodyPartHeader_t>(OptimizedModel::BodyPartHeader_t*)::nameHolder
+0007dc80 b guard variable for datamap_t* OptimizedModel::DataMapInit<OptimizedModel::ModelLODHeader_t>(OptimizedModel::ModelLODHeader_t*)::nameHolder
+0007dc20 b guard variable for datamap_t* OptimizedModel::DataMapInit<OptimizedModel::StripGroupHeader_t>(OptimizedModel::StripGroupHeader_t*)::nameHolder
+0007db90 b guard variable for datamap_t* OptimizedModel::DataMapInit<OptimizedModel::BoneStateChangeHeader_t>(OptimizedModel::BoneStateChangeHeader_t*)::nameHolder
+0007dd10 b guard variable for datamap_t* OptimizedModel::DataMapInit<OptimizedModel::MaterialReplacementHeader_t>(OptimizedModel::MaterialReplacementHeader_t*)::nameHolder
+0007dd40 b guard variable for datamap_t* OptimizedModel::DataMapInit<OptimizedModel::MaterialReplacementListHeader_t>(OptimizedModel::MaterialReplacementListHeader_t*)::nameHolder
+0007dbc0 b guard variable for datamap_t* OptimizedModel::DataMapInit<OptimizedModel::Vertex_t>(OptimizedModel::Vertex_t*)::nameHolder
+0007d110 b guard variable for datamap_t* StudioByteSwap::DataMapInit<StudioByteSwap::legacysurfaceheader_t>(StudioByteSwap::legacysurfaceheader_t*)::nameHolder
+0007d0e0 b guard variable for datamap_t* StudioByteSwap::DataMapInit<StudioByteSwap::swapcompactsurfaceheader_t>(StudioByteSwap::swapcompactsurfaceheader_t*)::nameHolder
+0007e850 b guard variable for CMDLCache::ProcessDataIntoCache(unsigned short, MDLCacheDataType_t, int, void*, int, bool)::bCompressedVVDs
+000801a0 b guard variable for CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+0007e900 b guard variable for CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+0007e8f0 b guard variable for CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+0007e020 b guard variable for CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::Links(short) const::s_Sentinel
+0007e310 b guard variable for CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::Links(int) const::s_Sentinel
+0007e3c0 b g_MDLCache
+0007e960 b s_BreakSet
+0004ad30 t FastToLower(char)
+000622c0 r g_ppszTypes
+0007e958 b s_nCVarFlag
+0007ddc4 b vec2_origin
+0007df94 b vec2_origin
+0007dfe4 b vec2_origin
+0007e2f0 b vec2_origin
+0007e8a8 b vec2_origin
+0007e910 b vec2_origin
+0007eaa8 b vec2_origin
+0007ead0 b vec2_origin
+0007eb10 b vec2_origin
+0007ed80 b vec2_origin
+0007ede0 b vec2_origin
+00080138 b vec2_origin
+00080160 b vec2_origin
+00080188 b vec2_origin
+000801b0 b vec2_origin
+00080290 b vec2_origin
+000803f0 b vec2_origin
+0007ddd4 b vec4_origin
+0007dfa4 b vec4_origin
+0007dff4 b vec4_origin
+0007e8b8 b vec4_origin
+000802b0 b vec4_origin
+00080410 b vec4_origin
+0007edd4 b s_bConnected
+0007ddcc b vec2_invalid
+0007df9c b vec2_invalid
+0007dfec b vec2_invalid
+0007e2f8 b vec2_invalid
+0007e8b0 b vec2_invalid
+0007e920 b vec2_invalid
+0007eab0 b vec2_invalid
+0007eae0 b vec2_invalid
+0007eb20 b vec2_invalid
+0007ed90 b vec2_invalid
+0007edf0 b vec2_invalid
+00080140 b vec2_invalid
+00080170 b vec2_invalid
+00080190 b vec2_invalid
+000801c0 b vec2_invalid
+000802a0 b vec2_invalid
+00080400 b vec2_invalid
+0007dde4 b vec4_invalid
+0007dfb4 b vec4_invalid
+0007e004 b vec4_invalid
+0007e8c8 b vec4_invalid
+000802c0 b vec4_invalid
+00080420 b vec4_invalid
+0007dfd0 b g_ModelLookup
+0007e660 b mod_forcedata
+0007e954 b s_bRegistered
+0007ea60 b s_EmptyConVar
+0007e460 b mod_trace_load
+0007cef0 d s_BackSlashMap
+00063320 r g_nRandomValues
+0007e200 b mem_force_flush
+0007e95c b s_bBuiltBreakSet
+0007cee0 d s_nDLLIdentifier
+0007e250 b g_iDontForceFlush
+0007cee4 d s_DefaultAccessor
+0007cea0 d g_ModelLookupIndex
+0007e600 b mod_load_fakestall
+0007de40 b mod_load_showstall
+0007e6c0 b mod_load_mesh_async
+00080198 b g_CleanupSymbolTable
+0007e5a0 b mod_load_anims_async
+0007e780 b mod_lock_mdls_on_load
+0004c4f0 t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
+00035950 t MdlcacheCreateCallback(char const*, char const*, char const*, void*)
+0007e540 b mod_test_not_available
+0007e4e0 b mod_load_vcollide_async
+0007e720 b mod_test_mesh_not_available
+0007e860 b mod_test_verts_not_available
+00039ee0 t ReleaseMaterialSystemObjects()
+0003dc50 t RestoreMaterialSystemObjects(int)
+0007e8d8 b __g_CreateCMDLCacheIMDLCache_reg
+0007e300 b __g_CreateCDataCacheIDataCache_reg
+0007cf58 d s_pConversionArrays_NoEscConversion
+00034e10 t __CreateCMDLCacheIMDLCache_interface()
+0002cb20 t __CreateCDataCacheIDataCache_interface()
+0007e8e4 b __g_CreateCMDLCacheIStudioDataCache_reg
+0007cf00 d s_pConversionArrays_StringCharConversion
+00034e20 t __CreateCMDLCacheIStudioDataCache_interface()
+0007e4c0 b NO_ASYNC
+0007e7e0 b r_rootlod
+00032100 t CDataCache::AddSection(IDataCacheClient*, char const*, DataCacheLimits_t const&, bool)
+0002d1b0 t CDataCache::Disconnect()
+0002cc60 t CDataCache::SetOptions(unsigned int)
+00030fc0 t CDataCache::FindSection(char const*)
+000316b0 t CDataCache::OutputReport(DataCacheReportType_t, char const*)
+00030ff0 t CDataCache::RemoveSection(char const*, bool)
+000309e0 t CDataCache::EnsureCapacity(unsigned int)
+0002ceb0 t CDataCache::QueryInterface(char const*)
+00030f50 t CDataCache::FindSectionIndex(char const*)
+000310a0 t CDataCache::OutputItemReport(memhandle_t__*)
+0002cde0 t CDataCache::SetSectionLimits(char const*, DataCacheLimits_t const&)
+0002d320 t CDataCache::SortMemhandlesBySizeLessFunc(memhandle_t__* const&, memhandle_t__* const&)
+0002d1f0 t CDataCache::Init()
+0002d430 t CDataCache::Flush(bool, bool)
+0002d680 t CDataCache::Purge(unsigned int)
+0002d280 t CDataCache::Connect(void* (*)(char const*, int*))
+0002ce40 t CDataCache::SetSize(int)
+0002d230 t CDataCache::Shutdown()
+0002cd70 t CDataCache::GetStatus(DataCacheStatus_t*, DataCacheLimits_t*)
+00030900 t CDataCache::CDataCache()
+00030900 t CDataCache::CDataCache()
+000330a0 t CDataCache::~CDataCache()
+000330a0 t CDataCache::~CDataCache()
+00046180 t ConCommand::CanAutoComplete()
+00047bd0 t ConCommand::AutoCompleteSuggest(char const*, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&)
+00046780 t ConCommand::Dispatch(CCommand const&)
+000470e0 t ConCommand::ConCommand(char const*, ICommandCallback*, char const*, int, ICommandCompletionCallback*)
+00047050 t ConCommand::ConCommand(char const*, void (*)(CCommand const&), char const*, int, int (*)(char const*, char (*) [64]))
+00046fc0 t ConCommand::ConCommand(char const*, void (*)(), char const*, int, int (*)(char const*, char (*) [64]))
+000470e0 t ConCommand::ConCommand(char const*, ICommandCallback*, char const*, int, ICommandCompletionCallback*)
+00047050 t ConCommand::ConCommand(char const*, void (*)(CCommand const&), char const*, int, int (*)(char const*, char (*) [64]))
+00046fc0 t ConCommand::ConCommand(char const*, void (*)(), char const*, int, int (*)(char const*, char (*) [64]))
+000462e0 t ConCommand::~ConCommand()
+00046160 t ConCommand::~ConCommand()
+00046160 t ConCommand::~ConCommand()
+000256a0 t CStudioHdr::pAttachment(int)
+000257e0 t CStudioHdr::pszNodeName(int)
+00025b90 t CStudioHdr::RunFlexRules(float const*, float*)
+00025210 t CStudioHdr::pSeqStudioHdr(int)
+00025010 t CStudioHdr::GroupStudioHdr(int)
+00025240 t CStudioHdr::pAnimStudioHdr(int)
+000254b0 t CStudioHdr::pPoseParameter(int)
+00025a90 t CStudioHdr::pIKAutoplayLock(int)
+00025710 t CStudioHdr::GetAttachmentBone(int)
+00025780 t CStudioHdr::SetAttachmentBone(int, int)
+00025980 t CStudioHdr::GetEventListVersion()
+00025a00 t CStudioHdr::SetEventListVersion(int)
+000258a0 t CStudioHdr::GetActivityListVersion()
+00025920 t CStudioHdr::SetActivityListVersion(int)
+00026b20 t CStudioHdr::CActivityToSequenceMapping::Initialize(CStudioHdr*)
+00026690 t CStudioHdr::CActivityToSequenceMapping::GetSequences(int, int*, int*)
+00027200 t CStudioHdr::CActivityToSequenceMapping::Reinitialize(CStudioHdr*)
+00026860 t CStudioHdr::CActivityToSequenceMapping::ValidateAgainst(CStudioHdr const*)
+000268a0 t CStudioHdr::CActivityToSequenceMapping::SetValidationPair(CStudioHdr const*)
+00026790 t CStudioHdr::CActivityToSequenceMapping::NumSequencesForActivity(int)
+00027690 t CStudioHdr::CActivityToSequenceMapping::~CActivityToSequenceMapping()
+00027690 t CStudioHdr::CActivityToSequenceMapping::~CActivityToSequenceMapping()
+00026a10 t CStudioHdr::Init(studiohdr_t const*, IMDLCache*)
+00025000 t CStudioHdr::Term()
+00025600 t CStudioHdr::ExitNode(int)
+00025330 t CStudioHdr::pSeqdesc(int)
+00025590 t CStudioHdr::EntryNode(int)
+00025270 t CStudioHdr::pAnimdesc(int)
+000273b0 t CStudioHdr::CStudioHdr(studiohdr_t const*, IMDLCache*)
+00027260 t CStudioHdr::CStudioHdr()
+000273b0 t CStudioHdr::CStudioHdr(studiohdr_t const*, IMDLCache*)
+00027260 t CStudioHdr::CStudioHdr()
+000501f0 t CUtlBuffer::ParseToken(characterset_t*, char*, int, bool)
+0004fb80 t CUtlBuffer::ParseToken(char const*, char const*, char*, int)
+000511a0 t CUtlBuffer::ConvertCRLF(CUtlBuffer&)
+0004e940 t CUtlBuffer::GetOverflow(int)
+00050540 t CUtlBuffer::IsBigEndian()
+00051690 t CUtlBuffer::PutOverflow(int)
+00051120 t CUtlBuffer::AssumeMemory(void*, int, int, int)
+0004ef10 t CUtlBuffer::CheckPeekGet(int, int)
+00050510 t CUtlBuffer::SetBigEndian(bool)
+00050090 t CUtlBuffer::EatCPPComment()
+0004f5d0 t CUtlBuffer::EatWhiteSpace()
+0004edc0 t CUtlBuffer::OnGetOverflow(int)
+0004ed90 t CUtlBuffer::OnPutOverflow(int)
+0004ec40 t CUtlBuffer::SetBufferType(bool, bool)
+0004ec90 t CUtlBuffer::EnsureCapacity(int)
+0004f140 t CUtlBuffer::PeekLineLength()
+0004f2b0 t CUtlBuffer::PeekWhiteSpace(int)
+0004f250 t CUtlBuffer::PeekStringMatch(int, char const*, int)
+0004fe80 t CUtlBuffer::GetDelimitedChar(CUtlCharConversion*)
+0004f320 t CUtlBuffer::PeekStringLength()
+00050c00 t CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)
+0004ed60 t CUtlBuffer::SetOverflowFuncs(bool (CUtlBuffer::*)(int), bool (CUtlBuffer::*)(int))
+0004f760 t CUtlBuffer::GetStringInternal(char*, unsigned int)
+000510a0 t CUtlBuffer::SetExternalBuffer(void*, int, int, int)
+00050550 t CUtlBuffer::AddNullTermination()
+0004ff10 t CUtlBuffer::GetDelimitedString(CUtlCharConversion*, char*, int)
+000508e0 t CUtlBuffer::PutDelimitedString(CUtlCharConversion*, char const*)
+000504e0 t CUtlBuffer::ActivateByteSwapping(bool)
+0004f0a0 t CUtlBuffer::CheckArbitraryPeekGet(int, int&)
+0004fd80 t CUtlBuffer::GetDelimitedCharInternal(CUtlCharConversion*)
+0004f460 t CUtlBuffer::PeekDelimitedStringLength(CUtlCharConversion*, bool)
+0004f630 t CUtlBuffer::Get(void*, int)
+00050620 t CUtlBuffer::Put(void const*, int)
+00050e70 t CUtlBuffer::Swap(CUtlMemory<unsigned char, int>&)
+00050e10 t CUtlBuffer::Swap(CUtlBuffer&)
+0004fb50 t CUtlBuffer::Scanf(char const*, ...)
+000508b0 t CUtlBuffer::Printf(char const*, ...)
+0004f680 t CUtlBuffer::GetLine(char*, int)
+0004f1f0 t CUtlBuffer::GetUpTo(void*, int)
+0004f050 t CUtlBuffer::PeekGet(int, int)
+0004edf0 t CUtlBuffer::SeekGet(CUtlBuffer::SeekType_t, int)
+000505c0 t CUtlBuffer::SeekPut(CUtlBuffer::SeekType_t, int)
+0004f860 t CUtlBuffer::VaScanf(char const*, char*)
+0004ee80 t CUtlBuffer::CheckGet(int)
+00050470 t CUtlBuffer::CheckPut(int)
+0004ef40 t CUtlBuffer::GetToken(char const*)
+00050860 t CUtlBuffer::VaPrintf(char const*, char*)
+000506a0 t CUtlBuffer::PutString(char const*)
+00051570 t CUtlBuffer::CUtlBuffer(int, int, int)
+00050ff0 t CUtlBuffer::CUtlBuffer(void const*, int, int)
+00051570 t CUtlBuffer::CUtlBuffer(int, int, int)
+00050ff0 t CUtlBuffer::CUtlBuffer(void const*, int, int)
+0003e9d0 t CUtlBuffer::~CUtlBuffer()
+0003e9d0 t CUtlBuffer::~CUtlBuffer()
+00047df0 t CUtlMemory<CUtlString, int>::Grow(int)
+0005aae0 t CUtlMemory<CUtlString, int>::Purge()
+00027a90 t CUtlMemory<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, int>::Grow(int)
+000275b0 t CUtlMemory<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, int>::Purge()
+0002a3e0 t CUtlMemory<modellookup_t, int>::Grow(int)
+0002a250 t CUtlMemory<modellookup_t, int>::Purge()
+0002a5f0 t CUtlMemory<virtualgroup_t, int>::Grow(int)
+0003efc0 t CUtlMemory<virtualgroup_t, int>::Purge()
+00054410 t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short>::Grow(int)
+000540f0 t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short>::Purge()
+0003f6f0 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
+0003f130 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
+000434a0 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
+0003f290 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
+0002ad50 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short>::Grow(int)
+0002ac30 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short>::Purge()
+00033700 t CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int>::Grow(int)
+00033160 t CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int>::Purge()
+0002a940 t CUtlMemory<virtualgeneric_t, int>::Grow(int)
+0002a320 t CUtlMemory<virtualgeneric_t, int>::Purge()
+0002a840 t CUtlMemory<virtualsequence_t, int>::Grow(int)
+0002a290 t CUtlMemory<virtualsequence_t, int>::Purge()
+00054250 t CUtlMemory<CUtlHashtableEntry<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t>, int>::Purge()
+00055c00 t CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short>::Grow(int)
+00054290 t CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short>::Purge()
+00049940 t CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short>::Grow(int)
+00051790 t CUtlMemory<unsigned char, int>::Grow(int)
+00051750 t CUtlMemory<unsigned char, int>::Purge()
+00027790 t CUtlMemory<int, int>::Grow(int)
+00027500 t CUtlMemory<int, int>::Purge()
+00027990 t CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int>::Grow(int)
+000275f0 t CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int>::Purge()
+00049660 t CUtlMemory<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::ListElem_t, int>::Grow(int)
+00049800 t CUtlMemory<memhandle_t__*, int>::Grow(int)
+00033120 t CUtlMemory<memhandle_t__*, int>::Purge()
+000335c0 t CUtlMemory<CDataCacheSection*, int>::Grow(int)
+00033060 t CUtlMemory<CDataCacheSection*, int>::Purge()
+0003f5b0 t CUtlMemory<IMaterial*, int>::Grow(int)
+0003eef0 t CUtlMemory<IMaterial*, int>::Purge()
+0004e6f0 t CUtlMemory<char*, int>::Grow(int)
+00023fd0 t CUtlMemory<char*, int>::Purge()
+00027840 t CUtlMemory<studiohdr_t const*, int>::Grow(int)
+00027570 t CUtlMemory<studiohdr_t const*, int>::Purge()
+000542d0 t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::Grow(int)
+00054180 t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::Purge()
+00049520 t CUtlMemory<void*, int>::Grow(int)
+000494e0 t CUtlMemory<void*, int>::Purge()
+0002aae0 t CUtlMemory<unsigned short, int>::Grow(int)
+0003f000 t CUtlMemory<unsigned short, int>::Purge()
+000545d0 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
+00054ac0 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RotateRight(unsigned short)
+00054f80 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
+00055930 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Insert(CUtlSymbolTable::CStringPoolIndex const&)
+000544e0 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::NewNode()
+00053ff0 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RemoveAll()
+0003fd90 t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
+000402a0 t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
+00042750 t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
+000407b0 t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveRebalance(unsigned short)
+00043150 t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<int, int, unsigned short>::Node_t const&)
+00041a50 t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
+0003f7c0 t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::NewNode()
+0003f170 t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
+00043660 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
+00043900 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
+000451f0 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
+00043b70 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveRebalance(unsigned short)
+00045a80 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t const&)
+00044ce0 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
+00043570 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::NewNode()
+0003fb00 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
+0002b540 t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::RotateLeft(short)
+0002ba50 t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::RotateRight(short)
+0002bf40 t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::InsertRebalance(short)
+0002c950 t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::Insert(CUtlMap<char const*, short, short>::Node_t const&)
+0002ae20 t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::NewNode()
+0002ac70 t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::RemoveAll()
+00033860 t CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::RotateLeft(int)
+00033d50 t CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::RotateRight(int)
+00034210 t CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::InsertRebalance(int)
+000331a0 t CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::Purge()
+00034c20 t CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::Insert(memhandle_t__* const&)
+000337b0 t CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::NewNode()
+00051fe0 t CUtlString::FixSlashes(char)
+00051830 t CUtlString::AllocMemory(unsigned int)
+000518b0 t CUtlString::GetForModify()
+00052cc0 t CUtlString::GetEmptyString()
+00051f80 t CUtlString::StripTrailingSlash()
+00051a10 t CUtlString::Set(char const*)
+000522b0 t CUtlString::Trim(char)
+000522f0 t CUtlString::Trim(char const*)
+00051950 t CUtlString::Clear()
+00051930 t CUtlString::Purge()
+00052c30 t CUtlString::Append(char const*)
+00052c40 t CUtlString::Append(char const*, int)
+00051f50 t CUtlString::Format(char const*, ...)
+00051f00 t CUtlString::FormatV(char const*, char*)
+00051af0 t CUtlString::ToLower()
+00051b10 t CUtlString::ToUpper()
+00052ad0 t CUtlString::PathJoin(char const*, char const*)
+00052010 t CUtlString::TrimLeft(char)
+000520a0 t CUtlString::TrimLeft(char const*)
+00051990 t CUtlString::SetDirect(char const*, int)
+00051960 t CUtlString::SetLength(int)
+00052180 t CUtlString::TrimRight(char)
+00052200 t CUtlString::TrimRight(char const*)
+00051b80 t CUtlString::operator=(char const*)
+00051b30 t CUtlString::operator=(CUtlString const&)
+00052d30 t CUtlString::~CUtlString()
+00052d30 t CUtlString::~CUtlString()
+00051cf0 t CUtlString::operator+=(char)
+00051da0 t CUtlString::operator+=(double)
+00051d50 t CUtlString::operator+=(int)
+00051c80 t CUtlString::operator+=(char const*)
+00051c10 t CUtlString::operator+=(CUtlString const&)
+00053690 t CUtlSymbol::Initialize()
+00080180 b CUtlSymbol::s_pSymbolTable
+00052eb0 t CUtlSymbol::DisableStaticSymbolTable()
+0007cf60 d CUtlSymbol::s_bAllowStaticSymbolTable
+000537b0 t CUtlSymbol::CurrTable()
+00053a50 t CUtlSymbol::CUtlSymbol(char const*)
+00053a50 t CUtlSymbol::CUtlSymbol(char const*)
+00047ea0 t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::InsertBefore(int, CUtlString const&)
+0002a520 t CUtlVector<modellookup_t, CUtlMemory<modellookup_t, int> >::InsertBefore(int)
+0002b4d0 t CUtlVector<modellookup_t, CUtlMemory<modellookup_t, int> >::~CUtlVector()
+0002b4d0 t CUtlVector<modellookup_t, CUtlMemory<modellookup_t, int> >::~CUtlVector()
+0002a6a0 t CUtlVector<virtualgroup_t, CUtlMemory<virtualgroup_t, int> >::InsertBefore(int)
+0002a9f0 t CUtlVector<virtualgeneric_t, CUtlMemory<virtualgeneric_t, int> >::GrowVector(int)
+0002a390 t CUtlVector<virtualgeneric_t, CUtlMemory<virtualgeneric_t, int> >::ShiftElementsRight(int, int)
+0002a360 t CUtlVector<virtualgeneric_t, CUtlMemory<virtualgeneric_t, int> >::~CUtlVector()
+0002a360 t CUtlVector<virtualgeneric_t, CUtlMemory<virtualgeneric_t, int> >::~CUtlVector()
+0002a8f0 t CUtlVector<virtualsequence_t, CUtlMemory<virtualsequence_t, int> >::GrowVector(int)
+0002a2d0 t CUtlVector<virtualsequence_t, CUtlMemory<virtualsequence_t, int> >::ShiftElementsRight(int, int)
+000268c0 t CUtlVector<int, CUtlMemory<int, int> >::EnsureCount(int) [clone .part.58]
+0002aa40 t CUtlVector<int, CUtlMemory<int, int> >::SetCount(int)
+00027540 t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
+00027540 t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
+00027a40 t CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >::GrowVector(int)
+00027740 t CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >::ShiftElementsRight(int, int)
+000498b0 t CUtlVector<memhandle_t__*, CUtlMemory<memhandle_t__*, int> >::InsertBefore(int, memhandle_t__* const&)
+00033670 t CUtlVector<CDataCacheSection*, CUtlMemory<CDataCacheSection*, int> >::InsertBefore(int, CDataCacheSection* const&)
+0003f660 t CUtlVector<IMaterial*, CUtlMemory<IMaterial*, int> >::InsertBefore(int, IMaterial* const&)
+0004e7a0 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
+000278f0 t CUtlVector<studiohdr_t const*, CUtlMemory<studiohdr_t const*, int> >::SetCount(int)
+00054380 t CUtlVector<CUtlSymbolTable::StringPool_t*, CUtlMemory<CUtlSymbolTable::StringPool_t*, int> >::InsertBefore(int, CUtlSymbolTable::StringPool_t* const&)
+000495d0 t CUtlVector<void*, CUtlMemory<void*, int> >::InsertBefore(int, void* const&)
+00027630 t CUtlVector<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, CUtlMemory<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, int> >::RemoveAll()
+0002ab90 t CUtlVector<unsigned short, CUtlMemory<unsigned short, int> >::SetCount(int)
+         U CVProfNode::EnterScope()
+         U CVProfNode::GetSubNode(char const*, int, char const*, int)
+         U CVProfNode::ExitScope()
+00032820 t CVProfScope::~CVProfScope()
+00032820 t CVProfScope::~CVProfScope()
+0001a280 t phyheader_s::GetBaseMap()
+000741c0 d phyheader_s::m_DataMap
+00016db0 t studiohdr_t::GetBaseMap()
+00024c30 t studiohdr_t::pszNodeName(int)
+00024880 t studiohdr_t::pPoseParameter(int)
+00024e20 t studiohdr_t::pIKAutoplayLock(int)
+00024b60 t studiohdr_t::GetAttachmentBone(int)
+00024bd0 t studiohdr_t::SetAttachmentBone(int, int)
+00024cd0 t studiohdr_t::GetActivityListVersion()
+00024a10 t studiohdr_t::ExitNode(int)
+00024980 t studiohdr_t::EntryNode(int)
+000749e0 d studiohdr_t::m_DataMap
+000323b0 t CDataManager<DataCacheItem_t, DataCacheItemData_t, DataCacheItem_t*, CThreadFastMutex>::GetRealSize(void*)
+000328e0 t CDataManager<DataCacheItem_t, DataCacheItemData_t, DataCacheItem_t*, CThreadFastMutex>::DestroyResourceStorage(void*)
+00032480 t CDataManager<DataCacheItem_t, DataCacheItemData_t, DataCacheItem_t*, CThreadFastMutex>::Lock()
+00032580 t CDataManager<DataCacheItem_t, DataCacheItemData_t, DataCacheItem_t*, CThreadFastMutex>::Unlock()
+00032420 t CDataManager<DataCacheItem_t, DataCacheItemData_t, DataCacheItem_t*, CThreadFastMutex>::TryLock()
+000327d0 t CDataManager<DataCacheItem_t, DataCacheItemData_t, DataCacheItem_t*, CThreadFastMutex>::~CDataManager()
+000323e0 t CDataManager<DataCacheItem_t, DataCacheItemData_t, DataCacheItem_t*, CThreadFastMutex>::~CDataManager()
+000323e0 t CDataManager<DataCacheItem_t, DataCacheItemData_t, DataCacheItem_t*, CThreadFastMutex>::~CDataManager()
+00047d30 t CEmptyConVar::SetValue(float)
+00047d50 t CEmptyConVar::SetValue(int)
+00047d10 t CEmptyConVar::SetValue(char const*)
+00047dc0 t CEmptyConVar::~CEmptyConVar()
+00047da0 t CEmptyConVar::~CEmptyConVar()
+00047da0 t CEmptyConVar::~CEmptyConVar()
+0003e470 t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::AddRef()
+0003e400 t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::Release()
+0003e4c0 t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+0003e350 t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+0003e350 t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+         U CThreadEvent::Set()
+         U CThreadEvent::CThreadEvent(bool)
+000334a0 t CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::CUtlHashFast()
+000334a0 t CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::CUtlHashFast()
+00056290 t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
+000562f0 t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.1]
+0007eaf0 b InterfaceReg::s_pInterfaceRegs
+0004a400 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
+0004a400 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
+0003ef30 t ModelParts_t::~ModelParts_t()
+0003ef30 t ModelParts_t::~ModelParts_t()
+0007e380 b studiodata_t::s_Allocator
+00016e80 t studiohdr2_t::GetBaseMap()
+000749c0 d studiohdr2_t::m_DataMap
+000323d0 t CMemoryPoolMT::~CMemoryPoolMT()
+000323d0 t CMemoryPoolMT::~CMemoryPoolMT()
+         U CThreadRWLock::UnlockWrite()
+         U CThreadRWLock::WaitForRead()
+         U CThreadRWLock::LockForWrite()
+00032890 t CTSSimpleList<CDataCacheSection::FrameLock_t>::~CTSSimpleList()
+00032890 t CTSSimpleList<CDataCacheSection::FrameLock_t>::~CTSSimpleList()
+00055fa0 t CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoInsertUnconstructed(unsigned int, bool)
+00055e40 t CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::BumpEntry(unsigned int)
+000560d0 t CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoRealloc(int)
+00054130 t CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::RemoveAll()
+00049c30 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::CreateList()
+00049300 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::LinkBefore(unsigned short, unsigned short, unsigned short)
+00049710 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::Alloc()
+00049210 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::Unlink(unsigned short, unsigned short)
+000493f0 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::LinkAfter(unsigned short, unsigned short, unsigned short)
+00049010 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::CUtlMultiList(int, int)
+00049010 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::CUtlMultiList(int, int)
+000490b0 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::~CUtlMultiList()
+000490b0 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::~CUtlMultiList()
+00017df0 t mstudioanim_t::GetBaseMap()
+00074760 d mstudioanim_t::m_DataMap
+000179e0 t mstudiobbox_t::GetBaseMap()
+00074800 d mstudiobbox_t::m_DataMap
+00016f50 t mstudiobone_t::GetBaseMap()
+000749a0 d mstudiobone_t::m_DataMap
+00019240 t mstudioflex_t::GetBaseMap()
+00074440 d mstudioflex_t::m_DataMap
+00018fd0 t mstudiomesh_t::GetBaseMap()
+000744a0 d mstudiomesh_t::m_DataMap
+000323a0 t CBaseAppSystem<IDataCache>::Disconnect()
+000323c0 t CBaseAppSystem<IDataCache>::QueryInterface(char const*)
+00032370 t CBaseAppSystem<IDataCache>::Init()
+00032390 t CBaseAppSystem<IDataCache>::Connect(void* (*)(char const*, int*))
+00032380 t CBaseAppSystem<IDataCache>::Shutdown()
+0003e380 t CBaseAppSystem<IMDLCache>::Disconnect()
+0003e3f0 t CBaseAppSystem<IMDLCache>::QueryInterface(char const*)
+0003e320 t CBaseAppSystem<IMDLCache>::Init()
+0003e370 t CBaseAppSystem<IMDLCache>::Connect(void* (*)(char const*, int*))
+0003e330 t CBaseAppSystem<IMDLCache>::Shutdown()
+00046aa0 t ConCommandBase::CopyString(char const*)
+00046060 t ConCommandBase::CreateBase(char const*, char const*, int)
+0007e940 b ConCommandBase::s_pAccessor
+0007e950 b ConCommandBase::s_pConCommandBases
+000460d0 t ConCommandBase::Init()
+00046a90 t ConCommandBase::GetNext()
+00046120 t ConCommandBase::AddFlags(int)
+00046a60 t ConCommandBase::Shutdown()
+00046a40 t ConCommandBase::ConCommandBase(char const*, char const*, int)
+00046a10 t ConCommandBase::ConCommandBase()
+00046a40 t ConCommandBase::ConCommandBase(char const*, char const*, int)
+00046a10 t ConCommandBase::ConCommandBase()
+00046300 t ConCommandBase::~ConCommandBase()
+00046030 t ConCommandBase::~ConCommandBase()
+00046030 t ConCommandBase::~ConCommandBase()
+0003f500 t CUtlLinkedList<AsyncInfo_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<AsyncInfo_t, int> > >::InsertBefore(int, AsyncInfo_t const&)
+0003f380 t CUtlLinkedList<AsyncInfo_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<AsyncInfo_t, int> > >::AllocInternal(bool)
+0003f040 t CUtlLinkedList<AsyncInfo_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<AsyncInfo_t, int> > >::Unlink(int)
+0003ed60 t CUtlLinkedList<AsyncInfo_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<AsyncInfo_t, int> > >::RemoveAll()
+00055cd0 t CUtlLinkedList<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short> >::AllocInternal(bool)
+000561f0 t CUtlLinkedList<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short> >::Unlink(unsigned short)
+00055b70 t CUtlLinkedList<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short> >::RemoveAll()
+00033320 t CUtlLinkedList<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int> > >::AllocInternal(bool)
+00032dc0 t CUtlLinkedList<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int> > >::Unlink(int)
+00032eb0 t CUtlLinkedList<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int> > >::RemoveAll()
+00049a10 t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::AllocInternal(bool)
+00049b80 t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
+0004aaa0 t CUtlMemoryPool::AddNewBlob()
+0004aa70 t CUtlMemoryPool::ReportLeaks()
+0007eb00 b CUtlMemoryPool::g_ReportFunc
+0004a990 t CUtlMemoryPool::SetErrorReportFunc(void (*)(char const*, ...))
+0004ad10 t CUtlMemoryPool::Free(void*)
+0004a9a0 t CUtlMemoryPool::Init()
+0004ac20 t CUtlMemoryPool::Alloc(unsigned int)
+0004ac80 t CUtlMemoryPool::Alloc()
+0004a9d0 t CUtlMemoryPool::Clear()
+0004aca0 t CUtlMemoryPool::AllocZero(unsigned int)
+0004acf0 t CUtlMemoryPool::AllocZero()
+0004ab60 t CUtlMemoryPool::CUtlMemoryPool(int, int, int, char const*, int)
+0004ab60 t CUtlMemoryPool::CUtlMemoryPool(int, int, int, char const*, int)
+0004aa30 t CUtlMemoryPool::~CUtlMemoryPool()
+0004aa30 t CUtlMemoryPool::~CUtlMemoryPool()
+000183a0 t mstudioevent_t::GetBaseMap()
+00074680 d mstudioevent_t::m_DataMap
+000186e0 t mstudiomodel_t::GetBaseMap()
+00074600 d mstudiomodel_t::m_DataMap
+00018e30 t mstudiomouth_t::GetBaseMap()
+000744e0 d mstudiomouth_t::m_DataMap
+0001a1c0 t datamap_t* OptimizedModel::DataMapInit<OptimizedModel::FileHeader_t>(OptimizedModel::FileHeader_t*)
+00019ce0 t datamap_t* OptimizedModel::DataMapInit<OptimizedModel::MeshHeader_t>(OptimizedModel::MeshHeader_t*)
+00019e80 t datamap_t* OptimizedModel::DataMapInit<OptimizedModel::ModelHeader_t>(OptimizedModel::ModelHeader_t*)
+00019b40 t datamap_t* OptimizedModel::DataMapInit<OptimizedModel::StripHeader_t>(OptimizedModel::StripHeader_t*)
+00019f50 t datamap_t* OptimizedModel::DataMapInit<OptimizedModel::BodyPartHeader_t>(OptimizedModel::BodyPartHeader_t*)
+00019db0 t datamap_t* OptimizedModel::DataMapInit<OptimizedModel::ModelLODHeader_t>(OptimizedModel::ModelLODHeader_t*)
+00019c10 t datamap_t* OptimizedModel::DataMapInit<OptimizedModel::StripGroupHeader_t>(OptimizedModel::StripGroupHeader_t*)
+000199a0 t datamap_t* OptimizedModel::DataMapInit<OptimizedModel::BoneStateChangeHeader_t>(OptimizedModel::BoneStateChangeHeader_t*)
+0001a020 t datamap_t* OptimizedModel::DataMapInit<OptimizedModel::MaterialReplacementHeader_t>(OptimizedModel::MaterialReplacementHeader_t*)
+0001a0f0 t datamap_t* OptimizedModel::DataMapInit<OptimizedModel::MaterialReplacementListHeader_t>(OptimizedModel::MaterialReplacementListHeader_t*)
+00019a70 t datamap_t* OptimizedModel::DataMapInit<OptimizedModel::Vertex_t>(OptimizedModel::Vertex_t*)
+0001a1b0 t OptimizedModel::FileHeader_t::GetBaseMap()
+000741e0 d OptimizedModel::FileHeader_t::m_DataMap
+00019cd0 t OptimizedModel::MeshHeader_t::GetBaseMap()
+000742a0 d OptimizedModel::MeshHeader_t::m_DataMap
+00019e70 t OptimizedModel::ModelHeader_t::GetBaseMap()
+00074260 d OptimizedModel::ModelHeader_t::m_DataMap
+00019b30 t OptimizedModel::StripHeader_t::GetBaseMap()
+000742e0 d OptimizedModel::StripHeader_t::m_DataMap
+00019f40 t OptimizedModel::BodyPartHeader_t::GetBaseMap()
+00074240 d OptimizedModel::BodyPartHeader_t::m_DataMap
+00019da0 t OptimizedModel::ModelLODHeader_t::GetBaseMap()
+00074280 d OptimizedModel::ModelLODHeader_t::m_DataMap
+00019c00 t OptimizedModel::StripGroupHeader_t::GetBaseMap()
+000742c0 d OptimizedModel::StripGroupHeader_t::m_DataMap
+0007cfb8 b OptimizedModel::Vertex_t_DataDescInit::g_DataMapHolder
+00019990 t OptimizedModel::BoneStateChangeHeader_t::GetBaseMap()
+00074320 d OptimizedModel::BoneStateChangeHeader_t::m_DataMap
+0007cf94 b OptimizedModel::FileHeader_t_DataDescInit::g_DataMapHolder
+0007cfac b OptimizedModel::MeshHeader_t_DataDescInit::g_DataMapHolder
+0007cfa4 b OptimizedModel::ModelHeader_t_DataDescInit::g_DataMapHolder
+0007cfb4 b OptimizedModel::StripHeader_t_DataDescInit::g_DataMapHolder
+0001a010 t OptimizedModel::MaterialReplacementHeader_t::GetBaseMap()
+00074220 d OptimizedModel::MaterialReplacementHeader_t::m_DataMap
+0007cfa0 b OptimizedModel::BodyPartHeader_t_DataDescInit::g_DataMapHolder
+0007cfa8 b OptimizedModel::ModelLODHeader_t_DataDescInit::g_DataMapHolder
+0001a0e0 t OptimizedModel::MaterialReplacementListHeader_t::GetBaseMap()
+00074200 d OptimizedModel::MaterialReplacementListHeader_t::m_DataMap
+0007cfb0 b OptimizedModel::StripGroupHeader_t_DataDescInit::g_DataMapHolder
+0007cfbc b OptimizedModel::BoneStateChangeHeader_t_DataDescInit::g_DataMapHolder
+0007cf9c b OptimizedModel::MaterialReplacementHeader_t_DataDescInit::g_DataMapHolder
+0007cf98 b OptimizedModel::MaterialReplacementListHeader_t_DataDescInit::g_DataMapHolder
+00019a60 t OptimizedModel::Vertex_t::GetBaseMap()
+00074300 d OptimizedModel::Vertex_t::m_DataMap
+00023f20 t int StudioByteSwap::DestNative<int>(int*)
+00016390 t StudioByteSwap::SetVerbose(bool)
+0001d4c0 t StudioByteSwap::ByteswapANI(studiohdr_t*, void*, void const*, int)
+00023a80 t StudioByteSwap::ByteswapMDL(void*, void const*, int)
+000167a0 t StudioByteSwap::ByteswapPHY(void*, void const*, int)
+0001a3b0 t StudioByteSwap::ByteswapVTX(void*, void const*, int)
+0001ac60 t StudioByteSwap::ByteswapVVD(void*, void const*, int)
+000166e0 t datamap_t* StudioByteSwap::DataMapInit<StudioByteSwap::legacysurfaceheader_t>(StudioByteSwap::legacysurfaceheader_t*)
+00016610 t datamap_t* StudioByteSwap::DataMapInit<StudioByteSwap::swapcompactsurfaceheader_t>(StudioByteSwap::swapcompactsurfaceheader_t*)
+000163a0 t StudioByteSwap::UpdateIndex(void*, int*)
+00023e80 t void StudioByteSwap::WriteBuffer<char>(unsigned char*, unsigned char*, int)
+00023d60 t void StudioByteSwap::WriteBuffer<float>(unsigned char**, unsigned char**, int)
+00023f60 t void StudioByteSwap::WriteBuffer<int>(unsigned char**, unsigned char**, int)
+00023dd0 t void StudioByteSwap::WriteBuffer<short>(unsigned char**, unsigned char**, int)
+00016450 t StudioByteSwap::ProcessField(void*, void*, typedescription_t*, void (*)(void*, void*, typedescription_t*))
+000164f0 t StudioByteSwap::ProcessFields(void*, datamap_t*, void (*)(void*, void*, typedescription_t*))
+00016470 t StudioByteSwap::ProcessFields(void*, void*, datamap_t*, void (*)(void*, void*, typedescription_t*))
+00016370 t StudioByteSwap::SourceIsNative(bool)
+0001c940 t StudioByteSwap::ByteswapANIFile(studiohdr_t*, void*, void const*, int)
+0001c130 t StudioByteSwap::ByteswapIKRules(studiohdr_t*&, int, int, unsigned char*&, unsigned char*&, int&, int)
+0001d710 t StudioByteSwap::ByteswapMDLFile(void*, void*, int)
+0001bca0 t StudioByteSwap::ByteswapAnimData(mstudioanimdesc_t*, int, unsigned char*&, unsigned char*&)
+0001b9c0 t StudioByteSwap::ProcessANIFields(void*, void (*)(void*, void*, typedescription_t*))
+0001b020 t StudioByteSwap::ProcessMDLFields(void*, void (*)(void*, void*, typedescription_t*))
+0001a350 t StudioByteSwap::PutIntegerInField(void*, int, int)
+00023b80 t StudioByteSwap::ByteswapStudioFile(char const*, void*, void const*, int, studiohdr_t*, bool (*)(void const*, int, void**, int*))
+000165d0 t StudioByteSwap::ProcessFieldByName(void*, datamap_t*, char const*, void (*)(void*, void*, typedescription_t*))
+00016520 t StudioByteSwap::ProcessFieldByName(void*, void*, datamap_t*, char const*, void (*)(void*, void*, typedescription_t*))
+0001bbe0 t StudioByteSwap::GetIntegerFromField(void*, int)
+00016340 t StudioByteSwap::ActivateByteSwapping(bool)
+0001bc30 t StudioByteSwap::UpdateSrcIndexFields(void*, void*, typedescription_t*)
+000166d0 t StudioByteSwap::legacysurfaceheader_t::GetBaseMap()
+00074a00 d StudioByteSwap::legacysurfaceheader_t::m_DataMap
+00016380 t StudioByteSwap::SetCollisionInterface(IPhysicsCollision*)
+00016600 t StudioByteSwap::swapcompactsurfaceheader_t::GetBaseMap()
+00074a20 d StudioByteSwap::swapcompactsurfaceheader_t::m_DataMap
+0007d098 b StudioByteSwap::legacysurfaceheader_t_DataDescInit::g_DataMapHolder
+0007d09c b StudioByteSwap::swapcompactsurfaceheader_t_DataDescInit::g_DataMapHolder
+00023e40 t float StudioByteSwap::SrcNative<float>(float*)
+00023cf0 t int StudioByteSwap::SrcNative<int>(int*)
+00023d30 t short StudioByteSwap::SrcNative<short>(short*)
+00074a38 d StudioByteSwap::g_bVerbose
+0007d0b0 b StudioByteSwap::pCollision
+0007d0c0 b StudioByteSwap::g_pFixPoint
+0007d0a4 b StudioByteSwap::g_bNativeSrc
+0007d0d0 b StudioByteSwap::g_nFixupBytes
+0007d150 b StudioByteSwap::g_pDataSrcBase
+0007d140 b StudioByteSwap::g_pCompressFunc
+0007d154 b StudioByteSwap::g_pfnFileProcessFunc
+0007d160 b StudioByteSwap::g_pHdr
+0007d0a0 b StudioByteSwap::g_Swap
+00028570 t virtualmodel_t::AppendNodes(int, studiohdr_t const*)
+00029ce0 t virtualmodel_t::AppendModels(int, studiohdr_t const*)
+00028170 t virtualmodel_t::AppendBonemap(int, studiohdr_t const*)
+00027d80 t virtualmodel_t::AppendIKLocks(int, studiohdr_t const*)
+00029790 t virtualmodel_t::AppendSequences(int, studiohdr_t const*)
+00029320 t virtualmodel_t::AppendAnimations(int, studiohdr_t const*)
+00028cd0 t virtualmodel_t::AppendAttachments(int, studiohdr_t const*)
+000288e0 t virtualmodel_t::AppendPoseParameters(int, studiohdr_t const*)
+00029120 t virtualmodel_t::UpdateAutoplaySequences(studiohdr_t const*)
+00032500 t CTier1AppSystem<IDataCache, 0>::Disconnect()
+000325c0 t CTier1AppSystem<IDataCache, 0>::Init()
+00032520 t CTier1AppSystem<IDataCache, 0>::Connect(void* (*)(char const*, int*))
+00032550 t CTier1AppSystem<IDataCache, 0>::Shutdown()
+0003e520 t CTier1AppSystem<IMDLCache, 0>::Disconnect()
+0003e5a0 t CTier1AppSystem<IMDLCache, 0>::Init()
+0003e540 t CTier1AppSystem<IMDLCache, 0>::Connect(void* (*)(char const*, int*))
+0003e570 t CTier1AppSystem<IMDLCache, 0>::Shutdown()
+00032660 t CTier2AppSystem<IDataCache, 0>::Disconnect()
+000326e0 t CTier2AppSystem<IDataCache, 0>::Init()
+00032600 t CTier2AppSystem<IDataCache, 0>::Connect(void* (*)(char const*, int*))
+00032720 t CTier2AppSystem<IDataCache, 0>::Shutdown()
+0003e640 t CTier2AppSystem<IMDLCache, 0>::Disconnect()
+0003e6c0 t CTier2AppSystem<IMDLCache, 0>::Init()
+0003e5e0 t CTier2AppSystem<IMDLCache, 0>::Connect(void* (*)(char const*, int*))
+0003e700 t CTier2AppSystem<IMDLCache, 0>::Shutdown()
+000326a0 t CTier3AppSystem<IDataCache, 0>::Disconnect()
+00032750 t CTier3AppSystem<IDataCache, 0>::Connect(void* (*)(char const*, int*))
+0003e680 t CTier3AppSystem<IMDLCache, 0>::Disconnect()
+0003e730 t CTier3AppSystem<IMDLCache, 0>::Connect(void* (*)(char const*, int*))
+0003f2d0 t CUtlFixedMemory<UtlLinkedListElem_t<AsyncInfo_t, int> >::Grow(int)
+00033270 t CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int> >::Grow(int)
+0002d170 t CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int> >::Purge() [clone .isra.46]
+000538e0 t CUtlSymbolTable::AddString(char const*)
+000535d0 t CUtlSymbolTable::RemoveAll()
+00052fb0 t CUtlSymbolTable::CUtlSymbolTable(int, int, bool)
+00052fb0 t CUtlSymbolTable::CUtlSymbolTable(int, int, bool)
+00053630 t CUtlSymbolTable::~CUtlSymbolTable()
+00053630 t CUtlSymbolTable::~CUtlSymbolTable()
+0007e0a0 b DataCacheItem_t::s_Allocator
+0002fa50 t DataCacheItem_t::DestroyResource()
+00018bc0 t mstudioflexop_t::GetBaseMap()
+00074540 d mstudioflexop_t::m_DataMap
+00018d60 t mstudioiklink_t::GetBaseMap()
+00074500 d mstudioiklink_t::m_DataMap
+00018540 t mstudioiklock_t::GetBaseMap()
+00074640 d mstudioiklock_t::m_DataMap
+00018060 t mstudioikrule_t::GetBaseMap()
+00074700 d mstudioikrule_t::m_DataMap
+000198c0 t mstudiovertex_t::GetBaseMap()
+00074340 d mstudiovertex_t::m_DataMap
+000480b0 t CDataManagerBase::TargetSize()
+00048910 t CDataManagerBase::MarkAsStale(memhandle_t__*)
+00048d30 t CDataManagerBase::CreateHandle(bool)
+00048830 t CDataManagerBase::LockResource(memhandle_t__*)
+000484a0 t CDataManagerBase::TouchByIndex(unsigned short)
+000480c0 t CDataManagerBase::AvailableSize()
+00048210 t CDataManagerBase::BreakAllLocks()
+00047f90 t CDataManagerBase::SetTargetSize(unsigned int)
+00048520 t CDataManagerBase::TouchResource(memhandle_t__*)
+00048380 t CDataManagerBase::EnsureCapacity(unsigned int)
+00048120 t CDataManagerBase::UnlockResource(memhandle_t__*)
+00048710 t CDataManagerBase::DestroyResource(memhandle_t__*)
+00048bd0 t CDataManagerBase::FlushAllUnlocked()
+00048ee0 t CDataManagerBase::GetLRUHandleList(CUtlVector<memhandle_t__*, CUtlMemory<memhandle_t__*, int> >&)
+00048480 t CDataManagerBase::FlushToTargetSize()
+000482c0 t CDataManagerBase::GetForFreeByIndex(unsigned short)
+00048e60 t CDataManagerBase::GetLockHandleList(CUtlVector<memhandle_t__*, CUtlMemory<memhandle_t__*, int> >&)
+00047f50 t CDataManagerBase::NotifySizeChanged(memhandle_t__*, unsigned int, unsigned int)
+00048590 t CDataManagerBase::GetResource_NoLock(memhandle_t__*)
+00048020 t CDataManagerBase::StoreResourceInHandle(unsigned short, void*, unsigned int)
+00047fa0 t CDataManagerBase::GetResource_NoLockNoLRUTouch(memhandle_t__*)
+00048fe0 t CDataManagerBase::Lock()
+00048440 t CDataManagerBase::Purge(unsigned int)
+00049000 t CDataManagerBase::Unlock()
+00048ff0 t CDataManagerBase::TryLock()
+000489d0 t CDataManagerBase::FlushAll()
+00048080 t CDataManagerBase::ToHandle(unsigned short)
+000480d0 t CDataManagerBase::UsedSize()
+00048630 t CDataManagerBase::BreakLock(memhandle_t__*)
+00048f60 t CDataManagerBase::CDataManagerBase(unsigned int)
+00048f60 t CDataManagerBase::CDataManagerBase(unsigned int)
+00048100 t CDataManagerBase::~CDataManagerBase()
+000480e0 t CDataManagerBase::~CDataManagerBase()
+000480e0 t CDataManagerBase::~CDataManagerBase()
+00047cd0 t CDefaultAccessor::RegisterConCommandBase(ConCommandBase*)
+0004a8c0 t CDllDemandLoader::GetFactory()
+0004a910 t CDllDemandLoader::Unload()
+0004a8a0 t CDllDemandLoader::CDllDemandLoader(char const*)
+0004a8a0 t CDllDemandLoader::CDllDemandLoader(char const*)
+0004a960 t CDllDemandLoader::~CDllDemandLoader()
+0004a940 t CDllDemandLoader::~CDllDemandLoader()
+0004a940 t CDllDemandLoader::~CDllDemandLoader()
+0003e9a0 t CTempAllocHelper::~CTempAllocHelper()
+0003e9a0 t CTempAllocHelper::~CTempAllocHelper()
+         U CThreadLocalBase::Set(void*)
+         U CThreadLocalBase::CThreadLocalBase()
+         U CThreadLocalBase::~CThreadLocalBase()
+00019170 t mstudioeyeball_t::GetBaseMap()
+00074460 d mstudioeyeball_t::m_DataMap
+00018c90 t mstudioikchain_t::GetBaseMap()
+00074520 d mstudioikchain_t::m_DataMap
+00017ec0 t mstudioikerror_t::GetBaseMap()
+00074740 d mstudioikerror_t::m_DataMap
+000182d0 t mstudioseqdesc_t::GetBaseMap()
+000746a0 d mstudioseqdesc_t::m_DataMap
+00019580 t mstudiotexture_t::GetBaseMap()
+000743c0 d mstudiotexture_t::m_DataMap
+0002e550 t CDataCacheSection::GetNoTouch(memhandle_t__*, bool)
+00030100 t CDataCacheSection::PurgeItems(unsigned int)
+0002cb60 t CDataCacheSection::SetOptions(unsigned int)
+00030bf0 t CDataCacheSection::UpdateSize(memhandle_t__*, unsigned int)
+0002fb40 t CDataCacheSection::DiscardItem(memhandle_t__*, DataCacheNotificationType_t)
+0002f6a0 t CDataCacheSection::GetNextItem(memhandle_t__*)
+0002ccb0 t CDataCacheSection::UnlockMutex()
+0002d3a0 t CDataCacheSection::GetLockCount(memhandle_t__*)
+0002cc20 t CDataCacheSection::OutputReport(DataCacheReportType_t)
+00030cc0 t CDataCacheSection::EnsureCapacity(unsigned int, unsigned int)
+00032350 t CDataCacheSection::GetSharedCache()
+0002d020 t CDataCacheSection::IsFrameLocking()
+0002f910 t CDataCacheSection::DiscardItemData(DataCacheItem_t*, DataCacheNotificationType_t)
+0002dab0 t CDataCacheSection::EndFrameLocking()
+0002d0a0 t CDataCacheSection::BeginFrameLocking()
+0002f5d0 t CDataCacheSection::GetFirstLockedItem()
+0002f500 t CDataCacheSection::GetFirstUnlockedItem()
+0002cc10 t CDataCacheSection::GetFrameUnlockCounterPtr()
+0002cbd0 t CDataCacheSection::Add(unsigned int, void const*, unsigned int, memhandle_t__**)
+0002d040 t CDataCacheSection::Age(memhandle_t__*)
+0002eed0 t CDataCacheSection::Get(memhandle_t__*, bool)
+0002d890 t CDataCacheSection::Find(unsigned int)
+0002eb80 t CDataCacheSection::Lock(memhandle_t__*)
+0002e0d0 t CDataCacheSection::AddEx(unsigned int, void const*, unsigned int, unsigned int, memhandle_t__**)
+00030550 t CDataCacheSection::Flush(bool, bool)
+00032330 t CDataCacheSection::OnAdd(unsigned int, memhandle_t__*)
+00030220 t CDataCacheSection::Purge(unsigned int)
+0002d070 t CDataCacheSection::Touch(memhandle_t__*)
+0002f7b0 t CDataCacheSection::DoFind(unsigned int)
+0002fd10 t CDataCacheSection::Remove(memhandle_t__*, void const**, unsigned int*, bool)
+0002dd80 t CDataCacheSection::Unlock(memhandle_t__*)
+00032320 t CDataCacheSection::GetName()
+00032340 t CDataCacheSection::OnRemove(unsigned int)
+0002d000 t CDataCacheSection::BreakLock(memhandle_t__*)
+0002e8a0 t CDataCacheSection::FrameLock(memhandle_t__*)
+0002f4f0 t CDataCacheSection::GetLimits()
+0002cb70 t CDataCacheSection::GetStatus(DataCacheStatus_t*, DataCacheLimits_t*)
+0002d370 t CDataCacheSection::IsPresent(memhandle_t__*)
+0002ccf0 t CDataCacheSection::LockMutex()
+0002cb30 t CDataCacheSection::SetLimits(DataCacheLimits_t const&)
+0002f260 t CDataCacheSection::CDataCacheSection(CDataCache*, IDataCacheClient*, char const*)
+0002f260 t CDataCacheSection::CDataCacheSection(CDataCache*, IDataCacheClient*, char const*)
+0002f400 t CDataCacheSection::~CDataCacheSection()
+0002f400 t CDataCacheSection::~CDataCacheSection()
+         U CThreadSpinRWLock::UnlockRead()
+         U CThreadSpinRWLock::LockForRead()
+         U CThreadSpinRWLock::UnlockWrite()
+         U CThreadSpinRWLock::SpinLockForWrite(unsigned int)
+         U CThreadSyncObject::~CThreadSyncObject()
+00050ec0 t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
+00050f70 t CUtlInplaceBuffer::InplaceGetLinePtr()
+00051680 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+00051680 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+00017d20 t mstudioanimdesc_t::GetBaseMap()
+00074780 d mstudioanimdesc_t::m_DataMap
+00018880 t mstudioflexdesc_t::GetBaseMap()
+000745c0 d mstudioflexdesc_t::m_DataMap
+00018af0 t mstudioflexrule_t::GetBaseMap()
+00074560 d mstudioflexrule_t::m_DataMap
+00018130 t mstudiomovement_t::GetBaseMap()
+000746e0 d mstudiomovement_t::m_DataMap
+00019310 t mstudiovertanim_t::GetBaseMap()
+00074420 d mstudiovertanim_t::m_DataMap
+00019720 t vertexFileFixup_t::GetBaseMap()
+00074380 d vertexFileFixup_t::m_DataMap
+0004e950 t CUtlCharConversion::FindConversion(char const*, int*)
+0004e9f0 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+0004e9f0 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+00017500 t mstudioaimatbone_t::GetBaseMap()
+000748c0 d mstudioaimatbone_t::m_DataMap
+000194b0 t mstudioanimblock_t::GetBaseMap()
+000743e0 d mstudioanimblock_t::m_DataMap
+00018470 t mstudioautolayer_t::GetBaseMap()
+00074660 d mstudioautolayer_t::m_DataMap
+00018610 t mstudiobodyparts_t::GetBaseMap()
+00074620 d mstudiobodyparts_t::m_DataMap
+00017840 t mstudiohitboxset_t::GetBaseMap()
+00074840 d mstudiohitboxset_t::m_DataMap
+00019650 t vertexFileHeader_t::GetBaseMap()
+000743a0 d vertexFileHeader_t::m_DataMap
+00027d20 t CModelLookupContext::CModelLookupContext(int, studiohdr_t const*)
+00027d20 t CModelLookupContext::CModelLookupContext(int, studiohdr_t const*)
+00029250 t CModelLookupContext::~CModelLookupContext()
+00029250 t CModelLookupContext::~CModelLookupContext()
+00055b20 t CUtlConstStringBase<char>::Set(char const*)
+00051740 t CUtlNoEscConversion::FindConversion(char const*, int*)
+00017770 t mstudioattachment_t::GetBaseMap()
+00074860 d mstudioattachment_t::m_DataMap
+000197f0 t mstudioboneweight_t::GetBaseMap()
+00074360 d mstudioboneweight_t::m_DataMap
+00017430 t mstudiojigglebone_t::GetBaseMap()
+000748e0 d mstudiojigglebone_t::m_DataMap
+00017020 t mstudiolinearbone_t::GetBaseMap()
+00074980 d mstudiolinearbone_t::m_DataMap
+000193e0 t mstudiomodelgroup_t::GetBaseMap()
+00074400 d mstudiomodelgroup_t::m_DataMap
+0003e3e0 t CRefCountServiceBase<true, CRefMT>::OnFinalRelease()
+0003e4e0 t CRefCountServiceBase<true, CRefMT>::~CRefCountServiceBase()
+0003e2f0 t CRefCountServiceBase<true, CRefMT>::~CRefCountServiceBase()
+0003e2f0 t CRefCountServiceBase<true, CRefMT>::~CRefCountServiceBase()
+0004e910 t CUtlCStringConversion::FindConversion(char const*, int*)
+0004eaf0 t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+0004eaf0 t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+00017c50 t mstudioanimsections_t::GetBaseMap()
+000747a0 d mstudioanimsections_t::m_DataMap
+000541c0 t CCleanupUtlSymbolTable::~CCleanupUtlSymbolTable()
+000541c0 t CCleanupUtlSymbolTable::~CCleanupUtlSymbolTable()
+00017ab0 t mstudioanim_valueptr_t::GetBaseMap()
+000747e0 d mstudioanim_valueptr_t::m_DataMap
+00018f00 t mstudioposeparamdesc_t::GetBaseMap()
+000744c0 d mstudioposeparamdesc_t::m_DataMap
+0003e2a0 t CDefaultDataCacheClient::GetItemName(unsigned int, void const*, char*, unsigned int)
+0003e290 t CDefaultDataCacheClient::HandleCacheNotification(DataCacheNotification_t const&)
+000532f0 t CUtlFilenameSymbolTable::FindFileName(char const*)
+00053b70 t CUtlFilenameSymbolTable::FindOrAddFileName(char const*)
+00053500 t CUtlFilenameSymbolTable::String(void* const&, char*, int)
+00053ab0 t CUtlFilenameSymbolTable::RemoveAll()
+00053240 t CUtlFilenameSymbolTable::CUtlFilenameSymbolTable()
+00053240 t CUtlFilenameSymbolTable::CUtlFilenameSymbolTable()
+00053b10 t CUtlFilenameSymbolTable::~CUtlFilenameSymbolTable()
+00053b10 t CUtlFilenameSymbolTable::~CUtlFilenameSymbolTable()
+00017290 t mstudioaxisinterpbone_t::GetBaseMap()
+00074920 d mstudioaxisinterpbone_t::m_DataMap
+000176a0 t mstudiobonecontroller_t::GetBaseMap()
+00074880 d mstudiobonecontroller_t::m_DataMap
+000171c0 t mstudioboneflexdriver_t::GetBaseMap()
+00074940 d mstudioboneflexdriver_t::m_DataMap
+00018950 t mstudioflexcontroller_t::GetBaseMap()
+000745a0 d mstudioflexcontroller_t::m_DataMap
+00017b80 t mstudiolocalhierarchy_t::GetBaseMap()
+000747c0 d mstudiolocalhierarchy_t::m_DataMap
+00017360 t mstudioquatinterpbone_t::GetBaseMap()
+00074900 d mstudioquatinterpbone_t::m_DataMap
+000175d0 t mstudioquatinterpinfo_t::GetBaseMap()
+000748a0 d mstudioquatinterpinfo_t::m_DataMap
+000190a0 t mstudio_meshvertexdata_t::GetBaseMap()
+00074480 d mstudio_meshvertexdata_t::m_DataMap
+0007cf90 b phyheader_t_DataDescInit::g_DataMapHolder
+0007d094 b studiohdr_t_DataDescInit::g_DataMapHolder
+00031560 t CDataCacheSectionFastFind::OnAdd(unsigned int, memhandle_t__*)
+0002cf10 t CDataCacheSectionFastFind::DoFind(unsigned int)
+00031420 t CDataCacheSectionFastFind::OnRemove(unsigned int)
+00018200 t mstudioactivitymodifier_t::GetBaseMap()
+000746c0 d mstudioactivitymodifier_t::m_DataMap
+00018a20 t mstudioflexcontrollerui_t::GetBaseMap()
+00074580 d mstudioflexcontrollerui_t::m_DataMap
+000187b0 t mstudio_modelvertexdata_t::GetBaseMap()
+000745e0 d mstudio_modelvertexdata_t::m_DataMap
+00017910 t mstudiosrcbonetransform_t::GetBaseMap()
+00074820 d mstudiosrcbonetransform_t::m_DataMap
+0007d090 b studiohdr2_t_DataDescInit::g_DataMapHolder
+0007d044 b mstudioanim_t_DataDescInit::g_DataMapHolder
+0007d058 b mstudiobbox_t_DataDescInit::g_DataMapHolder
+0007d08c b mstudiobone_t_DataDescInit::g_DataMapHolder
+00017f90 t mstudiocompressedikerror_t::GetBaseMap()
+00074720 d mstudiocompressedikerror_t::m_DataMap
+0007cfe0 b mstudioflex_t_DataDescInit::g_DataMapHolder
+0007cfec b mstudiomesh_t_DataDescInit::g_DataMapHolder
+0007d028 b mstudioevent_t_DataDescInit::g_DataMapHolder
+0007d018 b mstudiomodel_t_DataDescInit::g_DataMapHolder
+0007cff4 b mstudiomouth_t_DataDescInit::g_DataMapHolder
+00024010 t CDatadescGeneratedNameHolder::~CDatadescGeneratedNameHolder()
+00024010 t CDatadescGeneratedNameHolder::~CDatadescGeneratedNameHolder()
+0007d000 b mstudioflexop_t_DataDescInit::g_DataMapHolder
+0007cff8 b mstudioiklink_t_DataDescInit::g_DataMapHolder
+0007d020 b mstudioiklock_t_DataDescInit::g_DataMapHolder
+0007d038 b mstudioikrule_t_DataDescInit::g_DataMapHolder
+0007cfc0 b mstudiovertex_t_DataDescInit::g_DataMapHolder
+0007cfe4 b mstudioeyeball_t_DataDescInit::g_DataMapHolder
+0007cffc b mstudioikchain_t_DataDescInit::g_DataMapHolder
+0007d040 b mstudioikerror_t_DataDescInit::g_DataMapHolder
+0007d02c b mstudioseqdesc_t_DataDescInit::g_DataMapHolder
+0007cfd0 b mstudiotexture_t_DataDescInit::g_DataMapHolder
+0007d048 b mstudioanimdesc_t_DataDescInit::g_DataMapHolder
+000170f0 t mstudioboneflexdrivercontrol_t::GetBaseMap()
+00074960 d mstudioboneflexdrivercontrol_t::m_DataMap
+0007d010 b mstudioflexdesc_t_DataDescInit::g_DataMapHolder
+0007d004 b mstudioflexrule_t_DataDescInit::g_DataMapHolder
+0007d034 b mstudiomovement_t_DataDescInit::g_DataMapHolder
+0007cfdc b mstudiovertanim_t_DataDescInit::g_DataMapHolder
+0007cfc8 b vertexFileFixup_t_DataDescInit::g_DataMapHolder
+0007d070 b mstudioaimatbone_t_DataDescInit::g_DataMapHolder
+0007cfd4 b mstudioanimblock_t_DataDescInit::g_DataMapHolder
+0007d024 b mstudioautolayer_t_DataDescInit::g_DataMapHolder
+0007d01c b mstudiobodyparts_t_DataDescInit::g_DataMapHolder
+0007d060 b mstudiohitboxset_t_DataDescInit::g_DataMapHolder
+0007cfcc b vertexFileHeader_t_DataDescInit::g_DataMapHolder
+0007d064 b mstudioattachment_t_DataDescInit::g_DataMapHolder
+0007cfc4 b mstudioboneweight_t_DataDescInit::g_DataMapHolder
+0007d074 b mstudiojigglebone_t_DataDescInit::g_DataMapHolder
+0007d088 b mstudiolinearbone_t_DataDescInit::g_DataMapHolder
+0007cfd8 b mstudiomodelgroup_t_DataDescInit::g_DataMapHolder
+0007d04c b mstudioanimsections_t_DataDescInit::g_DataMapHolder
+0007d054 b mstudioanim_valueptr_t_DataDescInit::g_DataMapHolder
+0007cff0 b mstudioposeparamdesc_t_DataDescInit::g_DataMapHolder
+0007d07c b mstudioaxisinterpbone_t_DataDescInit::g_DataMapHolder
+0007d068 b mstudiobonecontroller_t_DataDescInit::g_DataMapHolder
+0007d080 b mstudioboneflexdriver_t_DataDescInit::g_DataMapHolder
+0007d00c b mstudioflexcontroller_t_DataDescInit::g_DataMapHolder
+0007d050 b mstudiolocalhierarchy_t_DataDescInit::g_DataMapHolder
+0007d078 b mstudioquatinterpbone_t_DataDescInit::g_DataMapHolder
+0007d06c b mstudioquatinterpinfo_t_DataDescInit::g_DataMapHolder
+0007cfe8 b mstudio_meshvertexdata_t_DataDescInit::g_DataMapHolder
+0007d030 b mstudioactivitymodifier_t_DataDescInit::g_DataMapHolder
+0007d008 b mstudioflexcontrollerui_t_DataDescInit::g_DataMapHolder
+0007d014 b mstudio_modelvertexdata_t_DataDescInit::g_DataMapHolder
+0007d05c b mstudiosrcbonetransform_t_DataDescInit::g_DataMapHolder
+0007d03c b mstudiocompressedikerror_t_DataDescInit::g_DataMapHolder
+0007d084 b mstudioboneflexdrivercontrol_t_DataDescInit::g_DataMapHolder
+000467e0 t ConVar::ClampValue(float&)
+00047540 t ConVar::SetDefault(char const*)
+00046410 t ConVar::InternalSetValue(char const*)
+00046690 t ConVar::ChangeStringValue(char const*, float)
+00046820 t ConVar::InternalSetIntValue(int)
+00047490 t ConVar::InstallChangeCallback(void (*)(IConVar*, char const*, float))
+00046320 t ConVar::InternalSetFloatValue(float)
+00046230 t ConVar::Init()
+00046530 t ConVar::Create(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+000474d0 t ConVar::Revert()
+000461d0 t ConVar::AddFlags(int)
+00046290 t ConVar::SetValue(float)
+000462c0 t ConVar::SetValue(int)
+00046260 t ConVar::SetValue(char const*)
+00047170 t ConVar::ConVar(char const*, char const*, int)
+00047210 t ConVar::ConVar(char const*, char const*, int, char const*)
+000472b0 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+000473f0 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+00047350 t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
+00047170 t ConVar::ConVar(char const*, char const*, int)
+00047210 t ConVar::ConVar(char const*, char const*, int, char const*)
+000472b0 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+000473f0 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+00047350 t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
+00046670 t ConVar::~ConVar()
+00046630 t ConVar::~ConVar()
+00046630 t ConVar::~ConVar()
+0003e300 t CDefOps<int>::LessFunc(int const&, int const&)
+0003f260 t CUtlMap<int, int, unsigned short>::~CUtlMap()
+0003f260 t CUtlMap<int, int, unsigned short>::~CUtlMap()
+00046cc0 t CCommand::DefaultBreakSet()
+00046ca0 t CCommand::Reset()
+00046cd0 t CCommand::Tokenize(char const*, characterset_t*)
+00046b60 t CCommand::CCommand(int, char const**)
+00046b10 t CCommand::CCommand()
+00046b60 t CCommand::CCommand(int, char const**)
+00046b10 t CCommand::CCommand()
+00032360 t CFmtStrN<256, false>::InitQuietTruncation()
+00032d20 t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
+00032d20 t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
+0003e500 t CFunctor::~CFunctor()
+0003e2b0 t CFunctor::~CFunctor()
+0003e2b0 t CFunctor::~CFunctor()
+0003fbb0 t CUtlDict<studiodata_t*, unsigned short>::Purge()
+0003fce0 t CUtlDict<studiodata_t*, unsigned short>::~CUtlDict()
+0003fce0 t CUtlDict<studiodata_t*, unsigned short>::~CUtlDict()
+0002a490 t CUtlDict<short, short>::CUtlDict(int, int, int)
+0002a490 t CUtlDict<short, short>::CUtlDict(int, int, int)
+0002b380 t CUtlDict<short, short>::~CUtlDict()
+0002b380 t CUtlDict<short, short>::~CUtlDict()
+00027b40 t CUtlHash<CStudioHdr::CActivityToSequenceMapping::HashValueType, CStudioHdr::CActivityToSequenceMapping::HashValueType::HashFuncs, CStudioHdr::CActivityToSequenceMapping::HashValueType::HashFuncs>::CUtlHash(int, int, int, CStudioHdr::CActivityToSequenceMapping::HashValueType::HashFuncs, CStudioHdr::CActivityToSequenceMapping::HashValueType::HashFuncs)
+00027b40 t CUtlHash<CStudioHdr::CActivityToSequenceMapping::HashValueType, CStudioHdr::CActivityToSequenceMapping::HashValueType::HashFuncs, CStudioHdr::CActivityToSequenceMapping::HashValueType::HashFuncs>::CUtlHash(int, int, int, CStudioHdr::CActivityToSequenceMapping::HashValueType::HashFuncs, CStudioHdr::CActivityToSequenceMapping::HashValueType::HashFuncs)
+0005a480 t CBaseFile::ReadFile(CUtlBuffer&)
+0005a520 t CBaseFile::ReadLines(CUtlStringList&, int)
+00045ce0 t CByteswap::SwapFieldToTargetEndian(void*, void*, typedescription_t*)
+00045c60 t CByteswap::SwapFieldsToTargetEndian(void*, void*, datamap_t*)
+0003e3c0 t CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::operator()()
+0003e490 t CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor1()
+0003e3a0 t CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor1()
+0003e3a0 t CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor1()
+00039f00 t CMDLCache::ClearAsync(unsigned short, MDLCacheDataType_t, int, bool)
+00035630 t CMDLCache::Disconnect()
+000393d0 t CMDLCache::EndMapLoad()
+000353a0 t CMDLCache::GetItemName(unsigned int, void const*, char*, unsigned int)
+000350e0 t CMDLCache::GetUserData(unsigned short)
+0003e2c0 t CMDLCache::GetVCollide(unsigned short)
+00036cc0 t CMDLCache::ReadMDLFile(unsigned short, char const*, CUtlBuffer&)
+000350b0 t CMDLCache::SetUserData(unsigned short, void*)
+00038680 t CMDLCache::UncacheData(memhandle_t__*, MDLCacheDataType_t, bool)
+00039530 t CMDLCache::BeginMapLoad()
+0003d770 t CMDLCache::GetAnimBlock(unsigned short, int)
+00035480 t CMDLCache::GetAsyncLoad(MDLCacheDataType_t)
+00034e40 t CMDLCache::GetModelName(unsigned short)
+0003ba20 t CMDLCache::GetStudioHdr(unsigned short)
+00039290 t CMDLCache::IsDataLoaded(unsigned short, MDLCacheDataType_t)
+00035110 t CMDLCache::IsErrorModel(unsigned short)
+00035e60 t CMDLCache::MakeFilename(unsigned short, char const*, char*, int)
+0003c4b0 t CMDLCache::MarkAsLoaded(unsigned short)
+00038810 t CMDLCache::PreloadModel(unsigned short)
+000352d0 t CMDLCache::SetAsyncLoad(MDLCacheDataType_t, bool)
+0003d900 t CMDLCache::TouchAllData(unsigned short)
+0003d120 t CMDLCache::GetVCollideEx(unsigned short, bool)
+00035210 t CMDLCache::GetVertexData(unsigned short)
+00034f90 t CMDLCache::LockStudioHdr(unsigned short)
+000371a0 t CMDLCache::VerifyHeaders(studiohdr_t*)
+00037040 t CMDLCache::BreakFrameLock(bool, bool)
+0003dc70 t CMDLCache::FreeAnimBlocks(unsigned short)
+00035bb0 t CMDLCache::InitStudioData(unsigned short)
+0003a580 t CMDLCache::LoadVertexData(studiohdr_t*)
+00035410 t CMDLCache::QueryInterface(char const*)
+00036c70 t CMDLCache::ReadFileNative(char*, char const*, CUtlBuffer&, int)
+00034e30 t CMDLCache::SetCacheNotify(IMDLCacheNotify*)
+00038290 t CMDLCache::UnserializeMDL(unsigned short, void*, int, bool)
+00036c10 t CMDLCache::UpdateOrCreate(studiohdr_t*, char const*, char*, int, char const*, bool)
+0003a900 t CMDLCache::CacheVertexData(studiohdr_t*)
+00036200 t CMDLCache::ConvertFlexData(studiohdr_t*)
+00035ef0 t CMDLCache::DestroyVCollide(unsigned short)
+000354e0 t CMDLCache::GetAutoplayList(unsigned short, unsigned short**)
+0003c910 t CMDLCache::GetHardwareData(unsigned short)
+00034ea0 t CMDLCache::GetVCollideSize(unsigned short, int*)
+00034f30 t CMDLCache::GetVirtualModel(unsigned short)
+00037140 t CMDLCache::GetVTXExtension()
+00035280 t CMDLCache::InitPreloadData(bool)
+00035020 t CMDLCache::UnlockStudioHdr(unsigned short)
+00038600 t CMDLCache::CheckDataNoTouch(memhandle_t__*, MDLCacheDataType_t)
+00038dc0 t CMDLCache::FreeVirtualModel(unsigned short)
+0003c530 t CMDLCache::LoadHardwareData(unsigned short)
+000370e0 t CMDLCache::RestoreFrameLock()
+000369f0 t CMDLCache::BuildHardwareData(unsigned short, studiodata_t*, studiohdr_t*, OptimizedModel::FileHeader_t*)
+0003b610 t CMDLCache::ProcessQueuedData(ModelParts_t*, bool)
+00035fb0 t CMDLCache::AllocateAnimBlocks(studiodata_t*, int)
+00037810 t CMDLCache::CreateThinVertexes(vertexFileHeader_t*, studiohdr_t const*, int*)
+0003acd0 t CMDLCache::FinishPendingLoads()
+00035e30 t CMDLCache::GetActualModelName(unsigned short)
+00039b20 t CMDLCache::NotifyFileUnloaded(unsigned short, char const*)
+000355a0 t CMDLCache::NotifyFileUnloaded(unsigned short, char const*) [clone .part.127]
+0003bca0 t CMDLCache::ProcessDynamicLoad(ModelParts_t*)
+00035d10 t CMDLCache::ShutdownStudioData(unsigned short)
+00039ba0 t CMDLCache::UnloadHardwareData(unsigned short, bool, bool)
+00039130 t CMDLCache::GetVirtualModelFast(studiohdr_t const*, unsigned short)
+0003a370 t CMDLCache::ProcessPendingAsync(int)
+00035290 t CMDLCache::ShutdownPreloadData()
+0003c9b0 t CMDLCache::UnserializeVCollide(unsigned short, bool)
+00036090 t CMDLCache::AllocateVirtualModel(unsigned short)
+0003aeb0 t CMDLCache::ProcessDataIntoCache(unsigned short, MDLCacheDataType_t, int, void*, int, bool)
+0003ab60 t CMDLCache::ProcessPendingAsyncs(MDLCacheDataType_t)
+0003d190 t CMDLCache::UnserializeAnimBlock(unsigned short, int)
+00036020 t CMDLCache::FreeAutoplaySequences(studiodata_t*)
+000352a0 t CMDLCache::ResetErrorModelStatus(unsigned short)
+00037d50 t CMDLCache::BuildAndCacheVertexData(studiohdr_t*, vertexFileHeader_t*)
+00039cb0 t CMDLCache::HandleCacheNotification(DataCacheNotification_t const&)
+000351c0 t CMDLCache::GetFrameUnlockCounterPtr(MDLCacheDataType_t)
+0003c160 t CMDLCache::QueuedLoaderCallback_MDL(void*, void*, void const*, int, LoaderError_t)
+00036050 t CMDLCache::AllocateAutoplaySequences(studiodata_t*, int)
+000351a0 t CMDLCache::GetFrameUnlockCounterPtrOLD()
+00039d80 t CMDLCache::ReleaseMaterialSystemObjects()
+0003da10 t CMDLCache::RestoreMaterialSystemObjects(int)
+0003adf0 t CMDLCache::UnserializeAllVirtualModelsAndAnimBlocks(unsigned short)
+000356c0 t CMDLCache::Init()
+000396a0 t CMDLCache::Flush(MDLCacheFlush_t)
+0003dd60 t CMDLCache::Flush(unsigned short, int)
+00034e70 t CMDLCache::AddRef(unsigned short)
+00035570 t CMDLCache::GetRef(unsigned short)
+00035850 t CMDLCache::Connect(void* (*)(char const*, int*))
+00035170 t CMDLCache::EndLock()
+0003e180 t CMDLCache::FindMDL(char const*)
+0003e0c0 t CMDLCache::Release(unsigned short)
+00038650 t CMDLCache::FreeData(MDLCacheDataType_t, void*)
+00037680 t CMDLCache::LoadData(char const*, char const*, void*, int, int, bool, FSAsyncControl_t__**)
+000397e0 t CMDLCache::Shutdown()
+000377c0 t CMDLCache::AllocData(MDLCacheDataType_t, int)
+00035140 t CMDLCache::BeginLock()
+00037cd0 t CMDLCache::CacheData(memhandle_t__**, void*, int, char const*, MDLCacheDataType_t, unsigned int)
+000385b0 t CMDLCache::CheckData(memhandle_t__*, MDLCacheDataType_t)
+0003acb0 t CMDLCache::MarkFrame()
+000399f0 t CMDLCache::CMDLCache()
+000399f0 t CMDLCache::CMDLCache()
+0003fd20 t CMDLCache::~CMDLCache()
+0003fd20 t CMDLCache::~CMDLCache()
+00047560 t ConVarRef::Init(char const*, bool)
+00047660 t ConVarRef::ConVarRef(IConVar*)
+00047630 t ConVarRef::ConVarRef(char const*)
+00047620 t ConVarRef::ConVarRef(char const*, bool)
+00047660 t ConVarRef::ConVarRef(IConVar*)
+00047630 t ConVarRef::ConVarRef(char const*)
+00047620 t ConVarRef::ConVarRef(char const*, bool)
+         U operator new[](unsigned int)@@GLIBCXX_3.4
+00046170 t ConCommand::IsCommand() const
+00026960 t CStudioHdr::ResetVModel(virtualmodel_t const*) const
+00025450 t CStudioHdr::iRelativeSeq(int, int) const
+00025b10 t CStudioHdr::RemapSeqBone(int, int) const
+00025860 t CStudioHdr::GetTransition(int, int) const
+00025420 t CStudioHdr::iRelativeAnim(int, int) const
+00025b60 t CStudioHdr::RemapAnimBone(int, int) const
+00025670 t CStudioHdr::GetNumAttachments() const
+000269c0 t CStudioHdr::SequencesAvailable() const
+00025480 t CStudioHdr::GetNumPoseParameters() const
+00025a60 t CStudioHdr::GetNumIKAutoplayLocks() const
+00025550 t CStudioHdr::GetSharedPoseParameter(int, int) const
+00025300 t CStudioHdr::GetNumSeq() const
+0003eb30 t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<int, int, unsigned short>::Node_t const&) const
+0003f930 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::NextInorder(unsigned short) const
+0003f8b0 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const
+0002af00 t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::NextInorder(short) const
+000328f0 t CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::NextInorder(int) const
+00052a70 t CUtlString::GetExtension() const
+000529a0 t CUtlString::StripFilename() const
+00051df0 t CUtlString::MatchesPattern(CUtlString const&, int) const
+00052940 t CUtlString::StripExtension() const
+00052a10 t CUtlString::GetBaseFilename() const
+00052870 t CUtlString::UnqualifiedFilename() const
+00051a50 t CUtlString::IsEqual_CaseSensitive(char const*) const
+00051aa0 t CUtlString::IsEqual_CaseInsensitive(char const*) const
+00051890 t CUtlString::Get() const
+00052420 t CUtlString::Left(int) const
+00052460 t CUtlString::Right(int) const
+00052330 t CUtlString::Slice(int, int) const
+00052800 t CUtlString::AbsPath(char const*) const
+000528b0 t CUtlString::DirName() const
+000524a0 t CUtlString::Replace(char, char) const
+00052580 t CUtlString::Replace(char const*, char const*) const
+00051bb0 t CUtlString::operator==(CUtlString const&) const
+000518f0 t CUtlString::operator[](int) const
+00052bd0 t CUtlString::operator+(int) const
+00052b30 t CUtlString::operator+(char const*) const
+00052b80 t CUtlString::operator+(CUtlString const&) const
+000537d0 t CUtlSymbol::String() const
+000538b0 t CUtlSymbol::operator==(char const*) const
+00024ad0 t studiohdr_t::pAttachment(int) const
+0003d8d0 t studiohdr_t::GetAnimBlock(int) const
+00024800 t studiohdr_t::iRelativeSeq(int, int) const
+00024f60 t studiohdr_t::RemapSeqBone(int, int) const
+00024ca0 t studiohdr_t::GetTransition(int, int) const
+000247b0 t studiohdr_t::iRelativeAnim(int, int) const
+00024fc0 t studiohdr_t::RemapAnimBone(int, int) const
+000387e0 t studiohdr_t::GetAutoplayList(unsigned short**) const
+00039250 t studiohdr_t::GetVirtualModel() const
+00024aa0 t studiohdr_t::GetNumAttachments() const
+000246a0 t studiohdr_t::SequencesAvailable() const
+00024850 t studiohdr_t::GetNumPoseParameters() const
+00024f00 t studiohdr_t::CopyAutoplaySequences(unsigned short*, int) const
+00024df0 t studiohdr_t::GetNumIKAutoplayLocks() const
+00024eb0 t studiohdr_t::CountAutoplaySequences() const
+00024930 t studiohdr_t::GetSharedPoseParameter(int, int) const
+00024d60 t studiohdr_t::SetActivityListVersion(int) const
+00024700 t studiohdr_t::pSeqdesc(int) const
+0003e250 t studiohdr_t::FindModel(void**, char const*) const
+000246d0 t studiohdr_t::GetNumSeq() const
+00024070 t studiohdr_t::pAnimdesc(int) const
+00047d70 t CEmptyConVar::GetName() const
+00047d90 t CEmptyConVar::IsFlagSet(int) const
+00052d40 t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.56] [clone .constprop.58]
+00046130 t ConCommandBase::GetHelpText() const
+00046140 t ConCommandBase::IsRegistered() const
+00046050 t ConCommandBase::GetDLLIdentifier() const
+000460f0 t ConCommandBase::GetName() const
+00046a80 t ConCommandBase::GetNext() const
+00046040 t ConCommandBase::IsCommand() const
+00046100 t ConCommandBase::IsFlagSet(int) const
+0003bc80 t virtualgroup_t::GetStudioHdr() const
+000531b0 t CUtlSymbolTable::FindPoolWithSpace(int) const
+00053040 t CUtlSymbolTable::Find(char const*) const
+00052ec0 t CUtlSymbolTable::CLess::operator()(CUtlSymbolTable::CStringPoolIndex const&, CUtlSymbolTable::CStringPoolIndex const&) const
+00053200 t CUtlSymbolTable::String(CUtlSymbol) const
+         U CThreadLocalBase::Get() const
+00024110 t mstudioanimdesc_t::pAnimBlock(int, int) const
+00024630 t mstudioanimdesc_t::pHierarchy(int) const
+00024580 t mstudioanimdesc_t::pAnim(int*) const
+00024170 t mstudioanimdesc_t::pAnim(int*, float&) const
+000245b0 t mstudioanimdesc_t::pIKRule(int) const
+0004ebd0 t CUtlCharConversion::GetDelimiter() const
+0004ebc0 t CUtlCharConversion::GetEscapeChar() const
+0004ebe0 t CUtlCharConversion::GetDelimiterLength() const
+0004ec10 t CUtlCharConversion::GetConversionLength(char) const
+0004ebf0 t CUtlCharConversion::GetConversionString(char) const
+0004ec30 t CUtlCharConversion::MaxConversionLength() const
+00047530 t ConVar::GetDefault() const
+000461c0 t ConVar::GetHelpText() const
+000461f0 t ConVar::IsRegistered() const
+00047510 t ConVar::GetMax(float&) const
+000474f0 t ConVar::GetMin(float&) const
+00046210 t ConVar::GetName() const
+00046220 t ConVar::IsCommand() const
+000461a0 t ConVar::IsFlagSet(int) const
+00046f70 t CCommand::FindArgInt(char const*, int) const
+00046ee0 t CCommand::FindArg(char const*) const
+0003ea10 t CUtlDict<studiodata_t*, unsigned short>::Find(char const*) const
+0002a130 t CUtlDict<short, short>::Find(char const*) const
+00047680 t ConVarRef::IsValid() const
+         U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
+         U operator new(unsigned int)@@GLIBCXX_3.4
+         U std::terminate()@@GLIBCXX_3.4
+00035390 t non-virtual thunk to CMDLCache::GetItemName(unsigned int, void const*, char*, unsigned int)
+00039ca0 t non-virtual thunk to CMDLCache::HandleCacheNotification(DataCacheNotification_t const&)
+00047d20 t non-virtual thunk to CEmptyConVar::SetValue(float)
+00047d40 t non-virtual thunk to CEmptyConVar::SetValue(int)
+00047d00 t non-virtual thunk to CEmptyConVar::SetValue(char const*)
+00046280 t non-virtual thunk to ConVar::SetValue(float)
+000462b0 t non-virtual thunk to ConVar::SetValue(int)
+00046250 t non-virtual thunk to ConVar::SetValue(char const*)
+00047d60 t non-virtual thunk to CEmptyConVar::GetName() const
+00047d80 t non-virtual thunk to CEmptyConVar::IsFlagSet(int) const
+00046200 t non-virtual thunk to ConVar::GetName() const
+00046190 t non-virtual thunk to ConVar::IsFlagSet(int) const
+0003e4b0 t non-virtual thunk to CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+0003e340 t non-virtual thunk to CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
+0003e480 t non-virtual thunk to CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor1()
+0003e390 t non-virtual thunk to CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor1()
+00035620 t non-virtual thunk to CMDLCache::Disconnect()
+00037190 t non-virtual thunk to CMDLCache::VerifyHeaders(studiohdr_t*)
+00035400 t non-virtual thunk to CMDLCache::QueryInterface(char const*)
+0003a8f0 t non-virtual thunk to CMDLCache::CacheVertexData(studiohdr_t*)
+000356b0 t non-virtual thunk to CMDLCache::Init()
+00035840 t non-virtual thunk to CMDLCache::Connect(void* (*)(char const*, int*))
+000397d0 t non-virtual thunk to CMDLCache::Shutdown()
+000611fc r typeinfo for CDataCache
+00062f90 r typeinfo for ConCommand
+000616e8 r typeinfo for IAppSystem
+000616f0 r typeinfo for IDataCache
+00062a38 r typeinfo for IRefCounted
+0006172c r typeinfo for CDataManager<DataCacheItem_t, DataCacheItemData_t, DataCacheItem_t*, CThreadFastMutex>
+000631a4 r typeinfo for CEmptyConVar
+00062a60 r typeinfo for CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >
+000616fc r typeinfo for CBaseAppSystem<IDataCache>
+00062a00 r typeinfo for CBaseAppSystem<IMDLCache>
+00062f78 r typeinfo for ConCommandBase
+00061708 r typeinfo for CTier0AppSystem<IDataCache>
+00062a0c r typeinfo for CTier0AppSystem<IMDLCache>
+00061714 r typeinfo for CTier1AppSystem<IDataCache, 0>
+00062a18 r typeinfo for CTier1AppSystem<IMDLCache, 0>
+00061720 r typeinfo for CTier2AppSystem<IDataCache, 0>
+00062a24 r typeinfo for CTier2AppSystem<IMDLCache, 0>
+000616dc r typeinfo for CTier3AppSystem<IDataCache, 0>
+000629d0 r typeinfo for CTier3AppSystem<IMDLCache, 0>
+000632d4 r typeinfo for CDataManagerBase
+000631bc r typeinfo for CDefaultAccessor
+000637b0 r typeinfo for CDllDemandLoader
+00062a30 r typeinfo for IDataCacheClient
+000629dc r typeinfo for IStudioDataCache
+000611b8 r typeinfo for CDataCacheSection
+000616d4 r typeinfo for IDataCacheSection
+00063a38 r typeinfo for CUtlCharConversion
+00063a94 r typeinfo for CUtlNoEscConversion
+000630f4 r typeinfo for ConVar_ServerBounded
+00062a4c r typeinfo for CRefCountServiceBase<true, CRefMT>
+00063a58 r typeinfo for CUtlCStringConversion
+000629e8 r typeinfo for CDefaultDataCacheClient
+000631ec r typeinfo for IConCommandBaseAccessor
+000611e0 r typeinfo for CDataCacheSectionFastFind
+00062fc0 r typeinfo for ConVar
+00063174 r typeinfo for IConVar
+00061738 r typeinfo for CFmtStrN<256, false>
+00062a40 r typeinfo for CFunctor
+00062a80 r typeinfo for CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
+00062300 r typeinfo for CMDLCache
+000629f4 r typeinfo for IMDLCache
+000611ec r typeinfo name for CDataCache
+00062f80 r typeinfo name for ConCommand
+00061784 r typeinfo name for IAppSystem
+00061791 r typeinfo name for IDataCache
+00062bb5 r typeinfo name for IRefCounted
+00061860 r typeinfo name for CDataManager<DataCacheItem_t, DataCacheItemData_t, DataCacheItem_t*, CThreadFastMutex>
+000631c8 r typeinfo name for CEmptyConVar
+00062c20 r typeinfo name for CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >
+000617a0 r typeinfo name for CBaseAppSystem<IDataCache>
+00062afa r typeinfo name for CBaseAppSystem<IMDLCache>
+00062f65 r typeinfo name for ConCommandBase
+000617c0 r typeinfo name for CTier0AppSystem<IDataCache>
+00062b17 r typeinfo name for CTier0AppSystem<IMDLCache>
+000617e0 r typeinfo name for CTier1AppSystem<IDataCache, 0>
+00062b40 r typeinfo name for CTier1AppSystem<IMDLCache, 0>
+00061820 r typeinfo name for CTier2AppSystem<IDataCache, 0>
+00062b80 r typeinfo name for CTier2AppSystem<IMDLCache, 0>
+00061760 r typeinfo name for CTier3AppSystem<IDataCache, 0>
+00062aa0 r typeinfo name for CTier3AppSystem<IMDLCache, 0>
+000632c1 r typeinfo name for CDataManagerBase
+000631d7 r typeinfo name for CDefaultAccessor
+0006379b r typeinfo name for CDllDemandLoader
+00062ba2 r typeinfo name for IDataCacheClient
+00062ac2 r typeinfo name for IStudioDataCache
+000611a4 r typeinfo name for CDataCacheSection
+00061740 r typeinfo name for IDataCacheSection
+00063a23 r typeinfo name for CUtlCharConversion
+00063aa0 r typeinfo name for CUtlNoEscConversion
+0006318c r typeinfo name for ConVar_ServerBounded
+00062be0 r typeinfo name for CRefCountServiceBase<true, CRefMT>
+00063a40 r typeinfo name for CUtlCStringConversion
+00062ad5 r typeinfo name for CDefaultDataCacheClient
+000631f4 r typeinfo name for IConCommandBaseAccessor
+000611c4 r typeinfo name for CDataCacheSectionFastFind
+00062f9c r typeinfo name for ConVar
+000631b0 r typeinfo name for IConVar
+000618ad r typeinfo name for CFmtStrN<256, false>
+00062bc3 r typeinfo name for CFunctor
+00062c60 r typeinfo name for CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
+000622d8 r typeinfo name for CMDLCache
+00062aef r typeinfo name for IMDLCache
+00061360 r vtable for CDataCache
+00063020 r vtable for ConCommand
+00061440 r vtable for IAppSystem
+00061460 r vtable for IDataCache
+00062908 r vtable for IRefCounted
+000616a0 r vtable for CDataManager<DataCacheItem_t, DataCacheItemData_t, DataCacheItem_t*, CThreadFastMutex>
+00063100 r vtable for CEmptyConVar
+00062960 r vtable for CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >
+000614c0 r vtable for CBaseAppSystem<IDataCache>
+00062500 r vtable for CBaseAppSystem<IMDLCache>
+00062fe0 r vtable for ConCommandBase
+00061520 r vtable for CTier0AppSystem<IDataCache>
+000625c0 r vtable for CTier0AppSystem<IMDLCache>
+00061580 r vtable for CTier1AppSystem<IDataCache, 0>
+00062680 r vtable for CTier1AppSystem<IMDLCache, 0>
+000615e0 r vtable for CTier2AppSystem<IDataCache, 0>
+00062740 r vtable for CTier2AppSystem<IMDLCache, 0>
+00061640 r vtable for CTier3AppSystem<IDataCache, 0>
+00062800 r vtable for CTier3AppSystem<IMDLCache, 0>
+000632e0 r vtable for CDataManagerBase
+00063180 r vtable for CDefaultAccessor
+000637b8 r vtable for CDllDemandLoader
+000628e8 r vtable for IDataCacheClient
+000628c0 r vtable for IStudioDataCache
+00061220 r vtable for CDataCacheSection
+000613c0 r vtable for IDataCacheSection
+00063a78 r vtable for CUtlCharConversion
+00063a88 r vtable for CUtlNoEscConversion
+00062938 r vtable for CRefCountServiceBase<true, CRefMT>
+00063a68 r vtable for CUtlCStringConversion
+000628f8 r vtable for CDefaultDataCacheClient
+000612c0 r vtable for CDataCacheSectionFastFind
+00063060 r vtable for ConVar
+000630d8 r vtable for IConVar
+000616c8 r vtable for CFmtStrN<256, false>
+00062918 r vtable for CFunctor
+000629a0 r vtable for CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
+00062340 r vtable for CMDLCache
+00062440 r vtable for IMDLCache
+         U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+         U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+         U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
+0007dda8 b datamap_t* DataMapInit<phyheader_s>(phyheader_s*)::nameHolder
+0007cd80 d datamap_t* DataMapInit<phyheader_s>(phyheader_s*)::dataDesc
+0007d178 b datamap_t* DataMapInit<studiohdr_t>(studiohdr_t*)::nameHolder
+00074dc0 d datamap_t* DataMapInit<studiohdr_t>(studiohdr_t*)::dataDesc
+0007d1a8 b datamap_t* DataMapInit<studiohdr2_t>(studiohdr2_t*)::nameHolder
+00075f20 d datamap_t* DataMapInit<studiohdr2_t>(studiohdr2_t*)::dataDesc
+0007d538 b datamap_t* DataMapInit<mstudioanim_t>(mstudioanim_t*)::nameHolder
+00078480 d datamap_t* DataMapInit<mstudioanim_t>(mstudioanim_t*)::dataDesc
+0007d448 b datamap_t* DataMapInit<mstudiobbox_t>(mstudiobbox_t*)::nameHolder
+00077a80 d datamap_t* DataMapInit<mstudiobbox_t>(mstudiobbox_t*)::dataDesc
+0007d1d8 b datamap_t* DataMapInit<mstudiobone_t>(mstudiobone_t*)::nameHolder
+00076160 d datamap_t* DataMapInit<mstudiobone_t>(mstudiobone_t*)::dataDesc
+0007d9e8 b datamap_t* DataMapInit<mstudioflex_t>(mstudioflex_t*)::nameHolder
+0007b440 d datamap_t* DataMapInit<mstudioflex_t>(mstudioflex_t*)::dataDesc
+0007d958 b datamap_t* DataMapInit<mstudiomesh_t>(mstudiomesh_t*)::nameHolder
+0007abc0 d datamap_t* DataMapInit<mstudiomesh_t>(mstudiomesh_t*)::dataDesc
+0007d688 b datamap_t* DataMapInit<mstudioevent_t>(mstudioevent_t*)::nameHolder
+00079880 d datamap_t* DataMapInit<mstudioevent_t>(mstudioevent_t*)::dataDesc
+0007d748 b datamap_t* DataMapInit<mstudiomodel_t>(mstudiomodel_t*)::nameHolder
+00079e20 d datamap_t* DataMapInit<mstudiomodel_t>(mstudiomodel_t*)::dataDesc
+0007d8f8 b datamap_t* DataMapInit<mstudiomouth_t>(mstudiomouth_t*)::nameHolder
+0007a980 d datamap_t* DataMapInit<mstudiomouth_t>(mstudiomouth_t*)::dataDesc
+0007d868 b datamap_t* DataMapInit<mstudioflexop_t>(mstudioflexop_t*)::nameHolder
+0007a6c0 d datamap_t* DataMapInit<mstudioflexop_t>(mstudioflexop_t*)::dataDesc
+0007d8c8 b datamap_t* DataMapInit<mstudioiklink_t>(mstudioiklink_t*)::nameHolder
+0007a8a0 d datamap_t* DataMapInit<mstudioiklink_t>(mstudioiklink_t*)::dataDesc
+0007d6e8 b datamap_t* DataMapInit<mstudioiklock_t>(mstudioiklock_t*)::nameHolder
+00079ba0 d datamap_t* DataMapInit<mstudioiklock_t>(mstudioiklock_t*)::dataDesc
+0007d5c8 b datamap_t* DataMapInit<mstudioikrule_t>(mstudioikrule_t*)::nameHolder
+000786e0 d datamap_t* DataMapInit<mstudioikrule_t>(mstudioikrule_t*)::dataDesc
+0007db68 b datamap_t* DataMapInit<mstudiovertex_t>(mstudiovertex_t*)::nameHolder
+0007bf80 d datamap_t* DataMapInit<mstudiovertex_t>(mstudiovertex_t*)::dataDesc
+0007d9b8 b datamap_t* DataMapInit<mstudioeyeball_t>(mstudioeyeball_t*)::nameHolder
+0007af60 d datamap_t* DataMapInit<mstudioeyeball_t>(mstudioeyeball_t*)::dataDesc
+0007d898 b datamap_t* DataMapInit<mstudioikchain_t>(mstudioikchain_t*)::nameHolder
+0007a780 d datamap_t* DataMapInit<mstudioikchain_t>(mstudioikchain_t*)::dataDesc
+0007d568 b datamap_t* DataMapInit<mstudioikerror_t>(mstudioikerror_t*)::nameHolder
+00078560 d datamap_t* DataMapInit<mstudioikerror_t>(mstudioikerror_t*)::dataDesc
+0007d658 b datamap_t* DataMapInit<mstudioseqdesc_t>(mstudioseqdesc_t*)::nameHolder
+00078f40 d datamap_t* DataMapInit<mstudioseqdesc_t>(mstudioseqdesc_t*)::dataDesc
+0007daa8 b datamap_t* DataMapInit<mstudiotexture_t>(mstudiotexture_t*)::nameHolder
+0007b9c0 d datamap_t* DataMapInit<mstudiotexture_t>(mstudiotexture_t*)::dataDesc
+0007d508 b datamap_t* DataMapInit<mstudioanimdesc_t>(mstudioanimdesc_t*)::nameHolder
+00077fa0 d datamap_t* DataMapInit<mstudioanimdesc_t>(mstudioanimdesc_t*)::dataDesc
+0007d7a8 b datamap_t* DataMapInit<mstudioflexdesc_t>(mstudioflexdesc_t*)::nameHolder
+0007a240 d datamap_t* DataMapInit<mstudioflexdesc_t>(mstudioflexdesc_t*)::dataDesc
+0007d838 b datamap_t* DataMapInit<mstudioflexrule_t>(mstudioflexrule_t*)::nameHolder
+0007a5e0 d datamap_t* DataMapInit<mstudioflexrule_t>(mstudioflexrule_t*)::dataDesc
+0007d5f8 b datamap_t* DataMapInit<mstudiomovement_t>(mstudiomovement_t*)::nameHolder
+00078d00 d datamap_t* DataMapInit<mstudiomovement_t>(mstudiomovement_t*)::dataDesc
+0007da18 b datamap_t* DataMapInit<mstudiovertanim_t>(mstudiovertanim_t*)::nameHolder
+0007b6e0 d datamap_t* DataMapInit<mstudiovertanim_t>(mstudiovertanim_t*)::dataDesc
+0007db08 b datamap_t* DataMapInit<vertexFileFixup_t>(vertexFileFixup_t*)::nameHolder
+0007bdc0 d datamap_t* DataMapInit<vertexFileFixup_t>(vertexFileFixup_t*)::dataDesc
+0007d328 b datamap_t* DataMapInit<mstudioaimatbone_t>(mstudioaimatbone_t*)::nameHolder
+00077320 d datamap_t* DataMapInit<mstudioaimatbone_t>(mstudioaimatbone_t*)::dataDesc
+0007da78 b datamap_t* DataMapInit<mstudioanimblock_t>(mstudioanimblock_t*)::nameHolder
+0007b900 d datamap_t* DataMapInit<mstudioanimblock_t>(mstudioanimblock_t*)::dataDesc
+0007d6b8 b datamap_t* DataMapInit<mstudioautolayer_t>(mstudioautolayer_t*)::nameHolder
+000799e0 d datamap_t* DataMapInit<mstudioautolayer_t>(mstudioautolayer_t*)::dataDesc
+0007d718 b datamap_t* DataMapInit<mstudiobodyparts_t>(mstudiobodyparts_t*)::nameHolder
+00079d00 d datamap_t* DataMapInit<mstudiobodyparts_t>(mstudiobodyparts_t*)::dataDesc
+0007d3e8 b datamap_t* DataMapInit<mstudiohitboxset_t>(mstudiohitboxset_t*)::nameHolder
+000778c0 d datamap_t* DataMapInit<mstudiohitboxset_t>(mstudiohitboxset_t*)::dataDesc
+0007dad8 b datamap_t* DataMapInit<vertexFileHeader_t>(vertexFileHeader_t*)::nameHolder
+0007bb80 d datamap_t* DataMapInit<vertexFileHeader_t>(vertexFileHeader_t*)::dataDesc
+0007d3b8 b datamap_t* DataMapInit<mstudioattachment_t>(mstudioattachment_t*)::nameHolder
+00077760 d datamap_t* DataMapInit<mstudioattachment_t>(mstudioattachment_t*)::dataDesc
+0007db38 b datamap_t* DataMapInit<mstudioboneweight_t>(mstudioboneweight_t*)::nameHolder
+0007bea0 d datamap_t* DataMapInit<mstudioboneweight_t>(mstudioboneweight_t*)::dataDesc
+0007d2f8 b datamap_t* DataMapInit<mstudiojigglebone_t>(mstudiojigglebone_t*)::nameHolder
+00076c40 d datamap_t* DataMapInit<mstudiojigglebone_t>(mstudiojigglebone_t*)::dataDesc
+0007d208 b datamap_t* DataMapInit<mstudiolinearbone_t>(mstudiolinearbone_t*)::nameHolder
+00076560 d datamap_t* DataMapInit<mstudiolinearbone_t>(mstudiolinearbone_t*)::dataDesc
+0007da48 b datamap_t* DataMapInit<mstudiomodelgroup_t>(mstudiomodelgroup_t*)::nameHolder
+0007b840 d datamap_t* DataMapInit<mstudiomodelgroup_t>(mstudiomodelgroup_t*)::dataDesc
+0007d4d8 b datamap_t* DataMapInit<mstudioanimsections_t>(mstudioanimsections_t*)::nameHolder
+00077ee0 d datamap_t* DataMapInit<mstudioanimsections_t>(mstudioanimsections_t*)::dataDesc
+0007d478 b datamap_t* DataMapInit<mstudioanim_valueptr_t>(mstudioanim_valueptr_t*)::nameHolder
+00077c20 d datamap_t* DataMapInit<mstudioanim_valueptr_t>(mstudioanim_valueptr_t*)::dataDesc
+0007d928 b datamap_t* DataMapInit<mstudioposeparamdesc_t>(mstudioposeparamdesc_t*)::nameHolder
+0007aa60 d datamap_t* DataMapInit<mstudioposeparamdesc_t>(mstudioposeparamdesc_t*)::dataDesc
+0007d298 b datamap_t* DataMapInit<mstudioaxisinterpbone_t>(mstudioaxisinterpbone_t*)::nameHolder
+00076a40 d datamap_t* DataMapInit<mstudioaxisinterpbone_t>(mstudioaxisinterpbone_t*)::dataDesc
+0007d388 b datamap_t* DataMapInit<mstudiobonecontroller_t>(mstudiobonecontroller_t*)::nameHolder
+000775a0 d datamap_t* DataMapInit<mstudiobonecontroller_t>(mstudiobonecontroller_t*)::dataDesc
+0007d268 b datamap_t* DataMapInit<mstudioboneflexdriver_t>(mstudioboneflexdriver_t*)::nameHolder
+00076920 d datamap_t* DataMapInit<mstudioboneflexdriver_t>(mstudioboneflexdriver_t*)::dataDesc
+0007d7d8 b datamap_t* DataMapInit<mstudioflexcontroller_t>(mstudioflexcontroller_t*)::nameHolder
+0007a2c0 d datamap_t* DataMapInit<mstudioflexcontroller_t>(mstudioflexcontroller_t*)::dataDesc
+0007d4a8 b datamap_t* DataMapInit<mstudiolocalhierarchy_t>(mstudiolocalhierarchy_t*)::nameHolder
+00077ca0 d datamap_t* DataMapInit<mstudiolocalhierarchy_t>(mstudiolocalhierarchy_t*)::dataDesc
+0007d2c8 b datamap_t* DataMapInit<mstudioquatinterpbone_t>(mstudioquatinterpbone_t*)::nameHolder
+00076b60 d datamap_t* DataMapInit<mstudioquatinterpbone_t>(mstudioquatinterpbone_t*)::dataDesc
+0007d358 b datamap_t* DataMapInit<mstudioquatinterpinfo_t>(mstudioquatinterpinfo_t*)::nameHolder
+00077480 d datamap_t* DataMapInit<mstudioquatinterpinfo_t>(mstudioquatinterpinfo_t*)::dataDesc
+0007d988 b datamap_t* DataMapInit<mstudio_meshvertexdata_t>(mstudio_meshvertexdata_t*)::nameHolder
+0007aea0 d datamap_t* DataMapInit<mstudio_meshvertexdata_t>(mstudio_meshvertexdata_t*)::dataDesc
+0007d628 b datamap_t* DataMapInit<mstudioactivitymodifier_t>(mstudioactivitymodifier_t*)::nameHolder
+00078ec0 d datamap_t* DataMapInit<mstudioactivitymodifier_t>(mstudioactivitymodifier_t*)::dataDesc
+0007d808 b datamap_t* DataMapInit<mstudioflexcontrollerui_t>(mstudioflexcontrollerui_t*)::nameHolder
+0007a420 d datamap_t* DataMapInit<mstudioflexcontrollerui_t>(mstudioflexcontrollerui_t*)::dataDesc
+0007d778 b datamap_t* DataMapInit<mstudio_modelvertexdata_t>(mstudio_modelvertexdata_t*)::nameHolder
+0007a180 d datamap_t* DataMapInit<mstudio_modelvertexdata_t>(mstudio_modelvertexdata_t*)::dataDesc
+0007d418 b datamap_t* DataMapInit<mstudiosrcbonetransform_t>(mstudiosrcbonetransform_t*)::nameHolder
+000779a0 d datamap_t* DataMapInit<mstudiosrcbonetransform_t>(mstudiosrcbonetransform_t*)::dataDesc
+0007d598 b datamap_t* DataMapInit<mstudiocompressedikerror_t>(mstudiocompressedikerror_t*)::nameHolder
+00078620 d datamap_t* DataMapInit<mstudiocompressedikerror_t>(mstudiocompressedikerror_t*)::dataDesc
+0007d238 b datamap_t* DataMapInit<mstudioboneflexdrivercontrol_t>(mstudioboneflexdrivercontrol_t*)::nameHolder
+00076800 d datamap_t* DataMapInit<mstudioboneflexdrivercontrol_t>(mstudioboneflexdrivercontrol_t*)::dataDesc
+0007eb60 b V_pretifymem(float, int, bool)::output
+0007eb40 b V_pretifymem(float, int, bool)::current
+0007ec80 b V_pretifynum(long long)::output
+0007ec60 b V_pretifynum(long long)::current
+0007e2cc b CDataCache::EnsureCapacity(unsigned int)::tm_fmt
+0007e2e4 b CDataCache::Flush(bool, bool)::tm_fmt
+0007e2d8 b CDataCache::Purge(unsigned int)::tm_fmt
+0007de90 b CStudioHdr::GroupStudioHdr(int)::__executeCount
+0007dea0 b CStudioHdr::GroupStudioHdr(int)::__executeCount
+0007dec0 b CStudioHdr::pSeqdesc(int)::s_nil_seq
+00080158 b CUtlString::GetEmptyString()::s_emptyString
+00080184 b CUtlSymbol::Initialize()::symbolsInitialized
+0007dd78 b datamap_t* OptimizedModel::DataMapInit<OptimizedModel::FileHeader_t>(OptimizedModel::FileHeader_t*)::nameHolder
+0007cb00 d datamap_t* OptimizedModel::DataMapInit<OptimizedModel::FileHeader_t>(OptimizedModel::FileHeader_t*)::dataDesc
+0007dc58 b datamap_t* OptimizedModel::DataMapInit<OptimizedModel::MeshHeader_t>(OptimizedModel::MeshHeader_t*)::nameHolder
+0007c640 d datamap_t* OptimizedModel::DataMapInit<OptimizedModel::MeshHeader_t>(OptimizedModel::MeshHeader_t*)::dataDesc
+0007dcb8 b datamap_t* OptimizedModel::DataMapInit<OptimizedModel::ModelHeader_t>(OptimizedModel::ModelHeader_t*)::nameHolder
+0007c800 d datamap_t* OptimizedModel::DataMapInit<OptimizedModel::ModelHeader_t>(OptimizedModel::ModelHeader_t*)::dataDesc
+0007dbf8 b datamap_t* OptimizedModel::DataMapInit<OptimizedModel::StripHeader_t>(OptimizedModel::StripHeader_t*)::nameHolder
+0007c280 d datamap_t* OptimizedModel::DataMapInit<OptimizedModel::StripHeader_t>(OptimizedModel::StripHeader_t*)::dataDesc
+0007dce8 b datamap_t* OptimizedModel::DataMapInit<OptimizedModel::BodyPartHeader_t>(OptimizedModel::BodyPartHeader_t*)::nameHolder
+0007c8c0 d datamap_t* OptimizedModel::DataMapInit<OptimizedModel::BodyPartHeader_t>(OptimizedModel::BodyPartHeader_t*)::dataDesc
+0007dc88 b datamap_t* OptimizedModel::DataMapInit<OptimizedModel::ModelLODHeader_t>(OptimizedModel::ModelLODHeader_t*)::nameHolder
+0007c720 d datamap_t* OptimizedModel::DataMapInit<OptimizedModel::ModelLODHeader_t>(OptimizedModel::ModelLODHeader_t*)::dataDesc
+0007dc28 b datamap_t* OptimizedModel::DataMapInit<OptimizedModel::StripGroupHeader_t>(OptimizedModel::StripGroupHeader_t*)::nameHolder
+0007c480 d datamap_t* OptimizedModel::DataMapInit<OptimizedModel::StripGroupHeader_t>(OptimizedModel::StripGroupHeader_t*)::dataDesc
+0007db98 b datamap_t* OptimizedModel::DataMapInit<OptimizedModel::BoneStateChangeHeader_t>(OptimizedModel::BoneStateChangeHeader_t*)::nameHolder
+0007c0a0 d datamap_t* OptimizedModel::DataMapInit<OptimizedModel::BoneStateChangeHeader_t>(OptimizedModel::BoneStateChangeHeader_t*)::dataDesc
+0007dd18 b datamap_t* OptimizedModel::DataMapInit<OptimizedModel::MaterialReplacementHeader_t>(OptimizedModel::MaterialReplacementHeader_t*)::nameHolder
+0007c980 d datamap_t* OptimizedModel::DataMapInit<OptimizedModel::MaterialReplacementHeader_t>(OptimizedModel::MaterialReplacementHeader_t*)::dataDesc
+0007dd48 b datamap_t* OptimizedModel::DataMapInit<OptimizedModel::MaterialReplacementListHeader_t>(OptimizedModel::MaterialReplacementListHeader_t*)::nameHolder
+0007ca40 d datamap_t* OptimizedModel::DataMapInit<OptimizedModel::MaterialReplacementListHeader_t>(OptimizedModel::MaterialReplacementListHeader_t*)::dataDesc
+0007dbc8 b datamap_t* OptimizedModel::DataMapInit<OptimizedModel::Vertex_t>(OptimizedModel::Vertex_t*)::nameHolder
+0007c160 d datamap_t* OptimizedModel::DataMapInit<OptimizedModel::Vertex_t>(OptimizedModel::Vertex_t*)::dataDesc
+0007d118 b datamap_t* StudioByteSwap::DataMapInit<StudioByteSwap::legacysurfaceheader_t>(StudioByteSwap::legacysurfaceheader_t*)::nameHolder
+00074c00 d datamap_t* StudioByteSwap::DataMapInit<StudioByteSwap::legacysurfaceheader_t>(StudioByteSwap::legacysurfaceheader_t*)::dataDesc
+0007d0e8 b datamap_t* StudioByteSwap::DataMapInit<StudioByteSwap::swapcompactsurfaceheader_t>(StudioByteSwap::swapcompactsurfaceheader_t*)::nameHolder
+00074a40 d datamap_t* StudioByteSwap::DataMapInit<StudioByteSwap::swapcompactsurfaceheader_t>(StudioByteSwap::swapcompactsurfaceheader_t*)::dataDesc
+0007eac0 b CDataManagerBase::GetForFreeByIndex(unsigned short)::__executeCount
+0007e290 b CDataCacheSection::GetNoTouch(memhandle_t__*, bool)::tm_fmt
+0007e1d0 b CDataCacheSection::EnsureCapacity(unsigned int, unsigned int)::tm_fmt
+0007e2a8 b CDataCacheSection::EndFrameLocking()::tm_fmt
+0007e284 b CDataCacheSection::Get(memhandle_t__*, bool)::tm_fmt
+0007e254 b CDataCacheSection::Find(unsigned int)::tm_fmt
+0007e26c b CDataCacheSection::Lock(memhandle_t__*)::tm_fmt
+0007e1dc b CDataCacheSection::AddEx(unsigned int, void const*, unsigned int, unsigned int, memhandle_t__**)::tm_fmt
+0007e2b4 b CDataCacheSection::Flush(bool, bool)::tm_fmt
+0007e2c0 b CDataCacheSection::Purge(unsigned int)::tm_fmt
+0007e260 b CDataCacheSection::Remove(memhandle_t__*, void const**, unsigned int*, bool)::tm_fmt
+0007e278 b CDataCacheSection::Unlock(memhandle_t__*)::tm_fmt
+0007e29c b CDataCacheSection::FrameLock(memhandle_t__*)::tm_fmt
+00063abc r CThreadSpinRWLock::TryLockForWrite(unsigned int)::oldValue
+0007e320 b CFmtStrN<256, false>::CFmtStrN(char const*, ...)::scAsserted
+0007e828 b CMDLCache::ReadMDLFile(unsigned short, char const*, CUtlBuffer&)::tm_fmt
+0007e834 b CMDLCache::VerifyHeaders(studiohdr_t*)::tm_fmt
+0007e840 b CMDLCache::CacheVertexData(studiohdr_t*)::tm_fmt
+0007e4a8 b CMDLCache::UnserializeVCollide(unsigned short, bool)::tm_fmt
+0007e858 b CMDLCache::ProcessDataIntoCache(unsigned short, MDLCacheDataType_t, int, void*, int, bool)::bCompressedVVDs
+0007e859 b CMDLCache::ProcessPendingAsyncs(MDLCacheDataType_t)::bReentering
+0007e588 b CMDLCache::UnserializeAnimBlock(unsigned short, int)::tm_fmt
+0007cee8 d ConVarRef::Init(char const*, bool)::bFirst
+0007cf62 d CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+0007ced0 d CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+0007cec0 d CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+0007cea4 d CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::Links(short) const::s_Sentinel
+0007ceac d CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::Links(int) const::s_Sentinel
