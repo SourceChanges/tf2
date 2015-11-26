@@ -47,7 +47,7 @@
 002d6240 b cl_show_connectionless_packet_warnings
 002c77cc d cmd_clientslot
 0030b3e0 b cmd_source
-0038bca0 b colorcorrection
+0038cb20 b colorcorrection
 00310440 b com_basedir
 00310320 b com_gamedir
 00310960 b com_ignorecolons
@@ -80,7 +80,7 @@
 002c2f7c d __CTOR_END__
 002c2c98 d __CTOR_LIST__
 002c7800 d cv
-0037e530 B cvar
+0037f3b0 B cvar
          U __cxa_atexit@@GLIBC_2.1.3
          U __cxa_begin_catch@@CXXABI_1.3
          U __cxa_end_catch@@CXXABI_1.3
@@ -92,7 +92,7 @@
 0025b420 r dbase.3454
 00315d40 b dbg_demofile
 00319780 b deathmatch
-0035e594 b dedicated
+0035f414 b dedicated
 00226f00 T deflate
 00226de0 T deflateBound
 00228020 T deflateCopy
@@ -123,8 +123,8 @@
 0025b2e0 r distfix.3536
          U dlclose@@GLIBC_2.0
          U dlerror@@GLIBC_2.0
-0031ebe0 b d_lightstylenumframes
-0031efe0 b d_lightstylevalue
+0031fa60 b d_lightstylenumframes
+0031fe60 b d_lightstylevalue
          U dl_iterate_phdr@@GLIBC_2.2.4
          U dlopen@@GLIBC_2.1
          U dlsym@@GLIBC_2.0
@@ -136,14 +136,14 @@
 002c8ba4 b dtor_idx.5795
 002c2f80 d __DTOR_LIST__
          U dup@@GLIBC_2.0
-0038bef0 b dwarf_reg_size_table
+0038cd70 b dwarf_reg_size_table
 002c2f8c a _DYNAMIC
          U __dynamic_cast@@CXXABI_1.3
 002c8b88 A _edata
-0038c000 A _end
+0038ce80 A _end
 002c8320 d eng
-00375b00 b engine_no_focus_sleep
-00358228 b entitylist
+00376980 b engine_no_focus_sleep
+003590a8 b entitylist
          U __errno_location@@GLIBC_2.0
          U Error
 0022b116 t execute_cfa_program
@@ -182,13 +182,13 @@
 0025a0f0 r Four_Twos
 0025a110 r Four_Zeros
          U fprintf@@GLIBC_2.0
-00375aa0 b fps_max
+00376920 b fps_max
          U fputs@@GLIBC_2.0
 0022cb83 t frame_downheap
 0007c3bf t frame_dummy
 002bcfb4 r __FRAME_END__
-0038bf34 b frame_hdr_cache
-0038bf30 b frame_hdr_cache_head
+0038cdb4 b frame_hdr_cache
+0038cdb0 b frame_hdr_cache_head
 0022cc0e t frame_heapsort
 002c82b0 d framesnapshotmanager
 0022c635 t __frame_state_for
@@ -202,35 +202,35 @@
          U __fxstat@@GLIBC_2.0
 002d3fa0 b g_ActivityModifiersTable
 002c8334 d game
-0035de0c b g_AppSystemFactory
-0032d290 b g_AreasNetworked
+0035ec8c b g_AppSystemFactory
+0032e110 b g_AreasNetworked
 00314da8 b g_AsyncNotifyTextMutex
 0031a248 b g_bAbortServerSet
 002c7ad7 d g_bAllowSecureServers
-0031f990 b g_bBakedPropLightingNoSeparateHDR
+00320810 b g_bBakedPropLightingNoSeparateHDR
 0031a2f9 b g_bDedicatedServerBenchmarkMode
 00317628 b g_bDispOrthoRender
 00317cec b g_bDTIEnabled
 002dafa0 b g_BenchmarkResults
-0031f992 b g_bHunkAllocLightmaps
-0035de04 b g_bInErrorExit
-0035ddc8 b g_bInSpew
-0037ac80 b g_BitWriteMasks
-0031f991 b g_bLoadedMapHasBakedPropLighting
-0035e585 b g_bLongTickWatcherThreadEnabled
+00320812 b g_bHunkAllocLightmaps
+0035ec84 b g_bInErrorExit
+0035ec48 b g_bInSpew
+0037bb00 b g_BitWriteMasks
+00320811 b g_bLoadedMapHasBakedPropLighting
+0035f405 b g_bLongTickWatcherThreadEnabled
 0031a2f8 b g_bLowViolence
-0035e584 b g_bQuitLongTickWatcherThread
-00326660 b g_BrushToWorldMatrix
+0035f404 b g_bQuitLongTickWatcherThread
+003274e0 b g_BrushToWorldMatrix
 00317d20 b g_bServerDTIEnabled
 0030df00 b g_BSPData
-0035de05 b g_bTextMode
+0035ec85 b g_bTextMode
 00318284 b g_bThreadedEngine
-0035e580 b g_bTotalDumps
+0035f400 b g_bTotalDumps
 002c8304 d g_bUpdateMinidumpComment
 002c7244 d g_bUseNetworkVars
-0035e586 b g_bUsingLegacyAppSystems
-0035de10 b g_bV3SteamInterface
-00375ccc b g_bVCRSingleStep
+0035f406 b g_bUsingLegacyAppSystems
+0035ec90 b g_bV3SteamInterface
+00376b4c b g_bVCRSingleStep
 00317f50 b g_ClientSendTables
          U g_ClockSpeed
          U g_ClockSpeedMillisecondsMultiplier
@@ -249,7 +249,7 @@
 00315100 b g_DecalClipVerts
 003150a0 b g_DecalDictionary
 00315080 b g_DecalLookup
-00375e20 b gDemoMessageBuffer
+00376ca0 b gDemoMessageBuffer
 003161c0 b g_DevShotGenerator
 002c92e0 b g_DispCollPlaneIndexHash
 00310270 b g_DispCollTreeCount
@@ -264,7 +264,7 @@
 0030b320 b g_EngineStats
 002d4330 b g_entnamelastsaved
 002d4340 b g_entnames
-0035de11 b g_eSteamLoginFailure
+0035ec91 b g_eSteamLoginFailure
 0022cdc3 t get_cie_encoding
          U GetCPUFrequencyResults
          U GetCPUInformation
@@ -282,38 +282,38 @@
          U GetSpewOutputColor
          U getuid@@GLIBC_2.0
 0030b400 b g_ExtraClientCmdCanExecuteCvars
-0037abe0 b g_ExtraMasks
-0035de12 b gfExtendedError
+0037ba60 b g_ExtraMasks
+0035ec92 b gfExtendedError
 003196a0 b g_fFramesPerSecond
-0031f988 b g_flAccumulatedModelLoadTime
-0031f970 b g_flAccumulatedModelLoadTimeBrush
-0031f930 b g_flAccumulatedModelLoadTimeMaterialNamesOnly
-0031f968 b g_flAccumulatedModelLoadTimeSprite
-0031f978 b g_flAccumulatedModelLoadTimeStaticMesh
-0031f980 b g_flAccumulatedModelLoadTimeStudio
-0031f950 b g_flAccumulatedModelLoadTimeVCollideAsync
-0031f960 b g_flAccumulatedModelLoadTimeVCollideSync
-0031f940 b g_flAccumulatedModelLoadTimeVirtualModel
-0032d2b4 b g_FlushMemoryOnNextServer
-0032d2b0 b g_FlushMemoryOnNextServerCounter
-00326608 b g_fnReplayFactory
+00320808 b g_flAccumulatedModelLoadTime
+003207f0 b g_flAccumulatedModelLoadTimeBrush
+003207b0 b g_flAccumulatedModelLoadTimeMaterialNamesOnly
+003207e8 b g_flAccumulatedModelLoadTimeSprite
+003207f8 b g_flAccumulatedModelLoadTimeStaticMesh
+00320800 b g_flAccumulatedModelLoadTimeStudio
+003207d0 b g_flAccumulatedModelLoadTimeVCollideAsync
+003207e0 b g_flAccumulatedModelLoadTimeVCollideSync
+003207c0 b g_flAccumulatedModelLoadTimeVirtualModel
+0032e134 b g_FlushMemoryOnNextServer
+0032e130 b g_FlushMemoryOnNextServerCounter
+00327488 b g_fnReplayFactory
 00318720 b g_Frustum
-0035de00 b g_GameDLL
+0035ec80 b g_GameDLL
 0023e078 r g_GameEventManager
 002c8300 d g_GameSystemFactory
 0031a2e4 b g_HostEndDemo
 0031a2f0 b g_HostErrorCount
 0031a2f4 b g_HostServerAbortCount
 0031aea4 b gHostSpawnCount
-0037abb0 b g_HunkMemoryStack
+0037ba30 b g_HunkMemoryStack
 0030b430 b g_iFilterCommandsByClientCmdCanExecute
 0030b440 b g_iFilterCommandsByServerCanExecute
-00327fe0 b g_IPFilters
-0035dde0 b g_iServerGameClientsVersion
-0035ddf0 b g_iServerGameDLLVersion
-00375cd0 b g_iVCRPlaybackSleepInterval
-0037c020 b g_KeyValuesErrorStack
-0037bd00 b g_LittleBits
+00328e60 b g_IPFilters
+0035ec60 b g_iServerGameClientsVersion
+0035ec70 b g_iServerGameDLLVersion
+00376b50 b g_iVCRPlaybackSleepInterval
+0037cea0 b g_KeyValuesErrorStack
+0037cb80 b g_LittleBits
 002c30a4 a _GLOBAL_OFFSET_TABLE_
 0006db00 t _GLOBAL__sub_I_cl_clock_correction
 0006e450 t _GLOBAL__sub_I_com_ignorecolons
@@ -498,105 +498,105 @@
 00074860 t _GLOBAL__sub_I__ZNK10CModelInfo13GetModelIndexEPKc
 0006ca20 t _GLOBAL__sub_I__ZNK11studiohdr_t9pAnimdescEi
 0006c270 t _GLOBAL__sub_I__ZNK13CLC_VoiceData8ToStringEv
-0032c4c0 b g_Log
-0031ebcc b g_LostVideoMemory
+0032d340 b g_Log
+0031fa4c b g_LostVideoMemory
 00318660 b g_MainViewForward
 00318670 b g_MainViewOrigin
 00318650 b g_MainViewRight
 00318640 b g_MainViewUp
-0031dfa0 b g_MapReslistGenerator
-0031ebc8 b g_materialEmpty
+0031ee20 b g_MapReslistGenerator
+0031fa48 b g_materialEmpty
 002c7a90 d g_MaxLeavesVisible
-00376c40 b gMessageParms
-00376c30 b gMessageTable
-00376c20 b gMessageTableCount
+00377ac0 b gMessageParms
+00377ab0 b gMessageTable
+00377aa0 b gMessageTableCount
 002db620 b g_minidumpinfo
-0035e020 b gmodinfo
+0035eea0 b gmodinfo
          w __gmon_start__
 002c3100 d g_MostCommonPathIDs
 002c30f0 d g_MostCommonPrefixes
-00323b60 b g_NetScratchBuffers
+003249e0 b g_NetScratchBuffers
 002c8500 d gNetworkMessageNames
 002c8380 d gNetworkTextMessage
-00376020 b gNetworkTextMessageBuffer
-0031f920 b g_nMapLoadCount
+00376ea0 b gNetworkTextMessageBuffer
+003207a0 b g_nMapLoadCount
 00318280 b g_nMaterialSystemThread
-00326750 b g_nMaxDecals
+003275d0 b g_nMaxDecals
 00317f40 b g_nPropsDecoded
 002c7a78 d g_nServerThread
-00325ae0 b g_OverlayRenderFrameID
-00376f70 b g_pAchievementMgr
+00326960 b g_OverlayRenderFrameID
+00377df0 b g_pAchievementMgr
 002db600 b g_pagedpoolinfo
 0030b300 b g_pClientClassHead
-0037e520 b g_pCVar
-0038be00 b g_pDataCache
-0032d220 b g_pDeferredServerWork
+0037f3a0 b g_pCVar
+0038cc80 b g_pDataCache
+0032e0a0 b g_pDeferredServerWork
 00310250 b g_pDispBounds
 00310260 b g_pDispCollTrees
-0038bdc0 b g_pDmeMakefileUtils
+0038cc40 b g_pDmeMakefileUtils
 00317ce8 b g_pDTIFilename
 002c7a80 d g_pEngineReplay
 002c7a7c d g_pEngineTraceServer
 00318360 b g_pFileSystem
-0038bd20 b g_pFullFileSystem
-00376f60 b g_pGamestatsData
-0035e590 b g_pHammer
+0038cba0 b g_pFullFileSystem
+00377de0 b g_pGamestatsData
+0035f410 b g_pHammer
 0031c300 b g_PhoneHome
-0038bcf0 b g_pInputSystem
-0031cef0 b g_pLocalNetworkBackdoor
-0038bd00 b g_pMaterialSystem
-0031ebd0 b g_pMaterialSystemConfig
-0038bcc0 b g_pMaterialSystemDebugTextureInfo
-0038bcd0 b g_pMaterialSystemHardwareConfig
-0038be80 b g_pMatSystemSurface
-0038bdf0 b g_pMDLCache
-0038bce0 b g_pNetworkSystem
-00326c50 b g_Points
+0038cb70 b g_pInputSystem
+0031dd70 b g_pLocalNetworkBackdoor
+0038cb80 b g_pMaterialSystem
+0031fa50 b g_pMaterialSystemConfig
+0038cb40 b g_pMaterialSystemDebugTextureInfo
+0038cb50 b g_pMaterialSystemHardwareConfig
+0038cd00 b g_pMatSystemSurface
+0038cc70 b g_pMDLCache
+0038cb60 b g_pNetworkSystem
+00327ad0 b g_Points
 002c31c0 d g_PowerInfos
-0035e58c b g_pPhysics
-0038bdb0 b g_pPhysicsCollision
-0037e510 b g_pProcessUtils
-0038bc70 b g_pQueuedLoader
+0035f40c b g_pPhysics
+0038cc30 b g_pPhysicsCollision
+0037f390 b g_pProcessUtils
+0038caf0 b g_pQueuedLoader
 002c8140 d g_pQueuedPackedSender
-00326610 b g_pReplay
+00327490 b g_pReplay
 002c7960 d g_PropTypeFns
 002c82e0 d g_pServerPluginHandler
-0032660c b g_pServerReplayContext
+0032748c b g_pServerReplayContext
 002c8528 d g_pSharedChangeInfo
 002c82a4 d g_pSndIO
-0038bda0 b g_pSoundEmitterSystem
+0038cc20 b g_pSoundEmitterSystem
 0030b394 b g_pSoundServices
-0035e588 b g_pSourceVR
+0035f408 b g_pSourceVR
          U g_pSteamClientGameServer
-0038bea0 b g_pStudioRender
+0038cd20 b g_pStudioRender
          U g_pThreadPool
 002c7a8c d g_pToolBSPTree
 002c82f4 d g_pUploadGameStats
-00326240 b g_PureFileTracker
-0037e500 b g_pUtlSortVectorQSortContext
+003270c0 b g_PureFileTracker
+0037f380 b g_pUtlSortVectorQSortContext
          U g_pVCR
 002c8524 d g_pVEngineServer
-0038be40 b g_pVGui
-0038be70 b g_pVGuiInput
-0038be30 b g_pVGuiLocalize
-0038be50 b g_pVGuiPanel
-0038be20 b g_pVGuiSchemeManager
-0038be60 b g_pVGuiSurface
-0038be10 b g_pVGuiSystem
-0038bdd0 b g_pVideo
+0038ccc0 b g_pVGui
+0038ccf0 b g_pVGuiInput
+0038ccb0 b g_pVGuiLocalize
+0038ccd0 b g_pVGuiPanel
+0038cca0 b g_pVGuiSchemeManager
+0038cce0 b g_pVGuiSurface
+0038cc90 b g_pVGuiSystem
+0038cc50 b g_pVideo
 002c8540 d g_pVProfExport
 002c8550 d g_pVProfileForDisplay
-0038bd90 b g_pVTex
+0038cc10 b g_pVTex
 00317f70 b g_RecvDecoders
 00317f90 b g_RecvTables
 00318000 b g_SendTableCRC
 00318010 b g_SendTables
 002d5d80 b g_SentenceGroups
 002d5da0 b g_Sentences
-0035dd60 b g_ServerFactory
-0032d8c0 b g_ServerGlobalVariables
-00359a60 b g_ServerRemoteAccess
-00376f80 b g_SharedEdictChangeInfo
+0035ebe0 b g_ServerFactory
+0032e740 b g_ServerGlobalVariables
+0035a8e0 b g_ServerRemoteAccess
+00377e00 b g_SharedEdictChangeInfo
 002c3140 d g_ShiftInfos
 0025a020 r g_SIMD_0123
 00259fd0 r g_SIMD_AllOnesMask
@@ -613,17 +613,17 @@
 002c72e4 d g_StdAllocator
 002d6828 b g_svInstanceBaselineMutex
 002c7ab8 d g_szDefaultLogoFileName
-0035df20 b gszDisconnectReason
-0035de20 b gszExtendedDisconnectReason
+0035eda0 b gszDisconnectReason
+0035eca0 b gszExtendedDisconnectReason
          U g_Telemetry
 002c94c0 b g_TesselateVerts
-00375d80 b g_TestScriptMgr
+00376c00 b g_TestScriptMgr
 0030dee0 b g_TraceInfoPool
 002c31e0 d g_TWinding
-00327fc0 b g_UserFilters
-0038bcb0 b g_VBAllocTracker
+00328e40 b g_UserFilters
+0038cb30 b g_VBAllocTracker
          U g_VProfCurrentProfile
-003786e0 b g_VProfExport
+00379560 b g_VProfExport
          U g_VProfSignalSpike
          U __gxx_personality_v0@@CXXABI_1.3
 0021e1c0 T gzbuffer
@@ -805,8 +805,8 @@
 0025d600 r _length_code
 0025b460 r lext.3453
 0022d17b t linear_search_fdes
-0037f960 b lineartolightmap
-00380960 b lineartovertex
+003807e0 b lineartolightmap
+003817e0 b lineartovertex
          U link@@GLIBC_2.0
 0030b388 b listener_origin
          U listen@@GLIBC_2.0
@@ -836,38 +836,38 @@
 002025a0 t LzmaProps_Decode
          U mallinfo@@GLIBC_2.0
          U malloc@@GLIBC_2.0
-0038bffc b marker.7234
-0031e760 b mat_bumpbasis
-0031eb80 b mat_debugalttab
-0031e2e0 b mat_depthbias_normal
-0031e700 b mat_envmapsize
-0031e6a0 b mat_envmaptgasize
-0038bd10 b materials
-0031e200 b materialSortInfoArray
-0031fa60 b mat_excludetextures
-0031e5e0 b mat_fastspecular
-0031e580 b mat_fullbright
-0031e220 b mat_hdr_level
-0031e640 b mat_levelflush
-0031fac0 b mat_loadtextures
-0031e820 b mat_luxels
-0031e340 b mat_motion_blur_enabled
-0031e8e0 b mat_norendering
-0031e7c0 b mat_normals
-0031e280 b mat_show_ab_hdr
-0031e880 b mat_wireframe
+0038ce7c b marker.7234
+0031f5e0 b mat_bumpbasis
+0031fa00 b mat_debugalttab
+0031f160 b mat_depthbias_normal
+0031f580 b mat_envmapsize
+0031f520 b mat_envmaptgasize
+0038cb90 b materials
+0031f080 b materialSortInfoArray
+003208e0 b mat_excludetextures
+0031f460 b mat_fastspecular
+0031f400 b mat_fullbright
+0031f0a0 b mat_hdr_level
+0031f4c0 b mat_levelflush
+00320940 b mat_loadtextures
+0031f6a0 b mat_luxels
+0031f1c0 b mat_motion_blur_enabled
+0031f760 b mat_norendering
+0031f640 b mat_normals
+0031f100 b mat_show_ab_hdr
+0031f700 b mat_wireframe
          U mbstowcs@@GLIBC_2.0
-0038bde0 b mdlcache
-0038bc80 b mdllib
+0038cc60 b mdlcache
+0038cb00 b mdllib
          U memalign@@GLIBC_2.0
          U MemAllocOOMError
          U MemAllocScratch
          U memchr@@GLIBC_2.0
          U memcpy@@GLIBC_2.0
          U MemFreeScratch
-0035e2c0 b mem_max_heapsize
-0035e260 b mem_max_heapsize_dedicated
-0035e320 b mem_min_heapsize
+0035f140 b mem_max_heapsize
+0035f0e0 b mem_max_heapsize_dedicated
+0035f1a0 b mem_min_heapsize
          U memmove@@GLIBC_2.0
          U memset@@GLIBC_2.0
          U MinidumpUserStreamInfoGet
@@ -882,28 +882,28 @@
 00316288 b modelorg
 002c7da4 d modelrender
          U mount@@GLIBC_2.0
-0031ea60 b mp_decals
+0031f8e0 b mp_decals
          U Msg
 00259d78 r nanmask
-00323540 b net_blocksize
-00323bc8 b net_local_adr
-00323be0 b net_maxroutable
-00324620 b net_queued_packet_thread
-003245c0 b net_queue_trace
-003235a0 b net_showtcp
-00323600 b net_showudp
-00323bc0 b net_time
-00323c80 b net_usesocketsforloopback
+003243c0 b net_blocksize
+00324a48 b net_local_adr
+00324a60 b net_maxroutable
+003254a0 b net_queued_packet_thread
+00325440 b net_queue_trace
+00324420 b net_showtcp
+00324480 b net_showudp
+00324a40 b net_time
+00324b00 b net_usesocketsforloopback
 002c8090 d networkStringTableContainerClient
 002c8094 d networkStringTableContainerServer
 001bc310 t NotifyDedicatedServerUI
-0038bf08 b object_mutex
-0038bf04 b once_regsizes.7669
+0038cd88 b object_mutex
+0038cd84 b once_regsizes.7669
          U open64@@GLIBC_2.2
          U opendir@@GLIBC_2.0
          U open@@GLIBC_2.0
 0025b360 r order.3564
-0038bc90 b p4
+0038cb10 b p4
 002d6360 b password
 002c8a20 d pfFastCos
 002c8a24 d pfFastSinCos
@@ -916,7 +916,7 @@
 002c7d7c d phonehome
 003101f0 b physcollision
 00310200 b physprop
-003271a0 b pipeline_static_props
+00328020 b pipeline_static_props
          U Plat_BeginWatchdogTimer
          U Plat_DebugString
          U Plat_EndWatchdogTimer
@@ -949,22 +949,22 @@
          U RandomFloatExp
          U RandomInt
          U RandomSeed
-003588a0 b rcon_password
-0031d000 b r_debugrandomstaticlighting
-00326780 b r_decal_cover_count
-003267e0 b r_decal_overlap_area
-00326840 b r_decal_overlap_count
-0031eac0 b r_decals
+00359720 b rcon_password
+0031de80 b r_debugrandomstaticlighting
+00327600 b r_decal_cover_count
+00327660 b r_decal_overlap_area
+003276c0 b r_decal_overlap_count
+0031f940 b r_decals
 00317520 b r_DispBuildable
 00316240 b r_DispDrawAxes
 00317580 b r_DispWalkable
-0031e520 b r_drawbrushmodels
+0031f3a0 b r_drawbrushmodels
 003175e0 b r_DrawDisp
-00327200 b r_drawmodeldecals
-0031d120 b r_drawmodellightorigin
-0031d1e0 b r_drawmodelstatsoverlay
-0031d180 b r_drawmodelstatsoverlaydistance
-0031e940 b r_dynamic
+00328080 b r_drawmodeldecals
+0031dfa0 b r_drawmodellightorigin
+0031e060 b r_drawmodelstatsoverlay
+0031e000 b r_drawmodelstatsoverlaydistance
+0031f7c0 b r_dynamic
          U readdir@@GLIBC_2.0
 0022af72 t read_encoded_value
 0022cd1a t read_encoded_value_with_base
@@ -986,49 +986,49 @@
 002c7248 d registry
          U ReleaseThreadHandle
          U rename@@GLIBC_2.0
-00326540 b replay
-003265c0 b replay_debug
-0031e460 b r_flashlightdepthtexture
+003273c0 b replay
+00327440 b replay_debug
+0031f2e0 b r_flashlightdepthtexture
 002c7dd0 d r_framecount
-0031f9a0 b r_hunkalloclightmaps
-0031ea00 b r_lightmap
-0031e9a0 b r_lightstyle
-0031d0c0 b r_lod
+00320820 b r_hunkalloclightmaps
+0031f880 b r_lightmap
+0031f820 b r_lightstyle
+0031df40 b r_lod
          U rmdir@@GLIBC_2.0
-0031eb20 b r_norefresh
-00324880 b r_occludeemaxarea
-003248e0 b r_occluderminarea
-00324940 b r_occlusion
-0031cfa0 b r_proplightingfromdisk
-003266a0 b r_queued_decals
-0031d060 b r_rootlod
-0031e4c0 b r_shadowrendertotexture
-00326700 b r_spray_lifetime
-00327260 b r_staticpropinfo
-0031cf40 b r_staticprop_lod
+0031f9a0 b r_norefresh
+00325700 b r_occludeemaxarea
+00325760 b r_occluderminarea
+003257c0 b r_occlusion
+0031de20 b r_proplightingfromdisk
+00327520 b r_queued_decals
+0031dee0 b r_rootlod
+0031f340 b r_shadowrendertotexture
+00327580 b r_spray_lifetime
+003280e0 b r_staticpropinfo
+0031ddc0 b r_staticprop_lod
 00318700 b r_surfacevisframe
-0031fa00 b r_unloadlightmaps
-00320f60 b r_visframecount
-003249a0 b r_visocclusion
-0031e400 b r_waterforceexpensive
-0031e3a0 b r_waterforcereflectentities
-00326760 b s_aDecalPool
-0038bacc b s_bMathlibInitialized
+00320880 b r_unloadlightmaps
+00321de0 b r_visframecount
+00325820 b r_visocclusion
+0031f280 b r_waterforceexpensive
+0031f220 b r_waterforcereflectentities
+003275e0 b s_aDecalPool
+0038c94c b s_bMathlibInitialized
          U scandir@@GLIBC_2.0
 00229430 t scan_tree
 002c3240 d s_ClientElementNames
 0022d754 t search_object
-0038bf24 b seen_objects
+0038cda4 b seen_objects
          U select@@GLIBC_2.0
 002c5240 d s_ElementNames
          U send@@GLIBC_2.0
          U sendto@@GLIBC_2.0
 00229550 t send_tree
-0035dde4 b serverGameClients
-0035ddd0 b serverGameDirector
-0035ddf4 b serverGameDLL
-0035dde8 b serverGameEnts
-0035ddcc b serverGameTags
+0035ec64 b serverGameClients
+0035ec50 b serverGameDirector
+0035ec74 b serverGameDLL
+0035ec68 b serverGameEnts
+0035ec4c b serverGameTags
          U setenv@@GLIBC_2.0
 0007c298 t set_fast_math
          U _setjmp@@GLIBC_2.0
@@ -1039,28 +1039,28 @@
          U __sigsetjmp@@GLIBC_2.0
          U sincosf@@GLIBC_2.1
          U sincos@@GLIBC_2.1
-0038b6a0 b SinCosTable
+0038c520 b SinCosTable
          U sinf@@GLIBC_2.0
          U sin@@GLIBC_2.0
 0022cc82 t size_of_encoded_value
 003197e0 b skill
-00323b80 b s_LoopBacks
-00326e60 b snd_foliage_db_loss
-00326e00 b snd_gain
-00326da0 b snd_gain_max
-00326d40 b snd_gain_min
-00326ec0 b snd_refdb
-00326f20 b snd_refdist
+00324a00 b s_LoopBacks
+00327ce0 b snd_foliage_db_loss
+00327c80 b snd_gain
+00327c20 b snd_gain_max
+00327bc0 b snd_gain_min
+00327d40 b snd_refdb
+00327da0 b snd_refdist
 002d41c0 b snd_vox_captiontrace
 002d42e0 b snd_vox_globaltimeout
 002d4220 b snd_vox_sectimeout
 002d4280 b snd_vox_seqtimeout
-0037e560 b s_NoEscConversion
+0037f3e0 b s_NoEscConversion
          U snprintf@@GLIBC_2.0
          U socket@@GLIBC_2.0
-0037f910 b s_pCurrentAppSystem
+00380790 b s_pCurrentAppSystem
          U SpewActivate
-0035dd80 b spew_consolelog_to_debugstring
+0035ec00 b spew_consolelog_to_debugstring
          U _SpewInfo
          U _SpewMessage
          U SpewOutputFunc
@@ -1068,8 +1068,8 @@
          U sprintf@@GLIBC_2.0
 0008d220 t srand
          U sscanf@@GLIBC_2.0
-00358320 b s_ServerPlugin
-0037ee80 b s_StringCharConversion
+003591a0 b s_ServerPlugin
+0037fd00 b s_StringCharConversion
          U __stack_chk_fail@@GLIBC_2.4
 0022e090 t stat
 0022e090 t __stat
@@ -1111,54 +1111,54 @@
          U strtod@@GLIBC_2.0
          U strtol@@GLIBC_2.0
          U strtoul@@GLIBC_2.0
-0038be90 b studiorender
-0038bf28 b subs.7497
-0032d920 b sv
+0038cd10 b studiorender
+0038cda8 b subs.7497
+0032e7a0 b sv
 002d6600 b sv_allow_color_correction
 0031af20 b sv_allow_voice_from_file
 002d6660 b sv_allow_wait_command
 002d66c0 b sv_alternateticks
-0032d6e0 b sv_cheats
-0032d4a0 b sv_client_cmdrate_difference
-0032d3e0 b sv_client_max_interp_ratio
-0032d440 b sv_client_min_interp_ratio
-0032d380 b sv_client_predict
-00323340 b sv_compressstringtablebaselines_threshhold
-003581e0 b sv_debugmanualmode
-0032d620 b sv_downloadurl
-003233a0 b sv_dumpstringtables
-0032d680 b sv_lan
+0032e560 b sv_cheats
+0032e320 b sv_client_cmdrate_difference
+0032e260 b sv_client_max_interp_ratio
+0032e2c0 b sv_client_min_interp_ratio
+0032e200 b sv_client_predict
+003241c0 b sv_compressstringtablebaselines_threshhold
+00359060 b sv_debugmanualmode
+0032e4a0 b sv_downloadurl
+00324220 b sv_dumpstringtables
+0032e500 b sv_lan
 00317840 b sv_logdownloadlist
-00359be0 b sv_master_share_game_socket
-0032d500 b sv_maxcmdrate
-0032d5c0 b sv_maxreplay
-00327c20 b sv_maxupdaterate
-0032d560 b sv_mincmdrate
-00327bc0 b sv_minupdaterate
+0035aa60 b sv_master_share_game_socket
+0032e380 b sv_maxcmdrate
+0032e440 b sv_maxreplay
+00328aa0 b sv_maxupdaterate
+0032e3e0 b sv_mincmdrate
+00328a40 b sv_minupdaterate
 002d6100 b sv_namechange_cooldown_seconds
 002d60a0 b sv_netspike_on_reliable_snapshot_overflow
 002d5fe0 b sv_netspike_output
 002d6040 b sv_netspike_sendtime_ms
-0035de08 b sv_noclipduringpause
-0032d7a0 b sv_pure_consensus
-0032d860 b sv_pure_kick_clients
-0032d740 b sv_pure_retiretime
-0032d800 b sv_pure_trace
-00358840 b sv_rcon_banpenalty
-00359a00 b sv_rcon_log
-003587e0 b sv_rcon_maxfailures
-00358600 b sv_rcon_maxpacketbans
-00358660 b sv_rcon_maxpacketsize
-00358780 b sv_rcon_minfailures
-00358720 b sv_rcon_minfailuretime
-003586c0 b sv_rcon_whitelist_address
+0035ec88 b sv_noclipduringpause
+0032e620 b sv_pure_consensus
+0032e6e0 b sv_pure_kick_clients
+0032e5c0 b sv_pure_retiretime
+0032e680 b sv_pure_trace
+003596c0 b sv_rcon_banpenalty
+0035a880 b sv_rcon_log
+00359660 b sv_rcon_maxfailures
+00359480 b sv_rcon_maxpacketbans
+003594e0 b sv_rcon_maxpacketsize
+00359600 b sv_rcon_minfailures
+003595a0 b sv_rcon_minfailuretime
+00359540 b sv_rcon_whitelist_address
 002d67e0 b sv_region
-0032d320 b sv_restrict_aspect_ratio_fov
-00327b00 b sv_sendtables
-00357b80 b sv_shutdown_timeout_minutes
-00359c40 b sv_steamblockingcheck
-00359b80 b sv_steamgroup
-00327b60 b sv_stressbots
+0032e1a0 b sv_restrict_aspect_ratio_fov
+00328980 b sv_sendtables
+00358a00 b sv_shutdown_timeout_minutes
+0035aac0 b sv_steamblockingcheck
+0035aa00 b sv_steamgroup
+003289e0 b sv_stressbots
 002d6780 b sv_tags
 0031aec0 b sv_use_steam_voice
 002d6720 b sv_visiblemaxplayers
@@ -1178,8 +1178,8 @@
 0031a020 b telemetry_server
          U TelemetrySetLevel
          U TelemetryTick
-0038bff4 b terminator.7340
-00375d20 b testscript_debug
+0038ce74 b terminator.7340
+00376ba0 b testscript_debug
 001c9ce0 t TextMessage_DemoMessage
 001c9df0 t TextMessage_DemoMessageFull
 001c9ed0 t TextMessageGet
@@ -1212,7 +1212,7 @@
 0022abd0 t _tr_tally
 00319080 b tv_autorecord
 00318f60 b tv_debug
-0032d2c0 b tv_enable
+0032e140 b tv_enable
 00319020 b tv_name
 00318d80 b tv_snapshotrate
 00318f00 b tv_title
@@ -1220,7 +1220,7 @@
          U tzset@@GLIBC_2.0
 0022adf4 t __udivdi3
          U unlink@@GLIBC_2.0
-0038bf20 b unseen_objects
+0038cda0 b unseen_objects
 0022ca5f t _Unwind_Backtrace
 0022c6f6 t _Unwind_DebugHook
 0022ca43 t _Unwind_DeleteException
@@ -1254,10 +1254,10 @@
 0022c3b5 t uw_update_context
 0022c050 t uw_update_context_1
 003196c0 b vcr_verbose
-0038bab0 b vec3_angle
-0038baa0 b vec3_invalid
-0038bac0 b vec3_origin
-0032d240 b voice_debugfeedbackfrom
+0038c930 b vec3_angle
+0038c920 b vec3_invalid
+0038c940 b vec3_origin
+0032e0c0 b voice_debugfeedbackfrom
 0031af80 b voice_inputfromfile
 0031afe0 b voice_recordtofile
 000c1a70 t VOX_GroupIndexFromName
@@ -3075,58 +3075,58 @@
 0025b4e0 R z_errmsg
 002242c0 T zError
 0031a300 b guard variable for datamap_t* DataMapInit<player_info_s>(player_info_s*)::nameHolder
-0031fb10 b guard variable for datamap_t* DataMapInit<lump_t>(lump_t*)::nameHolder
-0031fb40 b guard variable for datamap_t* DataMapInit<dheader_t>(dheader_t*)::nameHolder
-003274e0 b guard variable for AllocTempVector()::s_nIndex
-003274d0 b guard variable for AllocTempVector()::s_vecTemp
+00320990 b guard variable for datamap_t* DataMapInit<lump_t>(lump_t*)::nameHolder
+003209c0 b guard variable for datamap_t* DataMapInit<dheader_t>(dheader_t*)::nameHolder
+00328360 b guard variable for AllocTempVector()::s_nIndex
+00328350 b guard variable for AllocTempVector()::s_vecTemp
 0031b0f8 b guard variable for Host_Map_Helper(CCommand const&, bool, bool, bool)::dev_loadtime_map_start
 00314dc0 b guard variable for GetConsoleLogManager()::object
-00328050 b guard variable for Filter_StringToUserID(char const*)::id
+00328ed0 b guard variable for Filter_StringToUserID(char const*)::id
 0031a820 b guard variable for _Host_RunFrame_Server(bool)::_counter
 0031a8b0 b guard variable for Host_ShowIPCCallCount()::s_nLastTick
 0031a8d0 b guard variable for Host_ShowIPCCallCount()::s_nLastFrame
 00317ed0 b guard variable for MapPropOffsetsToIndices(CBaseEdict const*, CSendTablePrecalc*, unsigned short const*, unsigned short, unsigned short*)::testDict
 002daee0 b guard variable for EngineBitBufErrorHandler(BitBufErrorType, char const*)::errorNames
-0037e280 b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
-0037e260 b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
-003232f0 b guard variable for VisCache_Build(VisCacheEntry&, worldbrushdata_t const&)::_counter
+0037f100 b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
+0037f0e0 b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
+00324170 b guard variable for VisCache_Build(VisCacheEntry&, worldbrushdata_t const&)::_counter
 0030dcb0 b guard variable for g_exec_CompletionFunc(char const*, char (*) [64])::execComplete
 0031c100 b guard variable for status(CCommand const&)::sv_tags
 002d4050 b guard variable for CStudioHdr::pSeqdesc(int)::s_nil_seq
-0037f8b0 b guard variable for CUtlString::GetEmptyString()::s_emptyString
+00380730 b guard variable for CUtlString::GetEmptyString()::s_emptyString
 002dabe0 b guard variable for CBaseServer::UpdateMasterServer()::bUpdateMasterServers
-00357c40 b guard variable for CGameServer::SetHibernating(bool)::s_flPlatFloatTimeBeginUptime
+00358ac0 b guard variable for CGameServer::SetHibernating(bool)::s_flPlatFloatTimeBeginUptime
 003182c0 b guard variable for CEngineTrace::TraceRay(Ray_t const&, unsigned int, ITraceFilter*, CGameTrace*)::_counter
-003259c0 b guard variable for COcclusionSystem::IsOccluded(Vector const&, Vector const&)::mutex
-0037e160 b guard variable for CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)::r_developer
-00375c10 b guard variable for CEngine::Frame()::pSyncReportConVar
-003239b0 b guard variable for CNetChan::HandleUpload(CNetChan::dataFragments_s*, INetChannelHandler*)::s_pAllowUpload
+00326840 b guard variable for COcclusionSystem::IsOccluded(Vector const&, Vector const&)::mutex
+0037efe0 b guard variable for CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)::r_developer
+00376a90 b guard variable for CEngine::Frame()::pSyncReportConVar
+00324830 b guard variable for CNetChan::HandleUpload(CNetChan::dataFragments_s*, INetChannelHandler*)::s_pAllowUpload
 003162a0 b guard variable for CDispInfo::SetupDecalNodeIntersect(CVertIndex const&, int, CDispDecalBase*, ShadowInfo_t const*)::cache
-0031e190 b guard variable for CUtlRBTree<CUtlString, int, bool (*)(CUtlString const&, CUtlString const&), CUtlMemory<UtlRBTreeNode_t<CUtlString, int>, int> >::Links(int) const::s_Sentinel
-0031e1a0 b guard variable for CUtlRBTree<CUtlSymbol, unsigned short, bool (*)(CUtlSymbol const&, CUtlSymbol const&), CUtlMemory<UtlRBTreeNode_t<CUtlSymbol, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+0031f010 b guard variable for CUtlRBTree<CUtlString, int, bool (*)(CUtlString const&, CUtlString const&), CUtlMemory<UtlRBTreeNode_t<CUtlString, int>, int> >::Links(int) const::s_Sentinel
+0031f020 b guard variable for CUtlRBTree<CUtlSymbol, unsigned short, bool (*)(CUtlSymbol const&, CUtlSymbol const&), CUtlMemory<UtlRBTreeNode_t<CUtlSymbol, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 00317fe0 b guard variable for CUtlRBTree<MatchingProp_t, unsigned short, bool (*)(MatchingProp_t const&, MatchingProp_t const&), CUtlMemory<UtlRBTreeNode_t<MatchingProp_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
-00326310 b guard variable for CUtlRBTree<MasterFileHash_t, int, bool (*)(MasterFileHash_t const&, MasterFileHash_t const&), CUtlMemory<UtlRBTreeNode_t<MasterFileHash_t, int>, int> >::Links(int) const::s_Sentinel
-00326320 b guard variable for CUtlRBTree<UserReportedFile_t, int, bool (*)(UserReportedFile_t const&, UserReportedFile_t const&), CUtlMemory<UtlRBTreeNode_t<UserReportedFile_t, int>, int> >::Links(int) const::s_Sentinel
-00326300 b guard variable for CUtlRBTree<UserReportedFileHash_t, int, bool (*)(UserReportedFileHash_t const&, UserReportedFileHash_t const&), CUtlMemory<UtlRBTreeNode_t<UserReportedFileHash_t, int>, int> >::Links(int) const::s_Sentinel
+00327190 b guard variable for CUtlRBTree<MasterFileHash_t, int, bool (*)(MasterFileHash_t const&, MasterFileHash_t const&), CUtlMemory<UtlRBTreeNode_t<MasterFileHash_t, int>, int> >::Links(int) const::s_Sentinel
+003271a0 b guard variable for CUtlRBTree<UserReportedFile_t, int, bool (*)(UserReportedFile_t const&, UserReportedFile_t const&), CUtlMemory<UtlRBTreeNode_t<UserReportedFile_t, int>, int> >::Links(int) const::s_Sentinel
+00327180 b guard variable for CUtlRBTree<UserReportedFileHash_t, int, bool (*)(UserReportedFileHash_t const&, UserReportedFileHash_t const&), CUtlMemory<UtlRBTreeNode_t<UserReportedFileHash_t, int>, int> >::Links(int) const::s_Sentinel
 002d5fa0 b guard variable for CUtlRBTree<ccpair, int, bool (*)(ccpair const&, ccpair const&), CUtlMemory<UtlRBTreeNode_t<ccpair, int>, int> >::Links(int) const::s_Sentinel
-0032c4a0 b guard variable for CUtlRBTree<CIPRateLimit::iprate_s, int, bool (*)(CIPRateLimit::iprate_s const&, CIPRateLimit::iprate_s const&), CUtlMemory<UtlRBTreeNode_t<CIPRateLimit::iprate_s, int>, int> >::Links(int) const::s_Sentinel
-0037f900 b guard variable for CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+0032d320 b guard variable for CUtlRBTree<CIPRateLimit::iprate_s, int, bool (*)(CIPRateLimit::iprate_s const&, CIPRateLimit::iprate_s const&), CUtlMemory<UtlRBTreeNode_t<CIPRateLimit::iprate_s, int>, int> >::Links(int) const::s_Sentinel
+00380780 b guard variable for CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 0031c110 b guard variable for CUtlRBTree<CUtlMap<CUtlString, int, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 0031c2f0 b guard variable for CUtlRBTree<CUtlMap<char const*, CMapListItem, int>::Node_t, int, CUtlMap<char const*, CMapListItem, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CMapListItem, int>::Node_t, int>, int> >::Links(int) const::s_Sentinel
 002d5f90 b guard variable for CUtlRBTree<CUtlMap<char const*, int, int>::Node_t, int, CUtlMap<char const*, int, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, int>::Node_t, int>, int> >::Links(int) const::s_Sentinel
-00326220 b guard variable for CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
-0031df90 b guard variable for CUtlRBTree<CUtlMap<char const*, memhandle_t__*, int>::Node_t, int, CUtlMap<char const*, memhandle_t__*, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, memhandle_t__*, int>::Node_t, int>, int> >::Links(int) const::s_Sentinel
-003262f0 b guard variable for CUtlRBTree<CUtlMap<char const*, CPureServerWhitelist::CCommand*, int>::Node_t, int, CUtlMap<char const*, CPureServerWhitelist::CCommand*, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CPureServerWhitelist::CCommand*, int>::Node_t, int>, int> >::Links(int) const::s_Sentinel
+003270a0 b guard variable for CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+0031ee10 b guard variable for CUtlRBTree<CUtlMap<char const*, memhandle_t__*, int>::Node_t, int, CUtlMap<char const*, memhandle_t__*, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, memhandle_t__*, int>::Node_t, int>, int> >::Links(int) const::s_Sentinel
+00327170 b guard variable for CUtlRBTree<CUtlMap<char const*, CPureServerWhitelist::CCommand*, int>::Node_t, int, CUtlMap<char const*, CPureServerWhitelist::CCommand*, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CPureServerWhitelist::CCommand*, int>::Node_t, int>, int> >::Links(int) const::s_Sentinel
 003150f0 b guard variable for CUtlRBTree<CUtlMap<void*, DecalEntry, unsigned short>::Node_t, unsigned short, CUtlMap<void*, DecalEntry, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, DecalEntry, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
-00323430 b guard variable for CUtlRBTree<CUtlMap<void*, CNetworkStringTableItem, unsigned short>::Node_t, unsigned short, CUtlMap<void*, CNetworkStringTableItem, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, CNetworkStringTableItem, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
-00320f50 b guard variable for CUtlRBTree<CUtlMap<void*, CModelLoader::ModelEntry_t, unsigned short>::Node_t, unsigned short, CUtlMap<void*, CModelLoader::ModelEntry_t, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, CModelLoader::ModelEntry_t, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+003242b0 b guard variable for CUtlRBTree<CUtlMap<void*, CNetworkStringTableItem, unsigned short>::Node_t, unsigned short, CUtlMap<void*, CNetworkStringTableItem, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, CNetworkStringTableItem, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
+00321dd0 b guard variable for CUtlRBTree<CUtlMap<void*, CModelLoader::ModelEntry_t, unsigned short>::Node_t, unsigned short, CUtlMap<void*, CModelLoader::ModelEntry_t, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, CModelLoader::ModelEntry_t, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 00317c00 b guard variable for CUtlRBTree<CUtlMap<unsigned short, unsigned short, unsigned short>::Node_t, unsigned short, CUtlMap<unsigned short, unsigned short, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned short, unsigned short, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 002daed0 b guard variable for CUtlRBTree<CEventInfo*, unsigned short, bool (*)(CEventInfo* const&, CEventInfo* const&), CUtlMemory<UtlRBTreeNode_t<CEventInfo*, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 00315070 b guard variable for CUtlRBTree<ConCommandBase const*, unsigned short, bool (*)(ConCommandBase const* const&, ConCommandBase const* const&), CUtlMemory<UtlRBTreeNode_t<ConCommandBase const*, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 000dea50 t BindToggle(CCommand const&)
-003242e0 b clientport
+00325160 b clientport
 001303e0 t disconnect(CCommand const&)
-00323f40 b fakejitter
+00324dc0 b fakejitter
 002d3b80 b g_BreakSet
 00310a80 b g_BreakSet
 002d5e40 b g_GroupLRU
@@ -3139,26 +3139,26 @@
 0012c210 t listmodels(CCommand const&)
 001ae060 t maxplayers(CCommand const&)
 0012c3b0 t namelockid(CCommand const&)
-00324328 b net_nohltv
+003251a8 b net_nohltv
 001694a0 t net_status(CCommand const&)
 00259e60 r _pi32_inv1
 003188e0 b r_drawleaf
-0031dba0 b r_flushlod
-0037be60 b s_BreakSet
-00357c34 b s_FatBytes
+0031ea20 b r_flushlod
+0037cce0 b s_BreakSet
+00358ab4 b s_FatBytes
 0031a640 b singlestep
 002c7da0 d s_nTrapKey
 0017a770 t SpewEdicts()
 0031c7a0 b s_pKeyInfo
-00323cd4 b s_pLagData
-00357f00 b sv_contact
-0032cee0 b sv_logbans
-0032cd60 b sv_logecho
-0032cdc0 b sv_logfile
-0032d060 b sv_logsdir
-00327c80 b sv_maxrate
-00327ce0 b sv_minrate
-00327da0 b sv_timeout
+00324b54 b s_pLagData
+00358d80 b sv_contact
+0032dd60 b sv_logbans
+0032dbe0 b sv_logecho
+0032dc40 b sv_logfile
+0032dee0 b sv_logsdir
+00328b00 b sv_maxrate
+00328b60 b sv_minrate
+00328c20 b sv_timeout
 00120480 t tv_clients(CCommand const&)
 00318c80 b tv_maxrate
 00318de0 b tv_timeout
@@ -3173,45 +3173,45 @@
 0030dc40 b cmd_command
 00103b10 t DecodeFloat(SendProp const*, bf_read*)
 000ed1b0 t differences(CCommand const&)
-00323e80 b droppackets
+00324d00 b droppackets
 00234e00 r extra_dbits
 00234d80 r extra_lbits
 001ef9f0 t FastToLower(char)
 002d5e20 b g_cmapnames
 0031c380 b g_HostState
 0031a480 b g_HostTimes
-003240e0 b g_SendQueue
-0035e36c b g_SpewMutex
+00324f60 b g_SendQueue
+0035f1ec b g_SpewMutex
 001333c0 t Host_Maps_f(CCommand const&)
-0032d0e0 b log_command
+0032df60 b log_command
 00310140 b map_noareas
 00126890 t mem_compact(CCommand const&)
 0012c3a0 t memory_diff(CCommand const&)
 0012c370 t memory_list(CCommand const&)
 0012c390 t memory_mark(CCommand const&)
-00324080 b net_packets
-003238a0 b net_showmsg
-00323d30 b net_sockets
+00324f00 b net_packets
+00324720 b net_showmsg
+00324bb0 b net_sockets
 001b70b0 t plugin_load(CCommand const&)
 002574a0 r pulCRCTable
 00318940 b r_drawworld
-0037e294 b s_bShowDiag
-0031ccf8 b s_bTrapMode
+0037f114 b s_bShowDiag
+0031db78 b s_bTrapMode
 002c78e0 d s_CvarQuery
-00320a20 b s_MapBuffer
-0031fc40 b s_MapHeader
-0037be58 b s_nCVarFlag
+003218a0 b s_MapBuffer
+00320ac0 b s_MapHeader
+0037ccd8 b s_nCVarFlag
 0031abe0 b snd_restart
 000a9af0 t SortStricmp(char* const*, char* const*)
-0037c140 b s_pTokenBuf
-00320760 b s_szMapName
+0037cfc0 b s_pTokenBuf
+003215e0 b s_szMapName
 001c2e10 t star_memory(CCommand const&)
-0032ce20 b sv_logflush
-00357c80 b sv_memlimit
-00358140 b sv_netspike
+0032dca0 b sv_logflush
+00358b00 b sv_memlimit
+00358fc0 b sv_netspike
 002d6840 b sv_password
-00357be0 b sv_pausable
-00358180 b sv_shutdown
+00358a60 b sv_pausable
+00359000 b sv_shutdown
 001ad370 t sv_ShutDown()
 003192c0 b tv_password
 002c9170 b vec2_origin
@@ -3301,100 +3301,100 @@
 0031c340 b vec2_origin
 0031c6b0 b vec2_origin
 0031c700 b vec2_origin
-0031ccfc b vec2_origin
-0031cf00 b vec2_origin
-0031da48 b vec2_origin
-0031e160 b vec2_origin
-0031e1b0 b vec2_origin
-0031f424 b vec2_origin
-0031f8cc b vec2_origin
-00320ea8 b vec2_origin
-00323304 b vec2_origin
-00323418 b vec2_origin
-00323464 b vec2_origin
-003234a0 b vec2_origin
-00323504 b vec2_origin
-00323a94 b vec2_origin
-00323b30 b vec2_origin
-003243f8 b vec2_origin
-0032481c b vec2_origin
-00325a84 b vec2_origin
-00325c88 b vec2_origin
-00325d70 b vec2_origin
-00325fa0 b vec2_origin
-003261e8 b vec2_origin
-003262c0 b vec2_origin
-00326330 b vec2_origin
-00326370 b vec2_origin
-00326390 b vec2_origin
-00326500 b vec2_origin
-00326570 b vec2_origin
-00326624 b vec2_origin
-00326888 b vec2_origin
-00326c64 b vec2_origin
-00326ca0 b vec2_origin
-00326ce0 b vec2_origin
-00326d00 b vec2_origin
-00326f68 b vec2_origin
-00327148 b vec2_origin
-00327448 b vec2_origin
-00327e48 b vec2_origin
-00327eb4 b vec2_origin
-0032806c b vec2_origin
-0032c408 b vec2_origin
-0032c488 b vec2_origin
-0032d0a8 b vec2_origin
-00357e74 b vec2_origin
-003582d8 b vec2_origin
-0035833c b vec2_origin
-00358588 b vec2_origin
-00358954 b vec2_origin
-003599c0 b vec2_origin
-00359b00 b vec2_origin
-0035dc28 b vec2_origin
-0035dcd0 b vec2_origin
-0035dd14 b vec2_origin
-0035e500 b vec2_origin
-00375a08 b vec2_origin
-00375c48 b vec2_origin
-00375cdc b vec2_origin
-00375dfc b vec2_origin
-00376e00 b vec2_origin
-00376e88 b vec2_origin
-00376f40 b vec2_origin
-00378230 b vec2_origin
-003786a0 b vec2_origin
-00378ac4 b vec2_origin
-0037a990 b vec2_origin
-0037ab70 b vec2_origin
-0037abc8 b vec2_origin
-0037bd90 b vec2_origin
-0037bdb0 b vec2_origin
-0037be20 b vec2_origin
-0037bfa8 b vec2_origin
-0037bfd0 b vec2_origin
-0037bff0 b vec2_origin
-0037e180 b vec2_origin
-0037e1b0 b vec2_origin
-0037e1e0 b vec2_origin
-0037e200 b vec2_origin
-0037e4e0 b vec2_origin
-0037e540 b vec2_origin
-0037f898 b vec2_origin
-0037f8c0 b vec2_origin
-0037f8e8 b vec2_origin
-0037f920 b vec2_origin
-0037f940 b vec2_origin
-00387660 b vec2_origin
-0038bae0 b vec2_origin
-0038bb20 b vec2_origin
-0038bb40 b vec2_origin
-0038bb60 b vec2_origin
-0038bba0 b vec2_origin
-0038bc30 b vec2_origin
-0038bd30 b vec2_origin
-0038bd70 b vec2_origin
-0038beb0 b vec2_origin
+0031db7c b vec2_origin
+0031dd80 b vec2_origin
+0031e8c8 b vec2_origin
+0031efe0 b vec2_origin
+0031f030 b vec2_origin
+003202a4 b vec2_origin
+0032074c b vec2_origin
+00321d28 b vec2_origin
+00324184 b vec2_origin
+00324298 b vec2_origin
+003242e4 b vec2_origin
+00324320 b vec2_origin
+00324384 b vec2_origin
+00324914 b vec2_origin
+003249b0 b vec2_origin
+00325278 b vec2_origin
+0032569c b vec2_origin
+00326904 b vec2_origin
+00326b08 b vec2_origin
+00326bf0 b vec2_origin
+00326e20 b vec2_origin
+00327068 b vec2_origin
+00327140 b vec2_origin
+003271b0 b vec2_origin
+003271f0 b vec2_origin
+00327210 b vec2_origin
+00327380 b vec2_origin
+003273f0 b vec2_origin
+003274a4 b vec2_origin
+00327708 b vec2_origin
+00327ae4 b vec2_origin
+00327b20 b vec2_origin
+00327b60 b vec2_origin
+00327b80 b vec2_origin
+00327de8 b vec2_origin
+00327fc8 b vec2_origin
+003282c8 b vec2_origin
+00328cc8 b vec2_origin
+00328d34 b vec2_origin
+00328eec b vec2_origin
+0032d288 b vec2_origin
+0032d308 b vec2_origin
+0032df28 b vec2_origin
+00358cf4 b vec2_origin
+00359158 b vec2_origin
+003591bc b vec2_origin
+00359408 b vec2_origin
+003597d4 b vec2_origin
+0035a840 b vec2_origin
+0035a980 b vec2_origin
+0035eaa8 b vec2_origin
+0035eb50 b vec2_origin
+0035eb94 b vec2_origin
+0035f380 b vec2_origin
+00376888 b vec2_origin
+00376ac8 b vec2_origin
+00376b5c b vec2_origin
+00376c7c b vec2_origin
+00377c80 b vec2_origin
+00377d08 b vec2_origin
+00377dc0 b vec2_origin
+003790b0 b vec2_origin
+00379520 b vec2_origin
+00379944 b vec2_origin
+0037b810 b vec2_origin
+0037b9f0 b vec2_origin
+0037ba48 b vec2_origin
+0037cc10 b vec2_origin
+0037cc30 b vec2_origin
+0037cca0 b vec2_origin
+0037ce28 b vec2_origin
+0037ce50 b vec2_origin
+0037ce70 b vec2_origin
+0037f000 b vec2_origin
+0037f030 b vec2_origin
+0037f060 b vec2_origin
+0037f080 b vec2_origin
+0037f360 b vec2_origin
+0037f3c0 b vec2_origin
+00380718 b vec2_origin
+00380740 b vec2_origin
+00380768 b vec2_origin
+003807a0 b vec2_origin
+003807c0 b vec2_origin
+003884e0 b vec2_origin
+0038c960 b vec2_origin
+0038c9a0 b vec2_origin
+0038c9c0 b vec2_origin
+0038c9e0 b vec2_origin
+0038ca20 b vec2_origin
+0038cab0 b vec2_origin
+0038cbb0 b vec2_origin
+0038cbf0 b vec2_origin
+0038cd30 b vec2_origin
 002c92c0 b vec4_origin
 002d3f30 b vec4_origin
 002d4144 b vec4_origin
@@ -3448,69 +3448,69 @@
 0031c15c b vec4_origin
 0031c350 b vec4_origin
 0031c6d0 b vec4_origin
-0031cd0c b vec4_origin
-0031cf20 b vec4_origin
-0031da58 b vec4_origin
-0031e170 b vec4_origin
-0031e1d0 b vec4_origin
-0031f434 b vec4_origin
-0031f8dc b vec4_origin
-00320eb8 b vec4_origin
-00323314 b vec4_origin
-00323474 b vec4_origin
-003234c0 b vec4_origin
-00323514 b vec4_origin
-00323aa4 b vec4_origin
-00324408 b vec4_origin
-0032482c b vec4_origin
-00325a94 b vec4_origin
-00325c98 b vec4_origin
-00325fc0 b vec4_origin
-003261f8 b vec4_origin
-003262d0 b vec4_origin
-00326350 b vec4_origin
-003263b0 b vec4_origin
-00326520 b vec4_origin
-00326590 b vec4_origin
-00326634 b vec4_origin
-00326898 b vec4_origin
-00326c74 b vec4_origin
-00326cc0 b vec4_origin
-00326d20 b vec4_origin
-00327458 b vec4_origin
-00327e58 b vec4_origin
-00327ec4 b vec4_origin
-0032807c b vec4_origin
-0032c418 b vec4_origin
-0032d0b8 b vec4_origin
-00357e84 b vec4_origin
-003582e8 b vec4_origin
-0035834c b vec4_origin
-00358598 b vec4_origin
-00358964 b vec4_origin
-003599d0 b vec4_origin
-00359b10 b vec4_origin
-0035dc38 b vec4_origin
-0035dd24 b vec4_origin
-0035e510 b vec4_origin
-00375a18 b vec4_origin
-00375c58 b vec4_origin
-00375cec b vec4_origin
-00376e10 b vec4_origin
-00376e98 b vec4_origin
-00378240 b vec4_origin
-003786b0 b vec4_origin
-00378ad4 b vec4_origin
-0037a9a0 b vec4_origin
-0037ab90 b vec4_origin
-0038bb80 b vec4_origin
-0038bbc0 b vec4_origin
-0038bc50 b vec4_origin
-0038bd50 b vec4_origin
-0038bed0 b vec4_origin
+0031db8c b vec4_origin
+0031dda0 b vec4_origin
+0031e8d8 b vec4_origin
+0031eff0 b vec4_origin
+0031f050 b vec4_origin
+003202b4 b vec4_origin
+0032075c b vec4_origin
+00321d38 b vec4_origin
+00324194 b vec4_origin
+003242f4 b vec4_origin
+00324340 b vec4_origin
+00324394 b vec4_origin
+00324924 b vec4_origin
+00325288 b vec4_origin
+003256ac b vec4_origin
+00326914 b vec4_origin
+00326b18 b vec4_origin
+00326e40 b vec4_origin
+00327078 b vec4_origin
+00327150 b vec4_origin
+003271d0 b vec4_origin
+00327230 b vec4_origin
+003273a0 b vec4_origin
+00327410 b vec4_origin
+003274b4 b vec4_origin
+00327718 b vec4_origin
+00327af4 b vec4_origin
+00327b40 b vec4_origin
+00327ba0 b vec4_origin
+003282d8 b vec4_origin
+00328cd8 b vec4_origin
+00328d44 b vec4_origin
+00328efc b vec4_origin
+0032d298 b vec4_origin
+0032df38 b vec4_origin
+00358d04 b vec4_origin
+00359168 b vec4_origin
+003591cc b vec4_origin
+00359418 b vec4_origin
+003597e4 b vec4_origin
+0035a850 b vec4_origin
+0035a990 b vec4_origin
+0035eab8 b vec4_origin
+0035eba4 b vec4_origin
+0035f390 b vec4_origin
+00376898 b vec4_origin
+00376ad8 b vec4_origin
+00376b6c b vec4_origin
+00377c90 b vec4_origin
+00377d18 b vec4_origin
+003790c0 b vec4_origin
+00379530 b vec4_origin
+00379954 b vec4_origin
+0037b820 b vec4_origin
+0037ba10 b vec4_origin
+0038ca00 b vec4_origin
+0038ca40 b vec4_origin
+0038cad0 b vec4_origin
+0038cbd0 b vec4_origin
+0038cd50 b vec4_origin
 001d02d0 t vprof_reset(CCommand const&)
 000db4f0 t bench_upload(CCommand const&)
-0031ce00 b bind_command
+0031dc80 b bind_command
 0031c2c0 b changelevel2
 0030dbc0 b echo_command
 0030dc80 b exec_command
@@ -3519,13 +3519,13 @@
 001a4d80 t Filter_Add_f(CCommand const&) [clone .part.35]
 0012c270 t flush_locked(CCommand const&)
 0030b444 b g_bRPTActive
-00325fe0 b g_FreeEdicts
+00326e60 b g_FreeEdicts
 0031c120 b g_MapListMgr
 002c8314 d g_nSpewLines
-00325b00 b g_OverlayMgr
-00358900 b g_RCONServer
+00326980 b g_OverlayMgr
+00359780 b g_RCONServer
 002d5dc0 b g_rgmapnames
-00376c80 b g_WhiteSpace
+00377b00 b g_WhiteSpace
 00314fc0 b help_command
 0031a9a0 b host_profile
 0012cd70 t incrementvar(CCommand const&)
@@ -3533,23 +3533,23 @@
 0031b400 b kick_command
 001de7f0 t MD5Transform(unsigned int*, unsigned int const*)
 0014fb40 t mem_vcollide(CCommand const&)
-00323900 b net_blockmsg
+00324780 b net_blockmsg
 00168e00 t net_channels(CCommand const&)
-003239e0 b net_showdrop
+00324860 b net_showdrop
 003183a0 b path_command
 0031b1c0 b ping_command
 001b6cb0 t plugin_pause(CCommand const&)
 001b6e50 t plugin_print(CCommand const&)
-0031dd00 b r_ambientmin
-00326b60 b r_drawdecals
-0031d2e0 b r_eyeshift_x
-0031d340 b r_eyeshift_y
-0031d3a0 b r_eyeshift_z
+0031eb80 b r_ambientmin
+003279e0 b r_drawdecals
+0031e160 b r_eyeshift_x
+0031e1c0 b r_eyeshift_y
+0031e220 b r_eyeshift_z
 002d5e80 b rgpparseword
 0031a324 b s_AudioState
 002c7d84 d s_bAllowSSE2
-0037e534 b s_bConnected
-00357bd4 b s_bForceSend
+0037f3b4 b s_bConnected
+00358a54 b s_bForceSend
 002c93ac b s_CacheMutex
 0024d780 r s_clcommands
 00317750 b s_DispDecals
@@ -3557,20 +3557,20 @@
 00230ce8 r s_MatIndices
 002c7d90 d s_nTrapKeyUp
 002c8160 d s_pFaceEdges
-0038bbf0 b s_pWireframe
+0038ca70 b s_pWireframe
 00317be0 b s_Recipients
 00317c40 b s_Recipients
 00317e80 b s_Recipients
 00317fc0 b s_Recipients
 00318040 b s_Recipients
 00318140 b s_Recipients
-0031fba0 b s_szLoadName
-00327f00 b sv_deltatime
-00328000 b sv_filterban
-0032c440 b sv_logblocks
-0032ce80 b sv_logsecret
+00320a20 b s_szLoadName
+00328d80 b sv_deltatime
+00328e80 b sv_filterban
+0032d2c0 b sv_logblocks
+0032dd00 b sv_logsecret
 00318e40 b tv_autoretry
-00358020 b user_command
+00358ea0 b user_command
 002c9180 b vec2_invalid
 002c9270 b vec2_invalid
 002c9290 b vec2_invalid
@@ -3658,100 +3658,100 @@
 0031c348 b vec2_invalid
 0031c6c0 b vec2_invalid
 0031c708 b vec2_invalid
-0031cd04 b vec2_invalid
-0031cf10 b vec2_invalid
-0031da50 b vec2_invalid
-0031e168 b vec2_invalid
-0031e1c0 b vec2_invalid
-0031f42c b vec2_invalid
-0031f8d4 b vec2_invalid
-00320eb0 b vec2_invalid
-0032330c b vec2_invalid
-00323420 b vec2_invalid
-0032346c b vec2_invalid
-003234b0 b vec2_invalid
-0032350c b vec2_invalid
-00323a9c b vec2_invalid
-00323b40 b vec2_invalid
-00324400 b vec2_invalid
-00324824 b vec2_invalid
-00325a8c b vec2_invalid
-00325c90 b vec2_invalid
-00325d80 b vec2_invalid
-00325fb0 b vec2_invalid
-003261f0 b vec2_invalid
-003262c8 b vec2_invalid
-00326340 b vec2_invalid
-00326378 b vec2_invalid
-003263a0 b vec2_invalid
-00326510 b vec2_invalid
-00326580 b vec2_invalid
-0032662c b vec2_invalid
-00326890 b vec2_invalid
-00326c6c b vec2_invalid
-00326cb0 b vec2_invalid
-00326cf0 b vec2_invalid
-00326d10 b vec2_invalid
-00326f70 b vec2_invalid
-00327150 b vec2_invalid
-00327450 b vec2_invalid
-00327e50 b vec2_invalid
-00327ebc b vec2_invalid
-00328074 b vec2_invalid
-0032c410 b vec2_invalid
-0032c490 b vec2_invalid
-0032d0b0 b vec2_invalid
-00357e7c b vec2_invalid
-003582e0 b vec2_invalid
-00358344 b vec2_invalid
-00358590 b vec2_invalid
-0035895c b vec2_invalid
-003599c8 b vec2_invalid
-00359b08 b vec2_invalid
-0035dc30 b vec2_invalid
-0035dce0 b vec2_invalid
-0035dd1c b vec2_invalid
-0035e508 b vec2_invalid
-00375a10 b vec2_invalid
-00375c50 b vec2_invalid
-00375ce4 b vec2_invalid
-00375e04 b vec2_invalid
-00376e08 b vec2_invalid
-00376e90 b vec2_invalid
-00376f48 b vec2_invalid
-00378238 b vec2_invalid
-003786a8 b vec2_invalid
-00378acc b vec2_invalid
-0037a998 b vec2_invalid
-0037ab80 b vec2_invalid
-0037abd0 b vec2_invalid
-0037bda0 b vec2_invalid
-0037bdc0 b vec2_invalid
-0037be30 b vec2_invalid
-0037bfb0 b vec2_invalid
-0037bfe0 b vec2_invalid
-0037c000 b vec2_invalid
-0037e190 b vec2_invalid
-0037e1c0 b vec2_invalid
-0037e1f0 b vec2_invalid
-0037e210 b vec2_invalid
-0037e4f0 b vec2_invalid
-0037e550 b vec2_invalid
-0037f8a0 b vec2_invalid
-0037f8d0 b vec2_invalid
-0037f8f0 b vec2_invalid
-0037f930 b vec2_invalid
-0037f950 b vec2_invalid
-00387670 b vec2_invalid
-0038baf0 b vec2_invalid
-0038bb30 b vec2_invalid
-0038bb50 b vec2_invalid
-0038bb70 b vec2_invalid
-0038bbb0 b vec2_invalid
-0038bc40 b vec2_invalid
-0038bd40 b vec2_invalid
-0038bd80 b vec2_invalid
-0038bec0 b vec2_invalid
+0031db84 b vec2_invalid
+0031dd90 b vec2_invalid
+0031e8d0 b vec2_invalid
+0031efe8 b vec2_invalid
+0031f040 b vec2_invalid
+003202ac b vec2_invalid
+00320754 b vec2_invalid
+00321d30 b vec2_invalid
+0032418c b vec2_invalid
+003242a0 b vec2_invalid
+003242ec b vec2_invalid
+00324330 b vec2_invalid
+0032438c b vec2_invalid
+0032491c b vec2_invalid
+003249c0 b vec2_invalid
+00325280 b vec2_invalid
+003256a4 b vec2_invalid
+0032690c b vec2_invalid
+00326b10 b vec2_invalid
+00326c00 b vec2_invalid
+00326e30 b vec2_invalid
+00327070 b vec2_invalid
+00327148 b vec2_invalid
+003271c0 b vec2_invalid
+003271f8 b vec2_invalid
+00327220 b vec2_invalid
+00327390 b vec2_invalid
+00327400 b vec2_invalid
+003274ac b vec2_invalid
+00327710 b vec2_invalid
+00327aec b vec2_invalid
+00327b30 b vec2_invalid
+00327b70 b vec2_invalid
+00327b90 b vec2_invalid
+00327df0 b vec2_invalid
+00327fd0 b vec2_invalid
+003282d0 b vec2_invalid
+00328cd0 b vec2_invalid
+00328d3c b vec2_invalid
+00328ef4 b vec2_invalid
+0032d290 b vec2_invalid
+0032d310 b vec2_invalid
+0032df30 b vec2_invalid
+00358cfc b vec2_invalid
+00359160 b vec2_invalid
+003591c4 b vec2_invalid
+00359410 b vec2_invalid
+003597dc b vec2_invalid
+0035a848 b vec2_invalid
+0035a988 b vec2_invalid
+0035eab0 b vec2_invalid
+0035eb60 b vec2_invalid
+0035eb9c b vec2_invalid
+0035f388 b vec2_invalid
+00376890 b vec2_invalid
+00376ad0 b vec2_invalid
+00376b64 b vec2_invalid
+00376c84 b vec2_invalid
+00377c88 b vec2_invalid
+00377d10 b vec2_invalid
+00377dc8 b vec2_invalid
+003790b8 b vec2_invalid
+00379528 b vec2_invalid
+0037994c b vec2_invalid
+0037b818 b vec2_invalid
+0037ba00 b vec2_invalid
+0037ba50 b vec2_invalid
+0037cc20 b vec2_invalid
+0037cc40 b vec2_invalid
+0037ccb0 b vec2_invalid
+0037ce30 b vec2_invalid
+0037ce60 b vec2_invalid
+0037ce80 b vec2_invalid
+0037f010 b vec2_invalid
+0037f040 b vec2_invalid
+0037f070 b vec2_invalid
+0037f090 b vec2_invalid
+0037f370 b vec2_invalid
+0037f3d0 b vec2_invalid
+00380720 b vec2_invalid
+00380750 b vec2_invalid
+00380770 b vec2_invalid
+003807b0 b vec2_invalid
+003807d0 b vec2_invalid
+003884f0 b vec2_invalid
+0038c970 b vec2_invalid
+0038c9b0 b vec2_invalid
+0038c9d0 b vec2_invalid
+0038c9f0 b vec2_invalid
+0038ca30 b vec2_invalid
+0038cac0 b vec2_invalid
+0038cbc0 b vec2_invalid
+0038cc00 b vec2_invalid
+0038cd40 b vec2_invalid
 002c92d0 b vec4_invalid
 002d3f40 b vec4_invalid
 002d4154 b vec4_invalid
@@ -3805,74 +3805,74 @@
 0031c16c b vec4_invalid
 0031c360 b vec4_invalid
 0031c6e0 b vec4_invalid
-0031cd1c b vec4_invalid
-0031cf30 b vec4_invalid
-0031da68 b vec4_invalid
-0031e180 b vec4_invalid
-0031e1e0 b vec4_invalid
-0031f444 b vec4_invalid
-0031f8ec b vec4_invalid
-00320ec8 b vec4_invalid
-00323324 b vec4_invalid
-00323484 b vec4_invalid
-003234d0 b vec4_invalid
-00323524 b vec4_invalid
-00323ab4 b vec4_invalid
-00324418 b vec4_invalid
-0032483c b vec4_invalid
-00325aa4 b vec4_invalid
-00325ca8 b vec4_invalid
-00325fd0 b vec4_invalid
-00326208 b vec4_invalid
-003262e0 b vec4_invalid
-00326360 b vec4_invalid
-003263c0 b vec4_invalid
-00326530 b vec4_invalid
-003265a0 b vec4_invalid
-00326644 b vec4_invalid
-003268a8 b vec4_invalid
-00326c84 b vec4_invalid
-00326cd0 b vec4_invalid
-00326d30 b vec4_invalid
-00327468 b vec4_invalid
-00327e68 b vec4_invalid
-00327ed4 b vec4_invalid
-0032808c b vec4_invalid
-0032c428 b vec4_invalid
-0032d0c8 b vec4_invalid
-00357e94 b vec4_invalid
-003582f8 b vec4_invalid
-0035835c b vec4_invalid
-003585a8 b vec4_invalid
-00358974 b vec4_invalid
-003599e0 b vec4_invalid
-00359b20 b vec4_invalid
-0035dc48 b vec4_invalid
-0035dd34 b vec4_invalid
-0035e520 b vec4_invalid
-00375a28 b vec4_invalid
-00375c68 b vec4_invalid
-00375cfc b vec4_invalid
-00376e20 b vec4_invalid
-00376ea8 b vec4_invalid
-00378250 b vec4_invalid
-003786c0 b vec4_invalid
-00378ae4 b vec4_invalid
-0037a9b0 b vec4_invalid
-0037aba0 b vec4_invalid
-0038bb90 b vec4_invalid
-0038bbd0 b vec4_invalid
-0038bc60 b vec4_invalid
-0038bd60 b vec4_invalid
-0038bee0 b vec4_invalid
+0031db9c b vec4_invalid
+0031ddb0 b vec4_invalid
+0031e8e8 b vec4_invalid
+0031f000 b vec4_invalid
+0031f060 b vec4_invalid
+003202c4 b vec4_invalid
+0032076c b vec4_invalid
+00321d48 b vec4_invalid
+003241a4 b vec4_invalid
+00324304 b vec4_invalid
+00324350 b vec4_invalid
+003243a4 b vec4_invalid
+00324934 b vec4_invalid
+00325298 b vec4_invalid
+003256bc b vec4_invalid
+00326924 b vec4_invalid
+00326b28 b vec4_invalid
+00326e50 b vec4_invalid
+00327088 b vec4_invalid
+00327160 b vec4_invalid
+003271e0 b vec4_invalid
+00327240 b vec4_invalid
+003273b0 b vec4_invalid
+00327420 b vec4_invalid
+003274c4 b vec4_invalid
+00327728 b vec4_invalid
+00327b04 b vec4_invalid
+00327b50 b vec4_invalid
+00327bb0 b vec4_invalid
+003282e8 b vec4_invalid
+00328ce8 b vec4_invalid
+00328d54 b vec4_invalid
+00328f0c b vec4_invalid
+0032d2a8 b vec4_invalid
+0032df48 b vec4_invalid
+00358d14 b vec4_invalid
+00359178 b vec4_invalid
+003591dc b vec4_invalid
+00359428 b vec4_invalid
+003597f4 b vec4_invalid
+0035a860 b vec4_invalid
+0035a9a0 b vec4_invalid
+0035eac8 b vec4_invalid
+0035ebb4 b vec4_invalid
+0035f3a0 b vec4_invalid
+003768a8 b vec4_invalid
+00376ae8 b vec4_invalid
+00376b7c b vec4_invalid
+00377ca0 b vec4_invalid
+00377d28 b vec4_invalid
+003790d0 b vec4_invalid
+00379540 b vec4_invalid
+00379964 b vec4_invalid
+0037b830 b vec4_invalid
+0037ba20 b vec4_invalid
+0038ca10 b vec4_invalid
+0038ca50 b vec4_invalid
+0038cae0 b vec4_invalid
+0038cbe0 b vec4_invalid
+0038cd60 b vec4_invalid
 000a6620 t AddDependency(CVertInfo*, int, CVertIndex const&, CVertIndex const&, int, bool, bool) [clone .isra.3] [clone .constprop.8]
 00120cf0 t AddRecvTableR(SendTable*, RecvTable**, int&)
 0018bab0 t AddRecvTableR(SendTable*, RecvTable**, int&)
 0030dc00 b alias_command
-003282a0 b banid_command
+00329120 b banid_command
 000e0430 t CM_TestInLeaf(TraceInfo_t*, int)
 00314de0 b con_timestamp
-00357e4c b current_skill
+00358ccc b current_skill
 001c5400 t dumplongticks(CCommand const&)
 0017a6b0 t ED_ClearEdict(edict_t*)
 00120c90 t FindRecvTable(char const*, RecvTable**, int)
@@ -3880,21 +3880,21 @@
 0031b640 b flush_command
 002c7820 d g_ConVarFlags
 00230f60 r g_CornerEdges
-00376ee0 b g_InitTracker
-003207e0 b g_ModelLoader
-00376d80 b g_pchSkipName
+00377d60 b g_InitTracker
+00321660 b g_ModelLoader
+00377c00 b g_pchSkipName
 00231100 r g_SideVertMul
-0035e380 b g_SpewHistory
+0035f200 b g_SpewHistory
 00259400 r g_StageLookup
 00310280 b g_TerrainList
 002c7300 d g_vox_isector
-00378828 b LastSpikeTime
+003796a8 b LastSpikeTime
 001475d0 t MarkSmallNode(mnode_t*)
 0031ad20 b mem_dumpstats
 0012c380 t memory_status(CCommand const&)
-003243e8 b net_dedicated
-00323960 b net_showpeaks
-00324100 b net_splitrate
+00325268 b net_dedicated
+003247e0 b net_showpeaks
+00324f80 b net_splitrate
 0031b300 b pause_command
 001b6ec0 t plugin_unload(CCommand const&)
 00259ec0 r _ps_coscof_p0
@@ -3905,38 +3905,38 @@
 00259f20 r _ps_sincof_p1
 00259f30 r _ps_sincof_p2
 00318a60 b r_fastzreject
-0031dae0 b r_lightinterp
+0031e960 b r_lightinterp
 002c7d85 d s_bAllow3DNow
-0038bad4 b s_bMMXEnabled
-0037be54 b s_bRegistered
-0038bad6 b s_bSSEEnabled
-0037bf60 b s_EmptyConVar
-0031d8e0 b s_ModelRender
-00323d00 b s_NetChannels
-00378b00 b spike_command
-00327160 b s_pVoxelColor
+0038c954 b s_bMMXEnabled
+0037ccd4 b s_bRegistered
+0038c956 b s_bSSEEnabled
+0037cde0 b s_EmptyConVar
+0031e760 b s_ModelRender
+00324b80 b s_NetChannels
+00379980 b spike_command
+00327fe0 b s_pVoxelColor
 002c7a94 d s_ToolBSPTree
-00327f60 b sv_deltaprint
+00328de0 b sv_deltaprint
 001ae870 t sv_netspike_f(CCommand const&)
 001b37f0 t SV_PackEntity(int, edict_t*, ServerClass*, CFrameSnapshot*)
-003589b0 b sv_redirected
-003589b4 b sv_redirectto
-00384960 b texgammatable
+00359830 b sv_redirected
+00359834 b sv_redirectto
+003857e0 b texgammatable
 003190e0 b tv_deltacache
 003191a0 b tv_maxclients
 00319140 b tv_relayvoice
 00120f80 t tv_stoprecord(CCommand const&)
-00358060 b users_command
+00358ee0 b users_command
 000c0be0 t VOX_ListClear()
-00378c80 b vprof_command
+00379b00 b vprof_command
 001cf7f0 t vprof_on_Impl()
 001bdb70 t WarningAndLog(char const*, ...)
 000c0c20 t CCPairLessFunc(ccpair const&, ccpair const&)
-00326ac8 b g_DecalChecker
-003788e8 b g_fVprofOnByUI
-00320a60 b g_GameLumpDict
+00327948 b g_DecalChecker
+00379768 b g_fVprofOnByUI
+003218e0 b g_GameLumpDict
 002d5e24 b g_SentenceFile
-00357bd0 b g_sv_pure_mode
+00358a50 b g_sv_pure_mode
 002ca1e0 b g_TriInfos_5x5
 002cc0c0 b g_TriInfos_9x9
 002c9860 b g_VertInfo_5x5
@@ -3945,103 +3945,103 @@
 0031aa00 b host_hunklevel
 001363d0 t Host_ValidGame()
 0031b3c0 b kickid_command
-00378830 b LastSpikeFrame
-00384a60 b lineartoscreen
-00328260 b listid_command
-00328160 b listip_command
+003796b0 b LastSpikeFrame
+003858e0 b lineartoscreen
+003290e0 b listid_command
+00328fe0 b listip_command
 001acf30 t logaddress_add(CCommand const&)
 001abcc0 t logaddress_del(CCommand const&)
 0031c200 b map_background
 0031c240 b map_commentary
 0031b480 b memory_command
-00323ae0 b net_drawslider
+00324960 b net_drawslider
 00318540 b net_showevents
-00323fc0 b net_showsplits
-00323d60 b net_udp_rcvbuf
+00324e40 b net_showsplits
+00324be0 b net_udp_rcvbuf
 001b6d60 t plugin_unpause(CCommand const&)
-003274a0 b prop_crosshair
-0031dca0 b r_ambientboost
-0031d5e0 b r_drawentities
+00328320 b prop_crosshair
+0031eb20 b r_ambientboost
+0031e460 b r_drawentities
 0031b240 b reload_command
-0031dbe0 b r_itemblinkmax
-0031da80 b r_lightaverage
-00378a60 b rpt_vprof_time
+0031ea60 b r_itemblinkmax
+0031e900 b r_lightaverage
+003798e0 b rpt_vprof_time
 0031c720 b r_sse2_command
 002c8590 d s_BackSlashMap
-0035e368 b s_bIsDedicated
-0038bad7 b s_bSSE2Enabled
+0035f1e8 b s_bIsDedicated
+0038c957 b s_bSSE2Enabled
 002c7a84 d s_EngineReplay
-00320060 b s_MapLumpFiles
+00320ee0 b s_MapLumpFiles
 002db220 b s_nKeyLogIndex
-00326f98 b s_PartitionMax
-00326f8c b s_PartitionMin
-0038bc10 b s_pVertexColor
-00359ca0 b s_Steam3Server
+00327e18 b s_PartitionMax
+00327e0c b s_PartitionMin
+0038ca90 b s_pVertexColor
+0035ab20 b s_Steam3Server
 00230780 r s_SteamAppInfo
-00359da0 b s_szTempMsgBuf
+0035ac20 b s_szTempMsgBuf
 0031b180 b status_command
 001ad850 t SV_AddToFatPVS(Vector const&)
-00327d40 b sv_allowupload
-00357fc0 b sv_consistency
+00328bc0 b sv_allowupload
+00358e40 b sv_consistency
 001303f0 t sv_dump_edicts(CCommand const&)
-0032d000 b sv_log_onefile
-00324220 b sv_maxroutable
-00357e00 b sv_voiceenable
-003244a0 b systemlinkport
+0032de80 b sv_log_onefile
+003250a0 b sv_maxroutable
+00358c80 b sv_voiceenable
+00325320 b systemlinkport
 00315040 b toggle_command
 00319620 b tv_msg_command
-0031cd40 b unbind_command
+0031dbc0 b unbind_command
 0031ab80 b violence_agibs
 0031aac0 b violence_hgibs
-00378900 b vprof_counters
+00379780 b vprof_counters
 001cf7a0 t vprof_off_Impl()
-00375bc0 b async_serialize
+00376a40 b async_serialize
 0012c2f0 t cache_print_lru(CCommand const&)
-0031f514 b g_CameraTexture
+00320394 b g_CameraTexture
 00315064 b g_CvarUtilities
 00317d50 b g_DTISendTables
 00314ec0 b g_fIsDebugPrint
 00257e80 r g_nRandomValues
-00378710 b g_pfnDeferredOp
+00379590 b g_pfnDeferredOp
 002c9500 b g_PowerInfo_5x5
 002c9600 b g_PowerInfo_9x9
 002c9c80 b g_SideVerts_5x5
 002cb000 b g_SideVerts_9x9
 002c852c d g_VEngineServer
-00378f80 b g_VProfRecorder
+00379e00 b g_VProfRecorder
 00126a80 t host_runofftime(CCommand const&)
 000a6790 t InitPowerInfo_R(CPowerInfo*, int, CVertIndex const&, CVertIndex const&, CVertIndex const&, CVertIndex const&, CVertIndex const&, CVertIndex const&, int)
 00137180 t key_findbinding(CCommand const&)
 0031b440 b kickall_command
-00386660 b lineartotexture
+003874e0 b lineartotexture
 001abf30 t logaddress_list(CCommand const&)
-00324440 b matchmakingport
+003252c0 b matchmakingport
 00144b80 t mat_savechanges(CCommand const&)
-0031f460 b mat_shadowstate
+003202e0 b mat_shadowstate
 0031aca0 b mem_eat_command
 0031b580 b multvar_command
-00323780 b net_maxfilesize
-00324094 b net_multiplayer
+00324600 b net_maxfilesize
+00324f14 b net_multiplayer
 00259e40 r _ps_cephes_FOPI
 0031c760 b r_3dnow_command
-0031ddc0 b r_ambientfactor
+0031ec40 b r_ambientfactor
 0031adc0 b recompute_speed
 0031b200 b restart_command
-0031dc40 b r_itemblinkrate
-0031d760 b r_maxmodeldecal
-00325960 b r_occlusionspew
-0038bad5 b s_b3DNowEnabled
-0031ccf9 b s_bDoneTrapping
+0031eac0 b r_itemblinkrate
+0031e5e0 b r_maxmodeldecal
+003267e0 b r_occlusionspew
+0038c955 b s_b3DNowEnabled
+0031db79 b s_bDoneTrapping
 0030b460 b s_CommandBuffer
-00326ae0 b s_DecalSurfaces
+00327960 b s_DecalSurfaces
 000a76c0 t SendProxy_Empty(SendProp const*, void const*, void const*, DVariant*, int, int)
 0022e5c0 r s_LanguageNames
-0031fc20 b s_MapFileHandle
+00320aa0 b s_MapFileHandle
 0024a6e0 r s_pDeltaIndices
-003272c0 b s_StaticPropMgr
-00358540 b sv_forcepreload
+00328140 b s_StaticPropMgr
+003593c0 b sv_forcepreload
 001b8170 t sv_precacheinfo(CCommand const&)
-00385a60 b texturetolinear
+003868e0 b texturetolinear
 00319200 b tv_dispatchmode
 003194e0 b tv_stop_command
 0031b380 b unpause_command
@@ -4050,9 +4050,9 @@
 0031aa60 b violence_hblood
 001d0540 t vprof_cachemiss(CCommand const&)
 00136410 t WatchDogHandler()
-003281e0 b writeid_command
-003281a0 b writeip_command
-0031ce40 b bind_mac_command
+00329060 b writeid_command
+00329020 b writeip_command
+0031dcc0 b bind_mac_command
 002d6480 b cl_connectmethod
 00097740 t ComputeBoxOffset(Ray_t const&) [clone .part.5]
 00314f80 b cvarlist_command
@@ -4066,67 +4066,67 @@
 002cb520 b g_ChildVerts_9x9
 00239ac0 r g_CubeFaceIndex0
 00239ad0 r g_CubeFaceIndex1
-003268c0 b g_DecalAllocator
+00327740 b g_DecalAllocator
 002ca160 b g_ErrorEdges_5x5
 002cbf60 b g_ErrorEdges_9x9
 000a65c0 t GetEdgeVertIndex(int, int, int, CVertIndex&)
-0031f53c b g_FullFrameDepth
-003272b4 b g_MakingDevShots
+003203bc b g_FullFrameDepth
+00328134 b g_MakingDevShots
 002c93e0 b g_NodeTriWinding
-0035dd10 b g_pAsyncUploader
+0035eb90 b g_pAsyncUploader
 00317d6c b g_ServerDTITimer
-00326620 b gs_hReplayModule
-00378960 b g_szDefferedArg1
-003789e0 b g_szDefferedArg2
+003274a0 b gs_hReplayModule
+003797e0 b g_szDefferedArg1
+00379860 b g_szDefferedArg2
 002d2e40 b g_TriInfos_17x17
 002cc3c0 b g_VertInfo_17x17
 003102a0 b g_VirtualTerrain
 001ffc70 t LzmaDec_TryDummy(CLzmaDec const*, unsigned char const*, unsigned int)
 00200400 t LzmaDec_WriteRem(CLzmaDec*, unsigned int) [clone .part.0]
 00318880 b mat_forcedynamic
-0031f840 b mat_info_command
-0031f560 b mat_monitorgamma
-0031d460 b mat_softwareskin
+003206c0 b mat_info_command
+003203e0 b mat_monitorgamma
+0031e2e0 b mat_softwareskin
 0031ac20 b mem_dump_command
 0031ace0 b mem_test_command
-00320b60 b mod_touchalldata
-00323840 b net_maxcleartime
-00324020 b net_showudp_wire
-00323f90 b net_splitpackets
+003219e0 b mod_touchalldata
+003246c0 b net_maxcleartime
+00324ea0 b net_showudp_wire
+00324e10 b net_splitpackets
 0030db40 b PerfMark_command
 001b6be0 t plugin_pause_all(CCommand const&)
 003189a0 b r_drawfuncdetail
-0031de80 b r_drawlightcache
-00326a80 b r_dscale_basefov
-00326a20 b r_dscale_fardist
-00328220 b removeid_command
-00328120 b removeip_command
+0031ed00 b r_drawlightcache
+00327900 b r_dscale_basefov
+003278a0 b r_dscale_fardist
+003290a0 b removeid_command
+00328fa0 b removeip_command
 0031b140 b _restart_command
-00325c40 b r_overlayfademax
-00325be0 b r_overlayfademin
-00326c20 b r_printdecalinfo
-0031d820 b r_showenvcubemap
-0037be5c b s_bBuiltBreakSet
-00357c50 b s_bExitWhenEmpty
+00326ac0 b r_overlayfademax
+00326a60 b r_overlayfademin
+00327aa0 b r_printdecalinfo
+0031e6a0 b r_showenvcubemap
+0037ccdc b s_bBuiltBreakSet
+00358ad0 b s_bExitWhenEmpty
 0031b340 b setpause_command
 002c82d0 d s_iNetSpikeValue
 002c8078 d s_MDLCacheNotify
 002c8330 d s_nDesiredFPSMax
 002c8560 d s_nDLLIdentifier
-00325940 b s_nTempVertCount
-003240a0 b s_PendingSockets
+003267c0 b s_nTempVertCount
+00324f20 b s_PendingSockets
 0024a6c0 r s_pSourceIndices
-0031d970 b s_SavedModelInfo
-00324d40 b s_TempVertMemory
-00327e00 b sv_allowdownload
-00378ab0 b s_VProfListeners
+0031e7f0 b s_SavedModelInfo
+00325bc0 b s_TempVertMemory
+00328c80 b sv_allowdownload
+00379930 b s_VProfListeners
 001c94e0 t TextMessageParse(unsigned char*, int)
 00318bc0 b tv_chatgroupsize
 00318c20 b tv_chattimelimit
 003194a0 b tv_relay_command
 00318ce0 b tv_relaypassword
 00319520 b tv_retry_command
-00378cc0 b vprof_on_command
+00379b40 b vprof_on_command
 001cf4e0 t vprof_reset_Impl()
 002db120 b bench_end_command
 000fa860 t BuildDispSurfInit(model_t*, CCoreDispInfo*, msurface2_t*) [clone .isra.41]
@@ -4137,17 +4137,17 @@
 00315700 b g_DecalClipVerts2
 002d3dc0 b g_FileSystemError
 002595e0 r g_ImageFormatInfo
-0031f880 b g_ModelInfoServer
+00320700 b g_ModelInfoServer
 002c9440 b g_NodeChildLookup
-00324a60 b g_OcclusionSystem
+003258e0 b g_OcclusionSystem
 002c9700 b g_PowerInfo_17x17
 00231120 r g_SideVertCorners
 002cf340 b g_SideVerts_17x17
-0031f524 b g_TeenyFBTexture0
-0031f528 b g_TeenyFBTexture1
-0031f52c b g_TeenyFBTexture2
+003203a4 b g_TeenyFBTexture0
+003203a8 b g_TeenyFBTexture1
+003203ac b g_TeenyFBTexture2
 0031a7b0 b g_TimeLastMemTest
-0035dcf0 b g_UploadGameStats
+0035eb70 b g_UploadGameStats
 002c8530 d g_VEngineServer22
 00126a10 t host_timer_report(CCommand const&)
 001c4900 t IsSourceModLoaded()
@@ -4157,34 +4157,34 @@
 001452f0 t mat_configcurrent(CCommand const&)
 00144870 t mat_enable_vrmode(CCommand const&)
 0031a7c0 b mem_periodicdumps
-00323720 b net_chokeloopback
-003241c0 b net_compressvoice
-00323a40 b net_maxpacketdrop
-003236c0 b net_showfragments
-00324540 b net_start_command
-00376dc0 b orig_demo_message
+003245a0 b net_chokeloopback
+00325040 b net_compressvoice
+003248c0 b net_maxpacketdrop
+00324540 b net_showfragments
+003253c0 b net_start_command
+00377c40 b orig_demo_message
 001c4cd0 t ParseSteamInfFile(SteamInfVersionInfo_t&, char const*, char const*) [clone .constprop.64]
 00259e20 r _ps_inv_sign_mask
-0031dd60 b r_ambientfraction
-00326bc0 b r_drawbatchdecals
-00327340 b r_drawstaticprops
-003269c0 b r_dscale_farscale
-00326960 b r_dscale_neardist
+0031ebe0 b r_ambientfraction
+00327a40 b r_drawbatchdecals
+003281c0 b r_drawstaticprops
+00327840 b r_dscale_farscale
+003277e0 b r_dscale_neardist
 00318ac0 b r_fastzrejectdisp
-0031de20 b r_lightcachemodel
-00327100 b r_partition_level
+0031eca0 b r_lightcachemodel
+00327f80 b r_partition_level
 002c8564 d s_DefaultAccessor
 002c8a80 d s_pBoxFaceIndices
 0030db80 b stuffcmds_command
-00357d40 b sv_maxuptimelimit
-00357ce0 b sv_minuptimelimit
+00358bc0 b sv_maxuptimelimit
+00358b60 b sv_minuptimelimit
 00120a00 t tv_name_changed_f(IConVar*, char const*, float)
 00319260 b tv_overridemaster
 00319560 b tv_record_command
 00319460 b tv_status_command
-0031cdc0 b unbindall_command
-003787e0 b vprof_dump_spikes
-00378d40 b vprof_off_command
+0031dc40 b unbindall_command
+00379660 b vprof_dump_spikes
+00379bc0 b vprof_off_command
 001d2940 t vprof_record_stop(CCommand const&)
 001d0270 t vprof_reset_peaks(CCommand const&)
 001cf5e0 t vprof_vtune_group(CCommand const&)
@@ -4198,44 +4198,44 @@
 002d29a0 b g_ErrorEdges_17x17
 0030d9c0 b g_ExecutionMarkers
 002c77d0 d g_FileAssociations
-00320a80 b g_GameLumpFilename
+00321900 b g_GameLumpFilename
 002c82f0 d g_iQueryCvarCookie
 00317df4 b g_nTotalEntChanges
-00326fc0 b g_SpatialPartition
-0031f400 b g_VideoConfigMutex
+00327e40 b g_SpatialPartition
+00320280 b g_VideoConfigMutex
 001ab8f0 t gzip_file_compress(CUtlString const&)
 0031b4c0 b killserver_command
 0031b500 b listmodels_command
-003580a0 b maxplayers_command
-00320b00 b mod_forcetouchdata
+00358f20 b maxplayers_command
+00321980 b mod_forcetouchdata
 002d3fe0 b mod_load_showstall
 0031b8c0 b namelockid_command
-00324580 b net_status_command
+00325400 b net_status_command
 00166df0 t OpenSocketInternal(int, int, int, char const*, int, bool, int) [clone .constprop.115]
 001b6c50 t plugin_unpause_all(CCommand const&)
-00327400 b r_colorstaticprops
-0031db40 b r_decalstaticprops
-00326900 b r_dscale_nearscale
+00328280 b r_colorstaticprops
+0031e9c0 b r_decalstaticprops
+00327780 b r_dscale_nearscale
 0013e190 t ReslistLogLessFunc(CUtlString const&, CUtlString const&)
-00324a00 b r_occludermincount
-00325d20 b r_overlaywireframe
+00325880 b r_occludermincount
+00326ba0 b r_overlaywireframe
 0018e560 t r_printdecalinfo_f()
 00318064 b s_debug_bits_start
 00318060 b s_debug_info_shown
 00317790 b s_DispShadowDecals
 003184a0 b s_GameEventManager
-00378200 b s_PVSInfoAllocator
+00379080 b s_PVSInfoAllocator
 002d6940 b s_queryRateChecker
 001adb20 t SV_CheatsChanged_f(IConVar*, char const*, float)
-0032cf40 b sv_logfilecompress
-00326140 b sv_lowedict_action
+0032ddc0 b sv_logfilecompress
+00326fc0 b sv_lowedict_action
 002daca0 b sv_max_queries_sec
-003589c0 b sv_redirect_buffer
-0035dca0 b sv_setsteamaccount
+00359840 b sv_redirect_buffer
+0035eb20 b sv_setsteamaccount
 001be830 t sv_setsteamgroup_f(IConVar*, char const*, float)
 003195e0 b tv_clients_command
 00122600 t tv_title_changed_f(IConVar*, char const*, float)
-0031cd80 b unbind_mac_command
+0031dc00 b unbind_mac_command
 001d04e0 t vprof_cachemiss_on(CCommand const&)
 001d2a50 t vprof_record_start(CCommand const&)
 002db0e0 b bench_start_command
@@ -4250,58 +4250,58 @@
 00315000 b differences_command
 00230f80 r g_bEdgeNeighborFlip
 002c9800 b g_ChildNodeIndexMul
-00325ab4 b g_EdgeVisualization
+00326934 b g_EdgeVisualization
 00214a30 t GenerateBoxVertices(Vector const&, QAngle const&, Vector const&, Vector const&, Vector*)
-003580e0 b g_ModDirPermissions
+00358f60 b g_ModDirPermissions
 00317df0 b g_nTotalPropChanges
 00317e00 b g_PartialChangeEnts
 002d5e60 b g_pSentenceFileList
 0012cae0 t host_name_changed_f(IConVar*, char const*, float)
 002004c0 t LzmaDec_DecodeReal2(CLzmaDec*, unsigned int, unsigned char const*)
-0031f4c0 b mat_maxframelatency
+00320340 b mat_maxframelatency
 0031ac60 b mem_compact_command
 0031b880 b memory_diff_command
 0031b7c0 b memory_list_command
 0031b840 b memory_mark_command
 0031a700 b mem_test_each_frame
-00320ce0 b mod_dynamicloadspew
-003237e0 b net_compresspackets
-003584c0 b plugin_load_command
+00321b60 b mod_dynamicloadspew
+00324660 b net_compresspackets
+00359340 b plugin_load_command
 001cbf20 t PR_CheckEmptyString(char const*)
-003264f0 b replay_record_voice
-0031d880 b r_eyeglintlodpixels
-00325b80 b r_overlayfadeenable
+00327370 b replay_record_voice
+0031e700 b r_eyeglintlodpixels
+00326a00 b r_overlayfadeenable
 002db200 b s_CheatCodeCommands
 003181e0 b s_EngineSoundServer
 00318290 b s_EngineTraceServer
 0023e0a0 r s_GameEnventTypeMap
-0031fb70 b s_nMapLoadRecursion
-0038bc00 b s_pWireframeIgnoreZ
-0035e540 b star_memory_command
-00357c60 b s_timeForceShutdown
+003209f0 b s_nMapLoadRecursion
+0038ca80 b s_pWireframeIgnoreZ
+0035f3c0 b star_memory_command
+00358ae0 b s_timeForceShutdown
 000ec8b0 t StripTabsAndReturns(char const*, char*, int) [clone .constprop.48]
-00357f60 b sv_cacheencodedents
+00358de0 b sv_cacheencodedents
 002d68a0 b sv_enableoldqueries
 002dadc0 b sv_max_connects_sec
 001d0480 t vprof_cachemiss_off(CCommand const&)
 001d3230 t vprof_playback_step(CCommand const&)
 001d28a0 t vprof_playback_stop(CCommand const&)
-00378d80 b vprof_reset_command
+00379c00 b vprof_reset_command
 002db160 b bench_upload_command
 0011a8e0 t EnumerateLeafInBox_R(mnode_t*, EnumLeafBoxInfo_t&)
 0031b680 b flush_locked_command
 00318a00 b fog_enable_water_fog
-0037bd80 b g_BitBufErrorHandler
-0037f8f8 b g_CleanupSymbolTable
+0037cc00 b g_BitBufErrorHandler
+00380778 b g_CleanupSymbolTable
 00317d30 b g_pServerDTIFilename
-00324680 b g_QueuedPacketSender
+00325500 b g_QueuedPacketSender
 0031b540 b incrementvar_command
-00375c80 b mat_powersavingsmode
-00320ee0 b mem_vcollide_command
-00320d40 b mod_dynamicloadpause
-00324500 b net_channels_command
-003583c0 b plugin_pause_command
-00358380 b plugin_print_command
+00376b00 b mat_powersavingsmode
+00321d60 b mem_vcollide_command
+00321bc0 b mod_dynamicloadpause
+00325380 b net_channels_command
+00359240 b plugin_pause_command
+00359200 b plugin_print_command
 001c4b80 t posix_signal_handler(int)
 00259e90 r _ps_minus_cephes_DP1
 00259ea0 r _ps_minus_cephes_DP2
@@ -4311,71 +4311,71 @@
 002d6900 b s_connectRateChecker
 00317730 b s_DispDecalFragments
 002c82a0 d s_EngineRandomStream
-0031d240 b s_StudioRenderConfig
-0032c3c0 b sv_creationtickcheck
+0031e0c0 b s_StudioRenderConfig
+0032d240 b sv_creationtickcheck
 002dac20 b sv_debugtempentities
 002dab80 b sv_instancebaselines
 000d76c0 t SvTagsChangeCallback(IConVar*, char const*, float)
-003260e0 b sv_useexplicitdelete
-003259e0 b s_WingedTestEdgeList
+00326f60 b sv_useexplicitdelete
+00326860 b s_WingedTestEdgeList
 001cf6f0 t vprof_cachemiss_Impl()
 001d4590 t vprof_playback_start(CCommand const&)
 000dff80 t CreateExecutionMarker()
-00375a60 b dumplongticks_command
+003768e0 b dumplongticks_command
 000de450 t g_exec_CompletionFunc(char const*, char (*) [64])
 002c7240 d g_FileSystemErrorMode
-0031f530 b g_FullFrameFBTexture0
-0031f534 b g_FullFrameFBTexture1
-0031f538 b g_FullFrameFBTexture2
-0031f508 b g_PowerOfTwoFBTexture
+003203b0 b g_FullFrameFBTexture0
+003203b4 b g_FullFrameFBTexture1
+003203b8 b g_FullFrameFBTexture2
+00320388 b g_PowerOfTwoFBTexture
 002c9fc0 b g_SideVertCorners_5x5
 002cba40 b g_SideVertCorners_9x9
 0031a860 b host_ShowIPCCallCount
 001326e0 t MapList_CheckPrintMap(char const*, char const*, int, bool, bool) [clone .constprop.21]
 0031b800 b memory_status_command
 0014ef70 t mod_dynamicmodeldebug(CCommand const&)
-00320e00 b mod_dynamicunloadtime
-00358500 b plugin_unload_command
+00321c80 b mod_dynamicunloadtime
+00359380 b plugin_unload_command
 001b8460 t RconPasswordChanged_f(IConVar*, char const*, float)
-0031d7c0 b r_modelwireframedecal
-0031da00 b r_proplightingpooling
+0031e640 b r_modelwireframedecal
+0031e880 b r_proplightingpooling
 00317770 b s_DispShadowFragments
-003787d0 b s_flIntervalStartTime
+00379650 b s_flIntervalStartTime
 002c7a88 d s_GameEventManagerOld
 002c8584 d s_LastFileLoadingFrom
-0038bc20 b s_pVertexColorIgnoreZ
+0038caa0 b s_pVertexColorIgnoreZ
 001f11b0 t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
-0032cfa0 b sv_logfilename_format
-003261a0 b sv_lowedict_threshold
+0032de20 b sv_logfilename_format
+00327020 b sv_lowedict_threshold
 002dad00 b sv_max_queries_window
-0035e3a0 b sys_minidumpspewlines
+0035f220 b sys_minidumpspewlines
 00250e00 r szSvNetSpikeUsageText
 000aa170 t TryLocateGameInfoFile(char*, int, bool)
 003195a0 b tv_stoprecord_command
 001cf510 t vprof_dump_groupnames(CCommand const&)
-00378720 b vprof_dump_oninterval
+003795a0 b vprof_dump_oninterval
 001d0210 t vprof_generate_report(CCommand const&)
 000978b0 t ComputeSeparatingPlane(matrix3x4_t const&, matrix3x4_t const&, Vector const&, Vector const&, float, cplane_t*) [clone .constprop.49]
 000ec840 t ConCommandBaseLessFunc(ConCommandBase const* const&, ConCommandBase const* const&)
-00328320 b g_FrameSnapshotManager
+003291a0 b g_FrameSnapshotManager
 002c3200 d g_OrientationRotations
 0023980c r g_pBlacklistedCommands
 00317d40 b g_TotalServerDTICycles
 002c93a0 b g_Vec3DispCollEpsilons
 002d5f30 b g_vox_lastsectorupdate
-00387680 b ice_sboxes_initialised
-0032d120 b logaddress_add_command
-0032d1a0 b logaddress_del_command
+00388500 b ice_sboxes_initialised
+0032dfa0 b logaddress_add_command
+0032e020 b logaddress_del_command
 00126cd0 t OnChangeTelemetryLevel(IConVar*, char const*, float)
 001268b0 t OnChangeTelemetryPause(IConVar*, char const*, float)
-00358400 b plugin_unpause_command
+00359280 b plugin_unpause_command
 00318820 b r_drawtranslucentworld
 002c7a98 d s_MaterialProxyFactory
 002c807c d s_ResourcePreloadModel
 001a0670 t SV_DetermineUpdateType(CEntityWriteInfo&)
 0031b780 b sv_dump_edicts_command
 002dae20 b sv_max_connects_window
-003788a0 b vprof_dump_spikes_node
+00379720 b vprof_dump_spikes_node
 001d2f00 t vprof_playback_average(CCommand const&)
 001cf4c0 t vprof_reset_peaks_Impl()
 0031b700 b cache_print_lru_command
@@ -4383,51 +4383,51 @@
 002c9820 b g_ChildNodeDependencies
 0030d9e0 b g_ExecutionMarkerStream
 002c7d58 d g_flLastPeriodicMemDump
-00378f70 b g_fVprofCacheMissOnByUI
-00386260 b g_Mathlib_GammaToLinear
-00385e60 b g_Mathlib_LinearToGamma
+00379df0 b g_fVprofCacheMissOnByUI
+003870e0 b g_Mathlib_GammaToLinear
+00386ce0 b g_Mathlib_LinearToGamma
 002d1780 b g_SideVertCorners_17x17
-0035e5a0 b g_SteamInfIDVersionInfo
-00376e40 b g_ToolFrameworkInternal
+0035f420 b g_SteamInfIDVersionInfo
+00377cc0 b g_ToolFrameworkInternal
 0031ae40 b host_runofftime_command
 000a6480 t InitPowerInfoTriInfos_R(CPowerInfo*, CVertIndex const&, CTriInfo*&, int, int)
-0031cec0 b key_findbinding_command
-0032d1e0 b logaddress_list_command
-0031f680 b mat_monitorgamma_tv_exp
+0031dd40 b key_findbinding_command
+0032e060 b logaddress_list_command
+00320500 b mat_monitorgamma_tv_exp
 00144790 t mat_reset_rendertargets(CCommand const&)
-0031f7c0 b mat_savechanges_command
-00320da0 b mod_dynamicloadthrottle
-00324160 b net_splitpacket_maxrate
+00320640 b mat_savechanges_command
+00321c20 b mod_dynamicloadthrottle
+00324fe0 b net_splitpacket_maxrate
 001268e0 t OnChangeTelemetryResume(IConVar*, char const*, float)
 00126c70 t OnChangeTelemetryServer(IConVar*, char const*, float)
-00325cc0 b r_renderoverlayfragment
-0038bbe0 b s_bMaterialsInitialized
+00326b40 b r_renderoverlayfragment
+0038ca60 b s_bMaterialsInitialized
 000d7d60 t SetMasterServerKeyValue(ISteamGameServer*, IConVar*)
 001ada80 t SV_ParallelSendSnapshot(CGameClient*&)
-003585c0 b sv_precacheinfo_command
-00378bc0 b vprof_cachemiss_command
+00359440 b sv_precacheinfo_command
+00379a40 b vprof_cachemiss_command
 001cf6b0 t vprof_cachemiss_on_Impl()
 001d3f40 t vprof_playback_stepback(CCommand const&)
-00378780 b vprof_report_oninterval
+00379600 b vprof_report_oninterval
 0010cb90 t CopySendPropsToRecvProps(CUtlRBTree<MatchingProp_t, unsigned short, bool (*)(MatchingProp_t const&, MatchingProp_t const&), CUtlMemory<UtlRBTreeNode_t<MatchingProp_t, unsigned short>, unsigned short> >&, CUtlVector<SendProp const*, CUtlMemory<SendProp const*, int> > const&, CUtlVector<RecvProp const*, CUtlMemory<RecvProp const*, int> >&) [clone .constprop.107]
 00317da0 b dt_ShowPartialChangeEnts
 0031b5c0 b dumpstringtables_command
 00318420 b fs_warning_level_command
-0031f51c b g_QuarterSizedFBTexture0
-0031f520 b g_QuarterSizedFBTexture1
-0031f540 b g_ResolvedFullFrameDepth
-0031f50c b g_WaterReflectionTexture
-0031f510 b g_WaterRefractionTexture
+0032039c b g_QuarterSizedFBTexture0
+003203a0 b g_QuarterSizedFBTexture1
+003203c0 b g_ResolvedFullFrameDepth
+0032038c b g_WaterReflectionTexture
+00320390 b g_WaterRefractionTexture
 0031a760 b mem_test_every_n_seconds
 00126c10 t OnChangeTelemetryDemoEnd(IConVar*, char const*, float)
-00358440 b plugin_pause_all_command
+003592c0 b plugin_pause_all_command
 001c5a40 t PosixPreMinidumpCallback(void*)
-003273a0 b r_DrawSpecificStaticProp
-0031f3e0 b s_bConfigLightingChanged
+00328220 b r_DrawSpecificStaticProp
+00320260 b s_bConfigLightingChanged
 0010f120 t ShowEncodeDeltaWatchInfo(SendTable const*, SendProp const*, bf_read&, int, int)
-00358260 b sv_parallel_packentities
-00357da0 b sv_parallel_sendsnapshot
-003759c0 b sys_minidumpexpandedspew
+003590e0 b sv_parallel_packentities
+00358c20 b sv_parallel_sendsnapshot
+00376840 b sys_minidumpexpandedspew
 000c35e0 t VOX_BuildVirtualNameList(char*, CUtlVector<WordBuf, CUtlMemory<WordBuf, int> >&)
 001cf670 t vprof_cachemiss_off_Impl()
 001d00f0 t vprof_generate_report_AI(CCommand const&)
@@ -4437,83 +4437,83 @@
 00310980 b g_BreakSetIncludingColons
 00133600 t Host_Map_f_CompletionFunc(char const*, char (*) [64])
 0031ad80 b host_timer_report_command
-0031ce80 b key_listboundkeys_command
-0032d160 b logaddress_delall_command
-0031f740 b mat_configcurrent_command
-0031f780 b mat_enable_vrmode_command
-00320e60 b mod_dynamicunloadtextures
+0031dd00 b key_listboundkeys_command
+0032dfe0 b logaddress_delall_command
+003205c0 b mat_configcurrent_command
+00320600 b mat_enable_vrmode_command
+00321ce0 b mod_dynamicunloadtextures
 0020fa00 t SetupMatrixAnglesInternal(float (*) [4], QAngle const&)
 002dad60 b sv_max_queries_sec_global
-0037aa00 b vprof_record_stop_command
-00378dc0 b vprof_reset_peaks_command
-00378b40 b vprof_vtune_group_command
+0037b880 b vprof_record_stop_command
+00379c40 b vprof_reset_peaks_command
+003799c0 b vprof_vtune_group_command
 002c8534 d __g_CVoiceServer_singleton
 00126b60 t OnChangeTelemetryDemoStart(IConVar*, char const*, float)
-00358480 b plugin_unpause_all_command
-0031df40 b r_drawmodelstatsoverlaymax
-0031dee0 b r_drawmodelstatsoverlaymin
+00359300 b plugin_unpause_all_command
+0031edc0 b r_drawmodelstatsoverlaymax
+0031ed60 b r_drawmodelstatsoverlaymin
 000ff6f0 t SendTable_GetPropsExcluded(SendTable const*, ExcludeProp*, int&, int) [clone .isra.7] [clone .constprop.101]
 000ff610 t SetDataTableProxyIndices_R(CSendTablePrecalc*, CSendNode*, CBuildHierarchyStruct*)
 000ff680 t SetRecursiveProxyIndices_R(SendTable*, CSendNode*, int&)
-00323440 b s_NetworkStringTableClient
-003234e0 b s_NetworkStringTableServer
+003242c0 b s_NetworkStringTableClient
+00324360 b s_NetworkStringTableServer
 002c8ae0 d s_pBoxFaceIndicesInsideOut
 002dae80 b sv_max_connects_sec_global
 001bdb40 t sv_setsteamblockingcheck_f(IConVar*, char const*, float)
 0012c200 t voiceconvar_file_changed_f(IConVar*, char const*, float)
-00378c00 b vprof_cachemiss_on_command
+00379a80 b vprof_cachemiss_on_command
 001cfc60 t vprof_generate_report_Impl()
-0037a9c0 b vprof_record_start_command
-00378d00 b budget_toggle_group_command
+0037b840 b vprof_record_start_command
+00379b80 b budget_toggle_group_command
 0031b740 b cache_print_summary_command
 00147600 t CheckSmallVolumeDifferences(mnode_t*, Vector const&)
 000ed4c0 t ConVarNetworkChangeCallback(IConVar*, char const*, float)
-0031f518 b g_BuildCubemaps16BitTexture
-00357e48 b g_sv_pure_waiting_on_reload
+00320398 b g_BuildCubemaps16BitTexture
+00358cc8 b g_sv_pure_waiting_on_reload
 0010c9d0 t MatchRecvPropsToSendProps_R(CUtlRBTree<MatchingProp_t, unsigned short, bool (*)(MatchingProp_t const&, MatchingProp_t const&), CUtlMemory<UtlRBTreeNode_t<MatchingProp_t, unsigned short>, unsigned short> >&, char const*, SendTable*, RecvTable*, bool, bool*)
-0031f6e0 b mat_monitorgamma_tv_enabled
-00323660 b net_compresspackets_minsize
+00320560 b mat_monitorgamma_tv_enabled
+003244e0 b net_compresspackets_minsize
 00126d20 t OnChangeTelemetryFrameCount(IConVar*, char const*, float)
 002c8120 d s_SplitPacketSequenceNumber
 0013b3f0 t StaticPropColorMeshCallback(FileAsyncRequest_t const&, int, FSAsyncStatus_t)
-00378c40 b vprof_cachemiss_off_command
-0037aac0 b vprof_playback_step_command
-0037aa80 b vprof_playback_stop_command
+00379ac0 b vprof_cachemiss_off_command
+0037b940 b vprof_playback_step_command
+0037b900 b vprof_playback_stop_command
 000de790 t FindAndRemoveExecutionMarker(int)
 0013b580 t StaticPropColorTexelCallback(FileAsyncRequest_t const&, int, FSAsyncStatus_t)
 001d01b0 t vprof_generate_report_budget(CCommand const&)
-0037aa40 b vprof_playback_start_command
-0031f620 b mat_monitorgamma_tv_range_max
-0031f5c0 b mat_monitorgamma_tv_range_min
+0037b8c0 b vprof_playback_start_command
+003204a0 b mat_monitorgamma_tv_range_max
+00320440 b mat_monitorgamma_tv_range_min
 001c7290 t mat_powersavingsmode_callback(IConVar*, char const*, float)
-00320f20 b mod_dynamicmodeldebug_command
-00375cc8 b s_bFPSMaxDrivenByPowerSavings
+00321da0 b mod_dynamicmodeldebug_command
+00376b48 b s_bFPSMaxDrivenByPowerSavings
 0010f0b0 t SendTable_CalcNextVectorElems(SendTable*)
 000d7e60 t ServerNotifyVarChangeCallback(IConVar*, char const*, float)
-00378b80 b vprof_dump_groupnames_command
+00379a00 b vprof_dump_groupnames_command
 001cfaa0 t vprof_generate_report_AI_Impl()
 001d0090 t vprof_generate_report_AI_only(CCommand const&)
-00378e00 b vprof_generate_report_command
-0038bb00 b f3
+00379c80 b vprof_generate_report_command
+0038c980 b f3
 002c82a8 d io
 000a9b10 t FileSystem_AddLoadedSearchPath(CFSSearchPathsInit&, char const*, char const*, bool) [clone .isra.1]
 0011d480 t HLTV_Callback_InstanceBaseline(void*, INetworkStringTable*, int, char const*, void const*)
 002d3aac b s_pNonModifiedPointerProxyHead
-00378840 b vprof_dump_spikes_budget_group
+003796c0 b vprof_dump_spikes_budget_group
 001d0030 t vprof_generate_report_map_load(CCommand const&)
-0037ab40 b vprof_playback_average_command
+0037b9c0 b vprof_playback_average_command
 001d9970 t CM_GetCollideableTriggerTestBox(ICollideable*, Vector*, Vector*, bool) [clone .constprop.32]
 000a41a0 t DispCommon_GenerateTriIndices_R(CNodeVert const&, CNodeVert const&, unsigned short*, int, int) [clone .constprop.29]
-0031f800 b mat_reset_rendertargets_command
+00320680 b mat_reset_rendertargets_command
 001d0150 t vprof_generate_report_hierarchy(CCommand const&)
-0037ab00 b vprof_playback_stepback_command
+0037b980 b vprof_playback_stepback_command
 002c851c d __g_CClientEngineTools_singleton
 00230fa0 r g_CoreDispNeighborOrientationMap
 002c8520 d __g_CServerEngineTools_singleton
 00318b20 b opt_EnumerateLeavesFastAlgorithm
-00378ec0 b vprof_generate_report_AI_command
+00379d40 b vprof_generate_report_AI_command
 0011a5b0 t EnumerateLeavesAlongExtrudedRay_R(mnode_t*, Ray_t const&, float, float, ISpatialLeafEnumerator*, int)
-00375a38 b __g_CDedicatedServerAPI_singleton
+003768b8 b __g_CDedicatedServerAPI_singleton
 001335a0 t Host_Changelevel_f_CompletionFunc(char const*, char (*) [64])
 001cfd50 t vprof_generate_report_budget_Impl()
 00314f30 b __g_CreateCCvarQueryICvarQuery_reg
@@ -4523,44 +4523,44 @@
 002c85f8 d s_pConversionArrays_NoEscConversion
 001cf8d0 t vprof_generate_report_map_load_Impl()
 001335d0 t Host_Map_Commentary_f_CompletionFunc(char const*, char (*) [64])
-00378e40 b vprof_generate_report_budget_command
+00379cc0 b vprof_generate_report_budget_command
 001cfb80 t vprof_generate_report_hierarchy_Impl()
-00378f00 b vprof_generate_report_AI_only_command
+00379d80 b vprof_generate_report_AI_only_command
 000ec830 t __CreateCCvarQueryICvarQuery_interface()
-003786d0 b __g_CreateCVoiceServerIVoiceServer_reg
-00378f64 b __g_CreateCVProfExportIVProfExport_reg
-00378f40 b vprof_generate_report_map_load_command
-0031dc88 b __g_CreateCModelRenderIVModelRender_reg
-00378e80 b vprof_generate_report_hierarchy_command
+00379550 b __g_CreateCVoiceServerIVoiceServer_reg
+00379de4 b __g_CreateCVProfExportIVProfExport_reg
+00379dc0 b vprof_generate_report_map_load_command
+0031eb08 b __g_CreateCModelRenderIVModelRender_reg
+00379d00 b vprof_generate_report_hierarchy_command
 000de440 t cmd(CCommand const&)
-0038bb10 b f05
+0038c990 b f05
 001acb10 t log(CCommand const&)
 0031c1c0 b map
-00320f80 b vis
+00321e00 b vis
 00318338 b __g_CreateCEngineReplayIEngineReplay_reg
 002c85a0 d s_pConversionArrays_StringCharConversion
-0031f908 b __g_CreateCModelInfoServerIVModelInfo_reg
+00320788 b __g_CreateCModelInfoServerIVModelInfo_reg
 001cf2e0 t __CreateCVoiceServerIVoiceServer_interface()
 001cf4b0 t __CreateCVProfExportIVProfExport_interface()
-00378278 b __g_CreateCVEngineServerIVEngineServer_reg
+003790f8 b __g_CreateCVEngineServerIVEngineServer_reg
 001384a0 t __CreateCModelRenderIVModelRender_interface()
 00116990 t __CreateCEngineReplayIEngineReplay_interface()
 0031822c b __g_CreateCEngineSoundServerIEngineSound_reg
 003182fc b __g_CreateCEngineTraceServerIEngineTrace_reg
-0031f8fc b __g_CreateCModelInfoServerIVModelInfo003_reg
+0032077c b __g_CreateCModelInfoServerIVModelInfo003_reg
 00145be0 t __CreateCModelInfoServerIVModelInfo_interface()
-00378260 b __g_CreateCVEngineServerIVEngineServer021_reg
-0037826c b __g_CreateCVEngineServerIVEngineServer022_reg
+003790e0 b __g_CreateCVEngineServerIVEngineServer021_reg
+003790ec b __g_CreateCVEngineServerIVEngineServer022_reg
 001cbdc0 t __CreateCVEngineServerIVEngineServer_interface()
-0035dd44 b __g_CreateCUploadGameStatsIUploadGameStats_reg
-0035836c b __g_CreateCServerPluginIServerPluginHelpers_reg
+0035ebc4 b __g_CreateCUploadGameStatsIUploadGameStats_reg
+003591ec b __g_CreateCServerPluginIServerPluginHelpers_reg
 001123d0 t __CreateCEngineSoundServerIEngineSound_interface()
 001136e0 t __CreateCEngineTraceServerIEngineTrace_interface()
 00145bd0 t __CreateCModelInfoServerIVModelInfo003_interface()
-00359b30 b __g_CreateCServerRemoteAccessIGameServerData_reg
-00327184 b __g_CreateCSpatialPartitionISpatialPartition_reg
-00327478 b __g_CreateCStaticPropMgrIStaticPropMgrClient_reg
-00327484 b __g_CreateCStaticPropMgrIStaticPropMgrServer_reg
+0035a9b0 b __g_CreateCServerRemoteAccessIGameServerData_reg
+00328004 b __g_CreateCSpatialPartitionISpatialPartition_reg
+003282f8 b __g_CreateCStaticPropMgrIStaticPropMgrClient_reg
+00328304 b __g_CreateCStaticPropMgrIStaticPropMgrServer_reg
 001cbda0 t __CreateCVEngineServerIVEngineServer021_interface()
 001cbdb0 t __CreateCVEngineServerIVEngineServer022_interface()
 003185d0 b __g_CreateCGameEventManagerIGameEventManager2_reg
@@ -4574,34 +4574,34 @@
 0012d410 t ping(CCommand const&)
 001adca0 t user(CCommand const&)
 001c04f0 t __CreateCUploadGameStatsIUploadGameStats_interface()
-00376ec4 b __g_CreateCClientEngineToolsIClientEngineTools_reg
-00376ed0 b __g_CreateCServerEngineToolsIServerEngineTools_reg
+00377d44 b __g_CreateCClientEngineToolsIClientEngineTools_reg
+00377d50 b __g_CreateCServerEngineToolsIServerEngineTools_reg
 001b5c10 t __CreateCServerPluginIServerPluginHelpers_interface()
 003185ec b __g_CreateCGameEventManagerOldIGameEventManager_reg
 001ba930 t __CreateCServerRemoteAccessIGameServerData_interface()
 001900a0 t __CreateCSpatialPartitionISpatialPartition_interface()
 00197f70 t __CreateCStaticPropMgrIStaticPropMgrClient_interface()
 00197f80 t __CreateCStaticPropMgrIStaticPropMgrServer_interface()
-00375a44 b __g_CreateCDedicatedServerAPIIDedicatedServerAPI_reg
+003768c4 b __g_CreateCDedicatedServerAPIIDedicatedServerAPI_reg
 00117210 t __CreateCGameEventManagerIGameEventManager2_interface()
 001ca390 t __CreateCClientEngineToolsIClientEngineTools_interface()
 001ca400 t __CreateCServerEngineToolsIServerEngineTools_interface()
 00119fd0 t __CreateCGameEventManagerOldIGameEventManager_interface()
 001c48a0 t __CreateCDedicatedServerAPIIDedicatedServerAPI_interface()
-00376eb8 b __g_CreateCToolFrameworkInternalIToolFrameworkInternal_reg
-003280a0 b addip
+00377d38 b __g_CreateCToolFrameworkInternalIToolFrameworkInternal_reg
+00328f20 b addip
 000de520 t alias(CCommand const&)
 001a5390 t banid(CCommand const&)
-003280e0 b banip
+00328f60 b banip
 0012c230 t flush(CCommand const&)
 00205400 t ice_f(unsigned long, IceSubkey const*)
 0012cf60 t pause(CCommand const&)
 00259f00 r _ps_1
 001cf560 t spike(CCommand const&)
-00359b40 b stats
+0035a9c0 b stats
 001ad440 t users(CCommand const&)
 001d0420 t vprof(CCommand const&)
-00326380 b __g_CreateCEngineUniformRandomStreamIUniformRandomStream_reg
+00327200 b __g_CreateCEngineUniformRandomStreamIUniformRandomStream_reg
 001ca380 t __CreateCToolFrameworkInternalIToolFrameworkInternal_interface()
 0018a440 t __CreateCEngineUniformRandomStreamIUniformRandomStream_interface()
 00234420 r border
@@ -4609,34 +4609,34 @@
 00234580 r cpdist
 00234480 r cplens
 00234500 r cplext
-00375cd4 b g_Game
-00375920 b g_mark
-003243a0 b hostip
-00323dc0 b ipname
+00376b54 b g_Game
+003767a0 b g_mark
+00325220 b hostip
+00324c40 b ipname
 0012d010 t kickid(CCommand const&)
 001a3b10 t listid(CCommand const&)
 001a39d0 t listip(CCommand const&)
 0012c4c0 t memory(CCommand const&)
 0030e140 b pvsrow
 0012f930 t reload(CCommand const&)
-0031d6a0 b r_eyes
-0031d640 b r_flex
-0031d4c0 b r_nohw
-0031d520 b r_nosw
-0031d700 b r_skin
+0031e520 b r_eyes
+0031e4c0 b r_flex
+0031e340 b r_nohw
+0031e3a0 b r_nosw
+0031e580 b r_skin
 00137070 t r_sse2(CCommand const&)
-0031fb80 b s_pMap
+00320a00 b s_pMap
 0012e470 t status(CCommand const&)
 002c8bc0 b s_text
 001ebf40 t SzFree(void*, void*)
 000ed370 t toggle(CCommand const&)
 00122990 t tv_msg(CCommand const&)
 00137320 t unbind(CCommand const&)
-00323494 b __g_CreateCNetworkStringTableContainerINetworkStringTableContainer_reg
+00324314 b __g_CreateCNetworkStringTableContainerINetworkStringTableContainer_reg
 0015dbf0 t __CreateCNetworkStringTableContainerINetworkStringTableContainer_interface()
-00323534 b __g_CreateCNetworkStringTableContainerServerINetworkStringTableContainer_reg
+003243b4 b __g_CreateCNetworkStringTableContainerServerINetworkStringTableContainer_reg
 001ed9a0 t Descend(char*, unsigned int, bool, unsigned int)
-00323e20 b fakelag
+00324ca0 b fakelag
 002c8588 d g_Alloc
 00205480 t gf_exp7(unsigned int, unsigned int) [clone .part.0]
 002c8310 d g_hfind
@@ -4649,9 +4649,9 @@
 00259ef0 r _ps_0p5
 00136ff0 t r_3dnow(CCommand const&)
 0012fdc0 t restart(CCommand const&)
-00323280 b r_novis
-0031d580 b r_teeth
-00357ec0 b sv_pure
+00324100 b r_novis
+0031e400 b r_teeth
+00358d40 b sv_pure
 001ebf50 t SzAlloc(void*, unsigned int)
 00120f10 t tv_stop(CCommand const&)
 0012c980 t unpause(CCommand const&)
@@ -4664,26 +4664,26 @@
 0031b600 b cmd_exit
 000ee160 t cvarlist(CCommand const&)
 00215210 t DrawAxes(Vector const&, Vector*, int, Color, CMeshBuilder&) [clone .constprop.27]
-00323ee0 b fakeloss
+00324d60 b fakeloss
 00234320 r fixed_td
 00233320 r fixed_tl
-00375b60 b g_Engine
+003769e0 b g_Engine
 002c93c0 b g_nTrees
-00327e80 b g_Tracks
-00324340 b hltvport
-00324280 b hostport
+00328d00 b g_Tracks
+003251c0 b hltvport
+00325100 b hostport
 00259c80 r ice_pbox
-003876a0 b ice_sbox
+00388520 b ice_sbox
 00259c00 r ice_smod
 00259c40 r ice_sxor
 001447a0 t mat_info(CCommand const&)
 00126910 t mem_dump(CCommand const&)
 001268a0 t mem_test(CCommand const&)
-00324388 b net_noip
+00325208 b net_noip
 000de430 t PerfMark(CCommand const&)
 001a47e0 t removeid(CCommand const&)
 001a4350 t removeip(CCommand const&)
-0031d9a0 b r_entity
+0031e820 b r_entity
 0012cad0 t _restart(CCommand const&)
 0012c9c0 t setpause(CCommand const&)
 002c81c0 d s_pEdges
@@ -4691,7 +4691,7 @@
 00125c20 t tv_relay(CCommand const&)
 00120fd0 t tv_retry(CCommand const&)
 001cbf50 t ValidCmd(char const*)
-003232d0 b viscache
+00324150 b viscache
 002c72f8 d voxcomma
 001d0390 t vprof_on(CCommand const&)
 00234a80 r z_errmsg
@@ -4700,21 +4700,21 @@
 00234f60 r crc_table
 00234680 r crc_table
 0031ae00 b dti_flush
-0035e600 b errorText
+0035f480 b errorText
 000ed4a0 t findflags(CCommand const&)
-0035dc60 b heartbeat
+0035eae0 b heartbeat
 001bdbd0 t MsgAndLog(char const*, ...)
-00323cd0 b net_error
-00323cc8 b net_nodns
+00324b50 b net_error
+00324b48 b net_nodns
 002c8139 d net_notcp
 00168840 t net_start(CCommand const&)
 000c08f0 t ReadDWord(_IO_FILE*)
-0031d280 b r_eyemove
-0031d400 b r_eyesize
-00323220 b r_lockpvs
-00323e10 b s_FakeLag
-00377f40 b s_MsgData
-00357c30 b s_pFatPVS
+0031e100 b r_eyemove
+0031e280 b r_eyesize
+003240a0 b r_lockpvs
+00324c90 b s_FakeLag
+00378dc0 b s_MsgData
+00358ab0 b s_pFatPVS
 002db240 b s_pKeyLog
 000deac0 t stuffcmds(CCommand const&)
 001ad530 t SV_Pure_f(CCommand const&)
@@ -5398,7 +5398,7 @@
 001f6720 t CUtlString::operator+=(char const*)
 001f66b0 t CUtlString::operator+=(CUtlString const&)
 001f8130 t CUtlSymbol::Initialize()
-0037f8e0 b CUtlSymbol::s_pSymbolTable
+00380760 b CUtlSymbol::s_pSymbolTable
 001f7950 t CUtlSymbol::DisableStaticSymbolTable()
 002c8600 d CUtlSymbol::s_bAllowStaticSymbolTable
 001f8250 t CUtlSymbol::CurrTable()
@@ -5663,7 +5663,7 @@
 00119b70 t IGameEvent::~IGameEvent()
 00119b30 t IGameEvent::~IGameEvent()
 00119b30 t IGameEvent::~IGameEvent()
-00323c40 b loopback_t::s_Allocator
+00324ac0 b loopback_t::s_Allocator
 001df2f0 t MD5Value_t::Zero()
 0007e6a0 t MM_Migrate::WriteToBuffer(bf_write&)
 0007de90 t MM_Migrate::ReadFromBuffer(bf_read&)
@@ -6569,7 +6569,7 @@
 0008ef40 t IBSPTreeData::~IBSPTreeData()
 0008ef30 t IBSPTreeData::~IBSPTreeData()
 0008ef30 t IBSPTreeData::~IBSPTreeData()
-0037c010 b InterfaceReg::s_pInterfaceRegs
+0037ce90 b InterfaceReg::s_pInterfaceRegs
 001e4d30 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
 001e4d30 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
 001cf490 t IVoiceServer::~IVoiceServer()
@@ -6756,7 +6756,7 @@
 0008c070 t CLC_VoiceData::~CLC_VoiceData()
 0008c060 t CLC_VoiceData::~CLC_VoiceData()
 0008c060 t CLC_VoiceData::~CLC_VoiceData()
-00378704 b ConsoleLogger::m_index
+00379584 b ConsoleLogger::m_index
 0017a2d0 t CPrecacheItem::GetGeneric()
 0017a240 t CPrecacheItem::ResetStats()
 0017a3b0 t CPrecacheItem::SetGeneric(char const*)
@@ -7035,7 +7035,7 @@
 0011ab50 t CEngineBSPTree::EnumerateLeavesAtPoint(Vector const&, ISpatialLeafEnumerator*, int)
 0011ab90 t CEngineBSPTree::EnumerateLeavesAlongRay(Ray_t const&, ISpatialLeafEnumerator*, int)
 0011b190 t CEngineBSPTree::EnumerateLeavesInSphere(Vector const&, float, ISpatialLeafEnumerator*, int)
-003282e0 b CFrameSnapshot::s_Allocator
+00329160 b CFrameSnapshot::s_Allocator
 001a6460 t CFrameSnapshot::AddReference()
 001a68f0 t CFrameSnapshot::ReleaseReference()
 001a6600 t CFrameSnapshot::CFrameSnapshot()
@@ -7075,8 +7075,8 @@
 001493f0 t CMapLoadHelper::~CMapLoadHelper()
 001e0d00 t ConCommandBase::CopyString(char const*)
 001e02c0 t ConCommandBase::CreateBase(char const*, char const*, int)
-0037be40 b ConCommandBase::s_pAccessor
-0037be50 b ConCommandBase::s_pConCommandBases
+0037ccc0 b ConCommandBase::s_pAccessor
+0037ccd0 b ConCommandBase::s_pConCommandBases
 001e0330 t ConCommandBase::Init()
 001e0cf0 t ConCommandBase::GetNext()
 001e0380 t ConCommandBase::AddFlags(int)
@@ -7316,7 +7316,7 @@
 0008efd0 t CUtlLinkedList<unsigned short, unsigned short, true, unsigned short, CUtlMemory<UtlLinkedListElem_t<unsigned short, unsigned short>, unsigned short> >::RemoveAll()
 001ece30 t CUtlMemoryPool::AddNewBlob()
 001ece00 t CUtlMemoryPool::ReportLeaks()
-0037e1d0 b CUtlMemoryPool::g_ReportFunc
+0037f050 b CUtlMemoryPool::g_ReportFunc
 001ecd20 t CUtlMemoryPool::SetErrorReportFunc(void (*)(char const*, ...))
 001ed0a0 t CUtlMemoryPool::Free(void*)
 001ecd30 t CUtlMemoryPool::Init()
@@ -8435,7 +8435,7 @@
 0015ae50 t INetworkStringTable::~INetworkStringTable()
 0015aca0 t INetworkStringTable::~INetworkStringTable()
 0015aca0 t INetworkStringTable::~INetworkStringTable()
-0031f928 b lump_t_DataDescInit::g_DataMapHolder
+003207a8 b lump_t_DataDescInit::g_DataMapHolder
 0007caa0 t MM_RegisterResponse::WriteToBuffer(bf_write&)
 0007cb50 t MM_RegisterResponse::ReadFromBuffer(bf_read&)
 0008bcb0 t MM_RegisterResponse::Process()
@@ -8726,7 +8726,7 @@
 001cb1c0 t CToolFrameworkInternal::LoadTools()
 001cb470 t CToolFrameworkInternal::~CToolFrameworkInternal()
 001cb470 t CToolFrameworkInternal::~CToolFrameworkInternal()
-0031f924 b dheader_t_DataDescInit::g_DataMapHolder
+003207a4 b dheader_t_DataDescInit::g_DataMapHolder
 001805e0 t UserReportedFileHash_t::Less(UserReportedFileHash_t const&, UserReportedFileHash_t const&)
 0013c8f0 t CDefaultDataCacheClient::GetItemName(unsigned int, void const*, char*, unsigned int)
 0013c8e0 t CDefaultDataCacheClient::HandleCacheNotification(DataCacheNotification_t const&)
@@ -9390,7 +9390,7 @@
 000fc430 t CDispInfo::~CDispInfo()
 00171ec0 t CEdgeList::AddSurface(cplane_t const&)
 0016f6a0 t CEdgeList::SurfCompare(void const*, void const*)
-00324860 b CEdgeList::s_pSortSurfaces
+003256e0 b CEdgeList::s_pSortSurfaces
 00170af0 t CEdgeList::CheckConsistency()
 00171bf0 t CEdgeList::ReduceActiveList(CWingedEdgeList&)
 001711c0 t CEdgeList::CullSmallOccluders()
@@ -9554,7 +9554,7 @@
 001e9550 t KeyValues::ProcessResolutionKeys(char const*)
 002c8570 d KeyValues::s_pfGetStringForSymbol
 002c8580 d KeyValues::s_pfGetSymbolForString
-0037c130 b KeyValues::s_pGrowableStringTable
+0037cfb0 b KeyValues::s_pGrowableStringTable
 001e8130 t KeyValues::RecursiveLoadFromBuffer(char const*, CUtlBuffer&)
 001e6990 t KeyValues::RecursiveMergeKeyValues(KeyValues*)
 001e5460 t KeyValues::GetStringForSymbolClassic(int)
@@ -11429,17 +11429,17 @@
 00259190 r vtable for snappy::Sink
 00259170 r vtable for snappy::Source
 0031a340 b Host_Error(char const*, ...)::inerror
-003240d0 b NET_SendTo(bool, int, char const*, int, sockaddr const*, int, int)::tm_fmt
+00324f50 b NET_SendTo(bool, int, char const*, int, sockaddr const*, int, int)::tm_fmt
 002c9480 b AddNeighbor(CCoreDispInfo*, int, int, NeighborSpan, CCoreDispInfo*, int, NeighborSpan)::__executeCount
 0030e130 b CM_BoxTrace(Ray_t const&, int, int, bool, CGameTrace&)::tm_fmt
 0031a308 b datamap_t* DataMapInit<player_info_s>(player_info_s*)::nameHolder
 002c7ae0 d datamap_t* DataMapInit<player_info_s>(player_info_s*)::dataDesc
-0031fb18 b datamap_t* DataMapInit<lump_t>(lump_t*)::nameHolder
+00320998 b datamap_t* DataMapInit<lump_t>(lump_t*)::nameHolder
 002c7e40 d datamap_t* DataMapInit<lump_t>(lump_t*)::dataDesc
-0031fb48 b datamap_t* DataMapInit<dheader_t>(dheader_t*)::nameHolder
+003209c8 b datamap_t* DataMapInit<dheader_t>(dheader_t*)::nameHolder
 002c7f60 d datamap_t* DataMapInit<dheader_t>(dheader_t*)::dataDesc
-0032320c b Map_VisMark(bool, model_t*)::tm_fmt
-003243f0 b NET_SetTime(double)::s_last_realtime
+0032408c b Map_VisMark(bool, model_t*)::tm_fmt
+00325270 b NET_SetTime(double)::s_last_realtime
 002397fc r Cbuf_Execute()::__FUNCTION__
 0030da90 b Cbuf_Execute()::__executeCount
 0030da74 b Cbuf_Execute()::tm_fmt
@@ -11448,13 +11448,13 @@
 0031aa08 b Host_NewGame(char*, bool, bool, char const*, char const*, bool)::tm_fmt
 0031aa14 b Host_NewGame(char*, bool, bool, char const*, char const*, bool)::tm_fmt
 0031aa20 b Host_NewGame(char*, bool, bool, char const*, char const*, bool)::tm_fmt
-00324148 b NET_SendLong(INetChannel*, int, int, char const*, int, sockaddr const*, int, int)::tm_fmt
-0035e400 b Sys_InitGame(void* (*)(char const*, int*), char const*, void*, int)::s_pBaseDir
-0037e2c0 b V_pretifymem(float, int, bool)::output
-0037e2a0 b V_pretifymem(float, int, bool)::current
-0037e3e0 b V_pretifynum(long long)::output
-0037e3c0 b V_pretifynum(long long)::current
-00325da0 b GetFlagString(int)::ret
+00324fc8 b NET_SendLong(INetChannel*, int, int, char const*, int, sockaddr const*, int, int)::tm_fmt
+0035f280 b Sys_InitGame(void* (*)(char const*, int*), char const*, void*, int)::s_pBaseDir
+0037f140 b V_pretifymem(float, int, bool)::output
+0037f120 b V_pretifymem(float, int, bool)::current
+0037f260 b V_pretifynum(long long)::output
+0037f240 b V_pretifynum(long long)::current
+00326c20 b GetFlagString(int)::ret
 0031b0e8 b GetSteamAppID()::bHaveValidSteamInterface
 0031b0f0 b GetSteamAppID()::sunAppID
 0031a988 b Host_RunFrame(float)::tm_fmt
@@ -11462,9 +11462,9 @@
 0031a9f8 b Host_RunFrame(float)::timestart
 0031a9e8 b Host_RunFrame(float)::timetotal
 0031aa2c b Host_Shutdown()::shutting_down
-00323e18 b NET_AdjustLag()::s_LastTime
-00324068 b NET_GetPacket(int, unsigned char*)::tm_fmt
-00323f28 b NET_LagPacket(bool, netpacket_s*)::losscount
+00324c98 b NET_AdjustLag()::s_LastTime
+00324ee8 b NET_GetPacket(int, unsigned char*)::tm_fmt
+00324da8 b NET_LagPacket(bool, netpacket_s*)::losscount
 003101d0 b void CM_TraceToLeaf<false>(TraceInfo_t*, int, float, float)::tm_fmt
 003101dc b void CM_TraceToLeaf<false>(TraceInfo_t*, int, float, float)::tm_fmt
 003101b8 b void CM_TraceToLeaf<true>(TraceInfo_t*, int, float, float)::tm_fmt
@@ -11478,13 +11478,13 @@
 0031a97c b _Host_RunFrame(float)::tm_fmt
 002c7d50 d Host_ShouldRun()::current_tick
 002c8138 d NET_OpenSocket(char const*, int&, int)::bFirst
-003241a8 b NET_SendPacket(INetChannel*, int, netadr_s const&, unsigned char const*, int, bf_write*, bool)::tm_fmt
-003241b4 b NET_SendPacket(INetChannel*, int, netadr_s const&, unsigned char const*, int, bf_write*, bool)::tm_fmt
-00324208 b NET_SendPacket(INetChannel*, int, netadr_s const&, unsigned char const*, int, bf_write*, bool)::tm_fmt
+00325028 b NET_SendPacket(INetChannel*, int, netadr_s const&, unsigned char const*, int, bf_write*, bool)::tm_fmt
+00325034 b NET_SendPacket(INetChannel*, int, netadr_s const&, unsigned char const*, int, bf_write*, bool)::tm_fmt
+00325088 b NET_SendPacket(INetChannel*, int, netadr_s const&, unsigned char const*, int, bf_write*, bool)::tm_fmt
 0010c150 t RecvTable_Init(RecvTable**, int)::CPropVisitor::Visit_R(RecvTable*)
 0010a610 t RecvTable_Term(bool)::CPropVisitor::Visit_R(RecvTable*)
-003274e8 b AllocTempVector()::s_nIndex
-00327500 b AllocTempVector()::s_vecTemp
+00328368 b AllocTempVector()::s_nIndex
+00328380 b AllocTempVector()::s_vecTemp
 00314ba0 b COM_SetupLogDir(char const*)::pathsetup
 002c80a0 d GetBitForBitnum(int)::bitsForBitnum
 002c7340 d GetStartBitMask(int)::g_StartMask
@@ -11493,24 +11493,24 @@
 0024a0b0 r NET_OpenSockets()::__FUNCTION__
 0024a080 r NET_OpenSockets()::s_ports
 00318024 b SendTable_Encode(SendTable const*, void const*, bf_write*, int, CUtlMemory<CSendProxyRecipients, int>*, bool)::tm_fmt
-003589a0 b SV_RedirectFlush()::bInFlush
+00359820 b SV_RedirectFlush()::bInFlush
 00314ce0 b COM_FormatSeconds(int)::string
-003240c4 b NET_ProcessSocket(int, IConnectionlessPacketHandler*)::tm_fmt
+00324f44 b NET_ProcessSocket(int, IConnectionlessPacketHandler*)::tm_fmt
 002d6468 b CL_NameCvarChanged(IConVar*, char const*, float)::bPreventRent
-0035e369 b Sys_Error_Internal(bool, char const*, char*)::bReentry
+0035f1e9 b Sys_Error_Internal(bool, char const*, char*)::bReentry
 00314bc0 b COM_GetModDirectory()::modDir
 00239aec r IntersectRayWithBox(Ray_t const&, VectorAligned const&, VectorAligned const&, VectorAligned const&, CGameTrace*)::signbits
-00324008 b NET_ReceiveDatagram(int, netpacket_s*)::tm_fmt
-00324014 b NET_ReceiveDatagram(int, netpacket_s*)::tm_fmt
+00324e88 b NET_ReceiveDatagram(int, netpacket_s*)::tm_fmt
+00324e94 b NET_ReceiveDatagram(int, netpacket_s*)::tm_fmt
 0025139b r PackEntities_Normal(int, CGameClient**, CFrameSnapshot*)::__FUNCTION__
-00358238 b PackEntities_Normal(int, CGameClient**, CFrameSnapshot*)::tm_fmt
+003590b8 b PackEntities_Normal(int, CGameClient**, CFrameSnapshot*)::tm_fmt
 00318068 b SendTable_CalcDelta(SendTable const*, void const*, int, void const*, int, int*, int, int)::tm_fmt
 002d5f00 b VOX_ParseWordParams(char*, voxword_t*, int)::voxwordDefault
 00314dc8 b GetConsoleLogManager()::object
 002c7d60 d _Host_RunFrame_Input(float, bool)::bFirstFrame
 0031a808 b _Host_RunFrame_Input(float, bool)::tm_fmt
 0031a850 b CheckSpecialCheatVars()::mat_picmip
-00328060 b Filter_StringToUserID(char const*)::id
+00328ee0 b Filter_StringToUserID(char const*)::id
 00241bcc r _Host_RunFrame_Server(bool)::__FUNCTION__
 0031a814 b _Host_RunFrame_Server(bool)::tm_fmt
 0031a82c b _Host_RunFrame_Server(bool)::tm_fmt
@@ -11518,41 +11518,41 @@
 0031a8c0 b Host_ShowIPCCallCount()::s_nLastTick
 0031a8e4 b Host_ShowIPCCallCount()::s_flLastTime
 0031a8e0 b Host_ShowIPCCallCount()::s_nLastFrame
-00323300 b Map_VisCurrentCluster()::visclusterwarningcount
+00324180 b Map_VisCurrentCluster()::visclusterwarningcount
 002513c3 r SV_ComputeClientPacks(int, CGameClient**, CFrameSnapshot*)::__FUNCTION__
-003582b4 b SV_ComputeClientPacks(int, CGameClient**, CFrameSnapshot*)::tm_fmt
-003582c0 b SV_ComputeClientPacks(int, CGameClient**, CFrameSnapshot*)::tm_fmt
-003582cc b SV_ComputeClientPacks(int, CGameClient**, CFrameSnapshot*)::tm_fmt
+00359134 b SV_ComputeClientPacks(int, CGameClient**, CFrameSnapshot*)::tm_fmt
+00359140 b SV_ComputeClientPacks(int, CGameClient**, CFrameSnapshot*)::tm_fmt
+0035914c b SV_ComputeClientPacks(int, CGameClient**, CFrameSnapshot*)::tm_fmt
 003177ac b DispInfo_BuildPrimLists(int, msurface2_t**, int, bool, CDispInfo**, int&)::tm_fmt
 00317ee0 b MapPropOffsetsToIndices(CBaseEdict const*, CSendTablePrecalc*, unsigned short const*, unsigned short, unsigned short*)::testDict
 0025a4bc r DrawScreenSpaceRectangle(IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int, float)::__FUNCTION__
-0038bc24 b DrawScreenSpaceRectangle(IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int, float)::tm_fmt
+0038caa4 b DrawScreenSpaceRectangle(IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int, float)::tm_fmt
 002daf00 b EngineBitBufErrorHandler(BitBufErrorType, char const*)::errorNames
 00239ae0 r IntersectRayWithBoxBrush(TraceInfo_t*, cbrush_t const*, cboxbrush_t*)::signbits
 00241be2 r _Host_RunFrame_Server_Async(int)::__FUNCTION__
 0031a838 b _Host_RunFrame_Server_Async(int)::tm_fmt
-0035822c b PackEntities_NetworkBackDoor(int, CGameClient**, CFrameSnapshot*)::tm_fmt
+003590ac b PackEntities_NetworkBackDoor(int, CGameClient**, CFrameSnapshot*)::tm_fmt
 0031a360 b Host_CleanupConVarStringValue(char const*)::clean
 00241bbc r Host_ReadPreStartupConfiguration()::s_PreStartupConfigConVars
-0038bad0 b Bias(float, float)::lastExponent
-00357e68 b SV_Frame(bool)::tm_fmt
-00357e50 b SV_Think(bool)::tm_fmt
-00357e5c b SV_Think(bool)::tm_fmt
-0037bde0 b MD5_Print(unsigned char*, int)::szReturn
-0037e290 b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
-0037e270 b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
+0038c950 b Bias(float, float)::lastExponent
+00358ce8 b SV_Frame(bool)::tm_fmt
+00358cd0 b SV_Think(bool)::tm_fmt
+00358cdc b SV_Think(bool)::tm_fmt
+0037cc60 b MD5_Print(unsigned char*, int)::szReturn
+0037f110 b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
+0037f0f0 b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
 00310ba0 b tmpstr512()::string
 00310b80 b tmpstr512()::curstring
 0017a460 t SpewEdicts()::EdictSorter_t::SortEdicts(SpewEdicts()::EdictCount_t* const*, SpewEdicts()::EdictCount_t* const*)
-0035e39c b AddSpewRecord(char const*)::s_bReentrancyGuard
+0035f21c b AddSpewRecord(char const*)::s_bReentrancyGuard
 002513af r SV_PackEntity(int, edict_t*, ServerClass*, CFrameSnapshot*)::__FUNCTION__
-003582a8 b SV_PackEntity(int, edict_t*, ServerClass*, CFrameSnapshot*)::tm_fmt
-003232f8 b VisCache_Build(VisCacheEntry&, worldbrushdata_t const&)::_counter
+00359128 b SV_PackEntity(int, edict_t*, ServerClass*, CFrameSnapshot*)::tm_fmt
+00324178 b VisCache_Build(VisCacheEntry&, worldbrushdata_t const&)::_counter
 002549e0 r IsSourceModLoaded()::s_pFileNames
 00314e40 b GetTimestampString()::string
 0024eec4 r gzip_file_compress(CUtlString const&)::__FUNCTION__
 0030da94 b Cbuf_ExecuteCommand(CCommand const&, cmd_source_t)::tm_fmt
-00320b50 b SurfFlagsToSortGroup(msurface2_t*, int)::warningcount
+003219d0 b SurfFlagsToSortGroup(msurface2_t*, int)::warningcount
 002daec8 b SvTagsChangeCallback(IConVar*, char const*, float)::bTagsChangeCallback
 0030dcb8 b g_exec_CompletionFunc(char const*, char (*) [64])::execComplete
 0030dab0 b HandleExecutionMarker(char const*, char const*)::cnt
@@ -11566,11 +11566,11 @@
 002d4030 b CStudioHdr::GroupStudioHdr(int)::__executeCount
 002d4040 b CStudioHdr::GroupStudioHdr(int)::__executeCount
 002d4060 b CStudioHdr::pSeqdesc(int)::s_nil_seq
-0037f8b8 b CUtlString::GetEmptyString()::s_emptyString
-0037f8e4 b CUtlSymbol::Initialize()::symbolsInitialized
-00326f80 b CVoxelHash::EnumerateElementsInBox(int, Voxel_t, Voxel_t, Vector const&, Vector const&, IPartitionEnumerator*)::tm_fmt
-00326fa4 b CVoxelTree::EnumerateElementsInBox(int, Vector const&, Vector const&, bool, IPartitionEnumerator*)::tm_fmt
-00326fb0 b CVoxelTree::EnumerateElementsAlongRay(int, Ray_t const&, bool, IPartitionEnumerator*)::tm_fmt
+00380738 b CUtlString::GetEmptyString()::s_emptyString
+00380764 b CUtlSymbol::Initialize()::symbolsInitialized
+00327e00 b CVoxelHash::EnumerateElementsInBox(int, Voxel_t, Voxel_t, Vector const&, Vector const&, IPartitionEnumerator*)::tm_fmt
+00327e24 b CVoxelTree::EnumerateElementsInBox(int, Vector const&, Vector const&, bool, IPartitionEnumerator*)::tm_fmt
+00327e30 b CVoxelTree::EnumerateElementsAlongRay(int, Ray_t const&, bool, IPartitionEnumerator*)::tm_fmt
 002c90ec b SVC_Sounds::ReadFromBuffer(bf_read&)::tm_fmt
 002360e2 r CBaseClient::SendSnapshot(CClientFrame*)::__FUNCTION__
 002d6178 b CBaseClient::SendSnapshot(CClientFrame*)::tm_fmt
@@ -11596,29 +11596,29 @@
 002dabe8 b CBaseServer::UpdateMasterServer()::bUpdateMasterServers
 002dabcc b CBaseServer::UpdateMasterServer()::tm_fmt
 002d6b60 b CBaseServer::UpdateUserSettings()::tm_fmt
-00327ea8 b CBaseServer::WriteDeltaEntities(CBaseClient*, CClientFrame*, CClientFrame*, bf_write&)::tm_fmt
+00328d28 b CBaseServer::WriteDeltaEntities(CBaseClient*, CClientFrame*, CClientFrame*, bf_write&)::tm_fmt
 002d6b78 b CBaseServer::CompressPackedEntity(ServerClass*, char const*, int&)::s_packedData
 002d6b6c b CBaseServer::SendPendingServerInfo()::tm_fmt
 002dabec b CBaseServer::RunFrame()::tm_fmt
 002dabf8 b CBaseServer::RunFrame()::tm_fmt
 0031a460 b CFrameTimer::MarkFrame()::last_host_tickcount
-00357c48 b CGameServer::SetHibernating(bool)::s_flPlatFloatTimeBeginUptime
-00357d88 b CGameServer::SendClientMessages(bool)::tm_fmt
+00358ac8 b CGameServer::SetHibernating(bool)::s_flPlatFloatTimeBeginUptime
+00358c08 b CGameServer::SendClientMessages(bool)::tm_fmt
 00318d28 b CHLTVClient::SendSnapshot(CClientFrame*)::tm_fmt
 003192b4 b CHLTVServer::UpdateTick()::tm_fmt
 00319248 b CHLTVServer::AddNewFrame(CClientFrame*)::tm_fmt
 003192a8 b CHLTVServer::RunFrame()::tm_fmt
 00319320 b CHLTVServer::ReplyInfo(netadr_s const&)::gamedir
-003272b0 b CStaticProp::Init(int, StaticPropLump_t&, model_t*)::nBitchCount
+00328130 b CStaticProp::Init(int, StaticPropLump_t&, model_t*)::nBitchCount
 002c9068 b SVC_SetView::ReadFromBuffer(bf_read&)::tm_fmt
 003182a4 b CEngineTrace::GetPointContents(Vector const&, IHandleEntity**)::tm_fmt
 0023d408 r CEngineTrace::TraceRay(Ray_t const&, unsigned int, ITraceFilter*, CGameTrace*)::__FUNCTION__
 003182b0 b CEngineTrace::TraceRay(Ray_t const&, unsigned int, ITraceFilter*, CGameTrace*)::tm_fmt
 003182c8 b CEngineTrace::TraceRay(Ray_t const&, unsigned int, ITraceFilter*, CGameTrace*)::_counter
-00320bc0 b CModelLoader::Map_IsValid(char const*, bool)::s_szLastMapFile
-00320de8 b CModelLoader::UpdateDynamicModelLoadQueue()::s_LastDynamicLoadTime
+00321a40 b CModelLoader::Map_IsValid(char const*, bool)::s_szLastMapFile
+00321c68 b CModelLoader::UpdateDynamicModelLoadQueue()::s_LastDynamicLoadTime
 00244090 r CModelRender::ForcedMaterialOverride(IMaterial*, OverrideType_t)::__FUNCTION__
-0031d960 b CModelRender::ForcedMaterialOverride(IMaterial*, OverrideType_t)::tm_fmt
+0031e7e0 b CModelRender::ForcedMaterialOverride(IMaterial*, OverrideType_t)::tm_fmt
 002d3ec0 b (anonymous namespace)::GetSuggestGameInfoDirFn()::s_pfnSuggestGameInfoDir
 002c905c b SVC_BSPDecal::ReadFromBuffer(bf_read&)::tm_fmt
 002c9074 b SVC_FixAngle::ReadFromBuffer(bf_read&)::tm_fmt
@@ -11632,10 +11632,10 @@
 002c9378 b CDispCollTree::AABBTree_BuildTreeTrisInSphere_r(Vector const&, float, int, unsigned short*, unsigned short)::tm_fmt
 002c9354 b CDispCollTree::Cache()::tm_fmt
 002c8fc0 b CLC_VoiceData::ReadFromBuffer(bf_read&)::tm_fmt
-0032655c b CReplayServer::UpdateTick()::tm_fmt
-00326544 b CReplayServer::AddNewFrame(CClientFrame*)::tm_fmt
-00326550 b CReplayServer::RunFrame()::tm_fmt
-0035dc20 b CSteam3Server::RunFrame()::s_fLastRunCallback
+003273dc b CReplayServer::UpdateTick()::tm_fmt
+003273c4 b CReplayServer::AddNewFrame(CClientFrame*)::tm_fmt
+003273d0 b CReplayServer::RunFrame()::tm_fmt
+0035eaa0 b CSteam3Server::RunFrame()::s_fLastRunCallback
 002c90c8 b NET_SetConVar::ReadFromBuffer(bf_read&)::tm_fmt
 002c9038 b NET_StringCmd::ReadFromBuffer(bf_read&)::tm_fmt
 002c9110 b SVC_ClassInfo::ReadFromBuffer(bf_read&)::tm_fmt
@@ -11644,9 +11644,9 @@
 002c9098 b SVC_VoiceData::ReadFromBuffer(bf_read&)::tm_fmt
 002c908c b SVC_VoiceInit::ReadFromBuffer(bf_read&)::tm_fmt
 002c8fd8 b CLC_ClientInfo::ReadFromBuffer(bf_read&)::tm_fmt
-00327330 b CStaticPropMgr::DrawStaticProps(IClientRenderable**, int, bool, bool)::tm_fmt
-003782a0 b CVEngineServer::ClientCommand(edict_t*, char const*, ...)::szOut
-00377f24 b CVEngineServer::PlaybackTempEntity(IRecipientFilter&, float, void const*, SendTable const*, int)::tm_fmt
+003281b0 b CStaticPropMgr::DrawStaticProps(IClientRenderable**, int, bool, bool)::tm_fmt
+00379120 b CVEngineServer::ClientCommand(edict_t*, char const*, ...)::szOut
+00378da4 b CVEngineServer::PlaybackTempEntity(IRecipientFilter&, float, void const*, SendTable const*, int)::tm_fmt
 002c9044 b SVC_ServerInfo::ReadFromBuffer(bf_read&)::tm_fmt
 002c8fe4 b CLC_BaselineAck::ReadFromBuffer(bf_read&)::tm_fmt
 002c9050 b NET_SignonState::ReadFromBuffer(bf_read&)::tm_fmt
@@ -11673,12 +11673,12 @@
 00237524 r CBaseClientState::RunFrame()::__FUNCTION__
 002d64c8 b CBaseClientState::RunFrame()::tm_fmt
 002d64d4 b CBaseClientState::RunFrame()::tm_fmt
-0037bfc0 b CDataManagerBase::GetForFreeByIndex(unsigned short)::__executeCount
+0037ce40 b CDataManagerBase::GetForFreeByIndex(unsigned short)::__executeCount
 002c9008 b CLC_FileCRCCheck::ReadFromBuffer(bf_read&)::tm_fmt
 002c9014 b CLC_FileMD5Check::ReadFromBuffer(bf_read&)::tm_fmt
 002c8ff0 b CLC_ListenEvents::ReadFromBuffer(bf_read&)::tm_fmt
-003259c8 b COcclusionSystem::IsOccluded(Vector const&, Vector const&)::mutex
-003259a8 b COcclusionSystem::IsOccluded(Vector const&, Vector const&)::tm_fmt
+00326848 b COcclusionSystem::IsOccluded(Vector const&, Vector const&)::mutex
+00326828 b COcclusionSystem::IsOccluded(Vector const&, Vector const&)::tm_fmt
 002c9164 b SVC_GetCvarValue::ReadFromBuffer(bf_read&)::tm_fmt
 002c9104 b SVC_TempEntities::ReadFromBuffer(bf_read&)::tm_fmt
 002c9020 b Base_CmdKeyValues::ReadFromBuffer(bf_read&)::tm_fmt
@@ -11692,51 +11692,51 @@
 002c9158 b SVC_GameEventList::ReadFromBuffer(bf_read&)::tm_fmt
 003181f0 b CEngineSoundServer::EmitSound(IRecipientFilter&, int, int, char const*, float, soundlevel_t, int, int, int, Vector const*, Vector const*, CUtlVector<Vector, CUtlMemory<Vector, int> >*, bool, float, int)::tm_fmt
 003181e4 b CEngineSoundServer::EmitSound(IRecipientFilter&, int, int, char const*, float, float, int, int, int, Vector const*, Vector const*, CUtlVector<Vector, CUtlMemory<Vector, int> >*, bool, float, int)::tm_fmt
-00358308 b CParallelProcessor<PackWork_t, CFuncJobItemProcessor<PackWork_t> >::Run(PackWork_t*, unsigned int, int, IThreadPool*)::tm_fmt
-00358314 b CParallelProcessor<PackWork_t, CFuncJobItemProcessor<PackWork_t> >::DoExecute()::tm_fmt
-003581a4 b CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >::Run(CGameClient**, unsigned int, int, IThreadPool*)::tm_fmt
-003581b0 b CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >::DoExecute()::tm_fmt
+00359188 b CParallelProcessor<PackWork_t, CFuncJobItemProcessor<PackWork_t> >::Run(PackWork_t*, unsigned int, int, IThreadPool*)::tm_fmt
+00359194 b CParallelProcessor<PackWork_t, CFuncJobItemProcessor<PackWork_t> >::DoExecute()::tm_fmt
+00359024 b CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >::Run(CGameClient**, unsigned int, int, IThreadPool*)::tm_fmt
+00359030 b CParallelProcessor<CGameClient*, CFuncJobItemProcessor<CGameClient*> >::DoExecute()::tm_fmt
 002c9080 b SVC_CrosshairAngle::ReadFromBuffer(bf_read&)::tm_fmt
 002c9140 b SVC_PacketEntities::ReadFromBuffer(bf_read&)::tm_fmt
-003233e8 b CNetworkStringTable::WriteBaselines(SVC_CreateStringTable&, char*, int)::tm_fmt
+00324268 b CNetworkStringTable::WriteBaselines(SVC_CreateStringTable&, char*, int)::tm_fmt
 002c8150 d CQueuedPacketSender::QueuePacket(INetChannel*, int, char const*, int, sockaddr const*, int, unsigned int)::nWarnings
-003263e0 b CReplayDemoRecorder::GetDemoFilename()::s_szDemoFilename
-00359ae0 b CServerRemoteAccess::LookupStringValue(char const*)::s_ReturnBuf
+00327260 b CReplayDemoRecorder::GetDemoFilename()::s_szDemoFilename
+0035a960 b CServerRemoteAccess::LookupStringValue(char const*)::s_ReturnBuf
 002c8ffc b CLC_RespondCvarValue::ReadFromBuffer(bf_read&)::tm_fmt
 002c90e0 b SVC_CreateStringTable::ReadFromBuffer(bf_read&)::tm_fmt
 002c90d4 b SVC_UpdateStringTable::ReadFromBuffer(bf_read&)::tm_fmt
-0032340c b CNetworkStringTableContainer::DirectUpdate(int)::tm_fmt
-003233f4 b CNetworkStringTableContainer::WriteBaselines(bf_write&)::tm_fmt
-00323400 b CNetworkStringTableContainer::WriteUpdateMessage(CBaseClient*, int, bf_write&)::tm_fmt
-0037e170 b CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)::r_developer
+0032428c b CNetworkStringTableContainer::DirectUpdate(int)::tm_fmt
+00324274 b CNetworkStringTableContainer::WriteBaselines(bf_write&)::tm_fmt
+00324280 b CNetworkStringTableContainer::WriteUpdateMessage(CBaseClient*, int, bf_write&)::tm_fmt
+0037eff0 b CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)::r_developer
 00250de0 r CJob::Abort(bool)::__FUNCTION__
 002513bd r CJob::Abort(bool)::__FUNCTION__
-003581bc b CJob::Abort(bool)::tm_fmt
-003581c8 b CJob::Abort(bool)::tm_fmt
-0032c900 b CLog::Print(char const*)::string
-0032c500 b CLog::Printf(char const*, ...)::string
-0037e1a0 b CLZSS::CompressNoAlloc(unsigned char const*, int, unsigned char*, unsigned int*)::tm_fmt
+0035903c b CJob::Abort(bool)::tm_fmt
+00359048 b CJob::Abort(bool)::tm_fmt
+0032d780 b CLog::Print(char const*)::string
+0032d380 b CLog::Printf(char const*, ...)::string
+0037f020 b CLZSS::CompressNoAlloc(unsigned char const*, int, unsigned char*, unsigned int*)::tm_fmt
 002573c0 r bf_read::ReadBitCoordMP(bool, bool)::numbits_table
 002573b0 r bf_read::ReadBitCoordMP(bool, bool)::mul_table
 002573c8 r bf_read::ReadBitCoordBits()::numbits_table
 002573d4 r bf_read::ReadBitCoordMPBits(bool, bool)::numbits_table
 00254dd4 r CEngine::Frame()::__FUNCTION__
-00375c20 b CEngine::Frame()::pSyncReportConVar
-00375ba8 b CEngine::Frame()::s_lastFrequencyTimestamp
-00375b98 b CEngine::Frame()::tm_fmt
-00375c24 b CEngine::Frame()::tm_fmt
-00375c30 b CEngine::Frame()::tm_fmt
-00375c3c b CEngine::Frame()::tm_fmt
-003245b0 b CFmtStrN<128, false>::sprintf(char const*, ...)::scAsserted
-00375a90 b CFmtStrN<128, false>::CFmtStrN(char const*, ...)::scAsserted
+00376aa0 b CEngine::Frame()::pSyncReportConVar
+00376a28 b CEngine::Frame()::s_lastFrequencyTimestamp
+00376a18 b CEngine::Frame()::tm_fmt
+00376aa4 b CEngine::Frame()::tm_fmt
+00376ab0 b CEngine::Frame()::tm_fmt
+00376abc b CEngine::Frame()::tm_fmt
+00325430 b CFmtStrN<128, false>::sprintf(char const*, ...)::scAsserted
+00376910 b CFmtStrN<128, false>::CFmtStrN(char const*, ...)::scAsserted
 00316230 b CFmtStrN<256, false>::CFmtStrN(char const*, ...)::scAsserted
 002c8fcc b CLC_Move::ReadFromBuffer(bf_read&)::tm_fmt
-003239c0 b CNetChan::HandleUpload(CNetChan::dataFragments_s*, INetChannelHandler*)::s_pAllowUpload
-00323a88 b CNetChan::ProcessPacket(netpacket_s*, bool)::tm_fmt
-00323888 b CNetChan::ProcessMessages(bf_read&)::tm_fmt
-00323648 b CNetChan::CompressFragments()::tm_fmt
-003237c8 b CNetChan::SendSubChannelData(bf_write&)::tm_fmt
-00323768 b CNetChan::CreateFragmentsFromBuffer(bf_write*, int)::tm_fmt
+00324840 b CNetChan::HandleUpload(CNetChan::dataFragments_s*, INetChannelHandler*)::s_pAllowUpload
+00324908 b CNetChan::ProcessPacket(netpacket_s*, bool)::tm_fmt
+00324708 b CNetChan::ProcessMessages(bf_read&)::tm_fmt
+003244c8 b CNetChan::CompressFragments()::tm_fmt
+00324648 b CNetChan::SendSubChannelData(bf_write&)::tm_fmt
+003245e8 b CNetChan::CreateFragmentsFromBuffer(bf_write*, int)::tm_fmt
 003180a0 b DVariant::ToString()::text
 002c90a4 b NET_Tick::ReadFromBuffer(bf_read&)::tm_fmt
 002c914c b SVC_Menu::ReadFromBuffer(bf_read&)::tm_fmt
@@ -11747,9 +11747,9 @@
 002d3f60 b CSentence::GetBoundedSample(int, float)::nullend
 002d3f50 b CSentence::GetBoundedSample(int, float)::nullstart
 00258910 r KeyValues::LoadFromFile(IBaseFileSystem*, char const*, char const*, bool)::__FUNCTION__
-0037d140 b KeyValues::LoadFromFile(IBaseFileSystem*, char const*, char const*, bool)::tm_fmt
-0037d14c b KeyValues::LoadFromFile(IBaseFileSystem*, char const*, char const*, bool)::tm_fmt
-0037d160 b KeyValues::SaveKeyToFile(KeyValues*, IBaseFileSystem*, void*, CUtlBuffer*, int, bool, bool)::buf
+0037dfc0 b KeyValues::LoadFromFile(IBaseFileSystem*, char const*, char const*, bool)::tm_fmt
+0037dfcc b KeyValues::LoadFromFile(IBaseFileSystem*, char const*, char const*, bool)::tm_fmt
+0037dfe0 b KeyValues::SaveKeyToFile(KeyValues*, IBaseFileSystem*, void*, CUtlBuffer*, int, bool, bool)::buf
 002c902c b SVC_Print::ReadFromBuffer(bf_read&)::tm_fmt
 002c7db8 d CUtlRBTree<CUtlString, int, bool (*)(CUtlString const&, CUtlString const&), CUtlMemory<UtlRBTreeNode_t<CUtlString, int>, int> >::Links(int) const::s_Sentinel
 002c7dc8 d CUtlRBTree<CUtlSymbol, unsigned short, bool (*)(CUtlSymbol const&, CUtlSymbol const&), CUtlMemory<UtlRBTreeNode_t<CUtlSymbol, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
@@ -11774,4 +11774,4 @@
 002c78e4 d CUtlRBTree<ConCommandBase const*, unsigned short, bool (*)(ConCommandBase const* const&, ConCommandBase const* const&), CUtlMemory<UtlRBTreeNode_t<ConCommandBase const*, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 002c91a0 b CSteamID::Render() const::nBuf
 002c91c0 b CSteamID::Render() const::rgchBuf
-0037e220 b netadr_s::ToString(bool) const::s
+0037f0a0 b netadr_s::ToString(bool) const::s
