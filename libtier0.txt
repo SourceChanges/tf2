@@ -1,470 +1,470 @@
-         U abort@@GLIBC_2.0
-         U access@@GLIBC_2.0
-         U alarm@@GLIBC_2.0
-00010520 T ApproximateProcessMemoryUsage
-0000c910 T AreAllAssertsDisabled
-0000eb90 T _AssertValidReadPtr
-0000ebb0 T _AssertValidReadWritePtr
-0000ebc0 T AssertValidStringPtr
-0000eba0 T _AssertValidWritePtr
-         U backtrace@@GLIBC_2.1
-         U backtrace_symbols@@GLIBC_2.1
-00027590 A __bss_start
-00015a00 T BuildCmdLine
-0000fdd0 T CallAssertFailedNotifyFunc
-000103e0 T CatchAndWriteMiniDump
-         U chmod@@GLIBC_2.0
-         U chown@@GLIBC_2.1
-         U clock_gettime@@GLIBC_2.2
-         U closedir@@GLIBC_2.0
-         U close@@GLIBC_2.0
-0000ee00 T ColorSpewMessage
-0000d330 T CommandLine_Tier0
-0000fc10 T COM_TimestampedLog
-0000f3d0 T ConColorMsg
-0000f750 T ConDColorMsg
-0000f880 T ConDLog
-0000f7b0 T ConDMsg
-0000f810 T ConDWarning
-0000f520 T ConLog
-0000f440 T ConMsg
-0000f4b0 T ConWarning
-0000fb90 T CrackSmokingCompiler
-00011080 T CreateSimpleThread
-         U ctime_r@@GLIBC_2.0
-         U __cxa_allocate_exception@@CXXABI_1.3
-         U __cxa_atexit@@GLIBC_2.1.3
-         U __cxa_begin_catch@@CXXABI_1.3
-         U __cxa_end_catch@@CXXABI_1.3
-         w __cxa_finalize@@GLIBC_2.1.3
-         U __cxa_guard_abort@@CXXABI_1.3
-         U __cxa_guard_acquire@@CXXABI_1.3
-         U __cxa_guard_release@@CXXABI_1.3
-         U __cxa_pure_virtual@@CXXABI_1.3
-         U __cxa_rethrow@@CXXABI_1.3
-         U __cxa_throw@@CXXABI_1.3
-00011220 T DeclareCurrentThreadIsMainThread
-00010e00 T DecodeBinaryFromString
-0000eac0 T DefaultSpewFunc
-0000eb20 T DefaultSpewFuncAbortOnAsserts
-0000f210 T DevLog
-0000f0a0 T DevMsg
-0000f1a0 T DevWarning
-         U dlclose@@GLIBC_2.0
-         U dlerror@@GLIBC_2.0
-         U dl_iterate_phdr@@GLIBC_2.2.4
-0000efc0 T DLog
-         U dlopen@@GLIBC_2.1
-         U dlsym@@GLIBC_2.0
-0000ee60 T DMsg
-0000c9e0 T DoNewAssertDialog
-0000eda0 T _DSpewMessage
-0000ef10 T DWarning
-00027590 A _edata
-00010d10 T EncodeBinaryToString
-0002c9b8 A _end
-         U __errno_location@@GLIBC_2.0
-0000f040 T Error
-0000f070 T ErrorV
-         U _exit@@GLIBC_2.0
-         U exit@@GLIBC_2.0
-0000f110 T _ExitOnFatalAssert
-         U fclose@@GLIBC_2.1
-         U feof@@GLIBC_2.0
-         U ferror@@GLIBC_2.0
-         U fflush@@GLIBC_2.0
-         U fgetc@@GLIBC_2.0
-         U fgets@@GLIBC_2.0
-0001d5c0 T _fini
-         U fopen64@@GLIBC_2.1
-         U fopen@@GLIBC_2.1
-         U fprintf@@GLIBC_2.0
-         U fputs@@GLIBC_2.0
-         U fread@@GLIBC_2.0
-         U free@@GLIBC_2.0
-         U freopen@@GLIBC_2.0
-         U fscanf@@GLIBC_2.0
-         U fseek@@GLIBC_2.0
-         U ftell@@GLIBC_2.0
-         U fwrite@@GLIBC_2.0
-00027bf8 B g_ClockSpeed
-00027be0 B g_ClockSpeedMicrosecondsMultiplier
-00027bd0 B g_ClockSpeedMillisecondsMultiplier
-00027bc0 B g_ClockSpeedSecondsMultiplier
-00027bf0 B g_dwClockSpeed
-0000c950 T GetAssertDialogParent
-00010bc0 T GetCallStack
-00010bd0 T GetCallStack_Fast
-0000e3c0 T GetCPUFrequencyResults
-0000dee0 T GetCPUInformation
-0000e8b0 T GetCPUUsage
-         U getenv@@GLIBC_2.0
-00010c30 T GetFileAndLineFromAddress
-         U getloadavg@@GLIBC_2.2
-00010930 T GetMemoryInformation
-00010c70 T GetModuleNameFromAddress
-0000ec30 T GetSpewOutputColor
-0000eb70 T GetSpewOutputFunc
-0000ebd0 T GetSpewOutputGroup
-0000ec00 T GetSpewOutputLevel
-00010c50 T GetSymbolNameFromAddress
-00011340 T GetThreadedLoadLibraryFunc
-         U gettimeofday@@GLIBC_2.0
-         w __gmon_start__
-         U gmtime_r@@GLIBC_2.0
-000274c0 D g_pVCR
-0002ab40 B g_Telemetry
-0002ace0 B g_VProfCurrentProfile
-0002c6a0 B g_VProfSignalSpike
-         U __gxx_personality_v0@@CXXABI_1.3
-0000ed10 T HushAsserts
-0000a1ac T _init
-00010ae0 T InitPME
-00010b60 T InstallProgressReportHandler
-00010940 T Is64BitOS
-         U isatty@@GLIBC_2.0
-         U isspace@@GLIBC_2.0
-0000ed20 T IsSpewActive
-         w _Jv_RegisterClasses
-         U lchown@@GLIBC_2.0
-         U link@@GLIBC_2.0
-         U localtime@@GLIBC_2.0
-         U localtime_r@@GLIBC_2.0
-0000ef90 T Log
-0000f010 T LogV
-         U __lxstat64@@GLIBC_2.2
-         U __lxstat@@GLIBC_2.0
-         U malloc@@GLIBC_2.0
-         U memalign@@GLIBC_2.0
-00010270 T MemAllocOOMError
-000102b0 T MemAllocScratch
-         U memcmp@@GLIBC_2.0
-         U memcpy@@GLIBC_2.0
-00010360 T MemFreeScratch
-         U memmove@@GLIBC_2.0
-         U memset@@GLIBC_2.0
-00010440 T MinidumpUserStreamInfoAppend
-000104d0 T MinidumpUserStreamInfoGet
-00010400 T MinidumpUserStreamInfoSetHeader
-         U mkdir@@GLIBC_2.0
-         U mkfifo@@GLIBC_2.0
-         U mount@@GLIBC_2.0
-0000ee30 T Msg
-0000eeb0 T MsgV
-0000f9d0 T NetLog
-0000f8f0 T NetMsg
-0000f960 T NetWarning
-         U open64@@GLIBC_2.2
-         U opendir@@GLIBC_2.0
-         U open@@GLIBC_2.0
-         U pclose@@GLIBC_2.1
-00010f90 T Plat_ApplyHardwareDataBreakpointsToNewThread
-000109e0 T Plat_BeginWatchdogTimer
-000106d0 T Plat_ctime
-000107d0 T Plat_DebugString
-00010a80 T Plat_EndWatchdogTimer
-000109c0 T Plat_ExitProcess
-00010bb0 T Plat_FastVerifyHardwareKey
-000105b0 T Plat_FloatTime
-00010870 T Plat_GetCommandLine
-00010920 T Plat_GetCommandLineA
-00010f40 T Plat_GetMemPageSize
-00010f50 T Plat_GetPagedPoolInfo
-00010ac0 T Plat_GetWatchdogTime
-000106e0 T Plat_gmtime
-00010500 T Plat_IsInBenchmarkMode
-00010720 T Plat_IsInDebugSession
-00010700 T Plat_localtime
-00010650 T Plat_MSTime
-00010510 T Plat_SetBenchmarkMode
-00010840 T Plat_SetCommandLine
-00010f80 T Plat_SetHardwareDataBreakpoint
-00010ad0 T Plat_SetWatchdogHandlerFunction
-0000fbc0 T Plat_SimpleLog
-000106f0 T Plat_timegm
-00010b80 T Plat_VerifyHardwareKey
-00010b90 T Plat_VerifyHardwareKeyDriver
-00010ba0 T Plat_VerifyHardwareKeyPrompt
-         U popen@@GLIBC_2.1
-         U __printf_chk@@GLIBC_2.3.4
-         U printf@@GLIBC_2.0
-         U pthread_attr_init@@GLIBC_2.1
-         U pthread_attr_setstacksize@@GLIBC_2.1
-         w pthread_cancel@@GLIBC_2.0
-         U pthread_cond_destroy@@GLIBC_2.3.2
-         U pthread_cond_init@@GLIBC_2.3.2
-         U pthread_cond_signal@@GLIBC_2.3.2
-         U pthread_cond_timedwait@@GLIBC_2.3.2
-         U pthread_create@@GLIBC_2.1
-         U pthread_detach@@GLIBC_2.0
-         U pthread_getschedparam@@GLIBC_2.0
-         U pthread_getspecific@@GLIBC_2.0
-         U pthread_join@@GLIBC_2.0
-         U pthread_key_create@@GLIBC_2.0
-         U pthread_key_delete@@GLIBC_2.0
-         U pthread_kill@@GLIBC_2.0
-         U pthread_mutexattr_destroy@@GLIBC_2.0
-         U pthread_mutexattr_init@@GLIBC_2.0
-         U pthread_mutexattr_settype@@GLIBC_2.1
-         U pthread_mutex_destroy@@GLIBC_2.0
-         U pthread_mutex_init@@GLIBC_2.0
-         U pthread_mutex_lock@@GLIBC_2.0
-         U pthread_mutex_trylock@@GLIBC_2.0
-         U pthread_mutex_unlock@@GLIBC_2.0
-         w pthread_once@@GLIBC_2.0
-         U pthread_self@@GLIBC_2.0
-         U pthread_setschedparam@@GLIBC_2.0
-         U pthread_setspecific@@GLIBC_2.0
-         U pthread_yield@@GLIBC_2.2
-         U puts@@GLIBC_2.0
-         U raise@@GLIBC_2.0
-         U rand@@GLIBC_2.0
-         U readdir@@GLIBC_2.0
-         U read@@GLIBC_2.0
-         U readlink@@GLIBC_2.0
-         U realloc@@GLIBC_2.0
-         U realpath@@GLIBC_2.3
-         U recvfrom@@GLIBC_2.0
-         U recv@@GLIBC_2.0
-000110c0 T ReleaseThreadHandle
-         U rename@@GLIBC_2.0
-00010b40 T ReportProgress
-         U rmdir@@GLIBC_2.0
-00013f90 T RunTSListTests
-00014070 T RunTSQueueTests
-         U scandir@@GLIBC_2.0
-         U send@@GLIBC_2.0
-0000c920 T SetAllAssertsDisabled
-0000c940 T SetAssertDialogParent
-0000fdc0 T SetAssertFailedNotifyFunc
-0000e3f0 T SetCPUMonitoringInterval
-00010be0 T SetStackTranslationSymbolSearchPath
-00011330 T SetThreadedLoadLibraryFunc
-0000c960 T ShouldUseNewAssertDialog
-00010af0 T ShutdownPME
-         U signal@@GLIBC_2.0
-         U snprintf@@GLIBC_2.0
-0000fa40 T SpewActivate
-0000ec60 T _SpewInfo
-0000ed70 T _SpewMessage
-0000eb50 T SpewOutputFunc
-         U __sprintf_chk@@GLIBC_2.3.4
-         U srand@@GLIBC_2.0
-         U sscanf@@GLIBC_2.0
-00010bf0 T StackToolsNotify_LoadedLibrary
-         U stderr@@GLIBC_2.0
-         U strcasecmp@@GLIBC_2.0
-         U strcasestr@@GLIBC_2.1
-         U __strcat_chk@@GLIBC_2.3.4
-         U strcat@@GLIBC_2.0
-         U strchr@@GLIBC_2.0
-         U strcmp@@GLIBC_2.0
-         U __strcpy_chk@@GLIBC_2.3.4
-         U strcpy@@GLIBC_2.0
-         U strdup@@GLIBC_2.0
-         U strerror@@GLIBC_2.0
-         U strlen@@GLIBC_2.0
-         U strncasecmp@@GLIBC_2.0
-         U strncpy@@GLIBC_2.0
-         U strpbrk@@GLIBC_2.0
-         U strrchr@@GLIBC_2.0
-         U strstr@@GLIBC_2.0
-         U strtod@@GLIBC_2.0
-         U strtol@@GLIBC_2.0
-         U strtoll@@GLIBC_2.0
-         U symlink@@GLIBC_2.0
-000176e0 T TelemetrySetLevel
-00017730 T TelemetryTick
-000110b0 T ThreadDetach
-00011100 T ThreadGetCurrentHandle
-000110f0 T ThreadGetCurrentId
-00011160 T ThreadGetPriority
-00011200 T ThreadInMainThread
-000118e0 T ThreadInterlockedAssignIf
-00011980 T ThreadInterlockedAssignIf64
-00011930 T ThreadInterlockedAssignPointerIf
-000118c0 T ThreadInterlockedCompareExchange
-00011950 T ThreadInterlockedCompareExchange64
-00011910 T ThreadInterlockedCompareExchangePointer
-00011880 T ThreadInterlockedDecrement
-000118a0 T ThreadInterlockedExchange
-000119b0 T ThreadInterlockedExchange64
-000118b0 T ThreadInterlockedExchangeAdd
-00011900 T ThreadInterlockedExchangePointer
-00011860 T ThreadInterlockedIncrement
-00011240 T ThreadJoin
-000111e0 T ThreadSetAffinity
-00011270 T ThreadSetDebugName
-000111a0 T ThreadSetPriority
-000110d0 T ThreadSleep
-         U time@@GLIBC_2.0
-         U timegm@@GLIBC_2.0
-         U tolower@@GLIBC_2.0
-00010c00 T TranslateStackInfo
-         U unlink@@GLIBC_2.0
-         U usleep@@GLIBC_2.0
-         U utime@@GLIBC_2.0
-         U utimes@@GLIBC_2.0
-0000fe00 T VoidFnPtrLookup_Tier0
-         U vsnprintf@@GLIBC_2.0
-00010710 T vtune
-0000eee0 T Warning
-0000ef60 T WarningV
-000103d0 T WriteMiniDump
-         U __xmknod@@GLIBC_2.0
-         U __xstat64@@GLIBC_2.2
-         U __xstat@@GLIBC_2.0
-0000f670 T ConWarning(char const*, ...)
-0000f2f0 T DevWarning(char const*, ...)
-0000f590 T ConColorMsg(Color const&, char const*, ...)
-00011000 T CreateSimpleThread(unsigned int (*)(void*), void*, unsigned long*, unsigned int)
-0000f6e0 T ConLog(char const*, ...)
-0000f600 T ConMsg(char const*, ...)
-0000f360 T DevLog(char const*, ...)
-0000f280 T DevMsg(char const*, ...)
-         U operator delete[](void*)@@GLIBCXX_3.4
-         U operator delete(void*)@@GLIBCXX_3.4
-00010380 T ZeroMemory
-000161a0 T CVProfNode::EnterScope()
-00016eb0 T CVProfNode::GetSubNode(char const*, int, char const*)
-00016d50 T CVProfNode::GetSubNode(char const*, int, char const*, int)
-00016510 T CVProfNode::SetCurFrameTime(unsigned long)
-0002acd8 B CVProfNode::s_iCurrentUniqueNodeID
-000162f0 T CVProfNode::Pause()
-000163c0 T CVProfNode::Reset()
-00016360 T CVProfNode::Resume()
-00016240 T CVProfNode::ExitScope()
-00016450 T CVProfNode::MarkFrame()
-000164d0 T CVProfNode::ResetPeak()
-00016190 T CVProfNode::~CVProfNode()
-00016190 T CVProfNode::~CVProfNode()
-000115e0 T CThreadEvent::Set()
-00011680 T CThreadEvent::Wait(unsigned int)
-00011660 T CThreadEvent::Check()
-00011630 T CThreadEvent::Reset()
-00011570 T CThreadEvent::CThreadEvent(bool)
-00011570 T CThreadEvent::CThreadEvent(bool)
-00011a10 T CThreadMutex::TryLock()
-00011c10 T CThreadRWLock::UnlockWrite()
-00011b30 T CThreadRWLock::WaitForRead()
-00011b80 T CThreadRWLock::LockForWrite()
-00012a30 T CWorkerThread::CallMaster(unsigned int, unsigned int)
-00012a70 T CWorkerThread::CallWorker(unsigned int, unsigned int, bool, CFunctor*)
-00012ab0 T CWorkerThread::WaitForCall(unsigned int, unsigned int*)
-00012af0 T CWorkerThread::WaitForCall(unsigned int*)
-00012910 T CWorkerThread::WaitForReply(unsigned int)
-000127d0 T CWorkerThread::WaitForReply(unsigned int, unsigned int (*)(int, CThreadEvent* const*, int, unsigned int))
-00012780 T CWorkerThread::BoostPriority()
-00012750 T CWorkerThread::GetCallHandle()
-00012940 T CWorkerThread::Call(unsigned int, unsigned int, bool, unsigned int (*)(int, CThreadEvent* const*, int, unsigned int), CFunctor*)
-00012b80 T CWorkerThread::Reply(unsigned int)
-00012b20 T CWorkerThread::PeekCall(unsigned int*, CFunctor**)
-000126e0 T CWorkerThread::CWorkerThread()
-000126e0 T CWorkerThread::CWorkerThread()
-00012c10 W CWorkerThread::~CWorkerThread()
-00012bd0 W CWorkerThread::~CWorkerThread()
-00012bd0 W CWorkerThread::~CWorkerThread()
-000101d0 T CClockSpeedInit::Init()
-00011700 T CThreadLocalBase::Set(void*)
-00011690 T CThreadLocalBase::CThreadLocalBase()
-00011690 T CThreadLocalBase::CThreadLocalBase()
-000116c0 T CThreadLocalBase::~CThreadLocalBase()
-000116c0 T CThreadLocalBase::~CThreadLocalBase()
-00010c90 T CCallStackStorage::CCallStackStorage(int (*)(void**, int, int), unsigned int)
-00010c90 T CCallStackStorage::CCallStackStorage(int (*)(void**, int, int), unsigned int)
-00011f30 T CThreadSpinRWLock::UnlockRead()
-00011df0 T CThreadSpinRWLock::LockForRead()
-00012040 T CThreadSpinRWLock::UnlockWrite()
-00011c90 T CThreadSpinRWLock::SpinLockForWrite(unsigned int)
-000113a0 T CThreadSyncObject::AssertUseable()
-000113b0 T CThreadSyncObject::Wait(unsigned int)
-00011350 T CThreadSyncObject::CThreadSyncObject()
-00011350 T CThreadSyncObject::CThreadSyncObject()
-00011360 T CThreadSyncObject::~CThreadSyncObject()
-00011360 T CThreadSyncObject::~CThreadSyncObject()
-00010cc0 T CStackTop_CopyParentStack::CStackTop_CopyParentStack(void* const*, int)
-00010cc0 T CStackTop_CopyParentStack::CStackTop_CopyParentStack(void* const*, int)
-00010cd0 T CStackTop_CopyParentStack::~CStackTop_CopyParentStack()
-00010cd0 T CStackTop_CopyParentStack::~CStackTop_CopyParentStack()
-00010d00 T CStackTop_ReferenceParentStack::ReleaseParentStackReferences()
-00010ce0 T CStackTop_ReferenceParentStack::CStackTop_ReferenceParentStack(void* const*, int)
-00010ce0 T CStackTop_ReferenceParentStack::CStackTop_ReferenceParentStack(void* const*, int)
-00010cf0 T CStackTop_ReferenceParentStack::~CStackTop_ReferenceParentStack()
-00010cf0 T CStackTop_ReferenceParentStack::~CStackTop_ReferenceParentStack()
-00011720 T CThread::ThreadProc(void*)
-00012250 T CThread::GetThreadId()
-000122a0 T CThread::SetPriority(int)
-00010fc0 T CThread::GetThreadProc()
-00011140 T CThread::IsThreadRunning()
-00012390 T CThread::GetCurrentCThread()
-00012330 T CThread::ResumeCooperative()
-000122c0 T CThread::SuspendCooperative()
-00012540 T CThread::WaitForCreateComplete(CThreadEvent*)
-00012340 T CThread::BWaitForThreadSuspendCooperative()
-00010fa0 T CThread::Init()
-00012220 T CThread::Join(unsigned int)
-000123b0 T CThread::Stop(int)
-00012510 T CThread::Sleep(unsigned int)
-00012560 T CThread::Start(unsigned int)
-00012500 T CThread::Yield()
-00010fb0 T CThread::OnExit()
-00012530 T CThread::Cleanup()
-00012130 T CThread::GetName()
-00012210 T CThread::IsAlive()
-000121b0 T CThread::SetName(char const*)
-00012260 T CThread::GetResult()
-00012360 T CThread::Terminate(int)
-00012080 T CThread::CThread()
-00012080 T CThread::CThread()
-000124e0 T CThread::~CThread()
-00012440 T CThread::~CThread()
-00012440 T CThread::~CThread()
-00016950 T CVProfile::FreeNodes_R(CVProfNode*)
-00018220 T CVProfile::OutputReport(int, char const*, int)
-00017560 T CVProfile::ResetCounters(CounterGroup_t)
-00017430 T CVProfile::HideBudgetGroup(int, bool)
-00016930 T CVProfile::SetOutputStream(void (*)(char const*, ...))
-00016bd0 T CVProfile::AddBudgetGroupName(char const*, int)
-00017400 T CVProfile::GetNumBudgetGroups()
-00016b60 T CVProfile::FindBudgetGroupName(char const*)
-00017470 T CVProfile::FindOrCreateCounter(char const*, CounterGroup_t)
-00016ae0 T CVProfile::GetBudgetGroupColor(int, int&, int&, int&, int&)
-000173d0 T CVProfile::BudgetGroupNameToBudgetGroupID(char const*)
-00016ce0 T CVProfile::BudgetGroupNameToBudgetGroupID(char const*, int)
-00017410 T CVProfile::RegisterNumBudgetGroupsChangedCallBack(void (*)())
-000169c0 T CVProfile::Term()
-00016590 T CVProfile::FindNode(CVProfNode*, char const*)
-00017bb0 T CVProfile::SumTimes(CVProfNode*, int)
-00017f20 T CVProfile::SumTimes(char const*, int)
-00016610 T CVProfile::DumpNodes(CVProfNode*, int, bool)
-00016ee0 T CVProfile::CVProfile()
-00016ee0 T CVProfile::CVProfile()
-00016a90 T CVProfile::~CVProfile()
-00016a90 T CVProfile::~CVProfile()
-         U operator new[](unsigned int)@@GLIBCXX_3.4
-00012760 T CWorkerThread::GetCallParam(CFunctor**) const
-000116e0 T CThreadLocalBase::Get() const
-00011390 T CThreadSyncObject::operator!() const
-00012270 T CThread::GetPriority() const
-000175c0 T CVProfile::GetCounterName(int) const
-000175b0 T CVProfile::GetNumCounters() const
-00017620 T CVProfile::GetCounterGroup(int) const
-000175e0 T CVProfile::GetCounterValue(int) const
-00017600 T CVProfile::GetCounterNameAndValue(int, int&) const
-         U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
-         U std::__detail::_List_node_base::_M_unhook()@@GLIBCXX_3.4.15
-00011a30 T CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-         U operator new(unsigned int)@@GLIBCXX_3.4
-         U std::__throw_bad_alloc()@@GLIBCXX_3.4
-         U std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
-         U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
-0001de08 V typeinfo for CWorkerThread
-0001dd8c V typeinfo for CThread
-         U typeinfo for int@@CXXABI_1.3
-0001de14 V typeinfo name for CWorkerThread
-0001dd83 V typeinfo name for CThread
-0001dde0 V vtable for CWorkerThread
-0001dda0 V vtable for CThread
-         U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
-0001ddd0 V CThreadSpinRWLock::TryLockForWrite(unsigned int)::oldValue
+U abort@@GLIBC_2.0
+U access@@GLIBC_2.0
+U alarm@@GLIBC_2.0
+T ApproximateProcessMemoryUsage
+T AreAllAssertsDisabled
+T _AssertValidReadPtr
+T _AssertValidReadWritePtr
+T AssertValidStringPtr
+T _AssertValidWritePtr
+U backtrace@@GLIBC_2.1
+U backtrace_symbols@@GLIBC_2.1
+A __bss_start
+T BuildCmdLine
+T CallAssertFailedNotifyFunc
+T CatchAndWriteMiniDump
+U chmod@@GLIBC_2.0
+U chown@@GLIBC_2.1
+U clock_gettime@@GLIBC_2.2
+U closedir@@GLIBC_2.0
+U close@@GLIBC_2.0
+T ColorSpewMessage
+T CommandLine_Tier0
+T COM_TimestampedLog
+T ConColorMsg
+T ConDColorMsg
+T ConDLog
+T ConDMsg
+T ConDWarning
+T ConLog
+T ConMsg
+T ConWarning
+T CrackSmokingCompiler
+T CreateSimpleThread
+U ctime_r@@GLIBC_2.0
+U __cxa_allocate_exception@@CXXABI_1.3
+U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_begin_catch@@CXXABI_1.3
+U __cxa_end_catch@@CXXABI_1.3
+w __cxa_finalize@@GLIBC_2.1.3
+U __cxa_guard_abort@@CXXABI_1.3
+U __cxa_guard_acquire@@CXXABI_1.3
+U __cxa_guard_release@@CXXABI_1.3
+U __cxa_pure_virtual@@CXXABI_1.3
+U __cxa_rethrow@@CXXABI_1.3
+U __cxa_throw@@CXXABI_1.3
+T DeclareCurrentThreadIsMainThread
+T DecodeBinaryFromString
+T DefaultSpewFunc
+T DefaultSpewFuncAbortOnAsserts
+T DevLog
+T DevMsg
+T DevWarning
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+T DLog
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+T DMsg
+T DoNewAssertDialog
+T _DSpewMessage
+T DWarning
+A _edata
+T EncodeBinaryToString
+A _end
+U __errno_location@@GLIBC_2.0
+T Error
+T ErrorV
+U _exit@@GLIBC_2.0
+U exit@@GLIBC_2.0
+T _ExitOnFatalAssert
+U fclose@@GLIBC_2.1
+U feof@@GLIBC_2.0
+U ferror@@GLIBC_2.0
+U fflush@@GLIBC_2.0
+U fgetc@@GLIBC_2.0
+U fgets@@GLIBC_2.0
+T _fini
+U fopen64@@GLIBC_2.1
+U fopen@@GLIBC_2.1
+U fprintf@@GLIBC_2.0
+U fputs@@GLIBC_2.0
+U fread@@GLIBC_2.0
+U free@@GLIBC_2.0
+U freopen@@GLIBC_2.0
+U fscanf@@GLIBC_2.0
+U fseek@@GLIBC_2.0
+U ftell@@GLIBC_2.0
+U fwrite@@GLIBC_2.0
+B g_ClockSpeed
+B g_ClockSpeedMicrosecondsMultiplier
+B g_ClockSpeedMillisecondsMultiplier
+B g_ClockSpeedSecondsMultiplier
+B g_dwClockSpeed
+T GetAssertDialogParent
+T GetCallStack
+T GetCallStack_Fast
+T GetCPUFrequencyResults
+T GetCPUInformation
+T GetCPUUsage
+U getenv@@GLIBC_2.0
+T GetFileAndLineFromAddress
+U getloadavg@@GLIBC_2.2
+T GetMemoryInformation
+T GetModuleNameFromAddress
+T GetSpewOutputColor
+T GetSpewOutputFunc
+T GetSpewOutputGroup
+T GetSpewOutputLevel
+T GetSymbolNameFromAddress
+T GetThreadedLoadLibraryFunc
+U gettimeofday@@GLIBC_2.0
+w __gmon_start__
+U gmtime_r@@GLIBC_2.0
+D g_pVCR
+B g_Telemetry
+B g_VProfCurrentProfile
+B g_VProfSignalSpike
+U __gxx_personality_v0@@CXXABI_1.3
+T HushAsserts
+T _init
+T InitPME
+T InstallProgressReportHandler
+T Is64BitOS
+U isatty@@GLIBC_2.0
+U isspace@@GLIBC_2.0
+T IsSpewActive
+w _Jv_RegisterClasses
+U lchown@@GLIBC_2.0
+U link@@GLIBC_2.0
+U localtime@@GLIBC_2.0
+U localtime_r@@GLIBC_2.0
+T Log
+T LogV
+U __lxstat64@@GLIBC_2.2
+U __lxstat@@GLIBC_2.0
+U malloc@@GLIBC_2.0
+U memalign@@GLIBC_2.0
+T MemAllocOOMError
+T MemAllocScratch
+U memcmp@@GLIBC_2.0
+U memcpy@@GLIBC_2.0
+T MemFreeScratch
+U memmove@@GLIBC_2.0
+U memset@@GLIBC_2.0
+T MinidumpUserStreamInfoAppend
+T MinidumpUserStreamInfoGet
+T MinidumpUserStreamInfoSetHeader
+U mkdir@@GLIBC_2.0
+U mkfifo@@GLIBC_2.0
+U mount@@GLIBC_2.0
+T Msg
+T MsgV
+T NetLog
+T NetMsg
+T NetWarning
+U open64@@GLIBC_2.2
+U opendir@@GLIBC_2.0
+U open@@GLIBC_2.0
+U pclose@@GLIBC_2.1
+T Plat_ApplyHardwareDataBreakpointsToNewThread
+T Plat_BeginWatchdogTimer
+T Plat_ctime
+T Plat_DebugString
+T Plat_EndWatchdogTimer
+T Plat_ExitProcess
+T Plat_FastVerifyHardwareKey
+T Plat_FloatTime
+T Plat_GetCommandLine
+T Plat_GetCommandLineA
+T Plat_GetMemPageSize
+T Plat_GetPagedPoolInfo
+T Plat_GetWatchdogTime
+T Plat_gmtime
+T Plat_IsInBenchmarkMode
+T Plat_IsInDebugSession
+T Plat_localtime
+T Plat_MSTime
+T Plat_SetBenchmarkMode
+T Plat_SetCommandLine
+T Plat_SetHardwareDataBreakpoint
+T Plat_SetWatchdogHandlerFunction
+T Plat_SimpleLog
+T Plat_timegm
+T Plat_VerifyHardwareKey
+T Plat_VerifyHardwareKeyDriver
+T Plat_VerifyHardwareKeyPrompt
+U popen@@GLIBC_2.1
+U __printf_chk@@GLIBC_2.3.4
+U printf@@GLIBC_2.0
+U pthread_attr_init@@GLIBC_2.1
+U pthread_attr_setstacksize@@GLIBC_2.1
+w pthread_cancel@@GLIBC_2.0
+U pthread_cond_destroy@@GLIBC_2.3.2
+U pthread_cond_init@@GLIBC_2.3.2
+U pthread_cond_signal@@GLIBC_2.3.2
+U pthread_cond_timedwait@@GLIBC_2.3.2
+U pthread_create@@GLIBC_2.1
+U pthread_detach@@GLIBC_2.0
+U pthread_getschedparam@@GLIBC_2.0
+U pthread_getspecific@@GLIBC_2.0
+U pthread_join@@GLIBC_2.0
+U pthread_key_create@@GLIBC_2.0
+U pthread_key_delete@@GLIBC_2.0
+U pthread_kill@@GLIBC_2.0
+U pthread_mutexattr_destroy@@GLIBC_2.0
+U pthread_mutexattr_init@@GLIBC_2.0
+U pthread_mutexattr_settype@@GLIBC_2.1
+U pthread_mutex_destroy@@GLIBC_2.0
+U pthread_mutex_init@@GLIBC_2.0
+U pthread_mutex_lock@@GLIBC_2.0
+U pthread_mutex_trylock@@GLIBC_2.0
+U pthread_mutex_unlock@@GLIBC_2.0
+w pthread_once@@GLIBC_2.0
+U pthread_self@@GLIBC_2.0
+U pthread_setschedparam@@GLIBC_2.0
+U pthread_setspecific@@GLIBC_2.0
+U pthread_yield@@GLIBC_2.2
+U puts@@GLIBC_2.0
+U raise@@GLIBC_2.0
+U rand@@GLIBC_2.0
+U readdir@@GLIBC_2.0
+U read@@GLIBC_2.0
+U readlink@@GLIBC_2.0
+U realloc@@GLIBC_2.0
+U realpath@@GLIBC_2.3
+U recvfrom@@GLIBC_2.0
+U recv@@GLIBC_2.0
+T ReleaseThreadHandle
+U rename@@GLIBC_2.0
+T ReportProgress
+U rmdir@@GLIBC_2.0
+T RunTSListTests
+T RunTSQueueTests
+U scandir@@GLIBC_2.0
+U send@@GLIBC_2.0
+T SetAllAssertsDisabled
+T SetAssertDialogParent
+T SetAssertFailedNotifyFunc
+T SetCPUMonitoringInterval
+T SetStackTranslationSymbolSearchPath
+T SetThreadedLoadLibraryFunc
+T ShouldUseNewAssertDialog
+T ShutdownPME
+U signal@@GLIBC_2.0
+U snprintf@@GLIBC_2.0
+T SpewActivate
+T _SpewInfo
+T _SpewMessage
+T SpewOutputFunc
+U __sprintf_chk@@GLIBC_2.3.4
+U srand@@GLIBC_2.0
+U sscanf@@GLIBC_2.0
+T StackToolsNotify_LoadedLibrary
+U stderr@@GLIBC_2.0
+U strcasecmp@@GLIBC_2.0
+U strcasestr@@GLIBC_2.1
+U __strcat_chk@@GLIBC_2.3.4
+U strcat@@GLIBC_2.0
+U strchr@@GLIBC_2.0
+U strcmp@@GLIBC_2.0
+U __strcpy_chk@@GLIBC_2.3.4
+U strcpy@@GLIBC_2.0
+U strdup@@GLIBC_2.0
+U strerror@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+U strncasecmp@@GLIBC_2.0
+U strncpy@@GLIBC_2.0
+U strpbrk@@GLIBC_2.0
+U strrchr@@GLIBC_2.0
+U strstr@@GLIBC_2.0
+U strtod@@GLIBC_2.0
+U strtol@@GLIBC_2.0
+U strtoll@@GLIBC_2.0
+U symlink@@GLIBC_2.0
+T TelemetrySetLevel
+T TelemetryTick
+T ThreadDetach
+T ThreadGetCurrentHandle
+T ThreadGetCurrentId
+T ThreadGetPriority
+T ThreadInMainThread
+T ThreadInterlockedAssignIf
+T ThreadInterlockedAssignIf64
+T ThreadInterlockedAssignPointerIf
+T ThreadInterlockedCompareExchange
+T ThreadInterlockedCompareExchange64
+T ThreadInterlockedCompareExchangePointer
+T ThreadInterlockedDecrement
+T ThreadInterlockedExchange
+T ThreadInterlockedExchange64
+T ThreadInterlockedExchangeAdd
+T ThreadInterlockedExchangePointer
+T ThreadInterlockedIncrement
+T ThreadJoin
+T ThreadSetAffinity
+T ThreadSetDebugName
+T ThreadSetPriority
+T ThreadSleep
+U time@@GLIBC_2.0
+U timegm@@GLIBC_2.0
+U tolower@@GLIBC_2.0
+T TranslateStackInfo
+U unlink@@GLIBC_2.0
+U usleep@@GLIBC_2.0
+U utime@@GLIBC_2.0
+U utimes@@GLIBC_2.0
+T VoidFnPtrLookup_Tier0
+U vsnprintf@@GLIBC_2.0
+T vtune
+T Warning
+T WarningV
+T WriteMiniDump
+U __xmknod@@GLIBC_2.0
+U __xstat64@@GLIBC_2.2
+U __xstat@@GLIBC_2.0
+T ConWarning(char const*, ...)
+T DevWarning(char const*, ...)
+T ConColorMsg(Color const&, char const*, ...)
+T CreateSimpleThread(unsigned int (*)(void*), void*, unsigned long*, unsigned int)
+T ConLog(char const*, ...)
+T ConMsg(char const*, ...)
+T DevLog(char const*, ...)
+T DevMsg(char const*, ...)
+U operator delete[](void*)@@GLIBCXX_3.4
+U operator delete(void*)@@GLIBCXX_3.4
+T ZeroMemory
+T CVProfNode::EnterScope()
+T CVProfNode::GetSubNode(char const*, int, char const*)
+T CVProfNode::GetSubNode(char const*, int, char const*, int)
+T CVProfNode::SetCurFrameTime(unsigned long)
+B CVProfNode::s_iCurrentUniqueNodeID
+T CVProfNode::Pause()
+T CVProfNode::Reset()
+T CVProfNode::Resume()
+T CVProfNode::ExitScope()
+T CVProfNode::MarkFrame()
+T CVProfNode::ResetPeak()
+T CVProfNode::~CVProfNode()
+T CVProfNode::~CVProfNode()
+T CThreadEvent::Set()
+T CThreadEvent::Wait(unsigned int)
+T CThreadEvent::Check()
+T CThreadEvent::Reset()
+T CThreadEvent::CThreadEvent(bool)
+T CThreadEvent::CThreadEvent(bool)
+T CThreadMutex::TryLock()
+T CThreadRWLock::UnlockWrite()
+T CThreadRWLock::WaitForRead()
+T CThreadRWLock::LockForWrite()
+T CWorkerThread::CallMaster(unsigned int, unsigned int)
+T CWorkerThread::CallWorker(unsigned int, unsigned int, bool, CFunctor*)
+T CWorkerThread::WaitForCall(unsigned int, unsigned int*)
+T CWorkerThread::WaitForCall(unsigned int*)
+T CWorkerThread::WaitForReply(unsigned int)
+T CWorkerThread::WaitForReply(unsigned int, unsigned int (*)(int, CThreadEvent* const*, int, unsigned int))
+T CWorkerThread::BoostPriority()
+T CWorkerThread::GetCallHandle()
+T CWorkerThread::Call(unsigned int, unsigned int, bool, unsigned int (*)(int, CThreadEvent* const*, int, unsigned int), CFunctor*)
+T CWorkerThread::Reply(unsigned int)
+T CWorkerThread::PeekCall(unsigned int*, CFunctor**)
+T CWorkerThread::CWorkerThread()
+T CWorkerThread::CWorkerThread()
+W CWorkerThread::~CWorkerThread()
+W CWorkerThread::~CWorkerThread()
+W CWorkerThread::~CWorkerThread()
+T CClockSpeedInit::Init()
+T CThreadLocalBase::Set(void*)
+T CThreadLocalBase::CThreadLocalBase()
+T CThreadLocalBase::CThreadLocalBase()
+T CThreadLocalBase::~CThreadLocalBase()
+T CThreadLocalBase::~CThreadLocalBase()
+T CCallStackStorage::CCallStackStorage(int (*)(void**, int, int), unsigned int)
+T CCallStackStorage::CCallStackStorage(int (*)(void**, int, int), unsigned int)
+T CThreadSpinRWLock::UnlockRead()
+T CThreadSpinRWLock::LockForRead()
+T CThreadSpinRWLock::UnlockWrite()
+T CThreadSpinRWLock::SpinLockForWrite(unsigned int)
+T CThreadSyncObject::AssertUseable()
+T CThreadSyncObject::Wait(unsigned int)
+T CThreadSyncObject::CThreadSyncObject()
+T CThreadSyncObject::CThreadSyncObject()
+T CThreadSyncObject::~CThreadSyncObject()
+T CThreadSyncObject::~CThreadSyncObject()
+T CStackTop_CopyParentStack::CStackTop_CopyParentStack(void* const*, int)
+T CStackTop_CopyParentStack::CStackTop_CopyParentStack(void* const*, int)
+T CStackTop_CopyParentStack::~CStackTop_CopyParentStack()
+T CStackTop_CopyParentStack::~CStackTop_CopyParentStack()
+T CStackTop_ReferenceParentStack::ReleaseParentStackReferences()
+T CStackTop_ReferenceParentStack::CStackTop_ReferenceParentStack(void* const*, int)
+T CStackTop_ReferenceParentStack::CStackTop_ReferenceParentStack(void* const*, int)
+T CStackTop_ReferenceParentStack::~CStackTop_ReferenceParentStack()
+T CStackTop_ReferenceParentStack::~CStackTop_ReferenceParentStack()
+T CThread::ThreadProc(void*)
+T CThread::GetThreadId()
+T CThread::SetPriority(int)
+T CThread::GetThreadProc()
+T CThread::IsThreadRunning()
+T CThread::GetCurrentCThread()
+T CThread::ResumeCooperative()
+T CThread::SuspendCooperative()
+T CThread::WaitForCreateComplete(CThreadEvent*)
+T CThread::BWaitForThreadSuspendCooperative()
+T CThread::Init()
+T CThread::Join(unsigned int)
+T CThread::Stop(int)
+T CThread::Sleep(unsigned int)
+T CThread::Start(unsigned int)
+T CThread::Yield()
+T CThread::OnExit()
+T CThread::Cleanup()
+T CThread::GetName()
+T CThread::IsAlive()
+T CThread::SetName(char const*)
+T CThread::GetResult()
+T CThread::Terminate(int)
+T CThread::CThread()
+T CThread::CThread()
+T CThread::~CThread()
+T CThread::~CThread()
+T CThread::~CThread()
+T CVProfile::FreeNodes_R(CVProfNode*)
+T CVProfile::OutputReport(int, char const*, int)
+T CVProfile::ResetCounters(CounterGroup_t)
+T CVProfile::HideBudgetGroup(int, bool)
+T CVProfile::SetOutputStream(void (*)(char const*, ...))
+T CVProfile::AddBudgetGroupName(char const*, int)
+T CVProfile::GetNumBudgetGroups()
+T CVProfile::FindBudgetGroupName(char const*)
+T CVProfile::FindOrCreateCounter(char const*, CounterGroup_t)
+T CVProfile::GetBudgetGroupColor(int, int&, int&, int&, int&)
+T CVProfile::BudgetGroupNameToBudgetGroupID(char const*)
+T CVProfile::BudgetGroupNameToBudgetGroupID(char const*, int)
+T CVProfile::RegisterNumBudgetGroupsChangedCallBack(void (*)())
+T CVProfile::Term()
+T CVProfile::FindNode(CVProfNode*, char const*)
+T CVProfile::SumTimes(CVProfNode*, int)
+T CVProfile::SumTimes(char const*, int)
+T CVProfile::DumpNodes(CVProfNode*, int, bool)
+T CVProfile::CVProfile()
+T CVProfile::CVProfile()
+T CVProfile::~CVProfile()
+T CVProfile::~CVProfile()
+U operator new[](unsigned int)@@GLIBCXX_3.4
+T CWorkerThread::GetCallParam(CFunctor**) const
+T CThreadLocalBase::Get() const
+T CThreadSyncObject::operator!() const
+T CThread::GetPriority() const
+T CVProfile::GetCounterName(int) const
+T CVProfile::GetNumCounters() const
+T CVProfile::GetCounterGroup(int) const
+T CVProfile::GetCounterValue(int) const
+T CVProfile::GetCounterNameAndValue(int, int&) const
+U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
+U std::__detail::_List_node_base::_M_unhook()@@GLIBCXX_3.4.15
+T CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
+U operator new(unsigned int)@@GLIBCXX_3.4
+U std::__throw_bad_alloc()@@GLIBCXX_3.4
+U std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+V typeinfo for CWorkerThread
+V typeinfo for CThread
+U typeinfo for int@@CXXABI_1.3
+V typeinfo name for CWorkerThread
+V typeinfo name for CThread
+V vtable for CWorkerThread
+V vtable for CThread
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+V CThreadSpinRWLock::TryLockForWrite(unsigned int)::oldValue

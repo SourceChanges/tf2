@@ -1,1103 +1,1103 @@
-         U abort@@GLIBC_2.0
-0001176b t add_fdes
-0001e400 d adds.7496
-00011a46 t base_from_cb_data
-0001149e t base_from_object
-0001e408 A __bss_start
-         U chdir@@GLIBC_2.0
-0001164d t classify_object_over_fdes
-0001e420 b completed.5793
-000079c0 T CreateInterface
-0001e284 d __CTOR_END__
-0001e274 d __CTOR_LIST__
-         U __cxa_atexit@@GLIBC_2.1.3
-         w __cxa_finalize@@GLIBC_2.1.3
-         U __cxa_guard_acquire@@CXXABI_1.3
-         U __cxa_guard_release@@CXXABI_1.3
-         U __cxa_pure_virtual@@CXXABI_1.3
-000126a9 t __deregister_frame
-000126a0 t __deregister_frame_info
-000125ca t __deregister_frame_info_bases
-         U dlclose@@GLIBC_2.0
-         U dlerror@@GLIBC_2.0
-         U dl_iterate_phdr@@GLIBC_2.2.4
-         U dlopen@@GLIBC_2.1
-         U dlsym@@GLIBC_2.0
-00012854 t __do_global_ctors_aux
-000046b8 t __do_global_dtors_aux
-0001e3e0 d __dso_handle
-0001e28c d __DTOR_END__
-0001e424 b dtor_idx.5795
-0001e288 d __DTOR_LIST__
-0001e938 b dwarf_reg_size_table
-0001e294 a _DYNAMIC
-0001e408 A _edata
-0001ea48 A _end
-         U Error
-0000f8e2 t execute_cfa_program
-00010245 t execute_stack_op
-000118ca t fde_mixed_encoding_compare
-0001184d t fde_single_encoding_compare
-0001132a t fde_unencoded_compare
-0001287c T _fini
-0001134f t frame_downheap
-00004727 t frame_dummy
-0001d24c r __FRAME_END__
-0001e97c b frame_hdr_cache
-0001e978 b frame_hdr_cache_head
-000113da t frame_heapsort
-00010e01 t __frame_state_for
-         U free@@GLIBC_2.0
-0001158f t get_cie_encoding
-         U getcwd@@GLIBC_2.0
-0001163c t get_fde_encoding
-0001e3a4 a _GLOBAL_OFFSET_TABLE_
-000043e0 t _GLOBAL__sub_I_g_pShaderUtil
-000045e0 t _GLOBAL__sub_I__Z9_V_memsetPKciPvii
-         w __gmon_start__
-0001e440 b g_pShaderUtil
-         U __gxx_personality_v0@@CXXABI_1.3
-0000475e t __i686.get_pc_thunk.bx
-000112ab t __i686.get_pc_thunk.cx
-         U iconv_close@@GLIBC_2.1
-         U iconv@@GLIBC_2.1
-         U iconv_open@@GLIBC_2.1
-00004304 T _init
-0000f862 t init_dwarf_reg_size_table
-         U isspace@@GLIBC_2.0
-         U isupper@@GLIBC_2.0
-         U iswspace@@GLIBC_2.0
-0001e290 d __JCR_END__
-0001e290 d __JCR_LIST__
-         w _Jv_RegisterClasses
-0000f800 t .L17
-0000f7ca t .L19
-0000f7e5 t .L20
-0001073d t .L214
-00010741 t .L215
-00010746 t .L216
-0001074a t .L217
-00010756 t .L218
-0001075b t .L219
-00010765 t .L220
-00010769 t .L221
-0001076f t .L222
-00010775 t .L223
-0001077b t .L224
-0001078d t .L225
-00010786 t .L226
-0001079b t .L227
-0001077f t .L228
-00010794 t .L229
-0000f7d6 t .L23
-000107a2 t .L230
-0000f7ea t .L24
-00010808 t .L244
-0000f7f2 t .L25
-0000f7f9 t .L26
-00010957 t .L271
-00010961 t .L272
-0001098d t .L273
-000109d8 t .L274
-000109f1 t .L275
-0000fd34 t .L43
-00011563 t .L45
-0000fd2f t .L46
-0000f998 t .L47
-0001152d t .L47
-0000f9c5 t .L48
-00011548 t .L48
-0000f9e3 t .L49
-0000fa01 t .L50
-0000fa1e t .L51
-00011539 t .L51
-0000fa46 t .L52
-0001154d t .L52
-0000fa7c t .L53
-00011555 t .L53
-0000fa61 t .L54
-0001155c t .L54
-0000fa97 t .L55
-0000fac0 t .L56
-0000fafb t .L57
-0000fb21 t .L58
-0000fb58 t .L59
-0000fb7b t .L60
-0000fb8e t .L61
-0000fba6 t .L62
-0000fbc1 t .L63
-0000fbee t .L64
-0000fc2c t .L65
-0000fc4c t .L66
-0000fc6e t .L67
-0000fca1 t .L68
-0000fcc7 t .L69
-0000fcea t .L70
-0000fcfd t .L71
-00011947 t linear_search_fdes
-         U malloc@@GLIBC_2.0
-0001ea44 b marker.7234
-         U mbstowcs@@GLIBC_2.0
-         U memcpy@@GLIBC_2.0
-         U memmove@@GLIBC_2.0
-         U memset@@GLIBC_2.0
-         U Msg
-0001e950 b object_mutex
-0001e94c b once_regsizes.7669
-         U Plat_FloatTime
-         U Plat_IsInDebugSession
-         U Plat_localtime
-         U pow@@GLIBC_2.0
-         U printf@@GLIBC_2.0
-         w pthread_cancel@@GLIBC_2.0
-         w pthread_mutex_lock@@GLIBC_2.0
-         w pthread_mutex_unlock@@GLIBC_2.0
-         w pthread_once@@GLIBC_2.0
-0000ed10 t qsort_s
-0000f73e t read_encoded_value
-000114e6 t read_encoded_value_with_base
-0000f6f4 t read_sleb128
-000112e0 t read_sleb128
-0000f6c4 t read_uleb128
-000112b0 t read_uleb128
-         U realloc@@GLIBC_2.0
-000124c6 t __register_frame
-000124ac t __register_frame_info
-0001241e t __register_frame_info_bases
-00012584 t __register_frame_info_table
-000124fb t __register_frame_info_table_bases
-0001259e t __register_frame_table
-00011f20 t search_object
-0001e96c b seen_objects
-00004600 t set_fast_math
-0001144e t size_of_encoded_value
-         U strcasecmp@@GLIBC_2.0
-         U strchr@@GLIBC_2.0
-         U strcmp@@GLIBC_2.0
-         U strcpy@@GLIBC_2.0
-         U strftime@@GLIBC_2.0
-         U strlen@@GLIBC_2.0
-         U strncasecmp@@GLIBC_2.0
-         U strncat@@GLIBC_2.0
-         U strncpy@@GLIBC_2.0
-         U strstr@@GLIBC_2.0
-0001e970 b subs.7497
-0001ea3c b terminator.7340
-         U time@@GLIBC_2.0
-         U tolower@@GLIBC_2.0
-         U toupper@@GLIBC_2.0
-         U towlower@@GLIBC_2.0
-         U towupper@@GLIBC_2.0
-0000f5c0 t __udivdi3
-0001e968 b unseen_objects
-0001122b t _Unwind_Backtrace
-00010ec2 t _Unwind_DebugHook
-0001120f t _Unwind_DeleteException
-00010db9 t _Unwind_FindEnclosingFunction
-000126da t _Unwind_Find_FDE
-00010ffc t _Unwind_ForcedUnwind
-00010bbb t _Unwind_ForcedUnwind_Phase2
-00010d13 t _Unwind_GetCFA
-00010deb t _Unwind_GetDataRelBase
-0001010c t _Unwind_GetGR
-00010d74 t _Unwind_GetIP
-00010d7f t _Unwind_GetIPInfo
-00010da3 t _Unwind_GetLanguageSpecificData
-00010dae t _Unwind_GetRegionStart
-00010df6 t _Unwind_GetTextRelBase
-00011a8e t _Unwind_IteratePhdrCallback
-00010ec7 t _Unwind_RaiseException
-00010c78 t _Unwind_RaiseException_Phase2
-000110a7 t _Unwind_Resume
-0001114e t _Unwind_Resume_or_Rethrow
-00010d1e t _Unwind_SetGR
-00010d95 t _Unwind_SetIP
-0000f82c t _Unwind_SetSpColumn
-0000fd60 t uw_frame_state_for
-00010aba t uw_init_context_1
-00010158 t uw_install_context_1
-00010b81 t uw_update_context
-0001081c t uw_update_context_1
-         U vsnprintf@@GLIBC_2.0
-         U vswprintf@@GLIBC_2.2
-         U Warning
-         U wcslen@@GLIBC_2.0
-         U wcsncat@@GLIBC_2.0
-         U wcsncpy@@GLIBC_2.0
-         U wcstombs@@GLIBC_2.0
-00009fa0 t V_FileBase(char const*, char*, int)
-00007fb0 t _V_memmove(char const*, int, void*, void const*, int)
-00009020 t V_snprintf(char*, int, char const*, ...)
-00008210 t V_strlower(char*)
-000083b0 t V_strnicmp(char const*, char const*, int)
-00008d50 t V_strnistr(char const*, char const*, int)
-00008040 t _V_strrchr(char const*, int, char const*, char)
-0000b070 t V_StrRight(char const*, int, char*, int)
-0000af00 t V_StrSlice(char const*, int, int, char*, int)
-0000ac90 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
-0000b0f0 t V_strtowcs(char const*, int, wchar_t*, int)
-0000b130 t V_wcstostr(wchar_t const*, int, char*, int)
-0000ae40 t AllocString(char const*, int)
-0000b510 t Q_URLDecode(char*, int, char const*, int)
-0000b4e0 t Q_URLEncode(char*, int, char const*, int)
-00008f60 t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
-00009080 t V_vsnprintf(char*, int, char const*, char*)
-00008160 t _V_wcslower(char const*, int, wchar_t*)
-0000a320 t V_FixSlashes(char*, char)
-00009250 t V_pretifymem(float, int, bool)
-00009460 t V_pretifynum(long long)
-00008fc0 t V_vsnwprintf(wchar_t*, int, wchar_t const*, char*)
-0000b260 t iHexCharToInt(char)
-00009f80 t PATHSEPARATOR(char)
-0000ca40 t Q_UTF16ToUTF8(unsigned short const*, char*, int, EStringConvertErrorPolicy)
-0000d020 t Q_UTF32ToUTF8(wchar_t const*, char*, int, EStringConvertErrorPolicy)
-0000c420 t Q_UTF8ToUTF16(char const*, unsigned short*, int, EStringConvertErrorPolicy)
-0000c780 t Q_UTF8ToUTF32(char const*, wchar_t*, int, EStringConvertErrorPolicy)
-0000a800 t V_AppendSlash(char*, int)
-00009f00 t V_binarytohex(unsigned char const*, int, char*, int)
-0000a670 t V_GetFileName(char const*)
-00009e50 t V_hextobinary(char const*, int, unsigned char*, int)
-0000b8b0 t V_SplitString(char const*, char const*, CUtlVector<char*, CUtlMemory<char*, int> >&)
-00009cb0 t _V_UCS2ToUTF8(unsigned short const*, char*, int)
-00009d70 t _V_UTF8ToUCS2(char const*, int, unsigned short*, int)
-0000b240 t cIntToHexDigit(int)
-00009660 t Q_IsMeanSpaceW(wchar_t)
-0000b570 t Q_URLDecodeRaw(char*, int, char const*, int)
-0000b540 t Q_URLEncodeRaw(char*, int, char const*, int)
-0000cd60 t Q_UTF16ToUTF32(unsigned short const*, wchar_t*, int, EStringConvertErrorPolicy)
-0000d300 t Q_UTF32ToUTF16(wchar_t const*, unsigned short*, int, EStringConvertErrorPolicy)
-0000d620 t Q_UTF32ToUTF32(wchar_t const*, wchar_t*, int, EStringConvertErrorPolicy)
-00007d30 t Sys_GetFactory(CSysModule*)
-00007d70 t Sys_GetFactory(char const*)
-00007b40 t Sys_LoadModule(char const*, Sys_Flags)
-0000a260 t V_SetExtension(char*, char const*, int)
-0000b780 t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
-0000a3e0 t V_StripLastDir(char*, int)
-000090e0 t V_vsnprintfRet(char*, int, char const*, char*, bool*)
-000079d0 t GetModuleHandle(char const*)
-0000bd90 t Q_UChar32ToUTF8(wchar_t, char*)
-0000c2a0 t Q_UnicodeLength(char const*)
-0000c2f0 t Q_UnicodeLength(unsigned short const*)
-0000c340 t Q_UnicodeLength(wchar_t const*)
-0000e910 t Q_UnicodeRepair(char*, EStringConvertErrorPolicy)
-0000eaf0 t Q_UnicodeRepair(unsigned short*, EStringConvertErrorPolicy)
-0000ecf0 t Q_UnicodeRepair(wchar_t*, EStringConvertErrorPolicy)
-0000be90 t Q_UTF8ToUChar32(char const*, wchar_t&, bool&)
-00007a40 t Sys_LoadLibrary(char const*, Sys_Flags)
-0000ac50 t V_FixupPathName(char*, unsigned int, char const*)
-0000a2d0 t V_StripFilename(char*)
-0000bd00 t Q_IsValidUChar32(wchar_t)
-0000be40 t Q_UChar32ToUTF16(wchar_t, unsigned short*)
-0000c360 t Q_UnicodeAdvance(char*, int)
-0000c3b0 t Q_UnicodeAdvance(unsigned short*, int)
-0000c400 t Q_UnicodeAdvance(wchar_t*, int)
-0000c050 t Q_UTF16ToUChar32(unsigned short const*, wchar_t&, bool&)
-00007d10 t Sys_UnloadModule(CSysModule*)
-0000ac20 t V_IsAbsolutePath(char const*)
-0000a130 t V_StripExtension(char const*, char*, int)
-00009b70 t _V_UCS2ToUnicode(unsigned short const*, wchar_t*, int)
-00009c20 t _V_UnicodeToUCS2(wchar_t const*, int, char*, int)
-0000c140 t Q_UnicodeValidate(char const*)
-0000c1b0 t Q_UnicodeValidate(unsigned short const*)
-0000c210 t Q_UnicodeValidate(wchar_t const*)
-00008500 t StringAfterPrefix(char const*, char const*)
-00007da0 t Sys_LoadInterface(char const*, char const*, CSysModule**, void**)
-0000a860 t V_ComposeFileName(char const*, char const*, char*, int)
-0000a530 t V_ExtractFilePath(char const*, char*, int)
-0000bd40 t Q_UChar32ToUTF8Len(wchar_t)
-0000dcb0 t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
-0000e310 t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
-0000d640 t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
-0000d9a0 t Q_UTF8CharsToUTF32(char const*, int, wchar_t*, int, EStringConvertErrorPolicy)
-00007d60 t Sys_GetFactoryThis()
-0000a1e0 t V_DefaultExtension(char*, char const*, int)
-0000a360 t V_FixDoubleSlashes(char*)
-0000a5d0 t V_GetFileExtension(char const*)
-0000a900 t V_MakeAbsolutePath(char*, int, char const*, char const*)
-0000aa70 t V_MakeRelativePath(char const*, char const*, char*, int)
-0000a680 t V_RemoveDotSlashes(char*, char, bool)
-0000bd70 t Q_UChar32ToUTF16Len(wchar_t)
-0000b390 t Q_URLDecodeInternal(char*, int, char const*, int, bool)
-0000b290 t Q_URLEncodeInternal(char*, int, char const*, int, bool)
-0000dff0 t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
-0000e600 t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
-0000a0f0 t V_StripTrailingSlash(char*)
-00007a30 t Sys_IsDebuggerPresent()
-0000aeb0 t V_GetCurrentDirectory(char*, int)
-0000aee0 t V_SetCurrentDirectory(char const*)
-0000a4d0 t V_UnqualifiedFileName(char const*)
-0000b700 t BGetLocalFormattedDate(long, char*, int)
-0000b740 t BGetLocalFormattedTime(long, char*, int)
-0000a620 t V_ExtractFileExtension(char const*, char*, int)
-00008bb0 t V_normalizeFloatString(char*)
-00007920 t CreateInterfaceInternal(char const*, int*)
-000097b0 t Q_RemoveAllEvilCharacters(char*)
-00007d00 t Sys_RunningWithDebugModules()
-0000b5b0 t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
-00008550 t StringAfterPrefixCaseSensitive(char const*, char const*)
-0000b160 t V_AddBackSlashesToSpecialChars(char const*)
-000099f0 t Q_StripPrecedingAndTrailingWhitespace(char*)
-000098a0 t Q_StripPrecedingAndTrailingWhitespaceW(wchar_t*)
-00009ad0 t Q_AggressiveStripPrecedingAndTrailingWhitespace(char*)
-00009960 t Q_AggressiveStripPrecedingAndTrailingWhitespaceW(wchar_t*)
-00008960 t V_atof(char const*)
-00008940 t V_atoi(char const*)
-00008580 t V_atoi64(char const*)
-00009e10 t V_nibble(char)
-000081a0 t V_strupr(char*)
-00008780 t V_atoui64(char const*)
-00007fd0 t _V_memcmp(char const*, int, void const*, void const*, int)
-00007f90 t _V_memcpy(char const*, int, void*, void const*, int)
-00007f70 t _V_memset(char const*, int, void*, int, int)
-0000b5a0 t V_qsort_s(void*, unsigned int, unsigned int, int (*)(void*, void const*, void const*), void*)
-00008090 t _V_strcmp(char const*, int, char const*, char const*)
-00008010 t _V_strcpy(char const*, int, char*, char const*)
-000082e0 t V_stricmp(char const*, char const*)
-00008d40 t V_stristr(char*, char const*)
-00008c40 t V_stristr(char const*, char const*)
-0000b020 t V_StrLeft(char const*, int, char*, int)
-00008000 t _V_strlen(char const*, int, char const*)
-00009150 t V_strncat(char*, char const*, unsigned int, int)
-00008e90 t V_strnchr(char const*, char, int)
-000084a0 t V_strncmp(char const*, char const*, int)
-00008ee0 t V_strncpy(char*, char const*, int)
-00008280 t V_strnlwr(char*, unsigned int)
-00008100 t _V_strstr(char const*, int, char const*, char const*)
-000080b0 t _V_wcscmp(char const*, int, wchar_t const*, wchar_t const*)
-00008030 t _V_wcslen(char const*, int, wchar_t const*)
-000091d0 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
-00008f20 t V_wcsncpy(wchar_t*, wchar_t const*, int)
-00008120 t _V_wcsupr(char const*, int, wchar_t*)
-         U operator delete[](void*)@@GLIBCXX_3.4
-         U operator delete(void*)@@GLIBCXX_3.4
-0001e630 b guard variable for CShaderAPIEmpty::GetFlashlightState(VMatrix&) const::blah
-0001e570 b guard variable for CShaderAPIEmpty::GetFlashlightStateEx(VMatrix&, ITexture**) const::blah
-0001e610 b guard variable for CShaderAPIEmpty::GetToneMappingScaleLinear() const::dummy
-0001e490 b guard variable for CShaderAPIEmpty::GetLight(int) const::blah
-00007f20 t FastToLower(char)
-0001e4f8 b vec2_origin
-0001e920 b vec2_origin
-0001e508 b vec4_origin
-0001e500 b vec2_invalid
-0001e930 b vec2_invalid
-0001e518 b vec4_invalid
-0001e484 b g_ShaderShadow
-0001e3f0 d s_BackSlashMap
-0001e444 b g_ShaderAPIEmpty
-0001e460 b s_ShaderDeviceEmpty
-000096e0 t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
-00006370 t ShaderInterfaceFactory(char const*, int*)
-0001e3e4 d s_ShaderDeviceMgrEmpty
-0001e540 b __g_CreateCShaderAPIEmptyIShaderAPI_reg
-00004790 t __CreateCShaderAPIEmptyIShaderAPI_interface()
-0001e528 b __g_CreateCShaderDeviceEmptyIShaderDevice_reg
-0001e54c b __g_CreateCShaderShadowEmptyIShaderShadow_reg
-0001e564 b __g_CreateCShaderAPIEmptyIDebugTextureInfo_reg
-00004770 t __CreateCShaderDeviceEmptyIShaderDevice_interface()
-000047a0 t __CreateCShaderShadowEmptyIShaderShadow_interface()
-000047c0 t __CreateCShaderAPIEmptyIDebugTextureInfo_interface()
-0001e534 b __g_CreateCShaderDeviceMgrEmptyIShaderDeviceMgr_reg
-00004780 t __CreateCShaderDeviceMgrEmptyIShaderDeviceMgr_interface()
-0001e558 b __g_CreateCShaderAPIEmptyIMaterialSystemHardwareConfig_reg
-000047b0 t __CreateCShaderAPIEmptyIMaterialSystemHardwareConfig_interface()
-00004c70 t CEmptyMesh::UnlockMesh(int, int, MeshDesc_t&)
-00006580 t CEmptyMesh::GetMaterial()
-00006860 t CEmptyMesh::MarkAsDrawn()
-00004a60 t CEmptyMesh::ModifyBegin(bool, int, int, IndexDesc_t&)
-00004ce0 t CEmptyMesh::ModifyBegin(int, int, int, int, MeshDesc_t&)
-00006840 t CEmptyMesh::SetFlexMesh(IMesh*, int)
-00006810 t CEmptyMesh::SetColorMesh(IMesh*, int)
-00004d90 t CEmptyMesh::ValidateData(int, int, MeshDesc_t const&)
-00004ae0 t CEmptyMesh::ValidateData(int, IndexDesc_t const&)
-00004c00 t CEmptyMesh::ValidateData(int, VertexDesc_t const&)
-000067c0 t CEmptyMesh::EndCastBuffer()
-00004c80 t CEmptyMesh::ModifyBeginEx(bool, int, int, int, int, MeshDesc_t&)
-000067a0 t CEmptyMesh::BeginCastBuffer(MaterialIndexFormat_t)
-00006780 t CEmptyMesh::BeginCastBuffer(unsigned long long)
-00006850 t CEmptyMesh::DisableFlexMesh()
-00004d40 t CEmptyMesh::SetPrimitiveType(MaterialPrimitiveType_t)
-00006870 t CEmptyMesh::ComputeMemoryUsed()
-00004d70 t CEmptyMesh::CopyToMeshBuilder(int, int, int, int, int, CMeshBuilder&)
-00004d50 t CEmptyMesh::Draw(int, int)
-00004d60 t CEmptyMesh::Draw(CPrimList*, int)
-00004a00 t CEmptyMesh::Lock(int, bool, IndexDesc_t&)
-00004af0 t CEmptyMesh::Lock(int, bool, VertexDesc_t&)
-00004d80 t CEmptyMesh::Spew(int, int, MeshDesc_t const&)
-00004ac0 t CEmptyMesh::Spew(int, IndexDesc_t const&)
-00004bf0 t CEmptyMesh::Spew(int, VertexDesc_t const&)
-00004a40 t CEmptyMesh::Unlock(int, IndexDesc_t&)
-00004be0 t CEmptyMesh::Unlock(int, VertexDesc_t&)
-00006890 t CEmptyMesh::GetMesh()
-00004c10 t CEmptyMesh::LockMesh(int, int, MeshDesc_t&)
-00004d20 t CEmptyMesh::ModifyEnd(MeshDesc_t&)
-00004aa0 t CEmptyMesh::ModifyEnd(IndexDesc_t&)
-00006530 t CEmptyMesh::CEmptyMesh(bool)
-00006530 t CEmptyMesh::CEmptyMesh(bool)
-000062c0 t CEmptyMesh::~CEmptyMesh()
-00006220 t CEmptyMesh::~CEmptyMesh()
-00006220 t CEmptyMesh::~CEmptyMesh()
-0000b8e0 t CUtlMemory<char*, int>::Grow(int)
-0000b990 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
-0000ba20 t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
-0000ba80 t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.1]
-000076c0 t IIndexBuffer::~IIndexBuffer()
-00006750 t IIndexBuffer::~IIndexBuffer()
-00006750 t IIndexBuffer::~IIndexBuffer()
-0001e6d0 b InterfaceReg::s_pInterfaceRegs
-00007990 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
-00007990 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
-000076e0 t IVertexBuffer::~IVertexBuffer()
-00006740 t IVertexBuffer::~IVertexBuffer()
-00006740 t IVertexBuffer::~IVertexBuffer()
-00006020 t CShaderAPIEmpty::BeginFrame()
-000066d0 t CShaderAPIEmpty::FogColor3f(float, float, float)
-00005ac0 t CShaderAPIEmpty::LoadMatrix(float*)
-00005a90 t CShaderAPIEmpty::MatrixMode(MaterialMatrixMode_t)
-00005ad0 t CShaderAPIEmpty::MultMatrix(float*)
-00005b50 t CShaderAPIEmpty::PickMatrix(int, int, int, int)
-00005aa0 t CShaderAPIEmpty::PushMatrix()
-00005f50 t CShaderAPIEmpty::ReadPixels(int, int, int, int, unsigned char*, ImageFormat)
-00005f60 t CShaderAPIEmpty::ReadPixels(Rect_t*, Rect_t*, unsigned char*, ImageFormat, int)
-00005a80 t CShaderAPIEmpty::RenderPass(int, int)
-00007450 t CShaderAPIEmpty::ShaderLock()
-00005d80 t CShaderAPIEmpty::TexImage2D(int, int, ImageFormat, int, int, int, ImageFormat, bool, void*)
-000075d0 t CShaderAPIEmpty::TexLodBias(float)
-000075b0 t CShaderAPIEmpty::UnlockRect(int, int)
-00005d40 t CShaderAPIEmpty::BindTexture(Sampler_t, int)
-00007370 t CShaderAPIEmpty::EndPIXEvent()
-000066e0 t CShaderAPIEmpty::FogColor3fv(float const*)
-000066f0 t CShaderAPIEmpty::FogColor3ub(unsigned char, unsigned char, unsigned char)
-00005a60 t CShaderAPIEmpty::GetFlexMesh()
-000075c0 t CShaderAPIEmpty::TexLodClamp(int)
-00006610 t CShaderAPIEmpty::UseSnapshot(short)
-00006620 t CShaderAPIEmpty::BindLightmap(TextureStage_t)
-00005f00 t CShaderAPIEmpty::ClearBuffers(bool, bool, bool, int, int)
-00006700 t CShaderAPIEmpty::FogColor3ubv(unsigned char const*)
-00005b00 t CShaderAPIEmpty::LoadIdentity()
-00005b30 t CShaderAPIEmpty::PerspectiveX(double, double, double, double)
-00006710 t CShaderAPIEmpty::RecordString(char const*)
-00005c00 t CShaderAPIEmpty::SceneFogMode(MaterialFogMode_t)
-00006060 t CShaderAPIEmpty::SetClipPlane(int, float const*)
-00007380 t CShaderAPIEmpty::SetPIXMarker(unsigned long, char const*)
-00005c40 t CShaderAPIEmpty::SetViewports(int, ShaderViewport_t const*)
-00007460 t CShaderAPIEmpty::ShaderUnlock()
-000057f0 t CShaderAPIEmpty::TakeSnapshot()
-00005de0 t CShaderAPIEmpty::TexMagFilter(ShaderTexFilterMode_t)
-00005dd0 t CShaderAPIEmpty::TexMinFilter(ShaderTexFilterMode_t)
-00007360 t CShaderAPIEmpty::BeginPIXEvent(unsigned long, char const*)
-000066b0 t CShaderAPIEmpty::BindFBTexture(TextureStage_t, int)
-00005d50 t CShaderAPIEmpty::ClearColor3ub(unsigned char, unsigned char, unsigned char)
-00005d60 t CShaderAPIEmpty::ClearColor4ub(unsigned char, unsigned char, unsigned char, unsigned char)
-00005e10 t CShaderAPIEmpty::CreateTexture(int, int, int, ImageFormat, int, int, int, char const*, char const*)
-00005ed0 t CShaderAPIEmpty::DeleteTexture(int)
-00005f70 t CShaderAPIEmpty::FlushHardware()
-00005bd0 t CShaderAPIEmpty::FogMaxDensity(float)
-00005d70 t CShaderAPIEmpty::ModifyTexture(int)
-00005fb0 t CShaderAPIEmpty::SelectionMode(bool)
-00007580 t CShaderAPIEmpty::SetHDREnabled(bool)
-00005d90 t CShaderAPIEmpty::TexSubImage2D(int, int, int, int, int, int, int, ImageFormat, int, bool, void*)
-00005030 t CShaderAPIEmpty::ClearSnapshots()
-00005e20 t CShaderAPIEmpty::CreateTextures(int*, int, int, int, int, ImageFormat, int, int, int, char const*, char const*)
-00006090 t CShaderAPIEmpty::EnableFastClip(bool)
-00005a40 t CShaderAPIEmpty::GetDynamicMesh(IMaterial*, int, bool, IMesh*, IMesh*)
-000072e0 t CShaderAPIEmpty::GetMaxToRender(IMesh*, bool, int*, int*)
-00006d10 t CShaderAPIEmpty::LoadBoneMatrix(int, float const*)
-00007500 t CShaderAPIEmpty::PopDeformation()
-00007150 t CShaderAPIEmpty::SetFlexWeights(int, int, MorphWeight_t const*)
-00005980 t CShaderAPIEmpty::SetHeightClipZ(float)
-00006c40 t CShaderAPIEmpty::SetRasterState(ShaderRasterState_t const&)
-00005f40 t CShaderAPIEmpty::SetScissorRect(int, int, int, int, bool)
-000073b0 t CShaderAPIEmpty::SupportsFetch4()
-00005e00 t CShaderAPIEmpty::TexSetPriority(int)
-00007480 t CShaderAPIEmpty::BindIndexBuffer(IIndexBuffer*, int)
-00006c30 t CShaderAPIEmpty::BindPixelShader(PixelShaderHandle_t__*)
-00006c80 t CShaderAPIEmpty::ChangeVideoMode(ShaderDeviceInfo_t const&)
-00006070 t CShaderAPIEmpty::EnableClipPlane(int, bool)
-00005be0 t CShaderAPIEmpty::GetFogDistances(float*, float*, float*)
-00005c20 t CShaderAPIEmpty::GetSceneFogMode()
-00005ae0 t CShaderAPIEmpty::MultMatrixLocal(float*)
-00006c60 t CShaderAPIEmpty::OwnGPUResources(bool)
-000074f0 t CShaderAPIEmpty::PushDeformation(DeformationBase_t const*)
-00005fc0 t CShaderAPIEmpty::SelectionBuffer(unsigned int*, int)
-000059c0 t CShaderAPIEmpty::SetAmbientLight(float, float, float)
-000057e0 t CShaderAPIEmpty::SetDefaultState()
-00006d20 t CShaderAPIEmpty::SetRenderTarget(int, int)
-00005da0 t CShaderAPIEmpty::TexImageFromVTF(IVTFTexture*, int)
-00006630 t CShaderAPIEmpty::BindBumpLightmap(TextureStage_t)
-00007470 t CShaderAPIEmpty::BindVertexBuffer(int, IVertexBuffer*, int, int, int, unsigned long long, int)
-00006c10 t CShaderAPIEmpty::BindVertexShader(VertexShaderHandle_t__*)
-00007320 t CShaderAPIEmpty::CompareSnapshots(short, short)
-00005fa0 t CShaderAPIEmpty::EnableHWMorphing(bool)
-00005a50 t CShaderAPIEmpty::GetDynamicMeshEx(IMaterial*, unsigned long long, int, bool, IMesh*, IMesh*)
-00005c30 t CShaderAPIEmpty::GetPixelFogCombo()
-00005c10 t CShaderAPIEmpty::GetSceneFogColor(unsigned char*)
-00007190 t CShaderAPIEmpty::HandleDeviceLost()
-00006000 t CShaderAPIEmpty::PopSelectionName()
-00005f80 t CShaderAPIEmpty::ResetRenderState(bool)
-00005bf0 t CShaderAPIEmpty::SceneFogColor3ub(unsigned char, unsigned char, unsigned char)
-000061c0 t CShaderAPIEmpty::SetBumpEnvMatrix(TextureStage_t, float, float, float, float)
-00006080 t CShaderAPIEmpty::SetFastClipPlane(float const*)
-00006fd0 t CShaderAPIEmpty::SetPSNearAndFarZ(int)
-00007230 t CShaderAPIEmpty::SetStencilEnable(bool)
-00007350 t CShaderAPIEmpty::SupportsCSAAMode(int, int)
-00007340 t CShaderAPIEmpty::SupportsMSAAMode(int)
-00006680 t CShaderAPIEmpty::BindFlatNormalMap(TextureStage_t)
-00007140 t CShaderAPIEmpty::BindVertexTexture(VertexTextureSampler_t, int)
-00006050 t CShaderAPIEmpty::ForceHardwareSync()
-00007160 t CShaderAPIEmpty::GetRenderTargetEx(int)
-00005ef0 t CShaderAPIEmpty::IsTextureResident(int)
-00005b10 t CShaderAPIEmpty::LoadCameraToWorld()
-00005fe0 t CShaderAPIEmpty::LoadSelectionName(int)
-00005ff0 t CShaderAPIEmpty::PushSelectionName(int)
-00007430 t CShaderAPIEmpty::SetDisallowAccess(bool)
-00005990 t CShaderAPIEmpty::SetHeightClipMode(MaterialHeightClipMode_t)
-000059b0 t CShaderAPIEmpty::SetLightingOrigin(Vector)
-00005f90 t CShaderAPIEmpty::SetNumBoneWeights(int)
-00006d30 t CShaderAPIEmpty::SetRenderTargetEx(int, int, int)
-00006cb0 t CShaderAPIEmpty::UserClipTransform(VMatrix const&)
-00006c20 t CShaderAPIEmpty::BindGeometryShader(GeometryShaderHandle_t__*)
-00005ec0 t CShaderAPIEmpty::CreateDepthTexture(ImageFormat, int, int, char const*, bool)
-000072c0 t CShaderAPIEmpty::GetDXLevelDefaults(unsigned int&, unsigned int&)
-00007080 t CShaderAPIEmpty::SetFlashlightState(FlashlightState_t const&, VMatrix const&)
-00007290 t CShaderAPIEmpty::SetStencilTestMask(unsigned int)
-00007040 t CShaderAPIEmpty::BindStandardTexture(Sampler_t, StandardTextureId_t)
-00005fd0 t CShaderAPIEmpty::ClearSelectionNames()
-00007030 t CShaderAPIEmpty::GetBoundMorphFormat()
-00006ba0 t CShaderAPIEmpty::GetDebugTextureList()
-00005950 t CShaderAPIEmpty::OverrideDepthEnable(bool, bool)
-000059d0 t CShaderAPIEmpty::SetAmbientLightCube(Vector4D*)
-000053a0 t CShaderAPIEmpty::SetAnisotropicLevel(int)
-00005c70 t CShaderAPIEmpty::SetPixelShaderIndex(int)
-00005a00 t CShaderAPIEmpty::SetSkinningMatrices()
-000072a0 t CShaderAPIEmpty::SetStencilWriteMask(unsigned int)
-000075e0 t CShaderAPIEmpty::CopyTextureToTexture(int, int)
-00006190 t CShaderAPIEmpty::DestroyVertexBuffers(bool)
-00006b80 t CShaderAPIEmpty::EnableGetAllTextures(bool)
-00007540 t CShaderAPIEmpty::ExecuteCommandBuffer(unsigned char*)
-00005940 t CShaderAPIEmpty::ForceDepthFuncEquals(bool)
-00007650 t CShaderAPIEmpty::GetNullTextureFormat()
-00006bc0 t CShaderAPIEmpty::GetTextureMemoryUsed(IDebugTextureInfo::TextureMemoryType)
-00007090 t CShaderAPIEmpty::SetFlashlightStateEx(FlashlightState_t const&, VMatrix const&, ITexture*)
-00005c60 t CShaderAPIEmpty::SetVertexShaderIndex(int)
-00007330 t CShaderAPIEmpty::DisableAllLocalLights()
-00006c90 t CShaderAPIEmpty::DXSupportLevelChanged()
-00007620 t CShaderAPIEmpty::EnableAlphaToCoverage()
-000061a0 t CShaderAPIEmpty::EvictManagedResources()
-00005a10 t CShaderAPIEmpty::GetLightmapDimensions(int*, int*)
-00007310 t CShaderAPIEmpty::GetMaxIndicesToRender()
-00005b40 t CShaderAPIEmpty::PerspectiveOffCenterX(double, double, double, double, double, double, double, double)
-00006f40 t CShaderAPIEmpty::AcquireThreadOwnership()
-00006640 t CShaderAPIEmpty::BindFullbrightLightmap(TextureStage_t)
-00007630 t CShaderAPIEmpty::DisableAlphaToCoverage()
-00006b60 t CShaderAPIEmpty::EnableDebugTextureList(bool)
-00007300 t CShaderAPIEmpty::GetMaxVerticesToRender(IMaterial*)
-00006010 t CShaderAPIEmpty::GetVertexModifyBuilder()
-00006c50 t CShaderAPIEmpty::MarkUnusedVertexFields(unsigned int, int, bool*)
-00006f50 t CShaderAPIEmpty::ReleaseThreadOwnership()
-00005cb0 t CShaderAPIEmpty::SetPixelShaderConstant(int, float const*, int, bool)
-00005f10 t CShaderAPIEmpty::ClearBuffersObeyStencil(bool, bool)
-00006de0 t CShaderAPIEmpty::DisableTextureTransform(TextureStage_t)
-00007440 t CShaderAPIEmpty::EnableShaderShaderMutex(bool)
-00005a30 t CShaderAPIEmpty::FlushBufferedPrimitives()
-00006180 t CShaderAPIEmpty::GetCurrentDynamicVBSize()
-00006b20 t CShaderAPIEmpty::IsDebugTextureListFresh(int)
-00006ff0 t CShaderAPIEmpty::SetPixelShaderFogParams(int)
-00007240 t CShaderAPIEmpty::SetStencilFailOperation(StencilOperation_t)
-00007260 t CShaderAPIEmpty::SetStencilPassOperation(StencilOperation_t)
-00005c80 t CShaderAPIEmpty::SetVertexShaderConstant(int, float const*, int, bool)
-00006690 t CShaderAPIEmpty::BindNormalizationCubeMap(TextureStage_t)
-00006fc0 t CShaderAPIEmpty::EnableBuffer2FramesAhead(bool)
-00006f20 t CShaderAPIEmpty::EndOcclusionQueryDrawing(ShaderAPIOcclusionQuery_t__*)
-00005960 t CShaderAPIEmpty::OverrideAlphaWriteEnable(bool, bool)
-00005970 t CShaderAPIEmpty::OverrideColorWriteEnable(bool, bool)
-00006b40 t CShaderAPIEmpty::SetDebugTextureRendering(bool)
-000071d0 t CShaderAPIEmpty::SetIntRenderingParameter(int, int)
-00007530 t CShaderAPIEmpty::SetStandardTextureHandle(StandardTextureId_t, int)
-00007280 t CShaderAPIEmpty::SetStencilReferenceValue(int)
-00007250 t CShaderAPIEmpty::SetStencilZFailOperation(StencilOperation_t)
-00007050 t CShaderAPIEmpty::BindStandardVertexTexture(VertexTextureSampler_t, StandardTextureId_t)
-00005f20 t CShaderAPIEmpty::ClearBuffersObeyStencilEx(bool, bool, bool)
-00006ee0 t CShaderAPIEmpty::CommitPixelShaderLighting(int)
-00006ce0 t CShaderAPIEmpty::CopyRenderTargetToTexture(int)
-00006bf0 t CShaderAPIEmpty::GetCurrentColorCorrection(ShaderColorCorrectionInfo_t*)
-00007420 t CShaderAPIEmpty::SetShadowDepthBiasFactors(float, float)
-00007270 t CShaderAPIEmpty::SetStencilCompareFunction(StencilComparisonFunction_t)
-00007170 t CShaderAPIEmpty::SetToneMappingScaleLinear(Vector const&)
-00006f10 t CShaderAPIEmpty::BeginOcclusionQueryDrawing(ShaderAPIOcclusionQuery_t__*)
-00006ef0 t CShaderAPIEmpty::CreateOcclusionQueryObject()
-000071c0 t CShaderAPIEmpty::SetFloatRenderingParameter(int, float)
-000071b0 t CShaderAPIEmpty::SetFullScreenTextureHandle(int)
-000072b0 t CShaderAPIEmpty::ClearStencilBufferRectangle(int, int, int, int, int)
-00006cf0 t CShaderAPIEmpty::CopyRenderTargetToTextureEx(int, int, Rect_t*, Rect_t*)
-00006d00 t CShaderAPIEmpty::CopyTextureToRenderTargetEx(int, int, Rect_t*, Rect_t*)
-00006f00 t CShaderAPIEmpty::DestroyOcclusionQueryObject(ShaderAPIOcclusionQuery_t__*)
-00007640 t CShaderAPIEmpty::GetShadowDepthTextureFormat()
-00006d50 t CShaderAPIEmpty::OverrideStreamOffsetSupport(bool, bool)
-000071e0 t CShaderAPIEmpty::SetVectorRenderingParameter(int, Vector const&)
-000073a0 t CShaderAPIEmpty::SupportsShadowDepthTextures()
-00006cd0 t CShaderAPIEmpty::GetAmbientLightCubeLuminance()
-00007060 t CShaderAPIEmpty::GetStandardTextureDimensions(int*, int*, StandardTextureId_t)
-000061b0 t CShaderAPIEmpty::SetTextureTransformDimension(TextureStage_t, int, bool)
-00005cc0 t CShaderAPIEmpty::SetBooleanPixelShaderConstant(int, int const*, int, bool)
-00005cd0 t CShaderAPIEmpty::SetIntegerPixelShaderConstant(int, int const*, int, bool)
-000066a0 t CShaderAPIEmpty::BindSignedNormalizationCubeMap(TextureStage_t)
-00005c90 t CShaderAPIEmpty::SetBooleanVertexShaderConstant(int, int const*, int, bool)
-00005ca0 t CShaderAPIEmpty::SetIntegerVertexShaderConstant(int, int const*, int, bool)
-00006ca0 t CShaderAPIEmpty::EnableUserClipTransformOverride(bool)
-00007590 t CShaderAPIEmpty::CopyRenderTargetToScratchTexture(int, int, Rect_t*, Rect_t*)
-00005ce0 t CShaderAPIEmpty::InvalidateDelayedShaderConstants()
-000070b0 t CShaderAPIEmpty::PurgeUnusedVertexAndPixelShaders()
-00006df0 t CShaderAPIEmpty::SetStandardVertexShaderConstants(float)
-000071a0 t CShaderAPIEmpty::EnableLinearColorSpaceFrameBuffer(bool)
-00005f30 t CShaderAPIEmpty::PerformFullScreenStencilOperation()
-000070a0 t CShaderAPIEmpty::ClearVertexAndPixelShaderRefCounts()
-00005d10 t CShaderAPIEmpty::SetLinearToGammaConversionTextures(int, int)
-00006f30 t CShaderAPIEmpty::OcclusionQuery_GetNumPixelsRendered(ShaderAPIOcclusionQuery_t__*, bool)
-00006cc0 t CShaderAPIEmpty::SetPixelShaderStateAmbientLightCube(int, bool)
-000059f0 t CShaderAPIEmpty::SetVertexShaderStateAmbientLightCube()
-00006fe0 t CShaderAPIEmpty::SetDepthFeatheringPixelShaderConstant(int, float)
-00005920 t CShaderAPIEmpty::Bind(IMaterial*)
-00007490 t CShaderAPIEmpty::Draw(MaterialPrimitiveType_t, int, int)
-00007610 t CShaderAPIEmpty::Knob(char*, float*)
-00005b20 t CShaderAPIEmpty::Ortho(double, double, double, double, double, double)
-00005b80 t CShaderAPIEmpty::Scale(float, float, float)
-00005bb0 t CShaderAPIEmpty::FogEnd(float)
-00007600 t CShaderAPIEmpty::Printf(char const*, ...)
-00005b60 t CShaderAPIEmpty::Rotate(float, float, float, float)
-00005890 t CShaderAPIEmpty::Color3f(float, float, float)
-000058b0 t CShaderAPIEmpty::Color4f(float, float, float, float)
-000066c0 t CShaderAPIEmpty::FogMode(MaterialFogMode_t)
-00005b90 t CShaderAPIEmpty::ScaleXY(float, float)
-00005bc0 t CShaderAPIEmpty::SetFogZ(float)
-00006c70 t CShaderAPIEmpty::SetMode(void*, int, ShaderDeviceInfo_t const&)
-00005db0 t CShaderAPIEmpty::TexLock(int, int, int, int, int, int, CPixelWriter&)
-00005df0 t CShaderAPIEmpty::TexWrap(ShaderTexCoordComponent_t, ShaderTexWrapMode_t)
-00006670 t CShaderAPIEmpty::BindGrey(TextureStage_t)
-000058a0 t CShaderAPIEmpty::Color3fv(float const*)
-000058d0 t CShaderAPIEmpty::Color3ub(unsigned char, unsigned char, unsigned char)
-000058c0 t CShaderAPIEmpty::Color4fv(float const*)
-000058f0 t CShaderAPIEmpty::Color4ub(unsigned char, unsigned char, unsigned char, unsigned char)
-00005930 t CShaderAPIEmpty::CullMode(MaterialCullMode_t)
-00006030 t CShaderAPIEmpty::EndFrame()
-00005ba0 t CShaderAPIEmpty::FogStart(float)
-000075a0 t CShaderAPIEmpty::LockRect(void**, int*, int, int, int, int, int, int, bool, bool)
-000075f0 t CShaderAPIEmpty::PrintfVA(char*, char*)
-000059a0 t CShaderAPIEmpty::SetLight(int, LightDesc_t const&)
-00005a70 t CShaderAPIEmpty::BeginPass(short)
-00006660 t CShaderAPIEmpty::BindBlack(TextureStage_t)
-00006650 t CShaderAPIEmpty::BindWhite(TextureStage_t)
-000058e0 t CShaderAPIEmpty::Color3ubv(unsigned char const*)
-00005900 t CShaderAPIEmpty::Color4ubv(unsigned char const*)
-00005af0 t CShaderAPIEmpty::GetMatrix(MaterialMatrixMode_t, float*)
-00005ee0 t CShaderAPIEmpty::IsTexture(int)
-00005ab0 t CShaderAPIEmpty::PopMatrix()
-00005910 t CShaderAPIEmpty::ShadeMode(ShaderShadeMode_t)
-000061d0 t CShaderAPIEmpty::SyncToken(char const*)
-00005dc0 t CShaderAPIEmpty::TexUnlock()
-00005b70 t CShaderAPIEmpty::Translate(float, float, float)
-000065b0 t CShaderAPIEmpty::CShaderAPIEmpty()
-000065b0 t CShaderAPIEmpty::CShaderAPIEmpty()
-00006290 t CShaderAPIEmpty::~CShaderAPIEmpty()
-00006260 t CShaderAPIEmpty::~CShaderAPIEmpty()
-00006260 t CShaderAPIEmpty::~CShaderAPIEmpty()
-00007e50 t CDllDemandLoader::GetFactory()
-00007ea0 t CDllDemandLoader::Unload()
-00007e30 t CDllDemandLoader::CDllDemandLoader(char const*)
-00007e30 t CDllDemandLoader::CDllDemandLoader(char const*)
-00007ef0 t CDllDemandLoader::~CDllDemandLoader()
-00007ed0 t CDllDemandLoader::~CDllDemandLoader()
-00007ed0 t CDllDemandLoader::~CDllDemandLoader()
-000048f0 t CShaderDeviceEmpty::RemoveView(void*)
-00006a20 t CShaderDeviceEmpty::CompileShader(char const*, unsigned int, char const*)
-00004930 t CShaderDeviceEmpty::CreateStaticMesh(unsigned long long, char const*, IMaterial*)
-00004910 t CShaderDeviceEmpty::ReleaseResources()
-00004990 t CShaderDeviceEmpty::CreateIndexBuffer(ShaderBufferType_t, MaterialIndexFormat_t, int, char const*)
-00006a70 t CShaderDeviceEmpty::CreatePixelShader(IShaderBuffer*)
-00004940 t CShaderDeviceEmpty::DestroyStaticMesh(IMesh*)
-00006ac0 t CShaderDeviceEmpty::HandleThreadEvent(unsigned int)
-00004950 t CShaderDeviceEmpty::CreateVertexBuffer(ShaderBufferType_t, unsigned long long, int, char const*)
-00006a30 t CShaderDeviceEmpty::CreateVertexShader(IShaderBuffer*)
-000049c0 t CShaderDeviceEmpty::DestroyIndexBuffer(IIndexBuffer*)
-00006a80 t CShaderDeviceEmpty::DestroyPixelShader(PixelShaderHandle_t__*)
-00004920 t CShaderDeviceEmpty::ReacquireResources()
-00004980 t CShaderDeviceEmpty::DestroyVertexBuffer(IVertexBuffer*)
-00006a40 t CShaderDeviceEmpty::DestroyVertexShader(VertexShaderHandle_t__*)
-00006a50 t CShaderDeviceEmpty::CreateGeometryShader(IShaderBuffer*)
-00006ae0 t CShaderDeviceEmpty::GetDisplayDeviceName()
-00006a90 t CShaderDeviceEmpty::SetHardwareGammaRamp(float, float, float, float, bool)
-00006a60 t CShaderDeviceEmpty::DestroyGeometryShader(GeometryShaderHandle_t__*)
-000049e0 t CShaderDeviceEmpty::GetDynamicIndexBuffer(MaterialIndexFormat_t, bool)
-000049d0 t CShaderDeviceEmpty::GetDynamicVertexBuffer(int, unsigned long long, bool)
-00006aa0 t CShaderDeviceEmpty::EnableNonInteractiveMode(MaterialNonInteractiveMode_t, ShaderNonInteractiveInfo_t*)
-00006ad0 t CShaderDeviceEmpty::DoStartupShaderPreloading()
-00006ab0 t CShaderDeviceEmpty::RefreshFrontBufferNonInteractive()
-000048e0 t CShaderDeviceEmpty::AddView(void*)
-00006a10 t CShaderDeviceEmpty::Present()
-00004900 t CShaderDeviceEmpty::SetView(void*)
-00007700 t CShaderDeviceEmpty::~CShaderDeviceEmpty()
-00007700 t CShaderDeviceEmpty::~CShaderDeviceEmpty()
-00006910 t CShaderShadowEmpty::StencilFunc(ShaderStencilFunc_t)
-00006960 t CShaderShadowEmpty::StencilMask(int)
-00004f80 t CShaderShadowEmpty::EnableTexGen(TextureStage_t, bool)
-00004ec0 t CShaderShadowEmpty::EnableCulling(bool)
-00006900 t CShaderShadowEmpty::EnableStencil(bool)
-00004f40 t CShaderShadowEmpty::EnableTexture(Sampler_t, bool)
-00006930 t CShaderShadowEmpty::StencilFailOp(ShaderStencilOp_t)
-00006920 t CShaderShadowEmpty::StencilPassOp(ShaderStencilOp_t)
-00004e30 t CShaderShadowEmpty::EnableBlending(bool)
-00004f00 t CShaderShadowEmpty::EnableLighting(bool)
-00004f10 t CShaderShadowEmpty::EnableSpecular(bool)
-000068b0 t CShaderShadowEmpty::EnableSRGBRead(Sampler_t, bool)
-000068f0 t CShaderShadowEmpty::SetMorphFormat(unsigned int)
-00004fd0 t CShaderShadowEmpty::SetPixelShader(char const*, int)
-00004e50 t CShaderShadowEmpty::EnableAlphaPipe(bool)
-00004e90 t CShaderShadowEmpty::EnableAlphaTest(bool)
-00004df0 t CShaderShadowEmpty::EnableDepthTest(bool)
-000068a0 t CShaderShadowEmpty::EnableSRGBWrite(bool)
-00004f30 t CShaderShadowEmpty::OverbrightValue(TextureStage_t, float)
-00004db0 t CShaderShadowEmpty::SetDefaultState()
-00004fa0 t CShaderShadowEmpty::SetVertexShader(char const*, int)
-00004e00 t CShaderShadowEmpty::EnablePolyOffset(PolygonOffsetMode_t)
-00006950 t CShaderShadowEmpty::StencilReference(int)
-00006970 t CShaderShadowEmpty::StencilWriteMask(int)
-00004e20 t CShaderShadowEmpty::EnableAlphaWrites(bool)
-00004e10 t CShaderShadowEmpty::EnableColorWrites(bool)
-00004de0 t CShaderShadowEmpty::EnableDepthWrites(bool)
-00004e70 t CShaderShadowEmpty::EnableVertexAlpha(bool)
-00004f20 t CShaderShadowEmpty::EnableVertexBlend(bool)
-00004e80 t CShaderShadowEmpty::EnableTextureAlpha(TextureStage_t, bool)
-00006940 t CShaderShadowEmpty::StencilDepthFailOp(ShaderStencilOp_t)
-00004f60 t CShaderShadowEmpty::CustomTextureStages(int)
-00004e60 t CShaderShadowEmpty::EnableConstantAlpha(bool)
-00004ee0 t CShaderShadowEmpty::EnableConstantColor(bool)
-000069b0 t CShaderShadowEmpty::BlendOpSeparateAlpha(ShaderBlendOp_t)
-00006980 t CShaderShadowEmpty::ExecuteCommandBuffer(unsigned char*)
-00004ed0 t CShaderShadowEmpty::EnableAlphaToCoverage(bool)
-00004f50 t CShaderShadowEmpty::EnableCustomPixelPipe(bool)
-00004ff0 t CShaderShadowEmpty::BlendFuncSeparateAlpha(ShaderBlendFactor_t, ShaderBlendFactor_t)
-00004f70 t CShaderShadowEmpty::CustomTextureOperation(TextureStage_t, ShaderTexChannel_t, ShaderTexOp_t, ShaderTexArg_t, ShaderTexArg_t)
-00006990 t CShaderShadowEmpty::SetShadowDepthFiltering(Sampler_t)
-000068e0 t CShaderShadowEmpty::SetDiffuseMaterialSource(ShaderMaterialSource_t)
-00004ef0 t CShaderShadowEmpty::VertexShaderVertexFormat(unsigned int, int, int*, int)
-000068d0 t CShaderShadowEmpty::DisableFogGammaCorrection(bool)
-00004fc0 t CShaderShadowEmpty::EnableBlendingSeparateAlpha(bool)
-00004f90 t CShaderShadowEmpty::TexGen(TextureStage_t, ShaderTexGenParam_t)
-000069a0 t CShaderShadowEmpty::BlendOp(ShaderBlendOp_t)
-000068c0 t CShaderShadowEmpty::FogMode(ShaderFogMode_t)
-00004eb0 t CShaderShadowEmpty::PolyMode(ShaderPolyModeFace_t, ShaderPolyMode_t)
-00004ea0 t CShaderShadowEmpty::AlphaFunc(ShaderAlphaFunc_t, float)
-00004e40 t CShaderShadowEmpty::BlendFunc(ShaderBlendFactor_t, ShaderBlendFactor_t)
-00004dd0 t CShaderShadowEmpty::DepthFunc(ShaderDepthFunc_t)
-00005000 t CShaderShadowEmpty::DrawFlags(unsigned int)
-00006590 t CShaderShadowEmpty::CShaderShadowEmpty()
-00006590 t CShaderShadowEmpty::CShaderShadowEmpty()
-000061e0 t CShaderShadowEmpty::~CShaderShadowEmpty()
-00004da0 t CShaderShadowEmpty::~CShaderShadowEmpty()
-00004da0 t CShaderShadowEmpty::~CShaderShadowEmpty()
-00004800 t CShaderDeviceMgrEmpty::Disconnect()
-00004830 t CShaderDeviceMgrEmpty::SetAdapter(int, int)
-00006400 t CShaderDeviceMgrEmpty::QueryInterface(char const*)
-00006af0 t CShaderDeviceMgrEmpty::AddModeChangeCallback(void (*)())
-00006b00 t CShaderDeviceMgrEmpty::RemoveModeChangeCallback(void (*)())
-00004860 t CShaderDeviceMgrEmpty::GetRecommendedConfigurationInfo(int, int, KeyValues*)
-00004810 t CShaderDeviceMgrEmpty::Init()
-000047d0 t CShaderDeviceMgrEmpty::Connect(void* (*)(char const*, int*))
-00004840 t CShaderDeviceMgrEmpty::SetMode(void*, int, ShaderDeviceInfo_t const&)
-00004820 t CShaderDeviceMgrEmpty::Shutdown()
-000076a0 t IMesh::~IMesh()
-00007670 t IMesh::~IMesh()
-00007670 t IMesh::~IMesh()
-         U operator new[](unsigned int)@@GLIBCXX_3.4
-00006830 t CEmptyMesh::IndexCount() const
-00006800 t CEmptyMesh::IndexFormat() const
-00004d30 t CEmptyMesh::VertexCount() const
-00006880 t CEmptyMesh::GetVertexFormat() const
-000067e0 t CEmptyMesh::GetRoomRemaining() const
-00006770 t CEmptyMesh::IsDynamic() const
-00006730 t IShaderAPI::SupportsNormalMapCompression() const
-00006e30 t CShaderAPIEmpty::GetHDRType() const
-000074e0 t CShaderAPIEmpty::IsDX10Card() const
-00006200 t CShaderAPIEmpty::CurrentTime() const
-000070d0 t CShaderAPIEmpty::IsAAEnabled() const
-00006e10 t CShaderAPIEmpty::SupportsHDR() const
-000059e0 t CShaderAPIEmpty::GetMaxLights() const
-00005c50 t CShaderAPIEmpty::GetViewports(ShaderViewport_t*, int) const
-00007010 t CShaderAPIEmpty::InEditorMode() const
-000055a0 t CShaderAPIEmpty::MaxNumLights() const
-00005090 t CShaderAPIEmpty::MaxViewports() const
-00006db0 t CShaderAPIEmpty::NeedsAAClamp() const
-00005750 t CShaderAPIEmpty::SupportsSRGB() const
-00005770 t CShaderAPIEmpty::FakeSRGBWrite() const
-00007560 t CShaderAPIEmpty::GetHDREnabled() const
-00005840 t CShaderAPIEmpty::IsAlphaTested(short) const
-00005830 t CShaderAPIEmpty::IsTranslucent(short) const
-00006f90 t CShaderAPIEmpty::SupportsFetch4() const
-000064c0 t CShaderAPIEmpty::GetSamplerCount() const
-00007130 t CShaderAPIEmpty::MaxTextureDepth() const
-000053c0 t CShaderAPIEmpty::MaxTextureWidth() const
-000074d0 t CShaderAPIEmpty::SupportsHDRMode(HDRType_t) const
-00006d90 t CShaderAPIEmpty::UseFastClipping() const
-000060d0 t CShaderAPIEmpty::GetDX9LightState(LightState_t*) const
-00006d70 t CShaderAPIEmpty::GetShaderDLLName() const
-00005070 t CShaderAPIEmpty::HasStencilBuffer() const
-00007000 t CShaderAPIEmpty::InFlashlightMode() const
-00005650 t CShaderAPIEmpty::MaxBlendMatrices() const
-000053e0 t CShaderAPIEmpty::MaxTextureHeight() const
-00005480 t CShaderAPIEmpty::SupportsCubeMaps() const
-000060f0 t CShaderAPIEmpty::GetCurrentFogType() const
-00005440 t CShaderAPIEmpty::GetDXSupportLevel() const
-00005710 t CShaderAPIEmpty::MaxUserClipPlanes() const
-000050d0 t CShaderAPIEmpty::StencilBufferBits() const
-00005420 t CShaderAPIEmpty::TextureMemorySize() const
-00007020 t CShaderAPIEmpty::ComputeMorphFormat(int, short*) const
-00005880 t CShaderAPIEmpty::ComputeVertexUsage(int, short*) const
-000060a0 t CShaderAPIEmpty::GetCurrentNumBones() const
-00007850 t CShaderAPIEmpty::GetFlashlightState(VMatrix&) const
-00006e50 t CShaderAPIEmpty::GetHardwareHDRType() const
-00005050 t CShaderAPIEmpty::HasDestAlphaBuffer() const
-00005460 t CShaderAPIEmpty::SupportsOverbright() const
-00005020 t CShaderAPIEmpty::CanDownloadTextures() const
-00005870 t CShaderAPIEmpty::ComputeVertexFormat(int, short*) const
-000050b0 t CShaderAPIEmpty::GetShadowFilterMode() const
-00006170 t CShaderAPIEmpty::HasProjectedBumpEnv() const
-00005850 t CShaderAPIEmpty::IsDepthWriteEnabled(short) const
-000060b0 t CShaderAPIEmpty::IsHWMorphingEnabled() const
-00006f70 t CShaderAPIEmpty::SupportsBorderColor() const
-00005790 t CShaderAPIEmpty::CanDoSRGBReadFromRTs() const
-000060c0 t CShaderAPIEmpty::GetCurrentLightCombo() const
-00007780 t CShaderAPIEmpty::GetFlashlightStateEx(VMatrix&, ITexture**) const
-000055e0 t CShaderAPIEmpty::GetMaxDXSupportLevel() const
-00005540 t CShaderAPIEmpty::GetTextureStageCount() const
-00006dd0 t CShaderAPIEmpty::MaxHWMorphBatchCount() const
-00006e70 t CShaderAPIEmpty::NeedsATICentroidHack() const
-00006ed0 t CShaderAPIEmpty::SupportsStreamOffset() const
-000070f0 t CShaderAPIEmpty::GetVertexTextureCount() const
-00007410 t CShaderAPIEmpty::HasFastVertexTextures() const
-00005110 t CShaderAPIEmpty::HasSetDeviceGammaRamp() const
-000056a0 t CShaderAPIEmpty::MaxBlendMatrixIndices() const
-00005400 t CShaderAPIEmpty::MaxTextureAspectRatio() const
-00006130 t CShaderAPIEmpty::PreferDynamicTextures() const
-00006150 t CShaderAPIEmpty::PreferReducedFillrate() const
-000055c0 t CShaderAPIEmpty::SupportsSpheremapping() const
-00007180 t CShaderAPIEmpty::GetLightMapScaleFactor() const
-00006bd0 t CShaderAPIEmpty::GetBackBufferDimensions(int&, int&) const
-00005390 t CShaderAPIEmpty::MaximumAnisotropicLevel() const
-00005580 t CShaderAPIEmpty::NumPixelShaderConstants() const
-000054d0 t CShaderAPIEmpty::SupportsNonPow2Textures() const
-000052d0 t CShaderAPIEmpty::SupportsShaderModel_3_0() const
-000073f0 t CShaderAPIEmpty::UsesSRGBCorrectBlending() const
-00007390 t CShaderAPIEmpty::ComputeVertexDescription(unsigned char*, unsigned long long, MeshDesc_t&) const
-000050f0 t CShaderAPIEmpty::GetFrameBufferColorDepth() const
-00007200 t CShaderAPIEmpty::GetIntRenderingParameter(int) const
-00007510 t CShaderAPIEmpty::GetNumActiveDeformations() const
-00005560 t CShaderAPIEmpty::NumVertexShaderConstants() const
-00005600 t CShaderAPIEmpty::SupportsHardwareLighting() const
-000051c0 t CShaderAPIEmpty::SupportsPixelShaders_1_4() const
-00005210 t CShaderAPIEmpty::SupportsPixelShaders_2_0() const
-00005260 t CShaderAPIEmpty::SupportsPixelShaders_2_b() const
-00005d20 t CShaderAPIEmpty::GetNearestSupportedFormat(ImageFormat, bool) const
-00007730 t CShaderAPIEmpty::GetToneMappingScaleLinear() const
-000073d0 t CShaderAPIEmpty::NeedsShaderSRGBConversion() const
-00006110 t CShaderAPIEmpty::ReadPixelsFromFrontBuffer() const
-000054f0 t CShaderAPIEmpty::SupportsMipmappedCubemaps() const
-00005320 t CShaderAPIEmpty::SupportsStaticControlFlow() const
-00005340 t CShaderAPIEmpty::SupportsVertexShaders_2_0() const
-00005860 t CShaderAPIEmpty::UsesVertexAndPixelShaders(short) const
-00006fb0 t CShaderAPIEmpty::CanStretchRectFromTextures() const
-000071f0 t CShaderAPIEmpty::GetFloatRenderingParameter(int) const
-000057d0 t CShaderAPIEmpty::GetHWSpecificShaderDLLName() const
-000074a0 t CShaderAPIEmpty::GetVertexBufferCompression() const
-00005130 t CShaderAPIEmpty::SupportsCompressedTextures() const
-00005150 t CShaderAPIEmpty::SupportsCompressedVertices() const
-000057b0 t CShaderAPIEmpty::SupportsGLMixedSizeTargets() const
-00007210 t CShaderAPIEmpty::GetVectorRenderingParameter(int) const
-00006040 t CShaderAPIEmpty::GetWorldSpaceCameraPosition(float*) const
-000074b0 t CShaderAPIEmpty::ShouldWriteDepthToDestAlpha() const
-00006e90 t CShaderAPIEmpty::SupportsColorOnSecondStream() const
-00007110 t CShaderAPIEmpty::GetMaxVertexTextureDimension() const
-00005d30 t CShaderAPIEmpty::GetNearestRenderTargetFormat(ImageFormat) const
-000056f0 t CShaderAPIEmpty::MaxVertexShaderBlendMatrices() const
-00005170 t CShaderAPIEmpty::SupportsVertexAndPixelShaders() const
-00005cf0 t CShaderAPIEmpty::GammaToLinear_HardwareSpecific(float) const
-00005d00 t CShaderAPIEmpty::LinearToGamma_HardwareSpecific(float) const
-00005730 t CShaderAPIEmpty::SpecifiesFogColorInLinearSpace() const
-00007520 t CShaderAPIEmpty::GetPackedDeformationInformation(int, float*, int, int, int*) const
-000065f0 t CShaderAPIEmpty::NumBooleanVertexShaderConstants() const
-00006600 t CShaderAPIEmpty::NumIntegerVertexShaderConstants() const
-000052b0 t CShaderAPIEmpty::ActuallySupportsPixelShaders_2_b() const
-00006eb0 t CShaderAPIEmpty::SupportsStaticPlusDynamicLighting() const
-00005010 t CShaderAPIEmpty::DoRenderTargetsNeedSeparateDepthBuffer() const
-00006460 t CShaderAPIEmpty::GetLight(int) const
-00006a00 t CShaderDeviceEmpty::IsAAEnabled() const
-000048a0 t CShaderDeviceEmpty::GetWindowSize(int&, int&) const
-000062e0 t CShaderDeviceEmpty::SpewDriverInfo() const
-000069d0 t CShaderDeviceEmpty::IsUsingGraphics() const
-000069c0 t CShaderDeviceEmpty::GetCurrentAdapter() const
-000069f0 t CShaderDeviceEmpty::StencilBufferBits() const
-000069e0 t CShaderDeviceEmpty::GetBackBufferFormat() const
-000048c0 t CShaderDeviceEmpty::GetBackBufferDimensions(int&, int&) const
-00004880 t CShaderDeviceMgrEmpty::GetModeInfo(ShaderDisplayMode_t*, int, int) const
-00004870 t CShaderDeviceMgrEmpty::GetModeCount(int) const
-000062f0 t CShaderDeviceMgrEmpty::GetAdapterInfo(int, MaterialAdapterInfo_t&) const
-00004850 t CShaderDeviceMgrEmpty::GetAdapterCount() const
-00004890 t CShaderDeviceMgrEmpty::GetCurrentModeInfo(ShaderDisplayMode_t*, int) const
-00006720 t IMaterialSystemHardwareConfig::SupportsNormalMapCompression() const
-00004a50 t non-virtual thunk to CEmptyMesh::ModifyBegin(bool, int, int, IndexDesc_t&)
-00004ad0 t non-virtual thunk to CEmptyMesh::ValidateData(int, IndexDesc_t const&)
-000067b0 t non-virtual thunk to CEmptyMesh::EndCastBuffer()
-00006790 t non-virtual thunk to CEmptyMesh::BeginCastBuffer(MaterialIndexFormat_t)
-000049f0 t non-virtual thunk to CEmptyMesh::Lock(int, bool, IndexDesc_t&)
-00004ab0 t non-virtual thunk to CEmptyMesh::Spew(int, IndexDesc_t const&)
-00004a30 t non-virtual thunk to CEmptyMesh::Unlock(int, IndexDesc_t&)
-00004a90 t non-virtual thunk to CEmptyMesh::ModifyEnd(IndexDesc_t&)
-000062b0 t non-virtual thunk to CEmptyMesh::~CEmptyMesh()
-00006210 t non-virtual thunk to CEmptyMesh::~CEmptyMesh()
-00007570 t non-virtual thunk to CShaderAPIEmpty::SetHDREnabled(bool)
-00006d40 t non-virtual thunk to CShaderAPIEmpty::OverrideStreamOffsetSupport(bool, bool)
-00007690 t non-virtual thunk to IMesh::~IMesh()
-00007660 t non-virtual thunk to IMesh::~IMesh()
-00006820 t non-virtual thunk to CEmptyMesh::IndexCount() const
-000067f0 t non-virtual thunk to CEmptyMesh::IndexFormat() const
-000067d0 t non-virtual thunk to CEmptyMesh::GetRoomRemaining() const
-00006760 t non-virtual thunk to CEmptyMesh::IsDynamic() const
-00006e20 t non-virtual thunk to CShaderAPIEmpty::GetHDRType() const
-000070c0 t non-virtual thunk to CShaderAPIEmpty::IsAAEnabled() const
-00006e00 t non-virtual thunk to CShaderAPIEmpty::SupportsHDR() const
-00005590 t non-virtual thunk to CShaderAPIEmpty::MaxNumLights() const
-00005080 t non-virtual thunk to CShaderAPIEmpty::MaxViewports() const
-00006da0 t non-virtual thunk to CShaderAPIEmpty::NeedsAAClamp() const
-00005740 t non-virtual thunk to CShaderAPIEmpty::SupportsSRGB() const
-00005760 t non-virtual thunk to CShaderAPIEmpty::FakeSRGBWrite() const
-00007550 t non-virtual thunk to CShaderAPIEmpty::GetHDREnabled() const
-00006f80 t non-virtual thunk to CShaderAPIEmpty::SupportsFetch4() const
-000064b0 t non-virtual thunk to CShaderAPIEmpty::GetSamplerCount() const
-00007120 t non-virtual thunk to CShaderAPIEmpty::MaxTextureDepth() const
-000053b0 t non-virtual thunk to CShaderAPIEmpty::MaxTextureWidth() const
-000074c0 t non-virtual thunk to CShaderAPIEmpty::SupportsHDRMode(HDRType_t) const
-00006d80 t non-virtual thunk to CShaderAPIEmpty::UseFastClipping() const
-00006d60 t non-virtual thunk to CShaderAPIEmpty::GetShaderDLLName() const
-00005060 t non-virtual thunk to CShaderAPIEmpty::HasStencilBuffer() const
-00005640 t non-virtual thunk to CShaderAPIEmpty::MaxBlendMatrices() const
-000053d0 t non-virtual thunk to CShaderAPIEmpty::MaxTextureHeight() const
-00005470 t non-virtual thunk to CShaderAPIEmpty::SupportsCubeMaps() const
-00005430 t non-virtual thunk to CShaderAPIEmpty::GetDXSupportLevel() const
-00005700 t non-virtual thunk to CShaderAPIEmpty::MaxUserClipPlanes() const
-000050c0 t non-virtual thunk to CShaderAPIEmpty::StencilBufferBits() const
-00005410 t non-virtual thunk to CShaderAPIEmpty::TextureMemorySize() const
-00006e40 t non-virtual thunk to CShaderAPIEmpty::GetHardwareHDRType() const
-00005040 t non-virtual thunk to CShaderAPIEmpty::HasDestAlphaBuffer() const
-00005450 t non-virtual thunk to CShaderAPIEmpty::SupportsOverbright() const
-000050a0 t non-virtual thunk to CShaderAPIEmpty::GetShadowFilterMode() const
-00006160 t non-virtual thunk to CShaderAPIEmpty::HasProjectedBumpEnv() const
-00006f60 t non-virtual thunk to CShaderAPIEmpty::SupportsBorderColor() const
-00005780 t non-virtual thunk to CShaderAPIEmpty::CanDoSRGBReadFromRTs() const
-000055d0 t non-virtual thunk to CShaderAPIEmpty::GetMaxDXSupportLevel() const
-00005530 t non-virtual thunk to CShaderAPIEmpty::GetTextureStageCount() const
-00006dc0 t non-virtual thunk to CShaderAPIEmpty::MaxHWMorphBatchCount() const
-00006e60 t non-virtual thunk to CShaderAPIEmpty::NeedsATICentroidHack() const
-00006ec0 t non-virtual thunk to CShaderAPIEmpty::SupportsStreamOffset() const
-000070e0 t non-virtual thunk to CShaderAPIEmpty::GetVertexTextureCount() const
-00007400 t non-virtual thunk to CShaderAPIEmpty::HasFastVertexTextures() const
-00005100 t non-virtual thunk to CShaderAPIEmpty::HasSetDeviceGammaRamp() const
-00005690 t non-virtual thunk to CShaderAPIEmpty::MaxBlendMatrixIndices() const
-000053f0 t non-virtual thunk to CShaderAPIEmpty::MaxTextureAspectRatio() const
-00006120 t non-virtual thunk to CShaderAPIEmpty::PreferDynamicTextures() const
-00006140 t non-virtual thunk to CShaderAPIEmpty::PreferReducedFillrate() const
-000055b0 t non-virtual thunk to CShaderAPIEmpty::SupportsSpheremapping() const
-00005380 t non-virtual thunk to CShaderAPIEmpty::MaximumAnisotropicLevel() const
-00005570 t non-virtual thunk to CShaderAPIEmpty::NumPixelShaderConstants() const
-000054c0 t non-virtual thunk to CShaderAPIEmpty::SupportsNonPow2Textures() const
-000052c0 t non-virtual thunk to CShaderAPIEmpty::SupportsShaderModel_3_0() const
-000073e0 t non-virtual thunk to CShaderAPIEmpty::UsesSRGBCorrectBlending() const
-000050e0 t non-virtual thunk to CShaderAPIEmpty::GetFrameBufferColorDepth() const
-00005550 t non-virtual thunk to CShaderAPIEmpty::NumVertexShaderConstants() const
-000055f0 t non-virtual thunk to CShaderAPIEmpty::SupportsHardwareLighting() const
-000051b0 t non-virtual thunk to CShaderAPIEmpty::SupportsPixelShaders_1_4() const
-00005200 t non-virtual thunk to CShaderAPIEmpty::SupportsPixelShaders_2_0() const
-00005250 t non-virtual thunk to CShaderAPIEmpty::SupportsPixelShaders_2_b() const
-000073c0 t non-virtual thunk to CShaderAPIEmpty::NeedsShaderSRGBConversion() const
-00006100 t non-virtual thunk to CShaderAPIEmpty::ReadPixelsFromFrontBuffer() const
-000054e0 t non-virtual thunk to CShaderAPIEmpty::SupportsMipmappedCubemaps() const
-00005310 t non-virtual thunk to CShaderAPIEmpty::SupportsStaticControlFlow() const
-00005330 t non-virtual thunk to CShaderAPIEmpty::SupportsVertexShaders_2_0() const
-00006fa0 t non-virtual thunk to CShaderAPIEmpty::CanStretchRectFromTextures() const
-000057c0 t non-virtual thunk to CShaderAPIEmpty::GetHWSpecificShaderDLLName() const
-00005120 t non-virtual thunk to CShaderAPIEmpty::SupportsCompressedTextures() const
-00005140 t non-virtual thunk to CShaderAPIEmpty::SupportsCompressedVertices() const
-000057a0 t non-virtual thunk to CShaderAPIEmpty::SupportsGLMixedSizeTargets() const
-00006e80 t non-virtual thunk to CShaderAPIEmpty::SupportsColorOnSecondStream() const
-00007100 t non-virtual thunk to CShaderAPIEmpty::GetMaxVertexTextureDimension() const
-000056e0 t non-virtual thunk to CShaderAPIEmpty::MaxVertexShaderBlendMatrices() const
-00005160 t non-virtual thunk to CShaderAPIEmpty::SupportsVertexAndPixelShaders() const
-00005720 t non-virtual thunk to CShaderAPIEmpty::SpecifiesFogColorInLinearSpace() const
-000052a0 t non-virtual thunk to CShaderAPIEmpty::ActuallySupportsPixelShaders_2_b() const
-00006ea0 t non-virtual thunk to CShaderAPIEmpty::SupportsStaticPlusDynamicLighting() const
-00006b90 t non-virtual thunk to CShaderAPIEmpty::GetDebugTextureList()
-00006b70 t non-virtual thunk to CShaderAPIEmpty::EnableGetAllTextures(bool)
-00006bb0 t non-virtual thunk to CShaderAPIEmpty::GetTextureMemoryUsed(IDebugTextureInfo::TextureMemoryType)
-00006b50 t non-virtual thunk to CShaderAPIEmpty::EnableDebugTextureList(bool)
-00006b10 t non-virtual thunk to CShaderAPIEmpty::IsDebugTextureListFresh(int)
-00006b30 t non-virtual thunk to CShaderAPIEmpty::SetDebugTextureRendering(bool)
-0001294c r typeinfo for CEmptyMesh
-00013ef8 r typeinfo for IAppSystem
-00013e7c r typeinfo for IShaderAPI
-00013ea4 r typeinfo for IIndexBuffer
-00013e68 r typeinfo for IShaderDevice
-00013e60 r typeinfo for IShaderShadow
-00013e9c r typeinfo for IVertexBuffer
-000129e0 r typeinfo for CShaderAPIEmpty
-0001403c r typeinfo for CDllDemandLoader
-00013e70 r typeinfo for IShaderDeviceMgr
-00013e94 r typeinfo for IDebugTextureInfo
-00013eac r typeinfo for IShaderDynamicAPI
-00012994 r typeinfo for CShaderDeviceEmpty
-00012970 r typeinfo for CShaderShadowEmpty
-000129b8 r typeinfo for CShaderDeviceMgrEmpty
-00013e88 r typeinfo for IHardwareConfigInternal
-00013eb4 r typeinfo for IMaterialSystemHardwareConfig
-00013e40 r typeinfo for IMesh
-0001293c r typeinfo name for CEmptyMesh
-00013fa0 r typeinfo name for IAppSystem
-00013f00 r typeinfo name for IShaderAPI
-00013f4b r typeinfo name for IIndexBuffer
-00013ed3 r typeinfo name for IShaderDevice
-00013ec3 r typeinfo name for IShaderShadow
-00013f3b r typeinfo name for IVertexBuffer
-000129c4 r typeinfo name for CShaderAPIEmpty
-00014027 r typeinfo name for CDllDemandLoader
-00013ee3 r typeinfo name for IShaderDeviceMgr
-00013f27 r typeinfo name for IDebugTextureInfo
-00013f5a r typeinfo name for IShaderDynamicAPI
-0001297c r typeinfo name for CShaderDeviceEmpty
-00012958 r typeinfo name for CShaderShadowEmpty
-000129a0 r typeinfo name for CShaderDeviceMgrEmpty
-00013f0d r typeinfo name for IHardwareConfigInternal
-00013f80 r typeinfo name for IMaterialSystemHardwareConfig
-00013ebc r typeinfo name for IMesh
-00012b20 r vtable for CEmptyMesh
-00013780 r vtable for IShaderAPI
-00013400 r vtable for IIndexBuffer
-00013500 r vtable for IShaderShadow
-000133c0 r vtable for IVertexBuffer
-00012d00 r vtable for CShaderAPIEmpty
-00014048 r vtable for CDllDemandLoader
-00013e20 r vtable for IDebugTextureInfo
-000135e0 r vtable for IShaderDynamicAPI
-00012a80 r vtable for CShaderDeviceEmpty
-00012c00 r vtable for CShaderShadowEmpty
-00012a20 r vtable for CShaderDeviceMgrEmpty
-00013ce0 r vtable for IHardwareConfigInternal
-00013ba0 r vtable for IMaterialSystemHardwareConfig
-00013440 r vtable for IMesh
-         U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
-0001e700 b V_pretifymem(float, int, bool)::output
-0001e6e0 b V_pretifymem(float, int, bool)::current
-0001e820 b V_pretifynum(long long)::output
-0001e800 b V_pretifynum(long long)::current
-0001e48c b CEmptyMesh::Lock(int, bool, IndexDesc_t&)::s_BogusIndex
-0001e640 b CShaderAPIEmpty::GetFlashlightState(VMatrix&) const::blah
-0001e580 b CShaderAPIEmpty::GetFlashlightStateEx(VMatrix&, ITexture**) const::blah
-0001e618 b CShaderAPIEmpty::GetToneMappingScaleLinear() const::dummy
-0001e4a0 b CShaderAPIEmpty::GetLight(int) const::blah
+U abort@@GLIBC_2.0
+t add_fdes
+d adds.7496
+t base_from_cb_data
+t base_from_object
+A __bss_start
+U chdir@@GLIBC_2.0
+t classify_object_over_fdes
+b completed.5793
+T CreateInterface
+d __CTOR_END__
+d __CTOR_LIST__
+U __cxa_atexit@@GLIBC_2.1.3
+w __cxa_finalize@@GLIBC_2.1.3
+U __cxa_guard_acquire@@CXXABI_1.3
+U __cxa_guard_release@@CXXABI_1.3
+U __cxa_pure_virtual@@CXXABI_1.3
+t __deregister_frame
+t __deregister_frame_info
+t __deregister_frame_info_bases
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+t __do_global_ctors_aux
+t __do_global_dtors_aux
+d __dso_handle
+d __DTOR_END__
+b dtor_idx.5795
+d __DTOR_LIST__
+b dwarf_reg_size_table
+a _DYNAMIC
+A _edata
+A _end
+U Error
+t execute_cfa_program
+t execute_stack_op
+t fde_mixed_encoding_compare
+t fde_single_encoding_compare
+t fde_unencoded_compare
+T _fini
+t frame_downheap
+t frame_dummy
+r __FRAME_END__
+b frame_hdr_cache
+b frame_hdr_cache_head
+t frame_heapsort
+t __frame_state_for
+U free@@GLIBC_2.0
+t get_cie_encoding
+U getcwd@@GLIBC_2.0
+t get_fde_encoding
+a _GLOBAL_OFFSET_TABLE_
+t _GLOBAL__sub_I_g_pShaderUtil
+t _GLOBAL__sub_I__Z9_V_memsetPKciPvii
+w __gmon_start__
+b g_pShaderUtil
+U __gxx_personality_v0@@CXXABI_1.3
+t __i686.get_pc_thunk.bx
+t __i686.get_pc_thunk.cx
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
+T _init
+t init_dwarf_reg_size_table
+U isspace@@GLIBC_2.0
+U isupper@@GLIBC_2.0
+U iswspace@@GLIBC_2.0
+d __JCR_END__
+d __JCR_LIST__
+w _Jv_RegisterClasses
+t .L17
+t .L19
+t .L20
+t .L214
+t .L215
+t .L216
+t .L217
+t .L218
+t .L219
+t .L220
+t .L221
+t .L222
+t .L223
+t .L224
+t .L225
+t .L226
+t .L227
+t .L228
+t .L229
+t .L23
+t .L230
+t .L24
+t .L244
+t .L25
+t .L26
+t .L271
+t .L272
+t .L273
+t .L274
+t .L275
+t .L43
+t .L45
+t .L46
+t .L47
+t .L47
+t .L48
+t .L48
+t .L49
+t .L50
+t .L51
+t .L51
+t .L52
+t .L52
+t .L53
+t .L53
+t .L54
+t .L54
+t .L55
+t .L56
+t .L57
+t .L58
+t .L59
+t .L60
+t .L61
+t .L62
+t .L63
+t .L64
+t .L65
+t .L66
+t .L67
+t .L68
+t .L69
+t .L70
+t .L71
+t linear_search_fdes
+U malloc@@GLIBC_2.0
+b marker.7234
+U mbstowcs@@GLIBC_2.0
+U memcpy@@GLIBC_2.0
+U memmove@@GLIBC_2.0
+U memset@@GLIBC_2.0
+U Msg
+b object_mutex
+b once_regsizes.7669
+U Plat_FloatTime
+U Plat_IsInDebugSession
+U Plat_localtime
+U pow@@GLIBC_2.0
+U printf@@GLIBC_2.0
+w pthread_cancel@@GLIBC_2.0
+w pthread_mutex_lock@@GLIBC_2.0
+w pthread_mutex_unlock@@GLIBC_2.0
+w pthread_once@@GLIBC_2.0
+t qsort_s
+t read_encoded_value
+t read_encoded_value_with_base
+t read_sleb128
+t read_sleb128
+t read_uleb128
+t read_uleb128
+U realloc@@GLIBC_2.0
+t __register_frame
+t __register_frame_info
+t __register_frame_info_bases
+t __register_frame_info_table
+t __register_frame_info_table_bases
+t __register_frame_table
+t search_object
+b seen_objects
+t set_fast_math
+t size_of_encoded_value
+U strcasecmp@@GLIBC_2.0
+U strchr@@GLIBC_2.0
+U strcmp@@GLIBC_2.0
+U strcpy@@GLIBC_2.0
+U strftime@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+U strncasecmp@@GLIBC_2.0
+U strncat@@GLIBC_2.0
+U strncpy@@GLIBC_2.0
+U strstr@@GLIBC_2.0
+b subs.7497
+b terminator.7340
+U time@@GLIBC_2.0
+U tolower@@GLIBC_2.0
+U toupper@@GLIBC_2.0
+U towlower@@GLIBC_2.0
+U towupper@@GLIBC_2.0
+t __udivdi3
+b unseen_objects
+t _Unwind_Backtrace
+t _Unwind_DebugHook
+t _Unwind_DeleteException
+t _Unwind_FindEnclosingFunction
+t _Unwind_Find_FDE
+t _Unwind_ForcedUnwind
+t _Unwind_ForcedUnwind_Phase2
+t _Unwind_GetCFA
+t _Unwind_GetDataRelBase
+t _Unwind_GetGR
+t _Unwind_GetIP
+t _Unwind_GetIPInfo
+t _Unwind_GetLanguageSpecificData
+t _Unwind_GetRegionStart
+t _Unwind_GetTextRelBase
+t _Unwind_IteratePhdrCallback
+t _Unwind_RaiseException
+t _Unwind_RaiseException_Phase2
+t _Unwind_Resume
+t _Unwind_Resume_or_Rethrow
+t _Unwind_SetGR
+t _Unwind_SetIP
+t _Unwind_SetSpColumn
+t uw_frame_state_for
+t uw_init_context_1
+t uw_install_context_1
+t uw_update_context
+t uw_update_context_1
+U vsnprintf@@GLIBC_2.0
+U vswprintf@@GLIBC_2.2
+U Warning
+U wcslen@@GLIBC_2.0
+U wcsncat@@GLIBC_2.0
+U wcsncpy@@GLIBC_2.0
+U wcstombs@@GLIBC_2.0
+t V_FileBase(char const*, char*, int)
+t _V_memmove(char const*, int, void*, void const*, int)
+t V_snprintf(char*, int, char const*, ...)
+t V_strlower(char*)
+t V_strnicmp(char const*, char const*, int)
+t V_strnistr(char const*, char const*, int)
+t _V_strrchr(char const*, int, char const*, char)
+t V_StrRight(char const*, int, char*, int)
+t V_StrSlice(char const*, int, int, char*, int)
+t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+t V_strtowcs(char const*, int, wchar_t*, int)
+t V_wcstostr(wchar_t const*, int, char*, int)
+t AllocString(char const*, int)
+t Q_URLDecode(char*, int, char const*, int)
+t Q_URLEncode(char*, int, char const*, int)
+t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
+t V_vsnprintf(char*, int, char const*, char*)
+t _V_wcslower(char const*, int, wchar_t*)
+t V_FixSlashes(char*, char)
+t V_pretifymem(float, int, bool)
+t V_pretifynum(long long)
+t V_vsnwprintf(wchar_t*, int, wchar_t const*, char*)
+t iHexCharToInt(char)
+t PATHSEPARATOR(char)
+t Q_UTF16ToUTF8(unsigned short const*, char*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF8(wchar_t const*, char*, int, EStringConvertErrorPolicy)
+t Q_UTF8ToUTF16(char const*, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF8ToUTF32(char const*, wchar_t*, int, EStringConvertErrorPolicy)
+t V_AppendSlash(char*, int)
+t V_binarytohex(unsigned char const*, int, char*, int)
+t V_GetFileName(char const*)
+t V_hextobinary(char const*, int, unsigned char*, int)
+t V_SplitString(char const*, char const*, CUtlVector<char*, CUtlMemory<char*, int> >&)
+t _V_UCS2ToUTF8(unsigned short const*, char*, int)
+t _V_UTF8ToUCS2(char const*, int, unsigned short*, int)
+t cIntToHexDigit(int)
+t Q_IsMeanSpaceW(wchar_t)
+t Q_URLDecodeRaw(char*, int, char const*, int)
+t Q_URLEncodeRaw(char*, int, char const*, int)
+t Q_UTF16ToUTF32(unsigned short const*, wchar_t*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF16(wchar_t const*, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF32(wchar_t const*, wchar_t*, int, EStringConvertErrorPolicy)
+t Sys_GetFactory(CSysModule*)
+t Sys_GetFactory(char const*)
+t Sys_LoadModule(char const*, Sys_Flags)
+t V_SetExtension(char*, char const*, int)
+t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
+t V_StripLastDir(char*, int)
+t V_vsnprintfRet(char*, int, char const*, char*, bool*)
+t GetModuleHandle(char const*)
+t Q_UChar32ToUTF8(wchar_t, char*)
+t Q_UnicodeLength(char const*)
+t Q_UnicodeLength(unsigned short const*)
+t Q_UnicodeLength(wchar_t const*)
+t Q_UnicodeRepair(char*, EStringConvertErrorPolicy)
+t Q_UnicodeRepair(unsigned short*, EStringConvertErrorPolicy)
+t Q_UnicodeRepair(wchar_t*, EStringConvertErrorPolicy)
+t Q_UTF8ToUChar32(char const*, wchar_t&, bool&)
+t Sys_LoadLibrary(char const*, Sys_Flags)
+t V_FixupPathName(char*, unsigned int, char const*)
+t V_StripFilename(char*)
+t Q_IsValidUChar32(wchar_t)
+t Q_UChar32ToUTF16(wchar_t, unsigned short*)
+t Q_UnicodeAdvance(char*, int)
+t Q_UnicodeAdvance(unsigned short*, int)
+t Q_UnicodeAdvance(wchar_t*, int)
+t Q_UTF16ToUChar32(unsigned short const*, wchar_t&, bool&)
+t Sys_UnloadModule(CSysModule*)
+t V_IsAbsolutePath(char const*)
+t V_StripExtension(char const*, char*, int)
+t _V_UCS2ToUnicode(unsigned short const*, wchar_t*, int)
+t _V_UnicodeToUCS2(wchar_t const*, int, char*, int)
+t Q_UnicodeValidate(char const*)
+t Q_UnicodeValidate(unsigned short const*)
+t Q_UnicodeValidate(wchar_t const*)
+t StringAfterPrefix(char const*, char const*)
+t Sys_LoadInterface(char const*, char const*, CSysModule**, void**)
+t V_ComposeFileName(char const*, char const*, char*, int)
+t V_ExtractFilePath(char const*, char*, int)
+t Q_UChar32ToUTF8Len(wchar_t)
+t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
+t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
+t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF8CharsToUTF32(char const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+t Sys_GetFactoryThis()
+t V_DefaultExtension(char*, char const*, int)
+t V_FixDoubleSlashes(char*)
+t V_GetFileExtension(char const*)
+t V_MakeAbsolutePath(char*, int, char const*, char const*)
+t V_MakeRelativePath(char const*, char const*, char*, int)
+t V_RemoveDotSlashes(char*, char, bool)
+t Q_UChar32ToUTF16Len(wchar_t)
+t Q_URLDecodeInternal(char*, int, char const*, int, bool)
+t Q_URLEncodeInternal(char*, int, char const*, int, bool)
+t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
+t V_StripTrailingSlash(char*)
+t Sys_IsDebuggerPresent()
+t V_GetCurrentDirectory(char*, int)
+t V_SetCurrentDirectory(char const*)
+t V_UnqualifiedFileName(char const*)
+t BGetLocalFormattedDate(long, char*, int)
+t BGetLocalFormattedTime(long, char*, int)
+t V_ExtractFileExtension(char const*, char*, int)
+t V_normalizeFloatString(char*)
+t CreateInterfaceInternal(char const*, int*)
+t Q_RemoveAllEvilCharacters(char*)
+t Sys_RunningWithDebugModules()
+t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
+t StringAfterPrefixCaseSensitive(char const*, char const*)
+t V_AddBackSlashesToSpecialChars(char const*)
+t Q_StripPrecedingAndTrailingWhitespace(char*)
+t Q_StripPrecedingAndTrailingWhitespaceW(wchar_t*)
+t Q_AggressiveStripPrecedingAndTrailingWhitespace(char*)
+t Q_AggressiveStripPrecedingAndTrailingWhitespaceW(wchar_t*)
+t V_atof(char const*)
+t V_atoi(char const*)
+t V_atoi64(char const*)
+t V_nibble(char)
+t V_strupr(char*)
+t V_atoui64(char const*)
+t _V_memcmp(char const*, int, void const*, void const*, int)
+t _V_memcpy(char const*, int, void*, void const*, int)
+t _V_memset(char const*, int, void*, int, int)
+t V_qsort_s(void*, unsigned int, unsigned int, int (*)(void*, void const*, void const*), void*)
+t _V_strcmp(char const*, int, char const*, char const*)
+t _V_strcpy(char const*, int, char*, char const*)
+t V_stricmp(char const*, char const*)
+t V_stristr(char*, char const*)
+t V_stristr(char const*, char const*)
+t V_StrLeft(char const*, int, char*, int)
+t _V_strlen(char const*, int, char const*)
+t V_strncat(char*, char const*, unsigned int, int)
+t V_strnchr(char const*, char, int)
+t V_strncmp(char const*, char const*, int)
+t V_strncpy(char*, char const*, int)
+t V_strnlwr(char*, unsigned int)
+t _V_strstr(char const*, int, char const*, char const*)
+t _V_wcscmp(char const*, int, wchar_t const*, wchar_t const*)
+t _V_wcslen(char const*, int, wchar_t const*)
+t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
+t V_wcsncpy(wchar_t*, wchar_t const*, int)
+t _V_wcsupr(char const*, int, wchar_t*)
+U operator delete[](void*)@@GLIBCXX_3.4
+U operator delete(void*)@@GLIBCXX_3.4
+b guard variable for CShaderAPIEmpty::GetFlashlightState(VMatrix&) const::blah
+b guard variable for CShaderAPIEmpty::GetFlashlightStateEx(VMatrix&, ITexture**) const::blah
+b guard variable for CShaderAPIEmpty::GetToneMappingScaleLinear() const::dummy
+b guard variable for CShaderAPIEmpty::GetLight(int) const::blah
+t FastToLower(char)
+b vec2_origin
+b vec2_origin
+b vec4_origin
+b vec2_invalid
+b vec2_invalid
+b vec4_invalid
+b g_ShaderShadow
+d s_BackSlashMap
+b g_ShaderAPIEmpty
+b s_ShaderDeviceEmpty
+t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
+t ShaderInterfaceFactory(char const*, int*)
+d s_ShaderDeviceMgrEmpty
+b __g_CreateCShaderAPIEmptyIShaderAPI_reg
+t __CreateCShaderAPIEmptyIShaderAPI_interface()
+b __g_CreateCShaderDeviceEmptyIShaderDevice_reg
+b __g_CreateCShaderShadowEmptyIShaderShadow_reg
+b __g_CreateCShaderAPIEmptyIDebugTextureInfo_reg
+t __CreateCShaderDeviceEmptyIShaderDevice_interface()
+t __CreateCShaderShadowEmptyIShaderShadow_interface()
+t __CreateCShaderAPIEmptyIDebugTextureInfo_interface()
+b __g_CreateCShaderDeviceMgrEmptyIShaderDeviceMgr_reg
+t __CreateCShaderDeviceMgrEmptyIShaderDeviceMgr_interface()
+b __g_CreateCShaderAPIEmptyIMaterialSystemHardwareConfig_reg
+t __CreateCShaderAPIEmptyIMaterialSystemHardwareConfig_interface()
+t CEmptyMesh::UnlockMesh(int, int, MeshDesc_t&)
+t CEmptyMesh::GetMaterial()
+t CEmptyMesh::MarkAsDrawn()
+t CEmptyMesh::ModifyBegin(bool, int, int, IndexDesc_t&)
+t CEmptyMesh::ModifyBegin(int, int, int, int, MeshDesc_t&)
+t CEmptyMesh::SetFlexMesh(IMesh*, int)
+t CEmptyMesh::SetColorMesh(IMesh*, int)
+t CEmptyMesh::ValidateData(int, int, MeshDesc_t const&)
+t CEmptyMesh::ValidateData(int, IndexDesc_t const&)
+t CEmptyMesh::ValidateData(int, VertexDesc_t const&)
+t CEmptyMesh::EndCastBuffer()
+t CEmptyMesh::ModifyBeginEx(bool, int, int, int, int, MeshDesc_t&)
+t CEmptyMesh::BeginCastBuffer(MaterialIndexFormat_t)
+t CEmptyMesh::BeginCastBuffer(unsigned long long)
+t CEmptyMesh::DisableFlexMesh()
+t CEmptyMesh::SetPrimitiveType(MaterialPrimitiveType_t)
+t CEmptyMesh::ComputeMemoryUsed()
+t CEmptyMesh::CopyToMeshBuilder(int, int, int, int, int, CMeshBuilder&)
+t CEmptyMesh::Draw(int, int)
+t CEmptyMesh::Draw(CPrimList*, int)
+t CEmptyMesh::Lock(int, bool, IndexDesc_t&)
+t CEmptyMesh::Lock(int, bool, VertexDesc_t&)
+t CEmptyMesh::Spew(int, int, MeshDesc_t const&)
+t CEmptyMesh::Spew(int, IndexDesc_t const&)
+t CEmptyMesh::Spew(int, VertexDesc_t const&)
+t CEmptyMesh::Unlock(int, IndexDesc_t&)
+t CEmptyMesh::Unlock(int, VertexDesc_t&)
+t CEmptyMesh::GetMesh()
+t CEmptyMesh::LockMesh(int, int, MeshDesc_t&)
+t CEmptyMesh::ModifyEnd(MeshDesc_t&)
+t CEmptyMesh::ModifyEnd(IndexDesc_t&)
+t CEmptyMesh::CEmptyMesh(bool)
+t CEmptyMesh::CEmptyMesh(bool)
+t CEmptyMesh::~CEmptyMesh()
+t CEmptyMesh::~CEmptyMesh()
+t CEmptyMesh::~CEmptyMesh()
+t CUtlMemory<char*, int>::Grow(int)
+t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
+t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
+t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.1]
+t IIndexBuffer::~IIndexBuffer()
+t IIndexBuffer::~IIndexBuffer()
+t IIndexBuffer::~IIndexBuffer()
+b InterfaceReg::s_pInterfaceRegs
+t InterfaceReg::InterfaceReg(void* (*)(), char const*)
+t InterfaceReg::InterfaceReg(void* (*)(), char const*)
+t IVertexBuffer::~IVertexBuffer()
+t IVertexBuffer::~IVertexBuffer()
+t IVertexBuffer::~IVertexBuffer()
+t CShaderAPIEmpty::BeginFrame()
+t CShaderAPIEmpty::FogColor3f(float, float, float)
+t CShaderAPIEmpty::LoadMatrix(float*)
+t CShaderAPIEmpty::MatrixMode(MaterialMatrixMode_t)
+t CShaderAPIEmpty::MultMatrix(float*)
+t CShaderAPIEmpty::PickMatrix(int, int, int, int)
+t CShaderAPIEmpty::PushMatrix()
+t CShaderAPIEmpty::ReadPixels(int, int, int, int, unsigned char*, ImageFormat)
+t CShaderAPIEmpty::ReadPixels(Rect_t*, Rect_t*, unsigned char*, ImageFormat, int)
+t CShaderAPIEmpty::RenderPass(int, int)
+t CShaderAPIEmpty::ShaderLock()
+t CShaderAPIEmpty::TexImage2D(int, int, ImageFormat, int, int, int, ImageFormat, bool, void*)
+t CShaderAPIEmpty::TexLodBias(float)
+t CShaderAPIEmpty::UnlockRect(int, int)
+t CShaderAPIEmpty::BindTexture(Sampler_t, int)
+t CShaderAPIEmpty::EndPIXEvent()
+t CShaderAPIEmpty::FogColor3fv(float const*)
+t CShaderAPIEmpty::FogColor3ub(unsigned char, unsigned char, unsigned char)
+t CShaderAPIEmpty::GetFlexMesh()
+t CShaderAPIEmpty::TexLodClamp(int)
+t CShaderAPIEmpty::UseSnapshot(short)
+t CShaderAPIEmpty::BindLightmap(TextureStage_t)
+t CShaderAPIEmpty::ClearBuffers(bool, bool, bool, int, int)
+t CShaderAPIEmpty::FogColor3ubv(unsigned char const*)
+t CShaderAPIEmpty::LoadIdentity()
+t CShaderAPIEmpty::PerspectiveX(double, double, double, double)
+t CShaderAPIEmpty::RecordString(char const*)
+t CShaderAPIEmpty::SceneFogMode(MaterialFogMode_t)
+t CShaderAPIEmpty::SetClipPlane(int, float const*)
+t CShaderAPIEmpty::SetPIXMarker(unsigned long, char const*)
+t CShaderAPIEmpty::SetViewports(int, ShaderViewport_t const*)
+t CShaderAPIEmpty::ShaderUnlock()
+t CShaderAPIEmpty::TakeSnapshot()
+t CShaderAPIEmpty::TexMagFilter(ShaderTexFilterMode_t)
+t CShaderAPIEmpty::TexMinFilter(ShaderTexFilterMode_t)
+t CShaderAPIEmpty::BeginPIXEvent(unsigned long, char const*)
+t CShaderAPIEmpty::BindFBTexture(TextureStage_t, int)
+t CShaderAPIEmpty::ClearColor3ub(unsigned char, unsigned char, unsigned char)
+t CShaderAPIEmpty::ClearColor4ub(unsigned char, unsigned char, unsigned char, unsigned char)
+t CShaderAPIEmpty::CreateTexture(int, int, int, ImageFormat, int, int, int, char const*, char const*)
+t CShaderAPIEmpty::DeleteTexture(int)
+t CShaderAPIEmpty::FlushHardware()
+t CShaderAPIEmpty::FogMaxDensity(float)
+t CShaderAPIEmpty::ModifyTexture(int)
+t CShaderAPIEmpty::SelectionMode(bool)
+t CShaderAPIEmpty::SetHDREnabled(bool)
+t CShaderAPIEmpty::TexSubImage2D(int, int, int, int, int, int, int, ImageFormat, int, bool, void*)
+t CShaderAPIEmpty::ClearSnapshots()
+t CShaderAPIEmpty::CreateTextures(int*, int, int, int, int, ImageFormat, int, int, int, char const*, char const*)
+t CShaderAPIEmpty::EnableFastClip(bool)
+t CShaderAPIEmpty::GetDynamicMesh(IMaterial*, int, bool, IMesh*, IMesh*)
+t CShaderAPIEmpty::GetMaxToRender(IMesh*, bool, int*, int*)
+t CShaderAPIEmpty::LoadBoneMatrix(int, float const*)
+t CShaderAPIEmpty::PopDeformation()
+t CShaderAPIEmpty::SetFlexWeights(int, int, MorphWeight_t const*)
+t CShaderAPIEmpty::SetHeightClipZ(float)
+t CShaderAPIEmpty::SetRasterState(ShaderRasterState_t const&)
+t CShaderAPIEmpty::SetScissorRect(int, int, int, int, bool)
+t CShaderAPIEmpty::SupportsFetch4()
+t CShaderAPIEmpty::TexSetPriority(int)
+t CShaderAPIEmpty::BindIndexBuffer(IIndexBuffer*, int)
+t CShaderAPIEmpty::BindPixelShader(PixelShaderHandle_t__*)
+t CShaderAPIEmpty::ChangeVideoMode(ShaderDeviceInfo_t const&)
+t CShaderAPIEmpty::EnableClipPlane(int, bool)
+t CShaderAPIEmpty::GetFogDistances(float*, float*, float*)
+t CShaderAPIEmpty::GetSceneFogMode()
+t CShaderAPIEmpty::MultMatrixLocal(float*)
+t CShaderAPIEmpty::OwnGPUResources(bool)
+t CShaderAPIEmpty::PushDeformation(DeformationBase_t const*)
+t CShaderAPIEmpty::SelectionBuffer(unsigned int*, int)
+t CShaderAPIEmpty::SetAmbientLight(float, float, float)
+t CShaderAPIEmpty::SetDefaultState()
+t CShaderAPIEmpty::SetRenderTarget(int, int)
+t CShaderAPIEmpty::TexImageFromVTF(IVTFTexture*, int)
+t CShaderAPIEmpty::BindBumpLightmap(TextureStage_t)
+t CShaderAPIEmpty::BindVertexBuffer(int, IVertexBuffer*, int, int, int, unsigned long long, int)
+t CShaderAPIEmpty::BindVertexShader(VertexShaderHandle_t__*)
+t CShaderAPIEmpty::CompareSnapshots(short, short)
+t CShaderAPIEmpty::EnableHWMorphing(bool)
+t CShaderAPIEmpty::GetDynamicMeshEx(IMaterial*, unsigned long long, int, bool, IMesh*, IMesh*)
+t CShaderAPIEmpty::GetPixelFogCombo()
+t CShaderAPIEmpty::GetSceneFogColor(unsigned char*)
+t CShaderAPIEmpty::HandleDeviceLost()
+t CShaderAPIEmpty::PopSelectionName()
+t CShaderAPIEmpty::ResetRenderState(bool)
+t CShaderAPIEmpty::SceneFogColor3ub(unsigned char, unsigned char, unsigned char)
+t CShaderAPIEmpty::SetBumpEnvMatrix(TextureStage_t, float, float, float, float)
+t CShaderAPIEmpty::SetFastClipPlane(float const*)
+t CShaderAPIEmpty::SetPSNearAndFarZ(int)
+t CShaderAPIEmpty::SetStencilEnable(bool)
+t CShaderAPIEmpty::SupportsCSAAMode(int, int)
+t CShaderAPIEmpty::SupportsMSAAMode(int)
+t CShaderAPIEmpty::BindFlatNormalMap(TextureStage_t)
+t CShaderAPIEmpty::BindVertexTexture(VertexTextureSampler_t, int)
+t CShaderAPIEmpty::ForceHardwareSync()
+t CShaderAPIEmpty::GetRenderTargetEx(int)
+t CShaderAPIEmpty::IsTextureResident(int)
+t CShaderAPIEmpty::LoadCameraToWorld()
+t CShaderAPIEmpty::LoadSelectionName(int)
+t CShaderAPIEmpty::PushSelectionName(int)
+t CShaderAPIEmpty::SetDisallowAccess(bool)
+t CShaderAPIEmpty::SetHeightClipMode(MaterialHeightClipMode_t)
+t CShaderAPIEmpty::SetLightingOrigin(Vector)
+t CShaderAPIEmpty::SetNumBoneWeights(int)
+t CShaderAPIEmpty::SetRenderTargetEx(int, int, int)
+t CShaderAPIEmpty::UserClipTransform(VMatrix const&)
+t CShaderAPIEmpty::BindGeometryShader(GeometryShaderHandle_t__*)
+t CShaderAPIEmpty::CreateDepthTexture(ImageFormat, int, int, char const*, bool)
+t CShaderAPIEmpty::GetDXLevelDefaults(unsigned int&, unsigned int&)
+t CShaderAPIEmpty::SetFlashlightState(FlashlightState_t const&, VMatrix const&)
+t CShaderAPIEmpty::SetStencilTestMask(unsigned int)
+t CShaderAPIEmpty::BindStandardTexture(Sampler_t, StandardTextureId_t)
+t CShaderAPIEmpty::ClearSelectionNames()
+t CShaderAPIEmpty::GetBoundMorphFormat()
+t CShaderAPIEmpty::GetDebugTextureList()
+t CShaderAPIEmpty::OverrideDepthEnable(bool, bool)
+t CShaderAPIEmpty::SetAmbientLightCube(Vector4D*)
+t CShaderAPIEmpty::SetAnisotropicLevel(int)
+t CShaderAPIEmpty::SetPixelShaderIndex(int)
+t CShaderAPIEmpty::SetSkinningMatrices()
+t CShaderAPIEmpty::SetStencilWriteMask(unsigned int)
+t CShaderAPIEmpty::CopyTextureToTexture(int, int)
+t CShaderAPIEmpty::DestroyVertexBuffers(bool)
+t CShaderAPIEmpty::EnableGetAllTextures(bool)
+t CShaderAPIEmpty::ExecuteCommandBuffer(unsigned char*)
+t CShaderAPIEmpty::ForceDepthFuncEquals(bool)
+t CShaderAPIEmpty::GetNullTextureFormat()
+t CShaderAPIEmpty::GetTextureMemoryUsed(IDebugTextureInfo::TextureMemoryType)
+t CShaderAPIEmpty::SetFlashlightStateEx(FlashlightState_t const&, VMatrix const&, ITexture*)
+t CShaderAPIEmpty::SetVertexShaderIndex(int)
+t CShaderAPIEmpty::DisableAllLocalLights()
+t CShaderAPIEmpty::DXSupportLevelChanged()
+t CShaderAPIEmpty::EnableAlphaToCoverage()
+t CShaderAPIEmpty::EvictManagedResources()
+t CShaderAPIEmpty::GetLightmapDimensions(int*, int*)
+t CShaderAPIEmpty::GetMaxIndicesToRender()
+t CShaderAPIEmpty::PerspectiveOffCenterX(double, double, double, double, double, double, double, double)
+t CShaderAPIEmpty::AcquireThreadOwnership()
+t CShaderAPIEmpty::BindFullbrightLightmap(TextureStage_t)
+t CShaderAPIEmpty::DisableAlphaToCoverage()
+t CShaderAPIEmpty::EnableDebugTextureList(bool)
+t CShaderAPIEmpty::GetMaxVerticesToRender(IMaterial*)
+t CShaderAPIEmpty::GetVertexModifyBuilder()
+t CShaderAPIEmpty::MarkUnusedVertexFields(unsigned int, int, bool*)
+t CShaderAPIEmpty::ReleaseThreadOwnership()
+t CShaderAPIEmpty::SetPixelShaderConstant(int, float const*, int, bool)
+t CShaderAPIEmpty::ClearBuffersObeyStencil(bool, bool)
+t CShaderAPIEmpty::DisableTextureTransform(TextureStage_t)
+t CShaderAPIEmpty::EnableShaderShaderMutex(bool)
+t CShaderAPIEmpty::FlushBufferedPrimitives()
+t CShaderAPIEmpty::GetCurrentDynamicVBSize()
+t CShaderAPIEmpty::IsDebugTextureListFresh(int)
+t CShaderAPIEmpty::SetPixelShaderFogParams(int)
+t CShaderAPIEmpty::SetStencilFailOperation(StencilOperation_t)
+t CShaderAPIEmpty::SetStencilPassOperation(StencilOperation_t)
+t CShaderAPIEmpty::SetVertexShaderConstant(int, float const*, int, bool)
+t CShaderAPIEmpty::BindNormalizationCubeMap(TextureStage_t)
+t CShaderAPIEmpty::EnableBuffer2FramesAhead(bool)
+t CShaderAPIEmpty::EndOcclusionQueryDrawing(ShaderAPIOcclusionQuery_t__*)
+t CShaderAPIEmpty::OverrideAlphaWriteEnable(bool, bool)
+t CShaderAPIEmpty::OverrideColorWriteEnable(bool, bool)
+t CShaderAPIEmpty::SetDebugTextureRendering(bool)
+t CShaderAPIEmpty::SetIntRenderingParameter(int, int)
+t CShaderAPIEmpty::SetStandardTextureHandle(StandardTextureId_t, int)
+t CShaderAPIEmpty::SetStencilReferenceValue(int)
+t CShaderAPIEmpty::SetStencilZFailOperation(StencilOperation_t)
+t CShaderAPIEmpty::BindStandardVertexTexture(VertexTextureSampler_t, StandardTextureId_t)
+t CShaderAPIEmpty::ClearBuffersObeyStencilEx(bool, bool, bool)
+t CShaderAPIEmpty::CommitPixelShaderLighting(int)
+t CShaderAPIEmpty::CopyRenderTargetToTexture(int)
+t CShaderAPIEmpty::GetCurrentColorCorrection(ShaderColorCorrectionInfo_t*)
+t CShaderAPIEmpty::SetShadowDepthBiasFactors(float, float)
+t CShaderAPIEmpty::SetStencilCompareFunction(StencilComparisonFunction_t)
+t CShaderAPIEmpty::SetToneMappingScaleLinear(Vector const&)
+t CShaderAPIEmpty::BeginOcclusionQueryDrawing(ShaderAPIOcclusionQuery_t__*)
+t CShaderAPIEmpty::CreateOcclusionQueryObject()
+t CShaderAPIEmpty::SetFloatRenderingParameter(int, float)
+t CShaderAPIEmpty::SetFullScreenTextureHandle(int)
+t CShaderAPIEmpty::ClearStencilBufferRectangle(int, int, int, int, int)
+t CShaderAPIEmpty::CopyRenderTargetToTextureEx(int, int, Rect_t*, Rect_t*)
+t CShaderAPIEmpty::CopyTextureToRenderTargetEx(int, int, Rect_t*, Rect_t*)
+t CShaderAPIEmpty::DestroyOcclusionQueryObject(ShaderAPIOcclusionQuery_t__*)
+t CShaderAPIEmpty::GetShadowDepthTextureFormat()
+t CShaderAPIEmpty::OverrideStreamOffsetSupport(bool, bool)
+t CShaderAPIEmpty::SetVectorRenderingParameter(int, Vector const&)
+t CShaderAPIEmpty::SupportsShadowDepthTextures()
+t CShaderAPIEmpty::GetAmbientLightCubeLuminance()
+t CShaderAPIEmpty::GetStandardTextureDimensions(int*, int*, StandardTextureId_t)
+t CShaderAPIEmpty::SetTextureTransformDimension(TextureStage_t, int, bool)
+t CShaderAPIEmpty::SetBooleanPixelShaderConstant(int, int const*, int, bool)
+t CShaderAPIEmpty::SetIntegerPixelShaderConstant(int, int const*, int, bool)
+t CShaderAPIEmpty::BindSignedNormalizationCubeMap(TextureStage_t)
+t CShaderAPIEmpty::SetBooleanVertexShaderConstant(int, int const*, int, bool)
+t CShaderAPIEmpty::SetIntegerVertexShaderConstant(int, int const*, int, bool)
+t CShaderAPIEmpty::EnableUserClipTransformOverride(bool)
+t CShaderAPIEmpty::CopyRenderTargetToScratchTexture(int, int, Rect_t*, Rect_t*)
+t CShaderAPIEmpty::InvalidateDelayedShaderConstants()
+t CShaderAPIEmpty::PurgeUnusedVertexAndPixelShaders()
+t CShaderAPIEmpty::SetStandardVertexShaderConstants(float)
+t CShaderAPIEmpty::EnableLinearColorSpaceFrameBuffer(bool)
+t CShaderAPIEmpty::PerformFullScreenStencilOperation()
+t CShaderAPIEmpty::ClearVertexAndPixelShaderRefCounts()
+t CShaderAPIEmpty::SetLinearToGammaConversionTextures(int, int)
+t CShaderAPIEmpty::OcclusionQuery_GetNumPixelsRendered(ShaderAPIOcclusionQuery_t__*, bool)
+t CShaderAPIEmpty::SetPixelShaderStateAmbientLightCube(int, bool)
+t CShaderAPIEmpty::SetVertexShaderStateAmbientLightCube()
+t CShaderAPIEmpty::SetDepthFeatheringPixelShaderConstant(int, float)
+t CShaderAPIEmpty::Bind(IMaterial*)
+t CShaderAPIEmpty::Draw(MaterialPrimitiveType_t, int, int)
+t CShaderAPIEmpty::Knob(char*, float*)
+t CShaderAPIEmpty::Ortho(double, double, double, double, double, double)
+t CShaderAPIEmpty::Scale(float, float, float)
+t CShaderAPIEmpty::FogEnd(float)
+t CShaderAPIEmpty::Printf(char const*, ...)
+t CShaderAPIEmpty::Rotate(float, float, float, float)
+t CShaderAPIEmpty::Color3f(float, float, float)
+t CShaderAPIEmpty::Color4f(float, float, float, float)
+t CShaderAPIEmpty::FogMode(MaterialFogMode_t)
+t CShaderAPIEmpty::ScaleXY(float, float)
+t CShaderAPIEmpty::SetFogZ(float)
+t CShaderAPIEmpty::SetMode(void*, int, ShaderDeviceInfo_t const&)
+t CShaderAPIEmpty::TexLock(int, int, int, int, int, int, CPixelWriter&)
+t CShaderAPIEmpty::TexWrap(ShaderTexCoordComponent_t, ShaderTexWrapMode_t)
+t CShaderAPIEmpty::BindGrey(TextureStage_t)
+t CShaderAPIEmpty::Color3fv(float const*)
+t CShaderAPIEmpty::Color3ub(unsigned char, unsigned char, unsigned char)
+t CShaderAPIEmpty::Color4fv(float const*)
+t CShaderAPIEmpty::Color4ub(unsigned char, unsigned char, unsigned char, unsigned char)
+t CShaderAPIEmpty::CullMode(MaterialCullMode_t)
+t CShaderAPIEmpty::EndFrame()
+t CShaderAPIEmpty::FogStart(float)
+t CShaderAPIEmpty::LockRect(void**, int*, int, int, int, int, int, int, bool, bool)
+t CShaderAPIEmpty::PrintfVA(char*, char*)
+t CShaderAPIEmpty::SetLight(int, LightDesc_t const&)
+t CShaderAPIEmpty::BeginPass(short)
+t CShaderAPIEmpty::BindBlack(TextureStage_t)
+t CShaderAPIEmpty::BindWhite(TextureStage_t)
+t CShaderAPIEmpty::Color3ubv(unsigned char const*)
+t CShaderAPIEmpty::Color4ubv(unsigned char const*)
+t CShaderAPIEmpty::GetMatrix(MaterialMatrixMode_t, float*)
+t CShaderAPIEmpty::IsTexture(int)
+t CShaderAPIEmpty::PopMatrix()
+t CShaderAPIEmpty::ShadeMode(ShaderShadeMode_t)
+t CShaderAPIEmpty::SyncToken(char const*)
+t CShaderAPIEmpty::TexUnlock()
+t CShaderAPIEmpty::Translate(float, float, float)
+t CShaderAPIEmpty::CShaderAPIEmpty()
+t CShaderAPIEmpty::CShaderAPIEmpty()
+t CShaderAPIEmpty::~CShaderAPIEmpty()
+t CShaderAPIEmpty::~CShaderAPIEmpty()
+t CShaderAPIEmpty::~CShaderAPIEmpty()
+t CDllDemandLoader::GetFactory()
+t CDllDemandLoader::Unload()
+t CDllDemandLoader::CDllDemandLoader(char const*)
+t CDllDemandLoader::CDllDemandLoader(char const*)
+t CDllDemandLoader::~CDllDemandLoader()
+t CDllDemandLoader::~CDllDemandLoader()
+t CDllDemandLoader::~CDllDemandLoader()
+t CShaderDeviceEmpty::RemoveView(void*)
+t CShaderDeviceEmpty::CompileShader(char const*, unsigned int, char const*)
+t CShaderDeviceEmpty::CreateStaticMesh(unsigned long long, char const*, IMaterial*)
+t CShaderDeviceEmpty::ReleaseResources()
+t CShaderDeviceEmpty::CreateIndexBuffer(ShaderBufferType_t, MaterialIndexFormat_t, int, char const*)
+t CShaderDeviceEmpty::CreatePixelShader(IShaderBuffer*)
+t CShaderDeviceEmpty::DestroyStaticMesh(IMesh*)
+t CShaderDeviceEmpty::HandleThreadEvent(unsigned int)
+t CShaderDeviceEmpty::CreateVertexBuffer(ShaderBufferType_t, unsigned long long, int, char const*)
+t CShaderDeviceEmpty::CreateVertexShader(IShaderBuffer*)
+t CShaderDeviceEmpty::DestroyIndexBuffer(IIndexBuffer*)
+t CShaderDeviceEmpty::DestroyPixelShader(PixelShaderHandle_t__*)
+t CShaderDeviceEmpty::ReacquireResources()
+t CShaderDeviceEmpty::DestroyVertexBuffer(IVertexBuffer*)
+t CShaderDeviceEmpty::DestroyVertexShader(VertexShaderHandle_t__*)
+t CShaderDeviceEmpty::CreateGeometryShader(IShaderBuffer*)
+t CShaderDeviceEmpty::GetDisplayDeviceName()
+t CShaderDeviceEmpty::SetHardwareGammaRamp(float, float, float, float, bool)
+t CShaderDeviceEmpty::DestroyGeometryShader(GeometryShaderHandle_t__*)
+t CShaderDeviceEmpty::GetDynamicIndexBuffer(MaterialIndexFormat_t, bool)
+t CShaderDeviceEmpty::GetDynamicVertexBuffer(int, unsigned long long, bool)
+t CShaderDeviceEmpty::EnableNonInteractiveMode(MaterialNonInteractiveMode_t, ShaderNonInteractiveInfo_t*)
+t CShaderDeviceEmpty::DoStartupShaderPreloading()
+t CShaderDeviceEmpty::RefreshFrontBufferNonInteractive()
+t CShaderDeviceEmpty::AddView(void*)
+t CShaderDeviceEmpty::Present()
+t CShaderDeviceEmpty::SetView(void*)
+t CShaderDeviceEmpty::~CShaderDeviceEmpty()
+t CShaderDeviceEmpty::~CShaderDeviceEmpty()
+t CShaderShadowEmpty::StencilFunc(ShaderStencilFunc_t)
+t CShaderShadowEmpty::StencilMask(int)
+t CShaderShadowEmpty::EnableTexGen(TextureStage_t, bool)
+t CShaderShadowEmpty::EnableCulling(bool)
+t CShaderShadowEmpty::EnableStencil(bool)
+t CShaderShadowEmpty::EnableTexture(Sampler_t, bool)
+t CShaderShadowEmpty::StencilFailOp(ShaderStencilOp_t)
+t CShaderShadowEmpty::StencilPassOp(ShaderStencilOp_t)
+t CShaderShadowEmpty::EnableBlending(bool)
+t CShaderShadowEmpty::EnableLighting(bool)
+t CShaderShadowEmpty::EnableSpecular(bool)
+t CShaderShadowEmpty::EnableSRGBRead(Sampler_t, bool)
+t CShaderShadowEmpty::SetMorphFormat(unsigned int)
+t CShaderShadowEmpty::SetPixelShader(char const*, int)
+t CShaderShadowEmpty::EnableAlphaPipe(bool)
+t CShaderShadowEmpty::EnableAlphaTest(bool)
+t CShaderShadowEmpty::EnableDepthTest(bool)
+t CShaderShadowEmpty::EnableSRGBWrite(bool)
+t CShaderShadowEmpty::OverbrightValue(TextureStage_t, float)
+t CShaderShadowEmpty::SetDefaultState()
+t CShaderShadowEmpty::SetVertexShader(char const*, int)
+t CShaderShadowEmpty::EnablePolyOffset(PolygonOffsetMode_t)
+t CShaderShadowEmpty::StencilReference(int)
+t CShaderShadowEmpty::StencilWriteMask(int)
+t CShaderShadowEmpty::EnableAlphaWrites(bool)
+t CShaderShadowEmpty::EnableColorWrites(bool)
+t CShaderShadowEmpty::EnableDepthWrites(bool)
+t CShaderShadowEmpty::EnableVertexAlpha(bool)
+t CShaderShadowEmpty::EnableVertexBlend(bool)
+t CShaderShadowEmpty::EnableTextureAlpha(TextureStage_t, bool)
+t CShaderShadowEmpty::StencilDepthFailOp(ShaderStencilOp_t)
+t CShaderShadowEmpty::CustomTextureStages(int)
+t CShaderShadowEmpty::EnableConstantAlpha(bool)
+t CShaderShadowEmpty::EnableConstantColor(bool)
+t CShaderShadowEmpty::BlendOpSeparateAlpha(ShaderBlendOp_t)
+t CShaderShadowEmpty::ExecuteCommandBuffer(unsigned char*)
+t CShaderShadowEmpty::EnableAlphaToCoverage(bool)
+t CShaderShadowEmpty::EnableCustomPixelPipe(bool)
+t CShaderShadowEmpty::BlendFuncSeparateAlpha(ShaderBlendFactor_t, ShaderBlendFactor_t)
+t CShaderShadowEmpty::CustomTextureOperation(TextureStage_t, ShaderTexChannel_t, ShaderTexOp_t, ShaderTexArg_t, ShaderTexArg_t)
+t CShaderShadowEmpty::SetShadowDepthFiltering(Sampler_t)
+t CShaderShadowEmpty::SetDiffuseMaterialSource(ShaderMaterialSource_t)
+t CShaderShadowEmpty::VertexShaderVertexFormat(unsigned int, int, int*, int)
+t CShaderShadowEmpty::DisableFogGammaCorrection(bool)
+t CShaderShadowEmpty::EnableBlendingSeparateAlpha(bool)
+t CShaderShadowEmpty::TexGen(TextureStage_t, ShaderTexGenParam_t)
+t CShaderShadowEmpty::BlendOp(ShaderBlendOp_t)
+t CShaderShadowEmpty::FogMode(ShaderFogMode_t)
+t CShaderShadowEmpty::PolyMode(ShaderPolyModeFace_t, ShaderPolyMode_t)
+t CShaderShadowEmpty::AlphaFunc(ShaderAlphaFunc_t, float)
+t CShaderShadowEmpty::BlendFunc(ShaderBlendFactor_t, ShaderBlendFactor_t)
+t CShaderShadowEmpty::DepthFunc(ShaderDepthFunc_t)
+t CShaderShadowEmpty::DrawFlags(unsigned int)
+t CShaderShadowEmpty::CShaderShadowEmpty()
+t CShaderShadowEmpty::CShaderShadowEmpty()
+t CShaderShadowEmpty::~CShaderShadowEmpty()
+t CShaderShadowEmpty::~CShaderShadowEmpty()
+t CShaderShadowEmpty::~CShaderShadowEmpty()
+t CShaderDeviceMgrEmpty::Disconnect()
+t CShaderDeviceMgrEmpty::SetAdapter(int, int)
+t CShaderDeviceMgrEmpty::QueryInterface(char const*)
+t CShaderDeviceMgrEmpty::AddModeChangeCallback(void (*)())
+t CShaderDeviceMgrEmpty::RemoveModeChangeCallback(void (*)())
+t CShaderDeviceMgrEmpty::GetRecommendedConfigurationInfo(int, int, KeyValues*)
+t CShaderDeviceMgrEmpty::Init()
+t CShaderDeviceMgrEmpty::Connect(void* (*)(char const*, int*))
+t CShaderDeviceMgrEmpty::SetMode(void*, int, ShaderDeviceInfo_t const&)
+t CShaderDeviceMgrEmpty::Shutdown()
+t IMesh::~IMesh()
+t IMesh::~IMesh()
+t IMesh::~IMesh()
+U operator new[](unsigned int)@@GLIBCXX_3.4
+t CEmptyMesh::IndexCount() const
+t CEmptyMesh::IndexFormat() const
+t CEmptyMesh::VertexCount() const
+t CEmptyMesh::GetVertexFormat() const
+t CEmptyMesh::GetRoomRemaining() const
+t CEmptyMesh::IsDynamic() const
+t IShaderAPI::SupportsNormalMapCompression() const
+t CShaderAPIEmpty::GetHDRType() const
+t CShaderAPIEmpty::IsDX10Card() const
+t CShaderAPIEmpty::CurrentTime() const
+t CShaderAPIEmpty::IsAAEnabled() const
+t CShaderAPIEmpty::SupportsHDR() const
+t CShaderAPIEmpty::GetMaxLights() const
+t CShaderAPIEmpty::GetViewports(ShaderViewport_t*, int) const
+t CShaderAPIEmpty::InEditorMode() const
+t CShaderAPIEmpty::MaxNumLights() const
+t CShaderAPIEmpty::MaxViewports() const
+t CShaderAPIEmpty::NeedsAAClamp() const
+t CShaderAPIEmpty::SupportsSRGB() const
+t CShaderAPIEmpty::FakeSRGBWrite() const
+t CShaderAPIEmpty::GetHDREnabled() const
+t CShaderAPIEmpty::IsAlphaTested(short) const
+t CShaderAPIEmpty::IsTranslucent(short) const
+t CShaderAPIEmpty::SupportsFetch4() const
+t CShaderAPIEmpty::GetSamplerCount() const
+t CShaderAPIEmpty::MaxTextureDepth() const
+t CShaderAPIEmpty::MaxTextureWidth() const
+t CShaderAPIEmpty::SupportsHDRMode(HDRType_t) const
+t CShaderAPIEmpty::UseFastClipping() const
+t CShaderAPIEmpty::GetDX9LightState(LightState_t*) const
+t CShaderAPIEmpty::GetShaderDLLName() const
+t CShaderAPIEmpty::HasStencilBuffer() const
+t CShaderAPIEmpty::InFlashlightMode() const
+t CShaderAPIEmpty::MaxBlendMatrices() const
+t CShaderAPIEmpty::MaxTextureHeight() const
+t CShaderAPIEmpty::SupportsCubeMaps() const
+t CShaderAPIEmpty::GetCurrentFogType() const
+t CShaderAPIEmpty::GetDXSupportLevel() const
+t CShaderAPIEmpty::MaxUserClipPlanes() const
+t CShaderAPIEmpty::StencilBufferBits() const
+t CShaderAPIEmpty::TextureMemorySize() const
+t CShaderAPIEmpty::ComputeMorphFormat(int, short*) const
+t CShaderAPIEmpty::ComputeVertexUsage(int, short*) const
+t CShaderAPIEmpty::GetCurrentNumBones() const
+t CShaderAPIEmpty::GetFlashlightState(VMatrix&) const
+t CShaderAPIEmpty::GetHardwareHDRType() const
+t CShaderAPIEmpty::HasDestAlphaBuffer() const
+t CShaderAPIEmpty::SupportsOverbright() const
+t CShaderAPIEmpty::CanDownloadTextures() const
+t CShaderAPIEmpty::ComputeVertexFormat(int, short*) const
+t CShaderAPIEmpty::GetShadowFilterMode() const
+t CShaderAPIEmpty::HasProjectedBumpEnv() const
+t CShaderAPIEmpty::IsDepthWriteEnabled(short) const
+t CShaderAPIEmpty::IsHWMorphingEnabled() const
+t CShaderAPIEmpty::SupportsBorderColor() const
+t CShaderAPIEmpty::CanDoSRGBReadFromRTs() const
+t CShaderAPIEmpty::GetCurrentLightCombo() const
+t CShaderAPIEmpty::GetFlashlightStateEx(VMatrix&, ITexture**) const
+t CShaderAPIEmpty::GetMaxDXSupportLevel() const
+t CShaderAPIEmpty::GetTextureStageCount() const
+t CShaderAPIEmpty::MaxHWMorphBatchCount() const
+t CShaderAPIEmpty::NeedsATICentroidHack() const
+t CShaderAPIEmpty::SupportsStreamOffset() const
+t CShaderAPIEmpty::GetVertexTextureCount() const
+t CShaderAPIEmpty::HasFastVertexTextures() const
+t CShaderAPIEmpty::HasSetDeviceGammaRamp() const
+t CShaderAPIEmpty::MaxBlendMatrixIndices() const
+t CShaderAPIEmpty::MaxTextureAspectRatio() const
+t CShaderAPIEmpty::PreferDynamicTextures() const
+t CShaderAPIEmpty::PreferReducedFillrate() const
+t CShaderAPIEmpty::SupportsSpheremapping() const
+t CShaderAPIEmpty::GetLightMapScaleFactor() const
+t CShaderAPIEmpty::GetBackBufferDimensions(int&, int&) const
+t CShaderAPIEmpty::MaximumAnisotropicLevel() const
+t CShaderAPIEmpty::NumPixelShaderConstants() const
+t CShaderAPIEmpty::SupportsNonPow2Textures() const
+t CShaderAPIEmpty::SupportsShaderModel_3_0() const
+t CShaderAPIEmpty::UsesSRGBCorrectBlending() const
+t CShaderAPIEmpty::ComputeVertexDescription(unsigned char*, unsigned long long, MeshDesc_t&) const
+t CShaderAPIEmpty::GetFrameBufferColorDepth() const
+t CShaderAPIEmpty::GetIntRenderingParameter(int) const
+t CShaderAPIEmpty::GetNumActiveDeformations() const
+t CShaderAPIEmpty::NumVertexShaderConstants() const
+t CShaderAPIEmpty::SupportsHardwareLighting() const
+t CShaderAPIEmpty::SupportsPixelShaders_1_4() const
+t CShaderAPIEmpty::SupportsPixelShaders_2_0() const
+t CShaderAPIEmpty::SupportsPixelShaders_2_b() const
+t CShaderAPIEmpty::GetNearestSupportedFormat(ImageFormat, bool) const
+t CShaderAPIEmpty::GetToneMappingScaleLinear() const
+t CShaderAPIEmpty::NeedsShaderSRGBConversion() const
+t CShaderAPIEmpty::ReadPixelsFromFrontBuffer() const
+t CShaderAPIEmpty::SupportsMipmappedCubemaps() const
+t CShaderAPIEmpty::SupportsStaticControlFlow() const
+t CShaderAPIEmpty::SupportsVertexShaders_2_0() const
+t CShaderAPIEmpty::UsesVertexAndPixelShaders(short) const
+t CShaderAPIEmpty::CanStretchRectFromTextures() const
+t CShaderAPIEmpty::GetFloatRenderingParameter(int) const
+t CShaderAPIEmpty::GetHWSpecificShaderDLLName() const
+t CShaderAPIEmpty::GetVertexBufferCompression() const
+t CShaderAPIEmpty::SupportsCompressedTextures() const
+t CShaderAPIEmpty::SupportsCompressedVertices() const
+t CShaderAPIEmpty::SupportsGLMixedSizeTargets() const
+t CShaderAPIEmpty::GetVectorRenderingParameter(int) const
+t CShaderAPIEmpty::GetWorldSpaceCameraPosition(float*) const
+t CShaderAPIEmpty::ShouldWriteDepthToDestAlpha() const
+t CShaderAPIEmpty::SupportsColorOnSecondStream() const
+t CShaderAPIEmpty::GetMaxVertexTextureDimension() const
+t CShaderAPIEmpty::GetNearestRenderTargetFormat(ImageFormat) const
+t CShaderAPIEmpty::MaxVertexShaderBlendMatrices() const
+t CShaderAPIEmpty::SupportsVertexAndPixelShaders() const
+t CShaderAPIEmpty::GammaToLinear_HardwareSpecific(float) const
+t CShaderAPIEmpty::LinearToGamma_HardwareSpecific(float) const
+t CShaderAPIEmpty::SpecifiesFogColorInLinearSpace() const
+t CShaderAPIEmpty::GetPackedDeformationInformation(int, float*, int, int, int*) const
+t CShaderAPIEmpty::NumBooleanVertexShaderConstants() const
+t CShaderAPIEmpty::NumIntegerVertexShaderConstants() const
+t CShaderAPIEmpty::ActuallySupportsPixelShaders_2_b() const
+t CShaderAPIEmpty::SupportsStaticPlusDynamicLighting() const
+t CShaderAPIEmpty::DoRenderTargetsNeedSeparateDepthBuffer() const
+t CShaderAPIEmpty::GetLight(int) const
+t CShaderDeviceEmpty::IsAAEnabled() const
+t CShaderDeviceEmpty::GetWindowSize(int&, int&) const
+t CShaderDeviceEmpty::SpewDriverInfo() const
+t CShaderDeviceEmpty::IsUsingGraphics() const
+t CShaderDeviceEmpty::GetCurrentAdapter() const
+t CShaderDeviceEmpty::StencilBufferBits() const
+t CShaderDeviceEmpty::GetBackBufferFormat() const
+t CShaderDeviceEmpty::GetBackBufferDimensions(int&, int&) const
+t CShaderDeviceMgrEmpty::GetModeInfo(ShaderDisplayMode_t*, int, int) const
+t CShaderDeviceMgrEmpty::GetModeCount(int) const
+t CShaderDeviceMgrEmpty::GetAdapterInfo(int, MaterialAdapterInfo_t&) const
+t CShaderDeviceMgrEmpty::GetAdapterCount() const
+t CShaderDeviceMgrEmpty::GetCurrentModeInfo(ShaderDisplayMode_t*, int) const
+t IMaterialSystemHardwareConfig::SupportsNormalMapCompression() const
+t non-virtual thunk to CEmptyMesh::ModifyBegin(bool, int, int, IndexDesc_t&)
+t non-virtual thunk to CEmptyMesh::ValidateData(int, IndexDesc_t const&)
+t non-virtual thunk to CEmptyMesh::EndCastBuffer()
+t non-virtual thunk to CEmptyMesh::BeginCastBuffer(MaterialIndexFormat_t)
+t non-virtual thunk to CEmptyMesh::Lock(int, bool, IndexDesc_t&)
+t non-virtual thunk to CEmptyMesh::Spew(int, IndexDesc_t const&)
+t non-virtual thunk to CEmptyMesh::Unlock(int, IndexDesc_t&)
+t non-virtual thunk to CEmptyMesh::ModifyEnd(IndexDesc_t&)
+t non-virtual thunk to CEmptyMesh::~CEmptyMesh()
+t non-virtual thunk to CEmptyMesh::~CEmptyMesh()
+t non-virtual thunk to CShaderAPIEmpty::SetHDREnabled(bool)
+t non-virtual thunk to CShaderAPIEmpty::OverrideStreamOffsetSupport(bool, bool)
+t non-virtual thunk to IMesh::~IMesh()
+t non-virtual thunk to IMesh::~IMesh()
+t non-virtual thunk to CEmptyMesh::IndexCount() const
+t non-virtual thunk to CEmptyMesh::IndexFormat() const
+t non-virtual thunk to CEmptyMesh::GetRoomRemaining() const
+t non-virtual thunk to CEmptyMesh::IsDynamic() const
+t non-virtual thunk to CShaderAPIEmpty::GetHDRType() const
+t non-virtual thunk to CShaderAPIEmpty::IsAAEnabled() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsHDR() const
+t non-virtual thunk to CShaderAPIEmpty::MaxNumLights() const
+t non-virtual thunk to CShaderAPIEmpty::MaxViewports() const
+t non-virtual thunk to CShaderAPIEmpty::NeedsAAClamp() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsSRGB() const
+t non-virtual thunk to CShaderAPIEmpty::FakeSRGBWrite() const
+t non-virtual thunk to CShaderAPIEmpty::GetHDREnabled() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsFetch4() const
+t non-virtual thunk to CShaderAPIEmpty::GetSamplerCount() const
+t non-virtual thunk to CShaderAPIEmpty::MaxTextureDepth() const
+t non-virtual thunk to CShaderAPIEmpty::MaxTextureWidth() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsHDRMode(HDRType_t) const
+t non-virtual thunk to CShaderAPIEmpty::UseFastClipping() const
+t non-virtual thunk to CShaderAPIEmpty::GetShaderDLLName() const
+t non-virtual thunk to CShaderAPIEmpty::HasStencilBuffer() const
+t non-virtual thunk to CShaderAPIEmpty::MaxBlendMatrices() const
+t non-virtual thunk to CShaderAPIEmpty::MaxTextureHeight() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsCubeMaps() const
+t non-virtual thunk to CShaderAPIEmpty::GetDXSupportLevel() const
+t non-virtual thunk to CShaderAPIEmpty::MaxUserClipPlanes() const
+t non-virtual thunk to CShaderAPIEmpty::StencilBufferBits() const
+t non-virtual thunk to CShaderAPIEmpty::TextureMemorySize() const
+t non-virtual thunk to CShaderAPIEmpty::GetHardwareHDRType() const
+t non-virtual thunk to CShaderAPIEmpty::HasDestAlphaBuffer() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsOverbright() const
+t non-virtual thunk to CShaderAPIEmpty::GetShadowFilterMode() const
+t non-virtual thunk to CShaderAPIEmpty::HasProjectedBumpEnv() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsBorderColor() const
+t non-virtual thunk to CShaderAPIEmpty::CanDoSRGBReadFromRTs() const
+t non-virtual thunk to CShaderAPIEmpty::GetMaxDXSupportLevel() const
+t non-virtual thunk to CShaderAPIEmpty::GetTextureStageCount() const
+t non-virtual thunk to CShaderAPIEmpty::MaxHWMorphBatchCount() const
+t non-virtual thunk to CShaderAPIEmpty::NeedsATICentroidHack() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsStreamOffset() const
+t non-virtual thunk to CShaderAPIEmpty::GetVertexTextureCount() const
+t non-virtual thunk to CShaderAPIEmpty::HasFastVertexTextures() const
+t non-virtual thunk to CShaderAPIEmpty::HasSetDeviceGammaRamp() const
+t non-virtual thunk to CShaderAPIEmpty::MaxBlendMatrixIndices() const
+t non-virtual thunk to CShaderAPIEmpty::MaxTextureAspectRatio() const
+t non-virtual thunk to CShaderAPIEmpty::PreferDynamicTextures() const
+t non-virtual thunk to CShaderAPIEmpty::PreferReducedFillrate() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsSpheremapping() const
+t non-virtual thunk to CShaderAPIEmpty::MaximumAnisotropicLevel() const
+t non-virtual thunk to CShaderAPIEmpty::NumPixelShaderConstants() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsNonPow2Textures() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsShaderModel_3_0() const
+t non-virtual thunk to CShaderAPIEmpty::UsesSRGBCorrectBlending() const
+t non-virtual thunk to CShaderAPIEmpty::GetFrameBufferColorDepth() const
+t non-virtual thunk to CShaderAPIEmpty::NumVertexShaderConstants() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsHardwareLighting() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsPixelShaders_1_4() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsPixelShaders_2_0() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsPixelShaders_2_b() const
+t non-virtual thunk to CShaderAPIEmpty::NeedsShaderSRGBConversion() const
+t non-virtual thunk to CShaderAPIEmpty::ReadPixelsFromFrontBuffer() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsMipmappedCubemaps() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsStaticControlFlow() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsVertexShaders_2_0() const
+t non-virtual thunk to CShaderAPIEmpty::CanStretchRectFromTextures() const
+t non-virtual thunk to CShaderAPIEmpty::GetHWSpecificShaderDLLName() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsCompressedTextures() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsCompressedVertices() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsGLMixedSizeTargets() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsColorOnSecondStream() const
+t non-virtual thunk to CShaderAPIEmpty::GetMaxVertexTextureDimension() const
+t non-virtual thunk to CShaderAPIEmpty::MaxVertexShaderBlendMatrices() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsVertexAndPixelShaders() const
+t non-virtual thunk to CShaderAPIEmpty::SpecifiesFogColorInLinearSpace() const
+t non-virtual thunk to CShaderAPIEmpty::ActuallySupportsPixelShaders_2_b() const
+t non-virtual thunk to CShaderAPIEmpty::SupportsStaticPlusDynamicLighting() const
+t non-virtual thunk to CShaderAPIEmpty::GetDebugTextureList()
+t non-virtual thunk to CShaderAPIEmpty::EnableGetAllTextures(bool)
+t non-virtual thunk to CShaderAPIEmpty::GetTextureMemoryUsed(IDebugTextureInfo::TextureMemoryType)
+t non-virtual thunk to CShaderAPIEmpty::EnableDebugTextureList(bool)
+t non-virtual thunk to CShaderAPIEmpty::IsDebugTextureListFresh(int)
+t non-virtual thunk to CShaderAPIEmpty::SetDebugTextureRendering(bool)
+r typeinfo for CEmptyMesh
+r typeinfo for IAppSystem
+r typeinfo for IShaderAPI
+r typeinfo for IIndexBuffer
+r typeinfo for IShaderDevice
+r typeinfo for IShaderShadow
+r typeinfo for IVertexBuffer
+r typeinfo for CShaderAPIEmpty
+r typeinfo for CDllDemandLoader
+r typeinfo for IShaderDeviceMgr
+r typeinfo for IDebugTextureInfo
+r typeinfo for IShaderDynamicAPI
+r typeinfo for CShaderDeviceEmpty
+r typeinfo for CShaderShadowEmpty
+r typeinfo for CShaderDeviceMgrEmpty
+r typeinfo for IHardwareConfigInternal
+r typeinfo for IMaterialSystemHardwareConfig
+r typeinfo for IMesh
+r typeinfo name for CEmptyMesh
+r typeinfo name for IAppSystem
+r typeinfo name for IShaderAPI
+r typeinfo name for IIndexBuffer
+r typeinfo name for IShaderDevice
+r typeinfo name for IShaderShadow
+r typeinfo name for IVertexBuffer
+r typeinfo name for CShaderAPIEmpty
+r typeinfo name for CDllDemandLoader
+r typeinfo name for IShaderDeviceMgr
+r typeinfo name for IDebugTextureInfo
+r typeinfo name for IShaderDynamicAPI
+r typeinfo name for CShaderDeviceEmpty
+r typeinfo name for CShaderShadowEmpty
+r typeinfo name for CShaderDeviceMgrEmpty
+r typeinfo name for IHardwareConfigInternal
+r typeinfo name for IMaterialSystemHardwareConfig
+r typeinfo name for IMesh
+r vtable for CEmptyMesh
+r vtable for IShaderAPI
+r vtable for IIndexBuffer
+r vtable for IShaderShadow
+r vtable for IVertexBuffer
+r vtable for CShaderAPIEmpty
+r vtable for CDllDemandLoader
+r vtable for IDebugTextureInfo
+r vtable for IShaderDynamicAPI
+r vtable for CShaderDeviceEmpty
+r vtable for CShaderShadowEmpty
+r vtable for CShaderDeviceMgrEmpty
+r vtable for IHardwareConfigInternal
+r vtable for IMaterialSystemHardwareConfig
+r vtable for IMesh
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
+b V_pretifymem(float, int, bool)::output
+b V_pretifymem(float, int, bool)::current
+b V_pretifynum(long long)::output
+b V_pretifynum(long long)::current
+b CEmptyMesh::Lock(int, bool, IndexDesc_t&)::s_BogusIndex
+b CShaderAPIEmpty::GetFlashlightState(VMatrix&) const::blah
+b CShaderAPIEmpty::GetFlashlightStateEx(VMatrix&, ITexture**) const::blah
+b CShaderAPIEmpty::GetToneMappingScaleLinear() const::dummy
+b CShaderAPIEmpty::GetLight(int) const::blah

@@ -1,557 +1,557 @@
-         U abort@@GLIBC_2.0
-0001278b t add_fdes
-00019200 d adds.7496
-00012a66 t base_from_cb_data
-000124be t base_from_object
-00019208 A __bss_start
-         U chdir@@GLIBC_2.0
-0001266d t classify_object_over_fdes
-00019220 b completed.5793
-00002880 T CreateInterface
-00019014 d __CTOR_END__
-00019000 d __CTOR_LIST__
-         U __cxa_atexit@@GLIBC_2.1.3
-         w __cxa_finalize@@GLIBC_2.1.3
-000136c9 t __deregister_frame
-000136c0 t __deregister_frame_info
-000135ea t __deregister_frame_info_bases
-         U dlclose@@GLIBC_2.0
-         U dlerror@@GLIBC_2.0
-         U dl_iterate_phdr@@GLIBC_2.2.4
-         U dlopen@@GLIBC_2.1
-         U dlsym@@GLIBC_2.0
-00013874 t __do_global_ctors_aux
-00001dc0 t __do_global_dtors_aux
-00019180 d __dso_handle
-0001901c d __DTOR_END__
-00019224 b dtor_idx.5795
-00019018 d __DTOR_LIST__
-0001a868 b dwarf_reg_size_table
-00019024 a _DYNAMIC
-00019208 A _edata
-0001a978 A _end
-         U Error
-00010902 t execute_cfa_program
-00011265 t execute_stack_op
-000128ea t fde_mixed_encoding_compare
-0001286d t fde_single_encoding_compare
-0001234a t fde_unencoded_compare
-00019240 b filesystem
-0001389c T _fini
-0001236f t frame_downheap
-00001e2f t frame_dummy
-00018e4c r __FRAME_END__
-0001a8ac b frame_hdr_cache
-0001a8a8 b frame_hdr_cache_head
-000123fa t frame_heapsort
-00011e21 t __frame_state_for
-         U free@@GLIBC_2.0
-000125af t get_cie_encoding
-         U getcwd@@GLIBC_2.0
-0001265c t get_fde_encoding
-00019134 a _GLOBAL_OFFSET_TABLE_
-00001bd0 t _GLOBAL__sub_I_filesystem
-00001c80 t _GLOBAL__sub_I_s_StringCharConversion
-00001c60 t _GLOBAL__sub_I__Z9_V_memsetPKciPvii
-         w __gmon_start__
-         U __gxx_personality_v0@@CXXABI_1.3
-00001e66 t __i686.get_pc_thunk.bx
-000122cb t __i686.get_pc_thunk.cx
-         U iconv_close@@GLIBC_2.1
-         U iconv@@GLIBC_2.1
-         U iconv_open@@GLIBC_2.1
-00001af8 T _init
-00010882 t init_dwarf_reg_size_table
-         U isspace@@GLIBC_2.0
-         U isupper@@GLIBC_2.0
-         U iswspace@@GLIBC_2.0
-00019020 d __JCR_END__
-00019020 d __JCR_LIST__
-         w _Jv_RegisterClasses
-00010820 t .L17
-000107ea t .L19
-00010805 t .L20
-0001175d t .L214
-00011761 t .L215
-00011766 t .L216
-0001176a t .L217
-00011776 t .L218
-0001177b t .L219
-00011785 t .L220
-00011789 t .L221
-0001178f t .L222
-00011795 t .L223
-0001179b t .L224
-000117ad t .L225
-000117a6 t .L226
-000117bb t .L227
-0001179f t .L228
-000117b4 t .L229
-000107f6 t .L23
-000117c2 t .L230
-0001080a t .L24
-00011828 t .L244
-00010812 t .L25
-00010819 t .L26
-00011977 t .L271
-00011981 t .L272
-000119ad t .L273
-000119f8 t .L274
-00011a11 t .L275
-00010d54 t .L43
-00012583 t .L45
-00010d4f t .L46
-000109b8 t .L47
-0001254d t .L47
-000109e5 t .L48
-00012568 t .L48
-00010a03 t .L49
-00010a21 t .L50
-00010a3e t .L51
-00012559 t .L51
-00010a66 t .L52
-0001256d t .L52
-00010a9c t .L53
-00012575 t .L53
-00010a81 t .L54
-0001257c t .L54
-00010ab7 t .L55
-00010ae0 t .L56
-00010b1b t .L57
-00010b41 t .L58
-00010b78 t .L59
-00010b9b t .L60
-00010bae t .L61
-00010bc6 t .L62
-00010be1 t .L63
-00010c0e t .L64
-00010c4c t .L65
-00010c6c t .L66
-00010c8e t .L67
-00010cc1 t .L68
-00010ce7 t .L69
-00010d0a t .L70
-00010d1d t .L71
-00012967 t linear_search_fdes
-0000fad0 t LzmaDec_Allocate
-0000fa10 t LzmaDec_AllocateProbs
-0000f7f0 t LzmaDec_DecodeToBuf
-0000f360 t LzmaDec_DecodeToDic
-0000f900 t LzmaDec_Free
-0000f8d0 t LzmaDec_FreeProbs
-0000f320 t LzmaDec_Init
-0000fbf0 t LzmaDecode
-0000f950 t LzmaProps_Decode
-         U malloc@@GLIBC_2.0
-0001a974 b marker.7234
-         U mbstowcs@@GLIBC_2.0
-         U memcpy@@GLIBC_2.0
-         U memmove@@GLIBC_2.0
-         U memset@@GLIBC_2.0
-         U Msg
-0001a880 b object_mutex
-0001a87c b once_regsizes.7669
-         U Plat_IsInDebugSession
-         U Plat_localtime
-         U pow@@GLIBC_2.0
-         U printf@@GLIBC_2.0
-         w pthread_cancel@@GLIBC_2.0
-         w pthread_mutex_lock@@GLIBC_2.0
-         w pthread_mutex_unlock@@GLIBC_2.0
-         w pthread_once@@GLIBC_2.0
-0000fd30 t qsort_s
-0001075e t read_encoded_value
-00012506 t read_encoded_value_with_base
-00010714 t read_sleb128
-00012300 t read_sleb128
-000106e4 t read_uleb128
-000122d0 t read_uleb128
-         U realloc@@GLIBC_2.0
-000134e6 t __register_frame
-000134cc t __register_frame_info
-0001343e t __register_frame_info_bases
-000135a4 t __register_frame_info_table
-0001351b t __register_frame_info_table_bases
-000135be t __register_frame_table
-00012f40 t search_object
-0001a89c b seen_objects
-00001d05 t set_fast_math
-0001246e t size_of_encoded_value
-00019520 b s_NoEscConversion
-00019e40 b s_StringCharConversion
-         U strcasecmp@@GLIBC_2.0
-         U strchr@@GLIBC_2.0
-         U strcmp@@GLIBC_2.0
-         U strcpy@@GLIBC_2.0
-         U strftime@@GLIBC_2.0
-         U strlen@@GLIBC_2.0
-         U strncasecmp@@GLIBC_2.0
-         U strncat@@GLIBC_2.0
-         U strncpy@@GLIBC_2.0
-         U strstr@@GLIBC_2.0
-         U strtod@@GLIBC_2.0
-         U strtol@@GLIBC_2.0
-         U strtoul@@GLIBC_2.0
-0001a8a0 b subs.7497
-0001a96c b terminator.7340
-         U time@@GLIBC_2.0
-         U tolower@@GLIBC_2.0
-         U toupper@@GLIBC_2.0
-         U towlower@@GLIBC_2.0
-         U towupper@@GLIBC_2.0
-000105e0 t __udivdi3
-0001a898 b unseen_objects
-0001224b t _Unwind_Backtrace
-00011ee2 t _Unwind_DebugHook
-0001222f t _Unwind_DeleteException
-00011dd9 t _Unwind_FindEnclosingFunction
-000136fa t _Unwind_Find_FDE
-0001201c t _Unwind_ForcedUnwind
-00011bdb t _Unwind_ForcedUnwind_Phase2
-00011d33 t _Unwind_GetCFA
-00011e0b t _Unwind_GetDataRelBase
-0001112c t _Unwind_GetGR
-00011d94 t _Unwind_GetIP
-00011d9f t _Unwind_GetIPInfo
-00011dc3 t _Unwind_GetLanguageSpecificData
-00011dce t _Unwind_GetRegionStart
-00011e16 t _Unwind_GetTextRelBase
-00012aae t _Unwind_IteratePhdrCallback
-00011ee7 t _Unwind_RaiseException
-00011c98 t _Unwind_RaiseException_Phase2
-000120c7 t _Unwind_Resume
-0001216e t _Unwind_Resume_or_Rethrow
-00011d3e t _Unwind_SetGR
-00011db5 t _Unwind_SetIP
-0001084c t _Unwind_SetSpColumn
-00010d80 t uw_frame_state_for
-00011ada t uw_init_context_1
-00011178 t uw_install_context_1
-00011ba1 t uw_update_context
-0001183c t uw_update_context_1
-         U vsnprintf@@GLIBC_2.0
-         U vswprintf@@GLIBC_2.2
-         U Warning
-         U wcslen@@GLIBC_2.0
-         U wcsncat@@GLIBC_2.0
-         U wcsncpy@@GLIBC_2.0
-         U wcstombs@@GLIBC_2.0
-000025a0 t CRC32_Init(unsigned int*)
-000053d0 t V_FileBase(char const*, char*, int)
-000033e0 t _V_memmove(char const*, int, void*, void const*, int)
-00004450 t V_snprintf(char*, int, char const*, ...)
-00003640 t V_strlower(char*)
-000037e0 t V_strnicmp(char const*, char const*, int)
-00004180 t V_strnistr(char const*, char const*, int)
-00003470 t _V_strrchr(char const*, int, char const*, char)
-000064a0 t V_StrRight(char const*, int, char*, int)
-00006330 t V_StrSlice(char const*, int, int, char*, int)
-000060c0 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
-00006520 t V_strtowcs(char const*, int, wchar_t*, int)
-00006560 t V_wcstostr(wchar_t const*, int, char*, int)
-00006270 t AllocString(char const*, int)
-000025b0 t CRC32_Final(unsigned int*)
-00006940 t Q_URLDecode(char*, int, char const*, int)
-00006910 t Q_URLEncode(char*, int, char const*, int)
-00004390 t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
-000044b0 t V_vsnprintf(char*, int, char const*, char*)
-00003590 t _V_wcslower(char const*, int, wchar_t*)
-00005750 t V_FixSlashes(char*, char)
-00004680 t V_pretifymem(float, int, bool)
-00004890 t V_pretifynum(long long)
-000043f0 t V_vsnwprintf(wchar_t*, int, wchar_t const*, char*)
-00006690 t iHexCharToInt(char)
-000053b0 t PATHSEPARATOR(char)
-0000ad50 t Q_UTF16ToUTF8(unsigned short const*, char*, int, EStringConvertErrorPolicy)
-0000b330 t Q_UTF32ToUTF8(wchar_t const*, char*, int, EStringConvertErrorPolicy)
-0000a730 t Q_UTF8ToUTF16(char const*, unsigned short*, int, EStringConvertErrorPolicy)
-0000aa90 t Q_UTF8ToUTF32(char const*, wchar_t*, int, EStringConvertErrorPolicy)
-00005c30 t V_AppendSlash(char*, int)
-00005330 t V_binarytohex(unsigned char const*, int, char*, int)
-00005aa0 t V_GetFileName(char const*)
-00005280 t V_hextobinary(char const*, int, unsigned char*, int)
-00006ce0 t V_SplitString(char const*, char const*, CUtlVector<char*, CUtlMemory<char*, int> >&)
-000050e0 t _V_UCS2ToUTF8(unsigned short const*, char*, int)
-000051a0 t _V_UTF8ToUCS2(char const*, int, unsigned short*, int)
-00006670 t cIntToHexDigit(int)
-00004a90 t Q_IsMeanSpaceW(wchar_t)
-000069a0 t Q_URLDecodeRaw(char*, int, char const*, int)
-00006970 t Q_URLEncodeRaw(char*, int, char const*, int)
-0000b070 t Q_UTF16ToUTF32(unsigned short const*, wchar_t*, int, EStringConvertErrorPolicy)
-0000b610 t Q_UTF32ToUTF16(wchar_t const*, unsigned short*, int, EStringConvertErrorPolicy)
-0000b930 t Q_UTF32ToUTF32(wchar_t const*, wchar_t*, int, EStringConvertErrorPolicy)
-00002bf0 t Sys_GetFactory(CSysModule*)
-00002c30 t Sys_GetFactory(char const*)
-00002a00 t Sys_LoadModule(char const*, Sys_Flags)
-00005690 t V_SetExtension(char*, char const*, int)
-00006bb0 t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
-00005810 t V_StripLastDir(char*, int)
-00004510 t V_vsnprintfRet(char*, int, char const*, char*, bool*)
-00002890 t GetModuleHandle(char const*)
-0000a0a0 t Q_UChar32ToUTF8(wchar_t, char*)
-0000a5b0 t Q_UnicodeLength(char const*)
-0000a600 t Q_UnicodeLength(unsigned short const*)
-0000a650 t Q_UnicodeLength(wchar_t const*)
-0000cc20 t Q_UnicodeRepair(char*, EStringConvertErrorPolicy)
-0000ce00 t Q_UnicodeRepair(unsigned short*, EStringConvertErrorPolicy)
-0000d000 t Q_UnicodeRepair(wchar_t*, EStringConvertErrorPolicy)
-0000a1a0 t Q_UTF8ToUChar32(char const*, wchar_t&, bool&)
-00002900 t Sys_LoadLibrary(char const*, Sys_Flags)
-00006080 t V_FixupPathName(char*, unsigned int, char const*)
-00005700 t V_StripFilename(char*)
-0000a010 t Q_IsValidUChar32(wchar_t)
-0000a150 t Q_UChar32ToUTF16(wchar_t, unsigned short*)
-0000a670 t Q_UnicodeAdvance(char*, int)
-0000a6c0 t Q_UnicodeAdvance(unsigned short*, int)
-0000a710 t Q_UnicodeAdvance(wchar_t*, int)
-0000a360 t Q_UTF16ToUChar32(unsigned short const*, wchar_t&, bool&)
-00002bd0 t Sys_UnloadModule(CSysModule*)
-00006050 t V_IsAbsolutePath(char const*)
-00005560 t V_StripExtension(char const*, char*, int)
-00004fa0 t _V_UCS2ToUnicode(unsigned short const*, wchar_t*, int)
-00005050 t _V_UnicodeToUCS2(wchar_t const*, int, char*, int)
-00001f70 t IsBufferBinaryVCD(char*, int)
-0000a450 t Q_UnicodeValidate(char const*)
-0000a4c0 t Q_UnicodeValidate(unsigned short const*)
-0000a520 t Q_UnicodeValidate(wchar_t const*)
-00003930 t StringAfterPrefix(char const*, char const*)
-00002c60 t Sys_LoadInterface(char const*, char const*, CSysModule**, void**)
-00005c90 t V_ComposeFileName(char const*, char const*, char*, int)
-00005960 t V_ExtractFilePath(char const*, char*, int)
-0000a050 t Q_UChar32ToUTF8Len(wchar_t)
-0000bfc0 t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
-0000c620 t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
-0000b950 t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
-0000bcb0 t Q_UTF8CharsToUTF32(char const*, int, wchar_t*, int, EStringConvertErrorPolicy)
-00002c20 t Sys_GetFactoryThis()
-00005610 t V_DefaultExtension(char*, char const*, int)
-00005790 t V_FixDoubleSlashes(char*)
-00005a00 t V_GetFileExtension(char const*)
-00005d30 t V_MakeAbsolutePath(char*, int, char const*, char const*)
-00005ea0 t V_MakeRelativePath(char const*, char const*, char*, int)
-00005ab0 t V_RemoveDotSlashes(char*, char, bool)
-000025c0 t CRC32_GetTableEntry(unsigned int)
-000025d0 t CRC32_ProcessBuffer(unsigned int*, void const*, int)
-0000a080 t Q_UChar32ToUTF16Len(wchar_t)
-000067c0 t Q_URLDecodeInternal(char*, int, char const*, int, bool)
-000066c0 t Q_URLEncodeInternal(char*, int, char const*, int, bool)
-0000c300 t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
-0000c910 t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
-00005520 t V_StripTrailingSlash(char*)
-000028f0 t Sys_IsDebuggerPresent()
-000062e0 t V_GetCurrentDirectory(char*, int)
-00006310 t V_SetCurrentDirectory(char const*)
-00005900 t V_UnqualifiedFileName(char const*)
-00006b30 t BGetLocalFormattedDate(long, char*, int)
-00006b70 t BGetLocalFormattedTime(long, char*, int)
-00006f20 t GetNoEscCharConversion()
-00005a50 t V_ExtractFileExtension(char const*, char*, int)
-00003fe0 t V_normalizeFloatString(char*)
-000027e0 t CreateInterfaceInternal(char const*, int*)
-0000f2d0 t LzmaDec_InitDicAndState(CLzmaDec*, int, int)
-00006f10 t GetCStringCharConversion()
-00004be0 t Q_RemoveAllEvilCharacters(char*)
-00002bc0 t Sys_RunningWithDebugModules()
-000069e0 t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
-00003980 t StringAfterPrefixCaseSensitive(char const*, char const*)
-00006590 t V_AddBackSlashesToSpecialChars(char const*)
-00004e20 t Q_StripPrecedingAndTrailingWhitespace(char*)
-00004cd0 t Q_StripPrecedingAndTrailingWhitespaceW(wchar_t*)
-00004f00 t Q_AggressiveStripPrecedingAndTrailingWhitespace(char*)
-00004d90 t Q_AggressiveStripPrecedingAndTrailingWhitespaceW(wchar_t*)
-00003d90 t V_atof(char const*)
-00003d70 t V_atoi(char const*)
-000039b0 t V_atoi64(char const*)
-00005240 t V_nibble(char)
-000035d0 t V_strupr(char*)
-00003bb0 t V_atoui64(char const*)
-00003400 t _V_memcmp(char const*, int, void const*, void const*, int)
-000033c0 t _V_memcpy(char const*, int, void*, void const*, int)
-000033a0 t _V_memset(char const*, int, void*, int, int)
-000069d0 t V_qsort_s(void*, unsigned int, unsigned int, int (*)(void*, void const*, void const*), void*)
-000034c0 t _V_strcmp(char const*, int, char const*, char const*)
-00003440 t _V_strcpy(char const*, int, char*, char const*)
-00003710 t V_stricmp(char const*, char const*)
-00004170 t V_stristr(char*, char const*)
-00004070 t V_stristr(char const*, char const*)
-00006450 t V_StrLeft(char const*, int, char*, int)
-00003430 t _V_strlen(char const*, int, char const*)
-00004580 t V_strncat(char*, char const*, unsigned int, int)
-000042c0 t V_strnchr(char const*, char, int)
-000038d0 t V_strncmp(char const*, char const*, int)
-00004310 t V_strncpy(char*, char const*, int)
-000036b0 t V_strnlwr(char*, unsigned int)
-00003530 t _V_strstr(char const*, int, char const*, char const*)
-000034e0 t _V_wcscmp(char const*, int, wchar_t const*, wchar_t const*)
-00003460 t _V_wcslen(char const*, int, wchar_t const*)
-00004600 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
-00004350 t V_wcsncpy(wchar_t*, wchar_t const*, int)
-00003550 t _V_wcsupr(char const*, int, wchar_t*)
-         U operator delete(void*)@@GLIBCXX_3.4
-00003350 t FastToLower(char)
-00013a20 r pulCRCTable
-00019244 b vec2_origin
-00019500 b vec2_origin
-0001a858 b vec2_origin
-0001924c b vec2_invalid
-00019510 b vec2_invalid
-0001a860 b vec2_invalid
-00019190 d s_BackSlashMap
-00019260 b g_SceneFileCache
-0000d020 t LzmaDec_TryDummy(CLzmaDec const*, unsigned char const*, unsigned int)
-0000d7b0 t LzmaDec_WriteRem(CLzmaDec*, unsigned int) [clone .part.0]
-0000d870 t LzmaDec_DecodeReal2(CLzmaDec*, unsigned int, unsigned char const*)
-00004b10 t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
-000191f8 d s_pConversionArrays_NoEscConversion
-000191a0 d s_pConversionArrays_StringCharConversion
-0001929c b __g_CreateCSceneFileCacheISceneFileCache_reg
-00001f60 t __CreateCSceneFileCacheISceneFileCache_interface()
-00002de0 t SzFree(void*, void*)
-00019184 d g_Alloc
-00002df0 t SzAlloc(void*, unsigned int)
-00008730 t CUtlBuffer::ParseToken(characterset_t*, char*, int, bool)
-000080c0 t CUtlBuffer::ParseToken(char const*, char const*, char*, int)
-000096e0 t CUtlBuffer::ConvertCRLF(CUtlBuffer&)
-00006e80 t CUtlBuffer::GetOverflow(int)
-00008a80 t CUtlBuffer::IsBigEndian()
-00009bd0 t CUtlBuffer::PutOverflow(int)
-00009660 t CUtlBuffer::AssumeMemory(void*, int, int, int)
-00007450 t CUtlBuffer::CheckPeekGet(int, int)
-00008a50 t CUtlBuffer::SetBigEndian(bool)
-000085d0 t CUtlBuffer::EatCPPComment()
-00007b10 t CUtlBuffer::EatWhiteSpace()
-00007300 t CUtlBuffer::OnGetOverflow(int)
-000072d0 t CUtlBuffer::OnPutOverflow(int)
-00007180 t CUtlBuffer::SetBufferType(bool, bool)
-000071d0 t CUtlBuffer::EnsureCapacity(int)
-00007680 t CUtlBuffer::PeekLineLength()
-000077f0 t CUtlBuffer::PeekWhiteSpace(int)
-00007790 t CUtlBuffer::PeekStringMatch(int, char const*, int)
-000083c0 t CUtlBuffer::GetDelimitedChar(CUtlCharConversion*)
-00007860 t CUtlBuffer::PeekStringLength()
-00009140 t CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)
-000072a0 t CUtlBuffer::SetOverflowFuncs(bool (CUtlBuffer::*)(int), bool (CUtlBuffer::*)(int))
-00007ca0 t CUtlBuffer::GetStringInternal(char*, unsigned int)
-000095e0 t CUtlBuffer::SetExternalBuffer(void*, int, int, int)
-00008a90 t CUtlBuffer::AddNullTermination()
-00008450 t CUtlBuffer::GetDelimitedString(CUtlCharConversion*, char*, int)
-00008e20 t CUtlBuffer::PutDelimitedString(CUtlCharConversion*, char const*)
-00008a20 t CUtlBuffer::ActivateByteSwapping(bool)
-000075e0 t CUtlBuffer::CheckArbitraryPeekGet(int, int&)
-000082c0 t CUtlBuffer::GetDelimitedCharInternal(CUtlCharConversion*)
-000079a0 t CUtlBuffer::PeekDelimitedStringLength(CUtlCharConversion*, bool)
-00007b70 t CUtlBuffer::Get(void*, int)
-00008b60 t CUtlBuffer::Put(void const*, int)
-000093b0 t CUtlBuffer::Swap(CUtlMemory<unsigned char, int>&)
-00009350 t CUtlBuffer::Swap(CUtlBuffer&)
-00008090 t CUtlBuffer::Scanf(char const*, ...)
-00008df0 t CUtlBuffer::Printf(char const*, ...)
-00007bc0 t CUtlBuffer::GetLine(char*, int)
-00007730 t CUtlBuffer::GetUpTo(void*, int)
-00007590 t CUtlBuffer::PeekGet(int, int)
-00007330 t CUtlBuffer::SeekGet(CUtlBuffer::SeekType_t, int)
-00008b00 t CUtlBuffer::SeekPut(CUtlBuffer::SeekType_t, int)
-00007da0 t CUtlBuffer::VaScanf(char const*, char*)
-000073c0 t CUtlBuffer::CheckGet(int)
-000089b0 t CUtlBuffer::CheckPut(int)
-00007480 t CUtlBuffer::GetToken(char const*)
-00008da0 t CUtlBuffer::VaPrintf(char const*, char*)
-00008be0 t CUtlBuffer::PutString(char const*)
-00009ab0 t CUtlBuffer::CUtlBuffer(int, int, int)
-00009530 t CUtlBuffer::CUtlBuffer(void const*, int, int)
-00009ab0 t CUtlBuffer::CUtlBuffer(int, int, int)
-00009530 t CUtlBuffer::CUtlBuffer(void const*, int, int)
-00009c90 t CUtlMemory<unsigned char, int>::Grow(int)
-00002540 t CUtlMemory<unsigned char, int>::Purge()
-00006d10 t CUtlMemory<char*, int>::Grow(int)
-00006dc0 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
-00003090 t CLZMAStream::InitZIPHeader(unsigned int, unsigned int)
-000030c0 t CLZMAStream::TryParseHeader(unsigned char*, unsigned int, unsigned int&)
-00002f80 t CLZMAStream::FreeDecoderState()
-00002fc0 t CLZMAStream::CreateDecoderState(unsigned char const*)
-00003060 t CLZMAStream::GetExpectedBytesRemaining(unsigned int&)
-00003200 t CLZMAStream::Read(unsigned char*, unsigned int, unsigned char*, unsigned int, unsigned int&, unsigned int&)
-00002f60 t CLZMAStream::CLZMAStream()
-00002f60 t CLZMAStream::CLZMAStream()
-00002fb0 t CLZMAStream::~CLZMAStream()
-00002fb0 t CLZMAStream::~CLZMAStream()
-00009d30 t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
-00009d90 t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.1]
-000192b0 b InterfaceReg::s_pInterfaceRegs
-00002850 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
-00002850 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
-00002510 t CBaseAppSystem<ISceneFileCache>::Disconnect()
-000024f0 t CBaseAppSystem<ISceneFileCache>::QueryInterface(char const*)
-00002520 t CBaseAppSystem<ISceneFileCache>::Init()
-00002500 t CBaseAppSystem<ISceneFileCache>::Connect(void* (*)(char const*, int*))
-00002530 t CBaseAppSystem<ISceneFileCache>::Shutdown()
-00001ea0 t CSceneFileCache::Disconnect()
-000022b0 t CSceneFileCache::GetSceneData(char const*, unsigned char*, unsigned int)
-00001f20 t CSceneFileCache::GetSceneString(short)
-00001f90 t CSceneFileCache::FindSceneInImage(char const*)
-00002340 t CSceneFileCache::GetSceneBufferSize(char const*)
-000020f0 t CSceneFileCache::GetSceneCachedData(char const*, SceneCachedData_t*)
-00001ee0 t CSceneFileCache::GetSceneCachedSound(int, int)
-00002170 t CSceneFileCache::GetSceneDataFromImage(char const*, int, unsigned char*, unsigned int*)
-00002410 t CSceneFileCache::Init()
-00001eb0 t CSceneFileCache::Reload()
-00001e70 t CSceneFileCache::Connect(void* (*)(char const*, int*))
-000023d0 t CSceneFileCache::Shutdown()
-00002580 t CSceneFileCache::~CSceneFileCache()
-00002580 t CSceneFileCache::~CSceneFileCache()
-00002d10 t CDllDemandLoader::GetFactory()
-00002d60 t CDllDemandLoader::Unload()
-00002cf0 t CDllDemandLoader::CDllDemandLoader(char const*)
-00002cf0 t CDllDemandLoader::CDllDemandLoader(char const*)
-00002db0 t CDllDemandLoader::~CDllDemandLoader()
-00002d90 t CDllDemandLoader::~CDllDemandLoader()
-00002d90 t CDllDemandLoader::~CDllDemandLoader()
-00009400 t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
-000094b0 t CUtlInplaceBuffer::InplaceGetLinePtr()
-00009bc0 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
-00009bc0 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
-00006e90 t CUtlCharConversion::FindConversion(char const*, int*)
-00006f30 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
-00006f30 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
-00009c80 t CUtlNoEscConversion::FindConversion(char const*, int*)
-00006e50 t CUtlCStringConversion::FindConversion(char const*, int*)
-00007030 t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
-00007030 t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
-00002e50 t CLZMA::Uncompress(unsigned char*, unsigned char*)
-00002e00 t CLZMA::IsCompressed(unsigned char*)
-00002e20 t CLZMA::GetActualSize(unsigned char*)
-         U operator new[](unsigned int)@@GLIBCXX_3.4
-00007110 t CUtlCharConversion::GetDelimiter() const
-00007100 t CUtlCharConversion::GetEscapeChar() const
-00007120 t CUtlCharConversion::GetDelimiterLength() const
-00007150 t CUtlCharConversion::GetConversionLength(char) const
-00007130 t CUtlCharConversion::GetConversionString(char) const
-00007170 t CUtlCharConversion::MaxConversionLength() const
-         U operator new(unsigned int)@@GLIBCXX_3.4
-000139e4 r typeinfo for IAppSystem
-00013994 r typeinfo for CBaseAppSystem<ISceneFileCache>
-0001393c r typeinfo for CSceneFileCache
-000139c4 r typeinfo for ISceneFileCache
-00013eb0 r typeinfo for CDllDemandLoader
-00014134 r typeinfo for CUtlCharConversion
-0001418c r typeinfo for CUtlNoEscConversion
-00014154 r typeinfo for CUtlCStringConversion
-000139ec r typeinfo name for IAppSystem
-000139a0 r typeinfo name for CBaseAppSystem<ISceneFileCache>
-0001392a r typeinfo name for CSceneFileCache
-000139d0 r typeinfo name for ISceneFileCache
-00013e9b r typeinfo name for CDllDemandLoader
-0001411f r typeinfo name for CUtlCharConversion
-00014198 r typeinfo name for CUtlNoEscConversion
-0001413c r typeinfo name for CUtlCStringConversion
-00013960 r vtable for CSceneFileCache
-00013eb8 r vtable for CDllDemandLoader
-00014170 r vtable for CUtlCharConversion
-00014180 r vtable for CUtlNoEscConversion
-00014160 r vtable for CUtlCStringConversion
-         U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
-         U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
-000192e0 b V_pretifymem(float, int, bool)::output
-000192c0 b V_pretifymem(float, int, bool)::current
-00019400 b V_pretifynum(long long)::output
-000193e0 b V_pretifynum(long long)::current
+U abort@@GLIBC_2.0
+t add_fdes
+d adds.7496
+t base_from_cb_data
+t base_from_object
+A __bss_start
+U chdir@@GLIBC_2.0
+t classify_object_over_fdes
+b completed.5793
+T CreateInterface
+d __CTOR_END__
+d __CTOR_LIST__
+U __cxa_atexit@@GLIBC_2.1.3
+w __cxa_finalize@@GLIBC_2.1.3
+t __deregister_frame
+t __deregister_frame_info
+t __deregister_frame_info_bases
+U dlclose@@GLIBC_2.0
+U dlerror@@GLIBC_2.0
+U dl_iterate_phdr@@GLIBC_2.2.4
+U dlopen@@GLIBC_2.1
+U dlsym@@GLIBC_2.0
+t __do_global_ctors_aux
+t __do_global_dtors_aux
+d __dso_handle
+d __DTOR_END__
+b dtor_idx.5795
+d __DTOR_LIST__
+b dwarf_reg_size_table
+a _DYNAMIC
+A _edata
+A _end
+U Error
+t execute_cfa_program
+t execute_stack_op
+t fde_mixed_encoding_compare
+t fde_single_encoding_compare
+t fde_unencoded_compare
+b filesystem
+T _fini
+t frame_downheap
+t frame_dummy
+r __FRAME_END__
+b frame_hdr_cache
+b frame_hdr_cache_head
+t frame_heapsort
+t __frame_state_for
+U free@@GLIBC_2.0
+t get_cie_encoding
+U getcwd@@GLIBC_2.0
+t get_fde_encoding
+a _GLOBAL_OFFSET_TABLE_
+t _GLOBAL__sub_I_filesystem
+t _GLOBAL__sub_I_s_StringCharConversion
+t _GLOBAL__sub_I__Z9_V_memsetPKciPvii
+w __gmon_start__
+U __gxx_personality_v0@@CXXABI_1.3
+t __i686.get_pc_thunk.bx
+t __i686.get_pc_thunk.cx
+U iconv_close@@GLIBC_2.1
+U iconv@@GLIBC_2.1
+U iconv_open@@GLIBC_2.1
+T _init
+t init_dwarf_reg_size_table
+U isspace@@GLIBC_2.0
+U isupper@@GLIBC_2.0
+U iswspace@@GLIBC_2.0
+d __JCR_END__
+d __JCR_LIST__
+w _Jv_RegisterClasses
+t .L17
+t .L19
+t .L20
+t .L214
+t .L215
+t .L216
+t .L217
+t .L218
+t .L219
+t .L220
+t .L221
+t .L222
+t .L223
+t .L224
+t .L225
+t .L226
+t .L227
+t .L228
+t .L229
+t .L23
+t .L230
+t .L24
+t .L244
+t .L25
+t .L26
+t .L271
+t .L272
+t .L273
+t .L274
+t .L275
+t .L43
+t .L45
+t .L46
+t .L47
+t .L47
+t .L48
+t .L48
+t .L49
+t .L50
+t .L51
+t .L51
+t .L52
+t .L52
+t .L53
+t .L53
+t .L54
+t .L54
+t .L55
+t .L56
+t .L57
+t .L58
+t .L59
+t .L60
+t .L61
+t .L62
+t .L63
+t .L64
+t .L65
+t .L66
+t .L67
+t .L68
+t .L69
+t .L70
+t .L71
+t linear_search_fdes
+t LzmaDec_Allocate
+t LzmaDec_AllocateProbs
+t LzmaDec_DecodeToBuf
+t LzmaDec_DecodeToDic
+t LzmaDec_Free
+t LzmaDec_FreeProbs
+t LzmaDec_Init
+t LzmaDecode
+t LzmaProps_Decode
+U malloc@@GLIBC_2.0
+b marker.7234
+U mbstowcs@@GLIBC_2.0
+U memcpy@@GLIBC_2.0
+U memmove@@GLIBC_2.0
+U memset@@GLIBC_2.0
+U Msg
+b object_mutex
+b once_regsizes.7669
+U Plat_IsInDebugSession
+U Plat_localtime
+U pow@@GLIBC_2.0
+U printf@@GLIBC_2.0
+w pthread_cancel@@GLIBC_2.0
+w pthread_mutex_lock@@GLIBC_2.0
+w pthread_mutex_unlock@@GLIBC_2.0
+w pthread_once@@GLIBC_2.0
+t qsort_s
+t read_encoded_value
+t read_encoded_value_with_base
+t read_sleb128
+t read_sleb128
+t read_uleb128
+t read_uleb128
+U realloc@@GLIBC_2.0
+t __register_frame
+t __register_frame_info
+t __register_frame_info_bases
+t __register_frame_info_table
+t __register_frame_info_table_bases
+t __register_frame_table
+t search_object
+b seen_objects
+t set_fast_math
+t size_of_encoded_value
+b s_NoEscConversion
+b s_StringCharConversion
+U strcasecmp@@GLIBC_2.0
+U strchr@@GLIBC_2.0
+U strcmp@@GLIBC_2.0
+U strcpy@@GLIBC_2.0
+U strftime@@GLIBC_2.0
+U strlen@@GLIBC_2.0
+U strncasecmp@@GLIBC_2.0
+U strncat@@GLIBC_2.0
+U strncpy@@GLIBC_2.0
+U strstr@@GLIBC_2.0
+U strtod@@GLIBC_2.0
+U strtol@@GLIBC_2.0
+U strtoul@@GLIBC_2.0
+b subs.7497
+b terminator.7340
+U time@@GLIBC_2.0
+U tolower@@GLIBC_2.0
+U toupper@@GLIBC_2.0
+U towlower@@GLIBC_2.0
+U towupper@@GLIBC_2.0
+t __udivdi3
+b unseen_objects
+t _Unwind_Backtrace
+t _Unwind_DebugHook
+t _Unwind_DeleteException
+t _Unwind_FindEnclosingFunction
+t _Unwind_Find_FDE
+t _Unwind_ForcedUnwind
+t _Unwind_ForcedUnwind_Phase2
+t _Unwind_GetCFA
+t _Unwind_GetDataRelBase
+t _Unwind_GetGR
+t _Unwind_GetIP
+t _Unwind_GetIPInfo
+t _Unwind_GetLanguageSpecificData
+t _Unwind_GetRegionStart
+t _Unwind_GetTextRelBase
+t _Unwind_IteratePhdrCallback
+t _Unwind_RaiseException
+t _Unwind_RaiseException_Phase2
+t _Unwind_Resume
+t _Unwind_Resume_or_Rethrow
+t _Unwind_SetGR
+t _Unwind_SetIP
+t _Unwind_SetSpColumn
+t uw_frame_state_for
+t uw_init_context_1
+t uw_install_context_1
+t uw_update_context
+t uw_update_context_1
+U vsnprintf@@GLIBC_2.0
+U vswprintf@@GLIBC_2.2
+U Warning
+U wcslen@@GLIBC_2.0
+U wcsncat@@GLIBC_2.0
+U wcsncpy@@GLIBC_2.0
+U wcstombs@@GLIBC_2.0
+t CRC32_Init(unsigned int*)
+t V_FileBase(char const*, char*, int)
+t _V_memmove(char const*, int, void*, void const*, int)
+t V_snprintf(char*, int, char const*, ...)
+t V_strlower(char*)
+t V_strnicmp(char const*, char const*, int)
+t V_strnistr(char const*, char const*, int)
+t _V_strrchr(char const*, int, char const*, char)
+t V_StrRight(char const*, int, char*, int)
+t V_StrSlice(char const*, int, int, char*, int)
+t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+t V_strtowcs(char const*, int, wchar_t*, int)
+t V_wcstostr(wchar_t const*, int, char*, int)
+t AllocString(char const*, int)
+t CRC32_Final(unsigned int*)
+t Q_URLDecode(char*, int, char const*, int)
+t Q_URLEncode(char*, int, char const*, int)
+t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
+t V_vsnprintf(char*, int, char const*, char*)
+t _V_wcslower(char const*, int, wchar_t*)
+t V_FixSlashes(char*, char)
+t V_pretifymem(float, int, bool)
+t V_pretifynum(long long)
+t V_vsnwprintf(wchar_t*, int, wchar_t const*, char*)
+t iHexCharToInt(char)
+t PATHSEPARATOR(char)
+t Q_UTF16ToUTF8(unsigned short const*, char*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF8(wchar_t const*, char*, int, EStringConvertErrorPolicy)
+t Q_UTF8ToUTF16(char const*, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF8ToUTF32(char const*, wchar_t*, int, EStringConvertErrorPolicy)
+t V_AppendSlash(char*, int)
+t V_binarytohex(unsigned char const*, int, char*, int)
+t V_GetFileName(char const*)
+t V_hextobinary(char const*, int, unsigned char*, int)
+t V_SplitString(char const*, char const*, CUtlVector<char*, CUtlMemory<char*, int> >&)
+t _V_UCS2ToUTF8(unsigned short const*, char*, int)
+t _V_UTF8ToUCS2(char const*, int, unsigned short*, int)
+t cIntToHexDigit(int)
+t Q_IsMeanSpaceW(wchar_t)
+t Q_URLDecodeRaw(char*, int, char const*, int)
+t Q_URLEncodeRaw(char*, int, char const*, int)
+t Q_UTF16ToUTF32(unsigned short const*, wchar_t*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF16(wchar_t const*, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF32ToUTF32(wchar_t const*, wchar_t*, int, EStringConvertErrorPolicy)
+t Sys_GetFactory(CSysModule*)
+t Sys_GetFactory(char const*)
+t Sys_LoadModule(char const*, Sys_Flags)
+t V_SetExtension(char*, char const*, int)
+t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
+t V_StripLastDir(char*, int)
+t V_vsnprintfRet(char*, int, char const*, char*, bool*)
+t GetModuleHandle(char const*)
+t Q_UChar32ToUTF8(wchar_t, char*)
+t Q_UnicodeLength(char const*)
+t Q_UnicodeLength(unsigned short const*)
+t Q_UnicodeLength(wchar_t const*)
+t Q_UnicodeRepair(char*, EStringConvertErrorPolicy)
+t Q_UnicodeRepair(unsigned short*, EStringConvertErrorPolicy)
+t Q_UnicodeRepair(wchar_t*, EStringConvertErrorPolicy)
+t Q_UTF8ToUChar32(char const*, wchar_t&, bool&)
+t Sys_LoadLibrary(char const*, Sys_Flags)
+t V_FixupPathName(char*, unsigned int, char const*)
+t V_StripFilename(char*)
+t Q_IsValidUChar32(wchar_t)
+t Q_UChar32ToUTF16(wchar_t, unsigned short*)
+t Q_UnicodeAdvance(char*, int)
+t Q_UnicodeAdvance(unsigned short*, int)
+t Q_UnicodeAdvance(wchar_t*, int)
+t Q_UTF16ToUChar32(unsigned short const*, wchar_t&, bool&)
+t Sys_UnloadModule(CSysModule*)
+t V_IsAbsolutePath(char const*)
+t V_StripExtension(char const*, char*, int)
+t _V_UCS2ToUnicode(unsigned short const*, wchar_t*, int)
+t _V_UnicodeToUCS2(wchar_t const*, int, char*, int)
+t IsBufferBinaryVCD(char*, int)
+t Q_UnicodeValidate(char const*)
+t Q_UnicodeValidate(unsigned short const*)
+t Q_UnicodeValidate(wchar_t const*)
+t StringAfterPrefix(char const*, char const*)
+t Sys_LoadInterface(char const*, char const*, CSysModule**, void**)
+t V_ComposeFileName(char const*, char const*, char*, int)
+t V_ExtractFilePath(char const*, char*, int)
+t Q_UChar32ToUTF8Len(wchar_t)
+t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
+t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
+t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
+t Q_UTF8CharsToUTF32(char const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+t Sys_GetFactoryThis()
+t V_DefaultExtension(char*, char const*, int)
+t V_FixDoubleSlashes(char*)
+t V_GetFileExtension(char const*)
+t V_MakeAbsolutePath(char*, int, char const*, char const*)
+t V_MakeRelativePath(char const*, char const*, char*, int)
+t V_RemoveDotSlashes(char*, char, bool)
+t CRC32_GetTableEntry(unsigned int)
+t CRC32_ProcessBuffer(unsigned int*, void const*, int)
+t Q_UChar32ToUTF16Len(wchar_t)
+t Q_URLDecodeInternal(char*, int, char const*, int, bool)
+t Q_URLEncodeInternal(char*, int, char const*, int, bool)
+t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
+t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
+t V_StripTrailingSlash(char*)
+t Sys_IsDebuggerPresent()
+t V_GetCurrentDirectory(char*, int)
+t V_SetCurrentDirectory(char const*)
+t V_UnqualifiedFileName(char const*)
+t BGetLocalFormattedDate(long, char*, int)
+t BGetLocalFormattedTime(long, char*, int)
+t GetNoEscCharConversion()
+t V_ExtractFileExtension(char const*, char*, int)
+t V_normalizeFloatString(char*)
+t CreateInterfaceInternal(char const*, int*)
+t LzmaDec_InitDicAndState(CLzmaDec*, int, int)
+t GetCStringCharConversion()
+t Q_RemoveAllEvilCharacters(char*)
+t Sys_RunningWithDebugModules()
+t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
+t StringAfterPrefixCaseSensitive(char const*, char const*)
+t V_AddBackSlashesToSpecialChars(char const*)
+t Q_StripPrecedingAndTrailingWhitespace(char*)
+t Q_StripPrecedingAndTrailingWhitespaceW(wchar_t*)
+t Q_AggressiveStripPrecedingAndTrailingWhitespace(char*)
+t Q_AggressiveStripPrecedingAndTrailingWhitespaceW(wchar_t*)
+t V_atof(char const*)
+t V_atoi(char const*)
+t V_atoi64(char const*)
+t V_nibble(char)
+t V_strupr(char*)
+t V_atoui64(char const*)
+t _V_memcmp(char const*, int, void const*, void const*, int)
+t _V_memcpy(char const*, int, void*, void const*, int)
+t _V_memset(char const*, int, void*, int, int)
+t V_qsort_s(void*, unsigned int, unsigned int, int (*)(void*, void const*, void const*), void*)
+t _V_strcmp(char const*, int, char const*, char const*)
+t _V_strcpy(char const*, int, char*, char const*)
+t V_stricmp(char const*, char const*)
+t V_stristr(char*, char const*)
+t V_stristr(char const*, char const*)
+t V_StrLeft(char const*, int, char*, int)
+t _V_strlen(char const*, int, char const*)
+t V_strncat(char*, char const*, unsigned int, int)
+t V_strnchr(char const*, char, int)
+t V_strncmp(char const*, char const*, int)
+t V_strncpy(char*, char const*, int)
+t V_strnlwr(char*, unsigned int)
+t _V_strstr(char const*, int, char const*, char const*)
+t _V_wcscmp(char const*, int, wchar_t const*, wchar_t const*)
+t _V_wcslen(char const*, int, wchar_t const*)
+t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
+t V_wcsncpy(wchar_t*, wchar_t const*, int)
+t _V_wcsupr(char const*, int, wchar_t*)
+U operator delete(void*)@@GLIBCXX_3.4
+t FastToLower(char)
+r pulCRCTable
+b vec2_origin
+b vec2_origin
+b vec2_origin
+b vec2_invalid
+b vec2_invalid
+b vec2_invalid
+d s_BackSlashMap
+b g_SceneFileCache
+t LzmaDec_TryDummy(CLzmaDec const*, unsigned char const*, unsigned int)
+t LzmaDec_WriteRem(CLzmaDec*, unsigned int) [clone .part.0]
+t LzmaDec_DecodeReal2(CLzmaDec*, unsigned int, unsigned char const*)
+t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
+d s_pConversionArrays_NoEscConversion
+d s_pConversionArrays_StringCharConversion
+b __g_CreateCSceneFileCacheISceneFileCache_reg
+t __CreateCSceneFileCacheISceneFileCache_interface()
+t SzFree(void*, void*)
+d g_Alloc
+t SzAlloc(void*, unsigned int)
+t CUtlBuffer::ParseToken(characterset_t*, char*, int, bool)
+t CUtlBuffer::ParseToken(char const*, char const*, char*, int)
+t CUtlBuffer::ConvertCRLF(CUtlBuffer&)
+t CUtlBuffer::GetOverflow(int)
+t CUtlBuffer::IsBigEndian()
+t CUtlBuffer::PutOverflow(int)
+t CUtlBuffer::AssumeMemory(void*, int, int, int)
+t CUtlBuffer::CheckPeekGet(int, int)
+t CUtlBuffer::SetBigEndian(bool)
+t CUtlBuffer::EatCPPComment()
+t CUtlBuffer::EatWhiteSpace()
+t CUtlBuffer::OnGetOverflow(int)
+t CUtlBuffer::OnPutOverflow(int)
+t CUtlBuffer::SetBufferType(bool, bool)
+t CUtlBuffer::EnsureCapacity(int)
+t CUtlBuffer::PeekLineLength()
+t CUtlBuffer::PeekWhiteSpace(int)
+t CUtlBuffer::PeekStringMatch(int, char const*, int)
+t CUtlBuffer::GetDelimitedChar(CUtlCharConversion*)
+t CUtlBuffer::PeekStringLength()
+t CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)
+t CUtlBuffer::SetOverflowFuncs(bool (CUtlBuffer::*)(int), bool (CUtlBuffer::*)(int))
+t CUtlBuffer::GetStringInternal(char*, unsigned int)
+t CUtlBuffer::SetExternalBuffer(void*, int, int, int)
+t CUtlBuffer::AddNullTermination()
+t CUtlBuffer::GetDelimitedString(CUtlCharConversion*, char*, int)
+t CUtlBuffer::PutDelimitedString(CUtlCharConversion*, char const*)
+t CUtlBuffer::ActivateByteSwapping(bool)
+t CUtlBuffer::CheckArbitraryPeekGet(int, int&)
+t CUtlBuffer::GetDelimitedCharInternal(CUtlCharConversion*)
+t CUtlBuffer::PeekDelimitedStringLength(CUtlCharConversion*, bool)
+t CUtlBuffer::Get(void*, int)
+t CUtlBuffer::Put(void const*, int)
+t CUtlBuffer::Swap(CUtlMemory<unsigned char, int>&)
+t CUtlBuffer::Swap(CUtlBuffer&)
+t CUtlBuffer::Scanf(char const*, ...)
+t CUtlBuffer::Printf(char const*, ...)
+t CUtlBuffer::GetLine(char*, int)
+t CUtlBuffer::GetUpTo(void*, int)
+t CUtlBuffer::PeekGet(int, int)
+t CUtlBuffer::SeekGet(CUtlBuffer::SeekType_t, int)
+t CUtlBuffer::SeekPut(CUtlBuffer::SeekType_t, int)
+t CUtlBuffer::VaScanf(char const*, char*)
+t CUtlBuffer::CheckGet(int)
+t CUtlBuffer::CheckPut(int)
+t CUtlBuffer::GetToken(char const*)
+t CUtlBuffer::VaPrintf(char const*, char*)
+t CUtlBuffer::PutString(char const*)
+t CUtlBuffer::CUtlBuffer(int, int, int)
+t CUtlBuffer::CUtlBuffer(void const*, int, int)
+t CUtlBuffer::CUtlBuffer(int, int, int)
+t CUtlBuffer::CUtlBuffer(void const*, int, int)
+t CUtlMemory<unsigned char, int>::Grow(int)
+t CUtlMemory<unsigned char, int>::Purge()
+t CUtlMemory<char*, int>::Grow(int)
+t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
+t CLZMAStream::InitZIPHeader(unsigned int, unsigned int)
+t CLZMAStream::TryParseHeader(unsigned char*, unsigned int, unsigned int&)
+t CLZMAStream::FreeDecoderState()
+t CLZMAStream::CreateDecoderState(unsigned char const*)
+t CLZMAStream::GetExpectedBytesRemaining(unsigned int&)
+t CLZMAStream::Read(unsigned char*, unsigned int, unsigned char*, unsigned int, unsigned int&, unsigned int&)
+t CLZMAStream::CLZMAStream()
+t CLZMAStream::CLZMAStream()
+t CLZMAStream::~CLZMAStream()
+t CLZMAStream::~CLZMAStream()
+t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
+t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.1]
+b InterfaceReg::s_pInterfaceRegs
+t InterfaceReg::InterfaceReg(void* (*)(), char const*)
+t InterfaceReg::InterfaceReg(void* (*)(), char const*)
+t CBaseAppSystem<ISceneFileCache>::Disconnect()
+t CBaseAppSystem<ISceneFileCache>::QueryInterface(char const*)
+t CBaseAppSystem<ISceneFileCache>::Init()
+t CBaseAppSystem<ISceneFileCache>::Connect(void* (*)(char const*, int*))
+t CBaseAppSystem<ISceneFileCache>::Shutdown()
+t CSceneFileCache::Disconnect()
+t CSceneFileCache::GetSceneData(char const*, unsigned char*, unsigned int)
+t CSceneFileCache::GetSceneString(short)
+t CSceneFileCache::FindSceneInImage(char const*)
+t CSceneFileCache::GetSceneBufferSize(char const*)
+t CSceneFileCache::GetSceneCachedData(char const*, SceneCachedData_t*)
+t CSceneFileCache::GetSceneCachedSound(int, int)
+t CSceneFileCache::GetSceneDataFromImage(char const*, int, unsigned char*, unsigned int*)
+t CSceneFileCache::Init()
+t CSceneFileCache::Reload()
+t CSceneFileCache::Connect(void* (*)(char const*, int*))
+t CSceneFileCache::Shutdown()
+t CSceneFileCache::~CSceneFileCache()
+t CSceneFileCache::~CSceneFileCache()
+t CDllDemandLoader::GetFactory()
+t CDllDemandLoader::Unload()
+t CDllDemandLoader::CDllDemandLoader(char const*)
+t CDllDemandLoader::CDllDemandLoader(char const*)
+t CDllDemandLoader::~CDllDemandLoader()
+t CDllDemandLoader::~CDllDemandLoader()
+t CDllDemandLoader::~CDllDemandLoader()
+t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
+t CUtlInplaceBuffer::InplaceGetLinePtr()
+t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlCharConversion::FindConversion(char const*, int*)
+t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlNoEscConversion::FindConversion(char const*, int*)
+t CUtlCStringConversion::FindConversion(char const*, int*)
+t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CLZMA::Uncompress(unsigned char*, unsigned char*)
+t CLZMA::IsCompressed(unsigned char*)
+t CLZMA::GetActualSize(unsigned char*)
+U operator new[](unsigned int)@@GLIBCXX_3.4
+t CUtlCharConversion::GetDelimiter() const
+t CUtlCharConversion::GetEscapeChar() const
+t CUtlCharConversion::GetDelimiterLength() const
+t CUtlCharConversion::GetConversionLength(char) const
+t CUtlCharConversion::GetConversionString(char) const
+t CUtlCharConversion::MaxConversionLength() const
+U operator new(unsigned int)@@GLIBCXX_3.4
+r typeinfo for IAppSystem
+r typeinfo for CBaseAppSystem<ISceneFileCache>
+r typeinfo for CSceneFileCache
+r typeinfo for ISceneFileCache
+r typeinfo for CDllDemandLoader
+r typeinfo for CUtlCharConversion
+r typeinfo for CUtlNoEscConversion
+r typeinfo for CUtlCStringConversion
+r typeinfo name for IAppSystem
+r typeinfo name for CBaseAppSystem<ISceneFileCache>
+r typeinfo name for CSceneFileCache
+r typeinfo name for ISceneFileCache
+r typeinfo name for CDllDemandLoader
+r typeinfo name for CUtlCharConversion
+r typeinfo name for CUtlNoEscConversion
+r typeinfo name for CUtlCStringConversion
+r vtable for CSceneFileCache
+r vtable for CDllDemandLoader
+r vtable for CUtlCharConversion
+r vtable for CUtlNoEscConversion
+r vtable for CUtlCStringConversion
+U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
+U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
+b V_pretifymem(float, int, bool)::output
+b V_pretifymem(float, int, bool)::current
+b V_pretifynum(long long)::output
+b V_pretifynum(long long)::current
