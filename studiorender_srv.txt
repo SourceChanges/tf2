@@ -2028,11 +2028,12 @@ t ConVar::ClampValue(float&)
 t ConVar::SetDefault(char const*)
 t ConVar::InternalSetValue(char const*)
 t ConVar::ChangeStringValue(char const*, float)
+t ConVar::SetCompetitiveMode(bool)
 t ConVar::InternalSetIntValue(int)
 t ConVar::InstallChangeCallback(void (*)(IConVar*, char const*, float))
-t ConVar::InternalSetFloatValue(float)
+t ConVar::InternalSetFloatValue(float, bool)
 t ConVar::Init()
-t ConVar::Create(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+t ConVar::Create(char const*, char const*, int, char const*, bool, float, bool, float, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::Revert()
 t ConVar::AddFlags(int)
 t ConVar::SetValue(float)
@@ -2041,11 +2042,13 @@ t ConVar::SetValue(char const*)
 t ConVar::ConVar(char const*, char const*, int)
 t ConVar::ConVar(char const*, char const*, int, char const*)
 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int)
 t ConVar::ConVar(char const*, char const*, int, char const*)
 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
 t ConVar::~ConVar()
@@ -2207,6 +2210,8 @@ t CUtlCharConversion::MaxConversionLength() const
 t CStudioRenderContext::GetNumLODs(studiohwdata_t const&) const
 t CStudioRenderContext::GetPerfStats(DrawModelResults_t*, DrawModelInfo_t const&, CUtlBuffer*) const
 t CStudioRenderContext::GetLODSwitchValue(studiohwdata_t const&, int) const
+t ConVar::GetCompMax(float&) const
+t ConVar::GetCompMin(float&) const
 t ConVar::GetDefault() const
 t ConVar::GetHelpText() const
 t ConVar::IsRegistered() const

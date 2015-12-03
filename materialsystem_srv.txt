@@ -4605,11 +4605,12 @@ t ConVar::ClampValue(float&)
 t ConVar::SetDefault(char const*)
 t ConVar::InternalSetValue(char const*)
 t ConVar::ChangeStringValue(char const*, float)
+t ConVar::SetCompetitiveMode(bool)
 t ConVar::InternalSetIntValue(int)
 t ConVar::InstallChangeCallback(void (*)(IConVar*, char const*, float))
-t ConVar::InternalSetFloatValue(float)
+t ConVar::InternalSetFloatValue(float, bool)
 t ConVar::Init()
-t ConVar::Create(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+t ConVar::Create(char const*, char const*, int, char const*, bool, float, bool, float, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::Revert()
 t ConVar::AddFlags(int)
 t ConVar::SetValue(float)
@@ -4618,11 +4619,13 @@ t ConVar::SetValue(char const*)
 t ConVar::ConVar(char const*, char const*, int)
 t ConVar::ConVar(char const*, char const*, int, char const*)
 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int)
 t ConVar::ConVar(char const*, char const*, int, char const*)
 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
 t ConVar::~ConVar()
@@ -5525,6 +5528,8 @@ t CMorph::CountStaticMeshVertices() const
 t CMorph::DetermineTotalDeltaCount(CUtlVector<CUtlVector<CMorph::MorphSegment_t, CUtlMemory<CMorph::MorphSegment_t, int> >, CUtlMemory<CUtlVector<CMorph::MorphSegment_t, CUtlMemory<CMorph::MorphSegment_t, int> >, int> > const&) const
 t CMorph::ComputeMorphTextureSizeInBytes() const
 t CMorph::IsLocked() const
+t ConVar::GetCompMax(float&) const
+t ConVar::GetCompMin(float&) const
 t ConVar::GetDefault() const
 t ConVar::GetHelpText() const
 t ConVar::IsRegistered() const

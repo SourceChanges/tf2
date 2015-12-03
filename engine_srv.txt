@@ -4017,7 +4017,6 @@ b lineartotexture
 t logaddress_list(CCommand const&)
 b matchmakingport
 t mat_savechanges(CCommand const&)
-b mat_shadowstate
 b mem_eat_command
 b multvar_command
 b net_maxfilesize
@@ -4258,7 +4257,6 @@ b g_PartialChangeEnts
 b g_pSentenceFileList
 t host_name_changed_f(IConVar*, char const*, float)
 t LzmaDec_DecodeReal2(CLzmaDec*, unsigned int, unsigned char const*)
-b mat_maxframelatency
 b mem_compact_command
 b memory_diff_command
 b memory_list_command
@@ -8918,11 +8916,12 @@ t ConVar::ClampValue(float&)
 t ConVar::SetDefault(char const*)
 t ConVar::InternalSetValue(char const*)
 t ConVar::ChangeStringValue(char const*, float)
+t ConVar::SetCompetitiveMode(bool)
 t ConVar::InternalSetIntValue(int)
 t ConVar::InstallChangeCallback(void (*)(IConVar*, char const*, float))
-t ConVar::InternalSetFloatValue(float)
+t ConVar::InternalSetFloatValue(float, bool)
 t ConVar::Init()
-t ConVar::Create(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+t ConVar::Create(char const*, char const*, int, char const*, bool, float, bool, float, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::Revert()
 t ConVar::AddFlags(int)
 t ConVar::SetValue(float)
@@ -8931,11 +8930,13 @@ t ConVar::SetValue(char const*)
 t ConVar::ConVar(char const*, char const*, int)
 t ConVar::ConVar(char const*, char const*, int, char const*)
 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int)
 t ConVar::ConVar(char const*, char const*, int, char const*)
 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
 t ConVar::~ConVar()
@@ -10102,6 +10103,8 @@ t CNetworkStringTableContainer::GetNumTables() const
 t CNetworkStringTableContainer::GetTable(int) const
 t CNetworkStringTableContainer::FindTable(char const*) const
 t CTraceFilterWorldAndPropsOnly::GetTraceType() const
+t ConVar::GetCompMax(float&) const
+t ConVar::GetCompMin(float&) const
 t ConVar::GetDefault() const
 t ConVar::GetHelpText() const
 t ConVar::IsRegistered() const

@@ -5617,11 +5617,12 @@ t ConVar::ClampValue(float&)
 t ConVar::SetDefault(char const*)
 t ConVar::InternalSetValue(char const*)
 t ConVar::ChangeStringValue(char const*, float)
+t ConVar::SetCompetitiveMode(bool)
 t ConVar::InternalSetIntValue(int)
 t ConVar::InstallChangeCallback(void (*)(IConVar*, char const*, float))
-t ConVar::InternalSetFloatValue(float)
+t ConVar::InternalSetFloatValue(float, bool)
 t ConVar::Init()
-t ConVar::Create(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
+t ConVar::Create(char const*, char const*, int, char const*, bool, float, bool, float, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::Revert()
 t ConVar::AddFlags(int)
 t ConVar::SetValue(float)
@@ -5630,11 +5631,13 @@ t ConVar::SetValue(char const*)
 t ConVar::ConVar(char const*, char const*, int)
 t ConVar::ConVar(char const*, char const*, int, char const*)
 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int)
 t ConVar::ConVar(char const*, char const*, int, char const*)
 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float)
+t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int, char const*, bool, float, bool, float, void (*)(IConVar*, char const*, float))
 t ConVar::ConVar(char const*, char const*, int, char const*, void (*)(IConVar*, char const*, float))
 t ConVar::~ConVar()
@@ -6226,6 +6229,8 @@ t IVP_SurfaceManager_VirtualMesh::get_single_convex() const
 t IVP_SurfaceManager_VirtualMesh::get_rotation_inertia(IVP_U_Float_Point*) const
 t IVP_SurfaceManager_VirtualMesh::get_radius_and_radius_dev_to_given_center(IVP_U_Float_Point const*, float*, float*) const
 t IVP_Collision_Callback_Table_Hash::compare(void*, void*) const
+t ConVar::GetCompMax(float&) const
+t ConVar::GetCompMin(float&) const
 t ConVar::GetDefault() const
 t ConVar::GetHelpText() const
 t ConVar::IsRegistered() const
