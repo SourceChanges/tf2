@@ -1308,7 +1308,7 @@ b s_OcclusionQueryMgr
 b s_pWireframeIgnoreZ
 b s_RenderedQuadHisto
 b g_CleanupSymbolTable
-t GetOptimalReadBuffer(CUtlBuffer*, void*, int) [clone .constprop.72]
+t GetOptimalReadBuffer(CUtlBuffer*, void*, int) [clone .constprop.71]
 b mat_bufferprimitives
 b mat_depthbias_normal
 b mat_lodin_hidden_pop
@@ -6806,6 +6806,8 @@ b CreateTextureCompositor(int, int, char const*, int, unsigned long long, KeyVal
 r DrawScreenSpaceRectangle(IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int, float)::__FUNCTION__
 b DrawScreenSpaceRectangle(IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int, float)::tm_fmt
 b Bias(float, float)::lastExponent
+r GetThreadId()::__FUNCTION__
+b GetThreadId()::tm_fmt
 r stb__RefineBlock(unsigned char*, unsigned short*, unsigned short*, unsigned int)::prods
 r stb__RefineBlock(unsigned char*, unsigned short*, unsigned short*, unsigned int)::w1Tab
 r GetOptimalReadBuffer(CUtlBuffer*, void*, int)::__FUNCTION__
@@ -7010,6 +7012,14 @@ r CTexture::MakeFullyResident()::__FUNCTION__
 b CTexture::MakeFullyResident()::tm_fmt
 r CTexture::ReconstructTexture(bool)::__FUNCTION__
 b CTexture::ReconstructTexture(bool)::tm_fmt
+b CTexture::ReconstructTexture(bool)::tm_fmt
+b CTexture::ReconstructTexture(bool)::tm_fmt
+b CTexture::ReconstructTexture(bool)::tm_fmt
+b CTexture::ReconstructTexture(bool)::tm_fmt
+b CTexture::ReconstructTexture(bool)::tm_fmt
+b CTexture::ReconstructTexture(bool)::tm_fmt
+b CTexture::ReconstructTexture(bool)::tm_fmt
+b CTexture::ReconstructTexture(bool)::tm_fmt
 r CTexture::CopyToStagingTexture(ITexture*)::__FUNCTION__
 b CTexture::CopyToStagingTexture(ITexture*)::tm_fmt
 r CTexture::ConvertToActualFormat(IVTFTexture*)::__FUNCTION__
@@ -7028,11 +7038,17 @@ r CTexture::MigrateShaderAPITextures()::__FUNCTION__
 b CTexture::MigrateShaderAPITextures()::tm_fmt
 r CTexture::ReleaseScratchVTFTexture(IVTFTexture*)::__FUNCTION__
 b CTexture::ReleaseScratchVTFTexture(IVTFTexture*)::tm_fmt
+r CTexture::AllocateShaderAPITextures()::__FUNCTION__
+b CTexture::AllocateShaderAPITextures()::tm_fmt
 b CTexture::ApplyRenderTargetSizeMode(int&, int&, ImageFormat)::bReplayInit
 b CTexture::ApplyRenderTargetSizeMode(int&, int&, ImageFormat)::m_aScreenshotWidths
 r CTexture::ApplyRenderTargetSizeMode(int&, int&, ImageFormat)::s_flInvAspectRatios
 b CTexture::ApplyRenderTargetSizeMode(int&, int&, ImageFormat)::replay_screenshotresolution
 r CTexture::ReconstructProceduralBits()::__FUNCTION__
+b CTexture::ReconstructProceduralBits()::tm_fmt
+b CTexture::ReconstructProceduralBits()::tm_fmt
+b CTexture::ReconstructProceduralBits()::tm_fmt
+b CTexture::ReconstructProceduralBits()::tm_fmt
 b CTexture::ReconstructProceduralBits()::tm_fmt
 r CTexture::SetFilteringAndClampingMode(bool)::__FUNCTION__
 b CTexture::SetFilteringAndClampingMode(bool)::tm_fmt
