@@ -75,7 +75,7 @@ T CreateInterface
 U CreateSimpleThread
 r CSWTCH.184
 r CSWTCH.310
-r CSWTCH.448
+r CSWTCH.450
 r CSWTCH.6
 d __CTOR_END__
 d __CTOR_LIST__
@@ -4162,7 +4162,6 @@ b net_maxpacketdrop
 b net_showfragments
 b net_start_command
 b orig_demo_message
-t ParseSteamInfFile(SteamInfVersionInfo_t&, char const*, char const*) [clone .constprop.64]
 r _ps_inv_sign_mask
 b r_ambientfraction
 b r_drawbatchdecals
@@ -4316,6 +4315,7 @@ b sv_instancebaselines
 t SvTagsChangeCallback(IConVar*, char const*, float)
 b sv_useexplicitdelete
 b s_WingedTestEdgeList
+t Sys_TryInitSteamInfo(void*, SteamInfVersionInfo_t&, char const*, char const*, bool) [clone .constprop.66]
 t vprof_cachemiss_Impl()
 t vprof_playback_start(CCommand const&)
 t CreateExecutionMarker()
@@ -4481,6 +4481,7 @@ t FindAndRemoveExecutionMarker(int)
 t StaticPropColorTexelCallback(FileAsyncRequest_t const&, int, FSAsyncStatus_t)
 t vprof_generate_report_budget(CCommand const&)
 b vprof_playback_start_command
+b host_competitive_ever_enabled
 b mat_monitorgamma_tv_range_max
 b mat_monitorgamma_tv_range_min
 t mat_powersavingsmode_callback(IConVar*, char const*, float)
@@ -6483,6 +6484,7 @@ t CModelRender::DrawModelExecute(DrawModelState_t const&, ModelRenderInfo_t cons
 t CModelRender::SetupColorMeshes(int)
 t CModelRender::GetStaticLighting(unsigned short)
 t CModelRender::SetStaticLighting(unsigned short, LightCacheHandle_t__**)
+t CModelRender::GetMaterialOverride(IMaterial**, OverrideType_t*)
 t CModelRender::InitColormeshParams(CModelRender::ModelInstance_t&, studiohwdata_t*, colormeshparams_t*)
 t CModelRender::StudioSetupLighting(DrawModelState_t const&, Vector const&, LightCacheHandle_t__**, bool, bool, bool&, DrawModelInfo_t&, ModelRenderInfo_t const&, int)
 t CModelRender::DrawModelShadowSetup(IClientRenderable*, int, int, DrawModelInfo_t*, matrix3x4_t*)
@@ -11557,6 +11559,7 @@ r gzip_file_compress(CUtlString const&)::__FUNCTION__
 b Cbuf_ExecuteCommand(CCommand const&, cmd_source_t)::tm_fmt
 b SurfFlagsToSortGroup(msurface2_t*, int)::warningcount
 b SvTagsChangeCallback(IConVar*, char const*, float)::bTagsChangeCallback
+b Sys_TryInitSteamInfo(void*, SteamInfVersionInfo_t&, char const*, char const*, bool)::initState
 b g_exec_CompletionFunc(char const*, char (*) [64])::execComplete
 b HandleExecutionMarker(char const*, char const*)::cnt
 b InitializeCharacterSets()::s_CharacterSetInitialized
@@ -11565,6 +11568,30 @@ b Cmd_TranslateFileAssociation(char const*)::sz
 b ping(CCommand const&)::g_flLastTime__Limit
 b status(CCommand const&)::g_flLastTime__Limit
 b status(CCommand const&)::sv_tags
+b CAutoLockT<CThreadMutex>::CAutoLockT(CThreadMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex>::CAutoLockT(CThreadMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex>::CAutoLockT(CThreadMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex>::~CAutoLockT()::tm_fmt
+b CAutoLockT<CUtlVectorMT<CUtlVector<pendingsocket_t, CUtlMemory<pendingsocket_t, int> >, CThreadFastMutex> >::CAutoLockT(CUtlVectorMT<CUtlVector<pendingsocket_t, CUtlMemory<pendingsocket_t, int> >, CThreadFastMutex>&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CUtlVectorMT<CUtlVector<pendingsocket_t, CUtlMemory<pendingsocket_t, int> >, CThreadFastMutex> >::CAutoLockT(CUtlVectorMT<CUtlVector<pendingsocket_t, CUtlMemory<pendingsocket_t, int> >, CThreadFastMutex>&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CUtlVectorMT<CUtlVector<pendingsocket_t, CUtlMemory<pendingsocket_t, int> >, CThreadFastMutex> >::CAutoLockT(CUtlVectorMT<CUtlVector<pendingsocket_t, CUtlMemory<pendingsocket_t, int> >, CThreadFastMutex>&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CUtlVectorMT<CUtlVector<pendingsocket_t, CUtlMemory<pendingsocket_t, int> >, CThreadFastMutex> >::~CAutoLockT()::tm_fmt
+b CAutoLockT<CUtlVectorMT<CUtlVector<CNetChan*, CUtlMemory<CNetChan*, int> >, CThreadFastMutex> >::CAutoLockT(CUtlVectorMT<CUtlVector<CNetChan*, CUtlMemory<CNetChan*, int> >, CThreadFastMutex>&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CUtlVectorMT<CUtlVector<CNetChan*, CUtlMemory<CNetChan*, int> >, CThreadFastMutex> >::CAutoLockT(CUtlVectorMT<CUtlVector<CNetChan*, CUtlMemory<CNetChan*, int> >, CThreadFastMutex>&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CUtlVectorMT<CUtlVector<CNetChan*, CUtlMemory<CNetChan*, int> >, CThreadFastMutex> >::CAutoLockT(CUtlVectorMT<CUtlVector<CNetChan*, CUtlMemory<CNetChan*, int> >, CThreadFastMutex>&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CUtlVectorMT<CUtlVector<CNetChan*, CUtlMemory<CNetChan*, int> >, CThreadFastMutex> >::~CAutoLockT()::tm_fmt
+b CAutoLockT<CDataManagerBase>::CAutoLockT(CDataManagerBase&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CDataManagerBase>::CAutoLockT(CDataManagerBase&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CDataManagerBase>::CAutoLockT(CDataManagerBase&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CDataManagerBase>::~CAutoLockT()::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::~CAutoLockT()::tm_fmt
+b CAutoLockT<CThreadMutex const>::CAutoLockT(CThreadMutex const&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex const>::CAutoLockT(CThreadMutex const&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex const>::CAutoLockT(CThreadMutex const&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex const>::~CAutoLockT()::tm_fmt
 d CHostState::State_Run(float)::s_bFirstRunFrame
 b CStudioHdr::GroupStudioHdr(int)::__executeCount
 b CStudioHdr::GroupStudioHdr(int)::__executeCount

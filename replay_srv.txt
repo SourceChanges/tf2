@@ -3919,6 +3919,14 @@ b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
 b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
 b Replay_va(char const*, ...)::string
 b Replay_va(char const*, ...)::curstring
+b CAutoLockT<CThreadMutex>::CAutoLockT(CThreadMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex>::CAutoLockT(CThreadMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex>::CAutoLockT(CThreadMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex>::~CAutoLockT()::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::~CAutoLockT()::tm_fmt
 b CUtlString::GetEmptyString()::s_emptyString
 b SVC_Sounds::ReadFromBuffer(bf_read&)::tm_fmt
 b CReplayTime::GetLocalizedDay(vgui::ILocalize*, int)::s_wDay

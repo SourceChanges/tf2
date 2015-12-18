@@ -1165,6 +1165,7 @@ t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
 t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
+t CJobQueue::Push(CJob*, int)
 t CJobQueue::~CJobQueue()
 t CJobQueue::~CJobQueue()
 t ConVarRef::Init(char const*, bool)
@@ -1513,6 +1514,14 @@ b V_pretifynum(long long)::current
 d GetOSType::eOSVersion
 b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
 b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
+b CAutoLockT<CThreadMutex>::CAutoLockT(CThreadMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex>::CAutoLockT(CThreadMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex>::CAutoLockT(CThreadMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex>::~CAutoLockT()::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::~CAutoLockT()::tm_fmt
 r CJobThread::Run()::__FUNCTION__
 b CJobThread::Run()::tm_fmt
 b CJobThread::Run()::tm_fmt

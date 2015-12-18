@@ -1132,6 +1132,10 @@ b _PitchToString(float)::sz
 b _VolumeToString(float)::sz
 b _ChannelToString(int)::sz
 b _SoundLevelToString(soundlevel_t)::sz
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::~CAutoLockT()::tm_fmt
 b CUtlString::GetEmptyString()::s_emptyString
 b CUtlSymbol::Initialize()::symbolsInitialized
 r CThreadSpinRWLock::TryLockForWrite(unsigned int)::oldValue

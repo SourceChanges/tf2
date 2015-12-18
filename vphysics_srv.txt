@@ -7206,6 +7206,14 @@ b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
 b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
 b GetTmpObjectMatrix(IVP_Real_Object*)::coreShiftMatrix
 b InitializeCharacterSets()::s_CharacterSetInitialized
+b CAutoLockT<CDataManagerBase>::CAutoLockT(CDataManagerBase&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CDataManagerBase>::CAutoLockT(CDataManagerBase&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CDataManagerBase>::CAutoLockT(CDataManagerBase&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CDataManagerBase>::~CAutoLockT()::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::~CAutoLockT()::tm_fmt
 b CUtlString::GetEmptyString()::s_emptyString
 b CUtlSymbol::Initialize()::symbolsInitialized
 b IVP_Mindist::update_exact_mindist_events(IVP_BOOL, IVP_MINDIST_EVENT_HINT)::count

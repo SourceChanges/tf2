@@ -407,6 +407,7 @@ t _V_UCS2ToUTF8(unsigned short const*, char*, int)
 t _V_UTF8ToUCS2(char const*, int, unsigned short*, int)
 t AddFilesToList(CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&, char const*, char const*, char const*)
 t cIntToHexDigit(int)
+t CAutoLockT<CThreadFastMutex> make_auto_lock<CThreadFastMutex>(CThreadFastMutex&, char const*, char const*, int, int)
 t Q_IsMeanSpaceW(wchar_t)
 t Q_URLDecodeRaw(char*, int, char const*, int)
 t Q_URLEncodeRaw(char*, int, char const*, int)
@@ -2080,6 +2081,14 @@ b V_pretifymem(float, int, bool)::output
 b V_pretifymem(float, int, bool)::current
 b V_pretifynum(long long)::output
 b V_pretifynum(long long)::current
+b CAutoLockT<CDataManagerBase>::CAutoLockT(CDataManagerBase&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CDataManagerBase>::CAutoLockT(CDataManagerBase&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CDataManagerBase>::CAutoLockT(CDataManagerBase&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CDataManagerBase>::~CAutoLockT()::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::~CAutoLockT()::tm_fmt
 b CDataCache::EnsureCapacity(unsigned int)::tm_fmt
 b CDataCache::Flush(bool, bool)::tm_fmt
 b CDataCache::Purge(unsigned int)::tm_fmt

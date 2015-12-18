@@ -1412,6 +1412,7 @@ t CalcLineToLineIntersectionSegment(Vector const&, Vector const&, Vector const&,
 t FileSystem_AddSearchPath_Platform(IFileSystem*, char const*)
 t EF_VID_ForceUnlockedAndReturnState()
 t Kochanek_Bartels_Spline_NormalizeX(float, float, float, Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t CaselessStringLessThanIgnoreSlashes(char const* const&, char const* const&)
 t Catmull_Rom_Spline_Integral_Normalize(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t Q_StripPrecedingAndTrailingWhitespace(char*)
 t Q_StripPrecedingAndTrailingWhitespaceW(wchar_t*)
@@ -2155,6 +2156,7 @@ t CZipPackFile::IndexToFilename(int, char*, int)
 t CZipPackFile::SetupPreloadData()
 t CZipPackFile::CPackFileLessFunc::Less(CZipPackFile::CPackFileEntry const&, CZipPackFile::CPackFileEntry const&, void*)
 t CZipPackFile::DiscardPreloadData()
+t CZipPackFile::GetFileAndDirLists(char const*, CUtlStringList&, CUtlStringList&, bool)
 t CZipPackFile::GetPackFileBaseOffset()
 t CZipPackFile::Prepare(long long, long long)
 t CZipPackFile::OpenFile(char const*, char const*)
@@ -2470,6 +2472,8 @@ t CBaseFileSystem::AsyncFinishAllWrites()
 t CBaseFileSystem::CSearchPathsIterator::CopySearchPaths(CUtlVector<CBaseFileSystem::CSearchPath, CUtlMemory<CBaseFileSystem::CSearchPath, int> > const&)
 t CBaseFileSystem::CSearchPathsIterator::GetNext()
 t CBaseFileSystem::CSearchPathsIterator::GetFirst()
+t CBaseFileSystem::CSearchPathsIterator::CSearchPathsIterator(CBaseFileSystem*, char const**, char const*, PathTypeFilter_t)
+t CBaseFileSystem::CSearchPathsIterator::CSearchPathsIterator(CBaseFileSystem*, char const**, char const*, PathTypeFilter_t)
 t CBaseFileSystem::CSearchPathsIterator::~CSearchPathsIterator()
 t CBaseFileSystem::CSearchPathsIterator::~CSearchPathsIterator()
 t CBaseFileSystem::FindFileInSearchPath(CFileOpenInfo&)
@@ -2490,7 +2494,6 @@ t CBaseFileSystem::AllocOptimalReadBuffer(void*, unsigned int, unsigned int)
 t CBaseFileSystem::FullPathToRelativePath(char const*, char*, int)
 t CBaseFileSystem::GetFileTypeForFullPath(char const*, wchar_t*, unsigned int)
 t CBaseFileSystem::RelativePathToFullPath(char const*, char const*, char*, int, PathTypeFilter_t, unsigned int*)
-t CBaseFileSystem::FindNextFileInVPKHelper(CBaseFileSystem::FindData_t*)
 t CBaseFileSystem::FindSearchPathByStoreId(int)
 t CBaseFileSystem::GetFilesystemStatistics()
 t CBaseFileSystem::GetOptimalIOConstraints(void*, unsigned int*, unsigned int*, unsigned int*)
@@ -2507,6 +2510,7 @@ t CBaseFileSystem::InstallDirtyDiskReportFunc(void (*)())
 t CBaseFileSystem::LookupKeyValuesRootKeyName(char const*, char const*, char*, unsigned int)
 t CBaseFileSystem::EnableWhitelistFileTracking(bool, bool, bool)
 t CBaseFileSystem::AsyncReadMultipleCreditAlloc(FileAsyncRequest_t const*, int, char const*, int, FSAsyncControl_t__**)
+t CBaseFileSystem::FindNextFileInVPKOrPakHelper(CBaseFileSystem::FindData_t*)
 t CBaseFileSystem::SetSearchPathIsTrustedSource(CBaseFileSystem::CSearchPath*)
 t CBaseFileSystem::Init()
 t CBaseFileSystem::IsOk(void*)
@@ -5717,6 +5721,8 @@ t CryptoPP::operator+(CryptoPP::OID const&, unsigned long) [clone .clone.154]
 t CryptoPP::operator+(CryptoPP::OID const&, unsigned long) [clone .clone.94]
 t CryptoPP::operator>>(std::istream&, CryptoPP::Integer&)
 t CUtlDict<int, int>::Insert(char const*, int const&)
+t CUtlDict<int, int>::CUtlDict(int, int, int)
+t CUtlDict<int, int>::CUtlDict(int, int, int)
 t CUtlDict<int, int>::~CUtlDict()
 t CUtlDict<int, int>::~CUtlDict()
 t CUtlDict<int, unsigned short>::~CUtlDict()
@@ -10863,6 +10869,14 @@ r init_tinfo_functions()::names
 b SymmetricDecryptWorker(unsigned char const*, unsigned int, unsigned char const*, unsigned int, unsigned char*, unsigned int*, CryptoPP::BlockCipherFinal<(CryptoPP::CipherDir)1, CryptoPP::Rijndael::Dec>&)::tm_fmt
 b get_consolelog_filename()::s_consolelog
 b get_consolelog_filename()::s_bInited
+b CAutoLockT<CThreadMutex>::CAutoLockT(CThreadMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex>::CAutoLockT(CThreadMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex>::CAutoLockT(CThreadMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex>::~CAutoLockT()::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::~CAutoLockT()::tm_fmt
 r CStdioFile::FS_fread(void*, unsigned int, unsigned int)::__FUNCTION__
 b CStdioFile::FS_fread(void*, unsigned int, unsigned int)::tm_fmt
 b CStdioFile::FS_fread(void*, unsigned int, unsigned int)::tm_fmt

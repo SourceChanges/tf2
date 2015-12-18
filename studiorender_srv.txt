@@ -1450,6 +1450,7 @@ t CStudioRenderContext::UnlockBoneMatrices()
 t CStudioRenderContext::CountFlexedVertices(mstudiomesh_t*, OptimizedModel::StripGroupHeader_t*)
 t CStudioRenderContext::DetermineHWMorphing(mstudiomodel_t*, OptimizedModel::ModelLODHeader_t*)
 t CStudioRenderContext::DrawModelStaticProp(DrawModelInfo_t const&, matrix3x4_t const&, int)
+t CStudioRenderContext::GetMaterialOverride(IMaterial**, OverrideType_t*)
 t CStudioRenderContext::ComputeMaterialFlags(studiohdr_t*, studioloddata_t&, IMaterial*)
 t CStudioRenderContext::DrawStaticPropDecals(DrawModelInfo_t const&, matrix3x4_t const&)
 t CStudioRenderContext::CalculateVertexFormat(studiohdr_t const*, studioloddata_t const*, mstudiomesh_t const*, OptimizedModel::StripGroupHeader_t*, bool)
@@ -2383,6 +2384,10 @@ b V_pretifynum(long long)::current
 b GetFatVertexData(mstudiomesh_t*, studiohdr_t*)::warnCount
 b Bias(float, float)::lastExponent
 b UsesMouthShader(IMaterial*)::clientShaderCache
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::~CAutoLockT()::tm_fmt
 b CUtlString::GetEmptyString()::s_emptyString
 b CPixelWriter::SetPixelMemory(ImageFormat, void*, int)::format_error_printed
 b CStudioRender::DrawShadows(DrawModelInfo_t const&, int, int)::tm_fmt

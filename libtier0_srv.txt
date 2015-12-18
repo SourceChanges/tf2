@@ -1012,6 +1012,14 @@ b AreAssertsDisabled()::bResult
 b IsDebugBreakEnabled()::bResult
 b UpdateTelemetryThreadNames()::tm_fmt
 b UpdateTelemetryThreadNames()::tm_fmt
+b CAutoLockT<CThreadMutex>::CAutoLockT(CThreadMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex>::CAutoLockT(CThreadMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex>::CAutoLockT(CThreadMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadMutex>::~CAutoLockT()::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
+b CAutoLockT<CThreadFastMutex>::~CAutoLockT()::tm_fmt
 r CThreadSpinRWLock::UnlockWrite()::newValue
 V CThreadSpinRWLock::TryLockForWrite(unsigned int)::oldValue
 b CSharedLibraryCache::GetCache()::Singleton
