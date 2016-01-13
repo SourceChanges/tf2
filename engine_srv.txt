@@ -851,7 +851,6 @@ b mat_hdr_level
 b mat_levelflush
 b mat_loadtextures
 b mat_luxels
-b mat_motion_blur_enabled
 b mat_norendering
 b mat_normals
 b mat_show_ab_hdr
