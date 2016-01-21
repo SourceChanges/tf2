@@ -57,6 +57,7 @@ U GetCPUInformation
 U getcwd@@GLIBC_2.0
 U getenv@@GLIBC_2.0
 w __gmon_start__
+U g_pMemAlloc
 U g_Telemetry
 U __gxx_personality_v0@@CXXABI_1.3
 U HushAsserts
@@ -104,7 +105,6 @@ w pthread_once@@GLIBC_2.0
 U qsort@@GLIBC_2.0
 U rand@@GLIBC_2.0
 U readdir@@GLIBC_2.0
-U realloc@@GLIBC_2.0
 U realpath@@GLIBC_2.3
 U rename@@GLIBC_2.0
 U rmdir@@GLIBC_2.0
@@ -169,8 +169,6 @@ U __xstat@@GLIBC_2.0
 U ConColorMsg(Color const&, char const*, ...)
 U ConMsg(char const*, ...)
 U DevMsg(char const*, ...)
-U operator delete[](void*)@@GLIBCXX_3.4
-U operator delete(void*)@@GLIBCXX_3.4
 U CThreadEvent::Set()
 U CThreadEvent::CThreadEvent(bool)
 U CThreadRWLock::UnlockWrite()
@@ -181,9 +179,8 @@ U CThreadSpinRWLock::LockForRead()
 U CThreadSpinRWLock::UnlockWrite()
 U CThreadSpinRWLock::SpinLockForWrite(unsigned int)
 U CThreadSyncObject::~CThreadSyncObject()
-U operator new[](unsigned int)@@GLIBCXX_3.4
 U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-U operator new(unsigned int)@@GLIBCXX_3.4
+U std::terminate()@@GLIBCXX_3.4
 U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3

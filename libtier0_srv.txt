@@ -16,6 +16,8 @@ t base_from_object
 A __bss_start
 T BuildCmdLine
 T CallAssertFailedNotifyFunc
+t _calloc_dbg
+t _calloc_dbg_impl
 T CatchAndWriteMiniDump
 U chmod@@GLIBC_2.0
 U chown@@GLIBC_2.1
@@ -90,6 +92,7 @@ t execute_stack_op
 U _exit@@GLIBC_2.0
 U exit@@GLIBC_2.0
 T _ExitOnFatalAssert
+t _expand_dbg
 U fclose@@GLIBC_2.1
 t fde_mixed_encoding_compare
 t fde_single_encoding_compare
@@ -113,6 +116,7 @@ b frame_hdr_cache_head
 t frame_heapsort
 t __frame_state_for
 U fread@@GLIBC_2.0
+t _free_dbg
 U free@@GLIBC_2.0
 U freopen@@GLIBC_2.0
 U fscanf@@GLIBC_2.0
@@ -154,6 +158,7 @@ b g_FileLen
 b g_iCurEvent
 d g_LastReadEvent
 a _GLOBAL_OFFSET_TABLE_
+t _GLOBAL__sub_I.00101_g_pMemAlloc
 t _GLOBAL__sub_I_CommandLine_Tier0
 t _GLOBAL__sub_I_DefaultSpewFunc
 t _GLOBAL__sub_I_g_ClockSpeed
@@ -166,6 +171,7 @@ U gmtime_r@@GLIBC_2.0
 d g_OldVCRMode
 b g_pCurThread
 b g_pHelpers
+D g_pMemAlloc
 b g_pSpewInfo
 b g_pStartNode
 b g_pszSumNode
@@ -273,9 +279,10 @@ t lstat
 t __lstat
 U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
+t _malloc_dbg
 U malloc@@GLIBC_2.0
+U malloc_usable_size@@GLIBC_2.0
 b marker.7234
-U memalign@@GLIBC_2.0
 T MemAllocOOMError
 T MemAllocScratch
 U memcpy@@GLIBC_2.0
@@ -292,9 +299,11 @@ t __mknod
 U mount@@GLIBC_2.0
 T Msg
 T MsgV
+t _msize_dbg
 T NetLog
 T NetMsg
 T NetWarning
+t _nh_malloc_dbg
 b object_mutex
 b once_regsizes.7669
 U open64@@GLIBC_2.2
@@ -371,6 +380,7 @@ t read_sleb128
 t read_sleb128
 t read_uleb128
 t read_uleb128
+t _realloc_dbg
 U realloc@@GLIBC_2.0
 U realpath@@GLIBC_2.3
 U recvfrom@@GLIBC_2.0
@@ -566,6 +576,7 @@ t GetCPUFreqFromPROC()
 t VCR_Hook_LocalTime(tm*)
 t CheckSSE3Technology()
 t IgnoreAssertsNearby(int)
+t ReserveBottomMemory()
 t VCR_GenericPlayback(char const*, void*, int, bool)
 t CheckSSE41Technology()
 t CheckSSE42Technology()
@@ -596,8 +607,8 @@ T ConMsg(char const*, ...)
 T DevLog(char const*, ...)
 T DevMsg(char const*, ...)
 t pathmatch(char const*, char**, bool, char*, unsigned int)
-U operator delete[](void*)@@GLIBCXX_3.4
-U operator delete(void*)@@GLIBCXX_3.4
+t operator delete[](void*)
+t operator delete(void*)
 T ZeroMemory
 b guard variable for TelemetryTick::s_d0
 b guard variable for TelemetryTick::s_t0
@@ -633,6 +644,7 @@ r g_ColorLookup
 b s_nBufCurSize
 b s_pGroupNames
 b s_pSpewGroups
+b s_StdMemAlloc
 t VCR_Hook_recv(int, char*, int, int)
 t VCR_Hook_send(int, char const*, int, int)
 t VCR_SyncToken(char const*)
@@ -782,6 +794,46 @@ t CCommandLine::CCommandLine()
 t CCommandLine::~CCommandLine()
 t CCommandLine::~CCommandLine()
 t CCommandLine::~CCommandLine()
+t CStdMemAlloc::GetVersion()
+t CStdMemAlloc::CompactHeap()
+t CStdMemAlloc::IsDebugHeap()
+t CStdMemAlloc::CrtDbgReport(int, char const*, int, char const*, char const*)
+t CStdMemAlloc::CrtSetDbgFlag(int)
+t CStdMemAlloc::InitDebugInfo(void*, char const*, int)
+t CStdMemAlloc::SaveDebugInfo(void*)
+t CStdMemAlloc::CrtCheckMemory()
+t CStdMemAlloc::DumpBlockStats(void*)
+t CStdMemAlloc::PopAllocDbgInfo()
+t CStdMemAlloc::CrtMemCheckpoint(_CrtMemState*)
+t CStdMemAlloc::CrtSetBreakAlloc(long)
+t CStdMemAlloc::CrtSetReportFile(int, void*)
+t CStdMemAlloc::CrtSetReportHook(void*)
+t CStdMemAlloc::CrtSetReportMode(int, int)
+t CStdMemAlloc::GetActualDbgInfo(char const*&, int&)
+t CStdMemAlloc::GetDebugInfoSize()
+t CStdMemAlloc::PushAllocDbgInfo(char const*, int)
+t CStdMemAlloc::RestoreDebugInfo(void const*)
+t CStdMemAlloc::CrtIsValidPointer(void const*, unsigned int, int)
+t CStdMemAlloc::DumpStatsFileBase(char const*)
+t CStdMemAlloc::MemoryAllocFailed()
+t CStdMemAlloc::SetCRTAllocFailed(unsigned int)
+t CStdMemAlloc::DefaultFailHandler(unsigned int)
+t CStdMemAlloc::GlobalMemoryStatus(unsigned int*, unsigned int*)
+t CStdMemAlloc::RegisterAllocation(char const*, int, int, int, unsigned int)
+t CStdMemAlloc::SetAllocFailHandler(unsigned int (*)(unsigned int))
+t CStdMemAlloc::RegisterDeallocation(char const*, int, int, int, unsigned int)
+t CStdMemAlloc::CrtIsValidHeapPointer(void const*)
+t CStdMemAlloc::Expand_NoLongerSupported(void*, unsigned int)
+t CStdMemAlloc::Expand_NoLongerSupported(void*, unsigned int, char const*, int)
+t CStdMemAlloc::Free(void*)
+t CStdMemAlloc::Free(void*, char const*, int)
+t CStdMemAlloc::Alloc(unsigned int)
+t CStdMemAlloc::Alloc(unsigned int, char const*, int)
+t CStdMemAlloc::GetSize(void*)
+t CStdMemAlloc::heapchk()
+t CStdMemAlloc::Realloc(void*, unsigned int)
+t CStdMemAlloc::Realloc(void*, unsigned int, char const*, int)
+t CStdMemAlloc::DumpStats()
 T CThreadEvent::Set()
 T CThreadEvent::Wait(unsigned int)
 T CThreadEvent::Check()
@@ -910,7 +962,8 @@ T CVProfile::CVProfile()
 T CVProfile::CVProfile()
 T CVProfile::~CVProfile()
 T CVProfile::~CVProfile()
-U operator new[](unsigned int)@@GLIBCXX_3.4
+t operator new[](unsigned int)
+t operator new[](unsigned int, int, char const*, int)
 t CCommandLine::GetCmdLine() const
 t CCommandLine::ParmValueByIndex(int, char const*) const
 t CCommandLine::GetParm(int) const
@@ -948,7 +1001,8 @@ t std::_Rb_tree_iterator<std::pair<char const* const, unsigned int> > std::_Rb_t
 t std::pair<std::_Rb_tree_iterator<std::pair<char const* const, unsigned int> >, bool> std::_Rb_tree<char const*, std::pair<char const* const, unsigned int>, std::_Select1st<std::pair<char const* const, unsigned int> >, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::_M_insert_unique<std::pair<char const*, unsigned int> >(std::pair<char const*, unsigned int>&&)
 t std::_Rb_tree<char const*, std::pair<char const* const, unsigned int>, std::_Select1st<std::pair<char const* const, unsigned int> >, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<char const* const, unsigned int> >*)
 T CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-U operator new(unsigned int)@@GLIBCXX_3.4
+t operator new(unsigned int)
+t operator new(unsigned int, int, char const*, int)
 t void std::__pop_heap<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&))
 t void std::__push_heap<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, TimeSums_t, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, int, TimeSums_t, bool (*)(TimeSums_t const&, TimeSums_t const&))
 t void std::__adjust_heap<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, TimeSums_t, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, int, TimeSums_t, bool (*)(TimeSums_t const&, TimeSums_t const&))
@@ -961,25 +1015,30 @@ t void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<TimeSums_t*, 
 U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
 t void std::make_heap<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&))
 r typeinfo for CCommandLine
+r typeinfo for CStdMemAlloc
 r typeinfo for ICommandLine
 V typeinfo for CWorkerThread
 V typeinfo for CThread
 r typeinfo for CVCRTrace
+r typeinfo for IMemAlloc
 r typeinfo for IVCRTrace
 U typeinfo for int@@CXXABI_1.3
 r typeinfo for TSListTests::CListOps
 r typeinfo for TSListTests::CTestOps
 r typeinfo for TSListTests::CQueueOps
 r typeinfo name for CCommandLine
+r typeinfo name for CStdMemAlloc
 r typeinfo name for ICommandLine
 V typeinfo name for CWorkerThread
 V typeinfo name for CThread
 r typeinfo name for CVCRTrace
+r typeinfo name for IMemAlloc
 r typeinfo name for IVCRTrace
 r typeinfo name for TSListTests::CListOps
 r typeinfo name for TSListTests::CTestOps
 r typeinfo name for TSListTests::CQueueOps
 r vtable for CCommandLine
+r vtable for CStdMemAlloc
 r vtable for ICommandLine
 V vtable for CWorkerThread
 V vtable for CThread

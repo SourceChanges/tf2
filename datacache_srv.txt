@@ -4,6 +4,8 @@ d adds.7496
 t base_from_cb_data
 t base_from_object
 A __bss_start
+t _calloc_dbg
+t _calloc_dbg_impl
 U chdir@@GLIBC_2.0
 t classify_object_over_fdes
 b colorcorrection
@@ -44,6 +46,7 @@ A _end
 U Error
 t execute_cfa_program
 t execute_stack_op
+t _expand_dbg
 t fde_mixed_encoding_compare
 t fde_single_encoding_compare
 t fde_unencoded_compare
@@ -55,6 +58,7 @@ b frame_hdr_cache
 b frame_hdr_cache_head
 t frame_heapsort
 t __frame_state_for
+t _free_dbg
 U free@@GLIBC_2.0
 b g_ActivityModifiersTable
 b g_AsyncInfoMap
@@ -92,6 +96,7 @@ b g_pMaterialSystemDebugTextureInfo
 b g_pMaterialSystemHardwareConfig
 b g_pMatSystemSurface
 b g_pMDLCache
+U g_pMemAlloc
 b g_pNetworkSystem
 b g_pPhysicsCollision
 b g_pProcessUtils
@@ -191,18 +196,19 @@ t .L69
 t .L70
 t .L71
 t linear_search_fdes
+t _malloc_dbg
 U malloc@@GLIBC_2.0
 b marker.7234
 b materials
 U mbstowcs@@GLIBC_2.0
 b mdlcache
 b mdllib
-U memalign@@GLIBC_2.0
-U MemAllocOOMError
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
 U Msg
+t _msize_dbg
+t _nh_malloc_dbg
 b object_mutex
 b once_regsizes.7669
 b p4
@@ -228,7 +234,7 @@ t read_sleb128
 t read_sleb128
 t read_uleb128
 t read_uleb128
-U realloc@@GLIBC_2.0
+t _realloc_dbg
 t __register_frame
 t __register_frame_info
 t __register_frame_info_bases
@@ -245,7 +251,6 @@ U strcasecmp@@GLIBC_2.0
 U strchr@@GLIBC_2.0
 U strcmp@@GLIBC_2.0
 U strcpy@@GLIBC_2.0
-U strdup@@GLIBC_2.0
 U strftime@@GLIBC_2.0
 U strlen@@GLIBC_2.0
 U strncasecmp@@GLIBC_2.0
@@ -558,8 +563,8 @@ t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
 t V_wcsncpy(wchar_t*, wchar_t const*, int)
 t _V_wcsupr(char const*, int, wchar_t*)
-U operator delete[](void*)@@GLIBCXX_3.4
-U operator delete(void*)@@GLIBCXX_3.4
+t operator delete[](void*)
+t operator delete(void*)
 b guard variable for datamap_t* DataMapInit<phyheader_s>(phyheader_s*)::nameHolder
 b guard variable for datamap_t* DataMapInit<studiohdr_t>(studiohdr_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<studiohdr2_t>(studiohdr2_t*)::nameHolder
@@ -847,57 +852,46 @@ t CUtlBuffer::CUtlBuffer(void const*, int, int)
 t CUtlBuffer::~CUtlBuffer()
 t CUtlBuffer::~CUtlBuffer()
 t CUtlMemory<CUtlString, int>::Grow(int)
-t CUtlMemory<CUtlString, int>::Purge()
 t CUtlMemory<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, int>::Grow(int)
-t CUtlMemory<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, int>::Purge()
 t CUtlMemory<modellookup_t, int>::Grow(int)
-t CUtlMemory<modellookup_t, int>::Purge()
 t CUtlMemory<virtualgroup_t, int>::Grow(int)
-t CUtlMemory<virtualgroup_t, int>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short>::Grow(int)
-t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
-t CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
-t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short>::Grow(int)
-t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int>::Grow(int)
-t CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int>::Purge()
 t CUtlMemory<virtualgeneric_t, int>::Grow(int)
-t CUtlMemory<virtualgeneric_t, int>::Purge()
 t CUtlMemory<virtualsequence_t, int>::Grow(int)
-t CUtlMemory<virtualsequence_t, int>::Purge()
-t CUtlMemory<CUtlHashtableEntry<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t>, int>::Purge()
+t CUtlMemory<CUtlHashtableEntry<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t>, int>::~CUtlMemory()
+t CUtlMemory<CUtlHashtableEntry<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t>, int>::~CUtlMemory()
 t CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short>::Grow(int)
-t CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.26]
 t CUtlMemory<unsigned char, int>::Grow(int)
 t CUtlMemory<unsigned char, int>::Purge()
 t CUtlMemory<int, int>::Grow(int)
-t CUtlMemory<int, int>::Purge()
 t CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int>::Grow(int)
-t CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int>::Purge()
+t CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int>::~CUtlMemory()
+t CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int>::~CUtlMemory()
 t CUtlMemory<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::ListElem_t, int>::Grow(int)
+t CUtlMemory<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::ListElem_t, int>::~CUtlMemory()
+t CUtlMemory<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::ListElem_t, int>::~CUtlMemory()
 t CUtlMemory<memhandle_t__*, int>::Grow(int)
-t CUtlMemory<memhandle_t__*, int>::Purge()
 t CUtlMemory<CDataCacheSection*, int>::Grow(int)
-t CUtlMemory<CDataCacheSection*, int>::Purge()
+t CUtlMemory<CDataCacheSection*, int>::~CUtlMemory()
+t CUtlMemory<CDataCacheSection*, int>::~CUtlMemory()
 t CUtlMemory<IMaterial*, int>::Grow(int)
-t CUtlMemory<IMaterial*, int>::Purge()
 t CUtlMemory<char*, int>::Grow(int)
-t CUtlMemory<char*, int>::Purge()
 t CUtlMemory<studiohdr_t const*, int>::Grow(int)
-t CUtlMemory<studiohdr_t const*, int>::Purge()
 t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::Grow(int)
-t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::Purge()
+t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::~CUtlMemory()
+t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::~CUtlMemory()
 t CUtlMemory<void*, int>::Grow(int)
-t CUtlMemory<void*, int>::Purge()
 t CUtlMemory<unsigned short, int>::Grow(int)
-t CUtlMemory<unsigned short, int>::Purge()
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RotateRight(unsigned short)
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
+t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Purge()
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Insert(CUtlSymbolTable::CStringPoolIndex const&)
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::NewNode()
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RemoveAll()
@@ -973,12 +967,17 @@ t CUtlVector<modellookup_t, CUtlMemory<modellookup_t, int> >::InsertBefore(int)
 t CUtlVector<modellookup_t, CUtlMemory<modellookup_t, int> >::~CUtlVector()
 t CUtlVector<modellookup_t, CUtlMemory<modellookup_t, int> >::~CUtlVector()
 t CUtlVector<virtualgroup_t, CUtlMemory<virtualgroup_t, int> >::InsertBefore(int)
+t CUtlVector<virtualgroup_t, CUtlMemory<virtualgroup_t, int> >::RemoveAll()
+t CUtlVector<virtualgroup_t, CUtlMemory<virtualgroup_t, int> >::~CUtlVector()
+t CUtlVector<virtualgroup_t, CUtlMemory<virtualgroup_t, int> >::~CUtlVector()
 t CUtlVector<virtualgeneric_t, CUtlMemory<virtualgeneric_t, int> >::GrowVector(int)
 t CUtlVector<virtualgeneric_t, CUtlMemory<virtualgeneric_t, int> >::ShiftElementsRight(int, int)
 t CUtlVector<virtualgeneric_t, CUtlMemory<virtualgeneric_t, int> >::~CUtlVector()
 t CUtlVector<virtualgeneric_t, CUtlMemory<virtualgeneric_t, int> >::~CUtlVector()
 t CUtlVector<virtualsequence_t, CUtlMemory<virtualsequence_t, int> >::GrowVector(int)
 t CUtlVector<virtualsequence_t, CUtlMemory<virtualsequence_t, int> >::ShiftElementsRight(int, int)
+t CUtlVector<virtualsequence_t, CUtlMemory<virtualsequence_t, int> >::~CUtlVector()
+t CUtlVector<virtualsequence_t, CUtlMemory<virtualsequence_t, int> >::~CUtlVector()
 t CUtlVector<int, CUtlMemory<int, int> >::EnsureCount(int) [clone .part.58]
 t CUtlVector<int, CUtlMemory<int, int> >::SetCount(int)
 t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
@@ -986,13 +985,23 @@ t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
 t CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >::GrowVector(int)
 t CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >::ShiftElementsRight(int, int)
 t CUtlVector<memhandle_t__*, CUtlMemory<memhandle_t__*, int> >::InsertBefore(int, memhandle_t__* const&)
+t CUtlVector<memhandle_t__*, CUtlMemory<memhandle_t__*, int> >::~CUtlVector()
+t CUtlVector<memhandle_t__*, CUtlMemory<memhandle_t__*, int> >::~CUtlVector()
 t CUtlVector<CDataCacheSection*, CUtlMemory<CDataCacheSection*, int> >::InsertBefore(int, CDataCacheSection* const&)
 t CUtlVector<IMaterial*, CUtlMemory<IMaterial*, int> >::InsertBefore(int, IMaterial* const&)
+t CUtlVector<IMaterial*, CUtlMemory<IMaterial*, int> >::~CUtlVector()
+t CUtlVector<IMaterial*, CUtlMemory<IMaterial*, int> >::~CUtlVector()
 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
 t CUtlVector<studiohdr_t const*, CUtlMemory<studiohdr_t const*, int> >::SetCount(int)
+t CUtlVector<studiohdr_t const*, CUtlMemory<studiohdr_t const*, int> >::~CUtlVector()
+t CUtlVector<studiohdr_t const*, CUtlMemory<studiohdr_t const*, int> >::~CUtlVector()
 t CUtlVector<CUtlSymbolTable::StringPool_t*, CUtlMemory<CUtlSymbolTable::StringPool_t*, int> >::InsertBefore(int, CUtlSymbolTable::StringPool_t* const&)
 t CUtlVector<void*, CUtlMemory<void*, int> >::InsertBefore(int, void* const&)
+t CUtlVector<void*, CUtlMemory<void*, int> >::~CUtlVector()
+t CUtlVector<void*, CUtlMemory<void*, int> >::~CUtlVector()
 t CUtlVector<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, CUtlMemory<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, int> >::RemoveAll()
+t CUtlVector<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, CUtlMemory<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, int> >::~CUtlVector()
+t CUtlVector<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, CUtlMemory<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, int> >::~CUtlVector()
 t CUtlVector<unsigned short, CUtlMemory<unsigned short, int> >::SetCount(int)
 U CVProfNode::EnterScope()
 U CVProfNode::GetSubNode(char const*, int, char const*, int)
@@ -1111,6 +1120,8 @@ t CUtlLinkedList<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_
 t CUtlLinkedList<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int> > >::RemoveAll()
 t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::AllocInternal(bool)
 t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
+t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::~CUtlLinkedList()
+t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::~CUtlLinkedList()
 t CUtlMemoryPool::AddNewBlob()
 t CUtlMemoryPool::ReportLeaks()
 b CUtlMemoryPool::g_ReportFunc
@@ -1236,6 +1247,8 @@ t virtualmodel_t::AppendAnimations(int, studiohdr_t const*)
 t virtualmodel_t::AppendAttachments(int, studiohdr_t const*)
 t virtualmodel_t::AppendPoseParameters(int, studiohdr_t const*)
 t virtualmodel_t::UpdateAutoplaySequences(studiohdr_t const*)
+t virtualmodel_t::~virtualmodel_t()
+t virtualmodel_t::~virtualmodel_t()
 t CTier1AppSystem<IDataCache, 0>::Disconnect()
 t CTier1AppSystem<IDataCache, 0>::Init()
 t CTier1AppSystem<IDataCache, 0>::Connect(void* (*)(char const*, int*))
@@ -1259,6 +1272,8 @@ t CTier3AppSystem<IMDLCache, 0>::Connect(void* (*)(char const*, int*))
 t CUtlFixedMemory<UtlLinkedListElem_t<AsyncInfo_t, int> >::Grow(int)
 t CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int> >::Grow(int)
 t CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int> >::Purge() [clone .isra.46]
+t CUtlSymbolTable::CTree::~CTree()
+t CUtlSymbolTable::CTree::~CTree()
 t CUtlSymbolTable::AddString(char const*)
 t CUtlSymbolTable::RemoveAll()
 t CUtlSymbolTable::CUtlSymbolTable(int, int, bool)
@@ -1319,8 +1334,6 @@ t CDllDemandLoader::CDllDemandLoader(char const*)
 t CDllDemandLoader::~CDllDemandLoader()
 t CDllDemandLoader::~CDllDemandLoader()
 t CDllDemandLoader::~CDllDemandLoader()
-t CTempAllocHelper::~CTempAllocHelper()
-t CTempAllocHelper::~CTempAllocHelper()
 U CThreadLocalBase::Set(void*)
 U CThreadLocalBase::CThreadLocalBase()
 U CThreadLocalBase::~CThreadLocalBase()
@@ -1419,6 +1432,8 @@ t CModelLookupContext::CModelLookupContext(int, studiohdr_t const*)
 t CModelLookupContext::~CModelLookupContext()
 t CModelLookupContext::~CModelLookupContext()
 t CUtlConstStringBase<char>::Set(char const*)
+t CUtlFixedLinkedList<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*> >::~CUtlFixedLinkedList()
+t CUtlFixedLinkedList<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*> >::~CUtlFixedLinkedList()
 t CUtlNoEscConversion::FindConversion(char const*, int*)
 t mstudioattachment_t::GetBaseMap()
 d mstudioattachment_t::m_DataMap
@@ -1576,6 +1591,8 @@ t ConVar::~ConVar()
 t CDefOps<int>::LessFunc(int const&, int const&)
 t CUtlMap<int, int, unsigned short>::~CUtlMap()
 t CUtlMap<int, int, unsigned short>::~CUtlMap()
+t CUtlMap<char const*, studiodata_t*, unsigned short>::~CUtlMap()
+t CUtlMap<char const*, studiodata_t*, unsigned short>::~CUtlMap()
 t CCommand::DefaultBreakSet()
 t CCommand::Reset()
 t CCommand::Tokenize(char const*, characterset_t*)
@@ -1590,8 +1607,11 @@ t CFunctor::~CFunctor()
 t CFunctor::~CFunctor()
 t CFunctor::~CFunctor()
 t CUtlDict<studiodata_t*, unsigned short>::Purge()
+t CUtlDict<studiodata_t*, unsigned short>::CUtlDict(int, int, int)
+t CUtlDict<studiodata_t*, unsigned short>::CUtlDict(int, int, int)
 t CUtlDict<studiodata_t*, unsigned short>::~CUtlDict()
 t CUtlDict<studiodata_t*, unsigned short>::~CUtlDict()
+t CUtlDict<short, short>::Insert(char const*, short const&)
 t CUtlDict<short, short>::CUtlDict(int, int, int)
 t CUtlDict<short, short>::CUtlDict(int, int, int)
 t CUtlDict<short, short>::~CUtlDict()
@@ -1712,7 +1732,8 @@ t ConVarRef::ConVarRef(char const*, bool)
 t ConVarRef::ConVarRef(IConVar*)
 t ConVarRef::ConVarRef(char const*)
 t ConVarRef::ConVarRef(char const*, bool)
-U operator new[](unsigned int)@@GLIBCXX_3.4
+t operator new[](unsigned int)
+t operator new[](unsigned int, int, char const*, int)
 t ConCommand::IsCommand() const
 t CStudioHdr::ResetVModel(virtualmodel_t const*) const
 t CStudioHdr::iRelativeSeq(int, int) const
@@ -1818,7 +1839,8 @@ t CUtlDict<studiodata_t*, unsigned short>::Find(char const*) const
 t CUtlDict<short, short>::Find(char const*) const
 t ConVarRef::IsValid() const
 U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-U operator new(unsigned int)@@GLIBCXX_3.4
+t operator new(unsigned int)
+t operator new(unsigned int, int, char const*, int)
 U std::terminate()@@GLIBCXX_3.4
 t non-virtual thunk to CMDLCache::GetItemName(unsigned int, void const*, char*, unsigned int)
 t non-virtual thunk to CMDLCache::HandleCacheNotification(DataCacheNotification_t const&)

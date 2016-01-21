@@ -10,6 +10,8 @@ U atan@@GLIBC_2.0
 t base_from_cb_data
 t base_from_object
 A __bss_start
+t _calloc_dbg
+t _calloc_dbg_impl
 U cbrtf@@GLIBC_2.0
 U chdir@@GLIBC_2.0
 t classify_object_over_fdes
@@ -53,6 +55,7 @@ U __errno_location@@GLIBC_2.0
 U Error
 t execute_cfa_program
 t execute_stack_op
+t _expand_dbg
 U exp@@GLIBC_2.0
 t fde_mixed_encoding_compare
 t fde_single_encoding_compare
@@ -81,6 +84,7 @@ b frame_hdr_cache
 b frame_hdr_cache_head
 t frame_heapsort
 t __frame_state_for
+t _free_dbg
 U free@@GLIBC_2.0
 t get_cie_encoding
 U GetCPUInformation
@@ -122,6 +126,7 @@ b g_pMaterialSystemDebugTextureInfo
 b g_pMaterialSystemHardwareConfig
 b g_pMatSystemSurface
 b g_pMDLCache
+U g_pMemAlloc
 b g_pNetworkSystem
 b g_pPhysicsCollision
 b g_pProcessUtils
@@ -237,19 +242,20 @@ t linear_search_fdes
 b lineartolightmap
 b lineartovertex
 U log@@GLIBC_2.0
+t _malloc_dbg
 U malloc@@GLIBC_2.0
 b marker.7234
 b materials
 U mbstowcs@@GLIBC_2.0
 b mdlcache
 b mdllib
-U memalign@@GLIBC_2.0
-U MemAllocOOMError
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
 U Msg
+t _msize_dbg
 r nanmask
+t _nh_malloc_dbg
 b object_mutex
 b once_regsizes.7669
 b p4
@@ -281,7 +287,7 @@ t read_sleb128
 t read_sleb128
 t read_uleb128
 t read_uleb128
-U realloc@@GLIBC_2.0
+t _realloc_dbg
 t __register_frame
 t __register_frame_info
 t __register_frame_info_bases
@@ -797,8 +803,8 @@ t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
 t V_wcsncpy(wchar_t*, wchar_t const*, int)
 t _V_wcsupr(char const*, int, wchar_t*)
-U operator delete[](void*)@@GLIBCXX_3.4
-U operator delete(void*)@@GLIBCXX_3.4
+t operator delete[](void*)
+t operator delete(void*)
 b guard variable for CUtlString::GetEmptyString()::s_emptyString
 b guard variable for CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)::r_developer
 b eyeUpCache
@@ -1028,45 +1034,37 @@ t CUtlBuffer::CUtlBuffer(int, int, int)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
 t CUtlMemory<CUtlString, int>::Grow(int)
 t CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int>::Grow(int)
-t CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int>::Purge()
 t CUtlMemory<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, int>::Grow(int)
-t CUtlMemory<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, int>::Purge()
 t CUtlMemory<CUtlVector<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, CUtlMemory<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, int> >, int>::Grow(int)
-t CUtlMemory<CUtlVector<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, CUtlMemory<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, int> >, int>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<DecalVertex_t, unsigned short>, unsigned short>::Grow(int)
-t CUtlMemory<UtlLinkedListElem_t<DecalVertex_t, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<CStudioRender::DecalHistory_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlLinkedListElem_t<CStudioRender::DecalMaterial_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlLinkedListElem_t<CStudioRender::Decal_t, unsigned short>, unsigned short>::Grow(int)
-t CUtlMemory<UtlLinkedListElem_t<CStudioRender::Decal_t, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<GetTriangles_Vertex_t, int>::Grow(int)
-t CUtlMemory<GetTriangles_Vertex_t, int>::Purge()
+t CUtlMemory<GetTriangles_Vertex_t, int>::~CUtlMemory()
+t CUtlMemory<GetTriangles_Vertex_t, int>::~CUtlMemory()
 t CUtlMemory<GetTriangles_MaterialBatch_t, int>::Grow(int)
 t CUtlMemory<Vector, int>::Grow(int)
-t CUtlMemory<Vector, int>::Purge()
 t CUtlMemory<Vector2D, int>::Grow(int)
-t CUtlMemory<Vector2D, int>::Purge()
 t CUtlMemory<bool, int>::Grow(int)
-t CUtlMemory<bool, int>::Purge()
 t CUtlMemory<char, int>::Grow(int)
-t CUtlMemory<char, int>::Purge()
 t CUtlMemory<float, int>::Grow(int)
-t CUtlMemory<float, int>::Purge()
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.26]
 t CUtlMemory<unsigned char, int>::Grow(int)
 t CUtlMemory<unsigned char, int>::Purge()
 t CUtlMemory<int, int>::Grow(int)
-t CUtlMemory<int, int>::Purge()
+t CUtlMemory<int, int>::~CUtlMemory()
+t CUtlMemory<int, int>::~CUtlMemory()
 t CUtlMemory<CStudioRender::ShadowState_t, int>::Grow(int)
-t CUtlMemory<CStudioRender::ShadowState_t, int>::Purge()
+t CUtlMemory<CStudioRender::ShadowState_t, int>::~CUtlMemory()
+t CUtlMemory<CStudioRender::ShadowState_t, int>::~CUtlMemory()
 t CUtlMemory<CCachedRenderData::CacheDict_t, int>::Grow(int)
-t CUtlMemory<CCachedRenderData::CacheDict_t, int>::Purge()
 t CUtlMemory<KeyValues*, int>::Grow(int)
-t CUtlMemory<KeyValues*, int>::Purge()
 t CUtlMemory<char*, int>::Grow(int)
 t CUtlMemory<short, int>::Grow(int)
-t CUtlMemory<short, int>::Purge()
 t CUtlMemory<unsigned short, int>::Grow(int)
-t CUtlMemory<unsigned short, int>::Purge()
+t CUtlMemory<unsigned short, int>::~CUtlMemory()
+t CUtlMemory<unsigned short, int>::~CUtlMemory()
 t CUtlString::FixSlashes(char)
 t CUtlString::AllocMemory(unsigned int)
 t CUtlString::GetForModify()
@@ -1100,7 +1098,10 @@ t CUtlString::operator+=(int)
 t CUtlString::operator+=(char const*)
 t CUtlString::operator+=(CUtlString const&)
 t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::InsertBefore(int, CUtlString const&)
+t CUtlVector<GetTriangles_Vertex_t, CUtlMemory<GetTriangles_Vertex_t, int> >::~CUtlVector()
+t CUtlVector<GetTriangles_Vertex_t, CUtlMemory<GetTriangles_Vertex_t, int> >::~CUtlVector()
 t CUtlVector<GetTriangles_MaterialBatch_t, CUtlMemory<GetTriangles_MaterialBatch_t, int> >::InsertBefore(int)
+t CUtlVector<GetTriangles_MaterialBatch_t, CUtlMemory<GetTriangles_MaterialBatch_t, int> >::RemoveAll()
 t CUtlVector<Vector, CUtlMemory<Vector, int> >::SetCount(int)
 t CUtlVector<Vector2D, CUtlMemory<Vector2D, int> >::SetCount(int)
 t CUtlVector<bool, CUtlMemory<bool, int> >::EnsureCount(int)
@@ -1108,8 +1109,12 @@ t CUtlVector<char, CUtlMemory<char, int> >::GrowVector(int)
 t CUtlVector<char, CUtlMemory<char, int> >::ShiftElementsRight(int, int)
 t CUtlVector<float, CUtlMemory<float, int> >::EnsureCapacity(int)
 t CUtlVector<float, CUtlMemory<float, int> >::SetCount(int)
+t CUtlVector<float, CUtlMemory<float, int> >::~CUtlVector()
+t CUtlVector<float, CUtlMemory<float, int> >::~CUtlVector()
 t CUtlVector<int, CUtlMemory<int, int> >::GrowVector(int)
 t CUtlVector<int, CUtlMemory<int, int> >::ShiftElementsRight(int, int)
+t CUtlVector<CStudioRender::ShadowState_t, CUtlMemory<CStudioRender::ShadowState_t, int> >::~CUtlVector()
+t CUtlVector<CStudioRender::ShadowState_t, CUtlMemory<CStudioRender::ShadowState_t, int> >::~CUtlVector()
 t CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >::EnsureCount(int)
 t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::GrowVector(int)
 t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::ShiftElementsRight(int, int)
@@ -1118,7 +1123,13 @@ t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::~CUtlVector()
 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
 t CUtlVector<short, CUtlMemory<short, int> >::SetCount(int)
 t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::RemoveAll()
+t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::~CUtlVector()
+t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::~CUtlVector()
+t CUtlVector<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, CUtlMemory<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, int> >::RemoveAll()
+t CUtlVector<CUtlVector<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, CUtlMemory<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, int> >, CUtlMemory<CUtlVector<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, CUtlMemory<CUtlVector<CCachedRenderData::CacheDict_t, CUtlMemory<CCachedRenderData::CacheDict_t, int> >, int> >, int> >::RemoveAll()
 t CUtlVector<unsigned short, CUtlMemory<unsigned short, int> >::InsertBefore(int, unsigned short const&)
+t CUtlVector<unsigned short, CUtlMemory<unsigned short, int> >::~CUtlVector()
+t CUtlVector<unsigned short, CUtlMemory<unsigned short, int> >::~CUtlVector()
 U CVProfNode::EnterScope()
 U CVProfNode::GetSubNode(char const*, int, char const*, int)
 U CVProfNode::ExitScope()
@@ -1272,7 +1283,10 @@ t CUtlLinkedList<CStudioRender::DecalLRU_t, int, true, int, CUtlFixedMemory<UtlL
 t CUtlLinkedList<CStudioRender::DecalLRU_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CStudioRender::DecalLRU_t, int> > >::RemoveAll()
 t CUtlLinkedList<CStudioRender::DecalHistory_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::DecalHistory_t, unsigned short>, unsigned short> >::AllocInternal(bool)
 t CUtlLinkedList<CStudioRender::DecalHistory_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::DecalHistory_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
+t CUtlLinkedList<CStudioRender::DecalHistory_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::DecalHistory_t, unsigned short>, unsigned short> >::~CUtlLinkedList()
+t CUtlLinkedList<CStudioRender::DecalHistory_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::DecalHistory_t, unsigned short>, unsigned short> >::~CUtlLinkedList()
 t CUtlLinkedList<CStudioRender::DecalMaterial_t, unsigned short, true, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::DecalMaterial_t, unsigned short>, unsigned short> >::AllocInternal(bool)
+t CUtlLinkedList<CStudioRender::DecalMaterial_t, unsigned short, true, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::DecalMaterial_t, unsigned short>, unsigned short> >::Free(unsigned short)
 t CUtlLinkedList<CStudioRender::DecalMaterial_t, unsigned short, true, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::DecalMaterial_t, unsigned short>, unsigned short> >::Alloc(bool)
 t CUtlLinkedList<CStudioRender::DecalMaterial_t, unsigned short, true, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::DecalMaterial_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
 t CUtlLinkedList<CStudioRender::DecalMaterial_t, unsigned short, true, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::DecalMaterial_t, unsigned short>, unsigned short> >::RemoveAll()
@@ -1351,6 +1365,8 @@ t CCachedRenderData::SetMesh(int)
 t CCachedRenderData::SetModel(int)
 t CCachedRenderData::CCachedRenderData()
 t CCachedRenderData::CCachedRenderData()
+t CCachedRenderData::~CCachedRenderData()
+t CCachedRenderData::~CCachedRenderData()
 t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
 t CUtlInplaceBuffer::InplaceGetLinePtr()
 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
@@ -1406,6 +1422,10 @@ t CProcessMeshWrapper<1, 1, 1, 1, 0>::R_StudioSoftwareProcessMesh(mstudio_meshve
 t CProcessMeshWrapper<1, 1, 1, 1, 1>::R_StudioSoftwareProcessMesh(mstudio_meshvertexdata_t const*, matrix3x4_t*, CCachedRenderData&, CMeshBuilder&, int, unsigned short*, unsigned int, IMaterial*)
 t CProcessMeshWrapper<1, 1, 1, 2, 0>::R_StudioSoftwareProcessMesh(mstudio_meshvertexdata_t const*, matrix3x4_t*, CCachedRenderData&, CMeshBuilder&, int, unsigned short*, unsigned int, IMaterial*)
 t CProcessMeshWrapper<1, 1, 1, 2, 1>::R_StudioSoftwareProcessMesh(mstudio_meshvertexdata_t const*, matrix3x4_t*, CCachedRenderData&, CMeshBuilder&, int, unsigned short*, unsigned int, IMaterial*)
+t CUtlFixedLinkedList<CStudioRender::DecalLRU_t>::~CUtlFixedLinkedList()
+t CUtlFixedLinkedList<CStudioRender::DecalLRU_t>::~CUtlFixedLinkedList()
+t CUtlFixedLinkedList<CStudioRender::DecalModelList_t>::~CUtlFixedLinkedList()
+t CUtlFixedLinkedList<CStudioRender::DecalModelList_t>::~CUtlFixedLinkedList()
 t CUtlNoEscConversion::FindConversion(char const*, int*)
 t CMatRenderContextPtr::~CMatRenderContextPtr()
 t CMatRenderContextPtr::~CMatRenderContextPtr()
@@ -2071,6 +2091,8 @@ t CFunctor::~CFunctor()
 t CFunctor::~CFunctor()
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
+t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::~CUtlHash()
+t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::~CUtlHash()
 t ConVarRef::Init(char const*, bool)
 t ConVarRef::ConVarRef(IConVar*)
 t ConVarRef::ConVarRef(char const*)
@@ -2168,7 +2190,8 @@ t KeyValues::operator delete(void*)
 t KeyValues::operator delete(void*, int, char const*, int)
 t KeyValues::operator new(unsigned int)
 t KeyValues::operator new(unsigned int, int, char const*, int)
-U operator new[](unsigned int)@@GLIBCXX_3.4
+t operator new[](unsigned int)
+t operator new[](unsigned int, int, char const*, int)
 t ConCommand::IsCommand() const
 t CUtlString::GetExtension() const
 t CUtlString::StripFilename() const
@@ -2242,7 +2265,8 @@ t KeyValues::GetName() const
 t KeyValues::MakeCopy(bool) const
 t KeyValues::MakeCopy() const
 U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-U operator new(unsigned int)@@GLIBCXX_3.4
+t operator new(unsigned int)
+t operator new(unsigned int, int, char const*, int)
 U std::terminate()@@GLIBCXX_3.4
 t non-virtual thunk to CEmptyConVar::SetValue(float)
 t non-virtual thunk to CEmptyConVar::SetValue(int)

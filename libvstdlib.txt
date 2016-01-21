@@ -61,6 +61,7 @@ T GetOSDetailString
 T GetOSType
 T GetPlatformName
 w __gmon_start__
+U g_pMemAlloc
 D g_pThreadPool
 U g_Telemetry
 B g_VCoverage
@@ -84,8 +85,6 @@ U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
 U malloc@@GLIBC_2.0
 U mbstowcs@@GLIBC_2.0
-U memalign@@GLIBC_2.0
-U MemAllocOOMError
 U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
@@ -122,7 +121,6 @@ T RandomGaussianFloat
 T RandomInt
 T RandomSeed
 U readdir@@GLIBC_2.0
-U realloc@@GLIBC_2.0
 U realpath@@GLIBC_2.3
 U rename@@GLIBC_2.0
 U rmdir@@GLIBC_2.0
@@ -188,8 +186,6 @@ U __xstat@@GLIBC_2.0
 U ConColorMsg(Color const&, char const*, ...)
 U ConMsg(char const*, ...)
 U DevMsg(char const*, ...)
-U operator delete[](void*)@@GLIBCXX_3.4
-U operator delete(void*)@@GLIBCXX_3.4
 U CVProfNode::EnterScope()
 U CVProfNode::GetSubNode(char const*, int, char const*, int)
 U CVProfNode::ExitScope()
@@ -233,11 +229,10 @@ U CThread::IsAlive()
 U CThread::SetName(char const*)
 U CThread::~CThread()
 U CVProfile::FindOrCreateCounter(char const*, CounterGroup_t)
-U operator new[](unsigned int)@@GLIBCXX_3.4
 U CWorkerThread::GetCallParam(CFunctor**) const
 U CThreadLocalBase::Get() const
 U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-U operator new(unsigned int)@@GLIBCXX_3.4
+U std::terminate()@@GLIBCXX_3.4
 V typeinfo for CUniformRandomStream
 V typeinfo for IUniformRandomStream
 U typeinfo for CThread

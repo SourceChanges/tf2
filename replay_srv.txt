@@ -49,6 +49,8 @@ t BZ2_bzWriteOpen
 d BZ2_crc32Table
 d BZ2_rNums
 U CallAssertFailedNotifyFunc
+t _calloc_dbg
+t _calloc_dbg_impl
 U calloc@@GLIBC_2.0
 U cbrtf@@GLIBC_2.0
 U chdir@@GLIBC_2.0
@@ -78,7 +80,7 @@ U cos@@GLIBC_2.0
 t create_conn
 T CreateInterface
 U CreateThreadPool
-r CSWTCH.13
+r CSWTCH.14
 r CSWTCH.208
 r CSWTCH.23
 r CSWTCH.23
@@ -438,6 +440,7 @@ t execute_cfa_program
 t execute_stack_op
 U exit@@GLIBC_2.0
 U _ExitOnFatalAssert
+t _expand_dbg
 t expect100
 U fclose@@GLIBC_2.1
 U fcntl@@GLIBC_2.0
@@ -486,6 +489,7 @@ t __frame_state_for
 U fread@@GLIBC_2.0
 U freeaddrinfo@@GLIBC_2.0
 t freecookie
+t _free_dbg
 t freedirs
 t freednsentry
 U free@@GLIBC_2.0
@@ -613,6 +617,7 @@ b g_pInputSystem
 b g_pMaterialSystem
 b g_pMaterialSystemDebugTextureInfo
 b g_pMaterialSystemHardwareConfig
+U g_pMemAlloc
 b g_pNetworkSystem
 d g_pNullSpewer
 b g_pProcessUtils
@@ -766,6 +771,7 @@ t lstat
 t __lstat
 U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
+t _malloc_dbg
 U malloc@@GLIBC_2.0
 b marker.7234
 b materials
@@ -792,6 +798,7 @@ r mode.8310
 r month_days_cumulative.4955
 U mount@@GLIBC_2.0
 U Msg
+t _msize_dbg
 t multi_addtimeout
 t multi_freeamsg
 t multi_freetimeout
@@ -799,6 +806,7 @@ t multi_runsingle
 t multi_socket
 t multi_timeout
 r nanmask
+t _nh_malloc_dbg
 r null.5246
 b object_mutex
 b once_regsizes.7669
@@ -863,6 +871,7 @@ t read_sleb128
 t read_sleb128
 t read_uleb128
 t read_uleb128
+t _realloc_dbg
 U realloc@@GLIBC_2.0
 U realpath@@GLIBC_2.3
 U recvfrom@@GLIBC_2.0
@@ -1552,8 +1561,8 @@ t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
 t V_wcsncpy(wchar_t*, wchar_t const*, int)
 t _V_wcsupr(char const*, int, wchar_t*)
-U operator delete[](void*)@@GLIBCXX_3.4
-U operator delete(void*)@@GLIBCXX_3.4
+t operator delete[](void*)
+t operator delete(void*)
 b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
 b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
 b guard variable for CUtlString::GetEmptyString()::s_emptyString
@@ -1819,40 +1828,35 @@ t CUtlBuffer::~CUtlBuffer()
 t CUtlBuffer::~CUtlBuffer()
 t CUtlMemory<CUtlString, int>::Grow(int)
 t CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int>::Grow(int)
-t CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int>::Purge()
 t CUtlMemory<_XUSER_CONTEXT, int>::Grow(int)
-t CUtlMemory<_XUSER_CONTEXT, int>::Purge()
 t CUtlMemory<_XUSER_PROPERTY, int>::Grow(int)
-t CUtlMemory<_XUSER_PROPERTY, int>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<unsigned int, int>, int>::Grow(int)
 t CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSession*, int>, int>::Grow(int)
 t CUtlMemory<UtlLinkedListElem_t<CSessionPublishManager*, int>, int>::Grow(int)
 t CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSessionBlock*, int>, int>::Grow(int)
 t CUtlMemory<UtlLinkedListElem_t<CServerRecordingSessionBlock*, int>, int>::Grow(int)
-t CUtlMemory<UtlLinkedListElem_t<CServerRecordingSessionBlock*, int>, int>::~CUtlMemory()
-t CUtlMemory<UtlLinkedListElem_t<CServerRecordingSessionBlock*, int>, int>::~CUtlMemory()
 t CUtlMemory<UtlLinkedListElem_t<IThinker*, int>, int>::Grow(int)
 t CUtlMemory<UtlLinkedListElem_t<wchar_t*, int>, int>::Grow(int)
 t CUtlMemory<char, int>::Grow(int)
-t CUtlMemory<char, int>::Purge()
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.26]
 t CUtlMemory<unsigned char, int>::Grow(int)
 t CUtlMemory<unsigned char, int>::Purge()
 t CUtlMemory<int, int>::Grow(int)
-t CUtlMemory<int, int>::Purge()
+t CUtlMemory<int, int>::~CUtlMemory()
+t CUtlMemory<int, int>::~CUtlMemory()
 t CUtlMemory<NET_SetConVar::cvar_s, int>::Grow(int)
-t CUtlMemory<NET_SetConVar::cvar_s, int>::Purge()
 t CUtlMemory<SVC_ClassInfo::class_s, int>::Grow(int)
-t CUtlMemory<SVC_ClassInfo::class_s, int>::Purge()
 t CUtlMemory<CBaseRecordingSession*, int>::Grow(int)
-t CUtlMemory<CBaseRecordingSession*, int>::Purge()
+t CUtlMemory<CBaseRecordingSession*, int>::~CUtlMemory()
+t CUtlMemory<CBaseRecordingSession*, int>::~CUtlMemory()
 t CUtlMemory<CBaseRecordingSessionBlock*, int>::Grow(int)
-t CUtlMemory<CBaseRecordingSessionBlock*, int>::Purge()
+t CUtlMemory<CBaseRecordingSessionBlock*, int>::~CUtlMemory()
+t CUtlMemory<CBaseRecordingSessionBlock*, int>::~CUtlMemory()
 t CUtlMemory<KeyValues*, int>::Grow(int)
-t CUtlMemory<KeyValues*, int>::Purge()
 t CUtlMemory<char*, int>::Grow(int)
-t CUtlMemory<char*, int>::Purge()
+t CUtlMemory<char*, int>::~CUtlMemory()
+t CUtlMemory<char*, int>::~CUtlMemory()
 t CUtlMemory<unsigned long long, int>::Grow(int)
-t CUtlMemory<unsigned long long, int>::Purge()
 t CUtlString::FixSlashes(char)
 t CUtlString::AllocMemory(unsigned int)
 t CUtlString::GetForModify()
@@ -1901,7 +1905,11 @@ t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::ShiftElementsRight(int, 
 t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::~CUtlVector()
 t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::~CUtlVector()
 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
+t CUtlVector<char*, CUtlMemory<char*, int> >::~CUtlVector()
+t CUtlVector<char*, CUtlMemory<char*, int> >::~CUtlVector()
 t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::RemoveAll()
+t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::~CUtlVector()
+t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::~CUtlVector()
 t CUtlVector<unsigned long long, CUtlMemory<unsigned long long, int> >::InsertBefore(int, unsigned long long const&)
 U CVProfNode::EnterScope()
 U CVProfNode::GetSubNode(char const*, int, char const*, int)
@@ -2195,6 +2203,8 @@ b CSimpleCounter::m_nCounter
 t CUtlLinkedList<unsigned int, int, false, int, CUtlMemory<UtlLinkedListElem_t<unsigned int, int>, int> >::InsertBefore(int, unsigned int const&)
 t CUtlLinkedList<unsigned int, int, false, int, CUtlMemory<UtlLinkedListElem_t<unsigned int, int>, int> >::AllocInternal(bool)
 t CUtlLinkedList<unsigned int, int, false, int, CUtlMemory<UtlLinkedListElem_t<unsigned int, int>, int> >::Unlink(int)
+t CUtlLinkedList<unsigned int, int, false, int, CUtlMemory<UtlLinkedListElem_t<unsigned int, int>, int> >::~CUtlLinkedList()
+t CUtlLinkedList<unsigned int, int, false, int, CUtlMemory<UtlLinkedListElem_t<unsigned int, int>, int> >::~CUtlLinkedList()
 t CUtlLinkedList<CBaseRecordingSession*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSession*, int>, int> >::InsertBefore(int, CBaseRecordingSession* const&)
 t CUtlLinkedList<CBaseRecordingSession*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSession*, int>, int> >::AllocInternal(bool)
 t CUtlLinkedList<CBaseRecordingSession*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSession*, int>, int> >::Unlink(int)
@@ -2204,6 +2214,8 @@ t CUtlLinkedList<CBaseRecordingSession*, int, false, int, CUtlMemory<UtlLinkedLi
 t CUtlLinkedList<CSessionPublishManager*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CSessionPublishManager*, int>, int> >::InsertAfter(int, CSessionPublishManager* const&)
 t CUtlLinkedList<CSessionPublishManager*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CSessionPublishManager*, int>, int> >::AllocInternal(bool)
 t CUtlLinkedList<CSessionPublishManager*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CSessionPublishManager*, int>, int> >::Unlink(int)
+t CUtlLinkedList<CSessionPublishManager*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CSessionPublishManager*, int>, int> >::~CUtlLinkedList()
+t CUtlLinkedList<CSessionPublishManager*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CSessionPublishManager*, int>, int> >::~CUtlLinkedList()
 t CUtlLinkedList<CBaseRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSessionBlock*, int>, int> >::InsertBefore(int, CBaseRecordingSessionBlock* const&)
 t CUtlLinkedList<CBaseRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSessionBlock*, int>, int> >::AllocInternal(bool)
 t CUtlLinkedList<CBaseRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSessionBlock*, int>, int> >::Unlink(int)
@@ -2214,16 +2226,24 @@ t CUtlLinkedList<CServerRecordingSessionBlock*, int, false, int, CUtlMemory<UtlL
 t CUtlLinkedList<CServerRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CServerRecordingSessionBlock*, int>, int> >::AllocInternal(bool)
 t CUtlLinkedList<CServerRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CServerRecordingSessionBlock*, int>, int> >::Unlink(int)
 t CUtlLinkedList<CServerRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CServerRecordingSessionBlock*, int>, int> >::RemoveAll()
+t CUtlLinkedList<CServerRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CServerRecordingSessionBlock*, int>, int> >::~CUtlLinkedList()
+t CUtlLinkedList<CServerRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CServerRecordingSessionBlock*, int>, int> >::~CUtlLinkedList()
 t CUtlLinkedList<IThinker*, int, false, int, CUtlMemory<UtlLinkedListElem_t<IThinker*, int>, int> >::InsertBefore(int, IThinker* const&)
 t CUtlLinkedList<IThinker*, int, false, int, CUtlMemory<UtlLinkedListElem_t<IThinker*, int>, int> >::AllocInternal(bool)
 t CUtlLinkedList<IThinker*, int, false, int, CUtlMemory<UtlLinkedListElem_t<IThinker*, int>, int> >::Unlink(int)
+t CUtlLinkedList<IThinker*, int, false, int, CUtlMemory<UtlLinkedListElem_t<IThinker*, int>, int> >::~CUtlLinkedList()
+t CUtlLinkedList<IThinker*, int, false, int, CUtlMemory<UtlLinkedListElem_t<IThinker*, int>, int> >::~CUtlLinkedList()
 t CUtlLinkedList<wchar_t*, int, false, int, CUtlMemory<UtlLinkedListElem_t<wchar_t*, int>, int> >::InsertBefore(int, wchar_t* const&)
 t CUtlLinkedList<wchar_t*, int, false, int, CUtlMemory<UtlLinkedListElem_t<wchar_t*, int>, int> >::AllocInternal(bool)
 t CUtlLinkedList<wchar_t*, int, false, int, CUtlMemory<UtlLinkedListElem_t<wchar_t*, int>, int> >::Unlink(int)
 t CUtlLinkedList<wchar_t*, int, false, int, CUtlMemory<UtlLinkedListElem_t<wchar_t*, int>, int> >::RemoveAll()
 t CUtlSortVector<CBaseRecordingSession*, CGenericPersistentManager<CBaseRecordingSession>::CLessFunctor, CUtlVector<CBaseRecordingSession*, CUtlMemory<CBaseRecordingSession*, int> > >::Insert(CBaseRecordingSession* const&)
+t CUtlSortVector<CBaseRecordingSession*, CGenericPersistentManager<CBaseRecordingSession>::CLessFunctor, CUtlVector<CBaseRecordingSession*, CUtlMemory<CBaseRecordingSession*, int> > >::~CUtlSortVector()
+t CUtlSortVector<CBaseRecordingSession*, CGenericPersistentManager<CBaseRecordingSession>::CLessFunctor, CUtlVector<CBaseRecordingSession*, CUtlMemory<CBaseRecordingSession*, int> > >::~CUtlSortVector()
 t CUtlSortVector<CBaseRecordingSessionBlock*, CBaseRecordingSession::CLessFunctor, CUtlVector<CBaseRecordingSessionBlock*, CUtlMemory<CBaseRecordingSessionBlock*, int> > >::Insert(CBaseRecordingSessionBlock* const&)
 t CUtlSortVector<CBaseRecordingSessionBlock*, CGenericPersistentManager<CBaseRecordingSessionBlock>::CLessFunctor, CUtlVector<CBaseRecordingSessionBlock*, CUtlMemory<CBaseRecordingSessionBlock*, int> > >::Insert(CBaseRecordingSessionBlock* const&)
+t CUtlSortVector<CBaseRecordingSessionBlock*, CGenericPersistentManager<CBaseRecordingSessionBlock>::CLessFunctor, CUtlVector<CBaseRecordingSessionBlock*, CUtlMemory<CBaseRecordingSessionBlock*, int> > >::~CUtlSortVector()
+t CUtlSortVector<CBaseRecordingSessionBlock*, CGenericPersistentManager<CBaseRecordingSessionBlock>::CLessFunctor, CUtlVector<CBaseRecordingSessionBlock*, CUtlMemory<CBaseRecordingSessionBlock*, int> > >::~CUtlSortVector()
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::InsertNoSort(KeyValues* const&)
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::CompareHelper(KeyValues* const*, KeyValues* const*)
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::RedoSort(bool)
@@ -2456,6 +2476,8 @@ t CDeleteLocalFileJob::~CDeleteLocalFileJob()
 t CDeleteLocalFileJob::~CDeleteLocalFileJob()
 t CDeleteLocalFileJob::~CDeleteLocalFileJob()
 t CUtlNoEscConversion::FindConversion(char const*, int*)
+t CUtlVectorAutoPurge<char*>::~CUtlVectorAutoPurge()
+t CUtlVectorAutoPurge<char*>::~CUtlVectorAutoPurge()
 t MM_RegisterResponse::WriteToBuffer(bf_write&)
 t MM_RegisterResponse::ReadFromBuffer(bf_read&)
 t MM_RegisterResponse::Process()
@@ -2920,6 +2942,8 @@ t CLC_Move::~CLC_Move()
 t CLC_Move::~CLC_Move()
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
+t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::~CUtlHash()
+t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::~CUtlHash()
 t IThinker::~IThinker()
 t IThinker::~IThinker()
 t IThinker::~IThinker()
@@ -3050,7 +3074,8 @@ t SVC_Print::Process()
 t SVC_Print::~SVC_Print()
 t SVC_Print::~SVC_Print()
 t SVC_Print::~SVC_Print()
-U operator new[](unsigned int)@@GLIBCXX_3.4
+t operator new[](unsigned int)
+t operator new[](unsigned int, int, char const*, int)
 t ConCommand::IsCommand() const
 t CUtlString::GetExtension() const
 t CUtlString::StripFilename() const
@@ -3401,7 +3426,9 @@ t SVC_Print::GetName() const
 t SVC_Print::GetType() const
 t SVC_Print::ToString() const
 U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-U operator new(unsigned int)@@GLIBCXX_3.4
+t operator new(unsigned int)
+t operator new(unsigned int, int, char const*, int)
+U std::terminate()@@GLIBCXX_3.4
 t covariant return thunk to CServerReplayContext::GetRecordingSession(unsigned int)
 t covariant return thunk to CServerReplayContext::GetRecordingSessionBlockManager()
 t non-virtual thunk to CBaseRecordingSession::AddBlock(CBaseRecordingSessionBlock*)

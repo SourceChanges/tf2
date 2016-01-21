@@ -4,6 +4,8 @@ d adds.7496
 t base_from_cb_data
 t base_from_object
 A __bss_start
+t _calloc_dbg
+t _calloc_dbg_impl
 U chdir@@GLIBC_2.0
 t classify_object_over_fdes
 b completed.5793
@@ -33,6 +35,7 @@ A _end
 U Error
 t execute_cfa_program
 t execute_stack_op
+t _expand_dbg
 t fde_mixed_encoding_compare
 t fde_single_encoding_compare
 t fde_unencoded_compare
@@ -45,6 +48,7 @@ b frame_hdr_cache
 b frame_hdr_cache_head
 t frame_heapsort
 t __frame_state_for
+t _free_dbg
 U free@@GLIBC_2.0
 t get_cie_encoding
 U getcwd@@GLIBC_2.0
@@ -54,6 +58,7 @@ t _GLOBAL__sub_I_filesystem
 t _GLOBAL__sub_I_s_StringCharConversion
 t _GLOBAL__sub_I__Z9_V_memsetPKciPvii
 w __gmon_start__
+U g_pMemAlloc
 U __gxx_personality_v0@@CXXABI_1.3
 t __i686.get_pc_thunk.bx
 t __i686.get_pc_thunk.cx
@@ -142,6 +147,7 @@ t LzmaDec_FreeProbs
 t LzmaDec_Init
 t LzmaDecode
 t LzmaProps_Decode
+t _malloc_dbg
 U malloc@@GLIBC_2.0
 b marker.7234
 U mbstowcs@@GLIBC_2.0
@@ -149,6 +155,8 @@ U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
 U Msg
+t _msize_dbg
+t _nh_malloc_dbg
 b object_mutex
 b once_regsizes.7669
 U Plat_IsInDebugSession
@@ -166,7 +174,7 @@ t read_sleb128
 t read_sleb128
 t read_uleb128
 t read_uleb128
-U realloc@@GLIBC_2.0
+t _realloc_dbg
 t __register_frame
 t __register_frame_info
 t __register_frame_info_bases
@@ -387,7 +395,8 @@ t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
 t V_wcsncpy(wchar_t*, wchar_t const*, int)
 t _V_wcsupr(char const*, int, wchar_t*)
-U operator delete(void*)@@GLIBCXX_3.4
+t operator delete[](void*)
+t operator delete(void*)
 t FastToLower(char)
 r pulCRCTable
 b vec2_origin
@@ -461,6 +470,7 @@ t CUtlBuffer::CUtlBuffer(int, int, int)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
 t CUtlBuffer::CUtlBuffer(int, int, int)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.26]
 t CUtlMemory<unsigned char, int>::Grow(int)
 t CUtlMemory<unsigned char, int>::Purge()
 t CUtlMemory<char*, int>::Grow(int)
@@ -520,14 +530,16 @@ t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharC
 t CLZMA::Uncompress(unsigned char*, unsigned char*)
 t CLZMA::IsCompressed(unsigned char*)
 t CLZMA::GetActualSize(unsigned char*)
-U operator new[](unsigned int)@@GLIBCXX_3.4
+t operator new[](unsigned int)
+t operator new[](unsigned int, int, char const*, int)
 t CUtlCharConversion::GetDelimiter() const
 t CUtlCharConversion::GetEscapeChar() const
 t CUtlCharConversion::GetDelimiterLength() const
 t CUtlCharConversion::GetConversionLength(char) const
 t CUtlCharConversion::GetConversionString(char) const
 t CUtlCharConversion::MaxConversionLength() const
-U operator new(unsigned int)@@GLIBCXX_3.4
+t operator new(unsigned int)
+t operator new(unsigned int, int, char const*, int)
 r typeinfo for IAppSystem
 r typeinfo for CBaseAppSystem<ISceneFileCache>
 r typeinfo for CSceneFileCache

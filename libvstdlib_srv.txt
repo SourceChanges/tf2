@@ -5,6 +5,8 @@ d adds.7496
 t base_from_cb_data
 t base_from_object
 A __bss_start
+t _calloc_dbg
+t _calloc_dbg_impl
 U chdir@@GLIBC_2.0
 U chmod@@GLIBC_2.0
 U chown@@GLIBC_2.1
@@ -62,6 +64,7 @@ U __errno_location@@GLIBC_2.0
 U Error
 t execute_cfa_program
 t execute_stack_op
+t _expand_dbg
 U fclose@@GLIBC_2.1
 t fde_mixed_encoding_compare
 t fde_single_encoding_compare
@@ -79,6 +82,7 @@ b frame_hdr_cache_head
 t frame_heapsort
 t __frame_state_for
 U fread@@GLIBC_2.0
+t _free_dbg
 U free@@GLIBC_2.0
 U freopen@@GLIBC_2.0
 U g_ClockSpeedMillisecondsMultiplier
@@ -109,6 +113,7 @@ t _GLOBAL__sub_I__ZN5CCvar21CCVarIteratorInternal8SetFirstEv
 t _GLOBAL__sub_I__ZN9KeyValues22s_pfGetSymbolForStringE
 w __gmon_start__
 b g_pCVar
+U g_pMemAlloc
 b g_pProcessUtils
 D g_pThreadPool
 b g_pUtlSortVectorQSortContext
@@ -209,11 +214,10 @@ t lstat
 t __lstat
 U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
+t _malloc_dbg
 U malloc@@GLIBC_2.0
 b marker.7234
 U mbstowcs@@GLIBC_2.0
-U memalign@@GLIBC_2.0
-U MemAllocOOMError
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
@@ -223,6 +227,8 @@ t mknod
 t __mknod
 U mount@@GLIBC_2.0
 U Msg
+t _msize_dbg
+t _nh_malloc_dbg
 b object_mutex
 b once_regsizes.7669
 U open64@@GLIBC_2.2
@@ -260,7 +266,7 @@ t read_sleb128
 t read_sleb128
 t read_uleb128
 t read_uleb128
-U realloc@@GLIBC_2.0
+t _realloc_dbg
 U realpath@@GLIBC_2.3
 t __register_frame
 t __register_frame_info
@@ -579,8 +585,8 @@ t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
 t V_wcsncpy(wchar_t*, wchar_t const*, int)
 t _V_wcsupr(char const*, int, wchar_t*)
-U operator delete[](void*)@@GLIBCXX_3.4
-U operator delete(void*)@@GLIBCXX_3.4
+t operator delete[](void*)
+t operator delete(void*)
 b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
 b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
 b guard variable for CUtlString::GetEmptyString()::s_emptyString
@@ -714,41 +720,40 @@ t CUtlBuffer::CUtlBuffer(int, int, int)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
 t CUtlBuffer::CUtlBuffer(int, int, int)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
+t CUtlBuffer::~CUtlBuffer()
+t CUtlBuffer::~CUtlBuffer()
 t CUtlMemory<CUtlString, int>::Grow(int)
 t CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int>::Grow(int)
-t CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int>::Purge()
-t CUtlMemory<UtlRBTreeNode_t<CVCoverage::Location_t, unsigned short>, unsigned short>::Purge()
-t CUtlMemory<UtlRBTreeNode_t<CKeyValuesSystem::MemoryLeakTracker_t, int>, int>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
-t CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<CCoroutine, int>, int>::Grow(int)
 t CUtlMemory<char, int>::Grow(int)
-t CUtlMemory<char, int>::Purge()
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.26]
 t CUtlMemory<unsigned char, int>::Grow(int)
 t CUtlMemory<unsigned char, int>::Purge()
 t CUtlMemory<int, int>::Grow(int)
-t CUtlMemory<int, int>::Purge()
+t CUtlMemory<int, int>::~CUtlMemory()
+t CUtlMemory<int, int>::~CUtlMemory()
 t CUtlMemory<CKeyValuesSystem::hash_item_t, int>::Grow(int)
-t CUtlMemory<CKeyValuesSystem::hash_item_t, int>::Purge()
 t CUtlMemory<CCvar::QueuedConVarSet_t, int>::Grow(int)
-t CUtlMemory<CCvar::QueuedConVarSet_t, int>::Purge()
+t CUtlMemory<CCvar::QueuedConVarSet_t, int>::~CUtlMemory()
+t CUtlMemory<CCvar::QueuedConVarSet_t, int>::~CUtlMemory()
 t CUtlMemory<CJobThread*, int>::Grow(int)
-t CUtlMemory<CJobThread*, int>::Purge()
+t CUtlMemory<CJobThread*, int>::~CUtlMemory()
+t CUtlMemory<CJobThread*, int>::~CUtlMemory()
 t CUtlMemory<CVProfNode*, int>::Grow(int)
-t CUtlMemory<CVProfNode*, int>::Purge()
+t CUtlMemory<CVProfNode*, int>::~CUtlMemory()
+t CUtlMemory<CVProfNode*, int>::~CUtlMemory()
 t CUtlMemory<CThreadEvent*, int>::Grow(int)
-t CUtlMemory<CThreadEvent*, int>::Purge()
+t CUtlMemory<CThreadEvent*, int>::~CUtlMemory()
+t CUtlMemory<CThreadEvent*, int>::~CUtlMemory()
 t CUtlMemory<CCoroutineMgr*, int>::Grow(int)
-t CUtlMemory<CCoroutineMgr*, int>::Purge()
 t CUtlMemory<IConsoleDisplayFunc*, int>::Grow(int)
-t CUtlMemory<IConsoleDisplayFunc*, int>::Purge()
 t CUtlMemory<CJob*, int>::Grow(int)
-t CUtlMemory<CJob*, int>::Purge()
 t CUtlMemory<KeyValues*, int>::Grow(int)
-t CUtlMemory<KeyValues*, int>::Purge()
 t CUtlMemory<char*, int>::Grow(int)
 t CUtlMemory<void (*)(IConVar*, char const*, float), int>::Grow(int)
-t CUtlMemory<void (*)(IConVar*, char const*, float), int>::Purge()
+t CUtlMemory<void (*)(IConVar*, char const*, float), int>::~CUtlMemory()
+t CUtlMemory<void (*)(IConVar*, char const*, float), int>::~CUtlMemory()
 t CUtlRBTree<CVCoverage::Location_t, unsigned short, CVCoverage::CLocationLess, CUtlMemory<UtlRBTreeNode_t<CVCoverage::Location_t, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlRBTree<CKeyValuesSystem::MemoryLeakTracker_t, int, bool (*)(CKeyValuesSystem::MemoryLeakTracker_t const&, CKeyValuesSystem::MemoryLeakTracker_t const&), CUtlMemory<UtlRBTreeNode_t<CKeyValuesSystem::MemoryLeakTracker_t, int>, int> >::RemoveAll()
 t CUtlRBTree<CKeyValuesSystem::MemoryLeakTracker_t, int, bool (*)(CKeyValuesSystem::MemoryLeakTracker_t const&, CKeyValuesSystem::MemoryLeakTracker_t const&), CUtlMemory<UtlRBTreeNode_t<CKeyValuesSystem::MemoryLeakTracker_t, int>, int> >::~CUtlRBTree()
@@ -757,6 +762,7 @@ t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned s
 t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
 t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
 t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveRebalance(unsigned short)
+t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Purge()
 t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t const&)
 t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
 t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::NewNode()
@@ -802,15 +808,23 @@ t CUtlVector<int, CUtlMemory<int, int> >::ShiftElementsRight(int, int)
 t CUtlVector<int, CUtlMemory<int, int> >::Remove(int)
 t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
 t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
+t CUtlVector<CKeyValuesSystem::hash_item_t, CUtlMemory<CKeyValuesSystem::hash_item_t, int> >::~CUtlVector()
+t CUtlVector<CKeyValuesSystem::hash_item_t, CUtlMemory<CKeyValuesSystem::hash_item_t, int> >::~CUtlVector()
 t CUtlVector<CCvar::QueuedConVarSet_t, CUtlMemory<CCvar::QueuedConVarSet_t, int> >::InsertBefore(int)
 t CUtlVector<CCvar::QueuedConVarSet_t, CUtlMemory<CCvar::QueuedConVarSet_t, int> >::RemoveAll()
 t CUtlVector<CCvar::QueuedConVarSet_t, CUtlMemory<CCvar::QueuedConVarSet_t, int> >::~CUtlVector()
 t CUtlVector<CCvar::QueuedConVarSet_t, CUtlMemory<CCvar::QueuedConVarSet_t, int> >::~CUtlVector()
+t CUtlVector<CJobThread*, CUtlMemory<CJobThread*, int> >::~CUtlVector()
+t CUtlVector<CJobThread*, CUtlMemory<CJobThread*, int> >::~CUtlVector()
 t CUtlVector<CVProfNode*, CUtlMemory<CVProfNode*, int> >::InsertBefore(int, CVProfNode* const&)
+t CUtlVector<CVProfNode*, CUtlMemory<CVProfNode*, int> >::~CUtlVector()
+t CUtlVector<CVProfNode*, CUtlMemory<CVProfNode*, int> >::~CUtlVector()
 t CUtlVector<CCoroutineMgr*, CUtlMemory<CCoroutineMgr*, int> >::InsertBefore(int, CCoroutineMgr* const&)
 t CUtlVector<CCoroutineMgr*, CUtlMemory<CCoroutineMgr*, int> >::~CUtlVector()
 t CUtlVector<CCoroutineMgr*, CUtlMemory<CCoroutineMgr*, int> >::~CUtlVector()
 t CUtlVector<IConsoleDisplayFunc*, CUtlMemory<IConsoleDisplayFunc*, int> >::InsertBefore(int, IConsoleDisplayFunc* const&)
+t CUtlVector<IConsoleDisplayFunc*, CUtlMemory<IConsoleDisplayFunc*, int> >::~CUtlVector()
+t CUtlVector<IConsoleDisplayFunc*, CUtlMemory<IConsoleDisplayFunc*, int> >::~CUtlVector()
 t CUtlVector<CJob*, CUtlMemory<CJob*, int> >::InsertBefore(int, CJob* const&)
 t CUtlVector<CJob*, CUtlMemory<CJob*, int> >::EnsureCapacity(int)
 t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::GrowVector(int)
@@ -819,7 +833,11 @@ t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::~CUtlVector()
 t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::~CUtlVector()
 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
 t CUtlVector<void (*)(IConVar*, char const*, float), CUtlMemory<void (*)(IConVar*, char const*, float), int> >::InsertBefore(int, void (* const&)(IConVar*, char const*, float))
+t CUtlVector<void (*)(IConVar*, char const*, float), CUtlMemory<void (*)(IConVar*, char const*, float), int> >::~CUtlVector()
+t CUtlVector<void (*)(IConVar*, char const*, float), CUtlMemory<void (*)(IConVar*, char const*, float), int> >::~CUtlVector()
 t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::RemoveAll()
+t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::~CUtlVector()
+t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::~CUtlVector()
 t CVCoverage::~CVCoverage()
 t CVCoverage::~CVCoverage()
 U CVProfNode::EnterScope()
@@ -1165,6 +1183,8 @@ t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
 t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
 t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
+t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::~CUtlHash()
+t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::~CUtlHash()
 t CJobQueue::Push(CJob*, int)
 t CJobQueue::~CJobQueue()
 t CJobQueue::~CJobQueue()
@@ -1267,7 +1287,8 @@ t KeyValues::operator delete(void*)
 t KeyValues::operator delete(void*, int, char const*, int)
 t KeyValues::operator new(unsigned int)
 t KeyValues::operator new(unsigned int, int, char const*, int)
-U operator new[](unsigned int)@@GLIBCXX_3.4
+t operator new[](unsigned int)
+t operator new[](unsigned int, int, char const*, int)
 t ConCommand::IsCommand() const
 t CUtlString::GetExtension() const
 t CUtlString::StripFilename() const
@@ -1336,7 +1357,9 @@ t KeyValues::GetName() const
 t KeyValues::MakeCopy(bool) const
 t KeyValues::MakeCopy() const
 U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-U operator new(unsigned int)@@GLIBCXX_3.4
+t operator new(unsigned int)
+t operator new(unsigned int, int, char const*, int)
+U std::terminate()@@GLIBCXX_3.4
 t non-virtual thunk to CEmptyConVar::SetValue(float)
 t non-virtual thunk to CEmptyConVar::SetValue(int)
 t non-virtual thunk to CEmptyConVar::SetValue(char const*)

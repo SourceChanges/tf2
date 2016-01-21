@@ -11,6 +11,8 @@ U atan@@GLIBC_2.0
 t base_from_cb_data
 t base_from_object
 A __bss_start
+t _calloc_dbg
+t _calloc_dbg_impl
 U cbrtf@@GLIBC_2.0
 U chdir@@GLIBC_2.0
 U chmod@@GLIBC_2.0
@@ -55,6 +57,7 @@ U Error
 t execute_cfa_program
 t execute_stack_op
 U exit@@GLIBC_2.0
+t _expand_dbg
 U exp@@GLIBC_2.0
 U fclose@@GLIBC_2.1
 t fde_mixed_encoding_compare
@@ -91,6 +94,7 @@ b frame_hdr_cache
 b frame_hdr_cache_head
 t frame_heapsort
 t __frame_state_for
+t _free_dbg
 U free@@GLIBC_2.0
 U freopen@@GLIBC_2.0
 U fwrite@@GLIBC_2.0
@@ -152,6 +156,7 @@ b g_pCVar
 b g_PhysicsCollision
 d g_PhysicsInternal
 d g_PhysicsUnits
+U g_pMemAlloc
 b g_pMeshFrameLocks
 b g_pProcessUtils
 b g_pUtlSortVectorQSortContext
@@ -271,12 +276,11 @@ t lstat
 t __lstat
 U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
+t _malloc_dbg
 U malloc@@GLIBC_2.0
 b marker.7234
 R MAX_OBJECT_ROT_SPEED
 U mbstowcs@@GLIBC_2.0
-U memalign@@GLIBC_2.0
-U MemAllocOOMError
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
@@ -286,7 +290,9 @@ t mknod
 t __mknod
 U mount@@GLIBC_2.0
 U Msg
+t _msize_dbg
 r nanmask
+t _nh_malloc_dbg
 d n_physical_pops
 b object_mutex
 b once_regsizes.7669
@@ -337,6 +343,7 @@ t read_sleb128
 t read_sleb128
 t read_uleb128
 t read_uleb128
+t _realloc_dbg
 U realloc@@GLIBC_2.0
 U realpath@@GLIBC_2.3
 t __register_frame
@@ -1377,8 +1384,8 @@ t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
 t V_wcsncpy(wchar_t*, wchar_t const*, int)
 t _V_wcsupr(char const*, int, wchar_t*)
-U operator delete[](void*)@@GLIBCXX_3.4
-U operator delete(void*)@@GLIBCXX_3.4
+t operator delete[](void*)
+t operator delete(void*)
 b guard variable for datamap_t* DataMapInit<vehicleparams_t>(vehicleparams_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<physcollideheader_t>(physcollideheader_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<vehicle_axleparams_t>(vehicle_axleparams_t*)::nameHolder
@@ -1586,7 +1593,7 @@ r _ps_inv_sign_mask
 d s_DefaultAccessor
 t GetTmpObjectMatrix(IVP_Real_Object*)
 b g_MainDLLInterface
-t InitObjectTemplate(IVP_Template_Real_Object&, int, objectparams_t*, bool) [clone .constprop.77]
+t InitObjectTemplate(IVP_Template_Real_Object&, int, objectparams_t*, bool) [clone .constprop.76]
 b g_CleanupSymbolTable
 r _ps_minus_cephes_DP1
 r _ps_minus_cephes_DP2
@@ -1701,67 +1708,65 @@ t CUtlBuffer::CUtlBuffer(int, int, int)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
 t CUtlMemory<CUtlString, int>::Grow(int)
 t CUtlMemory<CUtlSymbol, int>::Grow(int)
-t CUtlMemory<CUtlSymbol, int>::Purge()
 t CUtlMemory<bboxcache_t, int>::Grow(int)
-t CUtlMemory<bboxcache_t, int>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short>::Grow(int)
-t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short>::Grow(int)
-t CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
-t CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
-t CUtlMemory<CUtlHashtableEntry<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t>, int>::Purge()
+t CUtlMemory<CUtlHashtableEntry<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t>, int>::~CUtlMemory()
+t CUtlMemory<CUtlHashtableEntry<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t>, int>::~CUtlMemory()
 t CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short>::Grow(int)
-t CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<void*, unsigned short>::List_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<CPhysicsCollisionSet, int>::Grow(int)
-t CUtlMemory<CPhysicsCollisionSet, int>::Purge()
 t CUtlMemory<postrestore_objectlist_t, int>::Grow(int)
-t CUtlMemory<postrestore_objectlist_t, int>::Purge()
 t CUtlMemory<CSurface, int>::Grow(int)
-t CUtlMemory<CSurface, int>::Purge()
 t CUtlMemory<char, int>::Grow(int)
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.26]
 t CUtlMemory<unsigned char, int>::Grow(int)
 t CUtlMemory<unsigned char, int>::Purge()
 t CUtlMemory<int, int>::Grow(int)
-t CUtlMemory<int, int>::Purge()
 t CUtlMemory<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::ListElem_t, int>::Grow(int)
+t CUtlMemory<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::ListElem_t, int>::~CUtlMemory()
+t CUtlMemory<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::ListElem_t, int>::~CUtlMemory()
 t CUtlMemory<CUtlMultiList<void*, unsigned short>::ListElem_t, int>::Grow(int)
+t CUtlMemory<CUtlMultiList<void*, unsigned short>::ListElem_t, int>::~CUtlMemory()
+t CUtlMemory<CUtlMultiList<void*, unsigned short>::ListElem_t, int>::~CUtlMemory()
 t CUtlMemory<CCollisionSolver::realobjectpair_t, int>::Grow(int)
-t CUtlMemory<CCollisionSolver::realobjectpair_t, int>::Purge()
+t CUtlMemory<CCollisionSolver::realobjectpair_t, int>::~CUtlMemory()
+t CUtlMemory<CCollisionSolver::realobjectpair_t, int>::~CUtlMemory()
 t CUtlMemory<memhandle_t__*, int>::Grow(int)
 t CUtlMemory<CPhysicsObject*, int>::Grow(int)
-t CUtlMemory<CPhysicsObject*, int>::Purge()
 t CUtlMemory<IPhysicsObject*, int>::Grow(int)
-t CUtlMemory<IPhysicsObject*, int>::Purge()
+t CUtlMemory<IPhysicsObject*, int>::~CUtlMemory()
+t CUtlMemory<IPhysicsObject*, int>::~CUtlMemory()
 t CUtlMemory<IVP_Real_Object*, int>::Grow(int)
-t CUtlMemory<IVP_Real_Object*, int>::Purge()
 t CUtlMemory<IDeleteQueueItem*, int>::Grow(int)
-t CUtlMemory<IDeleteQueueItem*, int>::Purge()
+t CUtlMemory<IDeleteQueueItem*, int>::~CUtlMemory()
+t CUtlMemory<IDeleteQueueItem*, int>::~CUtlMemory()
 t CUtlMemory<IPhysicsEnvironment*, int>::Grow(int)
-t CUtlMemory<IPhysicsEnvironment*, int>::Purge()
 t CUtlMemory<CPhysCollideVirtualMesh*, int>::Grow(int)
-t CUtlMemory<CPhysCollideVirtualMesh*, int>::Purge()
+t CUtlMemory<CPhysCollideVirtualMesh*, int>::~CUtlMemory()
+t CUtlMemory<CPhysCollideVirtualMesh*, int>::~CUtlMemory()
 t CUtlMemory<CPhysicsConstraintGroup*, int>::Grow(int)
-t CUtlMemory<CPhysicsConstraintGroup*, int>::Purge()
 t CUtlMemory<CPhysicsFluidController*, int>::Grow(int)
-t CUtlMemory<CPhysicsFluidController*, int>::Purge()
+t CUtlMemory<CPhysicsFluidController*, int>::~CUtlMemory()
+t CUtlMemory<CPhysicsFluidController*, int>::~CUtlMemory()
 t CUtlMemory<IPhysicsPlayerController*, int>::Grow(int)
-t CUtlMemory<IPhysicsPlayerController*, int>::Purge()
+t CUtlMemory<IPhysicsPlayerController*, int>::~CUtlMemory()
+t CUtlMemory<IPhysicsPlayerController*, int>::~CUtlMemory()
 t CUtlMemory<IVP_Core*, int>::Grow(int)
-t CUtlMemory<IVP_Core*, int>::Purge()
+t CUtlMemory<IVP_Core*, int>::~CUtlMemory()
+t CUtlMemory<IVP_Core*, int>::~CUtlMemory()
 t CUtlMemory<char*, int>::Grow(int)
-t CUtlMemory<char*, int>::Purge()
 t CUtlMemory<IVP_Compact_Ledgetree_Node const*, int>::Grow(int)
-t CUtlMemory<IVP_Compact_Ledgetree_Node const*, int>::Purge()
 t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::Grow(int)
-t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::Purge()
+t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::~CUtlMemory()
+t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::~CUtlMemory()
 t CUtlMemory<void*, int>::Grow(int)
-t CUtlMemory<void*, int>::Purge()
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RotateRight(unsigned short)
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
+t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Purge()
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Insert(CUtlSymbolTable::CStringPoolIndex const&)
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::NewNode()
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RemoveAll()
@@ -1825,6 +1830,8 @@ t CUtlVector<postrestore_objectlist_t, CUtlMemory<postrestore_objectlist_t, int>
 t CUtlVector<postrestore_objectlist_t, CUtlMemory<postrestore_objectlist_t, int> >::~CUtlVector()
 t CUtlVector<postrestore_objectlist_t, CUtlMemory<postrestore_objectlist_t, int> >::~CUtlVector()
 t CUtlVector<CSurface, CUtlMemory<CSurface, int> >::InsertBefore(int, CSurface const&)
+t CUtlVector<CSurface, CUtlMemory<CSurface, int> >::~CUtlVector()
+t CUtlVector<CSurface, CUtlMemory<CSurface, int> >::~CUtlVector()
 t CUtlVector<unsigned char, CUtlMemory<unsigned char, int> >::SetCount(int)
 t CUtlVector<unsigned char, CUtlMemory<unsigned char, int> >::~CUtlVector()
 t CUtlVector<unsigned char, CUtlMemory<unsigned char, int> >::~CUtlVector()
@@ -1843,18 +1850,26 @@ t CUtlVector<IPhysicsObject*, CUtlMemory<IPhysicsObject*, int> >::~CUtlVector()
 t CUtlVector<IVP_Real_Object*, CUtlMemory<IVP_Real_Object*, int> >::InsertBefore(int, IVP_Real_Object* const&)
 t CUtlVector<IDeleteQueueItem*, CUtlMemory<IDeleteQueueItem*, int> >::InsertBefore(int, IDeleteQueueItem* const&)
 t CUtlVector<IPhysicsEnvironment*, CUtlMemory<IPhysicsEnvironment*, int> >::InsertBefore(int, IPhysicsEnvironment* const&)
+t CUtlVector<IPhysicsEnvironment*, CUtlMemory<IPhysicsEnvironment*, int> >::~CUtlVector()
+t CUtlVector<IPhysicsEnvironment*, CUtlMemory<IPhysicsEnvironment*, int> >::~CUtlVector()
 t CUtlVector<CPhysCollideVirtualMesh*, CUtlMemory<CPhysCollideVirtualMesh*, int> >::InsertBefore(int, CPhysCollideVirtualMesh* const&)
 t CUtlVector<CPhysicsConstraintGroup*, CUtlMemory<CPhysicsConstraintGroup*, int> >::InsertBefore(int, CPhysicsConstraintGroup* const&)
 t CUtlVector<CPhysicsConstraintGroup*, CUtlMemory<CPhysicsConstraintGroup*, int> >::~CUtlVector()
 t CUtlVector<CPhysicsConstraintGroup*, CUtlMemory<CPhysicsConstraintGroup*, int> >::~CUtlVector()
 t CUtlVector<CPhysicsFluidController*, CUtlMemory<CPhysicsFluidController*, int> >::InsertBefore(int, CPhysicsFluidController* const&)
+t CUtlVector<CPhysicsFluidController*, CUtlMemory<CPhysicsFluidController*, int> >::~CUtlVector()
+t CUtlVector<CPhysicsFluidController*, CUtlMemory<CPhysicsFluidController*, int> >::~CUtlVector()
 t CUtlVector<IPhysicsPlayerController*, CUtlMemory<IPhysicsPlayerController*, int> >::InsertBefore(int, IPhysicsPlayerController* const&)
+t CUtlVector<IPhysicsPlayerController*, CUtlMemory<IPhysicsPlayerController*, int> >::~CUtlVector()
+t CUtlVector<IPhysicsPlayerController*, CUtlMemory<IPhysicsPlayerController*, int> >::~CUtlVector()
 t CUtlVector<IVP_Core*, CUtlMemory<IVP_Core*, int> >::InsertBefore(int, IVP_Core* const&)
 t CUtlVector<IVP_Core*, CUtlMemory<IVP_Core*, int> >::Remove(int)
 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
 t CUtlVector<IVP_Compact_Ledgetree_Node const*, CUtlMemoryFixedGrowable<IVP_Compact_Ledgetree_Node const*, 64u, int> >::GrowVector(int)
 t CUtlVector<CUtlSymbolTable::StringPool_t*, CUtlMemory<CUtlSymbolTable::StringPool_t*, int> >::InsertBefore(int, CUtlSymbolTable::StringPool_t* const&)
 t CUtlVector<void*, CUtlMemory<void*, int> >::InsertBefore(int, void* const&)
+t CUtlVector<void*, CUtlMemory<void*, int> >::~CUtlVector()
+t CUtlVector<void*, CUtlMemory<void*, int> >::~CUtlVector()
 t CVisitHash::CVisitHash()
 t CVisitHash::CVisitHash()
 U CVProfNode::EnterScope()
@@ -2415,6 +2430,8 @@ t CUtlLinkedList<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned 
 t CUtlLinkedList<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::AllocInternal(bool)
 t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
+t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::~CUtlLinkedList()
+t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::~CUtlLinkedList()
 t CUtlLinkedList<CUtlMultiList<void*, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<void*, unsigned short>::List_t, unsigned short>, unsigned short> >::AllocInternal(bool)
 t CUtlLinkedList<CUtlMultiList<void*, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<void*, unsigned short>::List_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
 t CUtlLinkedList<CUtlMultiList<void*, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<void*, unsigned short>::List_t, unsigned short>, unsigned short> >::~CUtlLinkedList()
@@ -2634,6 +2651,8 @@ t CTier1AppSystem<IPhysics, 0>::Disconnect()
 t CTier1AppSystem<IPhysics, 0>::Init()
 t CTier1AppSystem<IPhysics, 0>::Connect(void* (*)(char const*, int*))
 t CTier1AppSystem<IPhysics, 0>::Shutdown()
+t CUtlSymbolTable::CTree::~CTree()
+t CUtlSymbolTable::CTree::~CTree()
 t CUtlSymbolTable::AddString(char const*)
 t CUtlSymbolTable::RemoveAll()
 t CUtlSymbolTable::CUtlSymbolTable(int, int, bool)
@@ -5088,7 +5107,7 @@ t IVP_Car_System_Real_Wheels::change_fast_turn_factor(float)
 t IVP_Car_System_Real_Wheels::change_spring_dampening(IVP_POS_WHEEL, float)
 t IVP_Car_System_Real_Wheels::get_orig_axles_distance()
 t IVP_Car_System_Real_Wheels::set_booster_acceleration(float)
-t IVP_Car_System_Real_Wheels::set_booster_acceleration(float) [clone .part.13]
+t IVP_Car_System_Real_Wheels::set_booster_acceleration(float) [clone .part.12]
 t IVP_Car_System_Real_Wheels::change_spring_pre_tension(IVP_POS_WHEEL, float)
 t IVP_Car_System_Real_Wheels::update_body_countertorque()
 t IVP_Car_System_Real_Wheels::change_stabilizer_constant(IVP_POS_AXIS, float)
@@ -5098,7 +5117,7 @@ t IVP_Car_System_Real_Wheels::change_wheel_speed_dampening(IVP_POS_WHEEL, float)
 t IVP_Car_System_Real_Wheels::get_orig_front_wheel_distance()
 t IVP_Car_System_Real_Wheels::change_spring_dampening_compression(IVP_POS_WHEEL, float)
 t IVP_Car_System_Real_Wheels::fix_wheel(IVP_POS_WHEEL, IVP_BOOL)
-t IVP_Car_System_Real_Wheels::fix_wheel(IVP_POS_WHEEL, IVP_BOOL) [clone .part.17]
+t IVP_Car_System_Real_Wheels::fix_wheel(IVP_POS_WHEEL, IVP_BOOL) [clone .part.16]
 t IVP_Car_System_Real_Wheels::IVP_Car_System_Real_Wheels(IVP_Environment*, IVP_Template_Car_System*)
 t IVP_Car_System_Real_Wheels::IVP_Car_System_Real_Wheels(IVP_Environment*, IVP_Template_Car_System*)
 t IVP_Car_System_Real_Wheels::~IVP_Car_System_Real_Wheels()
@@ -5470,6 +5489,8 @@ t vphysics_save_constraintpulley_t::GetBaseMap()
 d vphysics_save_constraintpulley_t::m_DataMap
 t vphysics_save_motioncontroller_t::GetBaseMap()
 d vphysics_save_motioncontroller_t::m_DataMap
+t vphysics_save_motioncontroller_t::~vphysics_save_motioncontroller_t()
+t vphysics_save_motioncontroller_t::~vphysics_save_motioncontroller_t()
 t IVP_Collision_Callback_Table_Hash::object_to_index(IVP_Real_Object*)
 t IVP_Collision_Callback_Table_Hash::~IVP_Collision_Callback_Table_Hash()
 t IVP_Collision_Callback_Table_Hash::~IVP_Collision_Callback_Table_Hash()
@@ -5844,7 +5865,8 @@ t simplex_t::SolveVoronoiRegion3(simplexvert_t const&, Vector*)
 t simplex_t::SolveVoronoiRegion4(simplexvert_t const&, Vector*)
 t simplex_t::ClipRayToTetrahedron(Vector const&)
 t simplex_t::ClipRayToTetrahedronBase(Vector const&)
-U operator new[](unsigned int)@@GLIBCXX_3.4
+t operator new[](unsigned int)
+t operator new[](unsigned int, int, char const*, int)
 t ConCommand::IsCommand() const
 t CTraceAABB::SupportMap(Vector const&, Vector*) const
 t CTraceAABB::GetVertByIndex(int) const
@@ -6263,7 +6285,8 @@ t IVP_U_Set<IVP_Core>::compare(void*, void*) const
 t IVP_VHash::print() const
 t IVP_VHash::find_elem(void const*, unsigned int) const
 U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-U operator new(unsigned int)@@GLIBCXX_3.4
+t operator new(unsigned int)
+t operator new(unsigned int, int, char const*, int)
 U std::terminate()@@GLIBCXX_3.4
 t non-virtual thunk to IVP_Actuator_Extra::active_float_changed(IVP_U_Active_Float*)
 t non-virtual thunk to IVP_Actuator_Force_Active::active_float_changed(IVP_U_Active_Float*)

@@ -112,6 +112,7 @@ T GetThreadedLoadLibraryFunc
 U gettimeofday@@GLIBC_2.0
 w __gmon_start__
 U gmtime_r@@GLIBC_2.0
+D g_pMemAlloc
 D g_pVCR
 B g_Telemetry
 B g_VProfCurrentProfile
@@ -135,7 +136,7 @@ T LogV
 U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
 U malloc@@GLIBC_2.0
-U memalign@@GLIBC_2.0
+U malloc_usable_size@@GLIBC_2.0
 T MemAllocOOMError
 T MemAllocScratch
 U memcmp@@GLIBC_2.0
@@ -322,8 +323,6 @@ T ConLog(char const*, ...)
 T ConMsg(char const*, ...)
 T DevLog(char const*, ...)
 T DevMsg(char const*, ...)
-U operator delete[](void*)@@GLIBCXX_3.4
-U operator delete(void*)@@GLIBCXX_3.4
 T ZeroMemory
 T CVProfNode::EnterScope()
 T CVProfNode::GetSubNode(char const*, int, char const*)
@@ -441,7 +440,6 @@ T CVProfile::CVProfile()
 T CVProfile::CVProfile()
 T CVProfile::~CVProfile()
 T CVProfile::~CVProfile()
-U operator new[](unsigned int)@@GLIBCXX_3.4
 T CWorkerThread::GetCallParam(CFunctor**) const
 T CThreadLocalBase::Get() const
 T CThreadSyncObject::operator!() const
@@ -454,7 +452,6 @@ T CVProfile::GetCounterNameAndValue(int, int&) const
 U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
 U std::__detail::_List_node_base::_M_unhook()@@GLIBCXX_3.4.15
 T CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-U operator new(unsigned int)@@GLIBCXX_3.4
 U std::__throw_bad_alloc()@@GLIBCXX_3.4
 U std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
 U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4

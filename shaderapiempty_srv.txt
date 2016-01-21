@@ -4,6 +4,8 @@ d adds.7496
 t base_from_cb_data
 t base_from_object
 A __bss_start
+t _calloc_dbg
+t _calloc_dbg_impl
 U chdir@@GLIBC_2.0
 t classify_object_over_fdes
 b completed.5793
@@ -36,6 +38,7 @@ A _end
 U Error
 t execute_cfa_program
 t execute_stack_op
+t _expand_dbg
 t fde_mixed_encoding_compare
 t fde_single_encoding_compare
 t fde_unencoded_compare
@@ -47,6 +50,7 @@ b frame_hdr_cache
 b frame_hdr_cache_head
 t frame_heapsort
 t __frame_state_for
+t _free_dbg
 U free@@GLIBC_2.0
 t get_cie_encoding
 U getcwd@@GLIBC_2.0
@@ -55,6 +59,7 @@ a _GLOBAL_OFFSET_TABLE_
 t _GLOBAL__sub_I_g_pShaderUtil
 t _GLOBAL__sub_I__Z9_V_memsetPKciPvii
 w __gmon_start__
+U g_pMemAlloc
 b g_pShaderUtil
 U __gxx_personality_v0@@CXXABI_1.3
 t __i686.get_pc_thunk.bx
@@ -135,6 +140,7 @@ t .L69
 t .L70
 t .L71
 t linear_search_fdes
+t _malloc_dbg
 U malloc@@GLIBC_2.0
 b marker.7234
 U mbstowcs@@GLIBC_2.0
@@ -142,6 +148,8 @@ U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
 U Msg
+t _msize_dbg
+t _nh_malloc_dbg
 b object_mutex
 b once_regsizes.7669
 U Plat_FloatTime
@@ -160,7 +168,7 @@ t read_sleb128
 t read_sleb128
 t read_uleb128
 t read_uleb128
-U realloc@@GLIBC_2.0
+t _realloc_dbg
 t __register_frame
 t __register_frame_info
 t __register_frame_info_bases
@@ -368,8 +376,8 @@ t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
 t V_wcsncpy(wchar_t*, wchar_t const*, int)
 t _V_wcsupr(char const*, int, wchar_t*)
-U operator delete[](void*)@@GLIBCXX_3.4
-U operator delete(void*)@@GLIBCXX_3.4
+t operator delete[](void*)
+t operator delete(void*)
 b guard variable for CShaderAPIEmpty::GetFlashlightState(VMatrix&) const::blah
 b guard variable for CShaderAPIEmpty::GetFlashlightStateEx(VMatrix&, ITexture**) const::blah
 b guard variable for CShaderAPIEmpty::GetToneMappingScaleLinear() const::dummy
@@ -807,7 +815,8 @@ t CShaderDeviceMgrEmpty::Shutdown()
 t IMesh::~IMesh()
 t IMesh::~IMesh()
 t IMesh::~IMesh()
-U operator new[](unsigned int)@@GLIBCXX_3.4
+t operator new[](unsigned int)
+t operator new[](unsigned int, int, char const*, int)
 t CEmptyMesh::IndexCount() const
 t CEmptyMesh::IndexFormat() const
 t CEmptyMesh::VertexCount() const
@@ -942,6 +951,8 @@ t CShaderDeviceMgrEmpty::GetAdapterInfo(int, MaterialAdapterInfo_t&) const
 t CShaderDeviceMgrEmpty::GetAdapterCount() const
 t CShaderDeviceMgrEmpty::GetCurrentModeInfo(ShaderDisplayMode_t*, int) const
 t IMaterialSystemHardwareConfig::SupportsNormalMapCompression() const
+t operator new(unsigned int)
+t operator new(unsigned int, int, char const*, int)
 t non-virtual thunk to CEmptyMesh::ModifyBegin(bool, int, int, IndexDesc_t&)
 t non-virtual thunk to CEmptyMesh::ValidateData(int, IndexDesc_t const&)
 t non-virtual thunk to CEmptyMesh::EndCastBuffer()
