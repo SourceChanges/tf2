@@ -28,8 +28,8 @@ U cos@@GLIBC_2.0
 T CreateInterface
 U CreateSimpleThread
 U CreateThreadPool
-r CSWTCH.1080
-r CSWTCH.1118
+r CSWTCH.1084
+r CSWTCH.1122
 r CSWTCH.134
 r CSWTCH.136
 r CSWTCH.33
@@ -1289,7 +1289,7 @@ t MySpewOutputFunc(SpewType_t, char const*)
 b s_bBuiltBreakSet
 d s_nDLLIdentifier
 b s_TextureManager
-t ConvertModeStruct(ShaderDeviceInfo_t*, MaterialSystem_Config_t const&) [clone .constprop.410]
+t ConvertModeStruct(ShaderDeviceInfo_t*, MaterialSystem_Config_t const&) [clone .constprop.409]
 t DrawExtrusionFace(Vector const&, Vector const&, Vector*, int, int, Color, CMeshBuilder&) [clone .constprop.26]
 t GetHardwareConfig()
 r g_ImageFormatInfo
@@ -3176,8 +3176,10 @@ t CTextureManager::ReleaseTempRenderTargetBits()
 t CTextureManager::ForceAllTexturesIntoHardware()
 t CTextureManager::AllocateStandardRenderTargets()
 t CTextureManager::RestoreNonRenderTargetTextures()
+t CTextureManager::MarkUnreferencedTextureForCleanup(ITextureInternal*)
 t CTextureManager::AsyncCreateTextureFromRenderTarget(ITexture*, char const*, ImageFormat, bool, int, IAsyncTextureOperationReceiver*, void*)
 t CTextureManager::CacheExternalStandardRenderTargets()
+t CTextureManager::CleanupPossiblyUnreferencedTextures()
 t CTextureManager::Init(int)
 t CTextureManager::Update()
 t CTextureManager::FindNext(int, ITextureInternal**)
@@ -3312,7 +3314,7 @@ t ITextureInternal::ChangeRenderTarget(ITextureInternal*, int, int, RenderTarget
 t ITextureInternal::CreateRenderTarget(char const*, int, int, RenderTargetSizeMode_t, ImageFormat, RenderTargetType_t, unsigned int, unsigned int)
 t ITextureInternal::CreateProceduralTexture(char const*, char const*, int, int, int, ImageFormat, int, ITextureRegenerator*)
 t ITextureInternal::CreateReferenceTextureFromHandle(char const*, char const*, int)
-t ITextureInternal::Destroy(ITextureInternal*)
+t ITextureInternal::Destroy(ITextureInternal*, bool)
 t ITextureInternal::~ITextureInternal()
 t ITextureInternal::~ITextureInternal()
 t ITextureInternal::~ITextureInternal()
@@ -4865,7 +4867,9 @@ t CTSQueue<AsyncReadJob_t*, false>::Purge()
 t CTSQueue<AsyncReadJob_t*, false>::PushItem(AsyncReadJob_t* const&)
 t CTSQueue<AsyncReadJob_t*, false>::~CTSQueue()
 t CTSQueue<AsyncReadJob_t*, false>::~CTSQueue()
+t CTSQueue<ITextureInternal*, false>::Pop()
 t CTSQueue<ITextureInternal*, false>::Purge()
+t CTSQueue<ITextureInternal*, false>::PushItem(ITextureInternal* const&)
 t CTSQueue<ITextureInternal*, false>::~CTSQueue()
 t CTSQueue<ITextureInternal*, false>::~CTSQueue()
 t CUtlDict<CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::CUtlDict(int, int, int)
@@ -5378,6 +5382,7 @@ t CTCTextureStage::HasTeamSpecificsThis() const
 t CTCTextureStage::DoesTargetRenderTarget() const
 t CTextureManager::ThreadInAsyncLoadThread() const
 t CTextureManager::ThreadInAsyncReadThread() const
+t CTextureManager::HasPendingTextureDestroys() const
 t CUtlSymbolTable::FindPoolWithSpace(int) const
 t CUtlSymbolTable::Find(char const*) const
 t CUtlSymbolTable::CLess::operator()(CUtlSymbolTable::CStringPoolIndex const&, CUtlSymbolTable::CStringPoolIndex const&) const
@@ -5672,6 +5677,7 @@ t ConVar::GetName() const
 t ConVar::IsCommand() const
 t ConVar::IsFlagSet(int) const
 t CUtlMap<char const*, int, int>::FirstInorder() const
+t CUtlMap<char const*, ITextureInternal*, unsigned short>::FirstInorder() const
 t VMatrix::Transpose3x3() const
 t VMatrix::InverseGeneral(VMatrix&) const
 t VMatrix::IsRotationMatrix() const
@@ -7078,6 +7084,8 @@ b CTCCombineStage::ResolveThis(CTextureCompositor*)::tm_fmt
 r CTCTextureStage::ResolveThis(CTextureCompositor*)::__FUNCTION__
 b CTCTextureStage::ResolveThis(CTextureCompositor*)::tm_fmt
 b CTCTextureStage::ResolveThis(CTextureCompositor*)::tm_fmt
+r CTextureManager::RemoveTexture(ITextureInternal*)::__FUNCTION__
+b CTextureManager::RemoveTexture(ITextureInternal*)::tm_fmt
 r CTextureManager::UpdatePostAsync()::__FUNCTION__
 b CTextureManager::UpdatePostAsync()::tm_fmt
 r CTextureManager::AsyncReadTexture(AsyncReadJob_t*)::__FUNCTION__
