@@ -5777,7 +5777,7 @@ t CBaseServer::CheckPassword(netadr_s&, char const*, char const*)
 t CBaseServer::CheckProtocol(netadr_s&, int, int)
 t CBaseServer::CheckTimeouts()
 t CBaseServer::ConnectClient(netadr_s&, int, int, int, int, char const*, char const*, char const*, int)
-t CBaseServer::ConnectClient(netadr_s&, int, int, int, int, char const*, char const*, char const*, int) [clone .part.57]
+t CBaseServer::ConnectClient(netadr_s&, int, int, int, int, char const*, char const*, char const*, int) [clone .part.58]
 t CBaseServer::GetFreeClient(netadr_s&)
 t CBaseServer::GetNextUserID()
 t CBaseServer::GetNumPlayers()
@@ -5790,6 +5790,7 @@ t CBaseServer::ValidChallenge(netadr_s&, int)
 t CBaseServer::BroadcastPrintf(char const*, ...)
 t CBaseServer::CreateNewClient(int)
 t CBaseServer::RecalculateTags()
+t CBaseServer::SetPausedForced(bool, float)
 t CBaseServer::UserInfoChanged(int)
 t CBaseServer::BroadcastMessage(INetMessage&, bool, bool)
 t CBaseServer::BroadcastMessage(INetMessage&, IRecipientFilter&)
@@ -6333,6 +6334,7 @@ t CClientState::ProcessServerInfo(SVC_ServerInfo*)
 t CClientState::ProcessUserMessage(SVC_UserMessage*)
 t CClientState::ProcessTempEntities(SVC_TempEntities*)
 t CClientState::ProcessEntityMessage(SVC_EntityMessage*)
+t CClientState::ProcessSetPauseTimed(SVC_SetPauseTimed*)
 t CClientState::HookClientStringTable(char const*)
 t CClientState::ProcessCrosshairAngle(SVC_CrosshairAngle*)
 t CClientState::ProcessPacketEntities(SVC_PacketEntities*)
@@ -7437,6 +7439,7 @@ t CVEngineServer::GetSaveFileName()
 t CVEngineServer::IsInternalBuild()
 t CVEngineServer::PrecacheGeneric(char const*, bool)
 t CVEngineServer::SaveAllocMemory(unsigned int, unsigned int)
+t CVEngineServer::SetPausedForced(bool, float)
 t CVEngineServer::CheckOriginInPVS(Vector const&, unsigned char const*, int)
 t CVEngineServer::CreateFakeClient(char const*)
 t CVEngineServer::EmitAmbientSound(int, Vector const&, char const*, float, soundlevel_t, int, int, float)
@@ -7743,6 +7746,7 @@ t CBaseClientState::FreeEntityBaselines()
 t CBaseClientState::ProcessCmdKeyValues(SVC_CmdKeyValues*)
 t CBaseClientState::ProcessGetCvarValue(SVC_GetCvarValue*)
 t CBaseClientState::ProcessGameEventList(SVC_GameEventList*)
+t CBaseClientState::ProcessSetPauseTimed(SVC_SetPauseTimed*)
 t CBaseClientState::HookClientStringTable(char const*)
 t CBaseClientState::ProcessPacketEntities(SVC_PacketEntities*)
 t CBaseClientState::ProcessCreateStringTable(SVC_CreateStringTable*)
@@ -8217,6 +8221,12 @@ t SVC_GameEventList::Process()
 t SVC_GameEventList::~SVC_GameEventList()
 t SVC_GameEventList::~SVC_GameEventList()
 t SVC_GameEventList::~SVC_GameEventList()
+t SVC_SetPauseTimed::WriteToBuffer(bf_write&)
+t SVC_SetPauseTimed::ReadFromBuffer(bf_read&)
+t SVC_SetPauseTimed::Process()
+t SVC_SetPauseTimed::~SVC_SetPauseTimed()
+t SVC_SetPauseTimed::~SVC_SetPauseTimed()
+t SVC_SetPauseTimed::~SVC_SetPauseTimed()
 t CBlockingUDPSocket::CreateSocket()
 t CBlockingUDPSocket::WaitForMessage(float)
 t CBlockingUDPSocket::SendSocketMessage(sockaddr_in const&, unsigned char const*, unsigned int)
@@ -10134,6 +10144,9 @@ t SVC_EntityMessage::ToString() const
 t SVC_GameEventList::GetName() const
 t SVC_GameEventList::GetType() const
 t SVC_GameEventList::ToString() const
+t SVC_SetPauseTimed::GetName() const
+t SVC_SetPauseTimed::GetType() const
+t SVC_SetPauseTimed::ToString() const
 t CEngineTraceServer::SpatialPartitionMask() const
 t CEngineTraceServer::SpatialPartitionTriggerMask() const
 t CNetworkStringDict::Element(int) const
@@ -10628,6 +10641,7 @@ t non-virtual thunk to CClientState::ProcessServerInfo(SVC_ServerInfo*)
 t non-virtual thunk to CClientState::ProcessUserMessage(SVC_UserMessage*)
 t non-virtual thunk to CClientState::ProcessTempEntities(SVC_TempEntities*)
 t non-virtual thunk to CClientState::ProcessEntityMessage(SVC_EntityMessage*)
+t non-virtual thunk to CClientState::ProcessSetPauseTimed(SVC_SetPauseTimed*)
 t non-virtual thunk to CClientState::ProcessCrosshairAngle(SVC_CrosshairAngle*)
 t non-virtual thunk to CClientState::ProcessPacketEntities(SVC_PacketEntities*)
 t non-virtual thunk to CClientState::~CClientState()
@@ -10660,6 +10674,7 @@ t non-virtual thunk to CBaseClientState::ProcessSignonState(NET_SignonState*)
 t non-virtual thunk to CBaseClientState::ProcessCmdKeyValues(SVC_CmdKeyValues*)
 t non-virtual thunk to CBaseClientState::ProcessGetCvarValue(SVC_GetCvarValue*)
 t non-virtual thunk to CBaseClientState::ProcessGameEventList(SVC_GameEventList*)
+t non-virtual thunk to CBaseClientState::ProcessSetPauseTimed(SVC_SetPauseTimed*)
 t non-virtual thunk to CBaseClientState::ProcessPacketEntities(SVC_PacketEntities*)
 t non-virtual thunk to CBaseClientState::ProcessCreateStringTable(SVC_CreateStringTable*)
 t non-virtual thunk to CBaseClientState::ProcessUpdateStringTable(SVC_UpdateStringTable*)
@@ -10877,6 +10892,7 @@ r typeinfo for IVirtualMeshEvent
 r typeinfo for IVModelInfoClient
 r typeinfo for SVC_EntityMessage
 r typeinfo for SVC_GameEventList
+r typeinfo for SVC_SetPauseTimed
 r typeinfo for CBlockingUDPSocket
 r typeinfo for CClientEngineTools
 r typeinfo for CEngineSoundServer
@@ -11163,6 +11179,7 @@ r typeinfo name for IVirtualMeshEvent
 r typeinfo name for IVModelInfoClient
 r typeinfo name for SVC_EntityMessage
 r typeinfo name for SVC_GameEventList
+r typeinfo name for SVC_SetPauseTimed
 r typeinfo name for CBlockingUDPSocket
 r typeinfo name for CClientEngineTools
 r typeinfo name for CEngineSoundServer
@@ -11421,6 +11438,7 @@ r vtable for ISpatialPartition
 r vtable for IVModelInfoClient
 r vtable for SVC_EntityMessage
 r vtable for SVC_GameEventList
+r vtable for SVC_SetPauseTimed
 r vtable for CBlockingUDPSocket
 r vtable for CClientEngineTools
 r vtable for CEngineSoundServer
@@ -11789,6 +11807,7 @@ b CBaseClientState::ProcessSignonState(NET_SignonState*)::tm_fmt
 b CBaseClientState::ReadPacketEntities(CEntityReadInfo&)::tm_fmt
 b CBaseClientState::ProcessGetCvarValue(SVC_GetCvarValue*)::tm_fmt
 b CBaseClientState::ProcessGameEventList(SVC_GameEventList*)::tm_fmt
+b CBaseClientState::ProcessSetPauseTimed(SVC_SetPauseTimed*)::tm_fmt
 b CBaseClientState::ProcessPacketEntities(SVC_PacketEntities*)::tm_fmt
 b CBaseClientState::ProcessCreateStringTable(SVC_CreateStringTable*)::tm_fmt
 b CBaseClientState::ProcessUpdateStringTable(SVC_UpdateStringTable*)::tm_fmt
@@ -11813,6 +11832,7 @@ b CGameEventManager::FireEventIntern(IGameEvent*, bool, bool)::tm_fmt
 r CThreadSpinRWLock::TryLockForWrite(unsigned int)::oldValue
 b SVC_EntityMessage::ReadFromBuffer(bf_read&)::tm_fmt
 b SVC_GameEventList::ReadFromBuffer(bf_read&)::tm_fmt
+b SVC_SetPauseTimed::ReadFromBuffer(bf_read&)::tm_fmt
 b CEngineSoundServer::EmitSound(IRecipientFilter&, int, int, char const*, float, soundlevel_t, int, int, int, Vector const*, Vector const*, CUtlVector<Vector, CUtlMemory<Vector, int> >*, bool, float, int)::tm_fmt
 b CEngineSoundServer::EmitSound(IRecipientFilter&, int, int, char const*, float, float, int, int, int, Vector const*, Vector const*, CUtlVector<Vector, CUtlMemory<Vector, int> >*, bool, float, int)::tm_fmt
 b CParallelProcessor<PackWork_t, CFuncJobItemProcessor<PackWork_t> >::Run(PackWork_t*, unsigned int, int, IThreadPool*)::tm_fmt

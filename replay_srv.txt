@@ -2420,6 +2420,12 @@ t SVC_GameEventList::Process()
 t SVC_GameEventList::~SVC_GameEventList()
 t SVC_GameEventList::~SVC_GameEventList()
 t SVC_GameEventList::~SVC_GameEventList()
+t SVC_SetPauseTimed::WriteToBuffer(bf_write&)
+t SVC_SetPauseTimed::ReadFromBuffer(bf_read&)
+t SVC_SetPauseTimed::Process()
+t SVC_SetPauseTimed::~SVC_SetPauseTimed()
+t SVC_SetPauseTimed::~SVC_SetPauseTimed()
+t SVC_SetPauseTimed::~SVC_SetPauseTimed()
 t CBaseFilePublisher::AbortAndCleanup()
 d CBaseFilePublisher::sm_aPhaseIOTypes
 t CBaseFilePublisher::FinishSynchronouslyAndCleanup()
@@ -3278,6 +3284,9 @@ t SVC_EntityMessage::ToString() const
 t SVC_GameEventList::GetName() const
 t SVC_GameEventList::GetType() const
 t SVC_GameEventList::ToString() const
+t SVC_SetPauseTimed::GetName() const
+t SVC_SetPauseTimed::GetType() const
+t SVC_SetPauseTimed::ToString() const
 t CBaseFilePublisher::Compressed() const
 t CBaseFilePublisher::GetCompressedSize() const
 t CBaseFilePublisher::GetCompressorType() const
@@ -3614,6 +3623,7 @@ r typeinfo for Base_CmdKeyValues
 r typeinfo for IRecordingSession
 r typeinfo for SVC_EntityMessage
 r typeinfo for SVC_GameEventList
+r typeinfo for SVC_SetPauseTimed
 r typeinfo for CBaseFilePublisher
 r typeinfo for CFileserverCleaner
 r typeinfo for CFtpFileDeleterJob
@@ -3747,6 +3757,7 @@ r typeinfo name for Base_CmdKeyValues
 r typeinfo name for IRecordingSession
 r typeinfo name for SVC_EntityMessage
 r typeinfo name for SVC_GameEventList
+r typeinfo name for SVC_SetPauseTimed
 r typeinfo name for CBaseFilePublisher
 r typeinfo name for CFileserverCleaner
 r typeinfo name for CFtpFileDeleterJob
@@ -3874,6 +3885,7 @@ r vtable for Base_CmdKeyValues
 r vtable for IRecordingSession
 r vtable for SVC_EntityMessage
 r vtable for SVC_GameEventList
+r vtable for SVC_SetPauseTimed
 r vtable for CBaseFilePublisher
 r vtable for CFileserverCleaner
 r vtable for CFtpFileDeleterJob
@@ -3992,6 +4004,7 @@ b SVC_TempEntities::ReadFromBuffer(bf_read&)::tm_fmt
 b Base_CmdKeyValues::ReadFromBuffer(bf_read&)::tm_fmt
 b SVC_EntityMessage::ReadFromBuffer(bf_read&)::tm_fmt
 b SVC_GameEventList::ReadFromBuffer(bf_read&)::tm_fmt
+b SVC_SetPauseTimed::ReadFromBuffer(bf_read&)::tm_fmt
 b SVC_CrosshairAngle::ReadFromBuffer(bf_read&)::tm_fmt
 b SVC_PacketEntities::ReadFromBuffer(bf_read&)::tm_fmt
 b CLC_RespondCvarValue::ReadFromBuffer(bf_read&)::tm_fmt
