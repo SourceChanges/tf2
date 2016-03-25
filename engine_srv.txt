@@ -11721,6 +11721,7 @@ b CBaseClient::SendSnapshot(CClientFrame*)::tm_fmt
 r CBaseClient::FireGameEvent(IGameEvent*)::__FUNCTION__
 b CBaseClient::FireGameEvent(IGameEvent*)::tm_fmt
 b CBaseClient::TraceNetworkMsg(int, char const*, ...)::tm_fmt
+b CBaseClient::ProcessSetConVar(NET_SetConVar*)::s_dblLastWarned
 b CBaseClient::TraceNetworkData(bf_write&, char const*, ...)::tm_fmt
 b CBaseClient::OnRequestFullUpdate()::tm_fmt
 b CBaseClient::EndTrace(bf_write&)::tm_fmt
