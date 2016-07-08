@@ -45,6 +45,7 @@ d __CTOR_LIST__
 U __cxa_allocate_exception@@CXXABI_1.3
 U __cxa_atexit@@GLIBC_2.1.3
 U __cxa_begin_catch@@CXXABI_1.3
+U __cxa_call_unexpected@@CXXABI_1.3
 U __cxa_end_catch@@CXXABI_1.3
 w __cxa_finalize@@GLIBC_2.1.3
 U __cxa_guard_abort@@CXXABI_1.3
@@ -609,6 +610,7 @@ T DevMsg(char const*, ...)
 t pathmatch(char const*, char**, bool, char*, unsigned int)
 t operator delete[](void*)
 t operator delete(void*)
+t operator delete(void*, unsigned int)
 T ZeroMemory
 b guard variable for TelemetryTick::s_d0
 b guard variable for TelemetryTick::s_t0

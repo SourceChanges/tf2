@@ -22,6 +22,7 @@ B cvar
 U __cxa_allocate_exception@@CXXABI_1.3
 U __cxa_atexit@@GLIBC_2.1.3
 U __cxa_begin_catch@@CXXABI_1.3
+U __cxa_call_unexpected@@CXXABI_1.3
 U __cxa_end_catch@@CXXABI_1.3
 w __cxa_finalize@@GLIBC_2.1.3
 U __cxa_free_exception@@CXXABI_1.3

@@ -85,6 +85,7 @@ d cv
 B cvar
 U __cxa_atexit@@GLIBC_2.1.3
 U __cxa_begin_catch@@CXXABI_1.3
+U __cxa_call_unexpected@@CXXABI_1.3
 U __cxa_end_catch@@CXXABI_1.3
 w __cxa_finalize@@GLIBC_2.1.3
 U __cxa_guard_abort@@CXXABI_1.3
@@ -3076,6 +3077,7 @@ t zcalloc
 t zcfree
 t operator delete[](void*)
 t operator delete(void*)
+t operator delete(void*, unsigned int)
 t operator==(CUtlVector<unsigned char, CUtlMemory<unsigned char, int> > const&, CUtlVector<unsigned char, CUtlMemory<unsigned char, int> > const&)
 R z_errmsg
 T zError
@@ -6031,9 +6033,9 @@ t CHLTVServer::GetPlaybackStartTick()
 t CHLTVServer::GetPlaybackTimeScale()
 t CHLTVServer::InitClientRecvTables()
 t CHLTVServer::InterpolateViewpoint()
+t CHLTVServer::ReadCompleteDemoFile()
 t CHLTVServer::SetPlaybackTimeScale(float)
 t CHLTVServer::LinkInstanceBaselines()
-t CHLTVServer::ReadCompeleteDemoFile()
 t CHLTVServer::OnLastDemoInLoopPlayed()
 t CHLTVServer::ResetDemoInterpolation()
 t CHLTVServer::ShouldUpdateMasterServer()
@@ -11574,7 +11576,6 @@ b V_pretifynum(long long)::current
 b GetFlagString(int)::ret
 b GetSteamAppID()::bHaveValidSteamInterface
 b GetSteamAppID()::sunAppID
-b Host_RunFrame(float)::tm_fmt
 b Host_RunFrame(float)::timecount
 b Host_RunFrame(float)::timestart
 b Host_RunFrame(float)::timetotal
@@ -11588,6 +11589,8 @@ b void CM_TraceToLeaf<true>(TraceInfo_t*, int, float, float)::tm_fmt
 b void CM_TraceToLeaf<true>(TraceInfo_t*, int, float, float)::tm_fmt
 d FirstBitInWord(unsigned int, int)::firstBitLUT
 b _Host_RunFrame(float)::host_remainder
+b _Host_RunFrame(float)::tm_fmt
+b _Host_RunFrame(float)::tm_fmt
 b _Host_RunFrame(float)::tm_fmt
 b _Host_RunFrame(float)::tm_fmt
 b _Host_RunFrame(float)::tm_fmt

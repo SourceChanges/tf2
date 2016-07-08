@@ -16,6 +16,7 @@ d __CTOR_END__
 d __CTOR_LIST__
 B cvar
 U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_call_unexpected@@CXXABI_1.3
 w __cxa_finalize@@GLIBC_2.1.3
 U __cxa_guard_abort@@CXXABI_1.3
 U __cxa_guard_acquire@@CXXABI_1.3
@@ -565,6 +566,7 @@ t V_wcsncpy(wchar_t*, wchar_t const*, int)
 t _V_wcsupr(char const*, int, wchar_t*)
 t operator delete[](void*)
 t operator delete(void*)
+t operator delete(void*, unsigned int)
 b guard variable for datamap_t* DataMapInit<phyheader_s>(phyheader_s*)::nameHolder
 b guard variable for datamap_t* DataMapInit<studiohdr_t>(studiohdr_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<studiohdr2_t>(studiohdr2_t*)::nameHolder
@@ -1626,6 +1628,10 @@ t CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefC
 t CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor1()
 t CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor1()
 t CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor1()
+t CFunctor1<void (*)(CleanupModelParts_t*), CleanupModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::operator()()
+t CFunctor1<void (*)(CleanupModelParts_t*), CleanupModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor1()
+t CFunctor1<void (*)(CleanupModelParts_t*), CleanupModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor1()
+t CFunctor1<void (*)(CleanupModelParts_t*), CleanupModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor1()
 t CMDLCache::ClearAsync(unsigned short, MDLCacheDataType_t, int, bool)
 t CMDLCache::Disconnect()
 t CMDLCache::EndMapLoad()
@@ -1677,6 +1683,7 @@ t CMDLCache::RestoreFrameLock()
 t CMDLCache::BuildHardwareData(unsigned short, studiodata_t*, studiohdr_t*, OptimizedModel::FileHeader_t*)
 t CMDLCache::ProcessQueuedData(ModelParts_t*, bool)
 t CMDLCache::AllocateAnimBlocks(studiodata_t*, int)
+t CMDLCache::CleanupDynamicLoad(CleanupModelParts_t*)
 t CMDLCache::CreateThinVertexes(vertexFileHeader_t*, studiohdr_t const*, int*)
 t CMDLCache::FinishPendingLoads()
 t CMDLCache::GetActualModelName(unsigned short)
@@ -1858,6 +1865,8 @@ t non-virtual thunk to CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT>
 t non-virtual thunk to CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
 t non-virtual thunk to CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor1()
 t non-virtual thunk to CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor1()
+t non-virtual thunk to CFunctor1<void (*)(CleanupModelParts_t*), CleanupModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor1()
+t non-virtual thunk to CFunctor1<void (*)(CleanupModelParts_t*), CleanupModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >::~CFunctor1()
 t non-virtual thunk to CMDLCache::Disconnect()
 t non-virtual thunk to CMDLCache::VerifyHeaders(studiohdr_t*)
 t non-virtual thunk to CMDLCache::QueryInterface(char const*)
@@ -1904,6 +1913,7 @@ r typeinfo for IConVar
 r typeinfo for CFmtStrN<256, false>
 r typeinfo for CFunctor
 r typeinfo for CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
+r typeinfo for CFunctor1<void (*)(CleanupModelParts_t*), CleanupModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
 r typeinfo for CMDLCache
 r typeinfo for IMDLCache
 r typeinfo name for CDataCache
@@ -1945,6 +1955,7 @@ r typeinfo name for IConVar
 r typeinfo name for CFmtStrN<256, false>
 r typeinfo name for CFunctor
 r typeinfo name for CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
+r typeinfo name for CFunctor1<void (*)(CleanupModelParts_t*), CleanupModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
 r typeinfo name for CMDLCache
 r typeinfo name for IMDLCache
 r vtable for CDataCache
@@ -1984,6 +1995,7 @@ r vtable for IConVar
 r vtable for CFmtStrN<256, false>
 r vtable for CFunctor
 r vtable for CFunctor1<void (*)(ModelParts_t*), ModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
+r vtable for CFunctor1<void (*)(CleanupModelParts_t*), CleanupModelParts_t*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
 r vtable for CMDLCache
 r vtable for IMDLCache
 U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3

@@ -27,6 +27,7 @@ d __CTOR_END__
 d __CTOR_LIST__
 B cvar
 U __cxa_atexit@@GLIBC_2.1.3
+U __cxa_call_unexpected@@CXXABI_1.3
 w __cxa_finalize@@GLIBC_2.1.3
 U __cxa_guard_abort@@CXXABI_1.3
 U __cxa_guard_acquire@@CXXABI_1.3
@@ -1386,6 +1387,7 @@ t V_wcsncpy(wchar_t*, wchar_t const*, int)
 t _V_wcsupr(char const*, int, wchar_t*)
 t operator delete[](void*)
 t operator delete(void*)
+t operator delete(void*, unsigned int)
 b guard variable for datamap_t* DataMapInit<vehicleparams_t>(vehicleparams_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<physcollideheader_t>(physcollideheader_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<vehicle_axleparams_t>(vehicle_axleparams_t*)::nameHolder

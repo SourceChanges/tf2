@@ -101,6 +101,7 @@ T cv_yank
 U __cxa_allocate_exception@@CXXABI_1.3
 U __cxa_atexit@@GLIBC_2.1.3
 U __cxa_begin_catch@@CXXABI_1.3
+U __cxa_call_unexpected@@CXXABI_1.3
 U __cxa_end_catch@@CXXABI_1.3
 w __cxa_finalize@@GLIBC_2.1.3
 U __cxa_free_exception@@CXXABI_1.3
@@ -1493,6 +1494,7 @@ t V_wcsncpy(wchar_t*, wchar_t const*, int)
 t _V_wcsupr(char const*, int, wchar_t*)
 t operator delete[](void*)
 t operator delete(void*)
+t operator delete(void*, unsigned int)
 b reference temporary #0 for CryptoPP::BufferedTransformation::NULL_CHANNEL
 b guard variable for datamap_t* DataMapInit<ZIP_FileHeader>(ZIP_FileHeader*)::nameHolder
 b guard variable for datamap_t* DataMapInit<ZIP_PreloadHeader>(ZIP_PreloadHeader*)::nameHolder
@@ -1856,6 +1858,8 @@ t CUtlMemory<IAppSystem*, int>::Grow(int)
 t CUtlMemory<IAsyncFileFetch*, int>::Grow(int)
 t CUtlMemory<CFileAsyncReadJob*, int>::Grow(int)
 t CUtlMemory<CFunctor*, int>::Grow(int)
+t CUtlMemory<CFunctor*, int>::~CUtlMemory()
+t CUtlMemory<CFunctor*, int>::~CUtlMemory()
 t CUtlMemory<CPackFile*, int>::Grow(int)
 t CUtlMemory<FileJob_t*, int>::Grow(int)
 t CUtlMemory<KeyValues*, int>::Grow(int)
@@ -2217,6 +2221,7 @@ t CQueuedLoader::ParseResourceList(CUtlBuffer&)
 t CQueuedLoader::SubmitBatchedJobs()
 t CQueuedLoader::SubmitPendingJobs()
 t CQueuedLoader::AddResourceToTable(char const*)
+t CQueuedLoader::CleanupDynamicLoad()
 t CQueuedLoader::CompleteDynamicLoad()
 t CQueuedLoader::CResourceNameLessFunc::Less(void* const&, void* const&, void*)
 t CQueuedLoader::CResourceNameLessFunc::Less(void* const&, void* const&, void*) [clone .part.6]
@@ -2225,6 +2230,7 @@ t CQueuedLoader::DynamicLoadMapResource(char const*, void (*)(char const*, void*
 t CQueuedLoader::QueueDynamicLoadFunctor(CFunctor*)
 t CQueuedLoader::SubmitBatchedJobsAndWait()
 t CQueuedLoader::PurgeUnreferencedResources()
+t CQueuedLoader::QueueCleanupDynamicLoadFunctor(CFunctor*)
 t CQueuedLoader::Init()
 t CQueuedLoader::AddJob(LoaderJob_t const*)
 t CQueuedLoader::PurgeAll()
@@ -2426,6 +2432,7 @@ t CBaseFileSystem::GetSearchPath(char const*, bool, char*, int)
 t CBaseFileSystem::LoadKeyValues(IFileSystem::KeyValuesPreloadType_t, char const*, char const*)
 t CBaseFileSystem::LoadKeyValues(KeyValues&, IFileSystem::KeyValuesPreloadType_t, char const*, char const*)
 t CBaseFileSystem::LogFileAccess(char const*)
+t CBaseFileSystem::RemoveVPKFile(char const*, char const*)
 t CBaseFileSystem::SetBufferSize(void*, unsigned int)
 t CBaseFileSystem::ShutdownAsync()
 t CBaseFileSystem::AddLoggingFunc(void (*)(char const*, char const*))
