@@ -142,6 +142,7 @@ U tanf@@GLIBC_2.0
 U tan@@GLIBC_2.0
 U tempnam@@GLIBC_2.0
 U ThreadGetCurrentId
+U ThreadInMainThread
 U ThreadInterlockedAssignIf
 U ThreadInterlockedAssignIf64
 U ThreadInterlockedExchange

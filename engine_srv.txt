@@ -379,6 +379,7 @@ t _GLOBAL__sub_I_hltv
 t _GLOBAL__sub_I_hltvtest
 t _GLOBAL__sub_I_host_name
 t _GLOBAL__sub_I_lineartovertex
+t _GLOBAL__sub_I_lzma_persistent_buffer
 t _GLOBAL__sub_I_mat_loadtextures
 t _GLOBAL__sub_I_mem_min_heapsize
 t _GLOBAL__sub_I_modelorg
@@ -839,6 +840,7 @@ t LzmaDec_Free
 t LzmaDec_FreeProbs
 t LzmaDec_Init
 t LzmaDecode
+b lzma_persistent_buffer
 t LzmaProps_Decode
 U mallinfo@@GLIBC_2.0
 t _malloc_dbg
@@ -3402,6 +3404,7 @@ b vec2_origin
 b vec2_origin
 b vec2_origin
 b vec2_origin
+b vec2_origin
 b vec4_origin
 b vec4_origin
 b vec4_origin
@@ -3578,6 +3581,7 @@ b sv_logblocks
 b sv_logsecret
 b tv_autoretry
 b user_command
+b vec2_invalid
 b vec2_invalid
 b vec2_invalid
 b vec2_invalid
@@ -4079,6 +4083,7 @@ b g_FullFrameDepth
 b g_MakingDevShots
 b g_NodeTriWinding
 b g_pAsyncUploader
+b g_pStaticLZMABuf
 b g_ServerDTITimer
 b gs_hReplayModule
 b g_szDefferedArg1
@@ -4298,6 +4303,7 @@ b g_BitBufErrorHandler
 b g_CleanupSymbolTable
 b g_pServerDTIFilename
 b g_QueuedPacketSender
+b g_unStaticLZMABufRef
 b incrementvar_command
 b mat_powersavingsmode
 b mem_vcollide_command
@@ -4334,6 +4340,7 @@ b g_FullFrameFBTexture2
 b g_PowerOfTwoFBTexture
 b g_SideVertCorners_5x5
 b g_SideVertCorners_9x9
+b g_unStaticLZMABufSize
 b host_ShowIPCCallCount
 t MapList_CheckPrintMap(char const*, char const*, int, bool, bool) [clone .constprop.21]
 b memory_status_command

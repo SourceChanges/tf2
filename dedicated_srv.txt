@@ -334,6 +334,7 @@ t _GLOBAL__sub_I_g_ResourceLoaderNames
 t _GLOBAL__sub_I_g_szEXEName
 t _GLOBAL__sub_I_g_tslistPAutoSeededRNG
 t _GLOBAL__sub_I_lineartovertex
+t _GLOBAL__sub_I_lzma_persistent_buffer
 t _GLOBAL__sub_I_s_bMathlibInitialized
 t _GLOBAL__sub_I_s_HInstance
 t _GLOBAL__sub_I_s_hMatSystemModule
@@ -569,6 +570,7 @@ t LzmaDec_Free
 t LzmaDec_FreeProbs
 t LzmaDec_Init
 t LzmaDecode
+b lzma_persistent_buffer
 t LzmaProps_Decode
 t main
 t _malloc_dbg
@@ -1589,12 +1591,14 @@ b vec2_origin
 b vec2_origin
 b vec2_origin
 b vec2_origin
+b vec2_origin
 b vec4_origin
 b vec4_origin
 b vec4_origin
 t async_resume(CCommand const&)
 t MD5Transform(unsigned int*, unsigned int const*)
 b s_bConnected
+b vec2_invalid
 b vec2_invalid
 b vec2_invalid
 b vec2_invalid
@@ -1665,6 +1669,7 @@ b s_b3DNowEnabled
 d s_DummyProgress
 b texturetolinear
 t fgets_threadproc(void*)
+b g_pStaticLZMABuf
 b g_TINFO_tgetflag
 t LzmaDec_TryDummy(CLzmaDec const*, unsigned char const*, unsigned int)
 t LzmaDec_WriteRem(CLzmaDec*, unsigned int) [clone .part.0]
@@ -1686,12 +1691,14 @@ b async_resume_command
 b g_CleanupSymbolTable
 b g_nAnonymousIOMemory
 b g_ProcessingCommands
+b g_unStaticLZMABufRef
 r _ps_minus_cephes_DP1
 r _ps_minus_cephes_DP2
 r _ps_minus_cephes_DP3
 b s_bUseVProjectBinDir
 b async_suspend_command
 d g_FileSystemErrorMode
+b g_unStaticLZMABufSize
 d s_LastFileLoadingFrom
 t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
 t TryLocateGameInfoFile(char*, int, bool)
