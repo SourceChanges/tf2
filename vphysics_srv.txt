@@ -128,13 +128,13 @@ t _GLOBAL__sub_I__Z18GetOppositeSynapseP20IVP_Synapse_Friction
 t _GLOBAL__sub_I__Z19PackLedgeIntoBufferP12packedhull_tR10CUtlBufferPK17IVP_Compact_LedgeRK17virtualmeshlist_t
 t _GLOBAL__sub_I__Z29TransformHLWorldToHavanaLocalRK6VectorP15IVP_Real_Object
 t _GLOBAL__sub_I__Z31ComputePDControllerCoefficientsPffff
-t _GLOBAL__sub_I__Z9nexttokenPcPKcc
 t _GLOBAL__sub_I__Z9_SSE_Sqrtf
 t _GLOBAL__sub_I__Z9_V_memsetPKciPvii
 t _GLOBAL__sub_I__ZN10CUtlString11AllocMemoryEj
 t _GLOBAL__sub_I__ZN10CUtlSymbol14s_pSymbolTableE
 t _GLOBAL__sub_I__ZN14ConCommandBase18s_pConCommandBasesE
 t _GLOBAL__sub_I__ZN14CPhysicsObjectC2Ev
+t _GLOBAL__sub_I__ZN14CVPhysicsParseC2EPKc
 t _GLOBAL__sub_I__ZN16CDataManagerBaseC2Ej
 t _GLOBAL__sub_I__ZN16CPhysics_AirboatC2EP15IVP_EnvironmentPK23IVP_Template_Car_SystemP17IPhysicsGameTrace
 t _GLOBAL__sub_I__ZN17CFrictionSnapshotC2EP15IVP_Real_Object
@@ -185,6 +185,9 @@ U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
 T _init
 t init_dwarf_reg_size_table
+U isalnum@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isprint@@GLIBC_2.0
 U isspace@@GLIBC_2.0
 U isupper@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
@@ -393,7 +396,9 @@ U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtok@@GLIBC_2.0
 U strtol@@GLIBC_2.0
+U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
 b subs.7497
 U symlink@@GLIBC_2.0
 U tanf@@GLIBC_2.0
@@ -517,6 +522,7 @@ t _V_strrchr(char const*, int, char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+t V_strtoi64(char const*, char**, int)
 t V_strtowcs(char const*, int, wchar_t*, int)
 t V_wcstostr(wchar_t const*, int, char*, int)
 t AllocString(char const*, int)
@@ -599,6 +605,7 @@ t Q_URLEncode(char*, int, char const*, int)
 t SmoothCurve(float)
 t _SSE_SinCos(float, float*, float*)
 t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
+t V_strtoui64(char const*, char**, int)
 t V_vsnprintf(char*, int, char const*, char*)
 t _V_wcslower(char const*, int, wchar_t*)
 t WriteRandom(int*)
@@ -609,7 +616,7 @@ t AngleVectors(QAngle const&, Vector*)
 t AngleVectors(QAngle const&, Vector*, Vector*, Vector*)
 t CreateSpring(IVP_Environment*, CPhysicsObject*, CPhysicsObject*, springparams_t*)
 t CrossProduct(float const*, float const*, float*)
-t CrossProduct(Vector const&, Vector const&, Vector&) [clone .constprop.78]
+t CrossProduct(Vector const&, Vector const&, Vector&) [clone .constprop.79]
 t Cubic_Spline(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t gbs_add_path(char*, char*)
 t GetStartVert(leafmap_t const*, IVP_U_Float_Point const&, int&, int&)
@@ -804,7 +811,10 @@ t Sys_GetFactory(CSysModule*)
 t Sys_GetFactory(char const*)
 t Sys_LoadModule(char const*, Sys_Flags)
 t TraceGetAABB_r(Vector*, Vector*, IVP_Compact_Ledgetree_Node const*, CTraceIVP&)
+t V_BBCodeToHTML(char*, int, char const*, int)
 t VirtualMeshPSI()
+t V_IsMeanSpaceW(wchar_t)
+t V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)
 t V_SetExtension(char*, char const*, int)
 t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
 t V_StripLastDir(char*, int)
@@ -890,6 +900,7 @@ t TextureToLinear(int)
 t VectorTransform(float const*, matrix3x4_t const&, float*)
 t VectorYawRotate(Vector const&, float, Vector&)
 t V_FixupPathName(char*, unsigned int, char const*)
+t V_IsDeprecatedW(wchar_t)
 t V_StripFilename(char*)
 t AddPointToBounds(Vector const&, Vector&, Vector&)
 t ConcatTransforms(matrix3x4_t const&, matrix3x4_t const&, matrix3x4_t&)
@@ -1093,6 +1104,8 @@ t TransformLocalToIVP(IVP_U_Point&, IVP_Real_Object*, bool)
 t TransformLocalToIVP(IVP_U_Point const&, IVP_U_Point&, IVP_Real_Object*, bool)
 t TransformLocalToIVP(IVP_U_Float_Point const&, IVP_U_Point&, IVP_Real_Object*, bool)
 t TransformLocalToIVP(IVP_U_Float_Point const&, IVP_U_Float_Point&, IVP_Real_Object*, bool)
+t V_IsMeanUnderscoreW(wchar_t)
+t V_URLContainsDomain(char const*, char const*)
 t CalcDistanceToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t ComputeTrianglePlane(Vector const&, Vector const&, Vector const&, Vector&, float&)
 t ConvertRotationToIVP(QAngle const&, IVP_U_Quat&)
@@ -1147,6 +1160,7 @@ t SolveInverseQuadratic(float, float, float, float, float, float, float&, float&
 t Sys_IsDebuggerPresent()
 t VectorToColorRGBExp32(Vector const&, ColorRGBExp32&)
 t V_GetCurrentDirectory(char*, int)
+t V_IsValidURLCharacter(char const*, int*)
 t V_SetCurrentDirectory(char const*)
 t V_UnqualifiedFileName(char const*)
 t AngleNormalizePositive(float)
@@ -1177,8 +1191,10 @@ t qh_vertexintersect_new(setT*, setT*)
 t QuaternionBlendNoAlign(Quaternion const&, Quaternion const&, float, Quaternion&)
 t QuaternionSlerpNoAlign(Quaternion const&, Quaternion const&, float, Quaternion&)
 t RotationDeltaAxisAngle(QAngle const&, QAngle const&, Vector&, float&)
+t V_ExtractDomainFromURL(char const*, char*, int)
 t V_ExtractFileExtension(char const*, char*, int)
 t V_normalizeFloatString(char*)
+t V_StripAndPreserveHTML(CUtlBuffer*, char const*, char const**, unsigned int, unsigned int)
 t CalcClosestPointToLineT(Vector const&, Vector const&, Vector const&, Vector&)
 t CalcDistanceSqrToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t ClipPolyToPlane_Precise(double*, int, double*, double const*, double, double)
@@ -1198,6 +1214,7 @@ t qh_merge_degenredundant()
 t qh_printhelp_degenerate(_IO_FILE*)
 t qh_remove_extravertices(facetT*)
 t QuaternionIdentityBlend(Quaternion const&, float, Quaternion&)
+t V_BasicHtmlEntityEncode(char*, int, char const*, int, bool)
 t CalcClosestPointOnLine2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&, float*)
 t CalcTriangleTangentSpace(Vector const&, Vector const&, Vector const&, Vector2D const&, Vector2D const&, Vector2D const&, Vector&, Vector&)
 t ConcatTransforms_Aligned(matrix3x4_t const&, matrix3x4_t const&, matrix3x4_t&)
@@ -1218,6 +1235,9 @@ t RandomVectorInUnitCircle(Vector2D*)
 t RandomVectorInUnitSphere(Vector*)
 t RestorePhysicsConstraint(physrestoreparams_t const&, CPhysicsConstraint**)
 t _SSE_VectorNormalizeFast(Vector&)
+t V_HtmlEntityDecodeToUTF8(char*, int, char const*, int)
+t V_StripLeadingWhitespace(char*)
+t V_StripSurroundingQuotes(char*)
 t CalcClosestPointToLineT2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&)
 t CalcDistanceToLineSegment(Vector const&, Vector const&, Vector const&, float*)
 t ComputeShadowControllerHL(CPhysicsObject*, hlshadowcontrol_params_t const&, float, float)
@@ -1227,6 +1247,7 @@ t qh_neighbor_intersections(vertexT*)
 t qh_printfacet2geom_points(_IO_FILE*, double*, double*, facetT*, double, double*)
 t qh_printfacet3geom_points(_IO_FILE*, setT*, facetT*, double, double*)
 t Q_RemoveAllEvilCharacters(char*)
+t V_StripTrailingWhitespace(char*)
 t Catmull_Rom_Spline_Tangent(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t ComputeShadowControllerIVP(IVP_Real_Object*, shadowcontrol_params_t&, float, float)
 t ConvertCoordinateAxisToIVP(int)
@@ -1236,6 +1257,7 @@ t GeneratePerspectiveFrustum(Vector const&, Vector const&, Vector const&, Vector
 t ivp_debug_show_real_values(IVP_Buoyancy_Input const*, IVP_Controller_Buoyancy*, IVP_Template_Buoyancy const*, IVP_Core*, IVP_Real_Object*, IVP_U_Float_Point const*)
 t SavePhysicsConstraintGroup(physsaveparams_t const&, CPhysicsConstraintGroup*)
 t SavePhysicsFluidController(physsaveparams_t const&, CPhysicsFluidController*)
+t V_StripAndPreserveHTMLCore(CUtlBuffer*, char const*, char const**, unsigned int, char const**, unsigned int, unsigned int)
 t CalcDistanceToLineSegment2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, Vector&)
@@ -1258,6 +1280,7 @@ t GetClientDataForHkConstraint(hk_Breakable_Constraint*)
 t MatrixBuildRotationAboutAxis(Vector const&, float, matrix3x4_t&)
 t qh_degen_redundant_neighbors(facetT*, facetT*)
 t SavePhysicsVehicleController(physsaveparams_t const&, CVehicleController*)
+t V_IsValidDomainNameCharacter(char const*, int*)
 t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
 t CalcClosestPointOnLineSegment(Vector const&, Vector const&, Vector const&, Vector&, float*)
 t Catmull_Rom_Spline_NormalizeX(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
@@ -1380,6 +1403,7 @@ t V_strncmp(char const*, char const*, int)
 t V_strncpy(char*, char const*, int)
 t V_strnlwr(char*, unsigned int)
 t _V_strstr(char const*, int, char const*, char const*)
+t V_StrTrim(char*)
 t _V_wcscmp(char const*, int, wchar_t const*, wchar_t const*)
 t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
@@ -1494,7 +1518,7 @@ b vec4_origin
 b vec4_origin
 b vec4_origin
 b vec4_origin
-t BuildVertMap(vertmap_t&, Vector const*, int, IVP_Compact_Ledge const*) [clone .constprop.17]
+t BuildVertMap(vertmap_t&, Vector const*, int, IVP_Compact_Ledge const*) [clone .constprop.18]
 t InitBoxVerts(Vector*, Vector**, Vector const&, Vector const&)
 t ProcessPoint(IVP_Compact_Poly_Point&, IVP_U_BigVector<IVP_Compact_Poly_Point>*)
 b s_bConnected
@@ -1595,8 +1619,10 @@ r _ps_inv_sign_mask
 d s_DefaultAccessor
 t GetTmpObjectMatrix(IVP_Real_Object*)
 b g_MainDLLInterface
-t InitObjectTemplate(IVP_Template_Real_Object&, int, objectparams_t*, bool) [clone .constprop.76]
+t InitObjectTemplate(IVP_Template_Real_Object&, int, objectparams_t*, bool) [clone .constprop.77]
+r g_BasicHTMLEntities
 b g_CleanupSymbolTable
+r g_WhitespaceEntities
 r _ps_minus_cephes_DP1
 r _ps_minus_cephes_DP2
 r _ps_minus_cephes_DP3
@@ -1612,10 +1638,12 @@ b g_Mathlib_GammaToLinear
 b g_Mathlib_LinearToGamma
 b g_PostRestoreObjectList
 b s_BuildVirtualMeshMutex
+r g_Tier1_FullHTMLEntities
 b g_BreakSetIncludingColons
 t ivu_string_print_function(char const*)
 t ivu_default_print_function(char const*)
 b g_ConstraintGroupActivateList
+r g_pszSimpleBBCodeReplacements
 b s_TempMemoryPolyhedron_Buffer
 b f3
 b ivp_surface_manager_ball_global
@@ -1761,6 +1789,7 @@ t CUtlMemory<IVP_Core*, int>::~CUtlMemory()
 t CUtlMemory<IVP_Core*, int>::~CUtlMemory()
 t CUtlMemory<char*, int>::Grow(int)
 t CUtlMemory<IVP_Compact_Ledgetree_Node const*, int>::Grow(int)
+t CUtlMemory<char const*, int>::Grow(int)
 t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::Grow(int)
 t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::~CUtlMemory()
 t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::~CUtlMemory()
@@ -1838,7 +1867,7 @@ t CUtlVector<unsigned char, CUtlMemory<unsigned char, int> >::SetCount(int)
 t CUtlVector<unsigned char, CUtlMemory<unsigned char, int> >::~CUtlVector()
 t CUtlVector<unsigned char, CUtlMemory<unsigned char, int> >::~CUtlVector()
 t CUtlVector<int, CUtlMemory<int, int> >::GrowVector(int)
-t CUtlVector<int, CUtlMemory<int, int> >::EnsureCount(int) [clone .part.16]
+t CUtlVector<int, CUtlMemory<int, int> >::EnsureCount(int) [clone .part.17]
 t CUtlVector<int, CUtlMemory<int, int> >::ShiftElementsRight(int, int)
 t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
 t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
@@ -1868,6 +1897,8 @@ t CUtlVector<IVP_Core*, CUtlMemory<IVP_Core*, int> >::InsertBefore(int, IVP_Core
 t CUtlVector<IVP_Core*, CUtlMemory<IVP_Core*, int> >::Remove(int)
 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
 t CUtlVector<IVP_Compact_Ledgetree_Node const*, CUtlMemoryFixedGrowable<IVP_Compact_Ledgetree_Node const*, 64u, int> >::GrowVector(int)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::InsertBefore(int, char const* const&)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::Remove(int)
 t CUtlVector<CUtlSymbolTable::StringPool_t*, CUtlMemory<CUtlSymbolTable::StringPool_t*, int> >::InsertBefore(int, CUtlSymbolTable::StringPool_t* const&)
 t CUtlVector<void*, CUtlMemory<void*, int> >::InsertBefore(int, void* const&)
 t CUtlVector<void*, CUtlMemory<void*, int> >::~CUtlVector()
@@ -5685,6 +5716,8 @@ t CCommand::CCommand(int, char const**)
 t CCommand::CCommand()
 t CFmtStrN<256, false>::InitQuietTruncation()
 t CFmtStrN<256, false>::sprintf(char const*, ...)
+t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
+t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
 t CSurface::get_damping()
 t CSurface::get_adhesion()
 t CSurface::get_elasticity()
@@ -5946,7 +5979,7 @@ t IVP_U_Matrix::vimult4(IVP_U_Point const*, IVP_U_Float_Point*) const
 t IVP_U_Matrix::vimult4(IVP_U_Point const*, IVP_U_Point*) const
 t IVP_U_Matrix::vimult4(IVP_U_Float_Point const*, IVP_U_Float_Point*) const
 t IVP_U_Matrix::mi2mult4(IVP_U_Matrix const*, IVP_U_Matrix*) const
-t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.56] [clone .constprop.58]
+t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.57] [clone .constprop.59]
 t CUtlMultiList<void*, unsigned short>::IsValidList(unsigned short) const
 t IVP_CFEP_Hash::compare(void*, void*) const
 t IVP_Collision::get_fvector_index(int) const
@@ -7225,6 +7258,7 @@ b V_pretifymem(float, int, bool)::output
 b V_pretifymem(float, int, bool)::current
 b V_pretifynum(long long)::output
 b V_pretifynum(long long)::current
+r V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)::HEX
 b p_read_first_token(_IO_FILE*)::buffer
 b Bias(float, float)::lastExponent
 b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
@@ -7259,6 +7293,7 @@ d IVV_Cluster_Min_Hash::add(void*, double)::sort_counter
 b CTraceSolverSweptObject::DoSweep()::tm_fmt
 b IVP_BetterStatisticsmanager::set_simulation_time(double)::time_of_last_update
 b CFmtStrN<256, false>::sprintf(char const*, ...)::scAsserted
+b CFmtStrN<256, false>::CFmtStrN(char const*, ...)::scAsserted
 d ConVarRef::Init(char const*, bool)::bFirst
 b hk_Memory::get_instance()::s_memory_instance
 b simplex_t::SolveGJKSet(simplexvert_t const&, Vector*)::tm_fmt

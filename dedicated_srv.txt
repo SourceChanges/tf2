@@ -424,8 +424,11 @@ U inet_addr@@GLIBC_2.0
 T _init
 t init_dwarf_reg_size_table
 U ioctl@@GLIBC_2.0
+U isalnum@@GLIBC_2.0
 U isalpha@@GLIBC_2.0
 U isatty@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isprint@@GLIBC_2.0
 U isspace@@GLIBC_2.0
 t istrsenvisx
 U isupper@@GLIBC_2.0
@@ -807,7 +810,9 @@ T strsvis
 T strsvisx
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
+U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
 T strunvis
 T strunvisx
 T strvis
@@ -1061,6 +1066,7 @@ t _V_strrchr(char const*, int, char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+t V_strtoi64(char const*, char**, int)
 t V_strtowcs(char const*, int, wchar_t*, int)
 t V_wcstostr(wchar_t const*, int, char*, int)
 t AllocString(char const*, int)
@@ -1086,6 +1092,7 @@ t Q_URLEncode(char*, int, char const*, int)
 t SmoothCurve(float)
 t _SSE_SinCos(float, float*, float*)
 t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
+t V_strtoui64(char const*, char**, int)
 t V_vsnprintf(char*, int, char const*, char*)
 t _V_wcslower(char const*, int, wchar_t*)
 t AngleIMatrix(RadianEuler const&, matrix3x4_t&)
@@ -1174,6 +1181,9 @@ t StringLessThan(char const* const&, char const* const&)
 t Sys_GetFactory(CSysModule*)
 t Sys_GetFactory(char const*)
 t Sys_LoadModule(char const*, Sys_Flags)
+t V_BBCodeToHTML(char*, int, char const*, int)
+t V_IsMeanSpaceW(wchar_t)
+t V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)
 t V_SetExtension(char*, char const*, int)
 t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
 t int V_sprintf_safe<260u>(char (&) [260u], char const*, ...)
@@ -1216,6 +1226,7 @@ t UTIL_GetBaseDir()
 t VectorTransform(float const*, matrix3x4_t const&, float*)
 t VectorYawRotate(Vector const&, float, Vector&)
 t V_FixupPathName(char*, unsigned int, char const*)
+t V_IsDeprecatedW(wchar_t)
 t V_StripFilename(char*)
 t AddPointToBounds(Vector const&, Vector&, Vector&)
 t ConcatTransforms(matrix3x4_t const&, matrix3x4_t const&, matrix3x4_t&)
@@ -1311,6 +1322,8 @@ t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertE
 t SplitFileComponents(char const*, char*, char*, char*)
 t SrgbGammaTo360Gamma(float)
 t UTIL_ComputeBaseDir(char*, int)
+t V_IsMeanUnderscoreW(wchar_t)
+t V_URLContainsDomain(char const*, char const*)
 t CalcDistanceToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t ComputeTrianglePlane(Vector const&, Vector const&, Vector const&, Vector&, float&)
 t DoesPathExistAlready(char const*, char const*)
@@ -1337,6 +1350,7 @@ t Sys_IsDebuggerPresent()
 t UTIL_GetExecutableDir()
 t VectorToColorRGBExp32(Vector const&, ColorRGBExp32&)
 t V_GetCurrentDirectory(char*, int)
+t V_IsValidURLCharacter(char const*, int*)
 t V_SetCurrentDirectory(char const*)
 t V_UnqualifiedFileName(char const*)
 t AngleNormalizePositive(float)
@@ -1352,8 +1366,10 @@ t QuaternionBlendNoAlign(Quaternion const&, Quaternion const&, float, Quaternion
 t QuaternionSlerpNoAlign(Quaternion const&, Quaternion const&, float, Quaternion&)
 t RotationDeltaAxisAngle(QAngle const&, QAngle const&, Vector&, float&)
 t SetSteamUserPassphrase(KeyValues*, CSteamEnvVars&)
+t V_ExtractDomainFromURL(char const*, char*, int)
 t V_ExtractFileExtension(char const*, char*, int)
 t V_normalizeFloatString(char*)
+t V_StripAndPreserveHTML(CUtlBuffer*, char const*, char const**, unsigned int, unsigned int)
 t CalcClosestPointToLineT(Vector const&, Vector const&, Vector const&, Vector&)
 t CalcDistanceSqrToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t ClipPolyToPlane_Precise(double*, int, double*, double const*, double, double)
@@ -1371,6 +1387,7 @@ t MD5_ProcessSingleBuffer(void const*, int, MD5Value_t&)
 t QuaternionIdentityBlend(Quaternion const&, float, Quaternion&)
 t Rijndael_VC60Workaround()
 t SetSuggestGameInfoDirFn(bool (*)(CFSSteamSetupInfo const*, char*, int, bool*))
+t V_BasicHtmlEntityEncode(char*, int, char const*, int, bool)
 t CalcClosestPointOnLine2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&, float*)
 t CalcTriangleTangentSpace(Vector const&, Vector const&, Vector const&, Vector2D const&, Vector2D const&, Vector2D const&, Vector&, Vector&)
 t ConcatTransforms_Aligned(matrix3x4_t const&, matrix3x4_t const&, matrix3x4_t&)
@@ -1380,15 +1397,20 @@ t GetCStringCharConversion()
 t RandomVectorInUnitCircle(Vector2D*)
 t RandomVectorInUnitSphere(Vector*)
 t _SSE_VectorNormalizeFast(Vector&)
+t V_HtmlEntityDecodeToUTF8(char*, int, char const*, int)
+t V_StripLeadingWhitespace(char*)
+t V_StripSurroundingQuotes(char*)
 t CalcClosestPointToLineT2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&)
 t CalcDistanceToLineSegment(Vector const&, Vector const&, Vector const&, float*)
 t Q_RemoveAllEvilCharacters(char*)
+t V_StripTrailingWhitespace(char*)
 t AppSystemCreateInterfaceFn(char const*, int*)
 t Catmull_Rom_Spline_Tangent(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t FileSystem_LoadSearchPaths(CFSSearchPathsInit&)
 t GeneratePerspectiveFrustum(Vector const&, QAngle const&, float, float, float, float, Frustum_t&)
 t GeneratePerspectiveFrustum(Vector const&, Vector const&, Vector const&, Vector const&, float, float, float, float, Frustum_t&)
 t UseOptimalBufferAllocation()
+t V_StripAndPreserveHTMLCore(CUtlBuffer*, char const*, char const**, unsigned int, char const**, unsigned int, unsigned int)
 t CalcDistanceToLineSegment2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, Vector&)
@@ -1404,6 +1426,7 @@ t FileSystem_ClearSteamEnvVars()
 t FileSystem_UseVProjectBinDir(bool)
 t findFileInDirCaseInsensitive(char const*, char*, unsigned int)
 t MatrixBuildRotationAboutAxis(Vector const&, float, matrix3x4_t&)
+t V_IsValidDomainNameCharacter(char const*, int*)
 t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
 t CalcClosestPointOnLineSegment(Vector const&, Vector const&, Vector const&, Vector&, float*)
 t Catmull_Rom_Spline_NormalizeX(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
@@ -1453,6 +1476,7 @@ t Approach(float, float, float)
 t CalcFovX(float, float)
 t CalcFovY(float, float)
 t CeilPow2(int)
+t void Destruct<CBaseFileSystem::FindData_t>(CBaseFileSystem::FindData_t*)
 t HSVtoRGB(Vector const&, Vector&)
 t MD5Final(unsigned char*, MD5Context_t*)
 t NET_Init()
@@ -1467,6 +1491,7 @@ t FloorPow2(int)
 t HashBlock(void const*, unsigned int)
 t MD5_Print(unsigned char*, int)
 t MD5Update(MD5Context_t*, unsigned char const*, unsigned int)
+t nexttoken(char*, char const*, char)
 t pathmatch(char const*, char**, bool, char*, unsigned int)
 t R_CullBox(Vector const&, Vector const&, Frustum_t const&)
 t RunServer()
@@ -1489,6 +1514,7 @@ t V_strncmp(char const*, char const*, int)
 t V_strncpy(char*, char const*, int)
 t V_strnlwr(char*, unsigned int)
 t _V_strstr(char const*, int, char const*, char const*)
+t V_StrTrim(char*)
 t _V_wcscmp(char const*, int, wchar_t const*, wchar_t const*)
 t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
@@ -1684,6 +1710,7 @@ r _ps_inv_sign_mask
 d s_DefaultAccessor
 t AsyncWriteJobFilter(CJob*)
 t editline_threadproc(void*)
+r g_BasicHTMLEntities
 b g_nHighPriorityJobs
 t LzmaDec_DecodeReal2(CLzmaDec*, unsigned int, unsigned char const*)
 t StripTrailingString(char*, char const*)
@@ -1692,6 +1719,7 @@ b g_CleanupSymbolTable
 b g_nAnonymousIOMemory
 b g_ProcessingCommands
 b g_unStaticLZMABufRef
+r g_WhitespaceEntities
 r _ps_minus_cephes_DP1
 r _ps_minus_cephes_DP2
 r _ps_minus_cephes_DP3
@@ -1708,10 +1736,12 @@ b g_Mathlib_GammaToLinear
 b g_Mathlib_LinearToGamma
 t editline_cleanup_handler(void*)
 b g_nAnonymousIOMemoryPeak
+r g_Tier1_FullHTMLEntities
 b g_nJobsToFinishBeforePlay
 b loader_dump_table_command
 b s_StaticCryptoConstructor
 d s_ResourcePreloadAnonymous
+r g_pszSimpleBBCodeReplacements
 b f3
 t FileSystem_AddLoadedSearchPath(CFSSearchPathsInit&, char const*, char const*, bool) [clone .isra.1]
 d __g_CDedicatedExports_singleton
@@ -1876,6 +1906,7 @@ t CUtlMemory<char*, int>::~CUtlMemory()
 t CUtlMemory<void (*)(char const*, char const*), int>::Grow(int)
 t CUtlMemory<void (*)(char const*, char const*), int>::~CUtlMemory()
 t CUtlMemory<void (*)(char const*, char const*), int>::~CUtlMemory()
+t CUtlMemory<char const*, int>::Grow(int)
 t CUtlMemory<CBaseFileSystem::CPathIDInfo*, int>::Grow(int)
 t CUtlMemory<CBaseFileSystem::CFileCacheObject::Info_t*, int>::Grow(int)
 t CUtlMemory<CBaseFileSystem::CFileCacheObject::Info_t*, int>::~CUtlMemory()
@@ -2046,9 +2077,13 @@ t CUtlVector<char*, CUtlMemory<char*, int> >::~CUtlVector()
 t CUtlVector<void (*)(char const*, char const*), CUtlMemory<void (*)(char const*, char const*), int> >::InsertBefore(int, void (* const&)(char const*, char const*))
 t CUtlVector<void (*)(char const*, char const*), CUtlMemory<void (*)(char const*, char const*), int> >::~CUtlVector()
 t CUtlVector<void (*)(char const*, char const*), CUtlMemory<void (*)(char const*, char const*), int> >::~CUtlVector()
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::InsertBefore(int, char const* const&)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::Remove(int)
 t CUtlVector<CBaseFileSystem::CPathIDInfo*, CUtlMemory<CBaseFileSystem::CPathIDInfo*, int> >::InsertBefore(int, CBaseFileSystem::CPathIDInfo* const&)
 t CUtlVector<CBaseFileSystem::CPathIDInfo*, CUtlMemory<CBaseFileSystem::CPathIDInfo*, int> >::~CUtlVector()
 t CUtlVector<CBaseFileSystem::CPathIDInfo*, CUtlMemory<CBaseFileSystem::CPathIDInfo*, int> >::~CUtlVector()
+t CUtlVector<CBaseFileSystem::CFileCacheObject::Info_t*, CUtlMemory<CBaseFileSystem::CFileCacheObject::Info_t*, int> >::GrowVector(int)
+t CUtlVector<CBaseFileSystem::CFileCacheObject::Info_t*, CUtlMemory<CBaseFileSystem::CFileCacheObject::Info_t*, int> >::ShiftElementsRight(int, int)
 t CUtlVector<CBaseFileSystem::CFileCacheObject::Info_t*, CUtlMemory<CBaseFileSystem::CFileCacheObject::Info_t*, int> >::~CUtlVector()
 t CUtlVector<CBaseFileSystem::CFileCacheObject::Info_t*, CUtlMemory<CBaseFileSystem::CFileCacheObject::Info_t*, int> >::~CUtlVector()
 t CUtlVector<CUtlSymbolTable::StringPool_t*, CUtlMemory<CUtlSymbolTable::StringPool_t*, int> >::InsertBefore(int, CUtlSymbolTable::StringPool_t* const&)
@@ -2420,7 +2455,7 @@ t CBaseFileSystem::AsyncRelease(FSAsyncControl_t__*)
 t CBaseFileSystem::AsyncSuspend()
 t CBaseFileSystem::EndMapAccess()
 t CBaseFileSystem::FastFileTime(CBaseFileSystem::CSearchPath const*, char const*)
-t CBaseFileSystem::FastFileTime(CBaseFileSystem::CSearchPath const*, char const*) [clone .part.69]
+t CBaseFileSystem::FastFileTime(CBaseFileSystem::CSearchPath const*, char const*) [clone .part.70]
 t CBaseFileSystem::FindFileName(char const*)
 t CBaseFileSystem::GetLocalCopy(char const*)
 t CBaseFileSystem::GetLocalPath(char const*, char*, int)
@@ -2535,7 +2570,7 @@ t CBaseFileSystem::RemoveAllMapSearchPaths()
 t CBaseFileSystem::Trace_DumpUnclosedFiles()
 t CBaseFileSystem::UnloadCompiledKeyValues()
 t CBaseFileSystem::FullPathToRelativePathEx(char const*, char const*, char*, int)
-t CBaseFileSystem::FullPathToRelativePathEx(char const*, char const*, char*, int) [clone .part.85]
+t CBaseFileSystem::FullPathToRelativePathEx(char const*, char const*, char*, int) [clone .part.86]
 t CBaseFileSystem::RemoveAsyncCustomFetchJob(CFileAsyncReadJob*)
 t CBaseFileSystem::GetCaseCorrectFullPath_Ptr(char const*, char*, int)
 t CBaseFileSystem::InstallDirtyDiskReportFunc(void (*)())
@@ -2597,7 +2632,7 @@ t CTier2AppSystem<IQueuedLoader, 0>::Connect(void* (*)(char const*, int*))
 t CTier2AppSystem<IQueuedLoader, 0>::Shutdown()
 t CUtlBlockMemory<unsigned char, int>::ChangeSize(int)
 t CUtlBlockMemory<unsigned char, int>::Init(int, int)
-t CUtlBlockMemory<unsigned char, int>::Purge() [clone .isra.41]
+t CUtlBlockMemory<unsigned char, int>::Purge() [clone .isra.39]
 t CUtlBlockVector<unsigned char>::~CUtlBlockVector()
 t CUtlBlockVector<unsigned char>::~CUtlBlockVector()
 t CUtlSymbolTable::CTree::~CTree()
@@ -2760,8 +2795,6 @@ t CFSMountContentInfo::CFSMountContentInfo()
 t CFSMountContentInfo::CFSMountContentInfo()
 t CUtlConstStringBase<char>::Set(char const*)
 t CUtlNoEscConversion::FindConversion(char const*, int*)
-t CUtlVectorAutoPurge<char*>::~CUtlVectorAutoPurge()
-t CUtlVectorAutoPurge<char*>::~CUtlVectorAutoPurge()
 t ZIP_LocalFileHeader::GetBaseMap()
 d ZIP_LocalFileHeader::m_DataMap
 t CCustomBase32Encoder::Decode(char const*, CSimpleBitString*)
@@ -3014,6 +3047,9 @@ t CCommand::CCommand(int, char const**)
 t CCommand::CCommand()
 t CCommand::CCommand(int, char const**)
 t CCommand::CCommand()
+t CFmtStrN<256, false>::InitQuietTruncation()
+t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
+t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
 t CFunctor::~CFunctor()
 t CFunctor::~CFunctor()
 t CFunctor::~CFunctor()
@@ -5842,7 +5878,7 @@ t CPackFile::CPackFile()
 t CPackFile::~CPackFile()
 t CPackFile::~CPackFile()
 t CPackFile::~CPackFile()
-t CUtlQueue<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int> >::Insert(KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct const&) [clone .constprop.79]
+t CUtlQueue<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int> >::Insert(KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct const&) [clone .constprop.80]
 t KeyValues::deleteThis()
 t KeyValues::GetWString(char const*, wchar_t const*)
 t KeyValues::SaveToFile(IBaseFileSystem*, char const*, char const*, bool, bool, bool)
@@ -5980,7 +6016,7 @@ t CQueuedLoader::IsMapLoading() const
 t CQueuedLoader::GetSpewDetail() const
 t CQueuedLoader::IsSameMapLoading() const
 t CQueuedLoader::IsDynamic() const
-t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.56] [clone .constprop.58]
+t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.57] [clone .constprop.59]
 t unsigned int CUtlHashtable<char const*, CMemoryFileBacking*, DefaultHashFunctor<char const*>, DefaultEqualFunctor<char const*>, undefined_t>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.140]
 t ConCommandBase::GetHelpText() const
 t ConCommandBase::IsRegistered() const
@@ -8829,6 +8865,7 @@ r typeinfo for ConVar
 r typeinfo for CNetAPI
 r typeinfo for IConVar
 r typeinfo for INetAPI
+r typeinfo for CFmtStrN<256, false>
 r typeinfo for CFunctor
 r typeinfo for CFunctor4<void (*)(FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*), FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
 r typeinfo for CFunctor4<void (*)(FileJob_t*, void*, int, LoaderError_t), FileJob_t*, void*, int, LoaderError_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
@@ -9474,6 +9511,7 @@ r typeinfo name for ConVar
 r typeinfo name for CNetAPI
 r typeinfo name for IConVar
 r typeinfo name for INetAPI
+r typeinfo name for CFmtStrN<256, false>
 r typeinfo name for CFunctor
 r typeinfo name for CFunctor4<void (*)(FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*), FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
 r typeinfo name for CFunctor4<void (*)(FileJob_t*, void*, int, LoaderError_t), FileJob_t*, void*, int, LoaderError_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
@@ -10385,6 +10423,7 @@ r vtable for IZip
 r vtable for ConVar
 r vtable for CNetAPI
 r vtable for IConVar
+r vtable for CFmtStrN<256, false>
 r vtable for CFunctor
 r vtable for CFunctor4<void (*)(FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*), FileJob_t*, void (*)(void*, void*, void const*, int, LoaderError_t), void*, void*, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
 r vtable for CFunctor4<void (*)(FileJob_t*, void*, int, LoaderError_t), FileJob_t*, void*, int, LoaderError_t, CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> > >
@@ -10906,6 +10945,7 @@ b V_pretifymem(float, int, bool)::output
 b V_pretifymem(float, int, bool)::current
 b V_pretifynum(long long)::output
 b V_pretifynum(long long)::current
+r V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)::HEX
 b UTIL_GetBaseDir()::basedir
 b UTIL_GetExecutableDir()::exedir
 b Bias(float, float)::lastExponent
@@ -11010,6 +11050,7 @@ b CCrypto::RSASign(unsigned char const*, unsigned int, unsigned char*, unsigned 
 b CCrypto::HexDecode(char const*, unsigned char*, unsigned int*)::tm_fmt
 b CCrypto::HexEncode(unsigned char const*, unsigned int, char*, unsigned int)::tm_fmt
 b CNetAPI::AdrToString(netadr_s*)::s
+b CFmtStrN<256, false>::CFmtStrN(char const*, ...)::scAsserted
 b CryptoPP::HexDecoder::GetDefaultDecodingLookupArray()::s_initialized
 b CryptoPP::HexDecoder::GetDefaultDecodingLookupArray()::s_array
 b CryptoPP::TheBitBucket()::bitBucket

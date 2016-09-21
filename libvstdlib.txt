@@ -148,7 +148,9 @@ U strpbrk@@GLIBC_2.0
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
+U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
 U swprintf@@GLIBC_2.2
 U symlink@@GLIBC_2.0
 U ThreadGetCurrentId

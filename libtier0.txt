@@ -184,6 +184,7 @@ T Plat_SetHardwareDataBreakpoint
 T Plat_SetWatchdogHandlerFunction
 T Plat_SimpleLog
 T Plat_timegm
+T Plat_USTime
 T Plat_VerifyHardwareKey
 T Plat_VerifyHardwareKeyDriver
 T Plat_VerifyHardwareKeyPrompt

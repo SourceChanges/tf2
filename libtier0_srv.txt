@@ -335,6 +335,7 @@ T Plat_SetHardwareDataBreakpoint
 T Plat_SetWatchdogHandlerFunction
 T Plat_SimpleLog
 T Plat_timegm
+T Plat_USTime
 T Plat_VerifyHardwareKey
 T Plat_VerifyHardwareKeyDriver
 T Plat_VerifyHardwareKeyPrompt
@@ -969,6 +970,7 @@ t operator new[](unsigned int, int, char const*, int)
 t CCommandLine::GetCmdLine() const
 t CCommandLine::ParmValueByIndex(int, char const*) const
 t CCommandLine::GetParm(int) const
+t CCommandLine::HasParm(char const*) const
 t CCommandLine::FindParm(char const*) const
 t CCommandLine::CheckParm(char const*, char const**) const
 t CCommandLine::ParmCount() const

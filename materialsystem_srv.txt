@@ -28,10 +28,10 @@ U cos@@GLIBC_2.0
 T CreateInterface
 U CreateSimpleThread
 U CreateThreadPool
-r CSWTCH.1084
-r CSWTCH.1122
-r CSWTCH.134
-r CSWTCH.136
+r CSWTCH.1076
+r CSWTCH.1114
+r CSWTCH.139
+r CSWTCH.141
 r CSWTCH.33
 r CSWTCH.35
 r CSWTCH.6
@@ -249,7 +249,10 @@ U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
 T _init
 t init_dwarf_reg_size_table
+U isalnum@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
 U isgraph@@GLIBC_2.0
+U isprint@@GLIBC_2.0
 U isspace@@GLIBC_2.0
 U isupper@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
@@ -429,7 +432,9 @@ U strspn@@GLIBC_2.0
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
+U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
 b subs.7497
 U swprintf@@GLIBC_2.2
 U tanf@@GLIBC_2.0
@@ -518,6 +523,7 @@ t _V_strrchr(char const*, int, char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+t V_strtoi64(char const*, char**, int)
 t V_strtowcs(char const*, int, wchar_t*, int)
 t V_wcstostr(wchar_t const*, int, char*, int)
 t AllocString(char const*, int)
@@ -544,6 +550,7 @@ t SmoothCurve(float)
 t SpinPresent()
 t _SSE_SinCos(float, float*, float*)
 t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
+t V_strtoui64(char const*, char**, int)
 t V_vsnprintf(char*, int, char const*, char*)
 t _V_wcslower(char const*, int, wchar_t*)
 t AngleIMatrix(RadianEuler const&, matrix3x4_t&)
@@ -644,6 +651,9 @@ t Sys_GetFactory(CSysModule*)
 t Sys_GetFactory(char const*)
 t Sys_LoadModule(char const*, Sys_Flags)
 t TexStageFromKV(CTCStage**, char const*, KeyValues*, unsigned int)
+t V_BBCodeToHTML(char*, int, char const*, int)
+t V_IsMeanSpaceW(wchar_t)
+t V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)
 t V_SetExtension(char*, char const*, int)
 t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
 t int V_sprintf_safe<12u>(char (&) [12u], char const*, ...)
@@ -694,6 +704,7 @@ t TextureToLinear(int)
 t VectorTransform(float const*, matrix3x4_t const&, float*)
 t VectorYawRotate(Vector const&, float, Vector&)
 t V_FixupPathName(char*, unsigned int, char const*)
+t V_IsDeprecatedW(wchar_t)
 t V_StripFilename(char*)
 t AddPointToBounds(Vector const&, Vector&, Vector&)
 t BetterResolution(int, int, int)
@@ -814,6 +825,8 @@ t ResolveAllVariables(char const*, CUtlDict<char const*, int> const&, KeyValues*
 t SetupMatrixIdentity()
 t SrgbGammaTo360Gamma(float)
 t TempCreateInterface(char const*, int*)
+t V_IsMeanUnderscoreW(wchar_t)
+t V_URLContainsDomain(char const*, char const*)
 t CalcDistanceToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t ComputeTrianglePlane(Vector const&, Vector const&, Vector const&, Vector&, float&)
 t GetInterpolationData(float const*, float const*, int, int, float, bool, float*, float*, float*)
@@ -846,6 +859,7 @@ t SolveInverseQuadratic(float, float, float, float, float, float, float&, float&
 t Sys_IsDebuggerPresent()
 t VectorToColorRGBExp32(Vector const&, ColorRGBExp32&)
 t V_GetCurrentDirectory(char*, int)
+t V_IsValidURLCharacter(char const*, int*)
 t V_SetCurrentDirectory(char const*)
 t V_UnqualifiedFileName(char const*)
 t AngleNormalizePositive(float)
@@ -871,8 +885,10 @@ t RestoreColorCorrection(int)
 t RotationDeltaAxisAngle(QAngle const&, QAngle const&, Vector&, float&)
 t SetupMatrixTranslation(Vector const&)
 t stb_compress_dxt_block(unsigned char*, unsigned char const*, int, int)
+t V_ExtractDomainFromURL(char const*, char*, int)
 t V_ExtractFileExtension(char const*, char*, int)
 t V_normalizeFloatString(char*)
+t V_StripAndPreserveHTML(CUtlBuffer*, char const*, char const**, unsigned int, unsigned int)
 t ApplyStickerStageFromKV(CTCStage**, char const*, KeyValues*, unsigned int)
 t CalcClosestPointToLineT(Vector const&, Vector const&, Vector const&, Vector&)
 t CalcDistanceSqrToLine2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
@@ -892,6 +908,7 @@ t ParseInverseRangeFromKV(KeyValues*, void*)
 t QuaternionIdentityBlend(Quaternion const&, float, Quaternion&)
 t RenderWireframeSweptBox(Vector const&, Vector const&, QAngle const&, Vector const&, Vector const&, Color, bool)
 t SubstituteVarsRecursive(char*, int*, CUtlVector<char const*, CUtlMemory<char const*, int> >&, char const*, unsigned int, CUtlDict<char const*, int> const&)
+t V_BasicHtmlEntityEncode(char*, int, char const*, int, bool)
 t AccumulatePatchKeyValues(KeyValues&, KeyValues&)
 t CalcClosestPointOnLine2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&, float*)
 t CalcTriangleTangentSpace(Vector const&, Vector const&, Vector const&, Vector2D const&, Vector2D const&, Vector2D const&, Vector&, Vector&)
@@ -905,12 +922,16 @@ t RandomVectorInUnitSphere(Vector*)
 t SetupDirtyDiskReportFunc()
 t _SSE_VectorNormalizeFast(Vector&)
 t Vector4DMultiplyPosition(VMatrix const&, Vector const&, Vector4D&)
+t V_HtmlEntityDecodeToUTF8(char*, int, char const*, int)
+t V_StripLeadingWhitespace(char*)
+t V_StripSurroundingQuotes(char*)
 t CalcClosestPointToLineT2D(Vector2D const&, Vector2D const&, Vector2D const&, Vector2D&)
 t CalcDistanceToLineSegment(Vector const&, Vector const&, Vector const&, float*)
 t Q_RemoveAllEvilCharacters(char*)
 t ShutdownStandardMaterials()
 t Vector3DMultiplyTranspose(VMatrix const&, Vector const&, Vector&)
 t Vector4DMultiplyTranspose(VMatrix const&, Vector4D const&, Vector4D&)
+t V_StripTrailingWhitespace(char*)
 t Catmull_Rom_Spline_Tangent(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t DummyMaterialSystemFactory(char const*, int*)
 t ExtractVariableDefinitions(CUtlDict<char const*, int>*, char const*, KeyValues*)
@@ -918,6 +939,7 @@ t GeneratePerspectiveFrustum(Vector const&, QAngle const&, float, float, float, 
 t GeneratePerspectiveFrustum(Vector const&, Vector const&, Vector const&, Vector const&, float, float, float, float, Frustum_t&)
 t GeneratePolygonIndexBuffer(unsigned short*, int, int)
 t Vector3DMultiplyProjective(VMatrix const&, Vector const&, Vector&)
+t V_StripAndPreserveHTMLCore(CUtlBuffer*, char const*, char const**, unsigned int, char const**, unsigned int, unsigned int)
 t CalcDistanceToLineSegment2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, Vector&)
@@ -937,6 +959,7 @@ t MatrixBuildRotationAboutAxis(Vector const&, float, matrix3x4_t&)
 t Pow_FixedPoint_Exponent_SIMD(float __vector(4) const&, int)
 t Pow_FixedPoint_Exponent_SIMD(float __vector const&, int)
 t ResolveAllVariablesRecursive(CUtlVector<char const*, CUtlMemory<char const*, int> >&, CUtlDict<char const*, int> const&, KeyValues*, unsigned int, CUtlString&)
+t V_IsValidDomainNameCharacter(char const*, int*)
 t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
 t CalcClosestPointOnLineSegment(Vector const&, Vector const&, Vector const&, Vector&, float*)
 t Catmull_Rom_Spline_NormalizeX(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
@@ -1004,6 +1027,7 @@ t CUtlString AsStringT<int>(int const&)
 t FastPow10(float)
 t FloorPow2(int)
 t HashBlock(void const*, unsigned int)
+t nexttoken(char*, char const*, char)
 t R_CullBox(Vector const&, Vector const&, Frustum_t const&)
 t RenderBox(Vector const&, QAngle const&, Vector const&, Vector const&, Color, bool, bool)
 t RenderBox(Vector const&, QAngle const&, Vector const&, Vector const&, Color, IMaterial*, bool)
@@ -1026,6 +1050,7 @@ t V_strncmp(char const*, char const*, int)
 t V_strncpy(char*, char const*, int)
 t V_strnlwr(char*, unsigned int)
 t _V_strstr(char const*, int, char const*, char const*)
+t V_StrTrim(char*)
 t _V_wcscmp(char const*, int, wchar_t const*, wchar_t const*)
 t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
@@ -1060,7 +1085,7 @@ b guard variable for CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned shor
 b guard variable for CUtlRBTree<CUtlMap<ITextureInternal*, int, unsigned short>::Node_t, unsigned short, CUtlMap<ITextureInternal*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<ITextureInternal*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 b guard variable for CUtlRBTree<CUtlMap<CTextureCompositorTemplate*, int, unsigned short>::Node_t, unsigned short, CUtlMap<CTextureCompositorTemplate*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CTextureCompositorTemplate*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 b guard variable for CUtlRBTree<CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::Node_t, unsigned short, CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
-b guard variable for CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int>, int> >::Links(int) const::s_Sentinel
+b guard variable for CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int>, int> >::Links(int) const::s_Sentinel
 b guard variable for CUtlRBTree<CUtlMap<char const*, int, int>::Node_t, int, CUtlMap<char const*, int, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, int>::Node_t, int>, int> >::Links(int) const::s_Sentinel
 b guard variable for CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 b guard variable for CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
@@ -1283,7 +1308,7 @@ b s_bSSE2Enabled
 b s_pVertexColor
 b s_ShaderSystem
 b stb__QuantGTab
-t CalcSphereColor(SphereCalc_t*, float, float) [clone .constprop.71]
+t CalcSphereColor(SphereCalc_t*, float, float) [clone .constprop.72]
 r g_nRandomValues
 b lineartotexture
 b linearToTexture
@@ -1306,7 +1331,7 @@ t MySpewOutputFunc(SpewType_t, char const*)
 b s_bBuiltBreakSet
 d s_nDLLIdentifier
 b s_TextureManager
-t ConvertModeStruct(ShaderDeviceInfo_t*, MaterialSystem_Config_t const&) [clone .constprop.409]
+t ConvertModeStruct(ShaderDeviceInfo_t*, MaterialSystem_Config_t const&) [clone .constprop.410]
 t DrawExtrusionFace(Vector const&, Vector const&, Vector*, int, int, Color, CMeshBuilder&) [clone .constprop.26]
 t GetHardwareConfig()
 r g_ImageFormatInfo
@@ -1331,8 +1356,9 @@ b s_nTotalMorphCount
 b s_nTotalTexelCount
 b s_pTempMaterialVar
 t ApplyPatchKeyValues(KeyValues&, KeyValues&)
-t CalcHemisphereColor(SphereCalc_t*, float, float) [clone .constprop.69]
+t CalcHemisphereColor(SphereCalc_t*, float, float) [clone .constprop.70]
 t ComputeMipSkipCount(char const*, TexDimensions_t const&, bool, IVTFTexture*, unsigned int, int, unsigned short*, TextureLODControlSettings_t*, TexDimensions_t*, TexDimensions_t*, unsigned int*)
+r g_BasicHTMLEntities
 b __g_CreateICVar_reg
 t GenerateBoxVertices(Vector const&, QAngle const&, Vector const&, Vector const&, Vector*)
 b mat_depthbias_decal
@@ -1344,7 +1370,8 @@ b s_OcclusionQueryMgr
 b s_pWireframeIgnoreZ
 b s_RenderedQuadHisto
 b g_CleanupSymbolTable
-t GetOptimalReadBuffer(CUtlBuffer*, void*, int) [clone .constprop.71]
+t GetOptimalReadBuffer(CUtlBuffer*, void*, int) [clone .constprop.72]
+r g_WhitespaceEntities
 b mat_bufferprimitives
 b mat_depthbias_normal
 b mat_lodin_hidden_pop
@@ -1380,6 +1407,7 @@ b s_bEnableThreadedAccess
 b s_bMaterialsInitialized
 b s_TempFileSystemFactory
 t ForceTextureIntoHardware(ITexture*, IMaterial*, IMaterialVar*)
+r g_Tier1_FullHTMLEntities
 b mat_spew_on_texture_size
 b r_flashlightdepthtexture
 t SLoadTextureBitsFromFile(IVTFTexture**, void*, unsigned int, TextureLODControlSettings_t*, int, unsigned short*, char const*, char const*, TexDimensions_t*, TexDimensions_t*, TexDimensions_t*, unsigned int*)
@@ -1393,6 +1421,7 @@ b mat_monitorgamma_tv_enabled
 b r_waterforcereflectentities
 t mat_showmiplevels_Callback_f(IConVar*, char const*, float)
 t AccumulateRecursiveVmtPatches(KeyValues&, KeyValues**, KeyValues const&, char const*, CUtlVector<void*, CUtlMemory<void*, int> >*)
+r g_pszSimpleBBCodeReplacements
 b mat_monitorgamma_tv_range_max
 b mat_monitorgamma_tv_range_min
 b mat_slopescaledepthbias_decal
@@ -1432,7 +1461,7 @@ r _pi32_1
 r _pi32_2
 r _pi32_4
 r _ps_0p5
-t CalcInit(SphereCalc_t*, int, unsigned char**, LookDir_t) [clone .constprop.70]
+t CalcInit(SphereCalc_t*, int, unsigned char**, LookDir_t) [clone .constprop.71]
 t DrawAxes(Vector const&, Vector*, int, Color, CMeshBuilder&) [clone .constprop.27]
 t GetICVar()
 t CalcColor(SphereCalc_t*, int, Vector const&, unsigned char*) [clone .isra.8]
@@ -1569,7 +1598,7 @@ t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>,
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<ITextureInternal*, int, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<CTextureCompositorTemplate*, int, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
-t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int>, int>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int>, int>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, int>::Node_t, int>, int>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
@@ -1706,14 +1735,14 @@ t CUtlRBTree<CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::Node_t, 
 t CUtlRBTree<CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::Node_t, unsigned short, CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::Node_t const&)
 t CUtlRBTree<CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::Node_t, unsigned short, CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::Node_t, unsigned short>, unsigned short> >::NewNode()
 t CUtlRBTree<CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::Node_t, unsigned short, CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
-t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int>, int> >::RotateLeft(int)
-t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int>, int> >::RotateRight(int)
-t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int>, int> >::InsertRebalance(int)
-t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int>, int> >::RemoveRebalance(int)
-t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int>, int> >::Insert(CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t const&)
-t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int>, int> >::Unlink(int)
-t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int>, int> >::NewNode()
-t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int>, int> >::RemoveAll()
+t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int>, int> >::RotateLeft(int)
+t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int>, int> >::RotateRight(int)
+t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int>, int> >::InsertRebalance(int)
+t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int>, int> >::RemoveRebalance(int)
+t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int>, int> >::Insert(CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t const&)
+t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int>, int> >::Unlink(int)
+t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int>, int> >::NewNode()
+t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int>, int> >::RemoveAll()
 t CUtlRBTree<CUtlMap<char const*, int, int>::Node_t, int, CUtlMap<char const*, int, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, int>::Node_t, int>, int> >::RotateLeft(int)
 t CUtlRBTree<CUtlMap<char const*, int, int>::Node_t, int, CUtlMap<char const*, int, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, int>::Node_t, int>, int> >::RotateRight(int)
 t CUtlRBTree<CUtlMap<char const*, int, int>::Node_t, int, CUtlMap<char const*, int, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, int>::Node_t, int>, int> >::InsertRebalance(int)
@@ -1829,6 +1858,7 @@ t CUtlVector<S3RGBA, CUtlMemory<S3RGBA, int> >::~CUtlVector()
 t CUtlVector<S3RGBA, CUtlMemory<S3RGBA, int> >::~CUtlVector()
 t CUtlVector<Sticker_t, CUtlMemory<Sticker_t, int> >::GrowVector(int)
 t CUtlVector<Sticker_t, CUtlMemory<Sticker_t, int> >::ShiftElementsRight(int, int)
+t CUtlVector<Sticker_t, CUtlMemory<Sticker_t, int> >::CopyArray(Sticker_t const*, int)
 t CUtlVector<Sticker_t, CUtlMemory<Sticker_t, int> >::RemoveAll()
 t CUtlVector<Sticker_t, CUtlMemory<Sticker_t, int> >::~CUtlVector()
 t CUtlVector<Sticker_t, CUtlMemory<Sticker_t, int> >::~CUtlVector()
@@ -1901,6 +1931,7 @@ t CUtlVector<void (*)(), CUtlMemory<void (*)(), int> >::InsertBefore(int, void (
 t CUtlVector<void (*)(), CUtlMemory<void (*)(), int> >::~CUtlVector()
 t CUtlVector<void (*)(), CUtlMemory<void (*)(), int> >::~CUtlVector()
 t CUtlVector<char const*, CUtlMemory<char const*, int> >::InsertBefore(int, char const* const&)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::Remove(int)
 t CUtlVector<char const*, CUtlMemory<char const*, int> >::~CUtlVector()
 t CUtlVector<char const*, CUtlMemory<char const*, int> >::~CUtlVector()
 t CUtlVector<CUtlSymbolTable::StringPool_t*, CUtlMemory<CUtlSymbolTable::StringPool_t*, int> >::InsertBefore(int, CUtlSymbolTable::StringPool_t* const&)
@@ -1971,7 +2002,7 @@ t CVTFTexture::ConvertImageFormat(ImageFormat, bool)
 t CVTFTexture::SetupEdgeIncrement(CEdgePos&, CEdgePos&, CEdgePos&)
 t CVTFTexture::ComputeReflectivity()
 t CVTFTexture::MatchCubeMapBorders(int, ImageFormat, bool)
-t CVTFTexture::MatchCubeMapBorders(int, ImageFormat, bool) [clone .part.68]
+t CVTFTexture::MatchCubeMapBorders(int, ImageFormat, bool) [clone .part.69]
 t CVTFTexture::ConstructLowResImage()
 t CVTFTexture::NormalizeTopMipLevel()
 t CVTFTexture::BlendCubeMapFaceEdges(int, int, CEdgeMatch const*)
@@ -2256,7 +2287,7 @@ t CDummyTexture::Download(Rect_t*, int)
 t CIndexBuilder::~CIndexBuilder() [clone .isra.12]
 t CIndexBuilder::~CIndexBuilder() [clone .isra.16]
 t CIndexBuilder::~CIndexBuilder() [clone .isra.19]
-t CIndexBuilder::~CIndexBuilder() [clone .isra.45]
+t CIndexBuilder::~CIndexBuilder() [clone .isra.44]
 t CMatCallQueue::QueueFunctorInternal(CFunctor*)
 t void CMatCallQueue::QueueCall<CLateBoundPtr<IMesh>, IMesh, void, int, int, int, int>(CLateBoundPtr<IMesh>, void (IMesh::*)(int, int), int const&, int const&)
 t void CMatCallQueue::QueueCall<CLateBoundPtr<IMesh>, IMesh, void, IMesh*, int, IMesh*, int>(CLateBoundPtr<IMesh>, void (IMesh::*)(IMesh*, int), IMesh* const&, int const&)
@@ -3185,7 +3216,7 @@ t CTextureManager::ShadowNoise2D()
 t CTextureManager::ReloadTextures()
 t CTextureManager::RestoreTexture(ITextureInternal*)
 t CTextureManager::AddTextureAlias(char const*, char const*)
-t CTextureManager::AddTextureAlias(char const*, char const*) [clone .part.298]
+t CTextureManager::AddTextureAlias(char const*, char const*) [clone .part.299]
 t CTextureManager::FindFilesToLoad(CUtlDict<int, int>*, char const*)
 t CTextureManager::IsTextureLoaded(char const*)
 t CTextureManager::ReadFilesToLoad(CUtlDict<int, int>*, char const*)
@@ -3641,15 +3672,15 @@ t IMatRenderContext::Unused5()
 t IMatRenderContext::Unused6()
 t IMatRenderContext::Unused7()
 t IMatRenderContext::Unused8()
-t CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >::~CCopyableUtlVector()
-t CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >::~CCopyableUtlVector()
-t CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >::~CCopyableUtlVector()
-t CCopyableUtlVector<Sticker_t, CUtlMemory<Sticker_t, int> >::~CCopyableUtlVector()
-t CCopyableUtlVector<Sticker_t, CUtlMemory<Sticker_t, int> >::~CCopyableUtlVector()
-t CCopyableUtlVector<Sticker_t, CUtlMemory<Sticker_t, int> >::~CCopyableUtlVector()
-t CCopyableUtlVector<int, CUtlMemory<int, int> >::~CCopyableUtlVector()
-t CCopyableUtlVector<int, CUtlMemory<int, int> >::~CCopyableUtlVector()
-t CCopyableUtlVector<int, CUtlMemory<int, int> >::~CCopyableUtlVector()
+t CCopyableUtlVector<AsyncLoadJob_t>::~CCopyableUtlVector()
+t CCopyableUtlVector<AsyncLoadJob_t>::~CCopyableUtlVector()
+t CCopyableUtlVector<AsyncLoadJob_t>::~CCopyableUtlVector()
+t CCopyableUtlVector<Sticker_t>::~CCopyableUtlVector()
+t CCopyableUtlVector<Sticker_t>::~CCopyableUtlVector()
+t CCopyableUtlVector<Sticker_t>::~CCopyableUtlVector()
+t CCopyableUtlVector<int>::~CCopyableUtlVector()
+t CCopyableUtlVector<int>::~CCopyableUtlVector()
+t CCopyableUtlVector<int>::~CCopyableUtlVector()
 t CMaterialReference::Init(IMaterial*)
 t CMaterialReference::Init(char const*, KeyValues*)
 t CMaterialReference::Init(char const*, char const*, bool)
@@ -4788,8 +4819,8 @@ t CUtlMap<CTextureCompositorTemplate*, int, unsigned short>::~CUtlMap()
 t CUtlMap<CTextureCompositorTemplate*, int, unsigned short>::~CUtlMap()
 t CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::~CUtlMap()
 t CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::~CUtlMap()
-t CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::~CUtlMap()
-t CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::~CUtlMap()
+t CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::~CUtlMap()
+t CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::~CUtlMap()
 t CUtlMap<char const*, int, int>::~CUtlMap()
 t CUtlMap<char const*, int, int>::~CUtlMap()
 t CUtlMap<char const*, int, unsigned short>::~CUtlMap()
@@ -4816,6 +4847,9 @@ t CCommand::CCommand(int, char const**)
 t CCommand::CCommand()
 t CCommand::CCommand(int, char const**)
 t CCommand::CCommand()
+t CFmtStrN<256, false>::InitQuietTruncation()
+t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
+t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
 t CFunctor::~CFunctor()
 t CFunctor::~CFunctor()
 t CFunctor::~CFunctor()
@@ -4938,10 +4972,10 @@ t CTSQueue<ITextureInternal*, false>::Purge()
 t CTSQueue<ITextureInternal*, false>::PushItem(ITextureInternal* const&)
 t CTSQueue<ITextureInternal*, false>::~CTSQueue()
 t CTSQueue<ITextureInternal*, false>::~CTSQueue()
-t CUtlDict<CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::CUtlDict(int, int, int)
-t CUtlDict<CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::CUtlDict(int, int, int)
-t CUtlDict<CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::~CUtlDict()
-t CUtlDict<CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::~CUtlDict()
+t CUtlDict<CCopyableUtlVector<AsyncLoadJob_t>, int>::CUtlDict(int, int, int)
+t CUtlDict<CCopyableUtlVector<AsyncLoadJob_t>, int>::CUtlDict(int, int, int)
+t CUtlDict<CCopyableUtlVector<AsyncLoadJob_t>, int>::~CUtlDict()
+t CUtlDict<CCopyableUtlVector<AsyncLoadJob_t>, int>::~CUtlDict()
 t CUtlDict<int, int>::CUtlDict(int, int, int)
 t CUtlDict<int, int>::CUtlDict(int, int, int)
 t CUtlDict<int, int>::~CUtlDict()
@@ -5061,7 +5095,7 @@ t CMaterial::NeedsFullFrameBufferTexture(bool)
 t CMaterial::ReloadFromWhitelistIfMarked()
 t CMaterial::RefreshPreservingMaterialVars()
 t CMaterial::DecideShouldReloadFromWhitelist(IFileList*)
-t CMaterial::DecideShouldReloadFromWhitelist(IFileList*) [clone .part.52]
+t CMaterial::DecideShouldReloadFromWhitelist(IFileList*) [clone .part.53]
 t CMaterial::SetUseFixedFunctionBakedLighting(bool)
 t CMaterial::NeedsPowerOfTwoFrameBufferTexture(bool)
 t CMaterial::FindVar(char const*, bool*, bool)
@@ -5111,7 +5145,7 @@ t ConVarRef::ConVarRef(char const*, bool)
 t CUtlQueue<AsyncReadJob_t*, CUtlMemory<AsyncReadJob_t*, int> >::Insert(AsyncReadJob_t* const&)
 t CUtlQueue<AsyncReadJob_t*, CUtlMemory<AsyncReadJob_t*, int> >::~CUtlQueue()
 t CUtlQueue<AsyncReadJob_t*, CUtlMemory<AsyncReadJob_t*, int> >::~CUtlQueue()
-t CUtlQueue<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int> >::Insert(KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct const&) [clone .constprop.79]
+t CUtlQueue<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int> >::Insert(KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct const&) [clone .constprop.80]
 t CUtlStack<CMatRenderContextBase::MatrixStackItem_t, CUtlMemory<CMatRenderContextBase::MatrixStackItem_t, int> >::Push(CMatRenderContextBase::MatrixStackItem_t const&)
 t CUtlStack<CMatRenderContextBase::MatrixStackItem_t, CUtlMemory<CMatRenderContextBase::MatrixStackItem_t, int> >::CopyFrom(CUtlStack<CMatRenderContextBase::MatrixStackItem_t, CUtlMemory<CMatRenderContextBase::MatrixStackItem_t, int> > const&)
 t CUtlStack<CMatRenderContextBase::MatrixStackItem_t, CUtlMemory<CMatRenderContextBase::MatrixStackItem_t, int> >::GrowStack()
@@ -5269,8 +5303,8 @@ t CShaderDLL::ShaderCount() const
 t CUtlRBTree<CMaterialDict::MaterialLookup_t, unsigned short, bool (*)(CMaterialDict::MaterialLookup_t const&, CMaterialDict::MaterialLookup_t const&), CUtlMemory<UtlRBTreeNode_t<CMaterialDict::MaterialLookup_t, unsigned short>, unsigned short> >::NextInorder(unsigned short) const
 t CUtlRBTree<CUtlMap<ITextureInternal*, int, unsigned short>::Node_t, unsigned short, CUtlMap<ITextureInternal*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<ITextureInternal*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const
 t CUtlRBTree<CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::Node_t, unsigned short, CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::Node_t const&) const
-t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int>, int> >::NextInorder(int) const
-t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int>, int> >::Links(int) const
+t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int>, int> >::NextInorder(int) const
+t CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int>, int> >::Links(int) const
 t CUtlRBTree<CUtlMap<char const*, int, int>::Node_t, int, CUtlMap<char const*, int, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, int>::Node_t, int>, int> >::NextInorder(int) const
 t CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::NextInorder(unsigned short) const
 t CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::NextInorder(unsigned short) const
@@ -5386,7 +5420,7 @@ t CShaderSystem::IsUsingGraphics() const
 t CShaderSystem::ShaderStateCount() const
 t CShaderSystem::ShaderStateString(int) const
 t CShaderSystem::CanUseEditorMaterials() const
-t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.56] [clone .constprop.58]
+t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.57] [clone .constprop.59]
 t FloatBitMap_t::QuarterSize() const
 t FloatBitMap_t::WriteTGAFile(char const*) const
 t FloatBitMap_t::InterpolatedPixel(float, float, int) const
@@ -5806,7 +5840,7 @@ t CTexture::GetName() const
 t CTexture::IsError() const
 t CTexture::GetFlags() const
 t CTexture::IsCubeMap() const
-t CUtlDict<CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Find(char const*) const
+t CUtlDict<CCopyableUtlVector<AsyncLoadJob_t>, int>::Find(char const*) const
 t CUtlDict<int, int>::Find(char const*) const
 t CUtlDict<int, unsigned short>::Find(char const*) const
 t CUtlDict<ITextureInternal*, unsigned short>::Find(char const*) const
@@ -6392,6 +6426,7 @@ r typeinfo for CRefCounted1<CFunctor, CRefCountServiceDestruct<CRefST> >
 r typeinfo for CTCCopyStage
 r typeinfo for IIndexBuffer
 r typeinfo for IMaterialVar
+r typeinfo for base_vector_t
 r typeinfo for CDummyTexture
 r typeinfo for CShaderSystem
 r typeinfo for CSolidTexture
@@ -6526,9 +6561,9 @@ r typeinfo for CMatRenderContext
 r typeinfo for CReplacementProxy
 r typeinfo for IMaterialInternal
 r typeinfo for IMatRenderContext
-r typeinfo for CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >
-r typeinfo for CCopyableUtlVector<Sticker_t, CUtlMemory<Sticker_t, int> >
-r typeinfo for CCopyableUtlVector<int, CUtlMemory<int, int> >
+r typeinfo for CCopyableUtlVector<AsyncLoadJob_t>
+r typeinfo for CCopyableUtlVector<Sticker_t>
+r typeinfo for CCopyableUtlVector<int>
 r typeinfo for CTextureCompositor
 r typeinfo for CUtlCharConversion
 r typeinfo for IShaderDLLInternal
@@ -6575,6 +6610,7 @@ r typeinfo for CMorph
 r typeinfo for ConVar
 r typeinfo for IMorph
 r typeinfo for IConVar
+r typeinfo for CFmtStrN<256, false>
 r typeinfo for CFunctor
 r typeinfo for CTCStage
 r typeinfo for CTexture
@@ -6610,6 +6646,7 @@ r typeinfo name for CRefCounted1<CFunctor, CRefCountServiceDestruct<CRefST> >
 r typeinfo name for CTCCopyStage
 r typeinfo name for IIndexBuffer
 r typeinfo name for IMaterialVar
+r typeinfo name for base_vector_t
 r typeinfo name for CDummyTexture
 r typeinfo name for CShaderSystem
 r typeinfo name for CSolidTexture
@@ -6744,9 +6781,9 @@ r typeinfo name for CMatRenderContext
 r typeinfo name for CReplacementProxy
 r typeinfo name for IMaterialInternal
 r typeinfo name for IMatRenderContext
-r typeinfo name for CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >
-r typeinfo name for CCopyableUtlVector<Sticker_t, CUtlMemory<Sticker_t, int> >
-r typeinfo name for CCopyableUtlVector<int, CUtlMemory<int, int> >
+r typeinfo name for CCopyableUtlVector<AsyncLoadJob_t>
+r typeinfo name for CCopyableUtlVector<Sticker_t>
+r typeinfo name for CCopyableUtlVector<int>
 r typeinfo name for CTextureCompositor
 r typeinfo name for CUtlCharConversion
 r typeinfo name for IShaderDLLInternal
@@ -6793,6 +6830,7 @@ r typeinfo name for CMorph
 r typeinfo name for ConVar
 r typeinfo name for IMorph
 r typeinfo name for IConVar
+r typeinfo name for CFmtStrN<256, false>
 r typeinfo name for CFunctor
 r typeinfo name for CTCStage
 r typeinfo name for CTexture
@@ -6958,9 +6996,9 @@ r vtable for CMatRenderContext
 r vtable for CReplacementProxy
 r vtable for IMaterialInternal
 r vtable for IMatRenderContext
-r vtable for CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >
-r vtable for CCopyableUtlVector<Sticker_t, CUtlMemory<Sticker_t, int> >
-r vtable for CCopyableUtlVector<int, CUtlMemory<int, int> >
+r vtable for CCopyableUtlVector<AsyncLoadJob_t>
+r vtable for CCopyableUtlVector<Sticker_t>
+r vtable for CCopyableUtlVector<int>
 r vtable for CTextureCompositor
 r vtable for CUtlCharConversion
 r vtable for IShaderDLLInternal
@@ -7000,6 +7038,7 @@ r vtable for CMorph
 r vtable for ConVar
 r vtable for IMorph
 r vtable for IConVar
+r vtable for CFmtStrN<256, false>
 r vtable for CFunctor
 r vtable for CTCStage
 r vtable for CTexture
@@ -7031,6 +7070,7 @@ b V_pretifymem(float, int, bool)::current
 b V_pretifynum(long long)::output
 b V_pretifynum(long long)::current
 b IsEmulatingGL()::bIsEmulatingGL
+r V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)::HEX
 r PrintMinimumCycle(CTextureCompositorTemplate*)::__FUNCTION__
 b PrintMinimumCycle(CTextureCompositorTemplate*)::tm_fmt
 b COM_GetModDirectory()::modDir
@@ -7258,6 +7298,7 @@ b CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)::r_developer
 b CMorph::AccumulateMorph(int)::tm_fmt
 b CMorph::HandleMorphStats(int, int, int)::s_bLastMorphStats
 b CMorph::RenderMorphWeights(IMatRenderContext*, int, int, MorphWeight_t const*)::tm_fmt
+b CFmtStrN<256, false>::CFmtStrN(char const*, ...)::scAsserted
 r CTCStage::Render(ITexture*, IMaterial*, CUtlVector<CTCStageResult_t, CUtlMemory<CTCStageResult_t, int> > const&, CTextureCompositor*, bool)::__FUNCTION__
 b CTCStage::Render(ITexture*, IMaterial*, CUtlVector<CTCStageResult_t, CUtlMemory<CTCStageResult_t, int> > const&, CTextureCompositor*, bool)::tm_fmt
 r CTexture::MakeResident(ResidencyType_t)::__FUNCTION__
@@ -7336,7 +7377,7 @@ d CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable:
 d CUtlRBTree<CUtlMap<ITextureInternal*, int, unsigned short>::Node_t, unsigned short, CUtlMap<ITextureInternal*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<ITextureInternal*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 d CUtlRBTree<CUtlMap<CTextureCompositorTemplate*, int, unsigned short>::Node_t, unsigned short, CUtlMap<CTextureCompositorTemplate*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CTextureCompositorTemplate*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 d CUtlRBTree<CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::Node_t, unsigned short, CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<ITexture*, CInterlockedIntT<int>, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
-d CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t, CUtlMemory<AsyncLoadJob_t, int> >, int>::Node_t, int>, int> >::Links(int) const::s_Sentinel
+d CUtlRBTree<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int, CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, CCopyableUtlVector<AsyncLoadJob_t>, int>::Node_t, int>, int> >::Links(int) const::s_Sentinel
 d CUtlRBTree<CUtlMap<char const*, int, int>::Node_t, int, CUtlMap<char const*, int, int>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, int>::Node_t, int>, int> >::Links(int) const::s_Sentinel
 d CUtlRBTree<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 d CUtlRBTree<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, ITextureInternal*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, ITextureInternal*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel

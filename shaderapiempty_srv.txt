@@ -58,7 +58,9 @@ U getcwd@@GLIBC_2.0
 t get_fde_encoding
 a _GLOBAL_OFFSET_TABLE_
 t _GLOBAL__sub_I_g_pShaderUtil
+t _GLOBAL__sub_I_s_StringCharConversion
 t _GLOBAL__sub_I__Z9_V_memsetPKciPvii
+t _GLOBAL__sub_I__ZN10CUtlString11AllocMemoryEj
 w __gmon_start__
 U g_pMemAlloc
 b g_pShaderUtil
@@ -70,6 +72,9 @@ U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
 T _init
 t init_dwarf_reg_size_table
+U isalnum@@GLIBC_2.0
+U iscntrl@@GLIBC_2.0
+U isprint@@GLIBC_2.0
 U isspace@@GLIBC_2.0
 U isupper@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
@@ -180,6 +185,8 @@ t search_object
 b seen_objects
 t set_fast_math
 t size_of_encoded_value
+b s_NoEscConversion
+b s_StringCharConversion
 U strcasecmp@@GLIBC_2.0
 U strchr@@GLIBC_2.0
 U strcmp@@GLIBC_2.0
@@ -190,6 +197,11 @@ U strncasecmp@@GLIBC_2.0
 U strncat@@GLIBC_2.0
 U strncpy@@GLIBC_2.0
 U strstr@@GLIBC_2.0
+U strtod@@GLIBC_2.0
+U strtol@@GLIBC_2.0
+U strtoll@@GLIBC_2.0
+U strtoul@@GLIBC_2.0
+U strtoull@@GLIBC_2.0
 b subs.7497
 b terminator.7340
 U time@@GLIBC_2.0
@@ -244,12 +256,14 @@ t _V_strrchr(char const*, int, char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
+t V_strtoi64(char const*, char**, int)
 t V_strtowcs(char const*, int, wchar_t*, int)
 t V_wcstostr(wchar_t const*, int, char*, int)
 t AllocString(char const*, int)
 t Q_URLDecode(char*, int, char const*, int)
 t Q_URLEncode(char*, int, char const*, int)
 t V_snwprintf(wchar_t*, int, wchar_t const*, ...)
+t V_strtoui64(char const*, char**, int)
 t V_vsnprintf(char*, int, char const*, char*)
 t _V_wcslower(char const*, int, wchar_t*)
 t V_FixSlashes(char*, char)
@@ -279,6 +293,9 @@ t Q_UTF32ToUTF32(wchar_t const*, wchar_t*, int, EStringConvertErrorPolicy)
 t Sys_GetFactory(CSysModule*)
 t Sys_GetFactory(char const*)
 t Sys_LoadModule(char const*, Sys_Flags)
+t V_BBCodeToHTML(char*, int, char const*, int)
+t V_IsMeanSpaceW(wchar_t)
+t V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)
 t V_SetExtension(char*, char const*, int)
 t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<char*, int> >&)
 t V_StripLastDir(char*, int)
@@ -294,6 +311,7 @@ t Q_UnicodeRepair(wchar_t*, EStringConvertErrorPolicy)
 t Q_UTF8ToUChar32(char const*, wchar_t&, bool&)
 t Sys_LoadLibrary(char const*, Sys_Flags)
 t V_FixupPathName(char*, unsigned int, char const*)
+t V_IsDeprecatedW(wchar_t)
 t V_StripFilename(char*)
 t Q_IsValidUChar32(wchar_t)
 t Q_UChar32ToUTF16(wchar_t, unsigned short*)
@@ -330,18 +348,32 @@ t Q_URLDecodeInternal(char*, int, char const*, int, bool)
 t Q_URLEncodeInternal(char*, int, char const*, int, bool)
 t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
 t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
+t V_IsMeanUnderscoreW(wchar_t)
+t V_URLContainsDomain(char const*, char const*)
 t V_StripTrailingSlash(char*)
 t Sys_IsDebuggerPresent()
 t V_GetCurrentDirectory(char*, int)
+t V_IsValidURLCharacter(char const*, int*)
 t V_SetCurrentDirectory(char const*)
 t V_UnqualifiedFileName(char const*)
 t BGetLocalFormattedDate(long, char*, int)
 t BGetLocalFormattedTime(long, char*, int)
+t GetNoEscCharConversion()
+t V_ExtractDomainFromURL(char const*, char*, int)
 t V_ExtractFileExtension(char const*, char*, int)
 t V_normalizeFloatString(char*)
+t V_StripAndPreserveHTML(CUtlBuffer*, char const*, char const**, unsigned int, unsigned int)
 t CreateInterfaceInternal(char const*, int*)
+t V_BasicHtmlEntityEncode(char*, int, char const*, int, bool)
+t GetCStringCharConversion()
+t V_HtmlEntityDecodeToUTF8(char*, int, char const*, int)
+t V_StripLeadingWhitespace(char*)
+t V_StripSurroundingQuotes(char*)
 t Q_RemoveAllEvilCharacters(char*)
+t V_StripTrailingWhitespace(char*)
+t V_StripAndPreserveHTMLCore(CUtlBuffer*, char const*, char const**, unsigned int, char const**, unsigned int, unsigned int)
 t Sys_RunningWithDebugModules()
+t V_IsValidDomainNameCharacter(char const*, int*)
 t BGetLocalFormattedDateAndTime(long, char*, int, char*, int)
 t StringAfterPrefixCaseSensitive(char const*, char const*)
 t V_AddBackSlashesToSpecialChars(char const*)
@@ -354,6 +386,7 @@ t V_atoi(char const*)
 t V_atoi64(char const*)
 t V_nibble(char)
 t V_strupr(char*)
+t nexttoken(char*, char const*, char)
 t V_atoui64(char const*)
 t _V_memcmp(char const*, int, void const*, void const*, int)
 t _V_memcpy(char const*, int, void*, void const*, int)
@@ -372,6 +405,7 @@ t V_strncmp(char const*, char const*, int)
 t V_strncpy(char*, char const*, int)
 t V_strnlwr(char*, unsigned int)
 t _V_strstr(char const*, int, char const*, char const*)
+t V_StrTrim(char*)
 t _V_wcscmp(char const*, int, wchar_t const*, wchar_t const*)
 t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
@@ -380,6 +414,7 @@ t _V_wcsupr(char const*, int, wchar_t*)
 t operator delete[](void*)
 t operator delete(void*)
 t operator delete(void*, unsigned int)
+b guard variable for CUtlString::GetEmptyString()::s_emptyString
 b guard variable for CShaderAPIEmpty::GetFlashlightState(VMatrix&) const::blah
 b guard variable for CShaderAPIEmpty::GetFlashlightStateEx(VMatrix&, ITexture**) const::blah
 b guard variable for CShaderAPIEmpty::GetToneMappingScaleLinear() const::dummy
@@ -387,18 +422,28 @@ b guard variable for CShaderAPIEmpty::GetLight(int) const::blah
 t FastToLower(char)
 b vec2_origin
 b vec2_origin
+b vec2_origin
+b vec2_origin
 b vec4_origin
+b vec2_invalid
+b vec2_invalid
 b vec2_invalid
 b vec2_invalid
 b vec4_invalid
 b g_ShaderShadow
 d s_BackSlashMap
 b g_ShaderAPIEmpty
+r g_BasicHTMLEntities
 b s_ShaderDeviceEmpty
+r g_WhitespaceEntities
 t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
 t ShaderInterfaceFactory(char const*, int*)
 d s_ShaderDeviceMgrEmpty
+r g_Tier1_FullHTMLEntities
+r g_pszSimpleBBCodeReplacements
+d s_pConversionArrays_NoEscConversion
 b __g_CreateCShaderAPIEmptyIShaderAPI_reg
+d s_pConversionArrays_StringCharConversion
 t __CreateCShaderAPIEmptyIShaderAPI_interface()
 b __g_CreateCShaderDeviceEmptyIShaderDevice_reg
 b __g_CreateCShaderShadowEmptyIShaderShadow_reg
@@ -446,8 +491,98 @@ t CEmptyMesh::CEmptyMesh(bool)
 t CEmptyMesh::~CEmptyMesh()
 t CEmptyMesh::~CEmptyMesh()
 t CEmptyMesh::~CEmptyMesh()
+t CUtlBuffer::ParseToken(characterset_t*, char*, int, bool)
+t CUtlBuffer::ParseToken(char const*, char const*, char*, int)
+t CUtlBuffer::ConvertCRLF(CUtlBuffer&)
+t CUtlBuffer::GetOverflow(int)
+t CUtlBuffer::IsBigEndian()
+t CUtlBuffer::PutOverflow(int)
+t CUtlBuffer::AssumeMemory(void*, int, int, int)
+t CUtlBuffer::CheckPeekGet(int, int)
+t CUtlBuffer::SetBigEndian(bool)
+t CUtlBuffer::EatCPPComment()
+t CUtlBuffer::EatWhiteSpace()
+t CUtlBuffer::OnGetOverflow(int)
+t CUtlBuffer::OnPutOverflow(int)
+t CUtlBuffer::SetBufferType(bool, bool)
+t CUtlBuffer::EnsureCapacity(int)
+t CUtlBuffer::PeekLineLength()
+t CUtlBuffer::PeekWhiteSpace(int)
+t CUtlBuffer::PeekStringMatch(int, char const*, int)
+t CUtlBuffer::GetDelimitedChar(CUtlCharConversion*)
+t CUtlBuffer::PeekStringLength()
+t CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)
+t CUtlBuffer::SetOverflowFuncs(bool (CUtlBuffer::*)(int), bool (CUtlBuffer::*)(int))
+t CUtlBuffer::GetStringInternal(char*, unsigned int)
+t CUtlBuffer::SetExternalBuffer(void*, int, int, int)
+t CUtlBuffer::AddNullTermination()
+t CUtlBuffer::GetDelimitedString(CUtlCharConversion*, char*, int)
+t CUtlBuffer::PutDelimitedString(CUtlCharConversion*, char const*)
+t CUtlBuffer::ActivateByteSwapping(bool)
+t CUtlBuffer::CheckArbitraryPeekGet(int, int&)
+t CUtlBuffer::GetDelimitedCharInternal(CUtlCharConversion*)
+t CUtlBuffer::PeekDelimitedStringLength(CUtlCharConversion*, bool)
+t CUtlBuffer::Get(void*, int)
+t CUtlBuffer::Put(void const*, int)
+t CUtlBuffer::Swap(CUtlMemory<unsigned char, int>&)
+t CUtlBuffer::Swap(CUtlBuffer&)
+t CUtlBuffer::Scanf(char const*, ...)
+t CUtlBuffer::Printf(char const*, ...)
+t CUtlBuffer::GetLine(char*, int)
+t CUtlBuffer::GetUpTo(void*, int)
+t CUtlBuffer::PeekGet(int, int)
+t CUtlBuffer::SeekGet(CUtlBuffer::SeekType_t, int)
+t CUtlBuffer::SeekPut(CUtlBuffer::SeekType_t, int)
+t CUtlBuffer::VaScanf(char const*, char*)
+t CUtlBuffer::CheckGet(int)
+t CUtlBuffer::CheckPut(int)
+t CUtlBuffer::GetToken(char const*)
+t CUtlBuffer::VaPrintf(char const*, char*)
+t CUtlBuffer::PutString(char const*)
+t CUtlBuffer::CUtlBuffer(int, int, int)
+t CUtlBuffer::CUtlBuffer(void const*, int, int)
+t CUtlBuffer::CUtlBuffer(int, int, int)
+t CUtlBuffer::CUtlBuffer(void const*, int, int)
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.26]
+t CUtlMemory<unsigned char, int>::Grow(int)
+t CUtlMemory<unsigned char, int>::Purge()
 t CUtlMemory<char*, int>::Grow(int)
+t CUtlMemory<char const*, int>::Grow(int)
+t CUtlString::FixSlashes(char)
+t CUtlString::AllocMemory(unsigned int)
+t CUtlString::GetForModify()
+t CUtlString::GetEmptyString()
+t CUtlString::StripTrailingSlash()
+t CUtlString::Set(char const*)
+t CUtlString::Trim(char)
+t CUtlString::Trim(char const*)
+t CUtlString::Clear()
+t CUtlString::Purge()
+t CUtlString::Append(char const*)
+t CUtlString::Append(char const*, int)
+t CUtlString::Format(char const*, ...)
+t CUtlString::FormatV(char const*, char*)
+t CUtlString::ToLower()
+t CUtlString::ToUpper()
+t CUtlString::PathJoin(char const*, char const*)
+t CUtlString::TrimLeft(char)
+t CUtlString::TrimLeft(char const*)
+t CUtlString::SetDirect(char const*, int)
+t CUtlString::SetLength(int)
+t CUtlString::TrimRight(char)
+t CUtlString::TrimRight(char const*)
+t CUtlString::operator=(char const*)
+t CUtlString::operator=(CUtlString const&)
+t CUtlString::~CUtlString()
+t CUtlString::~CUtlString()
+t CUtlString::operator+=(char)
+t CUtlString::operator+=(double)
+t CUtlString::operator+=(int)
+t CUtlString::operator+=(char const*)
+t CUtlString::operator+=(CUtlString const&)
 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::InsertBefore(int, char const* const&)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::Remove(int)
 t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
 t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.1]
 t IIndexBuffer::~IIndexBuffer()
@@ -717,6 +852,10 @@ t CDllDemandLoader::CDllDemandLoader(char const*)
 t CDllDemandLoader::~CDllDemandLoader()
 t CDllDemandLoader::~CDllDemandLoader()
 t CDllDemandLoader::~CDllDemandLoader()
+t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
+t CUtlInplaceBuffer::InplaceGetLinePtr()
+t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
 t CShaderDeviceEmpty::RemoveView(void*)
 t CShaderDeviceEmpty::CompileShader(char const*, unsigned int, char const*)
 t CShaderDeviceEmpty::CreateStaticMesh(unsigned long long, char const*, IMaterial*)
@@ -804,6 +943,10 @@ t CShaderShadowEmpty::CShaderShadowEmpty()
 t CShaderShadowEmpty::~CShaderShadowEmpty()
 t CShaderShadowEmpty::~CShaderShadowEmpty()
 t CShaderShadowEmpty::~CShaderShadowEmpty()
+t CUtlCharConversion::FindConversion(char const*, int*)
+t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlNoEscConversion::FindConversion(char const*, int*)
 t CShaderDeviceMgrEmpty::Disconnect()
 t CShaderDeviceMgrEmpty::SetAdapter(int, int)
 t CShaderDeviceMgrEmpty::QueryInterface(char const*)
@@ -814,9 +957,15 @@ t CShaderDeviceMgrEmpty::Init()
 t CShaderDeviceMgrEmpty::Connect(void* (*)(char const*, int*))
 t CShaderDeviceMgrEmpty::SetMode(void*, int, ShaderDeviceInfo_t const&)
 t CShaderDeviceMgrEmpty::Shutdown()
+t CUtlCStringConversion::FindConversion(char const*, int*)
+t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
+t CUtlCStringConversion::CUtlCStringConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
 t IMesh::~IMesh()
 t IMesh::~IMesh()
 t IMesh::~IMesh()
+t CFmtStrN<256, false>::InitQuietTruncation()
+t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
+t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
 t operator new[](unsigned int)
 t operator new[](unsigned int, int, char const*, int)
 t CEmptyMesh::IndexCount() const
@@ -825,6 +974,27 @@ t CEmptyMesh::VertexCount() const
 t CEmptyMesh::GetVertexFormat() const
 t CEmptyMesh::GetRoomRemaining() const
 t CEmptyMesh::IsDynamic() const
+t CUtlString::GetExtension() const
+t CUtlString::StripFilename() const
+t CUtlString::MatchesPattern(CUtlString const&, int) const
+t CUtlString::StripExtension() const
+t CUtlString::GetBaseFilename() const
+t CUtlString::UnqualifiedFilename() const
+t CUtlString::IsEqual_CaseSensitive(char const*) const
+t CUtlString::IsEqual_CaseInsensitive(char const*) const
+t CUtlString::Get() const
+t CUtlString::Left(int) const
+t CUtlString::Right(int) const
+t CUtlString::Slice(int, int) const
+t CUtlString::AbsPath(char const*) const
+t CUtlString::DirName() const
+t CUtlString::Replace(char, char) const
+t CUtlString::Replace(char const*, char const*) const
+t CUtlString::operator==(CUtlString const&) const
+t CUtlString::operator[](int) const
+t CUtlString::operator+(int) const
+t CUtlString::operator+(char const*) const
+t CUtlString::operator+(CUtlString const&) const
 t IShaderAPI::SupportsNormalMapCompression() const
 t CShaderAPIEmpty::GetHDRType() const
 t CShaderAPIEmpty::IsDX10Card() const
@@ -947,6 +1117,12 @@ t CShaderDeviceEmpty::GetCurrentAdapter() const
 t CShaderDeviceEmpty::StencilBufferBits() const
 t CShaderDeviceEmpty::GetBackBufferFormat() const
 t CShaderDeviceEmpty::GetBackBufferDimensions(int&, int&) const
+t CUtlCharConversion::GetDelimiter() const
+t CUtlCharConversion::GetEscapeChar() const
+t CUtlCharConversion::GetDelimiterLength() const
+t CUtlCharConversion::GetConversionLength(char) const
+t CUtlCharConversion::GetConversionString(char) const
+t CUtlCharConversion::MaxConversionLength() const
 t CShaderDeviceMgrEmpty::GetModeInfo(ShaderDisplayMode_t*, int, int) const
 t CShaderDeviceMgrEmpty::GetModeCount(int) const
 t CShaderDeviceMgrEmpty::GetAdapterInfo(int, MaterialAdapterInfo_t&) const
@@ -955,6 +1131,7 @@ t CShaderDeviceMgrEmpty::GetCurrentModeInfo(ShaderDisplayMode_t*, int) const
 t IMaterialSystemHardwareConfig::SupportsNormalMapCompression() const
 t operator new(unsigned int)
 t operator new(unsigned int, int, char const*, int)
+U std::terminate()@@GLIBCXX_3.4
 t non-virtual thunk to CEmptyMesh::ModifyBegin(bool, int, int, IndexDesc_t&)
 t non-virtual thunk to CEmptyMesh::ValidateData(int, IndexDesc_t const&)
 t non-virtual thunk to CEmptyMesh::EndCastBuffer()
@@ -1065,10 +1242,14 @@ r typeinfo for IDebugTextureInfo
 r typeinfo for IShaderDynamicAPI
 r typeinfo for CShaderDeviceEmpty
 r typeinfo for CShaderShadowEmpty
+r typeinfo for CUtlCharConversion
+r typeinfo for CUtlNoEscConversion
 r typeinfo for CShaderDeviceMgrEmpty
+r typeinfo for CUtlCStringConversion
 r typeinfo for IHardwareConfigInternal
 r typeinfo for IMaterialSystemHardwareConfig
 r typeinfo for IMesh
+r typeinfo for CFmtStrN<256, false>
 r typeinfo name for CEmptyMesh
 r typeinfo name for IAppSystem
 r typeinfo name for IShaderAPI
@@ -1083,10 +1264,14 @@ r typeinfo name for IDebugTextureInfo
 r typeinfo name for IShaderDynamicAPI
 r typeinfo name for CShaderDeviceEmpty
 r typeinfo name for CShaderShadowEmpty
+r typeinfo name for CUtlCharConversion
+r typeinfo name for CUtlNoEscConversion
 r typeinfo name for CShaderDeviceMgrEmpty
+r typeinfo name for CUtlCStringConversion
 r typeinfo name for IHardwareConfigInternal
 r typeinfo name for IMaterialSystemHardwareConfig
 r typeinfo name for IMesh
+r typeinfo name for CFmtStrN<256, false>
 r vtable for CEmptyMesh
 r vtable for IShaderAPI
 r vtable for IIndexBuffer
@@ -1098,10 +1283,14 @@ r vtable for IDebugTextureInfo
 r vtable for IShaderDynamicAPI
 r vtable for CShaderDeviceEmpty
 r vtable for CShaderShadowEmpty
+r vtable for CUtlCharConversion
+r vtable for CUtlNoEscConversion
 r vtable for CShaderDeviceMgrEmpty
+r vtable for CUtlCStringConversion
 r vtable for IHardwareConfigInternal
 r vtable for IMaterialSystemHardwareConfig
 r vtable for IMesh
+r vtable for CFmtStrN<256, false>
 U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3
@@ -1109,7 +1298,10 @@ b V_pretifymem(float, int, bool)::output
 b V_pretifymem(float, int, bool)::current
 b V_pretifynum(long long)::output
 b V_pretifynum(long long)::current
+r V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)::HEX
 b CEmptyMesh::Lock(int, bool, IndexDesc_t&)::s_BogusIndex
+b CUtlString::GetEmptyString()::s_emptyString
+b CFmtStrN<256, false>::CFmtStrN(char const*, ...)::scAsserted
 b CShaderAPIEmpty::GetFlashlightState(VMatrix&) const::blah
 b CShaderAPIEmpty::GetFlashlightStateEx(VMatrix&, ITexture**) const::blah
 b CShaderAPIEmpty::GetToneMappingScaleLinear() const::dummy
