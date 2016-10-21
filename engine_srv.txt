@@ -4403,6 +4403,7 @@ b g_vox_lastsectorupdate
 b ice_sboxes_initialised
 b logaddress_add_command
 b logaddress_del_command
+b mod_offline_hdr_switch
 t OnChangeTelemetryLevel(IConVar*, char const*, float)
 t OnChangeTelemetryPause(IConVar*, char const*, float)
 b plugin_unpause_command

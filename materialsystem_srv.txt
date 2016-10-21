@@ -28,8 +28,8 @@ U cos@@GLIBC_2.0
 T CreateInterface
 U CreateSimpleThread
 U CreateThreadPool
-r CSWTCH.1076
-r CSWTCH.1114
+r CSWTCH.1078
+r CSWTCH.1116
 r CSWTCH.139
 r CSWTCH.141
 r CSWTCH.33
@@ -344,6 +344,7 @@ b mat_report_queue_status
 b mat_requires_rt_alloc_first
 b mat_spewalloc
 b mat_supportflashlight
+b mat_texture_reload_frame_swap_workaround
 b mat_texture_tracking
 b mat_tonemap_algorithm
 U mbstowcs@@GLIBC_2.0
@@ -2729,6 +2730,7 @@ t CMaterialSystem::RemoveMaterialSubRect(IMaterialInternal*)
 t CMaterialSystem::DebugPrintUsedTextures(CCommand const&)
 t CMaterialSystem::DebugPrintUsedTextures()
 t CMaterialSystem::FindProceduralMaterial(char const*, char const*, KeyValues*)
+t CMaterialSystem::ResumeTextureStreaming()
 t CMaterialSystem::ScanDirForReplacements(char const*)
 t CMaterialSystem::ToggleSuppressMaterial(char const*)
 t CMaterialSystem::UncacheUnusedMaterials(bool)
@@ -2742,6 +2744,7 @@ t CMaterialSystem::DebugPrintUsedMaterials(CCommand const&)
 t CMaterialSystem::GetMaterialProxyFactory()
 t CMaterialSystem::ReleaseStandardTextures()
 t CMaterialSystem::SetMaterialProxyFactory(IMaterialProxyFactory*)
+t CMaterialSystem::SuspendTextureStreaming()
 t CMaterialSystem::AllocateStandardTextures()
 t CMaterialSystem::AllocateStandardTextures() [clone .part.51]
 t CMaterialSystem::CreateMatQueueThreadPool()
@@ -3246,8 +3249,10 @@ t CTextureManager::ColorCorrectionTexture(int)
 t CTextureManager::DebugPrintUsedTextures()
 t CTextureManager::ReleaseAsyncScratchVTF(IVTFTexture*)
 t CTextureManager::ReleaseReadbackTexture(ITextureInternal*)
+t CTextureManager::ResumeTextureStreaming()
 t CTextureManager::UpdateExcludedTextures()
 t CTextureManager::CreateProceduralTexture(char const*, char const*, int, int, int, ImageFormat, int, ITextureRegenerator*)
+t CTextureManager::SuspendTextureStreaming()
 t CTextureManager::CreateRenderTargetTexture(char const*, int, int, RenderTargetSizeMode_t, ImageFormat, RenderTargetType_t, unsigned int, unsigned int)
 t CTextureManager::FreeStandardRenderTargets()
 t CTextureManager::SetColorCorrectionTexture(int, ITextureInternal*)
@@ -3935,6 +3940,7 @@ t CDummyMaterialSystem::FindProceduralMaterial(char const*, char const*, KeyValu
 t CDummyMaterialSystem::GetDynamicVertexBuffer(bool)
 t CDummyMaterialSystem::GetDynamicVertexBuffer(int, unsigned long long, bool)
 t CDummyMaterialSystem::GetMaxVerticesToRender(IMaterial*)
+t CDummyMaterialSystem::ResumeTextureStreaming()
 t CDummyMaterialSystem::ToggleSuppressMaterial(char const*)
 t CDummyMaterialSystem::UncacheUnusedMaterials(bool)
 t CDummyMaterialSystem::UpdateExcludedTextures()
@@ -3949,6 +3955,7 @@ t CDummyMaterialSystem::SetGoalToneMappingScale(float)
 t CDummyMaterialSystem::SetMaterialProxyFactory(IMaterialProxyFactory*)
 t CDummyMaterialSystem::SetStencilFailOperation(StencilOperation_t)
 t CDummyMaterialSystem::SetStencilPassOperation(StencilOperation_t)
+t CDummyMaterialSystem::SuspendTextureStreaming()
 t CDummyMaterialSystem::CreateStaticVertexBuffer(unsigned long long, int, char const*)
 t CDummyMaterialSystem::DrawScreenSpaceRectangle(IMaterial*, int, int, int, int, float, float, float, float, int, int, void*, int, int)
 t CDummyMaterialSystem::EnableNonInteractiveMode(MaterialNonInteractiveMode_t)
