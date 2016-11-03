@@ -4211,6 +4211,7 @@ d s_pBoxFaceIndices
 b stuffcmds_command
 b sv_maxuptimelimit
 b sv_minuptimelimit
+t sv_ShutDownCancel()
 t tv_name_changed_f(IConVar*, char const*, float)
 b tv_overridemaster
 b tv_record_command
@@ -4266,6 +4267,7 @@ b sv_max_queries_sec
 b sv_redirect_buffer
 b sv_setsteamaccount
 t sv_setsteamgroup_f(IConVar*, char const*, float)
+b sv_shutdown_cancel
 b tv_clients_command
 t tv_title_changed_f(IConVar*, char const*, float)
 b unbind_mac_command
