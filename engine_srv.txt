@@ -7767,7 +7767,7 @@ t CBaseClientState::FileRequested(char const*, unsigned int)
 t CBaseClientState::GetClientName()
 t CBaseClientState::SendStringCmd(char const*)
 t CBaseClientState::CheckForResend()
-t CBaseClientState::CheckForResend() [clone .part.26]
+t CBaseClientState::CheckForResend() [clone .part.27]
 t CBaseClientState::GetClientClass(int)
 t CBaseClientState::ProcessSetView(SVC_SetView*)
 t CBaseClientState::SetSignonState(int, int)
