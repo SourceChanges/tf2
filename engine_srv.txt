@@ -1174,6 +1174,7 @@ b sv_stressbots
 b sv_tags
 b sv_use_steam_voice
 b sv_visiblemaxplayers
+b sv_voicecodec
 U swprintf@@GLIBC_2.2
 U symlink@@GLIBC_2.0
 U tanf@@GLIBC_2.0
