@@ -414,6 +414,7 @@ t _GLOBAL__sub_I_sv_maxupdaterate
 t _GLOBAL__sub_I_sv_namechange_cooldown_seconds
 t _GLOBAL__sub_I_sv_shutdown_timeout_minutes
 t _GLOBAL__sub_I_sv_steamblockingcheck
+t _GLOBAL__sub_I_sv_use_steam_voice
 t _GLOBAL__sub_I_toolframework
 t _GLOBAL__sub_I_tv_snapshotrate
 t _GLOBAL__sub_I_voiceserver_impl.cpp
@@ -503,7 +504,6 @@ t _GLOBAL__sub_I__ZN9ILocalize20ConvertANSIToUnicodeEPKcPwi
 t _GLOBAL__sub_I__ZN9KeyValues22s_pfGetSymbolForStringE
 t _GLOBAL__sub_I__ZNK10CModelInfo13GetModelIndexEPKc
 t _GLOBAL__sub_I__ZNK11studiohdr_t9pAnimdescEi
-t _GLOBAL__sub_I__ZNK13CLC_VoiceData8ToStringEv
 b g_Log
 b g_LostVideoMemory
 b g_MainViewForward
@@ -1174,7 +1174,6 @@ b sv_stressbots
 b sv_tags
 b sv_use_steam_voice
 b sv_visiblemaxplayers
-b sv_voicecodec
 U swprintf@@GLIBC_2.2
 U symlink@@GLIBC_2.0
 U tanf@@GLIBC_2.0
@@ -3957,6 +3956,7 @@ t sv_netspike_f(CCommand const&)
 t SV_PackEntity(int, edict_t*, ServerClass*, CFrameSnapshot*)
 b sv_redirected
 b sv_redirectto
+b sv_voicecodec
 b texgammatable
 b tv_deltacache
 b tv_maxclients
@@ -6263,7 +6263,7 @@ t CTSListBase::~CTSListBase()
 t CTSListBase::~CTSListBase()
 t CVProfScope::~CVProfScope()
 t CVProfScope::~CVProfScope()
-t CVProfScope::~CVProfScope() [clone .constprop.77]
+t CVProfScope::~CVProfScope() [clone .constprop.78]
 t FourVectors::RotateManyBy(FourVectors*, unsigned int, matrix3x4_t const&)
 t IDemoPlayer::~IDemoPlayer()
 t IDemoPlayer::~IDemoPlayer()

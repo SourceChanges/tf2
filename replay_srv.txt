@@ -566,6 +566,7 @@ t _GLOBAL__sub_I_replay_publish_simulate_delay_ftp
 t _GLOBAL__sub_I_replay_publish_simulate_delay_local_http
 t _GLOBAL__sub_I_s_bMathlibInitialized
 t _GLOBAL__sub_I_s_StringCharConversion
+t _GLOBAL__sub_I_sv_use_steam_voice
 t _GLOBAL__sub_I__Z16PrintSessionInfoPKc
 t _GLOBAL__sub_I__Z26InternalBitBufErrorHandler15BitBufErrorTypePKc
 t _GLOBAL__sub_I__Z27OnFileserverHostnameChangedP7IConVarPKcf
@@ -596,7 +597,6 @@ t _GLOBAL__sub_I__ZN35CServerRecordingSessionBlockManagerC2EP14IReplayContext
 t _GLOBAL__sub_I__ZN8CBaseJobC2E13JobPriority_tP7ISpewer
 t _GLOBAL__sub_I__ZN9ILocalize20ConvertANSIToUnicodeEPKcPwi
 t _GLOBAL__sub_I__ZN9KeyValues22s_pfGetSymbolForStringE
-t _GLOBAL__sub_I__ZNK13CLC_VoiceData8ToStringEv
 w __gmon_start__
 d g_MostCommonPathIDs
 d g_MostCommonPrefixes
@@ -1014,6 +1014,7 @@ U __strtoul_internal@@GLIBC_2.0
 U strtoull@@GLIBC_2.0
 t suboption
 b subs.7497
+b sv_use_steam_voice
 U swprintf@@GLIBC_2.2
 U symlink@@GLIBC_2.0
 t T.120
@@ -1987,7 +1988,7 @@ t CReplayTime::CReplayTime()
 t CReplayTime::CReplayTime()
 t CVProfScope::~CVProfScope()
 t CVProfScope::~CVProfScope()
-t CVProfScope::~CVProfScope() [clone .constprop.77]
+t CVProfScope::~CVProfScope() [clone .constprop.78]
 t FourVectors::RotateManyBy(FourVectors*, unsigned int, matrix3x4_t const&)
 t ICompressor::~ICompressor()
 t ICompressor::~ICompressor()
