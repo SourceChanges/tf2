@@ -1,8 +1,8 @@
 U abort@@GLIBC_2.0
 t add_fdes
-d adds.7496
-t base_from_cb_data
-t base_from_object
+d adds.8776
+t base_from_cb_data.isra.4
+t base_from_object.isra.3
 A __bss_start
 t _calloc_dbg
 t _calloc_dbg_impl
@@ -10,10 +10,11 @@ U chdir@@GLIBC_2.0
 t classify_object_over_fdes
 b colorcorrection
 U CommandLine_Tier0
-b completed.5793
+b completed.6767
 T CreateInterface
-d __CTOR_END__
-d __CTOR_LIST__
+U __ctype_b_loc@@GLIBC_2.3
+U __ctype_tolower_loc@@GLIBC_2.3
+U __ctype_toupper_loc@@GLIBC_2.3
 B cvar
 U __cxa_atexit@@GLIBC_2.1.3
 U __cxa_call_unexpected@@CXXABI_1.3
@@ -26,6 +27,7 @@ b datacachesize
 t __deregister_frame
 t __deregister_frame_info
 t __deregister_frame_info_bases
+t deregister_tm_clones
 b developer
 U DevMsg
 U dlclose@@GLIBC_2.0
@@ -33,12 +35,9 @@ U dlerror@@GLIBC_2.0
 U dl_iterate_phdr@@GLIBC_2.2.4
 U dlopen@@GLIBC_2.1
 U dlsym@@GLIBC_2.0
-t __do_global_ctors_aux
 t __do_global_dtors_aux
+t __do_global_dtors_aux_fini_array_entry
 d __dso_handle
-d __DTOR_END__
-b dtor_idx.5795
-d __DTOR_LIST__
 b dwarf_reg_size_table
 a _DYNAMIC
 U __dynamic_cast@@CXXABI_1.3
@@ -54,6 +53,7 @@ t fde_unencoded_compare
 T _fini
 t frame_downheap
 t frame_dummy
+t __frame_dummy_init_array_entry
 r __FRAME_END__
 b frame_hdr_cache
 b frame_hdr_cache_head
@@ -67,7 +67,6 @@ b g_AsyncInfoMapMutex
 b g_DataCache
 t get_cie_encoding
 U getcwd@@GLIBC_2.0
-t get_fde_encoding
 a _GLOBAL_OFFSET_TABLE_
 t _GLOBAL__sub_I_cvar
 t _GLOBAL__sub_I_g_DataCache
@@ -119,82 +118,121 @@ b g_VBAllocTracker
 U g_VProfCurrentProfile
 U __gxx_personality_v0@@CXXABI_1.3
 U HushAsserts
-t __i686.get_pc_thunk.bx
-t __i686.get_pc_thunk.cx
 U iconv_close@@GLIBC_2.1
 U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
 T _init
 t init_dwarf_reg_size_table
-U isalnum@@GLIBC_2.0
-U iscntrl@@GLIBC_2.0
-U isprint@@GLIBC_2.0
 U isspace@@GLIBC_2.0
-U isupper@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 d __JCR_END__
 d __JCR_LIST__
 w _Jv_RegisterClasses
-t .L17
+t .L122
 t .L19
-t .L20
-t .L214
-t .L215
-t .L216
-t .L217
-t .L218
-t .L219
-t .L220
-t .L221
-t .L222
+t .L191
+t .L192
+t .L195
+t .L196
+t .L197
+t .L198
+t .L21
+t .L22
 t .L223
-t .L224
-t .L225
 t .L226
 t .L227
-t .L228
-t .L229
 t .L23
 t .L230
+t .L231
+t .L232
+t .L233
 t .L24
-t .L244
 t .L25
 t .L26
-t .L271
-t .L272
-t .L273
-t .L274
-t .L275
+t .L27
+t .L28
+t .L29
+t .L30
+t .L31
+t .L32
+t .L325
+t .L328
+t .L329
+t .L33
+t .L330
+t .L331
+t .L332
+t .L334
+t .L336
+t .L337
+t .L338
+t .L339
+t .L34
+t .L340
+t .L341
+t .L342
+t .L343
+t .L344
+t .L345
+t .L346
+t .L347
+t .L348
+t .L349
+t .L35
+t .L350
+t .L351
+t .L352
+t .L354
+t .L36
+t .L367
+t .L368
+t .L37
+t .L371
+t .L372
+t .L373
+t .L374
+t .L38
+t .L39
+t .L40
+t .L41
+t .L415
+t .L417
+t .L418
+t .L419
+t .L42
+t .L420
+t .L421
+t .L422
+t .L423
+t .L424
+t .L425
+t .L426
+t .L427
+t .L428
+t .L429
 t .L43
-t .L45
-t .L46
-t .L47
-t .L47
-t .L48
-t .L48
-t .L49
-t .L50
-t .L51
-t .L51
-t .L52
-t .L52
-t .L53
-t .L53
-t .L54
-t .L54
-t .L55
+t .L430
+t .L431
+t .L432
+t .L44
+t .L440
+t .L523
+t .L524
+t .L526
+t .L527
+t .L528
+t .L529
 t .L56
 t .L57
-t .L58
-t .L59
 t .L60
+t .L61
 t .L61
 t .L62
 t .L63
 t .L64
 t .L65
-t .L66
-t .L67
 t .L68
 t .L69
 t .L70
@@ -202,11 +240,12 @@ t .L71
 t linear_search_fdes
 t _malloc_dbg
 U malloc@@GLIBC_2.0
-b marker.7234
+b marker.8514
 b materials
 U mbstowcs@@GLIBC_2.0
 b mdlcache
 b mdllib
+U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
@@ -214,15 +253,15 @@ U Msg
 t _msize_dbg
 t _nh_malloc_dbg
 b object_mutex
-b once_regsizes.7669
+b once_regsizes.8974
 b p4
 U Plat_FloatTime
 U Plat_IsInDebugSession
 U Plat_localtime
 U Plat_MSTime
-U pow@@GLIBC_2.0
-U printf@@GLIBC_2.0
-w pthread_cancel@@GLIBC_2.0
+U __pow_finite@@GLIBC_2.15
+U __printf_chk@@GLIBC_2.3.4
+w __pthread_key_create@@GLIBC_2.0
 U pthread_mutexattr_init@@GLIBC_2.0
 U pthread_mutexattr_settype@@GLIBC_2.1
 U pthread_mutex_destroy@@GLIBC_2.0
@@ -232,12 +271,9 @@ U pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
 t qsort_s
 U raise@@GLIBC_2.0
-t read_encoded_value
 t read_encoded_value_with_base
 t read_sleb128
 t read_sleb128
-t read_uleb128
-t read_uleb128
 t _realloc_dbg
 t __register_frame
 t __register_frame_info
@@ -245,12 +281,14 @@ t __register_frame_info_bases
 t __register_frame_info_table
 t __register_frame_info_table_bases
 t __register_frame_table
+t register_tm_clones
 t search_object
 b seen_objects
 t set_fast_math
 t size_of_encoded_value
 b s_NoEscConversion
 b s_StringCharConversion
+U __stack_chk_fail@@GLIBC_2.4
 U strcasecmp@@GLIBC_2.0
 U strchr@@GLIBC_2.0
 U strcmp@@GLIBC_2.0
@@ -267,8 +305,8 @@ U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
 U strtoull@@GLIBC_2.0
 b studiorender
-b subs.7497
-b terminator.7340
+b subs.8777
+b terminator.8620
 U ThreadGetCurrentId
 U ThreadInMainThread
 U ThreadInterlockedAssignIf
@@ -279,6 +317,7 @@ U ThreadInterlockedExchangeAdd
 U ThreadInterlockedIncrement
 U ThreadSleep
 U time@@GLIBC_2.0
+d __TMC_END__
 U tolower@@GLIBC_2.0
 U toupper@@GLIBC_2.0
 U towlower@@GLIBC_2.0
@@ -307,19 +346,20 @@ t _Unwind_Resume
 t _Unwind_Resume_or_Rethrow
 t _Unwind_SetGR
 t _Unwind_SetIP
-t _Unwind_SetSpColumn
 t uw_frame_state_for
 t uw_init_context_1
 t uw_install_context_1
 t uw_update_context
 t uw_update_context_1
-U vsnprintf@@GLIBC_2.0
-U vswprintf@@GLIBC_2.2
+U __vsnprintf_chk@@GLIBC_2.3.4
+U __vswprintf_chk@@GLIBC_2.4
 U Warning
 U wcslen@@GLIBC_2.0
 U wcsncat@@GLIBC_2.0
 U wcsncpy@@GLIBC_2.0
 U wcstombs@@GLIBC_2.0
+t __x86.get_pc_thunk.bx
+t __x86.get_pc_thunk.cx
 U DevWarning(char const*, ...)
 t HashString(char const*)
 t V_FileBase(char const*, char*, int)
@@ -331,6 +371,7 @@ t V_strnistr(char const*, char const*, int)
 t _V_strrchr(char const*, int, char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
+t V_StrSlice(char const*, int, int, char*, int) [clone .part.7]
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
 t V_strtoi64(char const*, char**, int)
 t V_strtowcs(char const*, int, wchar_t*, int)
@@ -458,6 +499,7 @@ t V_StripFilename(char*)
 t GenerateFullPath(char const*, char const*, char*, int)
 t Q_IsValidUChar32(wchar_t)
 t Q_UChar32ToUTF16(wchar_t, unsigned short*)
+t Q_UChar32ToUTF16(wchar_t, unsigned short*) [clone .part.5]
 t Q_UnicodeAdvance(char*, int)
 t Q_UnicodeAdvance(unsigned short*, int)
 t Q_UnicodeAdvance(wchar_t*, int)
@@ -484,6 +526,7 @@ t CreateX360Filename(char const*, char*, int)
 t GetModSubdirectory(char const*, char*, int)
 t HashStringCaseless(char const*)
 t Q_UChar32ToUTF8Len(wchar_t)
+t Q_UChar32ToUTF8Len(wchar_t) [clone .part.2]
 t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
 t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
 t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
@@ -497,7 +540,9 @@ t V_MakeRelativePath(char const*, char const*, char*, int)
 t V_RemoveDotSlashes(char*, char, bool)
 t Q_UChar32ToUTF16Len(wchar_t)
 t Q_URLDecodeInternal(char*, int, char const*, int, bool)
+t Q_URLDecodeInternal(char*, int, char const*, int, bool) [clone .part.10]
 t Q_URLEncodeInternal(char*, int, char const*, int, bool)
+t Q_URLEncodeInternal(char*, int, char const*, int, bool) [clone .part.9]
 t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
 t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
 t V_IsMeanUnderscoreW(wchar_t)
@@ -534,6 +579,7 @@ t V_StripSurroundingQuotes(char*)
 t ComputeModContentFilename(char const*, char*, unsigned int)
 t GetModContentSubdirectory(char const*, char*, int)
 t Q_RemoveAllEvilCharacters(char*)
+t ThreadInterlockedExchange(unsigned int volatile*, unsigned int)
 t V_StripTrailingWhitespace(char*)
 t V_StripAndPreserveHTMLCore(CUtlBuffer*, char const*, char const**, unsigned int, char const**, unsigned int, unsigned int)
 t Sys_RunningWithDebugModules()
@@ -544,7 +590,6 @@ t HashStringCaselessConventional(char const*)
 t StringAfterPrefixCaseSensitive(char const*, char const*)
 t V_AddBackSlashesToSpecialChars(char const*)
 t CaselessStringLessThanIgnoreSlashes(char const* const&, char const* const&)
-t Studio_ConvertStudioHdrToNewVersion(studiohdr_t*)
 t Q_StripPrecedingAndTrailingWhitespace(char*)
 t Q_StripPrecedingAndTrailingWhitespaceW(wchar_t*)
 t Q_AggressiveStripPrecedingAndTrailingWhitespace(char*)
@@ -559,7 +604,6 @@ t V_atof(char const*)
 t V_atoi(char const*)
 t HashInt(int)
 t V_atoi64(char const*)
-t V_memcpy(void*, void const*, int)
 t V_nibble(char)
 t V_strupr(char*)
 t HashBlock(void const*, unsigned int)
@@ -567,7 +611,6 @@ t nexttoken(char*, char const*, char)
 t V_atoui64(char const*)
 t _V_memcmp(char const*, int, void const*, void const*, int)
 t _V_memcpy(char const*, int, void*, void const*, int)
-t V_memmove(void*, void const*, int)
 t _V_memset(char const*, int, void*, int, int)
 t V_qsort_s(void*, unsigned int, unsigned int, int (*)(void*, void const*, void const*), void*)
 t _V_strcmp(char const*, int, char const*, char const*)
@@ -724,6 +767,7 @@ b g_ModelLookup
 b mod_forcedata
 b s_bRegistered
 b s_EmptyConVar
+t CopyToMaxChars(char*, int, char const*, int) [clone .part.0]
 b mod_trace_load
 d s_BackSlashMap
 r g_nRandomValues
@@ -741,7 +785,7 @@ b g_CleanupSymbolTable
 r g_WhitespaceEntities
 b mod_load_anims_async
 b mod_lock_mdls_on_load
-t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
+t StripWhitespaceWorker(int, wchar_t*, bool*, bool) [clone .constprop.29]
 t MdlcacheCreateCallback(char const*, char const*, char const*, void*)
 b mod_test_not_available
 b mod_load_vcollide_async
@@ -836,6 +880,7 @@ t CUtlBuffer::IsBigEndian()
 t CUtlBuffer::PutOverflow(int)
 t CUtlBuffer::AssumeMemory(void*, int, int, int)
 t CUtlBuffer::CheckPeekGet(int, int)
+t CUtlBuffer::CheckPeekGet(int, int) [clone .part.16]
 t CUtlBuffer::SetBigEndian(bool)
 t CUtlBuffer::EatCPPComment()
 t CUtlBuffer::EatWhiteSpace()
@@ -844,15 +889,18 @@ t CUtlBuffer::OnPutOverflow(int)
 t CUtlBuffer::SetBufferType(bool, bool)
 t CUtlBuffer::EnsureCapacity(int)
 t CUtlBuffer::PeekLineLength()
+t CUtlBuffer::PeekLineLength() [clone .part.21]
 t CUtlBuffer::PeekWhiteSpace(int)
 t CUtlBuffer::PeekStringMatch(int, char const*, int)
 t CUtlBuffer::GetDelimitedChar(CUtlCharConversion*)
 t CUtlBuffer::PeekStringLength()
+t CUtlBuffer::PeekStringLength() [clone .part.20]
 t CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)
 t CUtlBuffer::SetOverflowFuncs(bool (CUtlBuffer::*)(int), bool (CUtlBuffer::*)(int))
 t CUtlBuffer::GetStringInternal(char*, unsigned int)
 t CUtlBuffer::SetExternalBuffer(void*, int, int, int)
 t CUtlBuffer::AddNullTermination()
+t CUtlBuffer::AddNullTermination() [clone .part.23]
 t CUtlBuffer::GetDelimitedString(CUtlCharConversion*, char*, int)
 t CUtlBuffer::PutDelimitedString(CUtlCharConversion*, char const*)
 t CUtlBuffer::ActivateByteSwapping(bool)
@@ -880,52 +928,63 @@ t CUtlBuffer::CUtlBuffer(int, int, int)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
 t CUtlBuffer::CUtlBuffer(int, int, int)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
-t CUtlBuffer::~CUtlBuffer()
-t CUtlBuffer::~CUtlBuffer()
 t CUtlMemory<CUtlString, int>::Grow(int)
+t CUtlMemory<CUtlString, int>::Purge()
 t CUtlMemory<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, int>::Grow(int)
+t CUtlMemory<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, int>::Purge()
 t CUtlMemory<modellookup_t, int>::Grow(int)
+t CUtlMemory<modellookup_t, int>::Purge()
 t CUtlMemory<virtualgroup_t, int>::Grow(int)
+t CUtlMemory<virtualgroup_t, int>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int>::Purge()
 t CUtlMemory<virtualgeneric_t, int>::Grow(int)
+t CUtlMemory<virtualgeneric_t, int>::Purge()
 t CUtlMemory<virtualsequence_t, int>::Grow(int)
-t CUtlMemory<CUtlHashtableEntry<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t>, int>::~CUtlMemory()
-t CUtlMemory<CUtlHashtableEntry<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t>, int>::~CUtlMemory()
+t CUtlMemory<virtualsequence_t, int>::Purge()
+t CUtlMemory<CUtlHashtableEntry<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t>, int>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short>::Grow(int)
-t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.26]
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.25] [clone .constprop.32]
 t CUtlMemory<unsigned char, int>::Grow(int)
 t CUtlMemory<unsigned char, int>::Purge()
 t CUtlMemory<int, int>::Grow(int)
+t CUtlMemory<int, int>::Purge()
 t CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int>::Grow(int)
-t CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int>::~CUtlMemory()
-t CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int>::~CUtlMemory()
+t CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int>::Purge()
 t CUtlMemory<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::ListElem_t, int>::Grow(int)
-t CUtlMemory<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::ListElem_t, int>::~CUtlMemory()
-t CUtlMemory<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::ListElem_t, int>::~CUtlMemory()
+t CUtlMemory<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::ListElem_t, int>::Purge()
 t CUtlMemory<memhandle_t__*, int>::Grow(int)
+t CUtlMemory<memhandle_t__*, int>::Purge()
 t CUtlMemory<CDataCacheSection*, int>::Grow(int)
-t CUtlMemory<CDataCacheSection*, int>::~CUtlMemory()
-t CUtlMemory<CDataCacheSection*, int>::~CUtlMemory()
+t CUtlMemory<CDataCacheSection*, int>::Purge()
 t CUtlMemory<IMaterial*, int>::Grow(int)
+t CUtlMemory<IMaterial*, int>::Purge()
 t CUtlMemory<char*, int>::Grow(int)
+t CUtlMemory<char*, int>::Purge()
 t CUtlMemory<studiohdr_t const*, int>::Grow(int)
+t CUtlMemory<studiohdr_t const*, int>::Purge()
 t CUtlMemory<char const*, int>::Grow(int)
+t CUtlMemory<char const*, int>::Purge()
 t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::Grow(int)
-t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::~CUtlMemory()
-t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::~CUtlMemory()
+t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::Purge()
 t CUtlMemory<void*, int>::Grow(int)
+t CUtlMemory<void*, int>::Purge()
 t CUtlMemory<unsigned short, int>::Grow(int)
+t CUtlMemory<unsigned short, int>::Purge()
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RotateRight(unsigned short)
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
-t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Purge()
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Insert(CUtlSymbolTable::CStringPoolIndex const&)
-t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::NewNode()
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
 t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
@@ -933,7 +992,6 @@ t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<
 t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveRebalance(unsigned short)
 t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<int, int, unsigned short>::Node_t const&)
 t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
-t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::NewNode()
 t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
@@ -941,20 +999,22 @@ t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsign
 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveRebalance(unsigned short)
 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t const&)
 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
-t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::NewNode()
 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
+t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::~CUtlRBTree()
+t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::~CUtlRBTree()
 t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::RotateLeft(short)
 t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::RotateRight(short)
 t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::InsertRebalance(short)
 t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::Insert(CUtlMap<char const*, short, short>::Node_t const&)
-t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::NewNode()
 t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::RemoveAll()
+t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::~CUtlRBTree()
+t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::~CUtlRBTree()
 t CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::RotateLeft(int)
 t CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::RotateRight(int)
 t CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::InsertRebalance(int)
-t CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::Purge()
 t CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::Insert(memhandle_t__* const&)
-t CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::NewNode()
+t CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::~CUtlRBTree()
+t CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::~CUtlRBTree()
 t CUtlString::FixSlashes(char)
 t CUtlString::AllocMemory(unsigned int)
 t CUtlString::GetForModify()
@@ -1003,45 +1063,33 @@ t CUtlVector<virtualgroup_t, CUtlMemory<virtualgroup_t, int> >::RemoveAll()
 t CUtlVector<virtualgroup_t, CUtlMemory<virtualgroup_t, int> >::~CUtlVector()
 t CUtlVector<virtualgroup_t, CUtlMemory<virtualgroup_t, int> >::~CUtlVector()
 t CUtlVector<virtualgeneric_t, CUtlMemory<virtualgeneric_t, int> >::GrowVector(int)
+t CUtlVector<virtualgeneric_t, CUtlMemory<virtualgeneric_t, int> >::InsertBefore(int, virtualgeneric_t const&)
 t CUtlVector<virtualgeneric_t, CUtlMemory<virtualgeneric_t, int> >::ShiftElementsRight(int, int)
 t CUtlVector<virtualgeneric_t, CUtlMemory<virtualgeneric_t, int> >::~CUtlVector()
 t CUtlVector<virtualgeneric_t, CUtlMemory<virtualgeneric_t, int> >::~CUtlVector()
 t CUtlVector<virtualsequence_t, CUtlMemory<virtualsequence_t, int> >::GrowVector(int)
 t CUtlVector<virtualsequence_t, CUtlMemory<virtualsequence_t, int> >::ShiftElementsRight(int, int)
-t CUtlVector<virtualsequence_t, CUtlMemory<virtualsequence_t, int> >::~CUtlVector()
-t CUtlVector<virtualsequence_t, CUtlMemory<virtualsequence_t, int> >::~CUtlVector()
-t CUtlVector<int, CUtlMemory<int, int> >::EnsureCount(int) [clone .part.59]
-t CUtlVector<int, CUtlMemory<int, int> >::SetCount(int)
+t CUtlVector<int, CUtlMemory<int, int> >::GrowVector(int)
+t CUtlVector<int, CUtlMemory<int, int> >::ShiftElementsRight(int, int)
 t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
 t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
 t CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >::GrowVector(int)
 t CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >::ShiftElementsRight(int, int)
 t CUtlVector<memhandle_t__*, CUtlMemory<memhandle_t__*, int> >::InsertBefore(int, memhandle_t__* const&)
-t CUtlVector<memhandle_t__*, CUtlMemory<memhandle_t__*, int> >::~CUtlVector()
-t CUtlVector<memhandle_t__*, CUtlMemory<memhandle_t__*, int> >::~CUtlVector()
-t CUtlVector<CDataCacheSection*, CUtlMemory<CDataCacheSection*, int> >::InsertBefore(int, CDataCacheSection* const&)
-t CUtlVector<IMaterial*, CUtlMemory<IMaterial*, int> >::InsertBefore(int, IMaterial* const&)
 t CUtlVector<IMaterial*, CUtlMemory<IMaterial*, int> >::~CUtlVector()
 t CUtlVector<IMaterial*, CUtlMemory<IMaterial*, int> >::~CUtlVector()
 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
-t CUtlVector<studiohdr_t const*, CUtlMemory<studiohdr_t const*, int> >::SetCount(int)
-t CUtlVector<studiohdr_t const*, CUtlMemory<studiohdr_t const*, int> >::~CUtlVector()
-t CUtlVector<studiohdr_t const*, CUtlMemory<studiohdr_t const*, int> >::~CUtlVector()
-t CUtlVector<char const*, CUtlMemory<char const*, int> >::InsertBefore(int, char const* const&)
-t CUtlVector<char const*, CUtlMemory<char const*, int> >::Remove(int)
-t CUtlVector<CUtlSymbolTable::StringPool_t*, CUtlMemory<CUtlSymbolTable::StringPool_t*, int> >::InsertBefore(int, CUtlSymbolTable::StringPool_t* const&)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::ShiftElementsLeft(int, int)
 t CUtlVector<void*, CUtlMemory<void*, int> >::InsertBefore(int, void* const&)
 t CUtlVector<void*, CUtlMemory<void*, int> >::~CUtlVector()
 t CUtlVector<void*, CUtlMemory<void*, int> >::~CUtlVector()
+t CUtlVector<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, CUtlMemory<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, int> >::SetCount(int)
 t CUtlVector<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, CUtlMemory<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, int> >::RemoveAll()
 t CUtlVector<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, CUtlMemory<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, int> >::~CUtlVector()
 t CUtlVector<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, CUtlMemory<CUtlVector<CStudioHdr::CActivityToSequenceMapping::HashValueType, CUtlMemory<CStudioHdr::CActivityToSequenceMapping::HashValueType, int> >, int> >::~CUtlVector()
-t CUtlVector<unsigned short, CUtlMemory<unsigned short, int> >::SetCount(int)
 U CVProfNode::EnterScope()
 U CVProfNode::GetSubNode(char const*, int, char const*, int)
 U CVProfNode::ExitScope()
-t CVProfScope::~CVProfScope()
-t CVProfScope::~CVProfScope()
 t phyheader_s::GetBaseMap()
 d phyheader_s::m_DataMap
 t studiohdr_t::GetBaseMap()
@@ -1075,15 +1123,11 @@ t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
 t CRefCounted1<CFunctor, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
 U CThreadEvent::Set()
 U CThreadEvent::CThreadEvent(bool)
-t CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::CUtlHashFast()
-t CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::CUtlHashFast()
-t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
+t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&) [clone .constprop.15]
 t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.1]
 b InterfaceReg::s_pInterfaceRegs
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
-t ModelParts_t::~ModelParts_t()
-t ModelParts_t::~ModelParts_t()
 b studiodata_t::s_Allocator
 t studiohdr2_t::GetBaseMap()
 d studiohdr2_t::m_DataMap
@@ -1092,19 +1136,14 @@ t CMemoryPoolMT::~CMemoryPoolMT()
 U CThreadRWLock::UnlockWrite()
 U CThreadRWLock::WaitForRead()
 U CThreadRWLock::LockForWrite()
-t CTSSimpleList<CDataCacheSection::FrameLock_t>::~CTSSimpleList()
-t CTSSimpleList<CDataCacheSection::FrameLock_t>::~CTSSimpleList()
 t CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoInsertUnconstructed(unsigned int, bool)
 t CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::BumpEntry(unsigned int)
 t CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoRealloc(int)
 t CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::RemoveAll()
 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::CreateList()
 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::LinkBefore(unsigned short, unsigned short, unsigned short)
-t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::Alloc()
+t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::InsertBefore(unsigned short, unsigned short)
 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::Unlink(unsigned short, unsigned short)
-t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::LinkAfter(unsigned short, unsigned short, unsigned short)
-t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::CUtlMultiList(int, int)
-t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::CUtlMultiList(int, int)
 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::~CUtlMultiList()
 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::~CUtlMultiList()
 t mstudioanim_t::GetBaseMap()
@@ -1146,16 +1185,11 @@ t CUtlLinkedList<AsyncInfo_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_
 t CUtlLinkedList<AsyncInfo_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<AsyncInfo_t, int> > >::AllocInternal(bool)
 t CUtlLinkedList<AsyncInfo_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<AsyncInfo_t, int> > >::Unlink(int)
 t CUtlLinkedList<AsyncInfo_t, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<AsyncInfo_t, int> > >::RemoveAll()
-t CUtlLinkedList<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short> >::AllocInternal(bool)
-t CUtlLinkedList<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short> >::Unlink(unsigned short)
 t CUtlLinkedList<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlLinkedList<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int> > >::AllocInternal(bool)
+t CUtlLinkedList<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int> > >::Purge()
 t CUtlLinkedList<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int> > >::Unlink(int)
 t CUtlLinkedList<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int, true, int, CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int> > >::RemoveAll()
-t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::AllocInternal(bool)
-t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
-t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::~CUtlLinkedList()
-t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::~CUtlLinkedList()
 t CUtlMemoryPool::AddNewBlob()
 t CUtlMemoryPool::ReportLeaks()
 b CUtlMemoryPool::g_ReportFunc
@@ -1233,9 +1267,10 @@ t datamap_t* StudioByteSwap::DataMapInit<StudioByteSwap::swapcompactsurfaceheade
 t StudioByteSwap::UpdateIndex(void*, int*)
 t void StudioByteSwap::WriteBuffer<char>(unsigned char*, unsigned char*, int)
 t void StudioByteSwap::WriteBuffer<float>(unsigned char**, unsigned char**, int)
+t void StudioByteSwap::WriteBuffer<int>(unsigned char*, unsigned char*, int)
 t void StudioByteSwap::WriteBuffer<int>(unsigned char**, unsigned char**, int)
-t void StudioByteSwap::WriteBuffer<short>(unsigned char**, unsigned char**, int)
 t StudioByteSwap::ProcessField(void*, void*, typedescription_t*, void (*)(void*, void*, typedescription_t*))
+t void StudioByteSwap::WriteObjects<mstudioiklock_t>(unsigned char*, unsigned char*, int)
 t StudioByteSwap::ProcessFields(void*, datamap_t*, void (*)(void*, void*, typedescription_t*))
 t StudioByteSwap::ProcessFields(void*, void*, datamap_t*, void (*)(void*, void*, typedescription_t*))
 t StudioByteSwap::SourceIsNative(bool)
@@ -1281,8 +1316,6 @@ t virtualmodel_t::AppendAnimations(int, studiohdr_t const*)
 t virtualmodel_t::AppendAttachments(int, studiohdr_t const*)
 t virtualmodel_t::AppendPoseParameters(int, studiohdr_t const*)
 t virtualmodel_t::UpdateAutoplaySequences(studiohdr_t const*)
-t virtualmodel_t::~virtualmodel_t()
-t virtualmodel_t::~virtualmodel_t()
 t CTier1AppSystem<IDataCache, 0>::Disconnect()
 t CTier1AppSystem<IDataCache, 0>::Init()
 t CTier1AppSystem<IDataCache, 0>::Connect(void* (*)(char const*, int*))
@@ -1303,11 +1336,7 @@ t CTier3AppSystem<IDataCache, 0>::Disconnect()
 t CTier3AppSystem<IDataCache, 0>::Connect(void* (*)(char const*, int*))
 t CTier3AppSystem<IMDLCache, 0>::Disconnect()
 t CTier3AppSystem<IMDLCache, 0>::Connect(void* (*)(char const*, int*))
-t CUtlFixedMemory<UtlLinkedListElem_t<AsyncInfo_t, int> >::Grow(int)
-t CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int> >::Grow(int)
-t CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int> >::Purge() [clone .isra.47]
-t CUtlSymbolTable::CTree::~CTree()
-t CUtlSymbolTable::CTree::~CTree()
+t CUtlFixedMemory<UtlLinkedListElem_t<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*>, int> >::Purge() [clone .isra.42]
 t CUtlSymbolTable::AddString(char const*)
 t CUtlSymbolTable::RemoveAll()
 t CUtlSymbolTable::CUtlSymbolTable(int, int, bool)
@@ -1466,8 +1495,6 @@ t CModelLookupContext::CModelLookupContext(int, studiohdr_t const*)
 t CModelLookupContext::~CModelLookupContext()
 t CModelLookupContext::~CModelLookupContext()
 t CUtlConstStringBase<char>::Set(char const*)
-t CUtlFixedLinkedList<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*> >::~CUtlFixedLinkedList()
-t CUtlFixedLinkedList<CUtlHashFast<memhandle_t__*, CUtlHashFastNoHash>::HashFastData_t_<memhandle_t__*> >::~CUtlFixedLinkedList()
 t CUtlNoEscConversion::FindConversion(char const*, int*)
 t mstudioattachment_t::GetBaseMap()
 d mstudioattachment_t::m_DataMap
@@ -1625,8 +1652,8 @@ t ConVar::~ConVar()
 t CDefOps<int>::LessFunc(int const&, int const&)
 t CUtlMap<int, int, unsigned short>::~CUtlMap()
 t CUtlMap<int, int, unsigned short>::~CUtlMap()
-t CUtlMap<char const*, studiodata_t*, unsigned short>::~CUtlMap()
-t CUtlMap<char const*, studiodata_t*, unsigned short>::~CUtlMap()
+t Tm_Zone::~Tm_Zone()
+t Tm_Zone::~Tm_Zone()
 t CCommand::DefaultBreakSet()
 t CCommand::Reset()
 t CCommand::Tokenize(char const*, characterset_t*)
@@ -1640,18 +1667,9 @@ t CFmtStrN<256, false>::CFmtStrN(char const*, ...)
 t CFunctor::~CFunctor()
 t CFunctor::~CFunctor()
 t CFunctor::~CFunctor()
-t CUtlDict<studiodata_t*, unsigned short>::Purge()
-t CUtlDict<studiodata_t*, unsigned short>::CUtlDict(int, int, int)
-t CUtlDict<studiodata_t*, unsigned short>::CUtlDict(int, int, int)
-t CUtlDict<studiodata_t*, unsigned short>::~CUtlDict()
-t CUtlDict<studiodata_t*, unsigned short>::~CUtlDict()
+t CUtlDict<studiodata_t*, unsigned short>::RemoveAll()
 t CUtlDict<short, short>::Insert(char const*, short const&)
-t CUtlDict<short, short>::CUtlDict(int, int, int)
-t CUtlDict<short, short>::CUtlDict(int, int, int)
-t CUtlDict<short, short>::~CUtlDict()
-t CUtlDict<short, short>::~CUtlDict()
-t CUtlHash<CStudioHdr::CActivityToSequenceMapping::HashValueType, CStudioHdr::CActivityToSequenceMapping::HashValueType::HashFuncs, CStudioHdr::CActivityToSequenceMapping::HashValueType::HashFuncs>::CUtlHash(int, int, int, CStudioHdr::CActivityToSequenceMapping::HashValueType::HashFuncs, CStudioHdr::CActivityToSequenceMapping::HashValueType::HashFuncs)
-t CUtlHash<CStudioHdr::CActivityToSequenceMapping::HashValueType, CStudioHdr::CActivityToSequenceMapping::HashValueType::HashFuncs, CStudioHdr::CActivityToSequenceMapping::HashValueType::HashFuncs>::CUtlHash(int, int, int, CStudioHdr::CActivityToSequenceMapping::HashValueType::HashFuncs, CStudioHdr::CActivityToSequenceMapping::HashValueType::HashFuncs)
+t CUtlDict<short, short>::RemoveAll()
 t CBaseFile::ReadFile(CUtlBuffer&)
 t CBaseFile::ReadLines(CUtlStringList&, int)
 t CByteswap::SwapFieldToTargetEndian(void*, void*, typedescription_t*)
@@ -1690,6 +1708,7 @@ t CMDLCache::GetVertexData(unsigned short)
 t CMDLCache::LockStudioHdr(unsigned short)
 t CMDLCache::VerifyHeaders(studiohdr_t*)
 t CMDLCache::BreakFrameLock(bool, bool)
+t CMDLCache::BreakFrameLock(bool, bool) [clone .part.17]
 t CMDLCache::FreeAnimBlocks(unsigned short)
 t CMDLCache::InitStudioData(unsigned short)
 t CMDLCache::LoadVertexData(studiohdr_t*)
@@ -1720,7 +1739,7 @@ t CMDLCache::CreateThinVertexes(vertexFileHeader_t*, studiohdr_t const*, int*)
 t CMDLCache::FinishPendingLoads()
 t CMDLCache::GetActualModelName(unsigned short)
 t CMDLCache::NotifyFileUnloaded(unsigned short, char const*)
-t CMDLCache::NotifyFileUnloaded(unsigned short, char const*) [clone .part.128]
+t CMDLCache::NotifyFileUnloaded(unsigned short, char const*) [clone .part.113]
 t CMDLCache::ProcessDynamicLoad(ModelParts_t*)
 t CMDLCache::ShutdownStudioData(unsigned short)
 t CMDLCache::UnloadHardwareData(unsigned short, bool, bool)
@@ -1754,6 +1773,7 @@ t CMDLCache::FindMDL(char const*)
 t CMDLCache::Release(unsigned short)
 t CMDLCache::FreeData(MDLCacheDataType_t, void*)
 t CMDLCache::LoadData(char const*, char const*, void*, int, int, bool, FSAsyncControl_t__**)
+t CMDLCache::LoadData(char const*, char const*, void*, int, int, bool, FSAsyncControl_t__**) [clone .part.19]
 t CMDLCache::Shutdown()
 t CMDLCache::AllocData(MDLCacheDataType_t, int)
 t CMDLCache::BeginLock()
@@ -1771,6 +1791,7 @@ t ConVarRef::ConVarRef(char const*, bool)
 t ConVarRef::ConVarRef(IConVar*)
 t ConVarRef::ConVarRef(char const*)
 t ConVarRef::ConVarRef(char const*, bool)
+t CVProfile::ExitScope()
 t operator new[](unsigned int)
 t operator new[](unsigned int, int, char const*, int)
 t ConCommand::IsCommand() const
@@ -1787,9 +1808,12 @@ t CStudioHdr::GetNumIKAutoplayLocks() const
 t CStudioHdr::GetSharedPoseParameter(int, int) const
 t CStudioHdr::GetNumSeq() const
 t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<int, int, unsigned short>::Node_t const&) const
+t CUtlRBTree<CUtlMap<int, int, unsigned short>::Node_t, unsigned short, CUtlMap<int, int, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const
 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::NextInorder(unsigned short) const
+t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::FirstInorder() const
 t CUtlRBTree<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short, CUtlMap<char const*, studiodata_t*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, studiodata_t*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const
 t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::NextInorder(short) const
+t CUtlRBTree<CUtlMap<char const*, short, short>::Node_t, short, CUtlMap<char const*, short, short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<char const*, short, short>::Node_t, short>, short> >::Find(CUtlMap<char const*, short, short>::Node_t const&) const
 t CUtlRBTree<memhandle_t__*, int, bool (*)(memhandle_t__* const&, memhandle_t__* const&), CUtlMemory<UtlRBTreeNode_t<memhandle_t__*, int>, int> >::NextInorder(int) const
 t CUtlString::GetExtension() const
 t CUtlString::StripFilename() const
@@ -1831,13 +1855,14 @@ t studiohdr_t::GetNumIKAutoplayLocks() const
 t studiohdr_t::CountAutoplaySequences() const
 t studiohdr_t::GetSharedPoseParameter(int, int) const
 t studiohdr_t::SetActivityListVersion(int) const
+t studiohdr_t::pszName() const
 t studiohdr_t::pSeqdesc(int) const
 t studiohdr_t::FindModel(void**, char const*) const
 t studiohdr_t::GetNumSeq() const
 t studiohdr_t::pAnimdesc(int) const
 t CEmptyConVar::GetName() const
 t CEmptyConVar::IsFlagSet(int) const
-t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.57] [clone .constprop.59]
+t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.48] [clone .constprop.51]
 t ConCommandBase::GetHelpText() const
 t ConCommandBase::IsRegistered() const
 t ConCommandBase::GetDLLIdentifier() const
@@ -1874,13 +1899,10 @@ t ConVar::IsCommand() const
 t ConVar::IsFlagSet(int) const
 t CCommand::FindArgInt(char const*, int) const
 t CCommand::FindArg(char const*) const
-t CUtlDict<studiodata_t*, unsigned short>::Find(char const*) const
-t CUtlDict<short, short>::Find(char const*) const
 t ConVarRef::IsValid() const
 U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
 t operator new(unsigned int)
 t operator new(unsigned int, int, char const*, int)
-U std::terminate()@@GLIBCXX_3.4
 t non-virtual thunk to CMDLCache::GetItemName(unsigned int, void const*, char*, unsigned int)
 t non-virtual thunk to CMDLCache::HandleCacheNotification(DataCacheNotification_t const&)
 t non-virtual thunk to CEmptyConVar::SetValue(float)

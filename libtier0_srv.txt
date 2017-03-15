@@ -1,7 +1,7 @@
 U abort@@GLIBC_2.0
 U access@@GLIBC_2.0
 t add_fdes
-d adds.7496
+d adds.8776
 U alarm@@GLIBC_2.0
 T ApproximateProcessMemoryUsage
 T AreAllAssertsDisabled
@@ -11,8 +11,8 @@ T AssertValidStringPtr
 T _AssertValidWritePtr
 U backtrace@@GLIBC_2.1
 U backtrace_symbols@@GLIBC_2.1
-t base_from_cb_data
-t base_from_object
+t base_from_cb_data.isra.4
+t base_from_object.isra.3
 A __bss_start
 T BuildCmdLine
 T CallAssertFailedNotifyFunc
@@ -27,7 +27,7 @@ U closedir@@GLIBC_2.0
 U close@@GLIBC_2.0
 T ColorSpewMessage
 T CommandLine_Tier0
-b completed.5793
+b completed.6767
 T COM_TimestampedLog
 T ConColorMsg
 T ConDColorMsg
@@ -40,8 +40,6 @@ T ConWarning
 T CrackSmokingCompiler
 T CreateSimpleThread
 U ctime_r@@GLIBC_2.0
-d __CTOR_END__
-d __CTOR_LIST__
 U __cxa_allocate_exception@@CXXABI_1.3
 U __cxa_atexit@@GLIBC_2.1.3
 U __cxa_begin_catch@@CXXABI_1.3
@@ -61,6 +59,7 @@ T DefaultSpewFuncAbortOnAsserts
 t __deregister_frame
 t __deregister_frame_info
 t __deregister_frame_info_bases
+t deregister_tm_clones
 T DevLog
 T DevMsg
 T DevWarning
@@ -71,14 +70,11 @@ T DLog
 U dlopen@@GLIBC_2.1
 U dlsym@@GLIBC_2.0
 T DMsg
-t __do_global_ctors_aux
 t __do_global_dtors_aux
+t __do_global_dtors_aux_fini_array_entry
 T DoNewAssertDialog
 d __dso_handle
 T _DSpewMessage
-d __DTOR_END__
-b dtor_idx.5795
-d __DTOR_LIST__
 b dwarf_reg_size_table
 T DWarning
 a _DYNAMIC
@@ -104,13 +100,12 @@ U fflush@@GLIBC_2.0
 U fgetc@@GLIBC_2.0
 U fgets@@GLIBC_2.0
 T _fini
-t __fixunsdfdi
 U fopen64@@GLIBC_2.1
 U fopen@@GLIBC_2.1
-U fprintf@@GLIBC_2.0
-U fputs@@GLIBC_2.0
+U __fprintf_chk@@GLIBC_2.3.4
 t frame_downheap
 t frame_dummy
+t __frame_dummy_init_array_entry
 r __FRAME_END__
 b frame_hdr_cache
 b frame_hdr_cache_head
@@ -143,7 +138,6 @@ T GetCPUFrequencyResults
 T GetCPUInformation
 T GetCPUUsage
 U getenv@@GLIBC_2.0
-t get_fde_encoding
 T GetFileAndLineFromAddress
 U getloadavg@@GLIBC_2.2
 T GetMemoryInformation
@@ -159,10 +153,10 @@ b g_FileLen
 b g_iCurEvent
 d g_LastReadEvent
 a _GLOBAL_OFFSET_TABLE_
+t _GLOBAL__sub_I.00101_g_ClockSpeed
 t _GLOBAL__sub_I.00101_g_pMemAlloc
 t _GLOBAL__sub_I_CommandLine_Tier0
 t _GLOBAL__sub_I_DefaultSpewFunc
-t _GLOBAL__sub_I_g_ClockSpeed
 t _GLOBAL__sub_I_g_VProfSignalSpike
 t _GLOBAL__sub_I_ReportProgress
 t _GLOBAL__sub_I__Z18CreateSimpleThreadPFjPvES_Pmj
@@ -193,7 +187,6 @@ B g_VProfSignalSpike
 U __gxx_personality_v0@@CXXABI_1.3
 T HushAsserts
 t __i686.get_pc_thunk.bx
-t __i686.get_pc_thunk.cx
 T _init
 t init_dwarf_reg_size_table
 T InitPME
@@ -202,69 +195,114 @@ T Is64BitOS
 U isatty@@GLIBC_2.0
 U isspace@@GLIBC_2.0
 T IsSpewActive
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 d __JCR_END__
 d __JCR_LIST__
 w _Jv_RegisterClasses
-t .L17
+t .L122
 t .L19
-t .L20
-t .L214
-t .L215
-t .L216
-t .L217
-t .L218
-t .L219
-t .L220
-t .L221
-t .L222
+t .L191
+t .L192
+t .L195
+t .L196
+t .L197
+t .L198
+t .L21
+t .L22
 t .L223
-t .L224
-t .L225
 t .L226
 t .L227
-t .L228
-t .L229
 t .L23
 t .L230
+t .L231
+t .L232
+t .L233
 t .L24
-t .L244
 t .L25
 t .L26
-t .L271
-t .L272
-t .L273
-t .L274
-t .L275
+t .L27
+t .L28
+t .L29
+t .L30
+t .L31
+t .L32
+t .L325
+t .L328
+t .L329
+t .L33
+t .L330
+t .L331
+t .L332
+t .L334
+t .L336
+t .L337
+t .L338
+t .L339
+t .L34
+t .L340
+t .L341
+t .L342
+t .L343
+t .L344
+t .L345
+t .L346
+t .L347
+t .L348
+t .L349
+t .L35
+t .L350
+t .L351
+t .L352
+t .L354
+t .L36
+t .L367
+t .L368
+t .L37
+t .L371
+t .L372
+t .L373
+t .L374
+t .L38
+t .L39
+t .L40
+t .L41
+t .L415
+t .L417
+t .L418
+t .L419
+t .L42
+t .L420
+t .L421
+t .L422
+t .L423
+t .L424
+t .L425
+t .L426
+t .L427
+t .L428
+t .L429
 t .L43
-t .L45
-t .L46
-t .L47
-t .L47
-t .L48
-t .L48
-t .L49
-t .L50
-t .L51
-t .L51
-t .L52
-t .L52
-t .L53
-t .L53
-t .L54
-t .L54
-t .L55
+t .L430
+t .L431
+t .L432
+t .L44
+t .L440
+t .L523
+t .L524
+t .L526
+t .L527
+t .L528
+t .L529
 t .L56
 t .L57
-t .L58
-t .L59
 t .L60
+t .L61
 t .L61
 t .L62
 t .L63
 t .L64
 t .L65
-t .L66
-t .L67
 t .L68
 t .L69
 t .L70
@@ -283,9 +321,10 @@ U __lxstat@@GLIBC_2.0
 t _malloc_dbg
 U malloc@@GLIBC_2.0
 U malloc_usable_size@@GLIBC_2.0
-b marker.7234
+b marker.8514
 T MemAllocOOMError
 T MemAllocScratch
+U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
 T MemFreeScratch
 U memmove@@GLIBC_2.0
@@ -306,7 +345,7 @@ T NetMsg
 T NetWarning
 t _nh_malloc_dbg
 b object_mutex
-b once_regsizes.7669
+b once_regsizes.8974
 U open64@@GLIBC_2.2
 U opendir@@GLIBC_2.0
 U open@@GLIBC_2.0
@@ -341,10 +380,8 @@ T Plat_VerifyHardwareKeyDriver
 T Plat_VerifyHardwareKeyPrompt
 U popen@@GLIBC_2.1
 U __printf_chk@@GLIBC_2.3.4
-U printf@@GLIBC_2.0
 U pthread_attr_init@@GLIBC_2.1
 U pthread_attr_setstacksize@@GLIBC_2.1
-w pthread_cancel@@GLIBC_2.0
 U pthread_cond_destroy@@GLIBC_2.3.2
 U pthread_cond_init@@GLIBC_2.3.2
 U pthread_cond_signal@@GLIBC_2.3.2
@@ -354,6 +391,7 @@ U pthread_detach@@GLIBC_2.0
 U pthread_getschedparam@@GLIBC_2.0
 U pthread_getspecific@@GLIBC_2.0
 U pthread_join@@GLIBC_2.0
+w __pthread_key_create@@GLIBC_2.0
 U pthread_key_create@@GLIBC_2.0
 U pthread_key_delete@@GLIBC_2.0
 U pthread_kill@@GLIBC_2.0
@@ -374,14 +412,11 @@ U puts@@GLIBC_2.0
 U raise@@GLIBC_2.0
 U rand@@GLIBC_2.0
 U readdir@@GLIBC_2.0
-t read_encoded_value
 t read_encoded_value_with_base
 U read@@GLIBC_2.0
 U readlink@@GLIBC_2.0
 t read_sleb128
 t read_sleb128
-t read_uleb128
-t read_uleb128
 t _realloc_dbg
 U realloc@@GLIBC_2.0
 U realpath@@GLIBC_2.3
@@ -393,6 +428,7 @@ t __register_frame_info_bases
 t __register_frame_info_table
 t __register_frame_info_table_bases
 t __register_frame_table
+t register_tm_clones
 T ReleaseThreadHandle
 U rename@@GLIBC_2.0
 T ReportProgress
@@ -414,7 +450,7 @@ T ShouldUseNewAssertDialog
 T ShutdownPME
 U signal@@GLIBC_2.0
 t size_of_encoded_value
-U snprintf@@GLIBC_2.0
+U __snprintf_chk@@GLIBC_2.3.4
 T SpewActivate
 T _SpewInfo
 T _SpewMessage
@@ -422,6 +458,7 @@ T SpewOutputFunc
 U __sprintf_chk@@GLIBC_2.3.4
 U srand@@GLIBC_2.0
 U sscanf@@GLIBC_2.0
+U __stack_chk_fail@@GLIBC_2.4
 T StackToolsNotify_LoadedLibrary
 t stat
 t __stat
@@ -445,11 +482,11 @@ U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtol@@GLIBC_2.0
 U strtoll@@GLIBC_2.0
-b subs.7497
+b subs.8777
 U symlink@@GLIBC_2.0
 T TelemetrySetLevel
 T TelemetryTick
-b terminator.7340
+b terminator.8620
 T ThreadDetach
 T ThreadGetCurrentHandle
 T ThreadGetCurrentId
@@ -474,6 +511,7 @@ T ThreadSetPriority
 T ThreadSleep
 U time@@GLIBC_2.0
 U timegm@@GLIBC_2.0
+d __TMC_END__
 t tmCoreGetVersion
 t tmGetPlatformInformation
 t tmInitializeContext
@@ -509,7 +547,6 @@ t _Unwind_Resume
 t _Unwind_Resume_or_Rethrow
 t _Unwind_SetGR
 t _Unwind_SetIP
-t _Unwind_SetSpColumn
 U usleep@@GLIBC_2.0
 U utime@@GLIBC_2.0
 U utimes@@GLIBC_2.0
@@ -519,7 +556,7 @@ t uw_install_context_1
 t uw_update_context
 t uw_update_context_1
 T VoidFnPtrLookup_Tier0
-U vsnprintf@@GLIBC_2.0
+U __vsnprintf_chk@@GLIBC_2.3.4
 t V_tier0_stricmp
 T vtune
 T Warning
@@ -555,13 +592,14 @@ t __wrap_utimes
 t __wrap___xstat
 t __wrap___xstat64
 T WriteMiniDump
+t __x86.get_pc_thunk.bx
+t __x86.get_pc_thunk.cx
 U __xmknod@@GLIBC_2.0
 U __xstat64@@GLIBC_2.2
 U __xstat@@GLIBC_2.0
 T ConWarning(char const*, ...)
 T DevWarning(char const*, ...)
 T ConColorMsg(Color const&, char const*, ...)
-t void VCR_ReadVal<int>(int&)
 t CalcHeapUsed()
 t FindSpewGroup(char const*, int*)
 t VCR_Hook_Time(long*)
@@ -677,7 +715,6 @@ t VCR_Hook_recvfrom(int, char*, int, int, sockaddr*, int*)
 t AverageTimeCompare(TimeSums_t const&, TimeSums_t const&)
 b g_FakeBenchmarkTime
 t TelemetryInitialize()
-t VCR_RuntimeAssertFn(int, char const*)
 b s_DefaultOutputColor
 t VCR_Hook_PeekMessage(tagMSG*, void*, unsigned int, unsigned int, unsigned int)
 t VCR_Hook_RegCloseKey(void*)
@@ -702,7 +739,7 @@ b g_bThreadNameArrayChanged
 b s_nWatchDogTimerTimeScale
 b s_ThreadedLoadLibraryFunc
 b s_pWatchDogHandlerFunction
-t UpdateTelemetryThreadNames() [clone .part.19]
+t UpdateTelemetryThreadNames() [clone .part.20]
 t AverageTimeLessChildrenCompare(TimeSums_t const&, TimeSums_t const&)
 b g_Info
 b s_Line
@@ -730,8 +767,6 @@ T CVProfNode::MarkFrame()
 T CVProfNode::ResetPeak()
 T CVProfNode::~CVProfNode()
 T CVProfNode::~CVProfNode()
-t CTSListBase::CTSListBase()
-t CTSListBase::CTSListBase()
 t CTSListBase::~CTSListBase()
 t CTSListBase::~CTSListBase()
 b TSListTests::g_nThreads
@@ -778,14 +813,17 @@ t TSListTests::CQueueOps::Push(int)
 t TSListTests::CQueueOps::IsEmpty()
 t TSListTests::CQueueOps::Validate()
 t TSListTests::DecBucket(int)
+t TSListTests::DecBucket(int) [clone .part.3]
 d TSListTests::g_ListOps
 b TSListTests::g_nPushes
 b TSListTests::g_nTested
 t TSListTests::IncBucket(int)
+t TSListTests::IncBucket(int) [clone .part.2]
 t TSListTests::TestStart()
 t CCommandLine::AppendParm(char const*, char const*)
 t CCommandLine::RemoveParm(char const*)
 t CCommandLine::AddArgument(char const*, char const*)
+t CCommandLine::AddArgument(char const*, char const*) [clone .part.3]
 t CCommandLine::CleanUpParms()
 t CCommandLine::CreateCmdLine(int, char**)
 t CCommandLine::CreateCmdLine(char const*)
@@ -902,7 +940,6 @@ T CStackTop_ReferenceParentStack::CStackTop_ReferenceParentStack(void* const*, i
 T CStackTop_ReferenceParentStack::CStackTop_ReferenceParentStack(void* const*, int)
 T CStackTop_ReferenceParentStack::~CStackTop_ReferenceParentStack()
 T CStackTop_ReferenceParentStack::~CStackTop_ReferenceParentStack()
-t CWrap::~CWrap() [clone .constprop.2]
 T CThread::ThreadProc(void*)
 T CThread::GetThreadId()
 T CThread::SetPriority(int)
@@ -992,23 +1029,20 @@ t std::map<char const*, unsigned int, std::less<char const*>, std::allocator<std
 t std::map<char const*, unsigned int, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::~map()
 t std::list<ThreadHandle_t__*, std::allocator<ThreadHandle_t__*> >::~list()
 t std::list<ThreadHandle_t__*, std::allocator<ThreadHandle_t__*> >::~list()
-t void std::vector<TimeSums_t, std::allocator<TimeSums_t> >::_M_insert_aux<TimeSums_t const&>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, TimeSums_t const&)
+t void std::vector<TimeSums_t, std::allocator<TimeSums_t> >::_M_emplace_back_aux<TimeSums_t const&>(TimeSums_t const&)
+t void std::vector<TimeSums_t, std::allocator<TimeSums_t> >::_M_emplace_back_aux<TimeSums_t const&>(TimeSums_t const&)
 t std::vector<TimeSums_t, std::allocator<TimeSums_t> >::operator=(std::vector<TimeSums_t, std::allocator<TimeSums_t> > const&)
 t std::vector<TimeSums_t, std::allocator<TimeSums_t> >::~vector()
 t std::vector<TimeSums_t, std::allocator<TimeSums_t> >::~vector()
 U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
 U std::__detail::_List_node_base::_M_unhook()@@GLIBCXX_3.4.15
-t std::_Rb_tree_iterator<std::pair<CVProfNode* const, double> > std::_Rb_tree<CVProfNode*, std::pair<CVProfNode* const, double>, std::_Select1st<std::pair<CVProfNode* const, double> >, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::_M_insert_<std::pair<CVProfNode*, double> >(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, std::pair<CVProfNode*, double>&&)
 t std::pair<std::_Rb_tree_iterator<std::pair<CVProfNode* const, double> >, bool> std::_Rb_tree<CVProfNode*, std::pair<CVProfNode* const, double>, std::_Select1st<std::pair<CVProfNode* const, double> >, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::_M_insert_unique<std::pair<CVProfNode*, double> >(std::pair<CVProfNode*, double>&&)
 t std::_Rb_tree<CVProfNode*, std::pair<CVProfNode* const, double>, std::_Select1st<std::pair<CVProfNode* const, double> >, std::less<CVProfNode*>, std::allocator<std::pair<CVProfNode* const, double> > >::_M_erase(std::_Rb_tree_node<std::pair<CVProfNode* const, double> >*)
-t std::_Rb_tree_iterator<std::pair<char const* const, unsigned int> > std::_Rb_tree<char const*, std::pair<char const* const, unsigned int>, std::_Select1st<std::pair<char const* const, unsigned int> >, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::_M_insert_<std::pair<char const*, unsigned int> >(std::_Rb_tree_node_base const*, std::_Rb_tree_node_base const*, std::pair<char const*, unsigned int>&&)
 t std::pair<std::_Rb_tree_iterator<std::pair<char const* const, unsigned int> >, bool> std::_Rb_tree<char const*, std::pair<char const* const, unsigned int>, std::_Select1st<std::pair<char const* const, unsigned int> >, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::_M_insert_unique<std::pair<char const*, unsigned int> >(std::pair<char const*, unsigned int>&&)
 t std::_Rb_tree<char const*, std::pair<char const* const, unsigned int>, std::_Select1st<std::pair<char const* const, unsigned int> >, std::less<char const*>, std::allocator<std::pair<char const* const, unsigned int> > >::_M_erase(std::_Rb_tree_node<std::pair<char const* const, unsigned int> >*)
 T CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
 t operator new(unsigned int)
 t operator new(unsigned int, int, char const*, int)
-t void std::__pop_heap<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&))
-t void std::__push_heap<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, TimeSums_t, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, int, TimeSums_t, bool (*)(TimeSums_t const&, TimeSums_t const&))
 t void std::__adjust_heap<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, TimeSums_t, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, int, TimeSums_t, bool (*)(TimeSums_t const&, TimeSums_t const&))
 t void std::__insertion_sort<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&))
 t void std::__introsort_loop<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, int, bool (*)(TimeSums_t const&, TimeSums_t const&))
@@ -1017,7 +1051,6 @@ U std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
 t void std::__move_median_first<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&))
 t void std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&))
 U std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
-t void std::make_heap<__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&)>(__gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, __gnu_cxx::__normal_iterator<TimeSums_t*, std::vector<TimeSums_t, std::allocator<TimeSums_t> > >, bool (*)(TimeSums_t const&, TimeSums_t const&))
 r typeinfo for CCommandLine
 r typeinfo for CStdMemAlloc
 r typeinfo for ICommandLine
@@ -1084,6 +1117,6 @@ b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char 
 b CAutoLockT<CThreadFastMutex>::CAutoLockT(CThreadFastMutex&, char const*, char const*, int, unsigned long long)::tm_fmt
 b CAutoLockT<CThreadFastMutex>::~CAutoLockT()::tm_fmt
 r CThreadSpinRWLock::UnlockWrite()::newValue
-V CThreadSpinRWLock::TryLockForWrite(unsigned int)::oldValue
+u CThreadSpinRWLock::TryLockForWrite(unsigned int)::oldValue
 b CSharedLibraryCache::GetCache()::Singleton
 b CVProfile::FindOrCreateCounter(char const*, CounterGroup_t)::dummy

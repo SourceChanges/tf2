@@ -1,15 +1,15 @@
 U abort@@GLIBC_2.0
 U access@@GLIBC_2.0
-U acosf@@GLIBC_2.0
-U acos@@GLIBC_2.0
+U __acosf_finite@@GLIBC_2.15
+U __acos_finite@@GLIBC_2.15
 t add_fdes
-d adds.7496
-U asin@@GLIBC_2.0
-U atan2f@@GLIBC_2.0
-U atan2@@GLIBC_2.0
+d adds.8776
+U __asin_finite@@GLIBC_2.15
+U __atan2f_finite@@GLIBC_2.15
+U __atan2_finite@@GLIBC_2.15
 U atan@@GLIBC_2.0
-t base_from_cb_data
-t base_from_object
+t base_from_cb_data.isra.4
+t base_from_object.isra.3
 A __bss_start
 t _calloc_dbg
 t _calloc_dbg_impl
@@ -19,12 +19,13 @@ U chmod@@GLIBC_2.0
 U chown@@GLIBC_2.1
 t classify_object_over_fdes
 U closedir@@GLIBC_2.0
-b completed.5793
+b completed.6767
 U cosf@@GLIBC_2.0
 U cos@@GLIBC_2.0
 T CreateInterface
-d __CTOR_END__
-d __CTOR_LIST__
+U __ctype_b_loc@@GLIBC_2.3
+U __ctype_tolower_loc@@GLIBC_2.3
+U __ctype_toupper_loc@@GLIBC_2.3
 B cvar
 U __cxa_atexit@@GLIBC_2.1.3
 U __cxa_call_unexpected@@CXXABI_1.3
@@ -36,18 +37,16 @@ U __cxa_pure_virtual@@CXXABI_1.3
 t __deregister_frame
 t __deregister_frame_info
 t __deregister_frame_info_bases
+t deregister_tm_clones
 U DevMsg
 U dlclose@@GLIBC_2.0
 U dlerror@@GLIBC_2.0
 U dl_iterate_phdr@@GLIBC_2.2.4
 U dlopen@@GLIBC_2.1
 U dlsym@@GLIBC_2.0
-t __do_global_ctors_aux
 t __do_global_dtors_aux
+t __do_global_dtors_aux_fini_array_entry
 d __dso_handle
-d __DTOR_END__
-b dtor_idx.5795
-d __DTOR_LIST__
 b dwarf_reg_size_table
 a _DYNAMIC
 U __dynamic_cast@@CXXABI_1.3
@@ -59,7 +58,7 @@ t execute_cfa_program
 t execute_stack_op
 U exit@@GLIBC_2.0
 t _expand_dbg
-U exp@@GLIBC_2.0
+U __exp_finite@@GLIBC_2.15
 U fclose@@GLIBC_2.1
 t fde_mixed_encoding_compare
 t fde_single_encoding_compare
@@ -67,6 +66,7 @@ t fde_unencoded_compare
 U fflush@@GLIBC_2.0
 U fgets@@GLIBC_2.0
 T _fini
+U finite@@GLIBC_2.0
 U fopen64@@GLIBC_2.1
 U fopen@@GLIBC_2.1
 r Four_2ToThe21s
@@ -85,11 +85,11 @@ r Four_PointFives
 r Four_Threes
 r Four_Twos
 r Four_Zeros
-U fprintf@@GLIBC_2.0
-U fputc@@GLIBC_2.0
+U __fprintf_chk@@GLIBC_2.3.4
 U fputs@@GLIBC_2.0
 t frame_downheap
 t frame_dummy
+t __frame_dummy_init_array_entry
 r __FRAME_END__
 b frame_hdr_cache
 b frame_hdr_cache_head
@@ -98,13 +98,11 @@ t __frame_state_for
 t _free_dbg
 U free@@GLIBC_2.0
 U freopen@@GLIBC_2.0
-U fwrite@@GLIBC_2.0
 d g_EmptyCollisionListener
 t get_cie_encoding
 U GetCPUInformation
 U getcwd@@GLIBC_2.0
 U getenv@@GLIBC_2.0
-t get_fde_encoding
 b g_fDeferDeleteMindist
 d g_IVPToHLDir
 b global_friction_counter
@@ -179,18 +177,15 @@ U g_VProfCurrentProfile
 U __gxx_personality_v0@@CXXABI_1.3
 U HushAsserts
 t __i686.get_pc_thunk.bx
-t __i686.get_pc_thunk.cx
 U iconv_close@@GLIBC_2.1
 U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
 T _init
 t init_dwarf_reg_size_table
-U isalnum@@GLIBC_2.0
-U iscntrl@@GLIBC_2.0
-U isprint@@GLIBC_2.0
 U isspace@@GLIBC_2.0
-U isupper@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 b IVP_CLS
 b ivp_debug_indent
 b ivp_debugmanager
@@ -204,66 +199,109 @@ b ivp_mindist_settings
 d __JCR_END__
 d __JCR_LIST__
 w _Jv_RegisterClasses
-t .L17
+t .L122
 t .L19
-t .L20
-t .L214
-t .L215
-t .L216
-t .L217
-t .L218
-t .L219
-t .L220
-t .L221
-t .L222
+t .L191
+t .L192
+t .L195
+t .L196
+t .L197
+t .L198
+t .L21
+t .L22
 t .L223
-t .L224
-t .L225
 t .L226
 t .L227
-t .L228
-t .L229
 t .L23
 t .L230
+t .L231
+t .L232
+t .L233
 t .L24
-t .L244
 t .L25
 t .L26
-t .L271
-t .L272
-t .L273
-t .L274
-t .L275
+t .L27
+t .L28
+t .L29
+t .L30
+t .L31
+t .L32
+t .L325
+t .L328
+t .L329
+t .L33
+t .L330
+t .L331
+t .L332
+t .L334
+t .L336
+t .L337
+t .L338
+t .L339
+t .L34
+t .L340
+t .L341
+t .L342
+t .L343
+t .L344
+t .L345
+t .L346
+t .L347
+t .L348
+t .L349
+t .L35
+t .L350
+t .L351
+t .L352
+t .L354
+t .L36
+t .L367
+t .L368
+t .L37
+t .L371
+t .L372
+t .L373
+t .L374
+t .L38
+t .L39
+t .L40
+t .L41
+t .L415
+t .L417
+t .L418
+t .L419
+t .L42
+t .L420
+t .L421
+t .L422
+t .L423
+t .L424
+t .L425
+t .L426
+t .L427
+t .L428
+t .L429
 t .L43
-t .L45
-t .L46
-t .L47
-t .L47
-t .L48
-t .L48
-t .L49
-t .L50
-t .L51
-t .L51
-t .L52
-t .L52
-t .L53
-t .L53
-t .L54
-t .L54
-t .L55
+t .L430
+t .L431
+t .L432
+t .L44
+t .L440
+t .L523
+t .L524
+t .L526
+t .L527
+t .L528
+t .L529
 t .L56
 t .L57
-t .L58
-t .L59
 t .L60
+t .L61
 t .L61
 t .L62
 t .L63
 t .L64
 t .L65
-t .L66
-t .L67
 t .L68
 t .L69
 t .L70
@@ -274,19 +312,21 @@ b lineartolightmap
 b lineartovertex
 U link@@GLIBC_2.0
 U localtime@@GLIBC_2.0
-U log@@GLIBC_2.0
-U longjmp@@GLIBC_2.0
+U __log_finite@@GLIBC_2.15
+U __longjmp_chk@@GLIBC_2.11
 t lstat
 t __lstat
 U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
 t _malloc_dbg
 U malloc@@GLIBC_2.0
-b marker.7234
+b marker.8514
 R MAX_OBJECT_ROT_SPEED
 U mbstowcs@@GLIBC_2.0
+U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
+U __memset_chk@@GLIBC_2.3.4
 U memset@@GLIBC_2.0
 U mkdir@@GLIBC_2.0
 U mkfifo@@GLIBC_2.0
@@ -299,7 +339,7 @@ r nanmask
 t _nh_malloc_dbg
 d n_physical_pops
 b object_mutex
-b once_regsizes.7669
+b once_regsizes.8974
 U open64@@GLIBC_2.2
 U opendir@@GLIBC_2.0
 U open@@GLIBC_2.0
@@ -317,12 +357,12 @@ d physprops
 U Plat_IsInDebugSession
 U Plat_localtime
 d power2_n
-U pow@@GLIBC_2.0
+U __pow_finite@@GLIBC_2.15
 b P_Pop_Eps
 b P_Pop_Scal_Eps
 b P_Pop_Too_Flat_Eps
-U printf@@GLIBC_2.0
-w pthread_cancel@@GLIBC_2.0
+U __printf_chk@@GLIBC_2.3.4
+w __pthread_key_create@@GLIBC_2.0
 U pthread_mutexattr_init@@GLIBC_2.0
 U pthread_mutexattr_settype@@GLIBC_2.1
 U pthread_mutex_destroy@@GLIBC_2.0
@@ -330,8 +370,6 @@ U pthread_mutex_init@@GLIBC_2.0
 U pthread_mutex_lock@@GLIBC_2.0
 U pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
-U putchar@@GLIBC_2.0
-U puts@@GLIBC_2.0
 b qhmem
 b qh_qh
 b qh_qhstat
@@ -341,12 +379,9 @@ U qsort@@GLIBC_2.0
 t qsort_s
 U rand@@GLIBC_2.0
 U readdir@@GLIBC_2.0
-t read_encoded_value
 t read_encoded_value_with_base
 t read_sleb128
 t read_sleb128
-t read_uleb128
-t read_uleb128
 t _realloc_dbg
 U realloc@@GLIBC_2.0
 U realpath@@GLIBC_2.3
@@ -356,6 +391,7 @@ t __register_frame_info_bases
 t __register_frame_info_table
 t __register_frame_info_table_bases
 t __register_frame_table
+t register_tm_clones
 U rename@@GLIBC_2.0
 U rmdir@@GLIBC_2.0
 b s_bMathlibInitialized
@@ -371,23 +407,26 @@ U sinf@@GLIBC_2.0
 U sin@@GLIBC_2.0
 t size_of_encoded_value
 b s_NoEscConversion
-U sprintf@@GLIBC_2.0
+U __sprintf_chk@@GLIBC_2.3.4
 U sscanf@@GLIBC_2.0
 b s_StringCharConversion
+U __stack_chk_fail@@GLIBC_2.4
 t stat
 t __stat
 U stderr@@GLIBC_2.0
 U stdout@@GLIBC_2.0
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
-U strcat@@GLIBC_2.0
+U __strcat_chk@@GLIBC_2.3.4
 U strchr@@GLIBC_2.0
 U strcmp@@GLIBC_2.0
+U __strcpy_chk@@GLIBC_2.3.4
 U strcpy@@GLIBC_2.0
 U strdup@@GLIBC_2.0
 U strftime@@GLIBC_2.0
 U strlen@@GLIBC_2.0
 U strncasecmp@@GLIBC_2.0
+U __strncat_chk@@GLIBC_2.3.4
 U strncat@@GLIBC_2.0
 U strncpy@@GLIBC_2.0
 U strpbrk@@GLIBC_2.0
@@ -399,17 +438,18 @@ U strtol@@GLIBC_2.0
 U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
 U strtoull@@GLIBC_2.0
-b subs.7497
+b subs.8777
 U symlink@@GLIBC_2.0
 U tanf@@GLIBC_2.0
 U tan@@GLIBC_2.0
-b terminator.7340
+b terminator.8620
 U ThreadGetCurrentId
 U ThreadInterlockedAssignIf
 U ThreadInterlockedAssignIf64
 U ThreadInterlockedExchange
 U ThreadInterlockedIncrement
 U time@@GLIBC_2.0
+d __TMC_END__
 U tolower@@GLIBC_2.0
 U toupper@@GLIBC_2.0
 U towlower@@GLIBC_2.0
@@ -439,7 +479,6 @@ t _Unwind_Resume
 t _Unwind_Resume_or_Rethrow
 t _Unwind_SetGR
 t _Unwind_SetIP
-t _Unwind_SetSpColumn
 U utime@@GLIBC_2.0
 U utimes@@GLIBC_2.0
 t uw_frame_state_for
@@ -450,10 +489,10 @@ t uw_update_context_1
 b vec3_angle
 b vec3_invalid
 b vec3_origin
-U vfprintf@@GLIBC_2.0
-U vsnprintf@@GLIBC_2.0
-U vsprintf@@GLIBC_2.0
-U vswprintf@@GLIBC_2.2
+U __vfprintf_chk@@GLIBC_2.3.4
+U __vsnprintf_chk@@GLIBC_2.3.4
+U __vsprintf_chk@@GLIBC_2.3.4
+U __vswprintf_chk@@GLIBC_2.4
 U Warning
 U wcslen@@GLIBC_2.0
 U wcsncat@@GLIBC_2.0
@@ -489,6 +528,8 @@ t __wrap_utime
 t __wrap_utimes
 t __wrap___xstat
 t __wrap___xstat64
+t __x86.get_pc_thunk.bx
+t __x86.get_pc_thunk.cx
 U __xmknod@@GLIBC_2.0
 U __xstat64@@GLIBC_2.2
 U __xstat@@GLIBC_2.0
@@ -521,6 +562,7 @@ t V_strnistr(char const*, char const*, int)
 t _V_strrchr(char const*, int, char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
+t V_StrSlice(char const*, int, int, char*, int) [clone .part.7]
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
 t V_strtoi64(char const*, char**, int)
 t V_strtowcs(char const*, int, wchar_t*, int)
@@ -616,7 +658,6 @@ t AngleVectors(QAngle const&, Vector*)
 t AngleVectors(QAngle const&, Vector*, Vector*, Vector*)
 t CreateSpring(IVP_Environment*, CPhysicsObject*, CPhysicsObject*, springparams_t*)
 t CrossProduct(float const*, float const*, float*)
-t CrossProduct(Vector const&, Vector const&, Vector&) [clone .constprop.79]
 t Cubic_Spline(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
 t gbs_add_path(char*, char*)
 t GetStartVert(leafmap_t const*, IVP_U_Float_Point const&, int&, int&)
@@ -693,6 +734,7 @@ t qh_detvridge3(vertexT*, vertexT*)
 t qh_geomplanes(facetT*, double*, double*)
 t qh_getcentrum(facetT*)
 t qh_makeridges(facetT*)
+t qh_makeridges(facetT*) [clone .part.1]
 t qh_maxsimplex(int, setT*, double*, int, setT**)
 t qh_mergecycle(facetT*, facetT*)
 t qh_mergefacet(facetT*, facetT*, double*, double*, unsigned int)
@@ -701,6 +743,7 @@ t qh_normalize2(double*, int, unsigned int, double*, unsigned int*)
 t qh_outerinner(facetT*, double*, double*)
 t qh_pointfacet()
 t qh_printbegin(_IO_FILE*, int, facetT*, setT*, unsigned int)
+t qh_printbegin(_IO_FILE*, int, facetT*, setT*, unsigned int) [clone .part.7]
 t qh_printfacet(_IO_FILE*, facetT*)
 t qh_printlists()
 t qh_printpoint(_IO_FILE*, char const*, double*)
@@ -947,6 +990,7 @@ t QuaternionInvert(Quaternion const&, Quaternion&)
 t QuaternionMatrix(Quaternion const&, matrix3x4_t&)
 t QuaternionMatrix(Quaternion const&, Vector const&, matrix3x4_t&)
 t Q_UChar32ToUTF16(wchar_t, unsigned short*)
+t Q_UChar32ToUTF16(wchar_t, unsigned short*) [clone .part.5]
 t Q_UnicodeAdvance(char*, int)
 t Q_UnicodeAdvance(unsigned short*, int)
 t Q_UnicodeAdvance(wchar_t*, int)
@@ -994,11 +1038,13 @@ t qh_partitionpoint(double*, facetT*)
 t qh_printfacetlist(facetT*, setT*, unsigned int)
 t qh_printhashtable(_IO_FILE*)
 t qh_printline3geom(_IO_FILE*, double*, double*, double*)
+t qh_printline3geom(_IO_FILE*, double*, double*, double*) [clone .part.4]
 t qh_printpointvect(_IO_FILE*, double*, double*, double*, double, double*)
 t qh_printstatlevel(_IO_FILE*, int, int)
 t qh_printvdiagram2(_IO_FILE*, void (*)(_IO_FILE*, vertexT*, vertexT*, setT*, unsigned int), setT*, qh_RIDGE, unsigned int)
 t qh_produce_output()
 t qh_reducevertices()
+t qh_reducevertices() [clone .part.2]
 t qh_setvoronoi_all()
 t qh_updatevertices()
 t qh_voronoi_center(int, setT*)
@@ -1054,6 +1100,7 @@ t qh_test_vneighbors()
 t qh_vertexintersect(setT**, setT*)
 t qh_vertexneighbors()
 t Q_UChar32ToUTF8Len(wchar_t)
+t Q_UChar32ToUTF8Len(wchar_t) [clone .part.2]
 t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
 t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
 t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
@@ -1094,7 +1141,9 @@ t QuaternionConjugate(Quaternion const&, Quaternion&)
 t QuaternionNormalize(Quaternion&)
 t Q_UChar32ToUTF16Len(wchar_t)
 t Q_URLDecodeInternal(char*, int, char const*, int, bool)
+t Q_URLDecodeInternal(char*, int, char const*, int, bool) [clone .part.10]
 t Q_URLEncodeInternal(char*, int, char const*, int, bool)
+t Q_URLEncodeInternal(char*, int, char const*, int, bool) [clone .part.9]
 t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
 t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
 t SrgbGammaTo360Gamma(float)
@@ -1518,7 +1567,7 @@ b vec4_origin
 b vec4_origin
 b vec4_origin
 b vec4_origin
-t BuildVertMap(vertmap_t&, Vector const*, int, IVP_Compact_Ledge const*) [clone .constprop.18]
+t BuildVertMap(vertmap_t&, Vector const*, int, IVP_Compact_Ledge const*)
 t InitBoxVerts(Vector*, Vector**, Vector const&, Vector const&)
 t ProcessPoint(IVP_Compact_Poly_Point&, IVP_U_BigVector<IVP_Compact_Poly_Point>*)
 b s_bConnected
@@ -1597,6 +1646,7 @@ b s_bSSEEnabled
 b s_EmptyConVar
 b s_VPhysPtrMap
 b texgammatable
+t CopyToMaxChars(char*, int, char const*, int) [clone .part.0]
 b lineartoscreen
 t NoPhysSaveFunc(physsaveparams_t const&, void*)
 d s_BackSlashMap
@@ -1619,7 +1669,7 @@ r _ps_inv_sign_mask
 d s_DefaultAccessor
 t GetTmpObjectMatrix(IVP_Real_Object*)
 b g_MainDLLInterface
-t InitObjectTemplate(IVP_Template_Real_Object&, int, objectparams_t*, bool) [clone .constprop.77]
+t InitObjectTemplate(IVP_Template_Real_Object&, int, objectparams_t*, bool)
 r g_BasicHTMLEntities
 b g_CleanupSymbolTable
 r g_WhitespaceEntities
@@ -1631,7 +1681,7 @@ t IsBreakableConstraint(constraint_breakableparams_t const&)
 t qh_compare_facetmerge(void const*, void const*)
 t qh_compare_facetvisit(void const*, void const*)
 d s_DefaultDebugOverlay
-t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
+t StripWhitespaceWorker(int, wchar_t*, bool*, bool) [clone .constprop.29]
 d g_MaterialIndexDataOps
 b s_TempMemoryPolyhedron
 b g_Mathlib_GammaToLinear
@@ -1647,7 +1697,7 @@ r g_pszSimpleBBCodeReplacements
 b s_TempMemoryPolyhedron_Buffer
 b f3
 b ivp_surface_manager_ball_global
-t localCalcMassCenterAndRotInertia(IVP_U_BigVector<IVP_Compact_Ledge>*, IVP_U_Point*, IVP_U_Point*) [clone .constprop.8]
+t localCalcMassCenterAndRotInertia(IVP_U_BigVector<IVP_Compact_Ledge>*, IVP_U_Point*, IVP_U_Point*)
 d s_pConversionArrays_NoEscConversion
 b __g_CreateCPhysicsInterfaceIPhysics_reg
 b f05
@@ -1692,6 +1742,7 @@ t CUtlBuffer::IsBigEndian()
 t CUtlBuffer::PutOverflow(int)
 t CUtlBuffer::AssumeMemory(void*, int, int, int)
 t CUtlBuffer::CheckPeekGet(int, int)
+t CUtlBuffer::CheckPeekGet(int, int) [clone .part.16]
 t CUtlBuffer::SetBigEndian(bool)
 t CUtlBuffer::EatCPPComment()
 t CUtlBuffer::EatWhiteSpace()
@@ -1700,15 +1751,18 @@ t CUtlBuffer::OnPutOverflow(int)
 t CUtlBuffer::SetBufferType(bool, bool)
 t CUtlBuffer::EnsureCapacity(int)
 t CUtlBuffer::PeekLineLength()
+t CUtlBuffer::PeekLineLength() [clone .part.21]
 t CUtlBuffer::PeekWhiteSpace(int)
 t CUtlBuffer::PeekStringMatch(int, char const*, int)
 t CUtlBuffer::GetDelimitedChar(CUtlCharConversion*)
 t CUtlBuffer::PeekStringLength()
+t CUtlBuffer::PeekStringLength() [clone .part.20]
 t CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)
 t CUtlBuffer::SetOverflowFuncs(bool (CUtlBuffer::*)(int), bool (CUtlBuffer::*)(int))
 t CUtlBuffer::GetStringInternal(char*, unsigned int)
 t CUtlBuffer::SetExternalBuffer(void*, int, int, int)
 t CUtlBuffer::AddNullTermination()
+t CUtlBuffer::AddNullTermination() [clone .part.23]
 t CUtlBuffer::GetDelimitedString(CUtlCharConversion*, char*, int)
 t CUtlBuffer::PutDelimitedString(CUtlCharConversion*, char const*)
 t CUtlBuffer::ActivateByteSwapping(bool)
@@ -1738,82 +1792,85 @@ t CUtlBuffer::CUtlBuffer(int, int, int)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
 t CUtlMemory<CUtlString, int>::Grow(int)
 t CUtlMemory<CUtlSymbol, int>::Grow(int)
+t CUtlMemory<CUtlSymbol, int>::Purge()
 t CUtlMemory<bboxcache_t, int>::Grow(int)
+t CUtlMemory<bboxcache_t, int>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
-t CUtlMemory<CUtlHashtableEntry<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t>, int>::~CUtlMemory()
-t CUtlMemory<CUtlHashtableEntry<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t>, int>::~CUtlMemory()
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
+t CUtlMemory<CUtlHashtableEntry<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t>, int>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<void*, unsigned short>::List_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<CPhysicsCollisionSet, int>::Grow(int)
+t CUtlMemory<CPhysicsCollisionSet, int>::Purge()
 t CUtlMemory<postrestore_objectlist_t, int>::Grow(int)
+t CUtlMemory<postrestore_objectlist_t, int>::Purge()
 t CUtlMemory<CSurface, int>::Grow(int)
+t CUtlMemory<CSurface, int>::Purge()
 t CUtlMemory<char, int>::Grow(int)
-t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.26]
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.25] [clone .constprop.32]
 t CUtlMemory<unsigned char, int>::Grow(int)
 t CUtlMemory<unsigned char, int>::Purge()
 t CUtlMemory<int, int>::Grow(int)
+t CUtlMemory<int, int>::Purge()
 t CUtlMemory<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::ListElem_t, int>::Grow(int)
-t CUtlMemory<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::ListElem_t, int>::~CUtlMemory()
-t CUtlMemory<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::ListElem_t, int>::~CUtlMemory()
+t CUtlMemory<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::ListElem_t, int>::Purge()
 t CUtlMemory<CUtlMultiList<void*, unsigned short>::ListElem_t, int>::Grow(int)
-t CUtlMemory<CUtlMultiList<void*, unsigned short>::ListElem_t, int>::~CUtlMemory()
-t CUtlMemory<CUtlMultiList<void*, unsigned short>::ListElem_t, int>::~CUtlMemory()
+t CUtlMemory<CUtlMultiList<void*, unsigned short>::ListElem_t, int>::Purge()
 t CUtlMemory<CCollisionSolver::realobjectpair_t, int>::Grow(int)
-t CUtlMemory<CCollisionSolver::realobjectpair_t, int>::~CUtlMemory()
-t CUtlMemory<CCollisionSolver::realobjectpair_t, int>::~CUtlMemory()
+t CUtlMemory<CCollisionSolver::realobjectpair_t, int>::Purge()
 t CUtlMemory<memhandle_t__*, int>::Grow(int)
 t CUtlMemory<CPhysicsObject*, int>::Grow(int)
+t CUtlMemory<CPhysicsObject*, int>::Purge()
 t CUtlMemory<IPhysicsObject*, int>::Grow(int)
-t CUtlMemory<IPhysicsObject*, int>::~CUtlMemory()
-t CUtlMemory<IPhysicsObject*, int>::~CUtlMemory()
+t CUtlMemory<IPhysicsObject*, int>::Purge()
 t CUtlMemory<IVP_Real_Object*, int>::Grow(int)
+t CUtlMemory<IVP_Real_Object*, int>::Purge()
 t CUtlMemory<IDeleteQueueItem*, int>::Grow(int)
-t CUtlMemory<IDeleteQueueItem*, int>::~CUtlMemory()
-t CUtlMemory<IDeleteQueueItem*, int>::~CUtlMemory()
+t CUtlMemory<IDeleteQueueItem*, int>::Purge()
 t CUtlMemory<IPhysicsEnvironment*, int>::Grow(int)
+t CUtlMemory<IPhysicsEnvironment*, int>::Purge()
 t CUtlMemory<CPhysCollideVirtualMesh*, int>::Grow(int)
-t CUtlMemory<CPhysCollideVirtualMesh*, int>::~CUtlMemory()
-t CUtlMemory<CPhysCollideVirtualMesh*, int>::~CUtlMemory()
+t CUtlMemory<CPhysCollideVirtualMesh*, int>::Purge()
 t CUtlMemory<CPhysicsConstraintGroup*, int>::Grow(int)
+t CUtlMemory<CPhysicsConstraintGroup*, int>::Purge()
 t CUtlMemory<CPhysicsFluidController*, int>::Grow(int)
-t CUtlMemory<CPhysicsFluidController*, int>::~CUtlMemory()
-t CUtlMemory<CPhysicsFluidController*, int>::~CUtlMemory()
+t CUtlMemory<CPhysicsFluidController*, int>::Purge()
 t CUtlMemory<IPhysicsPlayerController*, int>::Grow(int)
-t CUtlMemory<IPhysicsPlayerController*, int>::~CUtlMemory()
-t CUtlMemory<IPhysicsPlayerController*, int>::~CUtlMemory()
+t CUtlMemory<IPhysicsPlayerController*, int>::Purge()
 t CUtlMemory<IVP_Core*, int>::Grow(int)
-t CUtlMemory<IVP_Core*, int>::~CUtlMemory()
-t CUtlMemory<IVP_Core*, int>::~CUtlMemory()
+t CUtlMemory<IVP_Core*, int>::Purge()
 t CUtlMemory<char*, int>::Grow(int)
+t CUtlMemory<char*, int>::Purge()
 t CUtlMemory<IVP_Compact_Ledgetree_Node const*, int>::Grow(int)
+t CUtlMemory<IVP_Compact_Ledgetree_Node const*, int>::Purge()
 t CUtlMemory<char const*, int>::Grow(int)
+t CUtlMemory<char const*, int>::Purge()
 t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::Grow(int)
-t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::~CUtlMemory()
-t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::~CUtlMemory()
+t CUtlMemory<CUtlSymbolTable::StringPool_t*, int>::Purge()
 t CUtlMemory<void*, int>::Grow(int)
+t CUtlMemory<void*, int>::Purge()
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RotateRight(unsigned short)
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
-t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Purge()
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Insert(CUtlSymbolTable::CStringPoolIndex const&)
-t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::NewNode()
 t CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
 t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
 t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
 t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::RemoveRebalance(unsigned short)
-t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::Purge()
 t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::Insert(CPhysicsListenerCollision::corepair_t const&)
 t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
-t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::NewNode()
+t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
 t CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
 t CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
 t CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<void*, void*, unsigned short>::Node_t const&)
-t CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::NewNode()
 t CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlString::FixSlashes(char)
 t CUtlString::AllocMemory(unsigned int)
@@ -1855,19 +1912,15 @@ t CUtlSymbol::CurrTable()
 t CUtlSymbol::CUtlSymbol(char const*)
 t CUtlSymbol::CUtlSymbol(char const*)
 t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::InsertBefore(int, CUtlString const&)
-t CUtlVector<CUtlSymbol, CUtlMemory<CUtlSymbol, int> >::InsertBefore(int, CUtlSymbol const&)
 t CUtlVector<CPhysicsCollisionSet, CUtlMemory<CPhysicsCollisionSet, int> >::InsertBefore(int)
 t CUtlVector<postrestore_objectlist_t, CUtlMemory<postrestore_objectlist_t, int> >::InsertBefore(int, postrestore_objectlist_t const&)
 t CUtlVector<postrestore_objectlist_t, CUtlMemory<postrestore_objectlist_t, int> >::~CUtlVector()
 t CUtlVector<postrestore_objectlist_t, CUtlMemory<postrestore_objectlist_t, int> >::~CUtlVector()
 t CUtlVector<CSurface, CUtlMemory<CSurface, int> >::InsertBefore(int, CSurface const&)
-t CUtlVector<CSurface, CUtlMemory<CSurface, int> >::~CUtlVector()
-t CUtlVector<CSurface, CUtlMemory<CSurface, int> >::~CUtlVector()
-t CUtlVector<unsigned char, CUtlMemory<unsigned char, int> >::SetCount(int)
 t CUtlVector<unsigned char, CUtlMemory<unsigned char, int> >::~CUtlVector()
 t CUtlVector<unsigned char, CUtlMemory<unsigned char, int> >::~CUtlVector()
 t CUtlVector<int, CUtlMemory<int, int> >::GrowVector(int)
-t CUtlVector<int, CUtlMemory<int, int> >::EnsureCount(int) [clone .part.17]
+t CUtlVector<int, CUtlMemory<int, int> >::InsertBefore(int, int const&)
 t CUtlVector<int, CUtlMemory<int, int> >::ShiftElementsRight(int, int)
 t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
 t CUtlVector<int, CUtlMemory<int, int> >::~CUtlVector()
@@ -1878,28 +1931,12 @@ t CUtlVector<IPhysicsObject*, CUtlMemory<IPhysicsObject*, int> >::FastRemove(int
 t CUtlVector<IPhysicsObject*, CUtlMemory<IPhysicsObject*, int> >::InsertBefore(int, IPhysicsObject* const&)
 t CUtlVector<IPhysicsObject*, CUtlMemory<IPhysicsObject*, int> >::~CUtlVector()
 t CUtlVector<IPhysicsObject*, CUtlMemory<IPhysicsObject*, int> >::~CUtlVector()
-t CUtlVector<IVP_Real_Object*, CUtlMemory<IVP_Real_Object*, int> >::InsertBefore(int, IVP_Real_Object* const&)
-t CUtlVector<IDeleteQueueItem*, CUtlMemory<IDeleteQueueItem*, int> >::InsertBefore(int, IDeleteQueueItem* const&)
-t CUtlVector<IPhysicsEnvironment*, CUtlMemory<IPhysicsEnvironment*, int> >::InsertBefore(int, IPhysicsEnvironment* const&)
-t CUtlVector<IPhysicsEnvironment*, CUtlMemory<IPhysicsEnvironment*, int> >::~CUtlVector()
-t CUtlVector<IPhysicsEnvironment*, CUtlMemory<IPhysicsEnvironment*, int> >::~CUtlVector()
-t CUtlVector<CPhysCollideVirtualMesh*, CUtlMemory<CPhysCollideVirtualMesh*, int> >::InsertBefore(int, CPhysCollideVirtualMesh* const&)
-t CUtlVector<CPhysicsConstraintGroup*, CUtlMemory<CPhysicsConstraintGroup*, int> >::InsertBefore(int, CPhysicsConstraintGroup* const&)
 t CUtlVector<CPhysicsConstraintGroup*, CUtlMemory<CPhysicsConstraintGroup*, int> >::~CUtlVector()
 t CUtlVector<CPhysicsConstraintGroup*, CUtlMemory<CPhysicsConstraintGroup*, int> >::~CUtlVector()
-t CUtlVector<CPhysicsFluidController*, CUtlMemory<CPhysicsFluidController*, int> >::InsertBefore(int, CPhysicsFluidController* const&)
-t CUtlVector<CPhysicsFluidController*, CUtlMemory<CPhysicsFluidController*, int> >::~CUtlVector()
-t CUtlVector<CPhysicsFluidController*, CUtlMemory<CPhysicsFluidController*, int> >::~CUtlVector()
-t CUtlVector<IPhysicsPlayerController*, CUtlMemory<IPhysicsPlayerController*, int> >::InsertBefore(int, IPhysicsPlayerController* const&)
-t CUtlVector<IPhysicsPlayerController*, CUtlMemory<IPhysicsPlayerController*, int> >::~CUtlVector()
-t CUtlVector<IPhysicsPlayerController*, CUtlMemory<IPhysicsPlayerController*, int> >::~CUtlVector()
-t CUtlVector<IVP_Core*, CUtlMemory<IVP_Core*, int> >::InsertBefore(int, IVP_Core* const&)
-t CUtlVector<IVP_Core*, CUtlMemory<IVP_Core*, int> >::Remove(int)
+t CUtlVector<IPhysicsPlayerController*, CUtlMemory<IPhysicsPlayerController*, int> >::FindAndRemove(IPhysicsPlayerController* const&)
+t CUtlVector<IVP_Core*, CUtlMemory<IVP_Core*, int> >::ShiftElementsLeft(int, int)
 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
-t CUtlVector<IVP_Compact_Ledgetree_Node const*, CUtlMemoryFixedGrowable<IVP_Compact_Ledgetree_Node const*, 64u, int> >::GrowVector(int)
-t CUtlVector<char const*, CUtlMemory<char const*, int> >::InsertBefore(int, char const* const&)
-t CUtlVector<char const*, CUtlMemory<char const*, int> >::Remove(int)
-t CUtlVector<CUtlSymbolTable::StringPool_t*, CUtlMemory<CUtlSymbolTable::StringPool_t*, int> >::InsertBefore(int, CUtlSymbolTable::StringPool_t* const&)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::ShiftElementsLeft(int, int)
 t CUtlVector<void*, CUtlMemory<void*, int> >::InsertBefore(int, void* const&)
 t CUtlVector<void*, CUtlMemory<void*, int> >::~CUtlVector()
 t CUtlVector<void*, CUtlMemory<void*, int> >::~CUtlVector()
@@ -1996,8 +2033,6 @@ t CPolyhedron::Center()
 t CPolyhedron::~CPolyhedron()
 t CPolyhedron::~CPolyhedron()
 t CPolyhedron::~CPolyhedron()
-t CVProfScope::~CVProfScope()
-t CVProfScope::~CVProfScope()
 t FourVectors::RotateManyBy(FourVectors*, unsigned int, matrix3x4_t const&)
 t hk_Rotation::set_axis_angle(hk_Vector3 const&, float)
 t hk_Rotation::set(hk_Quaternion const&)
@@ -2115,7 +2150,7 @@ t CTraceSolver::SweepSingleConvex()
 t CTraceSolver::SolveMeshIntersection(simplex_t&)
 t CTraceSolver::SolveMeshIntersection2D(simplex_t&)
 t CTraceSolver::DoSweep()
-t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
+t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&) [clone .constprop.15]
 t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.1]
 t hk_Transform::set_transform(hk_Quaternion const&, hk_Vector3 const&)
 t hk_Transform::set_interpolate(hk_QTransform&, hk_QTransform&, float)
@@ -2199,33 +2234,12 @@ t IVP_U_Vector<IVV_Sphere>::clear()
 t IVP_U_Vector<IVP_U_Hesse>::clear()
 t IVP_U_Vector<IVP_U_Point>::clear()
 t IVP_U_Vector<IVP_Triangle>::clear()
-t IVP_U_Vector<IVP_Controller>::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Controller>::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Listener_PSI>::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Listener_PSI>::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Compact_Ledge>::clear()
-t IVP_U_Vector<IVP_Listener_Object>::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Listener_Object>::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Listener_Phantom>::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Listener_Phantom>::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Hull_Manager_Base>::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Hull_Manager_Base>::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Listener_Collision>::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Listener_Collision>::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Listener_Constraint>::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Listener_Constraint>::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Listener_Set_Active<IVP_Real_Object> >::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Listener_Set_Active<IVP_Real_Object> >::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Listener_Set_Active<IVP_Mindist_Base> >::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Listener_Set_Active<IVP_Mindist_Base> >::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Listener_Set_Active<IVP_Core> >::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Listener_Set_Active<IVP_Core> >::~IVP_U_Vector()
-t IVP_U_Vector<IVP_U_Active_Int_Delayed>::clear()
-t IVP_U_Vector<IVP_Constraint_Car_Object>::clear()
-t IVP_U_Vector<IVP_U_Active_Float_Delayed>::clear()
-t IVP_U_Vector<IVP_Collision_Delegator_Root>::clear()
-t IVP_U_Vector<IVP_Listener_Check_Dist_Event>::~IVP_U_Vector()
-t IVP_U_Vector<IVP_Listener_Check_Dist_Event>::~IVP_U_Vector()
+t IVP_U_Vector<IVP_Controller>::clear()
+t IVP_U_Vector<IVP_Real_Object>::clear()
+t IVP_U_Vector<IVP_Listener_Object>::clear()
+t IVP_U_Vector<IVP_Listener_Spring>::clear()
+t IVP_U_Vector<IVP_Hull_Manager_Base>::clear()
+t IVP_U_Vector<IVP_Listener_Collision>::clear()
 t IVP_U_Vector<IVP_Core>::clear()
 t IVP_U_Vector<IVP_Core>::~IVP_U_Vector()
 t IVP_U_Vector<IVP_Core>::~IVP_U_Vector()
@@ -2263,20 +2277,13 @@ t CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultH
 t CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::RemoveAll()
 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::CreateList()
 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::LinkBefore(unsigned short, unsigned short, unsigned short)
-t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::Alloc()
+t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::InsertBefore(unsigned short, unsigned short)
 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::Unlink(unsigned short, unsigned short)
-t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::LinkAfter(unsigned short, unsigned short, unsigned short)
-t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::CUtlMultiList(int, int)
-t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::CUtlMultiList(int, int)
 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::~CUtlMultiList()
 t CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::~CUtlMultiList()
 t CUtlMultiList<void*, unsigned short>::CreateList()
-t CUtlMultiList<void*, unsigned short>::LinkBefore(unsigned short, unsigned short, unsigned short)
-t CUtlMultiList<void*, unsigned short>::Alloc()
 t CUtlMultiList<void*, unsigned short>::Remove(unsigned short, unsigned short)
 t CUtlMultiList<void*, unsigned short>::Unlink(unsigned short, unsigned short)
-t CUtlMultiList<void*, unsigned short>::CUtlMultiList(int, int)
-t CUtlMultiList<void*, unsigned short>::CUtlMultiList(int, int)
 t CUtlMultiList<void*, unsigned short>::~CUtlMultiList()
 t CUtlMultiList<void*, unsigned short>::~CUtlMultiList()
 t CVoidPairHash::~CVoidPairHash()
@@ -2329,8 +2336,6 @@ t IVP_MI_Vector::set(int, float)
 t IVP_MI_Vector::set(IVP_MI_Vector const*)
 t IVP_MI_Vector::mult(float)
 t IVP_MI_Vector::subtract(IVP_MI_Vector const*)
-t IVP_U_FVector<IVP_Collision>::~IVP_U_FVector()
-t IVP_U_FVector<IVP_Collision>::~IVP_U_FVector()
 t IVP_U_Matrix3::get_angles(float*, float*, float*)
 t IVP_U_Matrix3::init_rows3(IVP_U_Point const*, IVP_U_Point const*, IVP_U_Point const*)
 t IVP_U_Matrix3::transpose3()
@@ -2406,6 +2411,7 @@ t CPhysicsObject::SetGameIndex(unsigned short)
 t CPhysicsObject::UpdateShadow(Vector const&, QAngle const&, bool, float)
 t CPhysicsObject::BecomeTrigger()
 t CPhysicsObject::ClampVelocity()
+t CPhysicsObject::ClampVelocity() [clone .part.28]
 t CPhysicsObject::EnableGravity(bool)
 t CPhysicsObject::RemoveTrigger()
 t CPhysicsObject::WriteToTemplate(vphysics_save_cphysicsobject_t&)
@@ -2435,6 +2441,7 @@ t CPhysicsObject::Sleep()
 t CPhysicsObject::SetMass(float)
 t CPhysicsObject::SetShadow(float, float, bool, bool)
 t CPhysicsObject::SetVolume(float)
+t CPhysicsObject::SetVolume(float) [clone .part.26]
 t CPhysicsObject::CPhysicsObject()
 t CPhysicsObject::CPhysicsObject()
 t CPhysicsObject::~CPhysicsObject()
@@ -2458,17 +2465,8 @@ t CPhysicsSpring::CPhysicsSpring(CPhysicsObject*, CPhysicsObject*, IVP_Actuator_
 t CPhysicsSpring::~CPhysicsSpring()
 t CPhysicsSpring::~CPhysicsSpring()
 t CPhysicsSpring::~CPhysicsSpring()
-t CUtlLinkedList<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short> >::AllocInternal(bool)
-t CUtlLinkedList<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short> >::Unlink(unsigned short)
 t CUtlLinkedList<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short> >::RemoveAll()
-t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::AllocInternal(bool)
-t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
-t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::~CUtlLinkedList()
-t CUtlLinkedList<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<CDataManagerBase::resource_lru_element_t, unsigned short>::List_t, unsigned short>, unsigned short> >::~CUtlLinkedList()
-t CUtlLinkedList<CUtlMultiList<void*, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<void*, unsigned short>::List_t, unsigned short>, unsigned short> >::AllocInternal(bool)
 t CUtlLinkedList<CUtlMultiList<void*, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<void*, unsigned short>::List_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
-t CUtlLinkedList<CUtlMultiList<void*, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<void*, unsigned short>::List_t, unsigned short>, unsigned short> >::~CUtlLinkedList()
-t CUtlLinkedList<CUtlMultiList<void*, unsigned short>::List_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlMultiList<void*, unsigned short>::List_t, unsigned short>, unsigned short> >::~CUtlLinkedList()
 t CVPhysicsParse::ParseFluid(fluid_t*, IVPhysicsKeyHandler*)
 t CVPhysicsParse::ParseSolid(solid_t*, IVPhysicsKeyHandler*)
 t CVPhysicsParse::ParseCustom(void*, IVPhysicsKeyHandler*)
@@ -2684,8 +2682,6 @@ t CTier1AppSystem<IPhysics, 0>::Disconnect()
 t CTier1AppSystem<IPhysics, 0>::Init()
 t CTier1AppSystem<IPhysics, 0>::Connect(void* (*)(char const*, int*))
 t CTier1AppSystem<IPhysics, 0>::Shutdown()
-t CUtlSymbolTable::CTree::~CTree()
-t CUtlSymbolTable::CTree::~CTree()
 t CUtlSymbolTable::AddString(char const*)
 t CUtlSymbolTable::RemoveAll()
 t CUtlSymbolTable::CUtlSymbolTable(int, int, bool)
@@ -2868,8 +2864,7 @@ t IVP_Real_Object::~IVP_Real_Object()
 t IVP_Tetra_Point::p()
 t IVP_Tetra_Point::init(IVP_Tetra_Intrude*)
 t IVP_Tetra_Point::print(char const*)
-t IVP_U_BigVector<IVP_Compact_Ledge>::~IVP_U_BigVector()
-t IVP_U_BigVector<IVP_Compact_Ledge>::~IVP_U_BigVector()
+t IVP_U_BigVector<IVP_Compact_Ledge>::clear()
 t IVP_VHash_Store::change_elem(void*, void*)
 t IVP_VHash_Store::remove_elem(void*)
 t IVP_VHash_Store::remove_elem(void*, unsigned int)
@@ -3287,9 +3282,6 @@ t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
 t CUtlInplaceBuffer::InplaceGetLinePtr()
 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
-t CUtlSymbolTableMT::AddString(char const*)
-t CUtlSymbolTableMT::~CUtlSymbolTableMT()
-t CUtlSymbolTableMT::~CUtlSymbolTableMT()
 t IPhysicsCollision::~IPhysicsCollision()
 t IPhysicsCollision::~IPhysicsCollision()
 t IPhysicsCollision::~IPhysicsCollision()
@@ -3377,6 +3369,8 @@ t IVP_Impact_System::init_and_solve_impact_system(IVP_Mindist*, IVP_Friction_Sys
 t IVP_Impact_System::impact_system_check_start_pair(IVP_Friction_Core_Pair*, IVP_Contact_Point*)
 t IVP_Impact_System::add_pushed_core_with_pairs_except(IVP_Core*, IVP_Friction_Core_Pair*)
 t IVP_Impact_System::synchronize_core_for_impact_system(IVP_Core*)
+t IVP_Impact_System::~IVP_Impact_System()
+t IVP_Impact_System::~IVP_Impact_System()
 t IVP_I_Point_VHash::find_point(IVP_U_Point*)
 t IVP_I_Point_VHash::remove_point(IVP_U_Point*)
 t IVP_I_Point_VHash::point_to_index(IVP_U_Point*)
@@ -3497,6 +3491,7 @@ t CPhysicsConstraint::event_object_created(IVP_Event_Object*)
 t CPhysicsConstraint::event_object_deleted(IVP_Event_Object*)
 t CPhysicsConstraint::event_object_revived(IVP_Event_Object*)
 t CPhysicsConstraint::UpdateRagdollTransforms(matrix3x4_t const&, matrix3x4_t const&)
+t CPhysicsConstraint::UpdateRagdollTransforms(matrix3x4_t const&, matrix3x4_t const&) [clone .part.23]
 t CPhysicsConstraint::Activate()
 t CPhysicsConstraint::InitFixed(IVP_Environment*, CPhysicsConstraintGroup*, constraint_fixedparams_t const&)
 t CPhysicsConstraint::InitHinge(IVP_Environment*, CPhysicsConstraintGroup*, constraint_limitedhingeparams_t const&)
@@ -3855,7 +3850,6 @@ t IVP_Buoyancy_Solver::compute_values_for_one_triangle(IVP_Real_Object*, IVP_Com
 t IVP_Buoyancy_Solver::compute_disection_points_with_ball(IVP_U_Float_Hesse const*, IVP_U_Float_Hesse const*, IVP_U_Float_Point const*, float const&, IVP_U_Float_Point*, IVP_U_Float_Point*)
 t IVP_Buoyancy_Solver::compute_buoyancy_values_for_one_ball(int const&, float const&, float const&, IVP_U_Float_Hesse const*, IVP_U_Float_Point const*)
 t IVP_Buoyancy_Solver::compute_dampening_values_for_one_ball(int const&, float const&, float const&, IVP_U_Float_Point const*, IVP_U_Float_Point const*, IVP_U_Float_Hesse const*, IVP_U_Float_Hesse const*, IVP_U_Float_Point const*, IVP_U_Float_Point const*)
-t IVP_Buoyancy_Solver::compute_rotation_and_translation_values_for_one_triangle(IVP_Real_Object*, IVP_Compact_Triangle const*, IVP_U_Float_Point const**, IVP_Compact_Ledge const*, float const*, int const&, int const&, int const&)
 t IVP_Buoyancy_Solver::IVP_Buoyancy_Solver(IVP_Core*, IVP_Controller_Buoyancy*, IVP_Template_Buoyancy const*, IVP_U_Float_Point const*)
 t IVP_Buoyancy_Solver::IVP_Buoyancy_Solver(IVP_Core*, IVP_Controller_Buoyancy*, IVP_Template_Buoyancy const*, IVP_U_Float_Point const*)
 t IVP_Cluster_Manager::add_object(IVP_Real_Object*)
@@ -3997,12 +3991,14 @@ t IVP_Mindist_Manager::insert_hull_mindist(IVP_Mindist*, float, float)
 t IVP_Mindist_Manager::remove_hull_mindist(IVP_Mindist*)
 t IVP_Mindist_Manager::insert_exact_mindist(IVP_Mindist*)
 t IVP_Mindist_Manager::mindist_left_phantom(IVP_Mindist*)
+t IVP_Mindist_Manager::mindist_left_phantom(IVP_Mindist*) [clone .part.22]
 t IVP_Mindist_Manager::recalc_exact_mindist(IVP_Mindist*)
 t IVP_Mindist_Manager::remove_exact_mindist(IVP_Mindist*)
 t IVP_Mindist_Manager::create_exact_mindists(IVP_Real_Object*, IVP_Real_Object*, double, IVP_U_FVector<IVP_Collision>*, IVP_Compact_Ledge const*, IVP_Compact_Ledge const*, IVP_Compact_Ledge const*, IVP_Compact_Ledge const*, IVP_Collision_Delegator*)
 t IVP_Mindist_Manager::insert_invalid_mindist(IVP_Mindist*)
 t IVP_Mindist_Manager::remove_invalid_mindist(IVP_Mindist*)
 t IVP_Mindist_Manager::mindist_entered_phantom(IVP_Mindist*)
+t IVP_Mindist_Manager::mindist_entered_phantom(IVP_Mindist*) [clone .part.21]
 t IVP_Mindist_Manager::insert_lazy_hull_mindist(IVP_Mindist*, float)
 t IVP_Mindist_Manager::insert_lazy_hull_mindist(IVP_Mindist*, float, float)
 t IVP_Mindist_Manager::recalc_all_exact_mindists()
@@ -4225,8 +4221,6 @@ t IVP_Controller_VHash::~IVP_Controller_VHash()
 t IVP_Controller_VHash::~IVP_Controller_VHash()
 t IVP_Controller_VHash::~IVP_Controller_VHash()
 t IVP_Core_Fast_Static::get_inv_masses()
-t IVP_Core_Fast_Static::~IVP_Core_Fast_Static()
-t IVP_Core_Fast_Static::~IVP_Core_Fast_Static()
 t IVP_Friction_Manager::generate_contact_point(IVP_Mindist*, IVP_BOOL*)
 t IVP_Friction_Manager::get_associated_contact_point(IVP_Mindist*)
 t IVP_Friction_Manager::delete_all_contact_points_of_object(IVP_Real_Object*)
@@ -4937,8 +4931,6 @@ t IVP_Template_Real_Object::~IVP_Template_Real_Object()
 t IVP_Template_Real_Object::~IVP_Template_Real_Object()
 t IVP_Vector_of_Ledges_256::IVP_Vector_of_Ledges_256()
 t IVP_Vector_of_Ledges_256::IVP_Vector_of_Ledges_256()
-t IVP_Vector_of_Ledges_256::~IVP_Vector_of_Ledges_256()
-t IVP_Vector_of_Ledges_256::~IVP_Vector_of_Ledges_256()
 t vehicle_steeringparams_t::GetBaseMap()
 d vehicle_steeringparams_t::m_DataMap
 t BreakableConstraintHelper::~BreakableConstraintHelper()
@@ -5140,7 +5132,7 @@ t IVP_Car_System_Real_Wheels::change_fast_turn_factor(float)
 t IVP_Car_System_Real_Wheels::change_spring_dampening(IVP_POS_WHEEL, float)
 t IVP_Car_System_Real_Wheels::get_orig_axles_distance()
 t IVP_Car_System_Real_Wheels::set_booster_acceleration(float)
-t IVP_Car_System_Real_Wheels::set_booster_acceleration(float) [clone .part.12]
+t IVP_Car_System_Real_Wheels::set_booster_acceleration(float) [clone .part.6]
 t IVP_Car_System_Real_Wheels::change_spring_pre_tension(IVP_POS_WHEEL, float)
 t IVP_Car_System_Real_Wheels::update_body_countertorque()
 t IVP_Car_System_Real_Wheels::change_stabilizer_constant(IVP_POS_AXIS, float)
@@ -5150,7 +5142,6 @@ t IVP_Car_System_Real_Wheels::change_wheel_speed_dampening(IVP_POS_WHEEL, float)
 t IVP_Car_System_Real_Wheels::get_orig_front_wheel_distance()
 t IVP_Car_System_Real_Wheels::change_spring_dampening_compression(IVP_POS_WHEEL, float)
 t IVP_Car_System_Real_Wheels::fix_wheel(IVP_POS_WHEEL, IVP_BOOL)
-t IVP_Car_System_Real_Wheels::fix_wheel(IVP_POS_WHEEL, IVP_BOOL) [clone .part.16]
 t IVP_Car_System_Real_Wheels::IVP_Car_System_Real_Wheels(IVP_Environment*, IVP_Template_Car_System*)
 t IVP_Car_System_Real_Wheels::IVP_Car_System_Real_Wheels(IVP_Environment*, IVP_Template_Car_System*)
 t IVP_Car_System_Real_Wheels::~IVP_Car_System_Real_Wheels()
@@ -5376,6 +5367,7 @@ t IVP_Linear_Constraint_Solver::update_step_vars(double)
 t IVP_Linear_Constraint_Solver::init_and_solve_lc(double*, double*, double*, int, int, IVP_U_Memory*)
 t IVP_Linear_Constraint_Solver::increase_step_count(int*)
 t IVP_Linear_Constraint_Solver::decrement_sub_solver(int)
+t IVP_Linear_Constraint_Solver::decrement_sub_solver(int) [clone .part.2]
 t IVP_Linear_Constraint_Solver::increment_sub_solver()
 t IVP_Linear_Constraint_Solver::move_variable_to_end(int)
 t IVP_Linear_Constraint_Solver::debug_test_all_values()
@@ -5522,8 +5514,6 @@ t vphysics_save_constraintpulley_t::GetBaseMap()
 d vphysics_save_constraintpulley_t::m_DataMap
 t vphysics_save_motioncontroller_t::GetBaseMap()
 d vphysics_save_motioncontroller_t::m_DataMap
-t vphysics_save_motioncontroller_t::~vphysics_save_motioncontroller_t()
-t vphysics_save_motioncontroller_t::~vphysics_save_motioncontroller_t()
 t IVP_Collision_Callback_Table_Hash::object_to_index(IVP_Real_Object*)
 t IVP_Collision_Callback_Table_Hash::~IVP_Collision_Callback_Table_Hash()
 t IVP_Collision_Callback_Table_Hash::~IVP_Collision_Callback_Table_Hash()
@@ -5645,8 +5635,6 @@ b vphysics_save_cphysicsobject_t_DataDescInit::g_DataMapHolder
 b vphysics_save_cphysicsspring_t_DataDescInit::g_DataMapHolder
 t IVP_Controller_Raycast_Car_Vector_of_Cores_1::IVP_Controller_Raycast_Car_Vector_of_Cores_1()
 t IVP_Controller_Raycast_Car_Vector_of_Cores_1::IVP_Controller_Raycast_Car_Vector_of_Cores_1()
-t IVP_Controller_Raycast_Car_Vector_of_Cores_1::~IVP_Controller_Raycast_Car_Vector_of_Cores_1()
-t IVP_Controller_Raycast_Car_Vector_of_Cores_1::~IVP_Controller_Raycast_Car_Vector_of_Cores_1()
 b vphysics_save_constraintfixed_t_DataDescInit::g_DataMapHolder
 b vphysics_save_constrainthinge_t_DataDescInit::g_DataMapHolder
 b vphysics_save_constraintlength_t_DataDescInit::g_DataMapHolder
@@ -5659,14 +5647,11 @@ b vphysics_save_cphysicsconstraint_t_DataDescInit::g_DataMapHolder
 b vphysics_save_cvehiclecontroller_t_DataDescInit::g_DataMapHolder
 t IVP_Controller_Raycast_Airboat_Vector_of_Cores_1::IVP_Controller_Raycast_Airboat_Vector_of_Cores_1()
 t IVP_Controller_Raycast_Airboat_Vector_of_Cores_1::IVP_Controller_Raycast_Airboat_Vector_of_Cores_1()
-t IVP_Controller_Raycast_Airboat_Vector_of_Cores_1::~IVP_Controller_Raycast_Airboat_Vector_of_Cores_1()
-t IVP_Controller_Raycast_Airboat_Vector_of_Cores_1::~IVP_Controller_Raycast_Airboat_Vector_of_Cores_1()
 b vphysics_save_constraintaxislimit_t_DataDescInit::g_DataMapHolder
 b vphysics_save_constraintbreakable_t_DataDescInit::g_DataMapHolder
 b vphysics_save_shadowcontrolparams_t_DataDescInit::g_DataMapHolder
 b vphysics_save_constraintballsocket_t_DataDescInit::g_DataMapHolder
 b vphysics_save_cphysicsconstraintgroup_t_DataDescInit::g_DataMapHolder
-t CWrap::~CWrap() [clone .constprop.2]
 t ConVar::ClampValue(float&)
 t ConVar::SetDefault(char const*)
 t ConVar::InternalSetValue(char const*)
@@ -5707,6 +5692,8 @@ t CUtlMap<void*, void*, unsigned short>::~CUtlMap()
 d hk_Math::hk_random_seed
 t hk_Math::rand01()
 t hk_Math::srand01(unsigned int)
+t Tm_Zone::~Tm_Zone()
+t Tm_Zone::~Tm_Zone()
 t CCommand::DefaultBreakSet()
 t CCommand::Reset()
 t CCommand::Tokenize(char const*, characterset_t*)
@@ -5837,10 +5824,14 @@ t ConVarRef::ConVarRef(char const*, bool)
 t ConVarRef::ConVarRef(IConVar*)
 t ConVarRef::ConVarRef(char const*)
 t ConVarRef::ConVarRef(char const*, bool)
+t CTraceIVP::AllocateVisitHash() [clone .isra.26] [clone .part.27]
 t CTraceIVP::BuildLeafmapCache(leafmap_t const*)
 t CTraceIVP::BuildLeafmapCacheRLE(leafmap_t const*)
+t CTraceIVP::SetLedge(IVP_Compact_Ledge const*) [clone .part.28]
 t CTraceIVP::CTraceIVP(CPhysCollide const*, Vector const&, QAngle const&)
 t CTraceIVP::CTraceIVP(CPhysCollide const*, Vector const&, QAngle const&)
+t CTraceIVP::~CTraceIVP()
+t CTraceIVP::~CTraceIVP()
 t CTraceRay::Init(Vector const&, Vector const&)
 t CTraceRay::Reset(float)
 t CTraceRay::CTraceRay(Ray_t const&)
@@ -5849,6 +5840,7 @@ t CTraceRay::CTraceRay(Vector const&, Vector const&)
 t CTraceRay::CTraceRay(Ray_t const&)
 t CTraceRay::CTraceRay(Ray_t const&, Vector const&)
 t CTraceRay::CTraceRay(Vector const&, Vector const&)
+t CVProfile::ExitScope()
 t hk_Memory::deallocate(void*, int, hk_MEMORY_CLASS)
 t hk_Memory::init_memory(char*, int)
 t hk_Memory::aligned_free(void*)
@@ -5911,6 +5903,7 @@ t CTraceCone::GetVertByIndex(int) const
 t CTraceCone::Radius() const
 t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::NextInorder(unsigned short) const
 t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::Find(CPhysicsListenerCollision::corepair_t const&) const
+t CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<void*, void*, unsigned short>::Node_t const&) const
 t CUtlString::GetExtension() const
 t CUtlString::StripFilename() const
 t CUtlString::MatchesPattern(CUtlString const&, int) const
@@ -5979,8 +5972,7 @@ t IVP_U_Matrix::vimult4(IVP_U_Point const*, IVP_U_Float_Point*) const
 t IVP_U_Matrix::vimult4(IVP_U_Point const*, IVP_U_Point*) const
 t IVP_U_Matrix::vimult4(IVP_U_Float_Point const*, IVP_U_Float_Point*) const
 t IVP_U_Matrix::mi2mult4(IVP_U_Matrix const*, IVP_U_Matrix*) const
-t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.57] [clone .constprop.59]
-t CUtlMultiList<void*, unsigned short>::IsValidList(unsigned short) const
+t unsigned int CUtlHashtable<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::HashProxy, CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::EqualProxy, char const*>::DoLookup<char const*>(char const*, unsigned int, unsigned int*) const [clone .part.48] [clone .constprop.51]
 t IVP_CFEP_Hash::compare(void*, void*) const
 t IVP_Collision::get_fvector_index(int) const
 t IVP_MI_Vector::print() const
@@ -6322,7 +6314,6 @@ t IVP_VHash::find_elem(void const*, unsigned int) const
 U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
 t operator new(unsigned int)
 t operator new(unsigned int, int, char const*, int)
-U std::terminate()@@GLIBCXX_3.4
 t non-virtual thunk to IVP_Actuator_Extra::active_float_changed(IVP_U_Active_Float*)
 t non-virtual thunk to IVP_Actuator_Force_Active::active_float_changed(IVP_U_Active_Float*)
 t non-virtual thunk to IVP_Mindist_Recursive::get_spawned_mindist_count()

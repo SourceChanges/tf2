@@ -1,17 +1,18 @@
 U abort@@GLIBC_2.0
 t add_fdes
-d adds.7496
-t base_from_cb_data
-t base_from_object
+d adds.8776
+t base_from_cb_data.isra.4
+t base_from_object.isra.3
 A __bss_start
 t _calloc_dbg
 t _calloc_dbg_impl
 U chdir@@GLIBC_2.0
 t classify_object_over_fdes
-b completed.5793
+b completed.6767
 T CreateInterface
-d __CTOR_END__
-d __CTOR_LIST__
+U __ctype_b_loc@@GLIBC_2.3
+U __ctype_tolower_loc@@GLIBC_2.3
+U __ctype_toupper_loc@@GLIBC_2.3
 B cvar
 U __cxa_atexit@@GLIBC_2.1.3
 U __cxa_call_unexpected@@CXXABI_1.3
@@ -22,17 +23,15 @@ U __cxa_pure_virtual@@CXXABI_1.3
 t __deregister_frame
 t __deregister_frame_info
 t __deregister_frame_info_bases
+t deregister_tm_clones
 U dlclose@@GLIBC_2.0
 U dlerror@@GLIBC_2.0
 U dl_iterate_phdr@@GLIBC_2.2.4
 U dlopen@@GLIBC_2.1
 U dlsym@@GLIBC_2.0
-t __do_global_ctors_aux
 t __do_global_dtors_aux
+t __do_global_dtors_aux_fini_array_entry
 d __dso_handle
-d __DTOR_END__
-b dtor_idx.5795
-d __DTOR_LIST__
 b dwarf_reg_size_table
 a _DYNAMIC
 U __dynamic_cast@@CXXABI_1.3
@@ -49,6 +48,7 @@ b filesystem
 T _fini
 t frame_downheap
 t frame_dummy
+t __frame_dummy_init_array_entry
 r __FRAME_END__
 b frame_hdr_cache
 b frame_hdr_cache_head
@@ -58,7 +58,6 @@ t _free_dbg
 U free@@GLIBC_2.0
 t get_cie_encoding
 U getcwd@@GLIBC_2.0
-t get_fde_encoding
 a _GLOBAL_OFFSET_TABLE_
 t _GLOBAL__sub_I_cvar
 t _GLOBAL__sub_I_filesystem
@@ -73,82 +72,121 @@ U g_pMemAlloc
 b g_pProcessUtils
 b g_pUtlSortVectorQSortContext
 U __gxx_personality_v0@@CXXABI_1.3
-t __i686.get_pc_thunk.bx
-t __i686.get_pc_thunk.cx
 U iconv_close@@GLIBC_2.1
 U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
 T _init
 t init_dwarf_reg_size_table
-U isalnum@@GLIBC_2.0
-U iscntrl@@GLIBC_2.0
-U isprint@@GLIBC_2.0
 U isspace@@GLIBC_2.0
-U isupper@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 d __JCR_END__
 d __JCR_LIST__
 w _Jv_RegisterClasses
-t .L17
+t .L122
 t .L19
-t .L20
-t .L214
-t .L215
-t .L216
-t .L217
-t .L218
-t .L219
-t .L220
-t .L221
-t .L222
+t .L191
+t .L192
+t .L195
+t .L196
+t .L197
+t .L198
+t .L21
+t .L22
 t .L223
-t .L224
-t .L225
 t .L226
 t .L227
-t .L228
-t .L229
 t .L23
 t .L230
+t .L231
+t .L232
+t .L233
 t .L24
-t .L244
 t .L25
 t .L26
-t .L271
-t .L272
-t .L273
-t .L274
-t .L275
+t .L27
+t .L28
+t .L29
+t .L30
+t .L31
+t .L32
+t .L325
+t .L328
+t .L329
+t .L33
+t .L330
+t .L331
+t .L332
+t .L334
+t .L336
+t .L337
+t .L338
+t .L339
+t .L34
+t .L340
+t .L341
+t .L342
+t .L343
+t .L344
+t .L345
+t .L346
+t .L347
+t .L348
+t .L349
+t .L35
+t .L350
+t .L351
+t .L352
+t .L354
+t .L36
+t .L367
+t .L368
+t .L37
+t .L371
+t .L372
+t .L373
+t .L374
+t .L38
+t .L39
+t .L40
+t .L41
+t .L415
+t .L417
+t .L418
+t .L419
+t .L42
+t .L420
+t .L421
+t .L422
+t .L423
+t .L424
+t .L425
+t .L426
+t .L427
+t .L428
+t .L429
 t .L43
-t .L45
-t .L46
-t .L47
-t .L47
-t .L48
-t .L48
-t .L49
-t .L50
-t .L51
-t .L51
-t .L52
-t .L52
-t .L53
-t .L53
-t .L54
-t .L54
-t .L55
+t .L430
+t .L431
+t .L432
+t .L44
+t .L440
+t .L523
+t .L524
+t .L526
+t .L527
+t .L528
+t .L529
 t .L56
 t .L57
-t .L58
-t .L59
 t .L60
+t .L61
 t .L61
 t .L62
 t .L63
 t .L64
 t .L65
-t .L66
-t .L67
 t .L68
 t .L69
 t .L70
@@ -164,10 +202,12 @@ t LzmaDec_Init
 t LzmaDecode
 b lzma_persistent_buffer
 t LzmaProps_Decode
+t LzmaProps_Decode.part.2
 t _malloc_dbg
 U malloc@@GLIBC_2.0
-b marker.7234
+b marker.8514
 U mbstowcs@@GLIBC_2.0
+U memcmp@@GLIBC_2.0
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
@@ -175,22 +215,19 @@ U Msg
 t _msize_dbg
 t _nh_malloc_dbg
 b object_mutex
-b once_regsizes.7669
+b once_regsizes.8974
 U Plat_IsInDebugSession
 U Plat_localtime
-U pow@@GLIBC_2.0
-U printf@@GLIBC_2.0
-w pthread_cancel@@GLIBC_2.0
+U __pow_finite@@GLIBC_2.15
+U __printf_chk@@GLIBC_2.3.4
+w __pthread_key_create
 w pthread_mutex_lock@@GLIBC_2.0
 w pthread_mutex_unlock@@GLIBC_2.0
-w pthread_once@@GLIBC_2.0
+w pthread_once
 t qsort_s
-t read_encoded_value
 t read_encoded_value_with_base
 t read_sleb128
 t read_sleb128
-t read_uleb128
-t read_uleb128
 t _realloc_dbg
 t __register_frame
 t __register_frame_info
@@ -198,12 +235,14 @@ t __register_frame_info_bases
 t __register_frame_info_table
 t __register_frame_info_table_bases
 t __register_frame_table
+t register_tm_clones
 t search_object
 b seen_objects
 t set_fast_math
 t size_of_encoded_value
 b s_NoEscConversion
 b s_StringCharConversion
+U __stack_chk_fail@@GLIBC_2.4
 U strcasecmp@@GLIBC_2.0
 U strchr@@GLIBC_2.0
 U strcmp@@GLIBC_2.0
@@ -219,12 +258,12 @@ U strtol@@GLIBC_2.0
 U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
 U strtoull@@GLIBC_2.0
-b subs.7497
-b terminator.7340
+b subs.8777
+b terminator.8620
 U ThreadInMainThread
 U time@@GLIBC_2.0
+d __TMC_END__
 U tolower@@GLIBC_2.0
-U toupper@@GLIBC_2.0
 U towlower@@GLIBC_2.0
 U towupper@@GLIBC_2.0
 t __udivdi3
@@ -251,19 +290,20 @@ t _Unwind_Resume
 t _Unwind_Resume_or_Rethrow
 t _Unwind_SetGR
 t _Unwind_SetIP
-t _Unwind_SetSpColumn
 t uw_frame_state_for
 t uw_init_context_1
 t uw_install_context_1
 t uw_update_context
 t uw_update_context_1
-U vsnprintf@@GLIBC_2.0
-U vswprintf@@GLIBC_2.2
+U __vsnprintf_chk@@GLIBC_2.3.4
+U __vswprintf_chk@@GLIBC_2.4
 U Warning
 U wcslen@@GLIBC_2.0
 U wcsncat@@GLIBC_2.0
 U wcsncpy@@GLIBC_2.0
 U wcstombs@@GLIBC_2.0
+t __x86.get_pc_thunk.bx
+t __x86.get_pc_thunk.cx
 t CRC32_Init(unsigned int*)
 t V_FileBase(char const*, char*, int)
 t _V_memmove(char const*, int, void*, void const*, int)
@@ -274,6 +314,7 @@ t V_strnistr(char const*, char const*, int)
 t _V_strrchr(char const*, int, char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
+t V_StrSlice(char const*, int, int, char*, int) [clone .part.7]
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
 t V_strtoi64(char const*, char**, int)
 t V_strtowcs(char const*, int, wchar_t*, int)
@@ -337,6 +378,7 @@ t V_IsDeprecatedW(wchar_t)
 t V_StripFilename(char*)
 t Q_IsValidUChar32(wchar_t)
 t Q_UChar32ToUTF16(wchar_t, unsigned short*)
+t Q_UChar32ToUTF16(wchar_t, unsigned short*) [clone .part.5]
 t Q_UnicodeAdvance(char*, int)
 t Q_UnicodeAdvance(unsigned short*, int)
 t Q_UnicodeAdvance(wchar_t*, int)
@@ -358,6 +400,7 @@ t Sys_LoadInterface(char const*, char const*, CSysModule**, void**)
 t V_ComposeFileName(char const*, char const*, char*, int)
 t V_ExtractFilePath(char const*, char*, int)
 t Q_UChar32ToUTF8Len(wchar_t)
+t Q_UChar32ToUTF8Len(wchar_t) [clone .part.2]
 t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
 t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
 t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
@@ -373,7 +416,9 @@ t CRC32_GetTableEntry(unsigned int)
 t CRC32_ProcessBuffer(unsigned int*, void const*, int)
 t Q_UChar32ToUTF16Len(wchar_t)
 t Q_URLDecodeInternal(char*, int, char const*, int, bool)
+t Q_URLDecodeInternal(char*, int, char const*, int, bool) [clone .part.10]
 t Q_URLEncodeInternal(char*, int, char const*, int, bool)
+t Q_URLEncodeInternal(char*, int, char const*, int, bool) [clone .part.9]
 t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
 t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
 t V_IsMeanUnderscoreW(wchar_t)
@@ -470,11 +515,12 @@ b vec2_invalid
 b vec2_invalid
 b s_bRegistered
 b s_EmptyConVar
+t CopyToMaxChars(char*, int, char const*, int) [clone .part.0]
 d s_BackSlashMap
 b g_pStaticLZMABuf
 b g_SceneFileCache
 t LzmaDec_TryDummy(CLzmaDec const*, unsigned char const*, unsigned int)
-t LzmaDec_WriteRem(CLzmaDec*, unsigned int) [clone .part.0]
+t LzmaDec_WriteRem(CLzmaDec*, unsigned int)
 b s_bBuiltBreakSet
 d s_nDLLIdentifier
 d s_DefaultAccessor
@@ -483,7 +529,8 @@ t LzmaDec_DecodeReal2(CLzmaDec*, unsigned int, unsigned char const*)
 b g_unStaticLZMABufRef
 r g_WhitespaceEntities
 b g_unStaticLZMABufSize
-t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
+t StripWhitespaceWorker(int, wchar_t*, bool*, bool) [clone .constprop.29]
+t LzmaDec_AllocateProbs2(CLzmaDec*, _CLzmaProps const*, ISzAlloc*) [clone .isra.1]
 r g_Tier1_FullHTMLEntities
 r g_pszSimpleBBCodeReplacements
 d s_pConversionArrays_NoEscConversion
@@ -513,6 +560,7 @@ t CUtlBuffer::IsBigEndian()
 t CUtlBuffer::PutOverflow(int)
 t CUtlBuffer::AssumeMemory(void*, int, int, int)
 t CUtlBuffer::CheckPeekGet(int, int)
+t CUtlBuffer::CheckPeekGet(int, int) [clone .part.16]
 t CUtlBuffer::SetBigEndian(bool)
 t CUtlBuffer::EatCPPComment()
 t CUtlBuffer::EatWhiteSpace()
@@ -521,15 +569,18 @@ t CUtlBuffer::OnPutOverflow(int)
 t CUtlBuffer::SetBufferType(bool, bool)
 t CUtlBuffer::EnsureCapacity(int)
 t CUtlBuffer::PeekLineLength()
+t CUtlBuffer::PeekLineLength() [clone .part.21]
 t CUtlBuffer::PeekWhiteSpace(int)
 t CUtlBuffer::PeekStringMatch(int, char const*, int)
 t CUtlBuffer::GetDelimitedChar(CUtlCharConversion*)
 t CUtlBuffer::PeekStringLength()
+t CUtlBuffer::PeekStringLength() [clone .part.20]
 t CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)
 t CUtlBuffer::SetOverflowFuncs(bool (CUtlBuffer::*)(int), bool (CUtlBuffer::*)(int))
 t CUtlBuffer::GetStringInternal(char*, unsigned int)
 t CUtlBuffer::SetExternalBuffer(void*, int, int, int)
 t CUtlBuffer::AddNullTermination()
+t CUtlBuffer::AddNullTermination() [clone .part.23]
 t CUtlBuffer::GetDelimitedString(CUtlCharConversion*, char*, int)
 t CUtlBuffer::PutDelimitedString(CUtlCharConversion*, char const*)
 t CUtlBuffer::ActivateByteSwapping(bool)
@@ -558,11 +609,12 @@ t CUtlBuffer::CUtlBuffer(void const*, int, int)
 t CUtlBuffer::CUtlBuffer(int, int, int)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
 t CUtlMemory<CUtlString, int>::Grow(int)
-t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.26]
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.25] [clone .constprop.32]
 t CUtlMemory<unsigned char, int>::Grow(int)
 t CUtlMemory<unsigned char, int>::Purge()
 t CUtlMemory<char*, int>::Grow(int)
 t CUtlMemory<char const*, int>::Grow(int)
+t CUtlMemory<char const*, int>::Purge()
 t CUtlString::FixSlashes(char)
 t CUtlString::AllocMemory(unsigned int)
 t CUtlString::GetForModify()
@@ -597,8 +649,7 @@ t CUtlString::operator+=(char const*)
 t CUtlString::operator+=(CUtlString const&)
 t CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >::InsertBefore(int, CUtlString const&)
 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
-t CUtlVector<char const*, CUtlMemory<char const*, int> >::InsertBefore(int, char const* const&)
-t CUtlVector<char const*, CUtlMemory<char const*, int> >::Remove(int)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::ShiftElementsLeft(int, int)
 t CLZMAStream::InitZIPHeader(unsigned int, unsigned int)
 t CLZMAStream::TryParseHeader(unsigned char*, unsigned int, unsigned int&)
 t CLZMAStream::FreeDecoderState()
@@ -615,7 +666,7 @@ t CEmptyConVar::SetValue(char const*)
 t CEmptyConVar::~CEmptyConVar()
 t CEmptyConVar::~CEmptyConVar()
 t CEmptyConVar::~CEmptyConVar()
-t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
+t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&) [clone .constprop.15]
 t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.1]
 b InterfaceReg::s_pInterfaceRegs
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
@@ -777,7 +828,6 @@ t CCommand::FindArg(char const*) const
 t ConVarRef::IsValid() const
 t operator new(unsigned int)
 t operator new(unsigned int, int, char const*, int)
-U std::terminate()@@GLIBCXX_3.4
 t non-virtual thunk to CEmptyConVar::SetValue(float)
 t non-virtual thunk to CEmptyConVar::SetValue(int)
 t non-virtual thunk to CEmptyConVar::SetValue(char const*)

@@ -45,7 +45,8 @@ U fflush@@GLIBC_2.0
 T _fini
 U fopen64@@GLIBC_2.1
 U fopen@@GLIBC_2.1
-U fprintf@@GLIBC_2.0
+U __fprintf_chk@@GLIBC_2.3.4
+U __fread_chk@@GLIBC_2.7
 U fread@@GLIBC_2.0
 U free@@GLIBC_2.0
 U freopen@@GLIBC_2.0
@@ -70,6 +71,8 @@ U isalnum@@GLIBC_2.0
 U isalpha@@GLIBC_2.0
 U isspace@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 w _Jv_RegisterClasses
 U KeyValuesSystem
 U lchown@@GLIBC_2.0
@@ -81,8 +84,10 @@ U __lxstat@@GLIBC_2.0
 U malloc@@GLIBC_2.0
 U mbstowcs@@GLIBC_2.0
 U memcmp@@GLIBC_2.0
+U __memcpy_chk@@GLIBC_2.3.4
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
+U __memset_chk@@GLIBC_2.3.4
 U memset@@GLIBC_2.0
 U mkdir@@GLIBC_2.0
 U mkfifo@@GLIBC_2.0
@@ -94,8 +99,8 @@ U open@@GLIBC_2.0
 U Plat_IsInDebugSession
 U Plat_localtime
 U __pow_finite@@GLIBC_2.15
-U printf@@GLIBC_2.0
-w pthread_cancel@@GLIBC_2.0
+U __printf_chk@@GLIBC_2.3.4
+w __pthread_key_create@@GLIBC_2.0
 U pthread_mutexattr_init@@GLIBC_2.0
 U pthread_mutexattr_settype@@GLIBC_2.1
 U pthread_mutex_destroy@@GLIBC_2.0
@@ -114,14 +119,16 @@ U setenv@@GLIBC_2.0
 U sincosf@@GLIBC_2.1
 U sinf@@GLIBC_2.0
 U sin@@GLIBC_2.0
-U sprintf@@GLIBC_2.0
+U __sprintf_chk@@GLIBC_2.3.4
 U sscanf@@GLIBC_2.0
+U __stack_chk_fail@@GLIBC_2.4
 U stderr@@GLIBC_2.0
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
-U strcat@@GLIBC_2.0
+U __strcat_chk@@GLIBC_2.3.4
 U strchr@@GLIBC_2.0
 U strcmp@@GLIBC_2.0
+U __strcpy_chk@@GLIBC_2.3.4
 U strcpy@@GLIBC_2.0
 U strdup@@GLIBC_2.0
 U strerror@@GLIBC_2.0
@@ -138,7 +145,7 @@ U strtol@@GLIBC_2.0
 U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
 U strtoull@@GLIBC_2.0
-U swprintf@@GLIBC_2.2
+U __swprintf_chk@@GLIBC_2.4
 U symlink@@GLIBC_2.0
 U tanf@@GLIBC_2.0
 U tan@@GLIBC_2.0
@@ -158,8 +165,8 @@ U towupper@@GLIBC_2.0
 U unlink@@GLIBC_2.0
 U utime@@GLIBC_2.0
 U utimes@@GLIBC_2.0
-U vsnprintf@@GLIBC_2.0
-U vswprintf@@GLIBC_2.2
+U __vsnprintf_chk@@GLIBC_2.3.4
+U __vswprintf_chk@@GLIBC_2.4
 U Warning
 U wcslen@@GLIBC_2.0
 U wcsncat@@GLIBC_2.0
@@ -184,7 +191,6 @@ U CThreadSpinRWLock::UnlockWrite()
 U CThreadSpinRWLock::SpinLockForWrite(unsigned int)
 U CThreadSyncObject::~CThreadSyncObject()
 U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
-U std::terminate()@@GLIBCXX_3.4
 U vtable for __cxxabiv1::__class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__si_class_type_info@@CXXABI_1.3
 U vtable for __cxxabiv1::__vmi_class_type_info@@CXXABI_1.3

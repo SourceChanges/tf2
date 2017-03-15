@@ -1,26 +1,18 @@
 U abort@@GLIBC_2.0
-U accept@@GLIBC_2.0
 U access@@GLIBC_2.0
-U acosf@@GLIBC_2.0
-U acos@@GLIBC_2.0
-t addbyter
+U __acosf_finite@@GLIBC_2.15
+U __acos_finite@@GLIBC_2.15
 t add_fdes
-t AddFormData
-t AddFormDataf
-t AddFormInfo
-t add_next_timeout
-d adds.7496
-t alarmfunc
-U alarm@@GLIBC_2.0
-t alloc_addbyter
-t AllowServerConnect
-U asin@@GLIBC_2.0
-U atan2f@@GLIBC_2.0
-U atan2@@GLIBC_2.0
+d adds.8776
+T adler32
+T adler32_combine
+T adler32_combine64
+U __asin_finite@@GLIBC_2.15
+U __atan2f_finite@@GLIBC_2.15
+U __atan2_finite@@GLIBC_2.15
 U atan@@GLIBC_2.0
-t base_from_cb_data
-t base_from_object
-U bind@@GLIBC_2.0
+t base_from_cb_data.isra.4
+t base_from_object.isra.3
 A __bss_start
 t BZ2_bzBuffToBuffCompress
 t BZ2_bzBuffToBuffDecompress
@@ -51,353 +43,31 @@ d BZ2_rNums
 U CallAssertFailedNotifyFunc
 t _calloc_dbg
 t _calloc_dbg_impl
-U calloc@@GLIBC_2.0
 U cbrtf@@GLIBC_2.0
 U chdir@@GLIBC_2.0
-t checkhttpprefix
-t check_noproxy
-t checkPendPipeline
-t checkprotoprefix
-t check_telnet_options
 U chmod@@GLIBC_2.0
 U chown@@GLIBC_2.1
 t classify_object_over_fdes
-U clock_gettime@@GLIBC_2.2
 U closedir@@GLIBC_2.0
-U close@@GLIBC_2.0
 b colorcorrection
 U CommandLine_Tier0
-b completed.5793
+b completed.6767
 U COM_TimestampedLog
-U connect@@GLIBC_2.0
-t ConnectionExists
-t ConnectionKillOne
-t ConnectionStore
-t conn_free
-t cookie_sort
 U cosf@@GLIBC_2.0
 U cos@@GLIBC_2.0
-t create_conn
+T crc32
+T crc32_combine
+t crc32_combine_
+T crc32_combine64
+r crc_table
 T CreateInterface
 U CreateThreadPool
-r CSWTCH.14
-r CSWTCH.208
-r CSWTCH.23
-r CSWTCH.23
-r CSWTCH.26
-r CSWTCH.29
-r CSWTCH.556
-r CSWTCH.57
-r CSWTCH.58
-r CSWTCH.96
-d __CTOR_END__
-d __CTOR_LIST__
-r ctts.6888
+r CSWTCH.220
 U __ctype_b_loc@@GLIBC_2.3
 U __ctype_tolower_loc@@GLIBC_2.3
-T Curl_add_buffer
-T Curl_add_bufferf
-T Curl_add_buffer_init
-T Curl_add_buffer_send
-T Curl_add_custom_headers
-T Curl_addHandleToPipeline
-T Curl_add_timecondition
-T Curl_async_resolved
-T Curl_base64_decode
-T Curl_base64_encode
-T Curl_blockread_all
-T Curl_cache_addr
-D Curl_ccalloc
-D Curl_cfree
-T Curl_ch_connc
-T Curl_checkheaders
-T Curl_client_write
-T Curl_clone_ssl_config
-T Curl_close
-D Curl_cmalloc
-T Curl_compareheader
-T Curl_connect
-T Curl_connected_proxy
-T Curl_connecthost
-T Curl_cookie_add
-T Curl_cookie_cleanup
-T Curl_cookie_clearall
-T Curl_cookie_clearsess
-T Curl_cookie_freelist
-T Curl_cookie_getlist
-T Curl_cookie_init
-T Curl_cookie_list
-T Curl_cookie_loadfiles
-T Curl_cookie_output
-T Curl_copy_header_value
-D Curl_crealloc
-D Curl_cstrdup
-T Curl_debug
-T Curl_digest_cleanup
-T Curl_digest_cleanup_one
-T Curl_disconnect
-T Curl_do
-T Curl_doing_getsock
-T Curl_do_more
-T Curl_done
-t Curl_do_perform
-T Curl_dupset
-T Curl_easy_addmulti
-T curl_easy_cleanup
-T curl_easy_duphandle
-T curl_easy_escape
-T curl_easy_getinfo
-T curl_easy_init
-T Curl_easy_initHandleData
-T curl_easy_pause
-T curl_easy_perform
-T curl_easy_recv
-T curl_easy_reset
-T curl_easy_send
-T curl_easy_setopt
-T curl_easy_strerror
-T curl_easy_unescape
-T curl_escape
-T Curl_expire
-T Curl_failf
-T Curl_fileinfo_alloc
-T Curl_fileinfo_dtor
-T Curl_fileinfo_dup
-T Curl_fillreadbuffer
-T Curl_fnmatch
-T Curl_follow
-T curl_formadd
-T Curl_FormBoundary
-T Curl_formclean
-T curl_formfree
-T curl_formget
-T Curl_FormInit
-T Curl_formpostheader
-T Curl_FormReader
-T curl_free
-T Curl_freeaddrinfo
-T Curl_freeset
-T Curl_free_ssl_config
-T Curl_ftp_parselist
-T Curl_ftp_parselist_data_alloc
-T Curl_ftp_parselist_data_free
-T Curl_ftp_parselist_geterror
-T Curl_ftpsendf
-T Curl_getaddrinfo
-T Curl_getaddrinfo_ex
-T Curl_getconnectinfo
-T curl_getdate
-T curl_getenv
-T Curl_getFormData
-T Curl_GetFTPResponse
-T Curl_gethostname
-T Curl_getinfo
-T Curl_getoff_all_pipelines
-T curl_global_cleanup
-T Curl_global_host_cache_dtor
-T Curl_global_host_cache_init
-T curl_global_init
-T curl_global_init_mem
-R Curl_handler_dict
-r Curl_handler_dummy
-R Curl_handler_file
-R Curl_handler_ftp
-r Curl_handler_ftp_proxy
-R Curl_handler_gopher
-R Curl_handler_http
-R Curl_handler_imap
-r Curl_handler_imap_proxy
-R Curl_handler_pop3
-r Curl_handler_pop3_proxy
-R Curl_handler_rtsp
-R Curl_handler_smtp
-r Curl_handler_smtp_proxy
-R Curl_handler_telnet
-R Curl_handler_tftp
-T Curl_hash_add
-T Curl_hash_alloc
-T Curl_hash_clean
-T Curl_hash_clean_with_criterium
-T Curl_hash_delete
-T Curl_hash_destroy
-T Curl_hash_init
-T Curl_hash_pick
-T Curl_hash_str
-T Curl_he2ai
-T Curl_HMAC_final
-T Curl_HMAC_init
-R Curl_HMAC_MD5
-T Curl_HMAC_update
-T Curl_hostcache_prune
-T Curl_http
-T Curl_http_auth_act
-T Curl_httpchunk_init
-T Curl_httpchunk_read
-T Curl_http_connect
-T Curl_http_done
-T Curl_http_input_auth
-T Curl_http_perhapsrewind
-T Curl_http_readwrite_headers
-T Curl_http_should_fail
-T Curl_if2ip
-T Curl_infof
-T Curl_initinfo
-T Curl_init_userdefined
-T Curl_input_digest
-T Curl_ip2addr
-T Curl_ipvalid
-T Curl_is_connected
-T Curl_isPipeliningEnabled
-T Curl_is_resolved
-B curl_jmpenv
-T Curl_llist_alloc
-T Curl_llist_count
-T Curl_llist_destroy
-T Curl_llist_insert_next
-T Curl_llist_move
-T Curl_llist_remove
-T curl_maprintf
-T Curl_md5it
-T Curl_memrchr
-T curl_mfprintf
-T Curl_mk_connc
-T Curl_mk_dnscache
-R Curl_month
-T curl_mprintf
-T curl_msnprintf
-T curl_msprintf
-T curl_multi_add_handle
-T curl_multi_assign
-T Curl_multi_canPipeline
-T curl_multi_cleanup
-T curl_multi_fdset
-T Curl_multi_handlePipeBreak
-T curl_multi_info_read
-T curl_multi_init
-T curl_multi_perform
-T curl_multi_remove_handle
-T curl_multi_setopt
-T curl_multi_socket
-T curl_multi_socket_action
-T curl_multi_socket_all
-T curl_multi_strerror
-T curl_multi_timeout
-T curl_mvaprintf
-T curl_mvfprintf
-T curl_mvprintf
-T curl_mvsnprintf
-T curl_mvsprintf
-T Curl_num_addresses
-T Curl_open
-T Curl_output_digest
-T Curl_parsedate
-T Curl_parsenetrc
-T Curl_perform
-T Curl_pgrsDone
-T Curl_pgrsResetTimes
-T Curl_pgrsSetDownloadCounter
-T Curl_pgrsSetDownloadSize
-T Curl_pgrsSetUploadCounter
-T Curl_pgrsSetUploadSize
-T Curl_pgrsStartNow
-T Curl_pgrsTime
-T Curl_pgrsUpdate
-T Curl_poll
-T Curl_pop3_write
-T Curl_posttransfer
-T Curl_pp_disconnect
-T Curl_pp_easy_statemach
-T Curl_pp_flushsend
-T Curl_pp_getsock
-T Curl_pp_init
-T Curl_pp_multi_statemach
-T Curl_pp_readresp
-T Curl_pp_sendf
-T Curl_pp_state_timeout
-T Curl_pp_vsendf
-T Curl_pretransfer
-T Curl_printable_address
-T Curl_protocol_connect
-T Curl_protocol_connecting
-T Curl_protocol_doing
-T Curl_protocol_getsock
-T Curl_proxyCONNECT
-T Curl_rand
-T Curl_raw_equal
-T Curl_raw_nequal
-T Curl_raw_toupper
-T Curl_read
-T Curl_read_plain
-T Curl_readrewind
-T Curl_readwrite
-T Curl_reconnect_request
-T Curl_recv_plain
-T Curl_removeHandleFromPipeline
-T Curl_reset_reqproto
-T Curl_resolv
-T Curl_resolv_getsock
-T Curl_resolv_timeout
-T Curl_resolv_unlock
-T Curl_retry_request
-T Curl_rm_connc
-T Curl_rtsp
-T Curl_rtsp_connect
-T Curl_rtsp_disconnect
-T Curl_rtsp_done
-T Curl_rtsp_parseheader
-T Curl_rtsp_rtp_readwrite
-T Curl_safefree
-T Curl_sendf
-T Curl_send_plain
-T Curl_setopt
-T Curl_setup_transfer
-T curl_share_cleanup
-T curl_share_init
-T Curl_share_lock
-T curl_share_setopt
-T curl_share_strerror
-T Curl_share_unlock
-T Curl_single_getsock
-T Curl_sleep_time
-T curl_slist_append
-T Curl_slist_duplicate
-T curl_slist_free_all
-T Curl_smtp_escape_eob
-T Curl_socket_ready
-T Curl_SOCKS4
-T Curl_SOCKS5
-T Curl_speedcheck
-T Curl_speedinit
-T Curl_splay
-T Curl_splaygetbest
-T Curl_splayinsert
-T Curl_splayremovebyaddr
-T Curl_srand
-T Curl_ssl_config_matches
-T curl_strequal
-T Curl_strerror
-T Curl_str_key_compare
-T Curl_strlcat
-T curl_strnequal
-T Curl_strntoupper
-T Curl_timeleft
-T Curl_tvlong
-T curl_unescape
-T Curl_updateconninfo
-T Curl_verboseconnect
-T Curl_wait_for_resolv
-T Curl_wildcard_dtor
-T Curl_wildcard_init
-R Curl_wkday
-T Curl_write
-T Curl_write_plain
-T curlx_nonblock
-T curlx_tvdiff
-T curlx_tvdiff_secs
-T curlx_tvnow
-T curlx_ultouc
-T curlx_ultous
-T curlx_uztosi
+U __ctype_toupper_loc@@GLIBC_2.3
+U curl_global_cleanup@@CURL_GNUTLS_3
+U curl_global_init@@CURL_GNUTLS_3
 B cvar
 U __cxa_atexit@@GLIBC_2.1.3
 U __cxa_call_unexpected@@CXXABI_1.3
@@ -406,32 +76,27 @@ U __cxa_guard_abort@@CXXABI_1.3
 U __cxa_guard_acquire@@CXXABI_1.3
 U __cxa_guard_release@@CXXABI_1.3
 U __cxa_pure_virtual@@CXXABI_1.3
-t decodeQuantum
+r dbase.3454
 t __deregister_frame
 t __deregister_frame_info
 t __deregister_frame_info_bases
+t deregister_tm_clones
 U DevMsg
-t dict_do
+r dext.3455
 U difftime@@GLIBC_2.0
-t __divdi3
+r distfix.3536
 U dlclose@@GLIBC_2.0
 U dlerror@@GLIBC_2.0
 U dl_iterate_phdr@@GLIBC_2.2.4
 U dlopen@@GLIBC_2.1
 U dlsym@@GLIBC_2.0
-t __do_global_ctors_aux
 t __do_global_dtors_aux
+t __do_global_dtors_aux_fini_array_entry
 U DoNewAssertDialog
-t dprintf_DollarString
-t dprintf_formatf
 d __dso_handle
-d __DTOR_END__
-b dtor_idx.5795
-d __DTOR_LIST__
 b dwarf_reg_size_table
 a _DYNAMIC
 U __dynamic_cast@@CXXABI_1.3
-t easy_connection
 A _edata
 A _end
 b entitylist
@@ -442,24 +107,15 @@ t execute_stack_op
 U exit@@GLIBC_2.0
 U _ExitOnFatalAssert
 t _expand_dbg
-t expect100
 U fclose@@GLIBC_2.1
-U fcntl@@GLIBC_2.0
 t fde_mixed_encoding_compare
 t fde_single_encoding_compare
 t fde_unencoded_compare
-t fd_key_compare
 U fdopen@@GLIBC_2.1
 U ferror@@GLIBC_2.0
 U fflush@@GLIBC_2.0
 U fgetc@@GLIBC_2.0
-U fgets@@GLIBC_2.0
-t file_connect
-t file_do
-t file_done
-U fileno@@GLIBC_2.0
 T _fini
-t flush_cookies
 U fopen64@@GLIBC_2.1
 U fopen@@GLIBC_2.1
 r Four_2ToThe21s
@@ -478,75 +134,26 @@ r Four_PointFives
 r Four_Threes
 r Four_Twos
 r Four_Zeros
-U fprintf@@GLIBC_2.0
-U fputc@@GLIBC_2.0
+U __fprintf_chk@@GLIBC_2.3.4
 t frame_downheap
 t frame_dummy
+t __frame_dummy_init_array_entry
 r __FRAME_END__
 b frame_hdr_cache
 b frame_hdr_cache_head
 t frame_heapsort
 t __frame_state_for
 U fread@@GLIBC_2.0
-U freeaddrinfo@@GLIBC_2.0
-t freecookie
 t _free_dbg
-t freedirs
-t freednsentry
 U free@@GLIBC_2.0
-U freeifaddrs@@GLIBC_2.3
 U freopen@@GLIBC_2.0
-U fseek@@GLIBC_2.0
-r ftpauth.9278
-t ftp_connect
-t ftp_disconnect
-t ftp_do
-t ftp_doing
-t ftp_done
-t ftp_dophase_done
-t ftp_easy_statemach
-t ftp_endofresp
-t ftp_getsock
-t ftp_init
-t ftp_multi_statemach
-t ftp_nb_type
-t ftp_nextconnect
-t ftp_parse_url_path
-t ftp_pl_insert_finfo
-t ftp_setup_connection
-t ftp_state_loggedin
-t ftp_statemach_act
-t ftp_state_pasv_resp
-t ftp_state_post_cwd
-t ftp_state_post_mdtm
-t ftp_state_post_rest
-t ftp_state_post_retr_size
-t ftp_state_post_size
-t ftp_state_post_type
-t ftp_state_quote
-t ftp_state_type_resp
-t ftp_state_ul_setup
-t ftp_state_use_pasv
-t ftp_state_use_port
 U fwrite@@GLIBC_2.0
-U __fxstat64@@GLIBC_2.2
 b g_BitWriteMasks
-t getaddressinfo
-U getaddrinfo@@GLIBC_2.0
 t get_cie_encoding
 U GetCPUInformation
+T get_crc_table
 U getcwd@@GLIBC_2.0
 U getenv@@GLIBC_2.0
-U geteuid@@GLIBC_2.0
-t get_fde_encoding
-U gethostname@@GLIBC_2.0
-U getifaddrs@@GLIBC_2.3
-t get_netscape_format
-U getpeername@@GLIBC_2.0
-U getpwuid@@GLIBC_2.0
-U getsockname@@GLIBC_2.0
-U getsockopt@@GLIBC_2.0
-U gettimeofday@@GLIBC_2.0
 b g_ExtraMasks
 b g_KeyValuesErrorStack
 b g_LittleBits
@@ -562,7 +169,6 @@ t _GLOBAL__sub_I_g_pVGuiLocalize
 t _GLOBAL__sub_I_lineartovertex
 t _GLOBAL__sub_I_replay_debug
 t _GLOBAL__sub_I_replay_enable
-t _GLOBAL__sub_I_replay_publish_simulate_delay_ftp
 t _GLOBAL__sub_I_replay_publish_simulate_delay_local_http
 t _GLOBAL__sub_I_s_bMathlibInitialized
 t _GLOBAL__sub_I_s_StringCharConversion
@@ -600,8 +206,6 @@ t _GLOBAL__sub_I__ZN9KeyValues22s_pfGetSymbolForStringE
 w __gmon_start__
 d g_MostCommonPathIDs
 d g_MostCommonPrefixes
-U gmtime_r@@GLIBC_2.0
-t gopher_do
 d g_pAcceptableFileserverProtocols
 d g_pAcceptableOffloadProtocols
 d g_pBlockSpewer
@@ -646,150 +250,169 @@ U g_Telemetry
 b g_VBAllocTracker
 U g_VProfCurrentProfile
 U __gxx_personality_v0@@CXXABI_1.3
-t hash_element_dtor
-t hash_fd
-t header_append
-r hmac_ipad
-r hmac_opad
-b host_cache_initialized
-t hostcache_timestamp_remove
-b hostname_cache
-t http_getsock_do
-t http_output_auth
 U HushAsserts
 t __i686.get_pc_thunk.bx
-t __i686.get_pc_thunk.cx
 U iconv_close@@GLIBC_2.1
 U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
-r ids.7683
-t imap_connect
-t imap_disconnect
-t imap_do
-t imap_doing
-t imap_done
-t imap_easy_statemach
-t imap_endofresp
-t imap_getsock
-t imap_multi_statemach
-t imapsendf
-t imap_setup_connection
-t imap_statemach_act
-U inet_ntop@@GLIBC_2.0
-U inet_pton@@GLIBC_2.0
+T inflate
+T inflateCopy
+R inflate_copyright
+T inflateEnd
+t inflate_fast
+T inflateGetHeader
+T inflateInit_
+T inflateInit2_
+T inflateMark
+T inflatePrime
+T inflateReset
+T inflateReset2
+T inflateSetDictionary
+T inflateSync
+T inflateSyncPoint
+t inflate_table
+T inflateUndermine
 T _init
 t init_dwarf_reg_size_table
-b init_flags
-b initialized
-U isalnum@@GLIBC_2.0
-t isBadFtpString
-U iscntrl@@GLIBC_2.0
-t IsPipeliningPossible
-U isprint@@GLIBC_2.0
 U isspace@@GLIBC_2.0
-U isupper@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 d __JCR_END__
 d __JCR_LIST__
 w _Jv_RegisterClasses
-r KEY_NOTUSED.3792
 U KeyValuesSystem
-t .L17
+t .L122
 t .L19
-t .L20
-t .L214
-t .L215
-t .L216
-t .L217
-t .L218
-t .L219
-t .L220
-t .L221
-t .L222
+t .L191
+t .L192
+t .L195
+t .L196
+t .L197
+t .L198
+t .L21
+t .L22
 t .L223
-t .L224
-t .L225
 t .L226
 t .L227
-t .L228
-t .L229
 t .L23
 t .L230
+t .L231
+t .L232
+t .L233
 t .L24
-t .L244
 t .L25
 t .L26
-t .L271
-t .L272
-t .L273
-t .L274
-t .L275
+t .L27
+t .L28
+t .L29
+t .L30
+t .L31
+t .L32
+t .L325
+t .L328
+t .L329
+t .L33
+t .L330
+t .L331
+t .L332
+t .L334
+t .L336
+t .L337
+t .L338
+t .L339
+t .L34
+t .L340
+t .L341
+t .L342
+t .L343
+t .L344
+t .L345
+t .L346
+t .L347
+t .L348
+t .L349
+t .L35
+t .L350
+t .L351
+t .L352
+t .L354
+t .L36
+t .L367
+t .L368
+t .L37
+t .L371
+t .L372
+t .L373
+t .L374
+t .L38
+t .L39
+t .L40
+t .L41
+t .L415
+t .L417
+t .L418
+t .L419
+t .L42
+t .L420
+t .L421
+t .L422
+t .L423
+t .L424
+t .L425
+t .L426
+t .L427
+t .L428
+t .L429
 t .L43
-t .L45
-t .L46
-t .L47
-t .L47
-t .L48
-t .L48
-t .L49
-t .L50
-t .L51
-t .L51
-t .L52
-t .L52
-t .L53
-t .L53
-t .L54
-t .L54
-t .L55
+t .L430
+t .L431
+t .L432
+t .L44
+t .L440
+t .L523
+t .L524
+t .L526
+t .L527
+t .L528
+t .L529
 t .L56
 t .L57
-t .L58
-t .L59
 t .L60
+t .L61
 t .L61
 t .L62
 t .L63
 t .L64
 t .L65
-t .L66
-t .L67
 t .L68
 t .L69
 t .L70
 t .L71
+r lbase.3452
 U lchown@@GLIBC_2.0
+r lenfix.3535
+r lext.3453
 t linear_search_fdes
 b lineartolightmap
 b lineartovertex
 U link@@GLIBC_2.0
-U listen@@GLIBC_2.0
-t llist_dtor
 U localtime@@GLIBC_2.0
 U Log
-U log@@GLIBC_2.0
-t loop
-r lower_digits
-U lseek64@@GLIBC_2.2
+U __log_finite@@GLIBC_2.15
 t lstat
 t __lstat
 U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
 t _malloc_dbg
 U malloc@@GLIBC_2.0
-b marker.7234
+b marker.8514
 b materials
-t max5data
 U mbstowcs@@GLIBC_2.0
-t MD5_Final
-t MD5_Init
-t md5_to_ascii
-t MD5Transform
-t MD5_Update
 b mdllib
-U memchr@@GLIBC_2.0
+U memcmp@@GLIBC_2.0
+U __memcpy_chk@@GLIBC_2.3.4
 U memcpy@@GLIBC_2.0
-t memdup
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
 U mkdir@@GLIBC_2.0
@@ -797,30 +420,19 @@ U mkfifo@@GLIBC_2.0
 t mknod
 t __mknod
 U mktime@@GLIBC_2.0
-r mode.8033
-r mode.8310
-r month_days_cumulative.4955
+t __moddi3
 U mount@@GLIBC_2.0
 U Msg
 t _msize_dbg
-t multi_addtimeout
-t multi_freeamsg
-t multi_freetimeout
-t multi_runsingle
-t multi_socket
-t multi_timeout
 r nanmask
 t _nh_malloc_dbg
-r null.5246
 b object_mutex
-b once_regsizes.7669
+b once_regsizes.8974
 U open64@@GLIBC_2.2
 U opendir@@GLIBC_2.0
 U open@@GLIBC_2.0
-t output_auth_headers
+r order.3564
 b p4
-r PADDING
-t pausewrite
 d pfFastCos
 d pfFastSinCos
 d pfInvRSquared
@@ -831,27 +443,10 @@ d pfVectorNormalize
 d pfVectorNormalizeFast
 U Plat_IsInDebugSession
 U Plat_localtime
-t PL_ERROR
-U poll@@GLIBC_2.0
-t pop3_connect
-t pop3_disconnect
-t pop3_do
-t pop3_doing
-t pop3_done
-t pop3_dophase_done
-t pop3_easy_statemach
-t pop3_endofresp
-t pop3_getsock
-t pop3_multi_statemach
-t pop3_setup_connection
-t pop3_statemach_act
 d power2_n
-U pow@@GLIBC_2.0
-U printf@@GLIBC_2.0
-t printoption
-t printsub
-r protocols
-w pthread_cancel@@GLIBC_2.0
+U __pow_finite@@GLIBC_2.15
+U __printf_chk@@GLIBC_2.3.4
+w __pthread_key_create@@GLIBC_2.0
 U pthread_mutexattr_init@@GLIBC_2.0
 U pthread_mutexattr_settype@@GLIBC_2.1
 U pthread_mutex_destroy@@GLIBC_2.0
@@ -863,29 +458,19 @@ U qsort@@GLIBC_2.0
 t qsort_s
 U raise@@GLIBC_2.0
 U rand@@GLIBC_2.0
-b randseed
-U __rawmemchr@@GLIBC_2.1
 U readdir@@GLIBC_2.0
-t read_encoded_value
 t read_encoded_value_with_base
-t readfromfile
-U read@@GLIBC_2.0
-t readmoredata
 t read_sleb128
 t read_sleb128
-t read_uleb128
-t read_uleb128
 t _realloc_dbg
-U realloc@@GLIBC_2.0
 U realpath@@GLIBC_2.3
-U recvfrom@@GLIBC_2.0
-U recv@@GLIBC_2.0
 t __register_frame
 t __register_frame_info
 t __register_frame_info_bases
 t __register_frame_info_table
 t __register_frame_info_table_bases
 t __register_frame_table
+t register_tm_clones
 U rename@@GLIBC_2.0
 b replay_block_dump_interval
 b replay_buffersize
@@ -896,17 +481,6 @@ b replay_enable
 b replay_fileserver_autocleanup
 b replay_fileserver_host
 b replay_fileserver_offload_aborttime
-b replay_fileserver_offload_enable
-b replay_fileserver_offload_hostname
-b replay_fileserver_offload_login
-b replay_fileserver_offload_maxuploads
-b replay_fileserver_offload_password
-b replay_fileserver_offload_port
-b replay_fileserver_offload_protocol
-b replay_fileserver_offload_proxy_host
-b replay_fileserver_offload_proxy_port
-b replay_fileserver_offload_remotepath
-b replay_fileserver_offload_useproxy
 b replay_fileserver_path
 b replay_fileserver_port
 b replay_fileserver_protocol
@@ -914,154 +488,73 @@ b replay_flushinterval
 b replay_local_fileserver_path
 b replay_max_publish_threads
 b replay_name
-b replay_publish_simulate_delay_ftp
 b replay_publish_simulate_delay_local_http
 b replay_publish_simulate_rename_fail
 b replay_recording
 b replay_record_voice
-t resolve_server
-t reuse_conn
 U rmdir@@GLIBC_2.0
-t rtsp_getsock_do
-t safe_strequal
 b s_bMathlibInitialized
 U scandir@@GLIBC_2.0
 t search_object
 b seen_objects
-U send@@GLIBC_2.0
-t send_negotiation
-U sendto@@GLIBC_2.0
 t set_fast_math
-U setsockopt@@GLIBC_2.0
-t setstropt
-t setstropt_userpwd
-t setup_range
-t sh_freeentry
 U ShouldUseNewAssertDialog
-t showit
-U sigaction@@GLIBC_2.0
-U siglongjmp@@GLIBC_2.0
-t signalPipeClose
-U __sigsetjmp@@GLIBC_2.0
 U sincosf@@GLIBC_2.1
 b SinCosTable
 U sinf@@GLIBC_2.0
-r s_infotype.7769
-t singleipconnect
-t singlesocket
 U sin@@GLIBC_2.0
 t size_of_encoded_value
-t smtp_authenticate
-t smtp_auth_login_user
-t smtp_auth_plain_data
-t smtp_connect
-t smtp_disconnect
-t smtp_do
-t smtp_doing
-t smtp_done
-t smtp_dophase_done
-t smtp_easy_statemach
-t smtp_endofresp
-t smtp_getsock
-t smtp_multi_statemach
-t smtp_rcpt_to
-t smtp_setup_connection
-t smtp_state_authcram_resp
-t smtp_statemach_act
 b s_NoEscConversion
-U socket@@GLIBC_2.0
 U _SpewInfo
 U _SpewMessage
-U sprintf@@GLIBC_2.0
 U sscanf@@GLIBC_2.0
 b s_StringCharConversion
+U __stack_chk_fail@@GLIBC_2.4
 t stat
 t __stat
 U stderr@@GLIBC_2.0
 U stdin@@GLIBC_2.0
 U stdout@@GLIBC_2.0
-t storebuffer
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
-U strcat@@GLIBC_2.0
 U strchr@@GLIBC_2.0
 U strcmp@@GLIBC_2.0
+U __strcpy_chk@@GLIBC_2.3.4
 U strcpy@@GLIBC_2.0
 U strdup@@GLIBC_2.0
-U strerror@@GLIBC_2.0
-U strerror_r@@GLIBC_2.0
 U strftime@@GLIBC_2.0
-t strippath
 U strlen@@GLIBC_2.0
 U strncasecmp@@GLIBC_2.0
 U strncat@@GLIBC_2.0
-U strncmp@@GLIBC_2.0
 U strncpy@@GLIBC_2.0
-r strnil.5260
 U strpbrk@@GLIBC_2.0
-U strrchr@@GLIBC_2.0
-t strstore
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtok@@GLIBC_2.0
-U __strtok_r@@GLIBC_2.0
 U strtol@@GLIBC_2.0
-U __strtol_internal@@GLIBC_2.0
 U strtoll@@GLIBC_2.0
-U __strtoll_internal@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
-U __strtoul_internal@@GLIBC_2.0
 U strtoull@@GLIBC_2.0
-t suboption
-b subs.7497
+b subs.8777
 b sv_use_steam_voice
-U swprintf@@GLIBC_2.2
+U __swprintf_chk@@GLIBC_2.4
 U symlink@@GLIBC_2.0
-t T.120
-r table16.7737
-r table64
-t tailmatch
 U tanf@@GLIBC_2.0
 U tan@@GLIBC_2.0
-r telnetcmds
-t telnet_do
-t telnet_done
-r telnetoptions
-b terminator.7340
-t tftp_connect
-t tftp_connect_for_rx
-t tftp_connect_for_tx
-t tftp_disconnect
-t tftp_do
-t tftp_doing
-t tftp_done
-t tftp_getsock
-t tftp_multi_statemach
-t tftp_option_add
-t tftp_receive_packet
-t tftp_rx
-t tftp_set_timeouts
-t tftp_setup_connection
-t tftp_state_machine
-t tftp_state_timeout
-t tftp_tx
+b terminator.8620
 U ThreadGetCurrentId
 U ThreadInterlockedAssignIf
 U ThreadInterlockedDecrement
 U ThreadInterlockedExchange
 U ThreadInterlockedIncrement
 U ThreadSleep
-t time2str
 U time@@GLIBC_2.0
+d __TMC_END__
 U tolower@@GLIBC_2.0
 U toupper@@GLIBC_2.0
 U towlower@@GLIBC_2.0
 U towupper@@GLIBC_2.0
-r tv_zero.8874
-r tz
 t __udivdi3
-t __umoddi3
-t unescape_word
 U ungetc@@GLIBC_2.0
 U unlink@@GLIBC_2.0
 b unseen_objects
@@ -1087,9 +580,7 @@ t _Unwind_Resume
 t _Unwind_Resume_or_Rethrow
 t _Unwind_SetGR
 t _Unwind_SetIP
-t _Unwind_SetSpColumn
-t update_timer
-r upper_digits
+t updatewindow
 U utime@@GLIBC_2.0
 U utimes@@GLIBC_2.0
 t uw_frame_state_for
@@ -1100,14 +591,10 @@ t uw_update_context_1
 b vec3_angle
 b vec3_invalid
 b vec3_origin
-t verifyconnect
-U vsnprintf@@GLIBC_2.0
-U vswprintf@@GLIBC_2.2
-t waitconnect
-t wait_ms
+U __vsnprintf_chk@@GLIBC_2.3.4
+U __vswprintf_chk@@GLIBC_2.4
 U Warning
-t wc_data_dtor
-U wcscat@@GLIBC_2.0
+U __wcscat_chk@@GLIBC_2.4
 U wcschr@@GLIBC_2.0
 U wcslen@@GLIBC_2.0
 U wcsncat@@GLIBC_2.0
@@ -1115,7 +602,6 @@ U wcsncpy@@GLIBC_2.0
 U wcstol@@GLIBC_2.0
 U wcstoll@@GLIBC_2.1
 U wcstombs@@GLIBC_2.0
-r weekday
 t __wrap_access
 t __wrap_chmod
 t __wrap_chown
@@ -1146,8 +632,9 @@ t __wrap_utime
 t __wrap_utimes
 t __wrap___xstat
 t __wrap___xstat64
+t __x86.get_pc_thunk.bx
+t __x86.get_pc_thunk.cx
 U __xmknod@@GLIBC_2.0
-U __xpg_basename@@GLIBC_2.0
 U __xstat64@@GLIBC_2.2
 U __xstat@@GLIBC_2.0
 t HashString(char const*)
@@ -1163,6 +650,7 @@ t V_strnistr(char const*, char const*, int)
 t _V_strrchr(char const*, int, char const*, char)
 t V_StrRight(char const*, int, char*, int)
 t V_StrSlice(char const*, int, int, char*, int)
+t V_StrSlice(char const*, int, int, char*, int) [clone .part.7]
 t V_StrSubst(char const*, char const*, char const*, char*, int, bool)
 t V_strtoi64(char const*, char**, int)
 t V_strtowcs(char const*, int, wchar_t*, int)
@@ -1325,6 +813,7 @@ t QuaternionInvert(Quaternion const&, Quaternion&)
 t QuaternionMatrix(Quaternion const&, matrix3x4_t&)
 t QuaternionMatrix(Quaternion const&, Vector const&, matrix3x4_t&)
 t Q_UChar32ToUTF16(wchar_t, unsigned short*)
+t Q_UChar32ToUTF16(wchar_t, unsigned short*) [clone .part.5]
 t Q_UnicodeAdvance(char*, int)
 t Q_UnicodeAdvance(unsigned short*, int)
 t Q_UnicodeAdvance(wchar_t*, int)
@@ -1371,6 +860,7 @@ t HashStringCaseless(char const*)
 t MathLib_MMXEnabled()
 t MathLib_SSEEnabled()
 t Q_UChar32ToUTF8Len(wchar_t)
+t Q_UChar32ToUTF8Len(wchar_t) [clone .part.2]
 t Q_UTF16CharsToUTF8(unsigned short const*, int, char*, int, EStringConvertErrorPolicy)
 t Q_UTF32CharsToUTF8(wchar_t const*, int, char*, int, EStringConvertErrorPolicy)
 t Q_UTF8CharsToUTF16(char const*, int, unsigned short*, int, EStringConvertErrorPolicy)
@@ -1396,7 +886,9 @@ t QuaternionConjugate(Quaternion const&, Quaternion&)
 t QuaternionNormalize(Quaternion&)
 t Q_UChar32ToUTF16Len(wchar_t)
 t Q_URLDecodeInternal(char*, int, char const*, int, bool)
+t Q_URLDecodeInternal(char*, int, char const*, int, bool) [clone .part.10]
 t Q_URLEncodeInternal(char*, int, char const*, int, bool)
+t Q_URLEncodeInternal(char*, int, char const*, int, bool) [clone .part.9]
 t Q_UTF16CharsToUTF32(unsigned short const*, int, wchar_t*, int, EStringConvertErrorPolicy)
 t Q_UTF32CharsToUTF16(wchar_t const*, int, unsigned short*, int, EStringConvertErrorPolicy)
 t SrgbGammaTo360Gamma(float)
@@ -1427,7 +919,6 @@ t ReadSessionInfoHeader(void const*, int, SessionInfoHeader_t&)
 t Replay_GetDownloadURL()
 t SetBitBufErrorHandler(void (*)(BitBufErrorType, char const*))
 t SolveInverseQuadratic(float, float, float, float, float, float, float&, float&, float&)
-t SV_CreateFtpUploadJob(char const*)
 t SV_RunJobToCompletion(CJob*)
 t Sys_IsDebuggerPresent()
 t VectorToColorRGBExp32(Vector const&, ColorRGBExp32&)
@@ -1488,7 +979,6 @@ t Catmull_Rom_Spline_Tangent(Vector const&, Vector const&, Vector const&, Vector
 t GeneratePerspectiveFrustum(Vector const&, QAngle const&, float, float, float, float, Frustum_t&)
 t GeneratePerspectiveFrustum(Vector const&, Vector const&, Vector const&, Vector const&, float, float, float, float, Frustum_t&)
 t InternalBitBufErrorHandler(BitBufErrorType, char const*)
-t SV_CreateFtpFileDeleterJob(char const*)
 t V_StripAndPreserveHTMLCore(CUtlBuffer*, char const*, char const**, unsigned int, char const**, unsigned int, unsigned int)
 t CalcDistanceToLineSegment2D(Vector2D const&, Vector2D const&, Vector2D const&, float*)
 t Catmull_Rom_Spline_Integral(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
@@ -1588,15 +1078,18 @@ t _V_wcslen(char const*, int, wchar_t const*)
 t V_wcsncat(wchar_t*, wchar_t const*, unsigned int, int)
 t V_wcsncpy(wchar_t*, wchar_t const*, int)
 t _V_wcsupr(char const*, int, wchar_t*)
+t zcalloc
+t zcfree
 t operator delete[](void*)
 t operator delete(void*)
 t operator delete(void*, unsigned int)
+R z_errmsg
+T zError
 b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
 b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
 b guard variable for CUtlString::GetEmptyString()::s_emptyString
 b guard variable for CServerReplayContext::ReportErrorsToUser(wchar_t*)::s_clrRed
 b guard variable for CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)::r_developer
-t bsPutUChar(EState*, unsigned char)
 r _pi32_inv1
 b s_BreakSet
 t bsPutUInt32(EState*, unsigned int)
@@ -1604,7 +1097,6 @@ t FastToLower(char)
 b s_bShowDiag
 b s_nCVarFlag
 b s_pTokenBuf
-b vec2_origin
 b vec2_origin
 b vec2_origin
 b vec2_origin
@@ -1707,7 +1199,6 @@ b vec2_invalid
 b vec2_invalid
 b vec2_invalid
 b vec2_invalid
-b vec2_invalid
 b vec4_invalid
 b vec4_invalid
 b vec4_invalid
@@ -1733,6 +1224,7 @@ b s_bSSEEnabled
 b s_EmptyConVar
 b texgammatable
 r bzerrorstrings
+t CopyToMaxChars(char*, int, char const*, int) [clone .part.0]
 t default_bzfree(void*, void*)
 b lineartoscreen
 d s_BackSlashMap
@@ -1757,6 +1249,7 @@ r _ps_inv_sign_mask
 t replay_stoprecord(CCommand const&)
 d s_DefaultAccessor
 r g_BasicHTMLEntities
+b g_BitWriteMasksInit
 b g_BitBufErrorHandler
 r g_WhitespaceEntities
 r _ps_minus_cephes_DP1
@@ -1765,7 +1258,7 @@ r _ps_minus_cephes_DP3
 t replay_dopublishtest(CCommand const&)
 b replay_record_command
 d s_LastFileLoadingFrom
-t StripWhitespaceWorker(int, wchar_t*, bool*, bool)
+t StripWhitespaceWorker(int, wchar_t*, bool*, bool) [clone .constprop.29]
 b g_Mathlib_GammaToLinear
 b g_Mathlib_LinearToGamma
 t replay_printsessioninfo(CCommand const&)
@@ -1792,6 +1285,8 @@ r _pi32_4
 r _ps_0p5
 t mainSort(unsigned int*, unsigned char*, unsigned short*, unsigned int*, int, int, int*)
 b s_Replay
+T zlibCompileFlags
+T zlibVersion
 t ConCommand::CanAutoComplete()
 t ConCommand::AutoCompleteSuggest(char const*, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >&)
 t ConCommand::Dispatch(CCommand const&)
@@ -1812,6 +1307,7 @@ t CUtlBuffer::IsBigEndian()
 t CUtlBuffer::PutOverflow(int)
 t CUtlBuffer::AssumeMemory(void*, int, int, int)
 t CUtlBuffer::CheckPeekGet(int, int)
+t CUtlBuffer::CheckPeekGet(int, int) [clone .part.16]
 t CUtlBuffer::SetBigEndian(bool)
 t CUtlBuffer::EatCPPComment()
 t CUtlBuffer::EatWhiteSpace()
@@ -1820,15 +1316,18 @@ t CUtlBuffer::OnPutOverflow(int)
 t CUtlBuffer::SetBufferType(bool, bool)
 t CUtlBuffer::EnsureCapacity(int)
 t CUtlBuffer::PeekLineLength()
+t CUtlBuffer::PeekLineLength() [clone .part.21]
 t CUtlBuffer::PeekWhiteSpace(int)
 t CUtlBuffer::PeekStringMatch(int, char const*, int)
 t CUtlBuffer::GetDelimitedChar(CUtlCharConversion*)
 t CUtlBuffer::PeekStringLength()
+t CUtlBuffer::PeekStringLength() [clone .part.20]
 t CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)
 t CUtlBuffer::SetOverflowFuncs(bool (CUtlBuffer::*)(int), bool (CUtlBuffer::*)(int))
 t CUtlBuffer::GetStringInternal(char*, unsigned int)
 t CUtlBuffer::SetExternalBuffer(void*, int, int, int)
 t CUtlBuffer::AddNullTermination()
+t CUtlBuffer::AddNullTermination() [clone .part.23]
 t CUtlBuffer::GetDelimitedString(CUtlCharConversion*, char*, int)
 t CUtlBuffer::PutDelimitedString(CUtlCharConversion*, char const*)
 t CUtlBuffer::ActivateByteSwapping(bool)
@@ -1856,38 +1355,48 @@ t CUtlBuffer::CUtlBuffer(int, int, int)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
 t CUtlBuffer::CUtlBuffer(int, int, int)
 t CUtlBuffer::CUtlBuffer(void const*, int, int)
-t CUtlBuffer::~CUtlBuffer()
-t CUtlBuffer::~CUtlBuffer()
 t CUtlMemory<CUtlString, int>::Grow(int)
 t CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int>::Grow(int)
+t CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int>::Purge()
 t CUtlMemory<_XUSER_CONTEXT, int>::Grow(int)
+t CUtlMemory<_XUSER_CONTEXT, int>::Purge()
 t CUtlMemory<_XUSER_PROPERTY, int>::Grow(int)
+t CUtlMemory<_XUSER_PROPERTY, int>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<unsigned int, int>, int>::Grow(int)
 t CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSession*, int>, int>::Grow(int)
+t CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSession*, int>, int>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<CSessionPublishManager*, int>, int>::Grow(int)
 t CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSessionBlock*, int>, int>::Grow(int)
+t CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSessionBlock*, int>, int>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<CServerRecordingSessionBlock*, int>, int>::Grow(int)
+t CUtlMemory<UtlLinkedListElem_t<CServerRecordingSessionBlock*, int>, int>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<IThinker*, int>, int>::Grow(int)
+t CUtlMemory<UtlLinkedListElem_t<IThinker*, int>, int>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<wchar_t*, int>, int>::Grow(int)
 t CUtlMemory<char, int>::Grow(int)
-t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.26]
+t CUtlMemory<char, int>::Purge()
+t CUtlMemory<unsigned char, int>::ConvertToGrowableMemory(int) [clone .part.25] [clone .constprop.32]
 t CUtlMemory<unsigned char, int>::Grow(int)
 t CUtlMemory<unsigned char, int>::Purge()
 t CUtlMemory<int, int>::Grow(int)
-t CUtlMemory<int, int>::~CUtlMemory()
-t CUtlMemory<int, int>::~CUtlMemory()
+t CUtlMemory<int, int>::Purge()
 t CUtlMemory<NET_SetConVar::cvar_s, int>::Grow(int)
+t CUtlMemory<NET_SetConVar::cvar_s, int>::Purge()
 t CUtlMemory<SVC_ClassInfo::class_s, int>::Grow(int)
+t CUtlMemory<SVC_ClassInfo::class_s, int>::Purge()
 t CUtlMemory<CBaseRecordingSession*, int>::Grow(int)
-t CUtlMemory<CBaseRecordingSession*, int>::~CUtlMemory()
-t CUtlMemory<CBaseRecordingSession*, int>::~CUtlMemory()
+t CUtlMemory<CBaseRecordingSession*, int>::Purge()
 t CUtlMemory<CBaseRecordingSessionBlock*, int>::Grow(int)
-t CUtlMemory<CBaseRecordingSessionBlock*, int>::~CUtlMemory()
-t CUtlMemory<CBaseRecordingSessionBlock*, int>::~CUtlMemory()
+t CUtlMemory<CBaseRecordingSessionBlock*, int>::Purge()
 t CUtlMemory<KeyValues*, int>::Grow(int)
+t CUtlMemory<KeyValues*, int>::Purge()
 t CUtlMemory<char*, int>::Grow(int)
+t CUtlMemory<char*, int>::Purge()
 t CUtlMemory<char const*, int>::Grow(int)
+t CUtlMemory<char const*, int>::Purge()
 t CUtlMemory<unsigned long long, int>::Grow(int)
+t CUtlMemory<unsigned long long, int>::Purge()
+t CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int>::Purge()
 t CUtlString::FixSlashes(char)
 t CUtlString::AllocMemory(unsigned int)
 t CUtlString::GetForModify()
@@ -1929,19 +1438,17 @@ t CUtlVector<int, CUtlMemory<int, int> >::GrowVector(int)
 t CUtlVector<int, CUtlMemory<int, int> >::ShiftElementsRight(int, int)
 t CUtlVector<NET_SetConVar::cvar_s, CUtlMemory<NET_SetConVar::cvar_s, int> >::InsertBefore(int, NET_SetConVar::cvar_s const&)
 t CUtlVector<SVC_ClassInfo::class_s, CUtlMemory<SVC_ClassInfo::class_s, int> >::InsertBefore(int, SVC_ClassInfo::class_s const&)
-t CUtlVector<CBaseRecordingSession*, CUtlMemory<CBaseRecordingSession*, int> >::Remove(int)
-t CUtlVector<CBaseRecordingSessionBlock*, CUtlMemory<CBaseRecordingSessionBlock*, int> >::Remove(int)
+t CUtlVector<CBaseRecordingSession*, CUtlMemory<CBaseRecordingSession*, int> >::ShiftElementsLeft(int, int)
+t CUtlVector<CBaseRecordingSessionBlock*, CUtlMemory<CBaseRecordingSessionBlock*, int> >::ShiftElementsLeft(int, int)
 t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::GrowVector(int)
 t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::ShiftElementsRight(int, int)
 t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::~CUtlVector()
 t CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> >::~CUtlVector()
 t CUtlVector<char*, CUtlMemory<char*, int> >::InsertBefore(int, char* const&)
-t CUtlVector<char const*, CUtlMemory<char const*, int> >::InsertBefore(int, char const* const&)
-t CUtlVector<char const*, CUtlMemory<char const*, int> >::Remove(int)
+t CUtlVector<char const*, CUtlMemory<char const*, int> >::ShiftElementsLeft(int, int)
 t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::RemoveAll()
 t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::~CUtlVector()
 t CUtlVector<CUtlVector<int, CUtlMemory<int, int> >, CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int> >::~CUtlVector()
-t CUtlVector<unsigned long long, CUtlMemory<unsigned long long, int> >::InsertBefore(int, unsigned long long const&)
 U CVProfNode::EnterScope()
 U CVProfNode::GetSubNode(char const*, int, char const*, int)
 U CVProfNode::ExitScope()
@@ -1986,9 +1493,6 @@ t CReplayTime::SetDate(int, int, int)
 t CReplayTime::SetTime(int, int, int)
 t CReplayTime::CReplayTime()
 t CReplayTime::CReplayTime()
-t CVProfScope::~CVProfScope()
-t CVProfScope::~CVProfScope()
-t CVProfScope::~CVProfScope() [clone .constprop.78]
 t FourVectors::RotateManyBy(FourVectors*, unsigned int, matrix3x4_t const&)
 t ICompressor::~ICompressor()
 t ICompressor::~ICompressor()
@@ -2028,9 +1532,10 @@ t CErrorSystem::AddErrorFromTokenName(char const*)
 t CErrorSystem::AddFormattedErrorFromTokenName(char const*, KeyValues*)
 t CErrorSystem::Clear()
 t CErrorSystem::Think()
-t CErrorSystem::Think() [clone .part.10]
+t CErrorSystem::Think() [clone .part.14]
 t CErrorSystem::AddError(char const*)
 t CErrorSystem::AddError(wchar_t const*)
+t CErrorSystem::AddError(wchar_t const*) [clone .part.13]
 t CErrorSystem::CErrorSystem(IErrorReporter*)
 t CErrorSystem::CErrorSystem(IErrorReporter*)
 t CErrorSystem::~CErrorSystem()
@@ -2043,7 +1548,7 @@ t CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1(
 t CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
 U CThreadEvent::Set()
 U CThreadEvent::CThreadEvent(bool)
-t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&)
+t (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&) [clone .constprop.15]
 t int (anonymous namespace)::Q_UnicodeConvertT<wchar_t, wchar_t, true, (anonymous namespace)::Q_UTF32ToUChar32(wchar_t const*, wchar_t&, bool&), (anonymous namespace)::Q_UChar32ToUTF32Len(wchar_t), (anonymous namespace)::Q_UChar32ToUTF32(wchar_t, wchar_t*)>(wchar_t const*, int, wchar_t*, int, EStringConvertErrorPolicy) [clone .isra.1]
 b InterfaceReg::s_pInterfaceRegs
 t InterfaceReg::InterfaceReg(void* (*)(), char const*)
@@ -2078,18 +1583,6 @@ t SVC_SetPause::Process()
 t SVC_SetPause::~SVC_SetPause()
 t SVC_SetPause::~SVC_SetPause()
 t SVC_SetPause::~SVC_SetPause()
-t CFtpUploadJob::FTP_SetError(int, char const*)
-t CFtpUploadJob::FTP_OnPreExecuteCurlOperations()
-t CFtpUploadJob::FTP_OnPostExecuteCurlOperations()
-t CFtpUploadJob::FTP_OnPostExecuteCurlOperations() [clone .part.8]
-t CFtpUploadJob::FTP_SetupAdditionalCurlOperations(void*)
-t CFtpUploadJob::DoCleanup()
-t CFtpUploadJob::DoExecute()
-t CFtpUploadJob::CFtpUploadJob(char const*, char const*, char const*, char const*, char const*, int, char const*, int)
-t CFtpUploadJob::CFtpUploadJob(char const*, char const*, char const*, char const*, char const*, int, char const*, int)
-t CFtpUploadJob::~CFtpUploadJob()
-t CFtpUploadJob::~CFtpUploadJob()
-t CFtpUploadJob::~CFtpUploadJob()
 t CLC_VoiceData::WriteToBuffer(bf_write&)
 t CLC_VoiceData::ReadFromBuffer(bf_read&)
 t CLC_VoiceData::Process()
@@ -2220,7 +1713,6 @@ t CPublishTester::Test_FilePublish(char const*, bool)
 t CPublishTester::PrintBaseUrlWarning()
 t CPublishTester::Test_LocalWebServerCVars()
 t CPublishTester::Test_PublishedFileDelete(char const*, char const*, bool)
-t CPublishTester::Test_RemoteWebServerCVars()
 t CPublishTester::Test_WaitingForPlayersCVar()
 t CPublishTester::Go()
 t CPublishTester::Test_IO(char const*)
@@ -2232,52 +1724,26 @@ t CPublishTester::~CPublishTester()
 t CPublishTester::~CPublishTester()
 b CSimpleCounter::m_nCounter
 t CUtlLinkedList<unsigned int, int, false, int, CUtlMemory<UtlLinkedListElem_t<unsigned int, int>, int> >::InsertBefore(int, unsigned int const&)
-t CUtlLinkedList<unsigned int, int, false, int, CUtlMemory<UtlLinkedListElem_t<unsigned int, int>, int> >::AllocInternal(bool)
 t CUtlLinkedList<unsigned int, int, false, int, CUtlMemory<UtlLinkedListElem_t<unsigned int, int>, int> >::Unlink(int)
-t CUtlLinkedList<unsigned int, int, false, int, CUtlMemory<UtlLinkedListElem_t<unsigned int, int>, int> >::~CUtlLinkedList()
-t CUtlLinkedList<unsigned int, int, false, int, CUtlMemory<UtlLinkedListElem_t<unsigned int, int>, int> >::~CUtlLinkedList()
 t CUtlLinkedList<CBaseRecordingSession*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSession*, int>, int> >::InsertBefore(int, CBaseRecordingSession* const&)
-t CUtlLinkedList<CBaseRecordingSession*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSession*, int>, int> >::AllocInternal(bool)
 t CUtlLinkedList<CBaseRecordingSession*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSession*, int>, int> >::Unlink(int)
 t CUtlLinkedList<CBaseRecordingSession*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSession*, int>, int> >::RemoveAll()
-t CUtlLinkedList<CBaseRecordingSession*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSession*, int>, int> >::~CUtlLinkedList()
-t CUtlLinkedList<CBaseRecordingSession*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSession*, int>, int> >::~CUtlLinkedList()
-t CUtlLinkedList<CSessionPublishManager*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CSessionPublishManager*, int>, int> >::InsertAfter(int, CSessionPublishManager* const&)
-t CUtlLinkedList<CSessionPublishManager*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CSessionPublishManager*, int>, int> >::AllocInternal(bool)
 t CUtlLinkedList<CSessionPublishManager*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CSessionPublishManager*, int>, int> >::Unlink(int)
-t CUtlLinkedList<CSessionPublishManager*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CSessionPublishManager*, int>, int> >::~CUtlLinkedList()
-t CUtlLinkedList<CSessionPublishManager*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CSessionPublishManager*, int>, int> >::~CUtlLinkedList()
 t CUtlLinkedList<CBaseRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSessionBlock*, int>, int> >::InsertBefore(int, CBaseRecordingSessionBlock* const&)
-t CUtlLinkedList<CBaseRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSessionBlock*, int>, int> >::AllocInternal(bool)
 t CUtlLinkedList<CBaseRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSessionBlock*, int>, int> >::Unlink(int)
 t CUtlLinkedList<CBaseRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSessionBlock*, int>, int> >::RemoveAll()
-t CUtlLinkedList<CBaseRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSessionBlock*, int>, int> >::~CUtlLinkedList()
-t CUtlLinkedList<CBaseRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CBaseRecordingSessionBlock*, int>, int> >::~CUtlLinkedList()
 t CUtlLinkedList<CServerRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CServerRecordingSessionBlock*, int>, int> >::InsertBefore(int, CServerRecordingSessionBlock* const&)
-t CUtlLinkedList<CServerRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CServerRecordingSessionBlock*, int>, int> >::AllocInternal(bool)
 t CUtlLinkedList<CServerRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CServerRecordingSessionBlock*, int>, int> >::Unlink(int)
 t CUtlLinkedList<CServerRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CServerRecordingSessionBlock*, int>, int> >::RemoveAll()
-t CUtlLinkedList<CServerRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CServerRecordingSessionBlock*, int>, int> >::~CUtlLinkedList()
-t CUtlLinkedList<CServerRecordingSessionBlock*, int, false, int, CUtlMemory<UtlLinkedListElem_t<CServerRecordingSessionBlock*, int>, int> >::~CUtlLinkedList()
-t CUtlLinkedList<IThinker*, int, false, int, CUtlMemory<UtlLinkedListElem_t<IThinker*, int>, int> >::InsertBefore(int, IThinker* const&)
-t CUtlLinkedList<IThinker*, int, false, int, CUtlMemory<UtlLinkedListElem_t<IThinker*, int>, int> >::AllocInternal(bool)
 t CUtlLinkedList<IThinker*, int, false, int, CUtlMemory<UtlLinkedListElem_t<IThinker*, int>, int> >::Unlink(int)
-t CUtlLinkedList<IThinker*, int, false, int, CUtlMemory<UtlLinkedListElem_t<IThinker*, int>, int> >::~CUtlLinkedList()
-t CUtlLinkedList<IThinker*, int, false, int, CUtlMemory<UtlLinkedListElem_t<IThinker*, int>, int> >::~CUtlLinkedList()
-t CUtlLinkedList<wchar_t*, int, false, int, CUtlMemory<UtlLinkedListElem_t<wchar_t*, int>, int> >::InsertBefore(int, wchar_t* const&)
-t CUtlLinkedList<wchar_t*, int, false, int, CUtlMemory<UtlLinkedListElem_t<wchar_t*, int>, int> >::AllocInternal(bool)
-t CUtlLinkedList<wchar_t*, int, false, int, CUtlMemory<UtlLinkedListElem_t<wchar_t*, int>, int> >::Unlink(int)
+t CUtlLinkedList<IThinker*, int, false, int, CUtlMemory<UtlLinkedListElem_t<IThinker*, int>, int> >::RemoveAll()
 t CUtlLinkedList<wchar_t*, int, false, int, CUtlMemory<UtlLinkedListElem_t<wchar_t*, int>, int> >::RemoveAll()
 t CUtlSortVector<CBaseRecordingSession*, CGenericPersistentManager<CBaseRecordingSession>::CLessFunctor, CUtlVector<CBaseRecordingSession*, CUtlMemory<CBaseRecordingSession*, int> > >::Insert(CBaseRecordingSession* const&)
-t CUtlSortVector<CBaseRecordingSession*, CGenericPersistentManager<CBaseRecordingSession>::CLessFunctor, CUtlVector<CBaseRecordingSession*, CUtlMemory<CBaseRecordingSession*, int> > >::~CUtlSortVector()
-t CUtlSortVector<CBaseRecordingSession*, CGenericPersistentManager<CBaseRecordingSession>::CLessFunctor, CUtlVector<CBaseRecordingSession*, CUtlMemory<CBaseRecordingSession*, int> > >::~CUtlSortVector()
 t CUtlSortVector<CBaseRecordingSessionBlock*, CBaseRecordingSession::CLessFunctor, CUtlVector<CBaseRecordingSessionBlock*, CUtlMemory<CBaseRecordingSessionBlock*, int> > >::Insert(CBaseRecordingSessionBlock* const&)
 t CUtlSortVector<CBaseRecordingSessionBlock*, CGenericPersistentManager<CBaseRecordingSessionBlock>::CLessFunctor, CUtlVector<CBaseRecordingSessionBlock*, CUtlMemory<CBaseRecordingSessionBlock*, int> > >::Insert(CBaseRecordingSessionBlock* const&)
-t CUtlSortVector<CBaseRecordingSessionBlock*, CGenericPersistentManager<CBaseRecordingSessionBlock>::CLessFunctor, CUtlVector<CBaseRecordingSessionBlock*, CUtlMemory<CBaseRecordingSessionBlock*, int> > >::~CUtlSortVector()
-t CUtlSortVector<CBaseRecordingSessionBlock*, CGenericPersistentManager<CBaseRecordingSessionBlock>::CLessFunctor, CUtlVector<CBaseRecordingSessionBlock*, CUtlMemory<CBaseRecordingSessionBlock*, int> > >::~CUtlSortVector()
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::InsertNoSort(KeyValues* const&)
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::CompareHelper(KeyValues* const*, KeyValues* const*)
-t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::RedoSort(bool)
+t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::RedoSort(bool) [clone .part.63]
 t IBaseInterface::~IBaseInterface()
 t IBaseInterface::~IBaseInterface()
 t IBaseInterface::~IBaseInterface()
@@ -2465,6 +1931,8 @@ t CBaseFilePublisher::Publish(PublishFileParams_t const&)
 t CBaseFilePublisher::~CBaseFilePublisher()
 t CBaseFilePublisher::~CBaseFilePublisher()
 t CBaseFilePublisher::~CBaseFilePublisher()
+t CBitWriteMasksInit::CBitWriteMasksInit()
+t CBitWriteMasksInit::CBitWriteMasksInit()
 t CFileserverCleaner::PrintResult()
 t CFileserverCleaner::MarkFileForDelete(char const*)
 t CFileserverCleaner::BlockForCompletion()
@@ -2476,18 +1944,6 @@ t CFileserverCleaner::CFileserverCleaner()
 t CFileserverCleaner::~CFileserverCleaner()
 t CFileserverCleaner::~CFileserverCleaner()
 t CFileserverCleaner::~CFileserverCleaner()
-t CFtpFileDeleterJob::FTP_SetError(int, char const*)
-t CFtpFileDeleterJob::AddFileForDelete(char const*)
-t CFtpFileDeleterJob::FTP_OnPreExecuteCurlOperations()
-t CFtpFileDeleterJob::FTP_OnPostExecuteCurlOperations()
-t CFtpFileDeleterJob::FTP_SetupAdditionalCurlOperations(void*)
-t CFtpFileDeleterJob::DoCleanup()
-t CFtpFileDeleterJob::DoExecute()
-t CFtpFileDeleterJob::CFtpFileDeleterJob(char const*, char const*, char const*, char const*, int, char const*, int)
-t CFtpFileDeleterJob::CFtpFileDeleterJob(char const*, char const*, char const*, char const*, int, char const*, int)
-t CFtpFileDeleterJob::~CFtpFileDeleterJob()
-t CFtpFileDeleterJob::~CFtpFileDeleterJob()
-t CFtpFileDeleterJob::~CFtpFileDeleterJob()
 t CUtlCharConversion::FindConversion(char const*, int*)
 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
@@ -2519,14 +1975,6 @@ t MM_RegisterResponse::Process()
 t MM_RegisterResponse::~MM_RegisterResponse()
 t MM_RegisterResponse::~MM_RegisterResponse()
 t MM_RegisterResponse::~MM_RegisterResponse()
-t CFtpDirListRetriever::WriteCallback(void*, unsigned int, unsigned int, void*)
-t CFtpDirListRetriever::FTP_OnPostExecuteCurlOperations()
-t CFtpDirListRetriever::FTP_SetupAdditionalCurlOperations(void*)
-t CFtpDirListRetriever::CFtpDirListRetriever(char const*, char const*, char const*, char const*, int, char const*, int)
-t CFtpDirListRetriever::CFtpDirListRetriever(char const*, char const*, char const*, char const*, int, char const*, int)
-t CFtpDirListRetriever::~CFtpDirListRetriever()
-t CFtpDirListRetriever::~CFtpDirListRetriever()
-t CFtpDirListRetriever::~CFtpDirListRetriever()
 t CLC_RespondCvarValue::WriteToBuffer(bf_write&)
 t CLC_RespondCvarValue::ReadFromBuffer(bf_read&)
 t CLC_RespondCvarValue::Process()
@@ -2663,9 +2111,6 @@ t CSessionPublishManager::~CSessionPublishManager()
 t IReplaySessionRecorder::~IReplaySessionRecorder()
 t IReplaySessionRecorder::~IReplaySessionRecorder()
 t IReplaySessionRecorder::~IReplaySessionRecorder()
-t CFtpFileserverPublisher::~CFtpFileserverPublisher()
-t CFtpFileserverPublisher::~CFtpFileserverPublisher()
-t CFtpFileserverPublisher::~CFtpFileserverPublisher()
 t CServerRecordingSession::PopulateWithRecordingData(int)
 t CServerRecordingSession::Read(KeyValues*)
 t CServerRecordingSession::Write(KeyValues*)
@@ -2701,7 +2146,7 @@ t CGenericPersistentManager<CBaseRecordingSession>::FlagForUnload(CBaseRecording
 t CGenericPersistentManager<CBaseRecordingSession>::WriteObjToFile(CBaseRecordingSession*, char const*)
 t CGenericPersistentManager<CBaseRecordingSession>::ReadObjFromFile(char const*, CBaseRecordingSession*&, bool)
 t CGenericPersistentManager<CBaseRecordingSession>::RemoveFromIndex(int)
-t CGenericPersistentManager<CBaseRecordingSession>::FlagIndexForFlush()
+t CGenericPersistentManager<CBaseRecordingSession>::FlagIndexForFlush() [clone .part.13]
 t CGenericPersistentManager<CBaseRecordingSession>::ReadObjFromKeyValues(KeyValues*, bool)
 t CGenericPersistentManager<CBaseRecordingSession>::Find(unsigned int)
 t CGenericPersistentManager<CBaseRecordingSession>::Init(bool)
@@ -2711,8 +2156,6 @@ t CGenericPersistentManager<CBaseRecordingSession>::Clear()
 t CGenericPersistentManager<CBaseRecordingSession>::Think()
 t CGenericPersistentManager<CBaseRecordingSession>::PreLoad()
 t CGenericPersistentManager<CBaseRecordingSession>::Shutdown()
-t CGenericPersistentManager<CBaseRecordingSession>::CGenericPersistentManager()
-t CGenericPersistentManager<CBaseRecordingSession>::CGenericPersistentManager()
 t CGenericPersistentManager<CBaseRecordingSession>::~CGenericPersistentManager()
 t CGenericPersistentManager<CBaseRecordingSession>::~CGenericPersistentManager()
 t CGenericPersistentManager<CBaseRecordingSession>::~CGenericPersistentManager()
@@ -2723,7 +2166,7 @@ t CGenericPersistentManager<CBaseRecordingSessionBlock>::FlagForUnload(CBaseReco
 t CGenericPersistentManager<CBaseRecordingSessionBlock>::WriteObjToFile(CBaseRecordingSessionBlock*, char const*)
 t CGenericPersistentManager<CBaseRecordingSessionBlock>::ReadObjFromFile(char const*, CBaseRecordingSessionBlock*&, bool)
 t CGenericPersistentManager<CBaseRecordingSessionBlock>::RemoveFromIndex(int)
-t CGenericPersistentManager<CBaseRecordingSessionBlock>::FlagIndexForFlush() [clone .part.19]
+t CGenericPersistentManager<CBaseRecordingSessionBlock>::FlagIndexForFlush() [clone .part.18]
 t CGenericPersistentManager<CBaseRecordingSessionBlock>::ReadObjFromKeyValues(KeyValues*, bool)
 t CGenericPersistentManager<CBaseRecordingSessionBlock>::Init(bool)
 t CGenericPersistentManager<CBaseRecordingSessionBlock>::Load()
@@ -2732,8 +2175,6 @@ t CGenericPersistentManager<CBaseRecordingSessionBlock>::Clear()
 t CGenericPersistentManager<CBaseRecordingSessionBlock>::Think()
 t CGenericPersistentManager<CBaseRecordingSessionBlock>::PreLoad()
 t CGenericPersistentManager<CBaseRecordingSessionBlock>::Shutdown()
-t CGenericPersistentManager<CBaseRecordingSessionBlock>::CGenericPersistentManager()
-t CGenericPersistentManager<CBaseRecordingSessionBlock>::CGenericPersistentManager()
 t CGenericPersistentManager<CBaseRecordingSessionBlock>::~CGenericPersistentManager()
 t CGenericPersistentManager<CBaseRecordingSessionBlock>::~CGenericPersistentManager()
 t CGenericPersistentManager<CBaseRecordingSessionBlock>::~CGenericPersistentManager()
@@ -2814,18 +2255,6 @@ t CServerRecordingSessionBlockManager::CServerRecordingSessionBlockManager(IRepl
 t CServerRecordingSessionBlockManager::~CServerRecordingSessionBlockManager()
 t CServerRecordingSessionBlockManager::~CServerRecordingSessionBlockManager()
 t CServerRecordingSessionBlockManager::~CServerRecordingSessionBlockManager()
-t CFtp::FTP_SetError(int, char const*)
-t CFtp::ReadCallback(void*, unsigned int, unsigned int, void*)
-t CFtp::Go()
-t CFtp::FTP_OnPreExecuteCurlOperations()
-t CFtp::FTP_OnPostExecuteCurlOperations()
-t CFtp::FTP_SetupAdditionalCurlOperations(void*)
-t CFtp::UseProxy(char const*, int)
-t CFtp::CFtp(char const*, char const*, char const*, char const*, int, IFtp*, ISpewer*)
-t CFtp::CFtp(char const*, char const*, char const*, char const*, int, IFtp*, ISpewer*)
-t CFtp::~CFtp()
-t CFtp::~CFtp()
-t CFtp::~CFtp()
 t CJob::SetDescription(char const*)
 t CJob::DoAbort(bool)
 t CJob::Describe()
@@ -2833,7 +2262,6 @@ t CJob::DoCleanup()
 t CJob::~CJob()
 t CJob::~CJob()
 t CJob::~CJob()
-t CWrap::~CWrap() [clone .constprop.2]
 t ConVar::ClampValue(float&)
 t ConVar::SetDefault(char const*)
 t ConVar::InternalSetValue(char const*)
@@ -2912,6 +2340,8 @@ t CMd5Job::~CMd5Job()
 t ISpewer::~ISpewer()
 t ISpewer::~ISpewer()
 t ISpewer::~ISpewer()
+t Tm_Zone::~Tm_Zone()
+t Tm_Zone::~Tm_Zone()
 t bf_write::WriteBytes(void const*, int)
 t bf_write::WriteFloat(float)
 t bf_write::WriteShort(int)
@@ -2942,6 +2372,7 @@ t bf_write::ByteSizeSignedVarInt64(long long)
 t bf_write::Reset()
 t bf_write::SeekToBit(int)
 t bf_write::WriteBits(void const*, int)
+t bf_write::WriteBits(void const*, int) [clone .part.6]
 t bf_write::WriteByte(int)
 t bf_write::WriteChar(int)
 t bf_write::WriteLong(long)
@@ -2975,10 +2406,6 @@ t CLC_Move::Process()
 t CLC_Move::~CLC_Move()
 t CLC_Move::~CLC_Move()
 t CLC_Move::~CLC_Move()
-t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
-t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::CUtlHash(int, int, int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&)
-t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::~CUtlHash()
-t CUtlHash<int, CKeyValuesGrowableStringTable::CLookupFunctor&, CKeyValuesGrowableStringTable::CLookupFunctor&>::~CUtlHash()
 t IThinker::~IThinker()
 t IThinker::~IThinker()
 t IThinker::~IThinker()
@@ -3004,7 +2431,8 @@ t ConVarRef::ConVarRef(IConVar*)
 t ConVarRef::ConVarRef(char const*)
 t ConVarRef::ConVarRef(char const*, bool)
 t CUtlQueue<unsigned char, CUtlMemory<unsigned char, int> >::Insert(unsigned char const&)
-t CUtlQueue<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int> >::Insert(KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct const&) [clone .constprop.80]
+t CUtlQueue<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int> >::Insert(KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct const&)
+t CVProfile::ExitScope()
 t void ILocalize::ConstructString<wchar_t>(wchar_t*, int, wchar_t const*, int, ...)
 t ILocalize::ConvertANSIToUnicode(char const*, wchar_t*, int)
 t ILocalize::ConvertUnicodeToANSI(wchar_t const*, char*, int)
@@ -3012,8 +2440,6 @@ t ILocalize::ConstructStringVArgsInternal(char*, int, char const*, int, char*)
 t ILocalize::ConstructStringVArgsInternal(wchar_t*, int, wchar_t const*, int, char*)
 t ILocalize::ConstructStringKeyValuesInternal(char*, int, char const*, KeyValues*)
 t ILocalize::ConstructStringKeyValuesInternal(wchar_t*, int, wchar_t const*, KeyValues*)
-t KeyValues::AutoDelete::~AutoDelete()
-t KeyValues::AutoDelete::~AutoDelete()
 t KeyValues::deleteThis()
 t KeyValues::GetWString(char const*, wchar_t const*)
 t KeyValues::SaveToFile(IBaseFileSystem*, char const*, char const*, bool, bool, bool)
@@ -3198,8 +2624,6 @@ t SVC_Prefetch::ToString() const
 t SVC_SetPause::GetName() const
 t SVC_SetPause::GetType() const
 t SVC_SetPause::ToString() const
-t CFtpUploadJob::FTP_GetFilename() const
-t CFtpUploadJob::FTP_IsCurlResultOK(int) const
 t CLC_VoiceData::GetName() const
 t CLC_VoiceData::GetType() const
 t CLC_VoiceData::GetGroup() const
@@ -3324,9 +2748,6 @@ t CBaseFilePublisher::IsDone() const
 t CBaseFilePublisher::GetHash(unsigned char*) const
 t CBaseFilePublisher::GetStatus() const
 t CFileserverCleaner::GetNextThinkTime() const
-t CFtpFileDeleterJob::FTP_GetFilename() const
-t CFtpFileDeleterJob::FTP_IsCurlResultOK(int) const
-t CFtpFileDeleterJob::GetNumFilesDeleted() const
 t CUtlCharConversion::GetDelimiter() const
 t CUtlCharConversion::GetEscapeChar() const
 t CUtlCharConversion::GetDelimiterLength() const
@@ -3375,7 +2796,6 @@ t CSessionBlockPublisher::GetSessionHandle() const
 t CSessionBlockPublisher::IsDone() const
 t CSessionPublishManager::GetSessionHandle() const
 t CSessionPublishManager::IsDone() const
-t CFtpFileserverPublisher::GetPublishJob() const
 t CServerRecordingSession::SessionExpired() const
 t CServerRecordingSession::ShouldDitchSession() const
 t CServerRecordingSession::GetSecondsToExpiration() const
@@ -3430,8 +2850,6 @@ t CBaseRecordingSessionBlockManager::GetRelativeIndexPath() const
 t CBaseRecordingSessionBlockManager::ShouldSerializeToIndividualFiles() const
 t CServerRecordingSessionBlockManager::GetReplayContext() const
 t CServerRecordingSessionBlockManager::ShouldLoadBlocks() const
-t CFtp::FTP_GetFilename() const
-t CFtp::FTP_IsCurlResultOK(int) const
 t ConVar::GetCompMax(float&) const
 t ConVar::GetCompMin(float&) const
 t ConVar::GetDefault() const
@@ -3466,7 +2884,6 @@ t SVC_Print::ToString() const
 U CThreadFastMutex::Lock(unsigned int, unsigned int) volatile
 t operator new(unsigned int)
 t operator new(unsigned int, int, char const*, int)
-U std::terminate()@@GLIBCXX_3.4
 t covariant return thunk to CServerReplayContext::GetRecordingSession(unsigned int)
 t covariant return thunk to CServerReplayContext::GetRecordingSessionBlockManager()
 t non-virtual thunk to CBaseRecordingSession::AddBlock(CBaseRecordingSessionBlock*)
@@ -3491,20 +2908,14 @@ t non-virtual thunk to CServerRecordingSessionBlockManager::~CServerRecordingSes
 t non-virtual thunk to CServerRecordingSessionBlockManager::~CServerRecordingSessionBlockManager()
 t non-virtual thunk to CBaseRecordingSessionManager::FindSession(unsigned int) const
 t non-virtual thunk to CBaseRecordingSessionBlockManager::GetBlockPath() const
-t non-virtual thunk to CFtpUploadJob::~CFtpUploadJob()
-t non-virtual thunk to CFtpUploadJob::~CFtpUploadJob()
 t non-virtual thunk to CBasePublishJob::~CBasePublishJob()
 t non-virtual thunk to CBasePublishJob::~CBasePublishJob()
 t non-virtual thunk to CCompressionJob::~CCompressionJob()
 t non-virtual thunk to CCompressionJob::~CCompressionJob()
 t non-virtual thunk to CLocalPublishJob::~CLocalPublishJob()
 t non-virtual thunk to CLocalPublishJob::~CLocalPublishJob()
-t non-virtual thunk to CFtpFileDeleterJob::~CFtpFileDeleterJob()
-t non-virtual thunk to CFtpFileDeleterJob::~CFtpFileDeleterJob()
 t non-virtual thunk to CDeleteLocalFileJob::~CDeleteLocalFileJob()
 t non-virtual thunk to CDeleteLocalFileJob::~CDeleteLocalFileJob()
-t non-virtual thunk to CFtpDirListRetriever::~CFtpDirListRetriever()
-t non-virtual thunk to CFtpDirListRetriever::~CFtpDirListRetriever()
 t non-virtual thunk to CLocalFileDeleterJob::~CLocalFileDeleterJob()
 t non-virtual thunk to CLocalFileDeleterJob::~CLocalFileDeleterJob()
 t non-virtual thunk to CMd5Job::~CMd5Job()
@@ -3521,49 +2932,23 @@ t non-virtual thunk to CEmptyConVar::GetName() const
 t non-virtual thunk to CEmptyConVar::IsFlagSet(int) const
 t non-virtual thunk to ConVar::GetName() const
 t non-virtual thunk to ConVar::IsFlagSet(int) const
-t non-virtual thunk to CFtpUploadJob::FTP_SetError(int, char const*)
-t non-virtual thunk to CFtpUploadJob::FTP_OnPreExecuteCurlOperations()
-t non-virtual thunk to CFtpUploadJob::FTP_OnPostExecuteCurlOperations()
-t non-virtual thunk to CFtpUploadJob::FTP_SetupAdditionalCurlOperations(void*)
-t non-virtual thunk to CFtpFileDeleterJob::AddFileForDelete(char const*)
-t non-virtual thunk to CFtpFileDeleterJob::~CFtpFileDeleterJob()
-t non-virtual thunk to CFtpFileDeleterJob::~CFtpFileDeleterJob()
-t non-virtual thunk to CFtpDirListRetriever::FTP_OnPostExecuteCurlOperations()
-t non-virtual thunk to CFtpDirListRetriever::FTP_SetupAdditionalCurlOperations(void*)
 t non-virtual thunk to CLocalFileDeleterJob::AddFileForDelete(char const*)
 t non-virtual thunk to CLocalFileDeleterJob::~CLocalFileDeleterJob()
 t non-virtual thunk to CLocalFileDeleterJob::~CLocalFileDeleterJob()
-t non-virtual thunk to CFtpUploadJob::FTP_GetFilename() const
-t non-virtual thunk to CFtpUploadJob::FTP_IsCurlResultOK(int) const
-t non-virtual thunk to CFtpFileDeleterJob::GetNumFilesDeleted() const
 t non-virtual thunk to CLocalFileDeleterJob::GetNumFilesDeleted() const
-t non-virtual thunk to CFtpFileDeleterJob::FTP_SetError(int, char const*)
-t non-virtual thunk to CFtpFileDeleterJob::FTP_OnPreExecuteCurlOperations()
-t non-virtual thunk to CFtpFileDeleterJob::FTP_OnPostExecuteCurlOperations()
-t non-virtual thunk to CFtpFileDeleterJob::FTP_SetupAdditionalCurlOperations(void*)
-t non-virtual thunk to CFtpFileDeleterJob::FTP_GetFilename() const
-t non-virtual thunk to CFtpFileDeleterJob::FTP_IsCurlResultOK(int) const
 t non-virtual thunk to CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
 t non-virtual thunk to CRefCounted1<IRefCounted, CRefCountServiceBase<true, CRefMT> >::~CRefCounted1()
-t non-virtual thunk to CFtpUploadJob::~CFtpUploadJob()
-t non-virtual thunk to CFtpUploadJob::~CFtpUploadJob()
 t non-virtual thunk to CBasePublishJob::~CBasePublishJob()
 t non-virtual thunk to CBasePublishJob::~CBasePublishJob()
 t non-virtual thunk to CCompressionJob::~CCompressionJob()
 t non-virtual thunk to CCompressionJob::~CCompressionJob()
 t non-virtual thunk to CLocalPublishJob::~CLocalPublishJob()
 t non-virtual thunk to CLocalPublishJob::~CLocalPublishJob()
-t non-virtual thunk to CFtpFileDeleterJob::~CFtpFileDeleterJob()
-t non-virtual thunk to CFtpFileDeleterJob::~CFtpFileDeleterJob()
 t non-virtual thunk to CDeleteLocalFileJob::~CDeleteLocalFileJob()
 t non-virtual thunk to CDeleteLocalFileJob::~CDeleteLocalFileJob()
-t non-virtual thunk to CFtpDirListRetriever::~CFtpDirListRetriever()
-t non-virtual thunk to CFtpDirListRetriever::~CFtpDirListRetriever()
 t non-virtual thunk to CLocalFileDeleterJob::~CLocalFileDeleterJob()
 t non-virtual thunk to CLocalFileDeleterJob::~CLocalFileDeleterJob()
 t non-virtual thunk to CServerReplayContext::ReportErrorsToUser(wchar_t*)
-t non-virtual thunk to CFtp::~CFtp()
-t non-virtual thunk to CFtp::~CFtp()
 t non-virtual thunk to CJob::~CJob()
 t non-virtual thunk to CJob::~CJob()
 t non-virtual thunk to CMd5Job::~CMd5Job()
@@ -3601,7 +2986,6 @@ r typeinfo for SVC_BSPDecal
 r typeinfo for SVC_FixAngle
 r typeinfo for SVC_Prefetch
 r typeinfo for SVC_SetPause
-r typeinfo for CFtpUploadJob
 r typeinfo for CLC_VoiceData
 r typeinfo for CReplaySystem
 r typeinfo for CSimpleSpewer
@@ -3655,7 +3039,6 @@ r typeinfo for SVC_GameEventList
 r typeinfo for SVC_SetPauseTimed
 r typeinfo for CBaseFilePublisher
 r typeinfo for CFileserverCleaner
-r typeinfo for CFtpFileDeleterJob
 r typeinfo for CUtlCharConversion
 r typeinfo for IReplayErrorSystem
 r typeinfo for SVC_CrosshairAngle
@@ -3663,7 +3046,6 @@ r typeinfo for SVC_PacketEntities
 r typeinfo for CDeleteLocalFileJob
 r typeinfo for CUtlNoEscConversion
 r typeinfo for MM_RegisterResponse
-r typeinfo for CFtpDirListRetriever
 r typeinfo for CLC_RespondCvarValue
 r typeinfo for CLocalFileDeleterJob
 r typeinfo for ConVar_ServerBounded
@@ -3681,7 +3063,6 @@ r typeinfo for SVC_CreateStringTable
 r typeinfo for SVC_UpdateStringTable
 r typeinfo for CSessionBlockPublisher
 r typeinfo for IReplaySessionRecorder
-r typeinfo for CFtpFileserverPublisher
 r typeinfo for CServerRecordingSession
 r typeinfo for IConCommandBaseAccessor
 r typeinfo for IPublishCallbackHandler
@@ -3699,9 +3080,7 @@ r typeinfo for IRecordingSessionBlockManager
 r typeinfo for CServerRecordingSessionManager
 r typeinfo for CBaseRecordingSessionBlockManager
 r typeinfo for CServerRecordingSessionBlockManager
-r typeinfo for CFtp
 r typeinfo for CJob
-r typeinfo for IFtp
 r typeinfo for ConVar
 r typeinfo for CMd5Job
 r typeinfo for IConVar
@@ -3735,7 +3114,6 @@ r typeinfo name for SVC_BSPDecal
 r typeinfo name for SVC_FixAngle
 r typeinfo name for SVC_Prefetch
 r typeinfo name for SVC_SetPause
-r typeinfo name for CFtpUploadJob
 r typeinfo name for CLC_VoiceData
 r typeinfo name for CReplaySystem
 r typeinfo name for CSimpleSpewer
@@ -3789,7 +3167,6 @@ r typeinfo name for SVC_GameEventList
 r typeinfo name for SVC_SetPauseTimed
 r typeinfo name for CBaseFilePublisher
 r typeinfo name for CFileserverCleaner
-r typeinfo name for CFtpFileDeleterJob
 r typeinfo name for CUtlCharConversion
 r typeinfo name for IReplayErrorSystem
 r typeinfo name for SVC_CrosshairAngle
@@ -3797,7 +3174,6 @@ r typeinfo name for SVC_PacketEntities
 r typeinfo name for CDeleteLocalFileJob
 r typeinfo name for CUtlNoEscConversion
 r typeinfo name for MM_RegisterResponse
-r typeinfo name for CFtpDirListRetriever
 r typeinfo name for CLC_RespondCvarValue
 r typeinfo name for CLocalFileDeleterJob
 r typeinfo name for ConVar_ServerBounded
@@ -3815,7 +3191,6 @@ r typeinfo name for SVC_CreateStringTable
 r typeinfo name for SVC_UpdateStringTable
 r typeinfo name for CSessionBlockPublisher
 r typeinfo name for IReplaySessionRecorder
-r typeinfo name for CFtpFileserverPublisher
 r typeinfo name for CServerRecordingSession
 r typeinfo name for IConCommandBaseAccessor
 r typeinfo name for IPublishCallbackHandler
@@ -3833,9 +3208,7 @@ r typeinfo name for IRecordingSessionBlockManager
 r typeinfo name for CServerRecordingSessionManager
 r typeinfo name for CBaseRecordingSessionBlockManager
 r typeinfo name for CServerRecordingSessionBlockManager
-r typeinfo name for CFtp
 r typeinfo name for CJob
-r typeinfo name for IFtp
 r typeinfo name for ConVar
 r typeinfo name for CMd5Job
 r typeinfo name for IConVar
@@ -3868,7 +3241,6 @@ r vtable for SVC_BSPDecal
 r vtable for SVC_FixAngle
 r vtable for SVC_Prefetch
 r vtable for SVC_SetPause
-r vtable for CFtpUploadJob
 r vtable for CLC_VoiceData
 r vtable for CReplaySystem
 r vtable for CSimpleSpewer
@@ -3917,7 +3289,6 @@ r vtable for SVC_GameEventList
 r vtable for SVC_SetPauseTimed
 r vtable for CBaseFilePublisher
 r vtable for CFileserverCleaner
-r vtable for CFtpFileDeleterJob
 r vtable for CUtlCharConversion
 r vtable for IReplayErrorSystem
 r vtable for SVC_CrosshairAngle
@@ -3925,7 +3296,6 @@ r vtable for SVC_PacketEntities
 r vtable for CDeleteLocalFileJob
 r vtable for CUtlNoEscConversion
 r vtable for MM_RegisterResponse
-r vtable for CFtpDirListRetriever
 r vtable for CLC_RespondCvarValue
 r vtable for CLocalFileDeleterJob
 r vtable for CRefCountServiceBase<true, CRefMT>
@@ -3941,7 +3311,6 @@ r vtable for SVC_CreateStringTable
 r vtable for SVC_UpdateStringTable
 r vtable for CSessionBlockPublisher
 r vtable for IReplaySessionRecorder
-r vtable for CFtpFileserverPublisher
 r vtable for CServerRecordingSession
 r vtable for IPublishCallbackHandler
 r vtable for CBaseReplaySerializeable
@@ -3958,9 +3327,7 @@ r vtable for IRecordingSessionBlockManager
 r vtable for CServerRecordingSessionManager
 r vtable for CBaseRecordingSessionBlockManager
 r vtable for CServerRecordingSessionBlockManager
-r vtable for CFtp
 r vtable for CJob
-r vtable for IFtp
 r vtable for ConVar
 r vtable for CMd5Job
 r vtable for IConVar
