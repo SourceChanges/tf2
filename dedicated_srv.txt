@@ -69,8 +69,8 @@ T c__prev_word
 T CreateInterface
 U CreateThreadPool
 T c_setpat
-r CSWTCH.1260
-r CSWTCH.1263
+r CSWTCH.1266
+r CSWTCH.1269
 r CSWTCH.17
 r CSWTCH.18
 T ct_chr_class
@@ -446,11 +446,11 @@ T keymacro_print
 T keymacro_reset
 U KeyValuesSystem
 U kill@@GLIBC_2.0
-t .L1194
-t .L1196
-t .L1197
-t .L1198
-t .L1199
+t .L1164
+t .L1166
+t .L1167
+t .L1168
+t .L1169
 t .L122
 t .L19
 t .L191
@@ -460,15 +460,15 @@ t .L196
 t .L197
 t .L198
 t .L21
+t .L211
+t .L213
+t .L214
+t .L215
+t .L216
 t .L22
 t .L223
-t .L224
-t .L226
 t .L226
 t .L227
-t .L227
-t .L228
-t .L229
 t .L23
 t .L230
 t .L231
@@ -1087,6 +1087,7 @@ t __wrap___xstat64
 U write@@GLIBC_2.0
 t __x86.get_pc_thunk.bx
 t __x86.get_pc_thunk.cx
+t __x86.get_pc_thunk.dx
 U __xmknod@@GLIBC_2.0
 U __xstat64@@GLIBC_2.2
 U __xstat@@GLIBC_2.0
@@ -3190,6 +3191,7 @@ t CryptoPP::BlockingRng::BlockingRng()
 t CryptoPP::BlockingRng::~BlockingRng()
 t CryptoPP::BlockingRng::~BlockingRng()
 t CryptoPP::BlockingRng::~BlockingRng()
+t void CryptoPP::ByteReverse<unsigned long long>(unsigned long long*, unsigned long long const*, unsigned int)
 t CryptoPP::CannotFlush::~CannotFlush()
 t CryptoPP::CannotFlush::~CannotFlush()
 t CryptoPP::CannotFlush::~CannotFlush()
@@ -3333,6 +3335,7 @@ t CryptoPP::DL_PublicKey<CryptoPP::ECPPoint>::AssignFrom(CryptoPP::NameValuePair
 t CryptoPP::DL_PublicKey<CryptoPP::ECPPoint>::SetPublicElement(CryptoPP::ECPPoint const&)
 t CryptoPP::DL_PublicKey<CryptoPP::EC2NPoint>::AssignFrom(CryptoPP::NameValuePairs const&)
 t CryptoPP::DL_PublicKey<CryptoPP::EC2NPoint>::SetPublicElement(CryptoPP::EC2NPoint const&)
+t CryptoPP::(anonymous namespace)::ToMontgomery(CryptoPP::ModularArithmetic const&, CryptoPP::ECPPoint const&)
 t CryptoPP::InverseLucas(CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&, CryptoPP::Integer const&)
 t CryptoPP::IsSmallPrime(CryptoPP::Integer const&)
 t CryptoPP::IteratedHash<unsigned int, CryptoPP::EnumToType<CryptoPP::ByteOrder, 1>, 64u, CryptoPP::HashTransformation>::DataBuf()
@@ -6587,6 +6590,7 @@ t CryptoPP::DL_SignatureSchemeBase<CryptoPP::PK_Signer, CryptoPP::DL_PrivateKey<
 t CryptoPP::DL_SignatureSchemeBase<CryptoPP::PK_Signer, CryptoPP::DL_PrivateKey<CryptoPP::Integer> >::MaxRecoverableLength() const
 t CryptoPP::DL_SignatureSchemeBase<CryptoPP::PK_Signer, CryptoPP::DL_PrivateKey<CryptoPP::Integer> >::RecoverablePartFirst() const
 t CryptoPP::DL_SignatureSchemeBase<CryptoPP::PK_Signer, CryptoPP::DL_PrivateKey<CryptoPP::Integer> >::AllowNonrecoverablePart() const
+t CryptoPP::DL_SignatureSchemeBase<CryptoPP::PK_Signer, CryptoPP::DL_PrivateKey<CryptoPP::Integer> >::MessageRepresentativeBitLength() const
 t CryptoPP::DL_SignatureSchemeBase<CryptoPP::PK_Signer, CryptoPP::DL_PrivateKey<CryptoPP::Integer> >::MaxRecoverableLengthFromSignatureLength(unsigned int) const
 t CryptoPP::DL_SignatureSchemeBase<CryptoPP::PK_Signer, CryptoPP::DL_PrivateKey<CryptoPP::ECPPoint> >::IsProbabilistic() const
 t CryptoPP::DL_SignatureSchemeBase<CryptoPP::PK_Signer, CryptoPP::DL_PrivateKey<CryptoPP::ECPPoint> >::SignatureLength() const
