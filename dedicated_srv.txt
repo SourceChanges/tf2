@@ -2027,6 +2027,7 @@ t CUtlRBTree<CZipFile::CZipEntry, int, bool (*)(CZipFile::CZipEntry const&, CZip
 t CUtlRBTree<CZipFile::CZipEntry, int, bool (*)(CZipFile::CZipEntry const&, CZipFile::CZipEntry const&), CUtlMemory<UtlRBTreeNode_t<CZipFile::CZipEntry, int>, int> >::InsertRebalance(int)
 t CUtlRBTree<CZipFile::CZipEntry, int, bool (*)(CZipFile::CZipEntry const&, CZipFile::CZipEntry const&), CUtlMemory<UtlRBTreeNode_t<CZipFile::CZipEntry, int>, int> >::RemoveRebalance(int)
 t CUtlRBTree<CZipFile::CZipEntry, int, bool (*)(CZipFile::CZipEntry const&, CZipFile::CZipEntry const&), CUtlMemory<UtlRBTreeNode_t<CZipFile::CZipEntry, int>, int> >::Insert(CZipFile::CZipEntry const&)
+t CUtlRBTree<CZipFile::CZipEntry, int, bool (*)(CZipFile::CZipEntry const&, CZipFile::CZipEntry const&), CUtlMemory<UtlRBTreeNode_t<CZipFile::CZipEntry, int>, int> >::Remove(CZipFile::CZipEntry const&)
 t CUtlRBTree<CZipFile::CZipEntry, int, bool (*)(CZipFile::CZipEntry const&, CZipFile::CZipEntry const&), CUtlMemory<UtlRBTreeNode_t<CZipFile::CZipEntry, int>, int> >::Unlink(int)
 t CUtlRBTree<CZipFile::CZipEntry, int, bool (*)(CZipFile::CZipEntry const&, CZipFile::CZipEntry const&), CUtlMemory<UtlRBTreeNode_t<CZipFile::CZipEntry, int>, int> >::RemoveAll()
 t CUtlRBTree<CZipFile::CZipEntry, int, bool (*)(CZipFile::CZipEntry const&, CZipFile::CZipEntry const&), CUtlMemory<UtlRBTreeNode_t<CZipFile::CZipEntry, int>, int> >::~CUtlRBTree()
