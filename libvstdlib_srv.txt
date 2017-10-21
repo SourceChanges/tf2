@@ -420,35 +420,35 @@ U wcstol@@GLIBC_2.0
 U wcstoll@@GLIBC_2.1
 U wcstombs@@GLIBC_2.0
 t __wrap_access
-t __wrap_chmod
-t __wrap_chown
+T __wrap_chmod
+T __wrap_chown
 t __wrap_creat
-t __wrap_fopen
-t __wrap_fopen64
-t __wrap_freopen
-t __wrap_lchown
-t __wrap_link
-t __wrap_lstat
-t __wrap___lxstat
-t __wrap___lxstat64
-t __wrap_mkdir
-t __wrap_mkfifo
-t __wrap_mknod
-t __wrap_mount
-t __wrap_open
-t __wrap_open64
-t __wrap_opendir
-t __wrap_realpath
-t __wrap_rename
-t __wrap_rmdir
-t __wrap_scandir
-t __wrap_stat
-t __wrap_symlink
-t __wrap_unlink
-t __wrap_utime
-t __wrap_utimes
-t __wrap___xstat
-t __wrap___xstat64
+T __wrap_fopen
+T __wrap_fopen64
+T __wrap_freopen
+T __wrap_lchown
+T __wrap_link
+T __wrap_lstat
+T __wrap___lxstat
+T __wrap___lxstat64
+T __wrap_mkdir
+T __wrap_mkfifo
+T __wrap_mknod
+T __wrap_mount
+T __wrap_open
+T __wrap_open64
+T __wrap_opendir
+T __wrap_realpath
+T __wrap_rename
+T __wrap_rmdir
+T __wrap_scandir
+T __wrap_stat
+T __wrap_symlink
+T __wrap_unlink
+T __wrap_utime
+T __wrap_utimes
+T __wrap___xstat
+T __wrap___xstat64
 t __x86.get_pc_thunk.bx
 t __x86.get_pc_thunk.cx
 U __xmknod@@GLIBC_2.0
@@ -1366,6 +1366,7 @@ t CUtlString::Right(int) const
 t CUtlString::Slice(int, int) const
 t CUtlString::AbsPath(char const*) const
 t CUtlString::DirName() const
+t CUtlString::IndexOf(char const*) const
 t CUtlString::Replace(char, char) const
 t CUtlString::Replace(char const*, char const*) const
 t CUtlString::operator==(CUtlString const&) const

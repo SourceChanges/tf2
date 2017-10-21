@@ -1829,6 +1829,7 @@ t CUtlString::Right(int) const
 t CUtlString::Slice(int, int) const
 t CUtlString::AbsPath(char const*) const
 t CUtlString::DirName() const
+t CUtlString::IndexOf(char const*) const
 t CUtlString::Replace(char, char) const
 t CUtlString::Replace(char const*, char const*) const
 t CUtlString::operator==(CUtlString const&) const

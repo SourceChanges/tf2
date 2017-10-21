@@ -1,5 +1,4 @@
 U abort@@GLIBC_2.0
-U access@@GLIBC_2.0
 U __acosf_finite@@GLIBC_2.15
 U __acos_finite@@GLIBC_2.15
 t add_fdes
@@ -45,10 +44,7 @@ t _calloc_dbg
 t _calloc_dbg_impl
 U cbrtf@@GLIBC_2.0
 U chdir@@GLIBC_2.0
-U chmod@@GLIBC_2.0
-U chown@@GLIBC_2.1
 t classify_object_over_fdes
-U closedir@@GLIBC_2.0
 b colorcorrection
 U CommandLine_Tier0
 b completed.6767
@@ -116,8 +112,6 @@ U ferror@@GLIBC_2.0
 U fflush@@GLIBC_2.0
 U fgetc@@GLIBC_2.0
 T _fini
-U fopen64@@GLIBC_2.1
-U fopen@@GLIBC_2.1
 r Four_2ToThe21s
 r Four_2ToThe22s
 r Four_2ToThe23s
@@ -146,14 +140,12 @@ t __frame_state_for
 U fread@@GLIBC_2.0
 t _free_dbg
 U free@@GLIBC_2.0
-U freopen@@GLIBC_2.0
 U fwrite@@GLIBC_2.0
 b g_BitWriteMasks
 t get_cie_encoding
 U GetCPUInformation
 T get_crc_table
 U getcwd@@GLIBC_2.0
-U getenv@@GLIBC_2.0
 b g_ExtraMasks
 b g_KeyValuesErrorStack
 b g_LittleBits
@@ -251,7 +243,6 @@ b g_VBAllocTracker
 U g_VProfCurrentProfile
 U __gxx_personality_v0@@CXXABI_1.3
 U HushAsserts
-t __i686.get_pc_thunk.bx
 U iconv_close@@GLIBC_2.1
 U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
@@ -390,20 +381,14 @@ t .L69
 t .L70
 t .L71
 r lbase.3452
-U lchown@@GLIBC_2.0
 r lenfix.3535
 r lext.3453
 t linear_search_fdes
 b lineartolightmap
 b lineartovertex
-U link@@GLIBC_2.0
 U localtime@@GLIBC_2.0
 U Log
 U __log_finite@@GLIBC_2.15
-t lstat
-t __lstat
-U __lxstat64@@GLIBC_2.2
-U __lxstat@@GLIBC_2.0
 t _malloc_dbg
 U malloc@@GLIBC_2.0
 b marker.8514
@@ -415,22 +400,14 @@ U __memcpy_chk@@GLIBC_2.3.4
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
-U mkdir@@GLIBC_2.0
-U mkfifo@@GLIBC_2.0
-t mknod
-t __mknod
 U mktime@@GLIBC_2.0
 t __moddi3
-U mount@@GLIBC_2.0
 U Msg
 t _msize_dbg
 r nanmask
 t _nh_malloc_dbg
 b object_mutex
 b once_regsizes.8974
-U open64@@GLIBC_2.2
-U opendir@@GLIBC_2.0
-U open@@GLIBC_2.0
 r order.3564
 b p4
 d pfFastCos
@@ -458,12 +435,10 @@ U qsort@@GLIBC_2.0
 t qsort_s
 U raise@@GLIBC_2.0
 U rand@@GLIBC_2.0
-U readdir@@GLIBC_2.0
 t read_encoded_value_with_base
 t read_sleb128
 t read_sleb128
 t _realloc_dbg
-U realpath@@GLIBC_2.3
 t __register_frame
 t __register_frame_info
 t __register_frame_info_bases
@@ -471,7 +446,6 @@ t __register_frame_info_table
 t __register_frame_info_table_bases
 t __register_frame_table
 t register_tm_clones
-U rename@@GLIBC_2.0
 b replay_block_dump_interval
 b replay_buffersize
 b replay_data_lifespan
@@ -492,9 +466,7 @@ b replay_publish_simulate_delay_local_http
 b replay_publish_simulate_rename_fail
 b replay_recording
 b replay_record_voice
-U rmdir@@GLIBC_2.0
 b s_bMathlibInitialized
-U scandir@@GLIBC_2.0
 t search_object
 b seen_objects
 t set_fast_math
@@ -510,24 +482,19 @@ U _SpewMessage
 U sscanf@@GLIBC_2.0
 b s_StringCharConversion
 U __stack_chk_fail@@GLIBC_2.4
-t stat
-t __stat
 U stderr@@GLIBC_2.0
 U stdin@@GLIBC_2.0
 U stdout@@GLIBC_2.0
 U strcasecmp@@GLIBC_2.0
-U strcasestr@@GLIBC_2.1
 U strchr@@GLIBC_2.0
 U strcmp@@GLIBC_2.0
 U __strcpy_chk@@GLIBC_2.3.4
 U strcpy@@GLIBC_2.0
-U strdup@@GLIBC_2.0
 U strftime@@GLIBC_2.0
 U strlen@@GLIBC_2.0
 U strncasecmp@@GLIBC_2.0
 U strncat@@GLIBC_2.0
 U strncpy@@GLIBC_2.0
-U strpbrk@@GLIBC_2.0
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
 U strtok@@GLIBC_2.0
@@ -538,7 +505,6 @@ U strtoull@@GLIBC_2.0
 b subs.8777
 b sv_use_steam_voice
 U __swprintf_chk@@GLIBC_2.4
-U symlink@@GLIBC_2.0
 U tanf@@GLIBC_2.0
 U tan@@GLIBC_2.0
 b terminator.8620
@@ -556,7 +522,6 @@ U towlower@@GLIBC_2.0
 U towupper@@GLIBC_2.0
 t __udivdi3
 U ungetc@@GLIBC_2.0
-U unlink@@GLIBC_2.0
 b unseen_objects
 t _Unwind_Backtrace
 t _Unwind_DebugHook
@@ -581,8 +546,6 @@ t _Unwind_Resume_or_Rethrow
 t _Unwind_SetGR
 t _Unwind_SetIP
 t updatewindow
-U utime@@GLIBC_2.0
-U utimes@@GLIBC_2.0
 t uw_frame_state_for
 t uw_init_context_1
 t uw_install_context_1
@@ -602,41 +565,9 @@ U wcsncpy@@GLIBC_2.0
 U wcstol@@GLIBC_2.0
 U wcstoll@@GLIBC_2.1
 U wcstombs@@GLIBC_2.0
-t __wrap_access
-t __wrap_chmod
-t __wrap_chown
-t __wrap_creat
-t __wrap_fopen
-t __wrap_fopen64
-t __wrap_freopen
-t __wrap_lchown
-t __wrap_link
-t __wrap_lstat
-t __wrap___lxstat
-t __wrap___lxstat64
-t __wrap_mkdir
-t __wrap_mkfifo
-t __wrap_mknod
-t __wrap_mount
-t __wrap_open
-t __wrap_open64
-t __wrap_opendir
-t __wrap_realpath
-t __wrap_rename
-t __wrap_rmdir
-t __wrap_scandir
-t __wrap_stat
-t __wrap_symlink
-t __wrap_unlink
-t __wrap_utime
-t __wrap_utimes
-t __wrap___xstat
-t __wrap___xstat64
+U __wrap_fopen
 t __x86.get_pc_thunk.bx
 t __x86.get_pc_thunk.cx
-U __xmknod@@GLIBC_2.0
-U __xstat64@@GLIBC_2.2
-U __xstat@@GLIBC_2.0
 t HashString(char const*)
 t IsDenormal(float const&)
 t MatrixCopy(matrix3x4_t const&, matrix3x4_t&)
@@ -1050,7 +981,6 @@ t AngleDiff(float, float)
 t FloorPow2(int)
 t HashBlock(void const*, unsigned int)
 t nexttoken(char*, unsigned int, char const*, char)
-t pathmatch(char const*, char**, bool, char*, unsigned int)
 t R_CullBox(Vector const&, Vector const&, Frustum_t const&)
 t Replay_va(char const*, ...)
 t _SSE_Sqrt(float)
@@ -1085,8 +1015,6 @@ t operator delete(void*)
 t operator delete(void*, unsigned int)
 R z_errmsg
 T zError
-b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
-b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
 b guard variable for CUtlString::GetEmptyString()::s_emptyString
 b guard variable for CServerReplayContext::ReportErrorsToUser(wchar_t*)::s_clrRed
 b guard variable for CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)::r_developer
@@ -1094,7 +1022,6 @@ r _pi32_inv1
 b s_BreakSet
 t bsPutUInt32(EState*, unsigned int)
 t FastToLower(char)
-b s_bShowDiag
 b s_nCVarFlag
 b s_pTokenBuf
 b vec2_origin
@@ -1277,7 +1204,6 @@ t __CreateCReplaySystemIReplaySystem_interface()
 r incs
 r _ps_1
 b s_text
-t Descend(char*, unsigned int, bool, unsigned int)
 t mainGtU(unsigned int, unsigned int, unsigned char*, unsigned short*, unsigned int, int*) [clone .part.0]
 r _pi32_1
 r _pi32_2
@@ -2552,6 +2478,7 @@ t CUtlString::Right(int) const
 t CUtlString::Slice(int, int) const
 t CUtlString::AbsPath(char const*) const
 t CUtlString::DirName() const
+t CUtlString::IndexOf(char const*) const
 t CUtlString::Replace(char, char) const
 t CUtlString::Replace(char const*, char const*) const
 t CUtlString::operator==(CUtlString const&) const
@@ -3351,8 +3278,6 @@ d GetBitForBitnum(int)::bitsForBitnum
 b Replay_GetDownloadURL()::s_szFileURL
 b Replay_GetDownloadURLPath()::s_szDownloadURLPath
 b Bias(float, float)::lastExponent
-b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
-b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
 b Replay_va(char const*, ...)::string
 b Replay_va(char const*, ...)::curstring
 b CAutoLockT<CThreadMutex>::CAutoLockT(CThreadMutex&, char const*, char const*, int, unsigned long long)::tm_fmt

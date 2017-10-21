@@ -1,5 +1,4 @@
 U abort@@GLIBC_2.0
-U access@@GLIBC_2.0
 U __acosf_finite@@GLIBC_2.15
 U __acos_finite@@GLIBC_2.15
 t add_fdes
@@ -15,10 +14,7 @@ t _calloc_dbg
 t _calloc_dbg_impl
 U cbrtf@@GLIBC_2.0
 U chdir@@GLIBC_2.0
-U chmod@@GLIBC_2.0
-U chown@@GLIBC_2.1
 t classify_object_over_fdes
-U closedir@@GLIBC_2.0
 b completed.6767
 U cosf@@GLIBC_2.0
 U cos@@GLIBC_2.0
@@ -52,7 +48,6 @@ a _DYNAMIC
 U __dynamic_cast@@CXXABI_1.3
 A _edata
 A _end
-U __errno_location@@GLIBC_2.0
 U Error
 t execute_cfa_program
 t execute_stack_op
@@ -67,8 +62,6 @@ U fflush@@GLIBC_2.0
 U fgets@@GLIBC_2.0
 T _fini
 U finite@@GLIBC_2.0
-U fopen64@@GLIBC_2.1
-U fopen@@GLIBC_2.1
 r Four_2ToThe21s
 r Four_2ToThe22s
 r Four_2ToThe23s
@@ -97,12 +90,10 @@ t frame_heapsort
 t __frame_state_for
 t _free_dbg
 U free@@GLIBC_2.0
-U freopen@@GLIBC_2.0
 d g_EmptyCollisionListener
 t get_cie_encoding
 U GetCPUInformation
 U getcwd@@GLIBC_2.0
-U getenv@@GLIBC_2.0
 b g_fDeferDeleteMindist
 d g_IVPToHLDir
 b global_friction_counter
@@ -176,7 +167,6 @@ b g_VPhysPtrUtlVectorSaveRestoreOps
 U g_VProfCurrentProfile
 U __gxx_personality_v0@@CXXABI_1.3
 U HushAsserts
-t __i686.get_pc_thunk.bx
 U iconv_close@@GLIBC_2.1
 U iconv@@GLIBC_2.1
 U iconv_open@@GLIBC_2.1
@@ -306,18 +296,12 @@ t .L68
 t .L69
 t .L70
 t .L71
-U lchown@@GLIBC_2.0
 t linear_search_fdes
 b lineartolightmap
 b lineartovertex
-U link@@GLIBC_2.0
 U localtime@@GLIBC_2.0
 U __log_finite@@GLIBC_2.15
 U __longjmp_chk@@GLIBC_2.11
-t lstat
-t __lstat
-U __lxstat64@@GLIBC_2.2
-U __lxstat@@GLIBC_2.0
 t _malloc_dbg
 U malloc@@GLIBC_2.0
 b marker.8514
@@ -328,11 +312,6 @@ U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U __memset_chk@@GLIBC_2.3.4
 U memset@@GLIBC_2.0
-U mkdir@@GLIBC_2.0
-U mkfifo@@GLIBC_2.0
-t mknod
-t __mknod
-U mount@@GLIBC_2.0
 U Msg
 t _msize_dbg
 r nanmask
@@ -340,9 +319,6 @@ t _nh_malloc_dbg
 d n_physical_pops
 b object_mutex
 b once_regsizes.8974
-U open64@@GLIBC_2.2
-U opendir@@GLIBC_2.0
-U open@@GLIBC_2.0
 b p_error_buffer
 d pfFastCos
 d pfFastSinCos
@@ -378,13 +354,11 @@ d qh_version
 U qsort@@GLIBC_2.0
 t qsort_s
 U rand@@GLIBC_2.0
-U readdir@@GLIBC_2.0
 t read_encoded_value_with_base
 t read_sleb128
 t read_sleb128
 t _realloc_dbg
 U realloc@@GLIBC_2.0
-U realpath@@GLIBC_2.3
 t __register_frame
 t __register_frame_info
 t __register_frame_info_bases
@@ -392,10 +366,7 @@ t __register_frame_info_table
 t __register_frame_info_table_bases
 t __register_frame_table
 t register_tm_clones
-U rename@@GLIBC_2.0
-U rmdir@@GLIBC_2.0
 b s_bMathlibInitialized
-U scandir@@GLIBC_2.0
 t search_object
 b seen_objects
 t set_fast_math
@@ -411,25 +382,20 @@ U __sprintf_chk@@GLIBC_2.3.4
 U sscanf@@GLIBC_2.0
 b s_StringCharConversion
 U __stack_chk_fail@@GLIBC_2.4
-t stat
-t __stat
 U stderr@@GLIBC_2.0
 U stdout@@GLIBC_2.0
 U strcasecmp@@GLIBC_2.0
-U strcasestr@@GLIBC_2.1
 U __strcat_chk@@GLIBC_2.3.4
 U strchr@@GLIBC_2.0
 U strcmp@@GLIBC_2.0
 U __strcpy_chk@@GLIBC_2.3.4
 U strcpy@@GLIBC_2.0
-U strdup@@GLIBC_2.0
 U strftime@@GLIBC_2.0
 U strlen@@GLIBC_2.0
 U strncasecmp@@GLIBC_2.0
 U __strncat_chk@@GLIBC_2.3.4
 U strncat@@GLIBC_2.0
 U strncpy@@GLIBC_2.0
-U strpbrk@@GLIBC_2.0
 U strrchr@@GLIBC_2.0
 U strstr@@GLIBC_2.0
 U strtod@@GLIBC_2.0
@@ -439,7 +405,6 @@ U strtoll@@GLIBC_2.0
 U strtoul@@GLIBC_2.0
 U strtoull@@GLIBC_2.0
 b subs.8777
-U symlink@@GLIBC_2.0
 U tanf@@GLIBC_2.0
 U tan@@GLIBC_2.0
 b terminator.8620
@@ -455,7 +420,6 @@ U toupper@@GLIBC_2.0
 U towlower@@GLIBC_2.0
 U towupper@@GLIBC_2.0
 t __udivdi3
-U unlink@@GLIBC_2.0
 b unseen_objects
 t _Unwind_Backtrace
 t _Unwind_DebugHook
@@ -479,8 +443,6 @@ t _Unwind_Resume
 t _Unwind_Resume_or_Rethrow
 t _Unwind_SetGR
 t _Unwind_SetIP
-U utime@@GLIBC_2.0
-U utimes@@GLIBC_2.0
 t uw_frame_state_for
 t uw_init_context_1
 t uw_install_context_1
@@ -498,41 +460,9 @@ U wcslen@@GLIBC_2.0
 U wcsncat@@GLIBC_2.0
 U wcsncpy@@GLIBC_2.0
 U wcstombs@@GLIBC_2.0
-t __wrap_access
-t __wrap_chmod
-t __wrap_chown
-t __wrap_creat
-t __wrap_fopen
-t __wrap_fopen64
-t __wrap_freopen
-t __wrap_lchown
-t __wrap_link
-t __wrap_lstat
-t __wrap___lxstat
-t __wrap___lxstat64
-t __wrap_mkdir
-t __wrap_mkfifo
-t __wrap_mknod
-t __wrap_mount
-t __wrap_open
-t __wrap_open64
-t __wrap_opendir
-t __wrap_realpath
-t __wrap_rename
-t __wrap_rmdir
-t __wrap_scandir
-t __wrap_stat
-t __wrap_symlink
-t __wrap_unlink
-t __wrap_utime
-t __wrap_utimes
-t __wrap___xstat
-t __wrap___xstat64
+U __wrap_freopen
 t __x86.get_pc_thunk.bx
 t __x86.get_pc_thunk.cx
-U __xmknod@@GLIBC_2.0
-U __xstat64@@GLIBC_2.2
-U __xstat@@GLIBC_2.0
 t IsDenormal(float const&)
 t MatrixCopy(matrix3x4_t const&, matrix3x4_t&)
 t qh_addhash(void*, setT*, int, unsigned int)
@@ -1418,7 +1348,6 @@ t get_float()
 t IsCarBody(IVP_Core*)
 t ivp_srand(int)
 t nexttoken(char*, unsigned int, char const*, char)
-t pathmatch(char const*, char**, bool, char*, unsigned int)
 t p_get_num()
 t p_realloc(void*, int)
 t p_str_tok(char*, char const*)
@@ -1491,8 +1420,6 @@ b guard variable for datamap_t* DataMapInit<vphysics_save_constraintbreakable_t>
 b guard variable for datamap_t* DataMapInit<vphysics_save_shadowcontrolparams_t>(vphysics_save_shadowcontrolparams_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<vphysics_save_constraintballsocket_t>(vphysics_save_constraintballsocket_t*)::nameHolder
 b guard variable for datamap_t* DataMapInit<vphysics_save_cphysicsconstraintgroup_t>(vphysics_save_cphysicsconstraintgroup_t*)::nameHolder
-b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
-b guard variable for pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
 b guard variable for GetTmpObjectMatrix(IVP_Real_Object*)::coreShiftMatrix
 b guard variable for CUtlString::GetEmptyString()::s_emptyString
 b guard variable for CPhysicsEnvironment::Simulate(float)::autoMutex__
@@ -1507,7 +1434,6 @@ t ReadVector(char const*, Vector&)
 b s_BreakSet
 t FastToLower(char)
 b nullsurface
-b s_bShowDiag
 b s_nCVarFlag
 b vec2_origin
 b vec2_origin
@@ -1715,7 +1641,6 @@ b g_ypos
 b g_zneg
 b g_zpos
 r axisMap
-t Descend(char*, unsigned int, bool, unsigned int)
 r _pi32_1
 r _pi32_2
 r _pi32_4
@@ -5918,6 +5843,7 @@ t CUtlString::Right(int) const
 t CUtlString::Slice(int, int) const
 t CUtlString::AbsPath(char const*) const
 t CUtlString::DirName() const
+t CUtlString::IndexOf(char const*) const
 t CUtlString::Replace(char, char) const
 t CUtlString::Replace(char const*, char const*) const
 t CUtlString::operator==(CUtlString const&) const
@@ -7252,8 +7178,6 @@ b V_pretifynum(long long)::current
 r V_LogMultiline(bool, char const*, char const*, unsigned int, CUtlString&)::HEX
 b p_read_first_token(_IO_FILE*)::buffer
 b Bias(float, float)::lastExponent
-b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszDbgPathMatch
-b pathmatch(char const*, char**, bool, char*, unsigned int)::s_pszPathMatchEnabled
 b GetTmpObjectMatrix(IVP_Real_Object*)::coreShiftMatrix
 b InitializeCharacterSets()::s_CharacterSetInitialized
 b CAutoLockT<CDataManagerBase>::CAutoLockT(CDataManagerBase&, char const*, char const*, int, unsigned long long)::tm_fmt

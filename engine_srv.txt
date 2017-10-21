@@ -400,9 +400,8 @@ t _GLOBAL__sub_I_r_staticpropinfo
 t _GLOBAL__sub_I_r_visframecount
 t _GLOBAL__sub_I_r_visocclusion
 t _GLOBAL__sub_I_s_bMathlibInitialized
-t _GLOBAL__sub_I_s_ClientElementNames
 t _GLOBAL__sub_I_scratchpad3d.cpp
-t _GLOBAL__sub_I_s_ElementNames
+t _GLOBAL__sub_I_s_DTElementNames
 t _GLOBAL__sub_I_server_pch.cpp
 t _GLOBAL__sub_I_snd_posix.cpp
 t _GLOBAL__sub_I_snd_refdist
@@ -442,7 +441,6 @@ t _GLOBAL__sub_I__Z19Editor_BeginSessionPKcib
 t _GLOBAL__sub_I__Z19SetupMatrixIdentityv
 t _GLOBAL__sub_I__Z20AllocChangeFrameListii
 t _GLOBAL__sub_I__Z20GenerateLumpFileNamePKcPcii
-t _GLOBAL__sub_I__Z21AllocateStringHelper2PKcPc
 t _GLOBAL__sub_I__Z21UpdateNameFromSteamIDP7IConVarP8CSteamID
 t _GLOBAL__sub_I__Z22DevShotGenerator_Usagev
 t _GLOBAL__sub_I__Z24COM_BlockSequenceCRCBytePhii
@@ -491,9 +489,11 @@ t _GLOBAL__sub_I__ZN18CMaterialReferenceC2EPKcS1_b
 t _GLOBAL__sub_I__ZN19CReplayDemoRecorderC2EP13CReplayServer
 t _GLOBAL__sub_I__ZN20CGameEventManagerOld11AddListenerEP18IGameEventListenerPKcb
 t _GLOBAL__sub_I__ZN20CPureServerWhitelist8CCommandC2Ev
+t _GLOBAL__sub_I__ZN20CStandardRecvProxiesC2Ev
 t _GLOBAL__sub_I__ZN21CMaterialProxyFactory11CreateProxyEPKc
 t _GLOBAL__sub_I__ZN22CEngineRecipientFilterC2Ev
 t _GLOBAL__sub_I__ZN23CNetworkStringTableItemC2Ev
+t _GLOBAL__sub_I__ZN24CNonModifiedPointerProxyC2EPFPvPK8SendPropPKvS5_P20CSendProxyRecipientsiE
 t _GLOBAL__sub_I__ZN25CBaseAutoCompleteFileList18AutoCompletionFuncEPKcPA64_c
 t _GLOBAL__sub_I__ZN5CLZSS12IsCompressedEPKh
 t _GLOBAL__sub_I__ZN9CAutoGainC2Ev
@@ -573,7 +573,6 @@ d g_pSndIO
 b g_pSoundEmitterSystem
 b g_pSoundServices
 b g_pSourceVR
-U g_pSteamClientGameServer
 b g_pStudioRender
 U g_pThreadPool
 d g_pToolBSPTree
@@ -1066,11 +1065,10 @@ b s_aDecalPool
 b s_bMathlibInitialized
 U scandir@@GLIBC_2.0
 t scan_tree
-d s_ClientElementNames
+d s_DTElementNames
 t search_object
 b seen_objects
 U select@@GLIBC_2.0
-d s_ElementNames
 U send@@GLIBC_2.0
 U sendto@@GLIBC_2.0
 t send_tree
@@ -1127,19 +1125,22 @@ r static_dtree
 d static_l_desc
 r static_ltree
 U stderr@@GLIBC_2.0
+U SteamAPI_GetHSteamPipe
+U SteamAPI_GetHSteamUser
 U SteamAPI_RegisterCallback
 U SteamAPI_SetBreakpadAppID
 U SteamAPI_SetMiniDumpComment
 U SteamAPI_SetTryCatchCallbacks
 U SteamAPI_UnregisterCallback
 U SteamAPI_UseBreakpadCrashHandler
-U SteamClient
 U SteamGameServer_GetHSteamPipe
 U SteamGameServer_GetHSteamUser
 U SteamGameServer_GetIPCCallCount
-U SteamGameServer_InitSafe
 U SteamGameServer_RunCallbacks
 U SteamGameServer_Shutdown
+U SteamInternal_ContextInit
+U SteamInternal_CreateInterface
+U SteamInternal_GameServer_Init
 U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
 U __strcat_chk@@GLIBC_2.3.4
@@ -1336,35 +1337,35 @@ U wcstol@@GLIBC_2.0
 U wcstoll@@GLIBC_2.1
 U wcstombs@@GLIBC_2.0
 t __wrap_access
-t __wrap_chmod
-t __wrap_chown
+T __wrap_chmod
+T __wrap_chown
 t __wrap_creat
-t __wrap_fopen
-t __wrap_fopen64
-t __wrap_freopen
-t __wrap_lchown
-t __wrap_link
-t __wrap_lstat
-t __wrap___lxstat
-t __wrap___lxstat64
-t __wrap_mkdir
-t __wrap_mkfifo
-t __wrap_mknod
-t __wrap_mount
-t __wrap_open
-t __wrap_open64
-t __wrap_opendir
-t __wrap_realpath
-t __wrap_rename
-t __wrap_rmdir
-t __wrap_scandir
-t __wrap_stat
-t __wrap_symlink
-t __wrap_unlink
-t __wrap_utime
-t __wrap_utimes
-t __wrap___xstat
-t __wrap___xstat64
+T __wrap_fopen
+T __wrap_fopen64
+T __wrap_freopen
+T __wrap_lchown
+T __wrap_link
+T __wrap_lstat
+T __wrap___lxstat
+T __wrap___lxstat64
+T __wrap_mkdir
+T __wrap_mkfifo
+T __wrap_mknod
+T __wrap_mount
+T __wrap_open
+T __wrap_open64
+T __wrap_opendir
+T __wrap_realpath
+T __wrap_rename
+T __wrap_rmdir
+T __wrap_scandir
+T __wrap_stat
+T __wrap_symlink
+T __wrap_unlink
+T __wrap_utime
+T __wrap_utimes
+T __wrap___xstat
+T __wrap___xstat64
 U write@@GLIBC_2.0
 U WriteMiniDump
 t __x86.get_pc_thunk.bx
@@ -2712,6 +2713,7 @@ t CompareRecvPropToSendProp(RecvProp const*, SendProp const*)
 t DataTable_ClearWriteFlags(ServerClass*)
 t DevShotGenerator_Shutdown()
 t DoesPointHaveAnyNeighbors(CDispUtilsHelper*, CVertIndex const&)
+t DT_ArrayElementNameForIdx(unsigned int)
 t EngineTraceRenderRayCasts()
 t HandleRedirectAndDebugLog(char const*)
 t Host_CheckDumpMemoryStats()
@@ -2819,6 +2821,7 @@ t IsBoxIntersectingBoxExtents(Vector const&, Vector const&, Vector const&, Vecto
 t Overlay_OverlayPlaneToWorld(Vector const&, msurface2_t*, Vector const&, Vector&)
 t Overlay_WorldToOverlayPlane(Vector const&, Vector const&, Vector const&, Vector&)
 t Parabolic_Spline_NormalizeX(Vector const&, Vector const&, Vector const&, Vector const&, float, Vector&)
+t SteamInternal_OnContextInit(void*)
 t Sys_RunningWithDebugModules()
 t TransformAnglesToLocalSpace(QAngle const&, matrix3x4_t const&)
 t TransformAnglesToWorldSpace(QAngle const&, matrix3x4_t const&)
@@ -9758,6 +9761,7 @@ t CUtlString::Right(int) const
 t CUtlString::Slice(int, int) const
 t CUtlString::AbsPath(char const*) const
 t CUtlString::DirName() const
+t CUtlString::IndexOf(char const*) const
 t CUtlString::Replace(char, char) const
 t CUtlString::Replace(char const*, char const*) const
 t CUtlString::operator==(CUtlString const&) const
@@ -11589,6 +11593,7 @@ b EngineBitBufErrorHandler(BitBufErrorType, char const*)::errorNames
 r IntersectRayWithBoxBrush(TraceInfo_t*, cbrush_t const*, cboxbrush_t*)::signbits
 r _Host_RunFrame_Server_Async(int)::__FUNCTION__
 b _Host_RunFrame_Server_Async(int)::tm_fmt
+d SteamInternal_ModuleContext()::s_CallbackCounterAndContext
 b PackEntities_NetworkBackDoor(int, CGameClient**, CFrameSnapshot*)::tm_fmt
 b Host_CleanupConVarStringValue(char const*)::clean
 r Host_ReadPreStartupConfiguration()::s_PreStartupConfigConVars

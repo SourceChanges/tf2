@@ -1294,6 +1294,7 @@ t CStudioRender::R_StudioDrawDynamicMesh(IMatRenderContext*, mstudiomesh_t*, stu
 t CStudioRender::R_StudioDrawGroupHWSkin(IMatRenderContext*, studiomeshgroup_t*, IMesh*, ColorMeshInfo_t*)
 t CStudioRender::R_StudioDrawGroupSWSkin(studiomeshgroup_t*, IMesh*)
 t CStudioRender::R_StudioEyeballPosition(mstudioeyeball_t const*, eyeballstate_t*)
+t CStudioRender::SetupTreeSwayDepthWrite(IMaterial*, IMaterial*)
 t CStudioRender::GenerateMorphAccumulator(mstudiomodel_t*)
 t CStudioRender::MaterialPlanerProjection(matrix3x4_t const&, int, Vector const*, Vector2D*)
 t CStudioRender::R_InitLightEffectsWorld3()
@@ -2272,6 +2273,7 @@ t CUtlString::Right(int) const
 t CUtlString::Slice(int, int) const
 t CUtlString::AbsPath(char const*) const
 t CUtlString::DirName() const
+t CUtlString::IndexOf(char const*) const
 t CUtlString::Replace(char, char) const
 t CUtlString::Replace(char const*, char const*) const
 t CUtlString::operator==(CUtlString const&) const
@@ -2498,6 +2500,9 @@ b CStudioRender::DrawStaticPropDecals(DrawModelInfo_t const&, StudioRenderContex
 b CStudioRender::R_StudioFlexMeshGroup(studiomeshgroup_t*)::tm_fmt
 b CStudioRender::R_StudioDrawStaticMesh(IMatRenderContext*, mstudiomesh_t*, studiomeshgroup_t*, StudioModelLighting_t, float, IMaterial*, int, ColorMeshInfo_t*)::tm_fmt
 b CStudioRender::R_StudioDrawDynamicMesh(IMatRenderContext*, mstudiomesh_t*, studiomeshgroup_t*, StudioModelLighting_t, float, IMaterial*, int)::tm_fmt
+r CStudioRender::SetupTreeSwayDepthWrite(IMaterial*, IMaterial*)::paramNames
+b CStudioRender::SetupTreeSwayDepthWrite(IMaterial*, IMaterial*)::originalVarCache
+b CStudioRender::SetupTreeSwayDepthWrite(IMaterial*, IMaterial*)::varCache
 b CStudioRender::R_StudioSetupSkinAndLighting(IMatRenderContext*, int, IMaterial**, int, void*, ColorMeshInfo_t*, StudioModelLighting_t&)::alphaRefCache
 b CStudioRender::R_StudioSetupSkinAndLighting(IMatRenderContext*, int, IMaterial**, int, void*, ColorMeshInfo_t*, StudioModelLighting_t&)::textureVarCache
 b CStudioRender::R_StudioSetupSkinAndLighting(IMatRenderContext*, int, IMaterial**, int, void*, ColorMeshInfo_t*, StudioModelLighting_t&)::lightmapVarCache
@@ -2505,6 +2510,7 @@ b CStudioRender::R_StudioSetupSkinAndLighting(IMatRenderContext*, int, IMaterial
 b CStudioRender::R_StudioSetupSkinAndLighting(IMatRenderContext*, int, IMaterial**, int, void*, ColorMeshInfo_t*, StudioModelLighting_t&)::textureFrameVarCache
 b CStudioRender::R_StudioSetupSkinAndLighting(IMatRenderContext*, int, IMaterial**, int, void*, ColorMeshInfo_t*, StudioModelLighting_t&)::originalAlphaRefCache
 b CStudioRender::R_StudioSetupSkinAndLighting(IMatRenderContext*, int, IMaterial**, int, void*, ColorMeshInfo_t*, StudioModelLighting_t&)::originalTextureVarCache
+b CStudioRender::R_StudioSetupSkinAndLighting(IMatRenderContext*, int, IMaterial**, int, void*, ColorMeshInfo_t*, StudioModelLighting_t&)::nOriginalTreeSwayVarCache
 b CStudioRender::R_StudioSetupSkinAndLighting(IMatRenderContext*, int, IMaterial**, int, void*, ColorMeshInfo_t*, StudioModelLighting_t&)::originalTextureFrameVarCache
 b CStudioRender::R_StudioSetupSkinAndLighting(IMatRenderContext*, int, IMaterial**, int, void*, ColorMeshInfo_t*, StudioModelLighting_t&)::tm_fmt
 b CStudioRender::R_StudioProcessFlexedMesh_StreamOffset(mstudiomesh_t*, int)::tm_fmt

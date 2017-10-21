@@ -17,6 +17,9 @@ U closedir@@GLIBC_2.0
 U close@@GLIBC_2.0
 T CreateInterface
 U ctime_r@@GLIBC_2.0
+U __ctype_b_loc@@GLIBC_2.3
+U __ctype_tolower_loc@@GLIBC_2.3
+U __ctype_toupper_loc@@GLIBC_2.3
 U __cxa_allocate_exception@@CXXABI_1.3
 U __cxa_atexit@@GLIBC_2.1.3
 U __cxa_begin_catch@@CXXABI_1.3
@@ -43,6 +46,7 @@ U __errno_location@@GLIBC_2.0
 U execv@@GLIBC_2.0
 U _exit@@GLIBC_2.0
 U fclose@@GLIBC_2.1
+U fcntl@@GLIBC_2.0
 U fdatasync@@GLIBC_2.0
 U fflush@@GLIBC_2.0
 U fgets@@GLIBC_2.0
@@ -50,7 +54,7 @@ T _fini
 U fopen64@@GLIBC_2.1
 U fopen@@GLIBC_2.1
 U fork@@GLIBC_2.0
-U fprintf@@GLIBC_2.0
+U __fprintf_chk@@GLIBC_2.3.4
 U fputs@@GLIBC_2.0
 U fread@@GLIBC_2.0
 U free@@GLIBC_2.0
@@ -64,6 +68,7 @@ U __fxstat64@@GLIBC_2.2
 U getcontext@@GLIBC_2.1
 U getcwd@@GLIBC_2.0
 U getenv@@GLIBC_2.0
+U gethostbyname@@GLIBC_2.0
 U gethostname@@GLIBC_2.0
 U getpagesize@@GLIBC_2.0
 U getpid@@GLIBC_2.0
@@ -74,10 +79,12 @@ U gmtime_r@@GLIBC_2.0
 U gnu_get_libc_version@@GLIBC_2.1
 U __gxx_personality_v0@@CXXABI_1.3
 T _init
-U isalnum@@GLIBC_2.0
-U isalpha@@GLIBC_2.0
 U isspace@@GLIBC_2.0
+U iswalnum@@GLIBC_2.0
+U iswalpha@@GLIBC_2.0
 U iswspace@@GLIBC_2.0
+w _ITM_deregisterTMCloneTable
+w _ITM_registerTMCloneTable
 w _Jv_RegisterClasses
 U kill@@GLIBC_2.0
 U lchown@@GLIBC_2.0
@@ -92,6 +99,8 @@ U __lxstat64@@GLIBC_2.2
 U __lxstat@@GLIBC_2.0
 U malloc@@GLIBC_2.0
 U malloc_usable_size@@GLIBC_2.0
+U memcmp@@GLIBC_2.0
+U __memcpy_chk@@GLIBC_2.3.4
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
@@ -108,8 +117,9 @@ U nice@@GLIBC_2.0
 U open64@@GLIBC_2.2
 U opendir@@GLIBC_2.0
 U open@@GLIBC_2.0
+U posix_fadvise@@GLIBC_2.2
 U pread64@@GLIBC_2.2
-U printf@@GLIBC_2.0
+U __printf_chk@@GLIBC_2.3.4
 U pthread_attr_init@@GLIBC_2.1
 U pthread_attr_setstacksize@@GLIBC_2.1
 U pthread_cancel@@GLIBC_2.0
@@ -126,6 +136,7 @@ U pthread_create@@GLIBC_2.1
 U pthread_exit@@GLIBC_2.0
 U pthread_getspecific@@GLIBC_2.0
 U pthread_join@@GLIBC_2.0
+w __pthread_key_create@@GLIBC_2.0
 U pthread_key_create@@GLIBC_2.0
 U pthread_key_delete@@GLIBC_2.0
 U pthread_kill@@GLIBC_2.0
@@ -139,6 +150,7 @@ U pthread_mutex_trylock@@GLIBC_2.0
 U pthread_mutex_unlock@@GLIBC_2.0
 w pthread_once@@GLIBC_2.0
 U pthread_self@@GLIBC_2.0
+U pthread_setname_np@@GLIBC_2.12
 U pthread_setspecific@@GLIBC_2.0
 U pwrite64@@GLIBC_2.2
 U readdir64@@GLIBC_2.2
@@ -146,6 +158,7 @@ U readdir@@GLIBC_2.0
 U read@@GLIBC_2.0
 U readlink@@GLIBC_2.0
 U realloc@@GLIBC_2.0
+U __realpath_chk@@GLIBC_2.4
 U realpath@@GLIBC_2.3
 U rename@@GLIBC_2.0
 U rewind@@GLIBC_2.0
@@ -162,7 +175,9 @@ U sigaddset@@GLIBC_2.0
 U sigemptyset@@GLIBC_2.0
 U signal@@GLIBC_2.0
 U sigprocmask@@GLIBC_2.0
+U __snprintf_chk@@GLIBC_2.3.4
 U snprintf@@GLIBC_2.0
+U __sprintf_chk@@GLIBC_2.3.4
 U sprintf@@GLIBC_2.0
 U sqrtf@@GLIBC_2.0
 U sscanf@@GLIBC_2.0
@@ -175,11 +190,14 @@ U strcasecmp@@GLIBC_2.0
 U strcasestr@@GLIBC_2.1
 U strchr@@GLIBC_2.0
 U strcmp@@GLIBC_2.0
+U __strcpy_chk@@GLIBC_2.3.4
 U strcpy@@GLIBC_2.0
 U strdup@@GLIBC_2.0
 U strerror@@GLIBC_2.0
 U strftime@@GLIBC_2.0
+U strlen@@GLIBC_2.0
 U strncasecmp@@GLIBC_2.0
+U __strncat_chk@@GLIBC_2.3.4
 U strncat@@GLIBC_2.0
 U strncmp@@GLIBC_2.0
 U strncpy@@GLIBC_2.0
@@ -201,18 +219,17 @@ U time@@GLIBC_2.0
 U timegm@@GLIBC_2.0
 U __timezone@@GLIBC_2.0
 U timezone@@GLIBC_2.0
-U tolower@@GLIBC_2.0
 U toupper@@GLIBC_2.0
-U towlower@@GLIBC_2.0
 U towupper@@GLIBC_2.0
 U uname@@GLIBC_2.0
 U unlink@@GLIBC_2.0
 U usleep@@GLIBC_2.0
 U utime@@GLIBC_2.0
 U utimes@@GLIBC_2.0
-U vasprintf@@GLIBC_2.0
+U __vasprintf_chk@@GLIBC_2.8
 U vfork@@GLIBC_2.0
-U vfprintf@@GLIBC_2.0
+U __vfprintf_chk@@GLIBC_2.3.4
+U __vsnprintf_chk@@GLIBC_2.3.4
 U vsnprintf@@GLIBC_2.0
 U vswprintf@@GLIBC_2.2
 U waitpid@@GLIBC_2.0
@@ -231,6 +248,7 @@ U operator delete(void*)@@GLIBCXX_3.4
 U operator new[](unsigned int)@@GLIBCXX_3.4
 U std::string::_M_leak_hard()@@GLIBCXX_3.4
 U std::string::_Rep::_M_destroy(std::allocator<char> const&)@@GLIBCXX_3.4
+U std::string::_Rep::_M_dispose(std::allocator<char> const&)@@GLIBCXX_3.4
 U std::string::_Rep::_S_empty_rep_storage@@GLIBCXX_3.4
 U std::string::append(char const*, unsigned int)@@GLIBCXX_3.4
 U std::string::append(std::string const&)@@GLIBCXX_3.4
@@ -242,9 +260,9 @@ U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_
 U std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@@GLIBCXX_3.4
 U std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)@@GLIBCXX_3.4.15
 U std::__detail::_List_node_base::_M_unhook()@@GLIBCXX_3.4.15
+W std::_Rb_tree_iterator<std::pair<std::string const, std::string> > std::_Rb_tree<std::string, std::pair<std::string const, std::string>, std::_Select1st<std::pair<std::string const, std::string> >, std::less<std::string>, std::allocator<std::pair<std::string const, std::string> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<std::string&&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<std::string const, std::string> >, std::piecewise_construct_t const&, std::tuple<std::string&&>&&, std::tuple<>&&)
 U operator new(unsigned int)@@GLIBCXX_3.4
 U std::__throw_bad_alloc()@@GLIBCXX_3.4
-U std::_Rb_tree_decrement(std::_Rb_tree_node_base const*)@@GLIBCXX_3.4
 U std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
 U std::_Rb_tree_increment(std::_Rb_tree_node_base const*)@@GLIBCXX_3.4
 U std::_Rb_tree_increment(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
