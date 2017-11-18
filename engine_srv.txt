@@ -77,8 +77,8 @@ T CreateInterface
 U CreateSimpleThread
 r CSWTCH.1024
 r CSWTCH.413
+r CSWTCH.659
 r CSWTCH.66
-r CSWTCH.660
 U __ctype_b_loc@@GLIBC_2.3
 U __ctype_tolower_loc@@GLIBC_2.3
 U __ctype_toupper_loc@@GLIBC_2.3
@@ -1852,7 +1852,7 @@ t Mod_LoadTexdata()
 t Mod_LoadTexinfo()
 t NET_AddToLagged(netpacket_s**, netpacket_s*)
 t NET_CloseSocket(int, int)
-t NET_CloseSocket(int, int) [clone .part.39]
+t NET_CloseSocket(int, int) [clone .part.40]
 t NET_ErrorString(int)
 t NET_IsDedicated()
 t NET_OpenSockets()
@@ -4299,7 +4299,7 @@ b mod_forcetouchdata
 b mod_load_showstall
 b namelockid_command
 b net_status_command
-t OpenSocketInternal(int, int, int, char const*, int, bool, int) [clone .constprop.99]
+t OpenSocketInternal(int, int, int, char const*, int, bool, int) [clone .constprop.100]
 t plugin_unpause_all(CCommand const&)
 b r_colorstaticprops
 b r_decalstaticprops
