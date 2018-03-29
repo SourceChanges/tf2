@@ -1233,6 +1233,7 @@ t V_SplitString2(char const*, char const**, int, CUtlVector<char*, CUtlMemory<ch
 t int V_sprintf_safe<260u>(char (&) [260u], char const*, ...)
 t int V_sprintf_safe<512u>(char (&) [512u], char const*, ...)
 t V_StripLastDir(char*, int)
+t V_strtitlecase(char*)
 t V_vsnprintfRet(char*, int, char const*, char*, bool*)
 t AngleQuaternion(RadianEuler const&, Quaternion&)
 t AngleQuaternion(QAngle const&, Quaternion&)
