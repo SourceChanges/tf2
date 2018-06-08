@@ -396,7 +396,6 @@ b materials
 U mbstowcs@@GLIBC_2.0
 b mdllib
 U memcmp@@GLIBC_2.0
-U __memcpy_chk@@GLIBC_2.3.4
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
@@ -1398,6 +1397,8 @@ t CBaseSpewer::~CBaseSpewer()
 t CBaseSpewer::~CBaseSpewer()
 t CNetMessage::SetReliable(bool)
 t CNetMessage::SetNetChannel(INetChannel*)
+t CNetMessage::SetRatePolicy()
+t CNetMessage::BIncomingMessageForProcessing(double, int)
 t CNetMessage::Process()
 t CNetMessage::~CNetMessage()
 t CNetMessage::~CNetMessage()
@@ -1510,6 +1511,7 @@ t SVC_SetPause::Process()
 t SVC_SetPause::~SVC_SetPause()
 t SVC_SetPause::~SVC_SetPause()
 t SVC_SetPause::~SVC_SetPause()
+t CLC_VoiceData::SetRatePolicy()
 t CLC_VoiceData::WriteToBuffer(bf_write&)
 t CLC_VoiceData::ReadFromBuffer(bf_read&)
 t CLC_VoiceData::Process()
@@ -1670,7 +1672,7 @@ t CUtlSortVector<CBaseRecordingSessionBlock*, CBaseRecordingSession::CLessFuncto
 t CUtlSortVector<CBaseRecordingSessionBlock*, CGenericPersistentManager<CBaseRecordingSessionBlock>::CLessFunctor, CUtlVector<CBaseRecordingSessionBlock*, CUtlMemory<CBaseRecordingSessionBlock*, int> > >::Insert(CBaseRecordingSessionBlock* const&)
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::InsertNoSort(KeyValues* const&)
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::CompareHelper(KeyValues* const*, KeyValues* const*)
-t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::RedoSort(bool) [clone .part.63]
+t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::RedoSort(bool) [clone .part.64]
 t IBaseInterface::~IBaseInterface()
 t IBaseInterface::~IBaseInterface()
 t IBaseInterface::~IBaseInterface()
@@ -1750,6 +1752,7 @@ t CDllDemandLoader::CDllDemandLoader(char const*)
 t CDllDemandLoader::~CDllDemandLoader()
 t CDllDemandLoader::~CDllDemandLoader()
 t CDllDemandLoader::~CDllDemandLoader()
+t CLC_CmdKeyValues::SetRatePolicy()
 t CLC_CmdKeyValues::WriteToBuffer(bf_write&)
 t CLC_CmdKeyValues::ReadFromBuffer(bf_read&)
 t CLC_CmdKeyValues::Process()
@@ -1770,6 +1773,7 @@ t CLC_FileMD5Check::Process()
 t CLC_FileMD5Check::~CLC_FileMD5Check()
 t CLC_FileMD5Check::~CLC_FileMD5Check()
 t CLC_FileMD5Check::~CLC_FileMD5Check()
+t CLC_ListenEvents::SetRatePolicy()
 t CLC_ListenEvents::WriteToBuffer(bf_write&)
 t CLC_ListenEvents::ReadFromBuffer(bf_read&)
 t CLC_ListenEvents::Process()
@@ -2118,6 +2122,7 @@ t CBaseRecordingSessionBlock::CBaseRecordingSessionBlock(IReplayContext*)
 t CBaseRecordingSessionBlock::~CBaseRecordingSessionBlock()
 t CBaseRecordingSessionBlock::~CBaseRecordingSessionBlock()
 t CBaseRecordingSessionBlock::~CBaseRecordingSessionBlock()
+t CNetMessageRatelimitPolicy::BIncomingMessageForProcessing(double, int)
 t IKeyValuesDumpContextAsText::KvBeginKey(KeyValues*, int)
 t IKeyValuesDumpContextAsText::KvWriteValue(KeyValues*, int)
 t IKeyValuesDumpContextAsText::KvWriteIndent(int)
@@ -2153,6 +2158,7 @@ t CKeyValuesDumpContextAsDevMsg::KvWriteText(char const*)
 t IRecordingSessionBlockManager::~IRecordingSessionBlockManager()
 t IRecordingSessionBlockManager::~IRecordingSessionBlockManager()
 t IRecordingSessionBlockManager::~IRecordingSessionBlockManager()
+t CNetMessageRatelimitPolicyNone::BIncomingMessageForProcessing(double, int)
 t CServerRecordingSessionManager::OnSessionEnd()
 t CServerRecordingSessionManager::OnSessionStart(int, char const*)
 t CServerRecordingSessionManager::OnAllSessionsDeleted()
@@ -3000,11 +3006,14 @@ r typeinfo for CGenericPersistentManager<CBaseRecordingSession>
 r typeinfo for CGenericPersistentManager<CBaseRecordingSessionBlock>
 r typeinfo for CLocalFileserverPublisher
 r typeinfo for CBaseRecordingSessionBlock
+r typeinfo for CNetMessageRatelimitPolicy
 r typeinfo for IKeyValuesDumpContextAsText
 r typeinfo for CBaseRecordingSessionManager
 r typeinfo for CServerRecordingSessionBlock
 r typeinfo for CKeyValuesDumpContextAsDevMsg
 r typeinfo for IRecordingSessionBlockManager
+r typeinfo for CNetMessageRatelimitPolicyBase
+r typeinfo for CNetMessageRatelimitPolicyNone
 r typeinfo for CServerRecordingSessionManager
 r typeinfo for CBaseRecordingSessionBlockManager
 r typeinfo for CServerRecordingSessionBlockManager
@@ -3128,11 +3137,14 @@ r typeinfo name for CGenericPersistentManager<CBaseRecordingSession>
 r typeinfo name for CGenericPersistentManager<CBaseRecordingSessionBlock>
 r typeinfo name for CLocalFileserverPublisher
 r typeinfo name for CBaseRecordingSessionBlock
+r typeinfo name for CNetMessageRatelimitPolicy
 r typeinfo name for IKeyValuesDumpContextAsText
 r typeinfo name for CBaseRecordingSessionManager
 r typeinfo name for CServerRecordingSessionBlock
 r typeinfo name for CKeyValuesDumpContextAsDevMsg
 r typeinfo name for IRecordingSessionBlockManager
+r typeinfo name for CNetMessageRatelimitPolicyBase
+r typeinfo name for CNetMessageRatelimitPolicyNone
 r typeinfo name for CServerRecordingSessionManager
 r typeinfo name for CBaseRecordingSessionBlockManager
 r typeinfo name for CServerRecordingSessionBlockManager
@@ -3247,11 +3259,14 @@ r vtable for CGenericPersistentManager<CBaseRecordingSession>
 r vtable for CGenericPersistentManager<CBaseRecordingSessionBlock>
 r vtable for CLocalFileserverPublisher
 r vtable for CBaseRecordingSessionBlock
+r vtable for CNetMessageRatelimitPolicy
 r vtable for IKeyValuesDumpContextAsText
 r vtable for CBaseRecordingSessionManager
 r vtable for CServerRecordingSessionBlock
 r vtable for CKeyValuesDumpContextAsDevMsg
 r vtable for IRecordingSessionBlockManager
+r vtable for CNetMessageRatelimitPolicyBase
+r vtable for CNetMessageRatelimitPolicyNone
 r vtable for CServerRecordingSessionManager
 r vtable for CBaseRecordingSessionBlockManager
 r vtable for CServerRecordingSessionBlockManager

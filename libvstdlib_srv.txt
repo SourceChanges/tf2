@@ -261,7 +261,6 @@ U malloc@@GLIBC_2.0
 b marker.8514
 U mbstowcs@@GLIBC_2.0
 U memcmp@@GLIBC_2.0
-U __memcpy_chk@@GLIBC_2.3.4
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
@@ -1046,7 +1045,7 @@ t CUtlMemoryPool::~CUtlMemoryPool()
 t CUtlMemoryPool::~CUtlMemoryPool()
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::InsertNoSort(KeyValues* const&)
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::CompareHelper(KeyValues* const*, KeyValues* const*)
-t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::RedoSort(bool) [clone .part.63]
+t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::RedoSort(bool) [clone .part.64]
 b ThreadPoolTest::g_bOutputError
 t ThreadPoolTest::CExecuteTestJob::DoExecute()
 t ThreadPoolTest::CExecuteTestJob::~CExecuteTestJob()

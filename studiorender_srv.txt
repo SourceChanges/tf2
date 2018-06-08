@@ -292,7 +292,6 @@ U mbstowcs@@GLIBC_2.0
 b mdlcache
 b mdllib
 U memcmp@@GLIBC_2.0
-U __memcpy_chk@@GLIBC_2.3.4
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
@@ -1366,7 +1365,7 @@ t CUtlLinkedList<CStudioRender::Decal_t, unsigned short, false, unsigned short, 
 t CUtlLinkedList<CStudioRender::Decal_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CStudioRender::Decal_t, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::InsertNoSort(KeyValues* const&)
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::CompareHelper(KeyValues* const*, KeyValues* const*)
-t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::RedoSort(bool) [clone .part.63]
+t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::RedoSort(bool) [clone .part.64]
 t CVertexBuilder::~CVertexBuilder()
 t CVertexBuilder::~CVertexBuilder()
 t mstudiomodel_t::CacheVertexData(void*)

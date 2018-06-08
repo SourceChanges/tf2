@@ -2571,7 +2571,7 @@ t CUtlSortVector<MorphVertexInfo_t, CVertexMorphDict::CMorphVertexListLess, CUtl
 t CUtlSortVector<CVertexMorphDict::MorphVertexList_t, CVertexMorphDict::VertexMorphDictLess, CUtlVector<CVertexMorphDict::MorphVertexList_t, CUtlMemory<CVertexMorphDict::MorphVertexList_t, int> > >::Insert(CVertexMorphDict::MorphVertexList_t const&)
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::InsertNoSort(KeyValues* const&)
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::CompareHelper(KeyValues* const*, KeyValues* const*)
-t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::RedoSort(bool) [clone .part.63]
+t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::RedoSort(bool) [clone .part.64]
 t CVertexBuilder::~CVertexBuilder()
 t CVertexBuilder::~CVertexBuilder()
 t IMaterialProxy::~IMaterialProxy()

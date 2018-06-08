@@ -634,7 +634,6 @@ U mbtowc@@GLIBC_2.0
 b mdllib
 U memalign@@GLIBC_2.0
 U memcmp@@GLIBC_2.0
-U __memcpy_chk@@GLIBC_2.3.4
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
@@ -2380,7 +2379,7 @@ t CUtlSortVector<CZipPackFile::CPackFileEntry, CZipPackFile::CPackFileLessFunc, 
 t CUtlSortVector<FileJob_t*, CQueuedLoader::CFileJobsLessFunc, CUtlVector<FileJob_t*, CUtlMemory<FileJob_t*, int> > >::CompareHelper(FileJob_t* const*, FileJob_t* const*)
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::InsertNoSort(KeyValues* const&)
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::CompareHelper(KeyValues* const*, KeyValues* const*)
-t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::RedoSort(bool) [clone .part.63]
+t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::RedoSort(bool) [clone .part.64]
 t CUtlSortVector<void*, CQueuedLoader::CResourceNameLessFunc, CUtlVector<void*, CUtlMemory<void*, int> > >::CompareHelper(void* const*, void* const*)
 t CUtlSortVector<void*, CQueuedLoader::CResourceNameLessFunc, CUtlVector<void*, CUtlMemory<void*, int> > >::Remove(void* const&)
 t CUtlSortVector<void*, CQueuedLoader::CResourceNameLessFunc, CUtlVector<void*, CUtlMemory<void*, int> > >::RedoSort(bool) [clone .part.47]

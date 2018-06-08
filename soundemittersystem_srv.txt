@@ -206,7 +206,6 @@ U malloc@@GLIBC_2.0
 b marker.8514
 U mbstowcs@@GLIBC_2.0
 U memcmp@@GLIBC_2.0
-U __memcpy_chk@@GLIBC_2.3.4
 U memcpy@@GLIBC_2.0
 U memmove@@GLIBC_2.0
 U memset@@GLIBC_2.0
@@ -801,7 +800,7 @@ t CUtlLinkedList<CUtlKeyValuePair<CSoundEntry*, empty_t>, unsigned short, false,
 t CUtlLinkedList<CUtlKeyValuePair<CSoundEntry*, empty_t>, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CSoundEntry*, empty_t>, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::InsertNoSort(KeyValues* const&)
 t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::CompareHelper(KeyValues* const*, KeyValues* const*)
-t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::RedoSort(bool) [clone .part.63]
+t CUtlSortVector<KeyValues*, CUtlSortVectorKeyValuesByName, CUtlVector<KeyValues*, CUtlMemory<KeyValues*, int> > >::RedoSort(bool) [clone .part.64]
 t CUtlSymbolTable::AddString(char const*)
 t CUtlSymbolTable::RemoveAll()
 t CUtlSymbolTable::CUtlSymbolTable(int, int, bool)
