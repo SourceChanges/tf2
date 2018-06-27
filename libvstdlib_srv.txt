@@ -668,9 +668,6 @@ b guard variable for CThreadPool::GetDummyJob()::dummyJob
 b guard variable for ThreadPoolTest::TestForcedExecute()::jobs
 b guard variable for CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)::r_developer
 b guard variable for CCvar::FindVar(char const*)::_counter
-b guard variable for CUtlRBTree<CVCoverage::Location_t, unsigned short, CVCoverage::CLocationLess, CUtlMemory<UtlRBTreeNode_t<CVCoverage::Location_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
-b guard variable for CUtlRBTree<CKeyValuesSystem::MemoryLeakTracker_t, int, bool (*)(CKeyValuesSystem::MemoryLeakTracker_t const&, CKeyValuesSystem::MemoryLeakTracker_t const&), CUtlMemory<UtlRBTreeNode_t<CKeyValuesSystem::MemoryLeakTracker_t, int>, int> >::Links(int) const::s_Sentinel
-b guard variable for CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 b guard variable for CCvar::FindVar(char const*) const::_counter
 b s_BreakSet
 t FastToLower(char)
@@ -808,8 +805,8 @@ t CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int>::Grow(int)
 t CUtlMemory<CUtlVector<int, CUtlMemory<int, int> >, int>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CVCoverage::Location_t, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CKeyValuesSystem::MemoryLeakTracker_t, int>, int>::Purge()
-t CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
-t CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<CCoroutine, int>, int>::Grow(int)
 t CUtlMemory<UtlLinkedListElem_t<CCoroutine, int>, int>::Purge()
 t CUtlMemory<char, int>::Grow(int)
@@ -843,15 +840,14 @@ t CUtlMemory<void (*)(IConVar*, char const*, float), int>::Purge()
 t CUtlMemory<char const*, int>::Grow(int)
 t CUtlMemory<char const*, int>::Purge()
 t CUtlMemory<KeyValues::CopyKeyValuesFromRecursive(KeyValues const&)::CopyStruct, int>::Purge()
-t CUtlRBTree<CVCoverage::Location_t, unsigned short, CVCoverage::CLocationLess, CUtlMemory<UtlRBTreeNode_t<CVCoverage::Location_t, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlRBTree<CKeyValuesSystem::MemoryLeakTracker_t, int, bool (*)(CKeyValuesSystem::MemoryLeakTracker_t const&, CKeyValuesSystem::MemoryLeakTracker_t const&), CUtlMemory<UtlRBTreeNode_t<CKeyValuesSystem::MemoryLeakTracker_t, int>, int> >::RemoveAll()
-t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
-t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
-t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
-t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveRebalance(unsigned short)
-t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t const&)
-t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
-t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
+t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
+t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
+t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
+t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short>, unsigned short> >::RemoveRebalance(unsigned short)
+t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t const&)
+t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
+t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlString::FixSlashes(char)
 t CUtlString::AllocMemory(unsigned int)
 t CUtlString::GetForModify()
@@ -1111,6 +1107,19 @@ t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
 t CUtlInplaceBuffer::InplaceGetLinePtr()
 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlStringBuilder::TakeOwnership(unsigned int*, unsigned int*)
+t CUtlStringBuilder::TrimWhitespace()
+t CUtlStringBuilder::ReplaceCaseless(char const*, char const*)
+t CUtlStringBuilder::ReplaceInternal(char const*, char const*, char const* (*)(char const*, char const*))
+t CUtlStringBuilder::RemoveWhitespace()
+t CUtlStringBuilder::InternalPrepareBuffer(unsigned int, bool, unsigned int)
+t CUtlStringBuilder::Data::ClearError()
+t CUtlStringBuilder::Data::MoveToHeap()
+t CUtlStringBuilder::Data::SetPtr(char*, unsigned int)
+t CUtlStringBuilder::Data::SetError(bool)
+t CUtlStringBuilder::Data::SetLength(unsigned int)
+t CUtlStringBuilder::Replace(char const*, char const*)
+t CUtlStringBuilder::SetLength(unsigned int)
 t CUtlCharConversion::FindConversion(char const*, int*)
 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
@@ -1351,7 +1360,7 @@ t KeyValues::operator new(unsigned int, int, char const*, int)
 t operator new[](unsigned int)
 t operator new[](unsigned int, int, char const*, int)
 t ConCommand::IsCommand() const
-t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t const&) const
+t CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<CUtlString, KeyValues*, unsigned short, bool (*)(CUtlString const&, CUtlString const&)>::Node_t const&) const
 t CUtlString::GetExtension() const
 t CUtlString::StripFilename() const
 t CUtlString::MatchesPattern(CUtlString const&, int) const
@@ -1364,6 +1373,7 @@ t CUtlString::Get() const
 t CUtlString::Left(int) const
 t CUtlString::Right(int) const
 t CUtlString::Slice(int, int) const
+t CUtlString::Remove(char const*, bool) const
 t CUtlString::AbsPath(char const*) const
 t CUtlString::DirName() const
 t CUtlString::IndexOf(char const*) const
@@ -1386,6 +1396,7 @@ t ConCommandBase::IsCommand() const
 t ConCommandBase::IsFlagSet(int) const
 t CKeyValuesSystem::LoadFileKeyValuesFromCache(KeyValues*, char const*, char const*, IBaseFileSystem*) const
 U CThreadLocalBase::Get() const
+t CUtlStringBuilder::IndexOf(char const*) const
 t CUtlCharConversion::GetDelimiter() const
 t CUtlCharConversion::GetEscapeChar() const
 t CUtlCharConversion::GetDelimiterLength() const
@@ -1639,8 +1650,5 @@ r KeyValues::LoadFromFile(IBaseFileSystem*, char const*, char const*, bool)::__F
 b KeyValues::LoadFromFile(IBaseFileSystem*, char const*, char const*, bool)::tm_fmt
 b KeyValues::LoadFromFile(IBaseFileSystem*, char const*, char const*, bool)::tm_fmt
 b KeyValues::SaveKeyToFile(KeyValues*, IBaseFileSystem*, void*, CUtlBuffer*, int, bool, bool)::buf
-d CUtlRBTree<CVCoverage::Location_t, unsigned short, CVCoverage::CLocationLess, CUtlMemory<UtlRBTreeNode_t<CVCoverage::Location_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
-d CUtlRBTree<CKeyValuesSystem::MemoryLeakTracker_t, int, bool (*)(CKeyValuesSystem::MemoryLeakTracker_t const&, CKeyValuesSystem::MemoryLeakTracker_t const&), CUtlMemory<UtlRBTreeNode_t<CKeyValuesSystem::MemoryLeakTracker_t, int>, int> >::Links(int) const::s_Sentinel
-d CUtlRBTree<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short, CUtlMap<CUtlString, KeyValues*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, KeyValues*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 b CCvar::FindVar(char const*) const::tm_fmt
 b CCvar::FindVar(char const*) const::_counter

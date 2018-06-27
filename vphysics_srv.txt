@@ -1426,9 +1426,6 @@ b guard variable for CUtlString::GetEmptyString()::s_emptyString
 b guard variable for CPhysicsEnvironment::Simulate(float)::autoMutex__
 b guard variable for IVP_Material_Manager::get_material_by_index(IVP_Real_Object*, IVP_U_Point const*, int)::simple
 b guard variable for hk_Memory::get_instance()::s_memory_instance
-b guard variable for CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
-b guard variable for CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
-b guard variable for CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 b g_BreakSet
 r _pi32_inv1
 t ReadVector(char const*, Vector&)
@@ -1725,8 +1722,8 @@ t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>,
 t CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short>::Purge()
-t CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short>::Grow(int)
-t CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short>::Purge()
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::Node_t, unsigned short>, unsigned short>::Grow(int)
+t CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::Node_t, unsigned short>, unsigned short>::Purge()
 t CUtlMemory<CUtlHashtableEntry<CUtlStableHashtable<CUtlConstStringBase<char>, empty_t, DefaultHashFunctor<CUtlConstStringBase<char> >, DefaultEqualFunctor<CUtlConstStringBase<char> >, unsigned short, char const*>::IndirectIndex, empty_t>, int>::Purge()
 t CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short>::Grow(int)
 t CUtlMemory<UtlLinkedListElem_t<CUtlKeyValuePair<CUtlConstStringBase<char>, empty_t>, unsigned short>, unsigned short>::Purge()
@@ -1793,11 +1790,11 @@ t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPh
 t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::Insert(CPhysicsListenerCollision::corepair_t const&)
 t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::Unlink(unsigned short)
 t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::RemoveAll()
-t CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
-t CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
-t CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
-t CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<void*, void*, unsigned short>::Node_t const&)
-t CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
+t CUtlRBTree<CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::Node_t, unsigned short>, unsigned short> >::RotateLeft(unsigned short)
+t CUtlRBTree<CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::Node_t, unsigned short>, unsigned short> >::RotateRight(unsigned short)
+t CUtlRBTree<CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::Node_t, unsigned short>, unsigned short> >::InsertRebalance(unsigned short)
+t CUtlRBTree<CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::Node_t, unsigned short>, unsigned short> >::Insert(CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::Node_t const&)
+t CUtlRBTree<CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::Node_t, unsigned short>, unsigned short> >::RemoveAll()
 t CUtlString::FixSlashes(char)
 t CUtlString::AllocMemory(unsigned int)
 t CUtlString::GetForModify()
@@ -3208,6 +3205,19 @@ t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
 t CUtlInplaceBuffer::InplaceGetLinePtr()
 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlStringBuilder::TakeOwnership(unsigned int*, unsigned int*)
+t CUtlStringBuilder::TrimWhitespace()
+t CUtlStringBuilder::ReplaceCaseless(char const*, char const*)
+t CUtlStringBuilder::ReplaceInternal(char const*, char const*, char const* (*)(char const*, char const*))
+t CUtlStringBuilder::RemoveWhitespace()
+t CUtlStringBuilder::InternalPrepareBuffer(unsigned int, bool, unsigned int)
+t CUtlStringBuilder::Data::ClearError()
+t CUtlStringBuilder::Data::MoveToHeap()
+t CUtlStringBuilder::Data::SetPtr(char*, unsigned int)
+t CUtlStringBuilder::Data::SetError(bool)
+t CUtlStringBuilder::Data::SetLength(unsigned int)
+t CUtlStringBuilder::Replace(char const*, char const*)
+t CUtlStringBuilder::SetLength(unsigned int)
 t IPhysicsCollision::~IPhysicsCollision()
 t IPhysicsCollision::~IPhysicsCollision()
 t IPhysicsCollision::~IPhysicsCollision()
@@ -5613,8 +5623,8 @@ t CTSPool<CUtlVector<CPhysCollideVirtualMesh*, CUtlMemory<CPhysCollideVirtualMes
 t CTSPool<CUtlVector<CPhysCollideVirtualMesh*, CUtlMemory<CPhysCollideVirtualMesh*, int> > >::~CTSPool()
 t CTSPool<CVisitHash>::~CTSPool()
 t CTSPool<CVisitHash>::~CTSPool()
-t CUtlMap<void*, void*, unsigned short>::~CUtlMap()
-t CUtlMap<void*, void*, unsigned short>::~CUtlMap()
+t CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::~CUtlMap()
+t CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::~CUtlMap()
 d hk_Math::hk_random_seed
 t hk_Math::rand01()
 t hk_Math::srand01(unsigned int)
@@ -5829,7 +5839,7 @@ t CTraceCone::GetVertByIndex(int) const
 t CTraceCone::Radius() const
 t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::NextInorder(unsigned short) const
 t CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::Find(CPhysicsListenerCollision::corepair_t const&) const
-t CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<void*, void*, unsigned short>::Node_t const&) const
+t CUtlRBTree<CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::Node_t, unsigned short>, unsigned short> >::Find(CUtlMap<void*, void*, unsigned short, bool (*)(void* const&, void* const&)>::Node_t const&) const
 t CUtlString::GetExtension() const
 t CUtlString::StripFilename() const
 t CUtlString::MatchesPattern(CUtlString const&, int) const
@@ -5842,6 +5852,7 @@ t CUtlString::Get() const
 t CUtlString::Left(int) const
 t CUtlString::Right(int) const
 t CUtlString::Slice(int, int) const
+t CUtlString::Remove(char const*, bool) const
 t CUtlString::AbsPath(char const*) const
 t CUtlString::DirName() const
 t CUtlString::IndexOf(char const*) const
@@ -6045,6 +6056,7 @@ t IVP_Mindist_Base::get_mindist_synapse(int) const
 t IVP_ov_tree_hash::compare(void*, void*) const
 t IVP_Synapse_Real::check_consistency_of_ledge(IVP_Compact_Edge const*) const
 t IVP_Synapse_Real::get_core() const
+t CUtlStringBuilder::IndexOf(char const*) const
 t IVP_Compact_Ledge::is_terminal() const
 t IVP_Compact_Ledge::get_n_points() const
 t IVP_Compact_Ledge::get_client_data() const
@@ -7213,9 +7225,6 @@ b CFmtStrN<256, false>::CFmtStrN(char const*, ...)::scAsserted
 d ConVarRef::Init(char const*, bool)::bFirst
 b hk_Memory::get_instance()::s_memory_instance
 b simplex_t::SolveGJKSet(simplexvert_t const&, Vector*)::tm_fmt
-d CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
-d CUtlRBTree<CPhysicsListenerCollision::corepair_t, unsigned short, bool (*)(CPhysicsListenerCollision::corepair_t const&, CPhysicsListenerCollision::corepair_t const&), CUtlMemory<UtlRBTreeNode_t<CPhysicsListenerCollision::corepair_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
-d CUtlRBTree<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short, CUtlMap<void*, void*, unsigned short>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void*, void*, unsigned short>::Node_t, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 b CTraceIVP::SupportMap(Vector const&, Vector*) const::tm_fmt
 b CTraceIVP::SupportMap(Vector const&, Vector*) const::tm_fmt
 b CTraceIVP::SupportMapCached(Vector const&, Vector*) const::tm_fmt

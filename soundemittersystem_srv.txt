@@ -536,7 +536,6 @@ b guard variable for CUtlString::GetEmptyString()::s_emptyString
 b guard variable for CSoundEmitterSystemBase::GetParametersForSound(char const*, CSoundParameters&, gender_t, bool)::soundWarnings
 b guard variable for CSoundEmitterSystemBase::GetParametersForSoundEx(char const*, short&, CSoundParameters&, gender_t, bool)::soundWarnings
 b guard variable for CKeyValuesDumpContextAsDevMsg::KvBeginKey(KeyValues*, int)::r_developer
-b guard variable for CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 b filesystem
 b s_BreakSet
 t FastToLower(char)
@@ -824,6 +823,19 @@ t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
 t CUtlInplaceBuffer::InplaceGetLinePtr()
 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlStringBuilder::TakeOwnership(unsigned int*, unsigned int*)
+t CUtlStringBuilder::TrimWhitespace()
+t CUtlStringBuilder::ReplaceCaseless(char const*, char const*)
+t CUtlStringBuilder::ReplaceInternal(char const*, char const*, char const* (*)(char const*, char const*))
+t CUtlStringBuilder::RemoveWhitespace()
+t CUtlStringBuilder::InternalPrepareBuffer(unsigned int, bool, unsigned int)
+t CUtlStringBuilder::Data::ClearError()
+t CUtlStringBuilder::Data::MoveToHeap()
+t CUtlStringBuilder::Data::SetPtr(char*, unsigned int)
+t CUtlStringBuilder::Data::SetError(bool)
+t CUtlStringBuilder::Data::SetLength(unsigned int)
+t CUtlStringBuilder::Replace(char const*, char const*)
+t CUtlStringBuilder::SetLength(unsigned int)
 t CUtlCharConversion::FindConversion(char const*, int*)
 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
 t CUtlCharConversion::CUtlCharConversion(char, char const*, int, CUtlCharConversion::ConversionArray_t*)
@@ -1070,6 +1082,7 @@ t CUtlString::Get() const
 t CUtlString::Left(int) const
 t CUtlString::Right(int) const
 t CUtlString::Slice(int, int) const
+t CUtlString::Remove(char const*, bool) const
 t CUtlString::AbsPath(char const*) const
 t CUtlString::DirName() const
 t CUtlString::IndexOf(char const*) const
@@ -1098,6 +1111,7 @@ t CUtlSymbolTable::FindPoolWithSpace(int) const
 t CUtlSymbolTable::Find(char const*) const
 t CUtlSymbolTable::CLess::operator()(CUtlSymbolTable::CStringPoolIndex const&, CUtlSymbolTable::CStringPoolIndex const&) const
 t CUtlSymbolTable::String(CUtlSymbol) const
+t CUtlStringBuilder::IndexOf(char const*) const
 t CUtlCharConversion::GetDelimiter() const
 t CUtlCharConversion::GetEscapeChar() const
 t CUtlCharConversion::GetDelimiterLength() const
@@ -1241,7 +1255,6 @@ r KeyValues::LoadFromFile(IBaseFileSystem*, char const*, char const*, bool)::__F
 b KeyValues::LoadFromFile(IBaseFileSystem*, char const*, char const*, bool)::tm_fmt
 b KeyValues::LoadFromFile(IBaseFileSystem*, char const*, char const*, bool)::tm_fmt
 b KeyValues::SaveKeyToFile(KeyValues*, IBaseFileSystem*, void*, CUtlBuffer*, int, bool, bool)::buf
-d CUtlRBTree<CUtlSymbolTable::CStringPoolIndex, unsigned short, CUtlSymbolTable::CLess, CUtlMemory<UtlRBTreeNode_t<CUtlSymbolTable::CStringPoolIndex, unsigned short>, unsigned short> >::Links(unsigned short) const::s_Sentinel
 b CSoundEmitterSystemBase::GetSoundScriptName(int) const::fn
 b CSoundEmitterSystemBase::GetSourceFileForSound(int) const::fn
 b CSoundParametersInternal::PitchToString() const::sz

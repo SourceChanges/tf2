@@ -906,6 +906,19 @@ t CUtlInplaceBuffer::InplaceGetLinePtr(char**, int*)
 t CUtlInplaceBuffer::InplaceGetLinePtr()
 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
 t CUtlInplaceBuffer::CUtlInplaceBuffer(int, int, int)
+t CUtlStringBuilder::TakeOwnership(unsigned int*, unsigned int*)
+t CUtlStringBuilder::TrimWhitespace()
+t CUtlStringBuilder::ReplaceCaseless(char const*, char const*)
+t CUtlStringBuilder::ReplaceInternal(char const*, char const*, char const* (*)(char const*, char const*))
+t CUtlStringBuilder::RemoveWhitespace()
+t CUtlStringBuilder::InternalPrepareBuffer(unsigned int, bool, unsigned int)
+t CUtlStringBuilder::Data::ClearError()
+t CUtlStringBuilder::Data::MoveToHeap()
+t CUtlStringBuilder::Data::SetPtr(char*, unsigned int)
+t CUtlStringBuilder::Data::SetError(bool)
+t CUtlStringBuilder::Data::SetLength(unsigned int)
+t CUtlStringBuilder::Replace(char const*, char const*)
+t CUtlStringBuilder::SetLength(unsigned int)
 t CShaderDeviceEmpty::RemoveView(void*)
 t CShaderDeviceEmpty::CompileShader(char const*, unsigned int, char const*)
 t CShaderDeviceEmpty::CreateStaticMesh(unsigned long long, char const*, IMaterial*)
@@ -1036,6 +1049,7 @@ t CUtlString::Get() const
 t CUtlString::Left(int) const
 t CUtlString::Right(int) const
 t CUtlString::Slice(int, int) const
+t CUtlString::Remove(char const*, bool) const
 t CUtlString::AbsPath(char const*) const
 t CUtlString::DirName() const
 t CUtlString::IndexOf(char const*) const
@@ -1160,6 +1174,7 @@ t CShaderAPIEmpty::ActuallySupportsPixelShaders_2_b() const
 t CShaderAPIEmpty::SupportsStaticPlusDynamicLighting() const
 t CShaderAPIEmpty::DoRenderTargetsNeedSeparateDepthBuffer() const
 t CShaderAPIEmpty::GetLight(int) const
+t CUtlStringBuilder::IndexOf(char const*) const
 t CShaderDeviceEmpty::IsAAEnabled() const
 t CShaderDeviceEmpty::GetWindowSize(int&, int&) const
 t CShaderDeviceEmpty::SpewDriverInfo() const
