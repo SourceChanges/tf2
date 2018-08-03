@@ -4952,7 +4952,7 @@ t CMaterial::SetShaderAndParams(KeyValues*)
 t CMaterial::CleanUpShaderParams()
 t CMaterial::GetPreviewImageName()
 t CMaterial::CleanUpMaterialProxy()
-t CMaterial::CleanUpMaterialProxy() [clone .part.42]
+t CMaterial::CleanUpMaterialProxy() [clone .part.43]
 t CMaterial::CreateRenderPassList()
 t CMaterial::DeleteIfUnreferenced()
 t CMaterial::SetMaxLightmapPageID(int)
@@ -4981,7 +4981,7 @@ t CMaterial::NeedsFullFrameBufferTexture(bool)
 t CMaterial::ReloadFromWhitelistIfMarked()
 t CMaterial::RefreshPreservingMaterialVars()
 t CMaterial::DecideShouldReloadFromWhitelist(IFileList*)
-t CMaterial::DecideShouldReloadFromWhitelist(IFileList*) [clone .part.45]
+t CMaterial::DecideShouldReloadFromWhitelist(IFileList*) [clone .part.46]
 t CMaterial::SetUseFixedFunctionBakedLighting(bool)
 t CMaterial::NeedsPowerOfTwoFrameBufferTexture(bool)
 t CMaterial::FindVar(char const*, bool*, bool)
