@@ -1178,6 +1178,7 @@ b sv_client_min_interp_ratio
 b sv_client_predict
 b sv_compressstringtablebaselines_threshhold
 b sv_debugmanualmode
+b sv_downloadlist_include_navfile
 b sv_downloadurl
 b sv_dumpstringtables
 b sv_lan
